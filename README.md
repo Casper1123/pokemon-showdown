@@ -1,3 +1,6 @@
+This fork is for personal modding purposes. Feel free to have a look, but I'm just trying to edit a couple things for the hell of it.
+
+
 Pokémon Showdown
 ========================================================================
 
