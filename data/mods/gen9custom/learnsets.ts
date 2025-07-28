@@ -5,7 +5,6 @@ export const Learnsets: { [speciesid: string]: ModdedLearnsetData } = {
 		inherit: true,
 		learnset: {
 			geomancy: ["9L1"],
-			dracometeor: ["9L1"]
 		},
 	}
 };
