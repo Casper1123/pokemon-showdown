@@ -16,6 +16,7 @@ export const Scripts: ModdedBattleScriptsData = {
 				} else if (!this.data.Learnsets[id].learnset) {
 					this.data.Learnsets[id].learnset = {};
 				}
+				if (this.data.Learnsets[id].learnset.hiddenpower) continue; // Do not alter if it's already there. It shouldn't be, but you know it might just be.
 				this.data.Learnsets[id].learnset.hiddenpower = ["9L1"];
 			}
 		}
