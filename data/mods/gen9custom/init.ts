@@ -17,3 +17,10 @@ modPatch.items = Items;
 if (Scripts?.init) {
 	Scripts.init(modPatch);
 }
+
+// todo: actually generate file here. If it exists, overwrite.
+import fs from "fs";
+import path from "path";
+
+const filepath = path.resolve(__dirname, '../../../cache', `${__dirname}.json`);
+fs.writeFileSync(filepath, JSON.stringify(modPatch, null, 2), 'utf8');
