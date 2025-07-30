@@ -1,32 +1,27 @@
 import type { IncomingMessage, ServerResponse } from 'http';
-import { Dex } from '../../sim/dex';
+import { ModPatch } from "./modpatch";
+import fs from "fs";
+import path from "path";
 
 export function moddataHandler(req: IncomingMessage, res: ServerResponse): boolean {
 	if (!req.url?.startsWith('/moddata')) return false;
 
 	const url = new URL(req.url, `http://${req.headers.host}`);
-	const modid = url.searchParams.get('mod') || 'gen9custom';
+	const modId = url.searchParams.get('mod');
 
+	let exists = false;
+	const filepath = path.resolve(__dirname, '../../../cache', `${modId}.json`);
+	console.log(filepath);
 	try {
-		const dex = Dex.mod(modid);
-		const output = {
-			format: modid,
-			pokemon: dex.data.Pokedex,
-			moves: dex.data.Moves,
-			items: dex.data.Items,
-			abilities: dex.data.Abilities,
-			types: dex.data.TypeChart,
-			learnsets: dex.data.Learnsets,
-			formatsData: dex.data.FormatsData,
-		};
-
+		if (!modId || !fs.existsSync(filepath)) { throw new Error("Mod not found"); }
+		exists = true;
 		res.setHeader('Content-Type', 'application/json');
 		res.setHeader('Access-Control-Allow-Origin', '*');
-		res.end(JSON.stringify(output));
+		res.end(fs.readFileSync(filepath).toString());
 	} catch (err) {
-		res.statusCode = 400;
+		res.statusCode = exists ? 400 : 404;
 		res.setHeader('Content-Type', 'application/json');
-		res.end(JSON.stringify({ error: `Failed to load mod: ${modid}` }));
+		res.end(JSON.stringify({ error: exists ? `Failed to load mod: ${modId}` : `Could not find mod: ${modId}` }));
 	}
 	return true;
 }
