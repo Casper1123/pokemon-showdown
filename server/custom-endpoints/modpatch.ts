@@ -4,6 +4,10 @@ import type { ModdedItemDataTable } from "../../sim/dex-items";
 import type { ModdedAbilityDataTable } from "../../sim/dex-abilities";
 import type { ModdedTypeDataTable } from "../../sim/dex-data";
 
+/**
+ * A class containing all the differences from its parent mod.
+ * A patch to a mod, so to say :)
+ */
 export class ModPatch {
 	parentMod: string | null = null;
 	pokedex: { [speciesid: string]: ModdedSpeciesData } = {};
