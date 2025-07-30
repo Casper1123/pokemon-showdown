@@ -6,6 +6,7 @@ import { Scripts } from "./scripts";
 // Generates cache file for this custom mode.
 const modPatch = new ModPatch();
 modPatch.pokedex = Pokedex;
+modPatch.formatsData = FormatsData;
 
 if (Scripts?.init) {
 	Scripts.init(modPatch);
