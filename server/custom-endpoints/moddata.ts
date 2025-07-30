@@ -1,5 +1,4 @@
 import type { IncomingMessage, ServerResponse } from 'http';
-import { ModPatch } from "./modpatch";
 import fs from "fs";
 import path from "path";
 
