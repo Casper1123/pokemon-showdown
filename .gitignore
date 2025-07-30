@@ -1,3 +1,4 @@
+cache
 /config/*
 !/config/formats.ts
 /logs/**/*

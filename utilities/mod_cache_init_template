@@ -18,7 +18,7 @@ if (Scripts) {
 	modPatch.parentMod = Scripts.inherit ? Scripts.inherit : null;
 	// if (Scripts.init) {
 	//	  Scripts.init(modPatch);
-	// } todo: fix as this is used for moveset modding
+	// }  todo: fix as this is used for moveset modding
 }
 
 import fs from "fs";
