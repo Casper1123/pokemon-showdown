@@ -3,11 +3,14 @@ import { Dex } from '../../../sim/dex';
 export const Scripts: ModdedBattleScriptsData = {
 	inherit: 'gen9',
 	gen: 9,
-	init() {
+	/**
+	 * On initialization does stuff with the passed dex like altering the learnset of pokémon
+	 * @param dex the dex to mutate. By default uses the dex of the current mod.
+	 */
+	init(dex = Dex.mod('gen9custom')) {
 		// Movepool changes!
 		// Very shoddy script for adding Hidden Power to mons that don't get it (gen8, gen9)
 		// Add Hidden Power to all Pokémon introduced after gen7, because the move was dexited in gen8. Might be risky with Regieleki :/
-		const dex = Dex.mod('gen9custom');
 		for (const species of dex.species.all()) {
 			if (species.gen >= 8) {
 				const id = species.id;
