@@ -19,6 +19,7 @@ import { crashlogger, ProcessManager, Streams, Repl } from '../lib';
 import { IPTools } from './ip-tools';
 import { type ChannelID, extractChannelMessages } from '../sim/battle';
 import { StaticServer } from '../lib/static-server';
+import { moddataHandler } from "./custom-endpoints/moddata";
 
 type StreamWorker = ProcessManager.StreamWorker;
 
@@ -342,6 +343,7 @@ export class ServerStream extends Streams.ObjectReadWriteStream<string> {
 				// console.log(`static rq: ${req.socket.remoteAddress}:${req.socket.remotePort} -> ${req.socket.localAddress}:${req.socket.localPort} - ${req.method} ${req.url} ${req.httpVersion} - ${req.rawHeaders.join('|')}`);
 				req.resume();
 				req.addListener('end', () => {
+					if (moddataHandler(req, res)) return;
 					if (config.customhttpresponse?.(req, res)) {
 						return;
 					}
