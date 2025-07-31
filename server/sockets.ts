@@ -20,6 +20,7 @@ import { IPTools } from './ip-tools';
 import { type ChannelID, extractChannelMessages } from '../sim/battle';
 import { StaticServer } from '../lib/static-server';
 import { moddataHandler } from "./custom-endpoints/moddata";
+import { availableModsHandler } from "./custom-endpoints/available_custom_formats";
 
 type StreamWorker = ProcessManager.StreamWorker;
 
@@ -344,6 +345,7 @@ export class ServerStream extends Streams.ObjectReadWriteStream<string> {
 				req.resume();
 				req.addListener('end', () => {
 					if (moddataHandler(req, res)) return;
+					if (availableModsHandler(req, res)) return;
 					if (config.customhttpresponse?.(req, res)) {
 						return;
 					}
