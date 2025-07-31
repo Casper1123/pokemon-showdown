@@ -26,6 +26,7 @@ if (Scripts) {
 	if (Scripts.init) {
 		// Apply changes to movesets of this mod to modPatch
 		applyChanges(Dex.mod(modName), modPatch);
+		// Loading the current mod name just in case. Let's not edit other mods on accident.
 	}
 }
 
