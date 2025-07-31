@@ -15,6 +15,6 @@ export class ModPatch {
 	moves: ModdedMoveDataTable = {};
 	items: ModdedItemDataTable = {};
 	typechart: ModdedTypeDataTable = {};
-	learnsets: Map<string, Map<string, string[]>> = new Map<string, Map<string, string[]>>();
+	learnsets: { [ speciesId: Lowercase<string>]: { [moveId: string]: string[] } } = {};
 	formatsData: ModdedSpeciesFormatsDataTable = {};
 }
