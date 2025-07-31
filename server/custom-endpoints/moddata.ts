@@ -10,10 +10,15 @@ export function moddataHandler(req: IncomingMessage, res: ServerResponse): boole
 
 	let exists = false;
 	const filepath = path.resolve(__dirname, '../../../cache', `${modId}.json`);
+
 	console.log(filepath);
 	try {
-		if (!modId || !fs.existsSync(filepath)) { throw new Error("Mod not found"); }
+		// modId not given or does not exist within mod files.
+		if (!modId || !fs.existsSync(path.join(__dirname, '../../../data/mods', modId))) { throw new Error(); }
 		exists = true;
+		// File not cached and can thus not be loaded
+		if (!fs.existsSync(filepath)) { throw new Error(); }
+
 		res.setHeader('Content-Type', 'application/json');
 		res.setHeader('Access-Control-Allow-Origin', '*');
 		res.end(fs.readFileSync(filepath).toString());
