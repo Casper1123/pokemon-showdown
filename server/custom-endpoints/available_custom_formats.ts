@@ -10,7 +10,7 @@ export function availableModsHandler(req: IncomingMessage, res: ServerResponse):
 		res.setHeader('Access-Control-Allow-Origin', '*');
 		res.end(JSON.stringify(Config.exportedMods));
 	} catch (err) {
-		res.statusCode = 400;
+		res.statusCode = 500;
 		res.setHeader('Content-Type', 'application/json');
 		res.end(JSON.stringify({ error: `Exported mods list could not be loaded due to internal error.` }));
 	}
