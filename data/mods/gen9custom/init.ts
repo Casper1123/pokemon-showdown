@@ -1,3 +1,6 @@
+import { ModdedDex } from "../../../sim/dex";
+
+// mod-required imports
 import { ModPatch } from "../../../server/custom-endpoints/modpatch";
 import { FormatsData } from "./formats-data";
 import { Pokedex } from "./pokedex";
@@ -5,6 +8,7 @@ import { Scripts } from "./scripts";
 import { Items } from "./items";
 import { TypeChart } from "./typechart";
 import { Moves } from "./moves";
+import { applyChanges } from "./learnset_changes";
 
 // Generates cache file for this custom mode.
 const modPatch = new ModPatch();
@@ -16,16 +20,16 @@ modPatch.items = Items;
 
 if (Scripts) {
 	modPatch.parentMod = Scripts.inherit ? Scripts.inherit : null;
-	// if (Scripts.init) {
-	//	  Scripts.init(modPatch);
-	// } todo: fix as this is used for moveset modding
+	if (Scripts.init) {
+		// Apply changes to this thing's
+		applyChanges(new ModdedDex(), modPatch);
+	}
 }
 
 import fs from "fs";
 import path from "path";
 
 const filepath = path.resolve(__dirname, '../../../cache');
-console.log(filepath);
 if (!fs.existsSync(filepath)) {
 	fs.mkdirSync(filepath);
 }

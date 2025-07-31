@@ -1,4 +1,4 @@
-import type { ModdedLearnsetDataTable, ModdedSpeciesData, ModdedSpeciesFormatsDataTable } from "../../sim/dex-species";
+import type { ModdedSpeciesData, ModdedSpeciesFormatsDataTable } from "../../sim/dex-species";
 import type { ModdedMoveDataTable } from "../../sim/dex-moves";
 import type { ModdedItemDataTable } from "../../sim/dex-items";
 import type { ModdedAbilityDataTable } from "../../sim/dex-abilities";
@@ -15,6 +15,6 @@ export class ModPatch {
 	moves: ModdedMoveDataTable = {};
 	items: ModdedItemDataTable = {};
 	typechart: ModdedTypeDataTable = {};
-	learnsets: ModdedLearnsetDataTable = {};
+	learnsets: Map<string, Map<string, string[]>> = new Map<string, Map<string, string[]>>();
 	formatsData: ModdedSpeciesFormatsDataTable = {};
 }
