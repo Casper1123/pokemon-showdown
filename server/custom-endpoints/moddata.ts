@@ -5,13 +5,12 @@ import path from "path";
 export function moddataHandler(req: IncomingMessage, res: ServerResponse): boolean {
 	if (!req.url?.startsWith('/moddata')) return false;
 
-	const url = new URL(req.url, `http://${req.headers.host}`);
+	const url = new URL(req.url, `https://${req.headers.host}`);
 	const modId = url.searchParams.get('mod');
 
 	let exists = false;
 	const filepath = path.resolve(__dirname, '../../../cache', `${modId}.json`);
 
-	console.log(filepath);
 	try {
 		// modId not given or does not exist within mod files.
 		if (!modId || !fs.existsSync(path.join(__dirname, '../../../data/mods', modId))) { throw new Error(); }
