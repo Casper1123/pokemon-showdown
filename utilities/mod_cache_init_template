@@ -12,10 +12,11 @@ import { applyChanges } from "./learnset_changes";
 // Generates cache file for this custom mode.
 const modName = __dirname.split("\\").slice(-1)[0];
 const modPatch = new ModPatch();
+console.log(`Creating Cache file for ${modName} ...`);
 modPatch.pokedex = getRawModData(modName, "pokedex");
 modPatch.formatsData = getRawModData(modName, "formats-data");
 modPatch.moves = getRawModData(modName, "moves");
-modPatch.typechart = getRawModData(modName, "typechart");
+modPatch.typechart = getRawModData(modName, "typeChart");
 modPatch.items = getRawModData(modName, "items");
 modPatch.abilities = getRawModData(modName, "abilities");
 
