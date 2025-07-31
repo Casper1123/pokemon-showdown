@@ -9,18 +9,12 @@ export function formatModsHandler(req: IncomingMessage, res: ServerResponse): bo
 		const customModFormats: { [formatId: string]: string } = {};
 		const allFormats = Dex.formats.all();
 		for (const format of allFormats) {
-			console.log(format.name);
-			if ("[Gen 9] National Dex Custom" === format.name) {
-				console.log(format.mod);
-			}
 			if (!Config.exportedMods.includes(format.mod)) continue;
 			customModFormats[format.id] = format.mod;
 		}
 
 		res.setHeader('Content-Type', 'application/json');
 		res.setHeader('Access-Control-Allow-Origin', '*');
-		console.log(customModFormats);
-		console.log(Config.exportedMods);
 		res.end(JSON.stringify(customModFormats)); // returns type { format: modId } for client use to pair mods to formats properly.
 		// Should only do so for formats that use customized mods that are available in the moddata endpoint.
 	} catch (err) {
