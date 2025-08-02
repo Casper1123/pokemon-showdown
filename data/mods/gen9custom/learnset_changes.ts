@@ -26,6 +26,5 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	}
 
 	// Overwrites older entries but that shouldn't matter much anyways.
-	data.modData("Learnsets", "ampharos").learnset.dracometeor = ["9L1"];
 	setMove(data, modPatch, "ampharos", "dracometeor");
 }
