@@ -4,6 +4,18 @@ import type { Learnset } from "../sim/dex-species";
 
 // The list of formats is stored in config/formats.js
 export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
+	// Custom general rulesets
+	///////////////////////////////////////////////////////////////////
+	gen5gems: {
+		effectType: 'ValidatorRule',
+		name: 'Gen5 Gems',
+		desc: "Allows Generation 5 gems to be used",
+		unbanlist: [
+			'Bug Gem', 'Dark Gem', 'Dragon Gem', 'Electric Gem', 'Fighting Gem', 'Fire Gem',
+			'Flying Gem', 'Ghost Gem', 'Grass Gem', 'Ground Gem', 'Ice Gem', 'Normal Gem',
+			'Poison Gem', 'Psychic Gem', 'Rock Gem', 'Steel Gem', 'Water Gem',
+		],
+	},
 	// Rulesets
 	///////////////////////////////////////////////////////////////////
 	standardag: {
