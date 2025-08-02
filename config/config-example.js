@@ -1,6 +1,28 @@
 'use strict';
 
 /**
+ * The names of custom mods that are to be exported to connected clients.
+ * Fill the array with strings accordingly.
+ * Example: ["gen5custom", "our_own_mons"] <- (If you weren't aware, it's the folder name(s) you need :) )
+ * @type {string[]}
+ */
+const exportedMods = [];
+exports.exportedMods = exportedMods;
+
+// Run only once through parent process.
+// As config init is done before server start, we can quickly initialize these.
+// Not a good solution, but a functioning one.
+if (!process.send) {
+	console.log('Running cache population...');
+	try {
+		const { populateCache } = require('../utilities/populate_cache.cjs');
+		populateCache(exportedMods);
+	} catch (error) {
+		console.error('Cache population failed:', error);
+	}
+}
+
+/**
  * The server port - the port to run Pokemon Showdown under
  *
  * @type {number}
