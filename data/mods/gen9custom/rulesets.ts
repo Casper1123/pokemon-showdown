@@ -100,10 +100,10 @@ export const Rulesets: import('../../../sim/dex-formats').FormatDataTable = {
 	gen9custommegaray: {
 		effectType: 'Rule',
 		name: 'gen9custom megaray',
-		desc: 'Rayquaza can only Mega Evolve if its player has enough pokémon for an AG team.',
+		desc: 'Rayquaza can only Mega Evolve if its player has few enough pokémon for an AG team.',
 
 		onBegin() {
-			this.add('rule', 'Rayquaza can only Mega Evolve if its player has enough pokémon for an AG team.');
+			this.add('rule', 'Rayquaza can only Mega Evolve if its player has few enough pokémon for an AG team.');
 
 			for (const side of this.sides) {
 				const playerRayquaza = side.pokemon.find(p => p.species.id === 'rayquaza');
