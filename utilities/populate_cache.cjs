@@ -19,7 +19,7 @@ function populateCache(exportedMods) {
 	const distModsPath = path.resolve(__dirname, '../dist/data/mods');
 	for (const modName of exportedMods) {
 		const initPath = path.join(distModsPath, modName, 'init.js');  // todo: if this doesn't exist, copy a template compiled copy there instead.
-		// todo: wait if we're doing that why not just.. write init better??
+		// todo: wait if we're doing that why not just.. write init better to not have to be placed in the mod folder???
 		console.log(`Processing cache for mod: ${modName}`);
 
 		try {
