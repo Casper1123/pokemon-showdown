@@ -19,8 +19,7 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 				continue;
 			} else if (!data.data.Learnsets[id].learnset) {
 				data.data.Learnsets[id].learnset = {};
-			} else if (data.data.Learnsets[id].learnset.hiddenpower) continue; // Do not alter if it's already there. It shouldn't be, but you know it might just be.
-
+			} // else if (data.data.Learnsets[id].learnset.hiddenpower) continue; // Do not alter if it's already there. It shouldn't be, but you know it might just be.
 			setMove(data, modPatch, id, "hiddenpower");
 		}
 	}
