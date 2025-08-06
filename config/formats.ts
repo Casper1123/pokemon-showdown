@@ -32,7 +32,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'ND Uber', 'ND AG', 'Arena Trap', 'Moody', 'Shadow Tag', 'King\'s Rock',
 			'Quick Claw', 'Razor Fang', 'Assist', 'Baton Pass', 'Last Respects', 'Shed Tail',
 		],
-		unbanlist: ['Zekrom', 'Reshiram'],
+		unbanlist: [],
 	},
 	// National Dex
 	///////////////////////////////////////////////////////////////////
