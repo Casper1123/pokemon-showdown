@@ -1,12 +1,6 @@
 import { ModPatch } from "../../../server/custom-endpoints/modpatch";
 import { getRawModData } from "../../../utilities/get_base_moddex_data";
-import { FormatsData } from "./formats-data";
-import { Pokedex } from "./pokedex";
 import { Scripts } from "./scripts";
-import { Items } from "./items";
-import { TypeChart } from "./typechart";
-import { Moves } from "./moves";
-import { Abilities } from "./abilities";
 import { applyChanges } from "./learnset_changes";
 
 // Generates cache file for this custom mode.
@@ -22,7 +16,7 @@ if (require.main === module) {
 modPatch.pokedex = getRawModData(modName, "pokedex", compiledOffset);
 modPatch.formatsData = getRawModData(modName, "formats-data", compiledOffset);
 modPatch.moves = getRawModData(modName, "moves", compiledOffset);
-// modPatch.typechart = getRawModData(modName, "typeChart", compiledOffset); type chart data is not required.
+modPatch.typechart = getRawModData(modName, "typeChart", compiledOffset);
 modPatch.items = getRawModData(modName, "items", compiledOffset);
 modPatch.abilities = getRawModData(modName, "abilities", compiledOffset);
 
