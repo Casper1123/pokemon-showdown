@@ -4,7 +4,7 @@ import { Scripts } from "./scripts";
 import { applyChanges } from "./learnset_changes";
 
 // Generates cache file for this custom mode.
-const modName = __dirname.split("\\").slice(-1)[0];
+const modName = path.basename(__dirname);
 const modPatch = new ModPatch();
 console.log(`Creating Cache file for ${modName} ...`);
 
