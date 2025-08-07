@@ -465,6 +465,7 @@ export class ModdedDex {
 	}
 
 	includeMods(): this {
+		console.log("includemods");
 		if (!this.isBase) throw new Error(`This must be called on the base Dex`);
 		if (this.modsLoaded) return this;
 
@@ -472,6 +473,32 @@ export class ModdedDex {
 			dexes[mod] = new ModdedDex(mod);
 		}
 		this.modsLoaded = true;
+
+		console.log('caching');
+		// Injecting custom caching on first-time loading:
+		if (Config.exportedMods) {
+			const cachePath = path.resolve(__dirname, '../../cache');
+			console.log(`cachePath: ${cachePath}`);
+
+			if (fs.existsSync(cachePath)) {
+				for (const file of fs.readdirSync(cachePath, { withFileTypes: true })) {
+					fs.rmSync(path.join(cachePath, file.name));
+				}
+			} else {
+				fs.mkdirSync(cachePath, { recursive: true });
+			}
+			for (const modName of Config.exportedMods) {
+				console.log(`modName: ${modName}`);
+				try {
+					const initPath = path.join(__dirname, '../data/mods', modName, 'init.js');
+					console.log(`init path: ${initPath}`);
+					delete require.cache[initPath];
+					require(initPath);
+				} catch (e) {
+					console.log(`Could not complete the init script for ${modName}`);
+				}
+			}
+		}
 
 		return this;
 	}

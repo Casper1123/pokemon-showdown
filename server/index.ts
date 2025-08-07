@@ -43,7 +43,6 @@
  *
  * @license MIT
  */
-import {Dex} from "../sim";
 
 try {
 	require('source-map-support').install();
@@ -141,15 +140,6 @@ function setupGlobals() {
 	const { IPTools } = require('./ip-tools');
 	global.IPTools = IPTools;
 	void IPTools.loadHostsAndRanges();
-
-	// Injecting custom caching script
-	if (!process.send) {
-		global.Dex.includeData();
-		global.Dex.includeMods();
-
-		const { populateCache } = require('../utilities/populate_cache');
-		populateCache(Config.exportedMods);
-	}
 }
 setupGlobals();
 

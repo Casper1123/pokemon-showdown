@@ -15,7 +15,9 @@
 	},
 	"types": ["node"],
 	"include": [
-			"./global-types.ts",
-			"./index.ts",
-	]
+      "./global-types.ts",
+      "./index.ts",
+      ,
+      "../server/global-variables.d.ts"
+    ]
 }
