@@ -166,12 +166,6 @@ export class ModdedDex {
 	mod(mod: string | undefined): ModdedDex {
 		if (!dexes['base'].modsLoaded) dexes['base'].includeMods();
 		console.log("Base mods loaded. Including data for", mod);
-		if (typeof mod === 'undefined') {
-			console.log('mod is undefined.');
-		} else {
-			console.log(dexes[mod] === undefined);
-		}
-
 		return dexes[mod || 'base'].includeData();
 	}
 
