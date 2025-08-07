@@ -141,6 +141,7 @@ function setupGlobals() {
 	void IPTools.loadHostsAndRanges();
 
 	// Injecting custom caching script
+	Dex.includeData();
 	if (!process.send) {
 		if (!global.Dex.isBase || !global.Dex.data?.Pokedex) {
 			global.Dex.includeData();
