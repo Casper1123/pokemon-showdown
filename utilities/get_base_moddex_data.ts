@@ -14,7 +14,6 @@ export function getRawModData(modName: string, filename: string, compiledOffset:
 	if (!fs.existsSync(filePath)) {
 		return {};
 	}
-
 	const fileContent = fs.readFileSync(filePath, 'utf8');
 	// Extract just the export object using regex
 	const exportMatch = /export\s+const\s+\w+\s*:\s*[^=]*=\s*(\{[\s\S]*?\n\};)/.exec(fileContent);

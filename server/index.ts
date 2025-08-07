@@ -139,6 +139,15 @@ function setupGlobals() {
 	const { IPTools } = require('./ip-tools');
 	global.IPTools = IPTools;
 	void IPTools.loadHostsAndRanges();
+
+	// Injecting custom caching script
+	if (!process.send) {
+		if (!global.Dex.isBase || !global.Dex.data?.Pokedex) {
+			global.Dex.includeData();
+		}
+		const { populateCache } = require('../utilities/populate_cache');
+		populateCache(Config.exportedMods);
+	}
 }
 setupGlobals();
 
