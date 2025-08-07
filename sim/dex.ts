@@ -495,7 +495,7 @@ export class ModdedDex {
 					delete require.cache[initPath];
 					require(initPath);
 				} catch (e) {
-					console.log(`Could not complete the init script for ${modName}. ${e}`);
+					console.log(`Could not complete the init script for ${modName}`);
 				}
 			}
 		}
