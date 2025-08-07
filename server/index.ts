@@ -43,6 +43,8 @@
  *
  * @license MIT
  */
+import {Dex} from "../sim";
+
 try {
 	require('source-map-support').install();
 	// eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -141,11 +143,10 @@ function setupGlobals() {
 	void IPTools.loadHostsAndRanges();
 
 	// Injecting custom caching script
-	Dex.includeData();
 	if (!process.send) {
-		if (!global.Dex.isBase || !global.Dex.data?.Pokedex) {
-			global.Dex.includeData();
-		}
+		global.Dex.includeData();
+		global.Dex.includeMods();
+
 		const { populateCache } = require('../utilities/populate_cache');
 		populateCache(Config.exportedMods);
 	}
