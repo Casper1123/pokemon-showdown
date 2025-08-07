@@ -5,7 +5,6 @@ import { applyChanges } from "./learnset_changes";
 
 // Generates cache file for this custom mode.
 const modName = __dirname.split("\\").slice(-1)[0];
-console.log(`Mod ${modName}`);
 const modPatch = new ModPatch();
 console.log(`Creating Cache file for ${modName} ...`);
 
