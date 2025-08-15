@@ -24,6 +24,25 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 		}
 	}
 
-	// Overwrites older entries but that shouldn't matter much anyways.
+	// Gen1
+	// Gen2
 	setMove(data, modPatch, "ampharos", "dracometeor");
+	// Gen3
+	setMove(data, modPatch, "absol", "lightofruin");
+	setMove(data, modPatch, "absol", "spiritbreak");
+	setMove(data, modPatch, "absol", "partingshot");
+	// Gen4
+	setMove(data, modPatch, "hippowdon", "spikes");
+	setMove(data, modPatch, "hippowdon", "knockoff");
+	// Gen5
+	setMove(data, modPatch, "serperior", "mudshot");
+	setMove(data, modPatch, "conkeldurr", "steamroller");
+	setMove(data, modPatch, "conkeldurr", "fakeout");
+	setMove(data, modPatch, "conkeldurr", "meteormash");
+	setMove(data, modPatch, "scolipede", "collisioncourse");
+	setMove(data, modPatch, "haxorus", "dragonrush");
+	// Gen6
+	// Gen7
+	// Gen8
+	// Gen9
 }

@@ -15,10 +15,10 @@ if (require.main === module) {
 
 modPatch.pokedex = getRawModData(modName, "pokedex", compiledOffset);
 modPatch.formatsData = getRawModData(modName, "formats-data", compiledOffset);
-modPatch.moves = getRawModData(modName, "moves", compiledOffset);
+modPatch.moves = getRawModData(modName, "moves", compiledOffset); // todo: custom function that ignores functions and only takes const data.
 modPatch.typechart = getRawModData(modName, "typeChart", compiledOffset);
 modPatch.items = getRawModData(modName, "items", compiledOffset);
-modPatch.abilities = getRawModData(modName, "abilities", compiledOffset);
+// modPatch.abilities = getRawModData(modName, "abilities", compiledOffset); // todo: export some abilities data. Currently exporting function data
 
 import { Dex } from "../../../sim/dex";
 if (Scripts) {
