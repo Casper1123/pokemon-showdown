@@ -23,6 +23,28 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		accuracy: 90,
 		pp: 10,
 	},
+
+	// Custom moves:
+	desertsong: {
+		num: -4,
+		accuracy: 100,
+		basePower: 70,
+		category: "Special",
+		name: "Desert Song",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, defrost: 1, metronome: 1 },
+		self: { // Sets weather on use.
+			onHit(source) {
+				this.field.setWeather('sandstorm');
+			},
+		},
+		target: "normal",
+		type: "Ground",
+		isNonstandard: "Custom",
+		desc: "Sets Sandstorm weather effect on hit.",
+		shortDesc: "Sets Sandstorm on hit.",
+	},
 };
 // todo: figure out how to export anything but the functions. Also, be able to appropriately update the description text.
 // trickroom: {
