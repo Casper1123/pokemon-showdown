@@ -23,6 +23,42 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		accuracy: 90,
 		pp: 10,
 	},
+	trickroom: {
+		inherit: true,
+		condition: {
+			duration: 6,
+			durationCallback(source, effect) {
+				if (source?.hasAbility('persistent')) {
+					this.add('-activate', source, 'ability: Persistent', '[move] Trick Room');
+					return 5;
+				}
+				return 6;
+			},
+			onFieldStart(target, source) {
+				if (source?.hasAbility('persistent')) {
+					this.add('-fieldstart', 'move: Trick Room', `[of] ${source}`, '[persistent]');
+				} else {
+					this.add('-fieldstart', 'move: Trick Room', `[of] ${source}`);
+				}
+			},
+			onFieldRestart(target, source) {
+				this.field.removePseudoWeather('trickroom');
+			},
+			// Speed modification is changed in Pokemon.getActionSpeed() in sim/pokemon.js
+			onFieldResidualOrder: 27,
+			onFieldResidualSubOrder: 1,
+			onFieldEnd() {
+				this.add('-fieldend', 'move: Trick Room');
+			},
+		},
+		shortDesc: "Goes last. For 6 turns, turn order is reversed.",
+		desc: "-7 priority. For 6 turns, speed inside priority brackets is reversed (slow before fast).",
+	},
+	sparklyswirl: {
+		inherit: true,
+		basePower: 60,
+		pp: 5,
+	},
 
 	// Custom moves:
 	desertsong: {
@@ -52,33 +88,3 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
 	},
 };
-// todo: figure out how to export anything but the functions. Also, be able to appropriately update the description text.
-// trickroom: {
-//	inherit: true,
-//		condition: {
-//		duration: 6, // Only change here, but full redefinition is required. How will this fit into JSON?
-//			durationCallback(source, effect) {
-//			if (source?.hasAbility('persistent')) {
-//				this.add('-activate', source, 'ability: Persistent', '[move] Trick Room');
-//				return 7;
-//			}
-//			return 5;
-//		},
-//		onFieldStart(target, source) {
-//			if (source?.hasAbility('persistent')) {
-//				this.add('-fieldstart', 'move: Trick Room', `[of] ${source}`, '[persistent]');
-//			} else {
-//				this.add('-fieldstart', 'move: Trick Room', `[of] ${source}`);
-//			}
-//		},
-//		onFieldRestart(target, source) {
-//			this.field.removePseudoWeather('trickroom');
-//		},
-//		// Speed modification is changed in Pokemon.getActionSpeed() in sim/pokemon.js
-//		onFieldResidualOrder: 27,
-//			onFieldResidualSubOrder: 1,
-//			onFieldEnd() {
-//			this.add('-fieldend', 'move: Trick Room');
-//		},
-//	},
-// },

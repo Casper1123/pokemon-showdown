@@ -27,14 +27,24 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	// Gen1
 	// Gen2
 	setMove(data, modPatch, "ampharos", "dracometeor");
+	setMove(data, modPatch, "ampharos", "tailglow");
+	setMove(data, modPatch, "ampharos", "thunderclap");
+	setMove(data, modPatch, "ampharos", "paraboliccharge");
 	// Gen3
 	setMove(data, modPatch, "absol", "lightofruin");
 	setMove(data, modPatch, "absol", "spiritbreak");
 	setMove(data, modPatch, "absol", "partingshot");
 	setMove(data, modPatch, "flygon", "desertsong"); // Custom signature move.
+	setMove(data, modPatch, "aggron", "hornleech");
+	setMove(data, modPatch, "aggron", "slackoff");
 	// Gen4
 	setMove(data, modPatch, "hippowdon", "spikes");
 	setMove(data, modPatch, "hippowdon", "knockoff");
+	setMove(data, modPatch, "empoleon", "auroraveil");
+	setMove(data, modPatch, "shaymin", "sparklyswirl");
+	setMove(data, modPatch, "shaymin", "lightofruin");
+	setMove(data, modPatch, "shaymin", "floralhealing");
+
 	// Gen5
 	setMove(data, modPatch, "serperior", "mudshot");
 	setMove(data, modPatch, "conkeldurr", "steamroller");
@@ -42,6 +52,13 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "conkeldurr", "meteormash");
 	setMove(data, modPatch, "scolipede", "collisioncourse");
 	setMove(data, modPatch, "haxorus", "dragonrush");
+	setMove(data, modPatch, "durant", "highhorsepower");
+	setMove(data, modPatch, "gigalith", "diamondstorm");
+	setMove(data, modPatch, "gigalith", "shoreup");
+	setMove(data, modPatch, "gigalith", "trickroom");
+	setMove(data, modPatch, "boldore", "diamondstorm");
+	setMove(data, modPatch, "boldore", "shoreup");
+	setMove(data, modPatch, "boldore", "trickroom");
 	// Gen6
 	// Gen7
 	// Gen8

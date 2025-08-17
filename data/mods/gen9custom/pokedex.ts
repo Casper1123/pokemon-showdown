@@ -12,12 +12,30 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		types: ["Electric", "Dragon"],
 		abilities: { 0: "Static", H: "Teravolt" },
+		baseStats: { hp: 100, atk: 75, def: 85, spa: 115, spd: 90, spe: 55 },
+	},
+	ampharosmega: {
+		inherit: true,
+		abilities: { 0: "Teravolt" },
+		baseStats: { hp: 100, atk: 75, def: 110, spa: 165, spd: 115, spe: 45 },
 	},
 	// endregion
 	// region: Gen3
 	absolmega: {
 		inherit: true,
 		types: ["Dark", "Fairy"],
+	},
+	breloom: {
+		inherit: true,
+		baseStats: { hp: 80, atk: 130, def: 90, spa: 60, spd: 70, spe: 70 },
+	},
+	aggron: {
+		inherit: true,
+		baseStats: { hp: 80, atk: 110, def: 180, spa: 60, spd: 80, spe: 50 },
+	},
+	aggronmega: {
+		inherit: true,
+		baseStats: { hp: 80, atk: 140, def: 230, spa: 40, spd: 80, spe: 50 },
 	},
 	// endregion
 	// region: Gen4
@@ -30,6 +48,21 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		baseStats: { hp: 113, atk: 112, def: 123, spa: 68, spd: 87, spe: 47 },
 		abilities: { 0: "Sand Stream", H: "Intimidate" },
 	},
+	flygon: {
+		inherit: true,
+		baseStats: { hp: 80, atk: 100, def: 80, spa: 110, spd: 80, spe: 100 },
+	},
+	empoleon: {
+		inherit: true,
+		baseStats: { hp: 90, atk: 90, def: 95, spa: 111, spd: 101, spe: 60 },
+		abilities: { 0: "Torrent", 1: "Slush Rush", H: "Competitive"},
+	},
+	shaymin: {
+		inherit: true,
+		types: ["Grass", "Fairy"],
+		baseStats: { hp: 100, atk: 70, def: 110, spa: 110, spd: 110, spe: 100 },
+		abilities: { 0: "Natural Cure", 1: "Overgrow", H: "Regenerator" },
+	},
 	// endregion
 	// region: Gen5
 	conkeldurr: {
@@ -41,10 +74,22 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		baseStats: { hp: 78, atk: 147, def: 90, spa: 60, spd: 90, spe: 100 },
 		abilities: { 0: "Regenerator", 1: "Mold Breaker", H: "Tough Claws" },
 	},
+	durant: {
+		inherit: true,
+		abilities: { 0: "Defiant", 1: "Hustle", H: "Truant" },
+	},
+	gigalith: {
+		inherit: true,
+		baseStats: { hp: 85, atk: 135, def: 130, spa: 60, spd: 100, spe: 25 },
+	},
 	// endregion
 	// region: Gen6
 	// endregion
 	// region: Gen7
+	golispod: {
+		inherit: true,
+		abilities: { 0: "Emergency Exit", H: "Battle Armor" },
+	},
 	// endregion
 	// region: Gen8
 	// endregion
