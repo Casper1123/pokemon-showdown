@@ -6,4 +6,8 @@ export const ModConfig = {
 	// Team size
 	uberTeamSize: 5,
 	agTeamSize: 4,
+
+	// Other
+	megaWhenUbersAG: true, // Restricts the use of Mega Stones if an Uber is on the team
+	// todo: make rule for this.
 };

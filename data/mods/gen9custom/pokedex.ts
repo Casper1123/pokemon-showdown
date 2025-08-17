@@ -55,7 +55,7 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	empoleon: {
 		inherit: true,
 		baseStats: { hp: 90, atk: 90, def: 95, spa: 111, spd: 101, spe: 60 },
-		abilities: { 0: "Torrent", 1: "Slush Rush", H: "Competitive"},
+		abilities: { 0: "Torrent", 1: "Slush Rush", H: "Competitive" },
 	},
 	shaymin: {
 		inherit: true,
