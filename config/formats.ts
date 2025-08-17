@@ -29,7 +29,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		mod: 'gen9custom',
 		ruleset: ['Standard NatDex', 'gen9custom UbersAg', 'gen9custom megaray'],
 		banlist: [
-			'ND Uber', 'ND AG', 'Arena Trap', 'Moody', 'Shadow Tag', 'King\'s Rock',
+			'Arena Trap', 'Moody', 'Shadow Tag', 'King\'s Rock',
 			'Quick Claw', 'Razor Fang', 'Assist', 'Baton Pass', 'Last Respects', 'Shed Tail',
 		],
 		unbanlist: [],
