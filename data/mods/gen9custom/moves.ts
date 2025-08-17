@@ -28,22 +28,28 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	desertsong: {
 		num: -4,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 90,
 		category: "Special",
 		name: "Desert Song",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, defrost: 1, metronome: 1 },
-		self: { // Sets weather on use.
-			onHit(source) {
+		onAfterHit(target, source, move) {
+			if (!move.hasSheerForce && source.hp) {
 				this.field.setWeather('sandstorm');
-			},
+			}
 		},
-		target: "normal",
+		onAfterSubDamage(damage, target, source, move) {
+			if (!move.hasSheerForce && source.hp) {
+				this.field.setWeather('sandstorm');
+			}
+		},
+		secondary: {}, // Boosted by Sheer Force.
+		target: "allAdjacentFoes",
 		type: "Ground",
 		isNonstandard: "Custom",
 		desc: "Sets Sandstorm weather effect on hit.",
 		shortDesc: "Sets Sandstorm on hit.",
+		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
 	},
 };
 // todo: figure out how to export anything but the functions. Also, be able to appropriately update the description text.
