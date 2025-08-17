@@ -82,10 +82,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		secondary: {}, // Boosted by Sheer Force.
 		target: "allAdjacentFoes",
 		type: "Ground",
-		isNonstandard: "Custom",
 		desc: "Sets Sandstorm weather effect on hit.",
 		shortDesc: "Sets Sandstorm on hit.",
 		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
-		gen: 9,
 	},
 };
