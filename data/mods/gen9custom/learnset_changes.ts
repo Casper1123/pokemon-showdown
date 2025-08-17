@@ -41,6 +41,8 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "hippowdon", "spikes");
 	setMove(data, modPatch, "hippowdon", "knockoff");
 	setMove(data, modPatch, "empoleon", "auroraveil");
+	setMove(data, modPatch, "empoleon", "reflect");
+	setMove(data, modPatch, "empoleon", "lightscreen");
 	setMove(data, modPatch, "shaymin", "sparklyswirl");
 	setMove(data, modPatch, "shaymin", "lightofruin");
 	setMove(data, modPatch, "shaymin", "floralhealing");
