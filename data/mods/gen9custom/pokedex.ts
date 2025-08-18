@@ -37,6 +37,10 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		baseStats: { hp: 80, atk: 140, def: 230, spa: 40, spd: 80, spe: 50 },
 	},
+	sceptile: {
+		inherit: true,
+		types: ["Grass", "Dragon"],
+	},
 	// endregion
 	// region: Gen4
 	garchompmega: {
@@ -81,6 +85,16 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	gigalith: {
 		inherit: true,
 		baseStats: { hp: 85, atk: 135, def: 130, spa: 60, spd: 100, spe: 25 },
+	},
+	coballion: {
+		inherit: true,
+		abilities: { 0: "Justified", 1: "Competitive" },
+		baseStats: { hp: 91, atk: 90, def: 129, spa: 110, spd: 72, spe: 108 },
+	},
+	virizion: {
+		inherit: true,
+		abilities: { 0: "Justified", 1: "Competitive" },
+		baseStats: { hp: 91, atk: 90, def: 72, spa: 110, spd: 129, spe: 108 },
 	},
 	// endregion
 	// region: Gen6

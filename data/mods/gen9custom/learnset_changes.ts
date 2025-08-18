@@ -37,6 +37,11 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "flygon", "desertsong"); // Custom signature move.
 	setMove(data, modPatch, "aggron", "hornleech");
 	setMove(data, modPatch, "aggron", "slackoff");
+	setMove(data, modPatch, "manectric", "icebeam");
+	setMove(data, modPatch, "manectric", "paraboliccharge");
+	setMove(data, modPatch, "sceptile", "dracometeor");
+	setMove(data, modPatch, "sceptile", "chloroblast");
+	setMove(data, modPatch, "sceptile", "nastyplot");
 	// Gen4
 	setMove(data, modPatch, "hippowdon", "spikes");
 	setMove(data, modPatch, "hippowdon", "knockoff");
@@ -61,6 +66,11 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "boldore", "diamondstorm");
 	setMove(data, modPatch, "boldore", "shoreup");
 	setMove(data, modPatch, "boldore", "trickroom");
+	setMove(data, modPatch, "coballion", "secretsword");
+	setMove(data, modPatch, "coballion", "nastyplot");
+	setMove(data, modPatch, "virizion", "secretsword");
+	setMove(data, modPatch, "virizion", "nastyplot");
+	setMove(data, modPatch, "terrakion", "accelerock");
 	// Gen6
 	// Gen7
 	// Gen8
