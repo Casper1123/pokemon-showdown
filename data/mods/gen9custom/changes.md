@@ -83,6 +83,8 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Mega-Aggron`: Stats: `hp: 80, atk: 140, def: 230, spa: 40, spd: 80, spe: 50`. <BR>
 `Mega-Absol`: Type: Dark, Fairy. New Moves: Light of Ruin, Sprit Break, Parting Shot. *Move changes also apply to base Absol.*<BR>
 `Flygon`: Stats: `hp: 80, atk: 100, def: 80, spa: 110, spd: 80, spe: 100`. New Moves: Desert Song, see Moves section.<BR>
+`Sceptile`: Type: Grass, Dragon. New Moves: Chloroblast, Nasty Plot, Draco Meteor. <BR>
+`Manectric`: New Moves: Ice Beam, Parabolic Charge. <BR>
 ## Gen 4
 `Mega-Garchomp`: Stats: `hp: 108, atk: 170, def: 115, spa: 110, spd: 95, spe: 102`. <BR>
 `Hippowdon`: Stats: `hp: 113, atk: 112, def: 123, spa: 68, spd: 87, spe: 47`. Abilities: Sand Stream, Intimidate. New Moves: Spikes, Knock Off.<BR>
@@ -95,6 +97,9 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Haxorus`: Stats: `hp: 78, atk: 147, def: 90, spa: 60, spd: 90, spe: 100`. Abilities: Regenerator, Tough Claws, Mold Breaker. New Moves: Dragon Rush<BR>
 `Durant`: Abilities: Defiant, Hustle, Truant. New Moves: High Horsepower.<BR>
 `Gigalith`: Stats: `hp: 85, atk: 135, def: 130, spa: 60, spd: 100, spe: 25`. New Moves: Shore Up, Diamond Storm, Trick Room.<BR>
+`Terrakion`: New Moves: Accelerock. <BR>
+`Coballion`: Stats: `hp: 91, atk: 90, def: 129, spa: 110, spd: 72, spe: 108`. Abilities: Justified, Competitive. New Moves: Secret Sword, Nasty Plot. <BR>
+`Virizion`: Stats: `hp: 91, atk: 90, def: 72, spa: 110, spd: 129, spe: 108`. Abilities: Justified, Competitive. New Moves: Secret Sword, Nasty Plot. <BR>
 ## Gen 6
 ## Gen 7
 `Golisopod`: Abilities: Emergency Exit, Battle Armor. <BR>
