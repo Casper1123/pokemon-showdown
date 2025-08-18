@@ -35,6 +35,7 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "absol", "spiritbreak");
 	setMove(data, modPatch, "absol", "partingshot");
 	setMove(data, modPatch, "flygon", "desertsong"); // Custom signature move.
+	setMove(data, modPatch, "flygon", "nastyplot");
 	setMove(data, modPatch, "aggron", "hornleech");
 	setMove(data, modPatch, "aggron", "slackoff");
 	setMove(data, modPatch, "manectric", "icebeam");
