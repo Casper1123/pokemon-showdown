@@ -1,6 +1,8 @@
 // Note: These are the rules that formats use
 
 import type { Learnset } from "../sim/dex-species";
+import { TeamValidator } from "../sim";
+import { type PokemonSet } from "../sim/teams";
 
 // The list of formats is stored in config/formats.js
 export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
@@ -11,7 +13,130 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 		name: 'Enable Cross-Species Nicknames',
 		desc: 'Enables the user to nickname their Pokémon like other species',
 	},
+	removenicknamecharactermax: {
+		effectType: "ValidatorRule",
+		name: 'Remove Nickname Characterlimit',
+		desc: 'Removes the character limit on nicknames to allow for a custom validator overwrite. Note: default max is 18 chars.',
+	},
+	illusionnicknames: {
+		ruleset: ['Enable Cross-Species Nicknames', 'Remove Nickname Characterlimit', 'Team Preview'],
+		effectType: 'ValidatorRule',
+		name: 'Illusory Nicknames.',
+		desc: 'Alters Pokémon with the Illusion ability.',
+		onValidateTeam(team, format, teamHas) {
+			const problems: string[] = [];
+			const teamSpecies: string[] = []; // Man I wish this was python :(
+			for (const set of team) {
+				teamSpecies.push(set.species);
+			}
 
+			for (const set of team) {
+				const nameSpecies = this.dex.species.get(set.name);
+				const setSpecies = this.dex.species.get(set.species);
+				// I want more freedom over the nickname length in this function, so we're disabling the vanilla
+				// length limit implementation and copy-pasting the result here.
+				if (set.name.length > 18) { problems.push(`Nickname "${set.name}" too long (should be 18 characters or fewer)`); }
+				if (set.ability !== 'Illusion') {
+					if (nameSpecies.id !== setSpecies.id) {
+						problems.push(`${set.name} must not be nicknamed a different Pokémon species than what it actually is.`);
+					}
+					continue; // Done checking for this set.
+				}
+				// Targeted naming structure: \"previewSpecies\". " can be ' too.
+				if (!((set.name.startsWith("\"") || set.name.startsWith("'") && (set.name.endsWith("\"") || set.name.endsWith("'"))))) {
+					// Suggest the user to name the pokémon properly, unless the gender isn't random (as this is an active decision that doesn't remove Rivalry tech).
+					// FIXME: Does not handle custom ungendered ("N") properly, and they cannot have their gender be set. The same goes for statically gendered pokémon like Salazzle.
+					if (set.gender === "") {
+						problems.push(`${set.name} doesn't have a direct mimic target set. If you don't want to set what to mimic in Team Preview directly, take it's Gender off of Random. The correct name format: "Name of mon to mimic" (' allowed too)`);
+					}
+					continue; // If the gender isn't random, then we assume it's intended.
+				}
+				// Assuming the nickname starts and ends with either ' or ", see if what's inside is a species.
+				const mimicSpeciesName = set.name.slice(1, -1);
+				if (mimicSpeciesName === "") {
+					problems.push(`${set.name} is not trying to mimic anything.`);
+				}
+				const mimicSpecies = this.dex.species.get(mimicSpeciesName);
+				if (!mimicSpecies) {
+					problems.push(`The mimic target for ${set.name} is not a pokémon in this format and cannot be mimicked.`);
+				}
+
+				// Check mimicked target validity. For this, we create a dummy set using this species
+				const validator = new TeamValidator(this.format);
+				const tempSet: PokemonSet = {
+					name: mimicSpecies.baseSpecies,
+					species: mimicSpecies.name,
+					item: '',
+					ability: mimicSpecies.abilities['0'],
+					moves: [],
+					nature: '',
+					gender: '',
+					evs: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+					ivs: { hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31 },
+					level: 100,
+				};
+				const { tierSpecies } = validator.getValidationSpecies(tempSet);
+				const legality = validator.checkSpecies(tempSet, mimicSpecies, tierSpecies, {}) === null;
+				if (!legality) {
+					problems.push(`${set.species} cannot mimic ${mimicSpeciesName} because it's not legal in this format.`);
+				}
+
+				if (this.format.ruleTable?.has('speciesclause')) {
+					if (teamSpecies.includes(mimicSpeciesName)) {
+						problems.push(`You cannot mimic ${mimicSpeciesName} because a mon of that species is already on the team.`);
+					}
+				}
+			}
+			return problems;
+		},
+		onTeamPreview() {
+			this.add('clearpoke');
+			for (const side of this.sides) {
+				for (const pokemon of side.pokemon) {
+					let details = pokemon.details;
+					if (pokemon.ability === 'Illusion' && (pokemon.name.startsWith("\"") ||
+						pokemon.name.startsWith("'") && (pokemon.name.endsWith("\"") || pokemon.name.endsWith("'")))) {
+						const mimicSpecies = this.dex.species.get(pokemon.name.slice(1, -1));
+						if (mimicSpecies) {
+							// , M or , F (not included if Genderless, right after Level)
+							// full examples: "Deoxys-Speed" && "Sawsbuck, L50, F, shiny"
+							let gender = mimicSpecies.gender as string; // M = Male, F = Female, N = Neutral, "" = Random
+							if (pokemon.species.gender !== mimicSpecies.gender && mimicSpecies.gender === "") {
+								gender = Math.floor(Math.random() * 101) > mimicSpecies.genderRatio.M ? 'F' : 'M';
+								// Female if above male%, otherwise male.
+
+								// Level flag is optional, so we construct from scratch.
+								details = `${mimicSpecies.name}` + (pokemon.level === 100 ? `` : `, L${pokemon.level}`) + `, ${gender}`;
+								// Shiny is regexxed out, so we ignore adding it.
+							} else {
+								details = details.replace(pokemon.species.name, mimicSpecies.name);
+							}
+						}
+					}
+					details = details.replace(', shiny', '')
+						.replace(/(Zacian|Zamazenta)(?!-Crowned)/g, '$1-*');
+					if (!this.ruleTable.has('speciesrevealclause')) {
+						details = details
+							.replace(/(Greninja|Gourgeist|Pumpkaboo|Xerneas|Silvally|Urshifu|Dudunsparce)(-[a-zA-Z?-]+)?/g, '$1-*');
+					}
+					this.add('poke', pokemon.side.id, details, '');
+				}
+			}
+
+			// Default implementation, not altering.
+			if (this.ruleTable.has(`teratypepreview`)) {
+				for (const side of this.sides) {
+					let buf = ``;
+					for (const pokemon of side.pokemon) {
+						buf += buf ? ` / ` : `raw|${side.name}'s Tera Types:<br />`;
+						buf += `<psicon pokemon="${pokemon.species.id}" /><psicon type="${pokemon.teraType}" />`;
+					}
+					this.add(`${buf}`);
+				}
+			}
+			this.makeRequest('teampreview');
+		},
+	},
 	// Rulesets
 	///////////////////////////////////////////////////////////////////
 	standardag: {
