@@ -4,6 +4,14 @@ import type { Learnset } from "../sim/dex-species";
 
 // The list of formats is stored in config/formats.js
 export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
+	// Optionally isables hardcoded behaviour to use cross-species nicknames,
+	// whilst leaving the intended behaviour for NicknameClause intact.
+	enablecrossspeciesnicknames: {
+		effectType: 'ValidatorRule',
+		name: 'Enable Cross-Species Nicknames',
+		desc: 'Enables the user to nickname their Pokémon like other species',
+	},
+
 	// Rulesets
 	///////////////////////////////////////////////////////////////////
 	standardag: {
