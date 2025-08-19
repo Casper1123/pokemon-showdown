@@ -67,8 +67,8 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "boldore", "diamondstorm");
 	setMove(data, modPatch, "boldore", "shoreup");
 	setMove(data, modPatch, "boldore", "trickroom");
-	setMove(data, modPatch, "coballion", "secretsword");
-	setMove(data, modPatch, "coballion", "nastyplot");
+	setMove(data, modPatch, "cobalion", "secretsword");
+	setMove(data, modPatch, "cobalion", "nastyplot");
 	setMove(data, modPatch, "virizion", "secretsword");
 	setMove(data, modPatch, "virizion", "nastyplot");
 	setMove(data, modPatch, "terrakion", "accelerock");

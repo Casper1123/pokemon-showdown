@@ -86,7 +86,7 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		baseStats: { hp: 85, atk: 135, def: 130, spa: 60, spd: 100, spe: 25 },
 	},
-	coballion: {
+	cobalion: {
 		inherit: true,
 		abilities: { 0: "Justified", 1: "Competitive" },
 		baseStats: { hp: 91, atk: 90, def: 129, spa: 110, spd: 72, spe: 108 },
