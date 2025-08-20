@@ -10,15 +10,15 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 	// whilst leaving the intended behaviour for NicknameClause intact.
 	enablecrossspeciesnicknames: {
 		effectType: 'ValidatorRule',
-		name: 'Enable Cross-Species Nicknames',
+		name: 'Enable CrossSpecies Nicknames',
 		desc: 'Enables the user to nickname their Pokémon like other species',
 	},
-	removenicknamecharactermax: {
+	removenicknamecharacterlimit: {
 		effectType: "ValidatorRule",
 		name: 'Remove Nickname Characterlimit',
 		desc: 'Removes the character limit on nicknames to allow for a custom validator overwrite. Note: default max is 18 chars.',
 	},
-	illusionnicknames: {
+	illusorynicknames: {
 		ruleset: ['Enable Cross-Species Nicknames', 'Remove Nickname Characterlimit', 'Team Preview'],
 		effectType: 'ValidatorRule',
 		name: 'Illusory Nicknames',
