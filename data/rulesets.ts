@@ -21,7 +21,7 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 	illusionnicknames: {
 		ruleset: ['Enable Cross-Species Nicknames', 'Remove Nickname Characterlimit', 'Team Preview'],
 		effectType: 'ValidatorRule',
-		name: 'Illusory Nicknames.',
+		name: 'Illusory Nicknames',
 		desc: 'Alters Pokémon with the Illusion ability.',
 		onValidateTeam(team, format, teamHas) {
 			const problems: string[] = [];

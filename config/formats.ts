@@ -34,6 +34,14 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		],
 		unbanlist: [],
 	},
+	{
+		name: "[Gen 9] Testing Grounds",
+		desc: "A testing ground for changes to be made to other formats.",
+		mod: 'gen9custom',
+		ruleset: ['Standard NatDex', 'gen9custom UbersAg', 'gen9custom megaray', 'Terastal Clause', 'Illusory Nicknames'],
+		banlist: [],
+		unbanlist: [],
+	},
 	// National Dex
 	///////////////////////////////////////////////////////////////////
 	{
