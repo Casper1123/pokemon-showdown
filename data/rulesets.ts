@@ -31,7 +31,6 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 			}
 
 			for (const set of team) {
-				const nameSpecies = this.dex.species.get(set.name);
 				const setSpecies = this.dex.species.get(set.species);
 				// I want more freedom over the nickname length in this function, so we're disabling the vanilla
 				// length limit implementation and copy-pasting the result here.
@@ -49,7 +48,7 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 					continue; // Done checking for this set.
 				}
 				// Targeted naming structure: \"previewSpecies\". " can be ' too.
-				if (!((set.name.startsWith("\"") || set.name.startsWith("'") && (set.name.endsWith("\"") || set.name.endsWith("'"))))) {
+				if (!((set.name.startsWith("\"") || set.name.startsWith("'")) && (set.name.endsWith("\"") || set.name.endsWith("'")))) {
 					// Suggest the user to name the pokémon properly, unless the gender isn't random (as this is an active decision that doesn't remove Rivalry tech).
 					// FIXME: Does not handle custom ungendered ("N") properly, and they cannot have their gender be set. The same goes for statically gendered pokémon like Salazzle.
 					if (set.gender === "") {
@@ -63,7 +62,7 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 					problems.push(`${set.name} is not trying to mimic anything.`);
 				}
 				const mimicSpecies = this.dex.species.get(mimicSpeciesName);
-				if (!mimicSpecies) {
+				if (mimicSpecies.name === null || mimicSpecies.name === undefined) {
 					problems.push(`The mimic target for ${set.name} is not a pokémon in this format and cannot be mimicked.`);
 				}
 
