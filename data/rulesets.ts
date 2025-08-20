@@ -37,9 +37,17 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 				// length limit implementation and copy-pasting the result here.
 				if (set.name.length > 18) { problems.push(`Nickname "${set.name}" too long (should be 18 characters or fewer)`); }
 				if (set.ability !== 'Illusion') {
-					if (nameSpecies.name !== species.name &&
-						nameSpecies.name !== species.baseSpecies && ruleTable.has('nicknameclause')) {
-						problems.push(`${set.name} must not be nicknamed a different Pokémon species than what it actually is.`);
+					const nameSpecies = this.dex.species.get(set.name);
+					if (nameSpecies.exists && nameSpecies.name.toLowerCase() === set.name.toLowerCase()) {
+						// nickname is the name of a species
+						if (nameSpecies.baseSpecies === setSpecies.baseSpecies) {
+							set.name = setSpecies.baseSpecies;
+						} else if (nameSpecies.name !== setSpecies.name &&
+							nameSpecies.name !== setSpecies.baseSpecies && this.ruleTable.has('nicknameclause')) {
+							// nickname species doesn't match actual species
+							// Nickname Clause
+							problems.push(`${set.name} must not be nicknamed a different Pokémon species than what it actually is.`);
+						}
 					}
 					continue; // Done checking for this set.
 				}
