@@ -19,6 +19,10 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		abilities: { 0: "Teravolt" },
 		baseStats: { hp: 100, atk: 75, def: 110, spa: 165, spd: 115, spe: 45 },
 	},
+	jumpluff: {
+		inherit: true,
+		abilities: { 0: "Chlorophyll", 1: "Huge Power", H: "Infiltrator" },
+	},
 	// endregion
 	// region: Gen3
 	absolmega: {
@@ -95,6 +99,14 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Justified", 1: "Competitive" },
 		baseStats: { hp: 91, atk: 90, def: 72, spa: 110, spd: 129, spe: 108 },
+	},
+	zoroark: {
+		inherit: true,
+		baseStats: { hp: 60, atk: 105, def: 60, spa: 125, spd: 60, spe: 110 },
+	},
+	zoroarkhisui: {
+		inherit: true,
+		baseStats: { hp: 60, atk: 105, def: 60, spa: 125, spd: 60, spe: 110 },
 	},
 	// endregion
 	// region: Gen6

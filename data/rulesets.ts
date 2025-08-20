@@ -39,13 +39,10 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 				if (set.ability !== 'Illusion') {
 					const nameSpecies = this.dex.species.get(set.name);
 					if (nameSpecies.exists && nameSpecies.name.toLowerCase() === set.name.toLowerCase()) {
-						// nickname is the name of a species
 						if (nameSpecies.baseSpecies === setSpecies.baseSpecies) {
 							set.name = setSpecies.baseSpecies;
 						} else if (nameSpecies.name !== setSpecies.name &&
 							nameSpecies.name !== setSpecies.baseSpecies && this.ruleTable.has('nicknameclause')) {
-							// nickname species doesn't match actual species
-							// Nickname Clause
 							problems.push(`${set.name} must not be nicknamed a different Pokémon species than what it actually is.`);
 						}
 					}
@@ -95,6 +92,7 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 						problems.push(`You cannot mimic ${mimicSpeciesName} because a mon of that species is already on the team.`);
 					}
 				}
+				console.log(`${set.species} named ${set.name} is mimicking '${mimicSpecies.name}'`);
 			}
 			return problems;
 		},
@@ -103,9 +101,10 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 			for (const side of this.sides) {
 				for (const pokemon of side.pokemon) {
 					let details = pokemon.details;
-					if (pokemon.ability === 'Illusion' && (pokemon.name.startsWith("\"") ||
-						pokemon.name.startsWith("'") && (pokemon.name.endsWith("\"") || pokemon.name.endsWith("'")))) {
+					console.log(details, "Ability:", pokemon.ability);
+					if (pokemon.ability === 'illusion' && (pokemon.name.startsWith("\"") || pokemon.name.startsWith("'")) && (pokemon.name.endsWith("\"") || pokemon.name.endsWith("'"))) {
 						const mimicSpecies = this.dex.species.get(pokemon.name.slice(1, -1));
+						console.log(mimicSpecies.name, "from", pokemon.name.slice(1, -1));
 						if (mimicSpecies) {
 							// , M or , F (not included if Genderless, right after Level)
 							// full examples: "Deoxys-Speed" && "Sawsbuck, L50, F, shiny"
@@ -128,6 +127,7 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 						details = details
 							.replace(/(Greninja|Gourgeist|Pumpkaboo|Xerneas|Silvally|Urshifu|Dudunsparce)(-[a-zA-Z?-]+)?/g, '$1-*');
 					}
+					console.log(`Adding details to team preview: ${details}`);
 					this.add('poke', pokemon.side.id, details, '');
 				}
 			}
@@ -145,6 +145,7 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 			}
 			this.makeRequest('teampreview');
 		},
+		// Todo: overwrite team-preview data based on broken illusions.
 	},
 	// Rulesets
 	///////////////////////////////////////////////////////////////////
@@ -775,6 +776,8 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 			}
 		},
 		onTeamPreview() {
+			if (this.ruleTable.has('illusorynicknames')) { return; }
+
 			this.add('clearpoke');
 			for (const pokemon of this.getAllPokemon()) {
 				let details = pokemon.details.replace(', shiny', '')

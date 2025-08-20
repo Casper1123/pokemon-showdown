@@ -30,6 +30,8 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "ampharos", "tailglow");
 	setMove(data, modPatch, "ampharos", "thunderclap");
 	setMove(data, modPatch, "ampharos", "paraboliccharge");
+	setMove(data, modPatch, "jumpluff", "trailblaze");
+	setMove(data, modPatch, "jumpluff", "floatyfall");
 	// Gen3
 	setMove(data, modPatch, "absol", "lightofruin");
 	setMove(data, modPatch, "absol", "spiritbreak");

@@ -100,6 +100,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Terrakion`: New Moves: Accelerock. <BR>
 `Coballion`: Stats: `hp: 91, atk: 90, def: 129, spa: 110, spd: 72, spe: 108`. Abilities: Justified, Competitive. New Moves: Secret Sword, Nasty Plot. <BR>
 `Virizion`: Stats: `hp: 91, atk: 90, def: 72, spa: 110, spd: 129, spe: 108`. Abilities: Justified, Competitive. New Moves: Secret Sword, Nasty Plot. <BR>
+`Zoroark (both formes)`: Stats: `hp: 60, atk: 105, def: 60, spa: 125, spd: 60, spe: 110`. <BR>
 ## Gen 6
 ## Gen 7
 `Golisopod`: Abilities: Emergency Exit, Battle Armor. <BR>
