@@ -9,5 +9,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				}
 			}
 		},
+		desc: "This Pokemon's Ground/Rock/Steel attacks do 1.5x in Sandstorm; immunity to it.",
+		shortDesc: "Powers up a Pokemon's Ground, Rock & Steel attacks in Sand.",
 	},
 };
