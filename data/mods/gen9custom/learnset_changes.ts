@@ -13,15 +13,18 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	// Add Hidden Power to all Pokémon introduced after gen7, because the move was dexited in gen8. Might be risky with Regieleki :/
 	const dex = Dex.mod('gen9custom');
 	for (const species of dex.species.all()) {
+		// Hidden power for everyone gen8+
 		if (species.gen >= 8) {
 			const id = species.id;
 			if (!data.data.Learnsets[id]) {
 				continue;
 			} else if (!data.data.Learnsets[id].learnset) {
 				data.data.Learnsets[id].learnset = {};
-			} // else if (data.data.Learnsets[id].learnset.hiddenpower) continue; // Do not alter if it's already there. It shouldn't be, but you know it might just be.
+			}
 			setMove(data, modPatch, id, "hiddenpower");
 		}
+		// todo: protect for everyone
+		// todo: tera blast for everyone
 	}
 
 	// Gen1
