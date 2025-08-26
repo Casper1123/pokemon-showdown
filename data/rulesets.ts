@@ -141,6 +141,8 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 			this.makeRequest('teampreview');
 		},
 		// Todo: overwrite team-preview data based on broken illusions.
+		// Todo: compatibility with open team sheets.
+		// Todo: make work with terastal preview
 	},
 	// Rulesets
 	///////////////////////////////////////////////////////////////////
