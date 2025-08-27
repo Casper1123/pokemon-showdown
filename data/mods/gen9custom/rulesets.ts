@@ -11,7 +11,7 @@ function isAgSet(dex: ModdedDex, set: PokemonSet): boolean {
 
 	if (megaAgCombos.has(itemId)) return true;
 
-	return species.natDexTier === 'AG';
+	return species.tier === 'AG';
 }
 
 function isUberSet(dex: ModdedDex, set: PokemonSet): boolean {
@@ -48,7 +48,7 @@ function isUberSet(dex: ModdedDex, set: PokemonSet): boolean {
 		return true;
 	}
 
-	return species.natDexTier === 'Uber';
+	return species.tier === 'Uber';
 }
 
 // The list of formats is stored in config/formats.js
