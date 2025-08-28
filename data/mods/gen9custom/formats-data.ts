@@ -2779,8 +2779,3 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 	},
 	// endregion
 };
-
-// example:
-// scizor: {
-// 		tier: "Uber",
-// 	},
