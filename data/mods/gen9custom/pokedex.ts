@@ -23,6 +23,14 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Chlorophyll", 1: "Huge Power", H: "Infiltrator" },
 	},
+	typhlosion: {
+		inherit: true,
+		abilities: { 0: "Blaze", 1: "Flash Fire", H: "Drought" },
+	},
+	typhlosionhisui: {
+		inherit: true,
+		abilities: { 0: "Blaze", 1: "Frisk", H: "Adaptability" },
+	},
 	// endregion
 	// region: Gen3
 	absolmega: {
@@ -36,6 +44,7 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	aggron: {
 		inherit: true,
 		baseStats: { hp: 80, atk: 110, def: 180, spa: 60, spd: 80, spe: 50 },
+		abilities: { 0: "Sturdy", 1: "Rock Head", H: "Sand Force" },
 	},
 	aggronmega: {
 		inherit: true,
@@ -44,6 +53,15 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	sceptile: {
 		inherit: true,
 		types: ["Grass", "Dragon"],
+	},
+	deoxysdefense: {
+		inherit: true,
+		abilities: { 0: "Pressure", 1: "Unaware", H: "Regenerator" },
+		baseStats: { hp: 70, atk: 60, def: 160, spa: 60, spd: 160, spe: 90 },
+	},
+	metagross: {
+		inherit: true,
+		abilities: { 0: "Clear Body", 1: "Light Metal", H: "Full Metal Body" },
 	},
 	// endregion
 	// region: Gen4
@@ -70,6 +88,10 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		types: ["Grass", "Fairy"],
 		baseStats: { hp: 100, atk: 70, def: 110, spa: 110, spd: 110, spe: 100 },
 		abilities: { 0: "Natural Cure", 1: "Overgrow", H: "Regenerator" },
+	},
+	glaceon: {
+		inherit: true,
+		abilities: { 0: "Snow Cloak", 1: "Snow Warning", H: "Ice Body" },
 	},
 	// endregion
 	// region: Gen5
@@ -108,6 +130,35 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		baseStats: { hp: 60, atk: 105, def: 60, spa: 125, spd: 60, spe: 110 },
 	},
+	swanna: {
+		inherit: true,
+		baseStats: { hp: 80, atk: 100, def: 70, spa: 87, spd: 63, spe: 98 },
+		abilities: { 0: "Drizzle", 1: "Big Pecks", H: "Hydration" },
+	},
+	escavalier: {
+		inherit: true,
+		abilities: { 0: "Sand Force", 1: "Shell Armor", H: "Overcoat" },
+	},
+	samurott: {
+		inherit: true,
+		types: ["Water", "Fighting"],
+		abilities: { 0: "Torrent", 1: "Inner Focus", H: "Shell Armor" },
+		baseStats: { hp: 95, atk: 110, def: 85, spa: 118, spd: 70, spe: 70 },
+	},
+	reuniclus: {
+		inherit: true,
+		baseStats: { hp: 110, atk: 65, def: 85, spa: 125, spd: 95, spe: 30 },
+	},
+	krookodile: {
+		inherit: true,
+		abilities: { 0: "Intimidate", 1: "Moxie", H: "Sand Force" },
+		baseStats: { hp: 95, atk: 130, def: 90, spa: 65, spd: 75, spe: 92 },
+	},
+	cofagrigus: {
+		inherit: true,
+		abilities: { 0: "Mummy", H: "Cursed Body" },
+		baseStats: { hp: 58, atk: 50, def: 145, spa: 95, spd: 125, spe: 30 },
+	},
 	// endregion
 	// region: Gen6
 	// endregion
@@ -116,8 +167,21 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Emergency Exit", H: "Battle Armor" },
 	},
+	nihilego: {
+		inherit: true,
+		abilities: { 0: "Beast Boost", H: "Levitate" },
+	},
+	necrozma: {
+		inherit: true,
+		types: ["Psychic", "Dark"],
+		baseStats: { hp: 97, atk: 117, def: 101, spa: 127, spd: 79, spe: 79 },
+	},
 	// endregion
 	// region: Gen8
+	copperajah: {
+		inherit: true,
+		abilities: { 0: "Sheer Force", 1: "Sand Force", H: "Heavy Metal" },
+	},
 	// endregion
 	// region: Gen9
 	// endregion

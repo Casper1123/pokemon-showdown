@@ -35,6 +35,7 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "ampharos", "paraboliccharge");
 	setMove(data, modPatch, "jumpluff", "trailblaze");
 	setMove(data, modPatch, "jumpluff", "floatyfall");
+	setMove(data, modPatch, "typhlosion", "earthpower");
 	// Gen3
 	setMove(data, modPatch, "absol", "lightofruin");
 	setMove(data, modPatch, "absol", "spiritbreak");
@@ -48,6 +49,9 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "sceptile", "dracometeor");
 	setMove(data, modPatch, "sceptile", "chloroblast");
 	setMove(data, modPatch, "sceptile", "nastyplot");
+	setMove(data, modPatch, "deoxys", "bodypress");
+	setMove(data, modPatch, "deoxysdefense", "bodypress");
+	setMove(data, modPatch, "metagross", "swordsdance");
 	// Gen4
 	setMove(data, modPatch, "hippowdon", "spikes");
 	setMove(data, modPatch, "hippowdon", "knockoff");
@@ -57,7 +61,7 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "shaymin", "sparklyswirl");
 	setMove(data, modPatch, "shaymin", "lightofruin");
 	setMove(data, modPatch, "shaymin", "floralhealing");
-
+	setMove(data, modPatch, "glaceon", "glaciate");
 	// Gen5
 	setMove(data, modPatch, "serperior", "mudshot");
 	setMove(data, modPatch, "conkeldurr", "steamroller");
@@ -77,8 +81,20 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "virizion", "secretsword");
 	setMove(data, modPatch, "virizion", "nastyplot");
 	setMove(data, modPatch, "terrakion", "accelerock");
+	setMove(data, modPatch, "swanna", "wavecrash");
+	setMove(data, modPatch, "samurott", "shellsmash");
+	setMove(data, modPatch, "samurott", "sacredsword");
+	setMove(data, modPatch, "samurott", "secretsword");
+	setMove(data, modPatch, "samurott", "closecombat");
+	setMove(data, modPatch, "samurott", "wavecrash");
+	setMove(data, modPatch, "reuniclus", "teleport");
+	setMove(data, modPatch, "reuniclus", "aurasphere");
+	setMove(data, modPatch, "reuniclus", "vacuumwave");
+	setMove(data, modPatch, "krookodile", "swordsdance");
+	setMove(data, modPatch, "cofagrigus", "strengthsap")
 	// Gen6
 	// Gen7
+	setMove(data, modPatch, "necrozma", "neutronray"); // Custom signature move. ensure not usable by merged forms.
 	// Gen8
 	// Gen9
 }

@@ -59,6 +59,25 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		basePower: 60,
 		pp: 5,
 	},
+	razorshell: {
+		inherit: true,
+		basePower: 85,
+	},
+	powergem: {
+		inherit: true,
+		basePower: 90,
+		pp: 10,
+		secondary: {
+			chance: 20,
+			self: {
+				boosts: {
+					spa: 1,
+				},
+			},
+		},
+		desc: "20% chance to boost SpA +1",
+		shortDesc: "20% chance to boost SpA +1",
+	},
 
 	// Custom moves:
 	desertsong: {
@@ -85,5 +104,47 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		desc: "Sets Sandstorm weather effect on hit.",
 		shortDesc: "Sets Sandstorm on hit.",
 		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
+	},
+	neutronray: {
+		num: -5,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Neutron Ray",
+		pp: 5,
+		priority: 0,
+		flags: { protect: 1, mirror: 1 },
+		onModifyMove(move, pokemon) {
+			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
+		},
+		secondary: {
+			chance: 30,
+			onHit(target, source) {
+				// Ability Suppress, Par, Drowsy, Confusion, Flinch
+				const result = this.random(5);
+				switch (result) {
+				case 0:
+					target.trySetStatus('gastroacid', source);
+					break;
+				case 1:
+					target.trySetStatus('par', source);
+					break;
+				case 2:
+					target.trySetStatus('yawn', source);
+					break;
+				case 3:
+					target.trySetStatus('confusion', source);
+					break;
+				case 4:
+					target.trySetStatus('flinch', source);
+					break;
+				default:
+					break;
+				}
+			},
+		},
+		target: "normal",
+		type: "Dark",
+		contestType: "Cool",
 	},
 };
