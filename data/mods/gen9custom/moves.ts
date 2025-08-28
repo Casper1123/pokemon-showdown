@@ -78,6 +78,11 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		desc: "20% chance to boost SpA +1",
 		shortDesc: "20% chance to boost SpA +1",
 	},
+	snowscape: {
+		inherit: true,
+		desc: "Sets snow for 5 turns. Ice: 1.5x Def, 1.2x Ice-STAB, 0.8x/1.2x spe (based on Trick Room).",
+		shortDesc: "Sets snow for 5 turns. Ice: 1.5x Def, 1.2x Ice-STAB, 0.8x/1.2x spe (based on Trick Room).",
+	},
 
 	// Custom moves:
 	desertsong: {
