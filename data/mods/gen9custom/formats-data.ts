@@ -762,7 +762,7 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 		tier: "UU",
 	},
 	tyranitarmega: {
-		tier: "UU",
+		tier: "UUBL",
 	},
 	lugia: {
 		tier: "Uber",
@@ -1643,6 +1643,9 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 	eelektross: {
 		tier: "RU",
 	},
+	elygem: {
+		tier: "LC",
+	},
 	beheeyem: {
 		tier: "RU",
 	},
@@ -1780,6 +1783,9 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 	greninja: {
 		tier: "UUBL",
 	},
+	greninjaash: {
+		tier: "UUBL",
+	},
 	bunnelby: {
 		tier: "LC",
 	},
@@ -1790,6 +1796,12 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 		tier: "RU",
 	},
 	vivillon: {
+		tier: "RU",
+	},
+	vivillonpokeball: {
+		tier: "RU",
+	},
+	vivillonfancy: {
 		tier: "RU",
 	},
 	pyroar: {
@@ -1891,7 +1903,25 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 	pumpkaboo: {
 		tier: "LC",
 	},
+	pumpkaboosmall: {
+		tier: "LC",
+	},
+	pumpkaboolarge: {
+		tier: "LC",
+	},
+	pumpkaboosuper: {
+		tier: "LC",
+	},
 	gourgeist: {
+		tier: "RU",
+	},
+	gourgeistsmall: {
+		tier: "RU",
+	},
+	gourgeistlarge: {
+		tier: "RU",
+	},
+	gourgeistsuper: {
 		tier: "RU",
 	},
 	avalugg: {
@@ -2358,6 +2388,9 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 	polteageist: {
 		tier: "RU",
 	},
+	polteageistantique: {
+		tier: "RU",
+	},
 	hatterene: {
 		tier: "OU",
 	},
@@ -2718,7 +2751,7 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 		tier: "UUBL",
 	},
 	archaludon: {
-		tier: "RU",
+		tier: "RUBL",
 	},
 	hydrapple: {
 		tier: "UU",
@@ -2739,7 +2772,7 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 		tier: "OU",
 	},
 	terapagosstellar: {
-		tier: "Uber",
+		tier: "OU",
 	},
 	pecharunt: {
 		tier: "RUBL",
