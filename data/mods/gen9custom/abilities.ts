@@ -16,6 +16,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	// Custom
 	chronaldistortions: {
 		name: "Chronal Distortions",
+		desc: "While on the field, attacking moves hit for .8x damage first, and again for .4x damage in 2 turns. This second attack cannot alter the any ally stats.",
+		shortDesc: "While on the field, attacking moves hit for .8x damage first, and again for .4x damage in 2 turns. This second attack cannot alter the any ally stats.",
 		onStart(source) {
 			this.field.addPseudoWeather('chronaldistortions', source);
 		},
