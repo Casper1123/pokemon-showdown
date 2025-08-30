@@ -29,4 +29,106 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 			}
 		},
 	},
+
+	// Custom
+	distortedmove: {
+		name: 'Distorted Move',
+		onStart(target, source, sourceEffect) {
+			if (!this.effectState.moves) {
+				this.effectState.moves = [];
+			}
+		},
+		onRestart(target, source, sourceEffect) {
+			return true;
+		},
+		onResidualOrder: 3,
+		onResidual(target) {
+			if (!this.effectState.moves || this.effectState.moves.length === 0) {
+				target.side.removeSlotCondition(target, 'distortedmove');
+				return;
+			}
+
+			// @ts-expect-error
+			const readyMoves = this.effectState.moves.filter(moveData => {
+				try {
+					moveData.duration--;
+					return moveData.duration <= 0;
+				} catch (e) {
+					console.debug(e, "during distortedmove readymoves filtering");
+					return false;
+				}
+			});
+
+			// @ts-expect-error
+			this.effectState.moves = this.effectState.moves.filter(moveData => moveData.duration > 0);
+
+			for (const moveData of readyMoves) {
+				this.add('-end', target, 'Future Move Multiple', '[silent]');
+
+				let actualTarget = target;
+				if (target.fainted) {
+					const adjacentTargets = target.adjacentFoes().filter(pokemon => !pokemon.fainted);
+					const aliveTargets = target.foes().filter(pokemon => !pokemon.fainted);
+					if (adjacentTargets.length > 0) {
+						actualTarget = this.sample(adjacentTargets);
+					} else if (aliveTargets.length > 0) {
+						actualTarget = this.sample(aliveTargets);
+					} else {
+						this.add('-message', `A fragment of a ${moveData.name} from the past disintegrates in the distance.`);
+						continue;
+					}
+				}
+				this.add('-message', `A fragment of a ${moveData.name} from the past hits ${actualTarget.name}!`);
+				const move = this.dex.getActiveMove(moveData.move);
+				this.actions.tryMoveHit(actualTarget, moveData.source, move);
+			}
+
+			// Remove condition if empty.
+			if (this.effectState.moves.length === 0) {
+				target.side.removeSlotCondition(target, 'distortedmove');
+			}
+		},
+	},
+	chronaldistortions: {
+		name: 'Chronal Distortions',
+		onFieldStart(target, source) {
+			this.add('-fieldstart', 'Chronal Distortions', `[of] ${source}`);
+			this.add('-message', `${source.name} distorts the flow of time on the battlefield!`);
+		},
+		onBasePowerPriority: 8,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.category !== 'Status' && move.id !== 'fakeout') {
+				return this.chainModify(0.8);
+			}
+		},
+		onAfterMove(source, target, move) {
+			if (move.category === 'Status' || move.id === 'fakeout' || !target) return;
+
+			if (!target.side.addSlotCondition(target, 'distortedmove')) {
+				target.side.addSlotCondition(target, 'distortedmove');
+			}
+
+			const slotCondition = target.side.slotConditions[target.position]['distortedmove'];
+			if (!slotCondition.moves) {
+				slotCondition.moves = [];
+			}
+
+			slotCondition.moves.push({
+				duration: 3,
+				move: move.id,
+				source,
+				moveData: {
+					...move,
+					basePower: Math.floor(move.basePower * 0.4),
+					selfBoost: null,
+				},
+			});
+
+			this.add('-start', source, `move: ${move.name}`, '[future]');
+		},
+		onFieldEnd() {
+			this.add('-fieldend', 'Chronal Distortions');
+			this.add('-message', 'The flow of time returns to normal.');
+		},
+	},
 };
