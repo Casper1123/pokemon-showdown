@@ -54,7 +54,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 					moveData.duration--;
 					return moveData.duration <= 0;
 				} catch (e) {
-					console.debug(e, "during distortedmove readymoves filtering");
+					console.debug(e, "during distorted move readymoves filtering");
 					return false;
 				}
 			});
@@ -74,13 +74,17 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 					} else if (aliveTargets.length > 0) {
 						actualTarget = this.sample(aliveTargets);
 					} else {
-						this.add('-message', `A fragment of a ${moveData.name} from the past disintegrates in the distance.`);
+						this.add('-message', `A fragment of a ${moveData.moveData.name} from the past disintegrates in the distance.`);
 						continue;
 					}
 				}
-				this.add('-message', `A fragment of a ${moveData.name} from the past hits ${actualTarget.name}!`);
-				const move = this.dex.getActiveMove(moveData.move);
-				this.actions.tryMoveHit(actualTarget, moveData.source, move);
+				this.add('-message', `A fragment of a ${moveData.moveData.name} from the past hits ${actualTarget.name}!`);
+				try {
+					this.actions.tryMoveHit(actualTarget, moveData.source, moveData.moveData as ActiveMove);
+				} catch (e) {
+					console.debug(e, "in move execution.");
+					this.add('-message', `A fragment of a ${moveData.moveData.name} from the past.. fizzles due to an internal server error! THE HORROR!`);
+				}
 			}
 
 			// Remove condition if empty.
