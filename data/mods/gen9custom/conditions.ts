@@ -101,12 +101,12 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 		},
 		onBasePowerPriority: 8,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.category !== 'Status' && move.id !== 'fakeout') {
+			if (move.category !== 'Status' && move.id !== 'fakeout' && move.id !== 'futuresight' && move.id !== 'doomdesire') {
 				return this.chainModify(0.8);
 			}
 		},
 		onAfterMove(source, target, move) {
-			if (move.category === 'Status' || move.id === 'fakeout' || !target) return;
+			if (move.category === 'Status' || move.id === 'fakeout' || move.id === 'futuresight' || move.id === 'doomdesire' || !target) return;
 
 			if (!target.side.addSlotCondition(target, 'distortedmove')) {
 				target.side.addSlotCondition(target, 'distortedmove');
