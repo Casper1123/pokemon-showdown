@@ -62,7 +62,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 			// @ts-expect-error
 			this.effectState.moves = this.effectState.moves.filter(moveData => moveData.duration > 0);
 
-			for (const moveData of readyMoves) {
+			for (const distortion of readyMoves) {
 				this.add('-end', target, 'Future Move Multiple', '[silent]');
 
 				let actualTarget = target;
@@ -74,16 +74,16 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 					} else if (aliveTargets.length > 0) {
 						actualTarget = this.sample(aliveTargets);
 					} else {
-						this.add('-message', `A fragment of a ${moveData.moveData.name} from the past disintegrates in the distance.`);
+						this.add('-message', `A fragment of a ${distortion.moveData.name} from the past disintegrates in the distance.`);
 						continue;
 					}
 				}
-				this.add('-message', `A fragment of a ${moveData.moveData.name} from the past hits ${actualTarget.name}!`);
+				this.add('-message', `A fragment of a ${distortion.moveData.name} from the past hits ${actualTarget.name}!`);
 				try {
-					this.actions.tryMoveHit(actualTarget, moveData.source, moveData.moveData as ActiveMove);
+					this.actions.tryMoveHit(actualTarget, distortion.source, distortion.moveData as ActiveMove);
 				} catch (e) {
 					console.debug(e, "in move execution.");
-					this.add('-message', `A fragment of a ${moveData.moveData.name} from the past.. fizzles due to an internal server error! THE HORROR!`);
+					this.add('-message', `A fragment of a ${distortion.moveData.name} from the past.. fizzles due to an internal server error! THE HORROR!`);
 				}
 			}
 
