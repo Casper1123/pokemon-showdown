@@ -91,7 +91,7 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "reuniclus", "aurasphere");
 	setMove(data, modPatch, "reuniclus", "vacuumwave");
 	setMove(data, modPatch, "krookodile", "swordsdance");
-	setMove(data, modPatch, "cofagrigus", "strengthsap")
+	setMove(data, modPatch, "cofagrigus", "strengthsap");
 	// Gen6
 	// Gen7
 	setMove(data, modPatch, "necrozma", "neutronray"); // Custom signature move. ensure not usable by merged forms.
