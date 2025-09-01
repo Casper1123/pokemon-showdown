@@ -1,7 +1,7 @@
 'use strict';
 
-const assert = require('../../../../../test/assert');
-const common = require('../../../../../test/common');
+const assert = require('../../../test/assert');
+const common = require('../../../test/common');
 
 let battle;
 
@@ -133,7 +133,7 @@ describe('Chronal Distortions', () => {
 		const boostedDamage = [];
 		const unboostedDamage = [];
 
-		for (let i = 0; i < 10; i++) {
+		for (let i = 0; i < 100; i++) {
 			battle = common.mod('gen9custom').createBattle({ gameType: 'doubles' }, [[
 				{ species: 'ratata', ability: 'chronaldistortions', moves: ['tackle', 'bellydrum'] },
 				{ species: 'ratata', ability: 'chronaldistortions', moves: ['tackle'] },
@@ -198,6 +198,8 @@ describe('Chronal Distortions', () => {
 		assert(mainDamage_1 > mainDamage_2, 'belly drum main hit');
 		assert(secondaryDamage_1 > secondaryDamage_2, 'belly drum secondary hit');
 	});
+
+	it('Should not pass to see if it\'s being ran.', () => { assert(false, "Intentional."); assert(true, "Intentional."); });
 });
 
 // To test:
