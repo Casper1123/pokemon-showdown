@@ -63,7 +63,10 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 			this.effectState.moves = this.effectState.moves.filter(moveData => moveData.duration > 0);
 
 			for (const distortion of readyMoves) {
-				this.add('-end', target, `move: ${distortion.moveData.name}`, '[silent]');
+				// @ts-expect-error
+				if (this.effectState.moves.filter(moveData => moveData.moveData.name === distortion.name).length === 0) {
+					this.add('-end', target, `move: ${distortion.moveData.name}`, '[silent]');
+				}
 
 				let actualTarget = target;
 				if (target.fainted) {
