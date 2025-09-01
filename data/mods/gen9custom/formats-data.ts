@@ -2771,8 +2771,11 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 	terapagos: {
 		tier: "OU",
 	},
-	terapagosstellar: {
+	terapagosterastal: {
 		tier: "OU",
+	},
+	terapagosstellar: {
+		tier: "Uber",
 	},
 	pecharunt: {
 		tier: "RUBL",
