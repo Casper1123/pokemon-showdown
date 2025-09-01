@@ -63,7 +63,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 			this.effectState.moves = this.effectState.moves.filter(moveData => moveData.duration > 0);
 
 			for (const distortion of readyMoves) {
-				this.add('-end', target, 'Future Move Multiple', '[silent]');
+				this.add('-end', target, `move: ${distortion.moveData.name}`, '[silent]');
 
 				let actualTarget = target;
 				if (target.fainted) {
@@ -128,7 +128,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 				},
 			});
 
-			this.add('-start', source, `move: ${move.name}`, '[future]');
+			this.add('-start', target, `move: ${move.name}`, '[future]', '[silent]');
 			this.add('-message', `${source.name}'s ${move.name} is scattered through time.`);
 		},
 		onFieldEnd() {
