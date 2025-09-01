@@ -185,4 +185,8 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	// endregion
 	// region: Gen9
 	// endregion
+	dialga: {
+		inherit: true,
+		abilities: { 0: "Pressure", 1: "Telepathy", H: "Chronal Distortions" },
+	},
 };
