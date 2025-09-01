@@ -1130,13 +1130,13 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 		tier: "Uber",
 	},
 	kyogreprimal: {
-		tier: "AG",
+		tier: "Uber",
 	},
 	groudon: {
 		tier: "Uber",
 	},
 	groudonprimal: {
-		tier: "AG",
+		tier: "Uber",
 	},
 	rayquaza: {
 		tier: "Uber",
