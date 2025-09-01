@@ -155,5 +155,32 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		target: "normal",
 		type: "Dark",
 		contestType: "Cool",
+		desc: "Phys if Atk > SpA. 30% chance to: Suppress Ability, Paralyze, Drowsy, Confusion or Flinch.",
+		shortDesc: "Phys if Atk > SpA. 30% chance to: Suppress Ability, Paralyze, Drowsy, Confusion or Flinch.",
+	},
+	shadowflame: {
+		num: -6,
+		accuracy: 100,
+		basePower: 90,
+		type: "Ghost",
+		category: "Special",
+		name: "Shadowflame",
+		desc: "30% chance to burn.",
+		shortDesc: "30% chance to burn.",
+		target: "normal",
+		pp: 15,
+		priority: 0,
+		flags: { protect: 1, mirror: 1 },
+		onTryMove() {
+			this.attrLastMove('[still]');
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Shadow Ball', target);
+			this.add('-anim', source, 'Will-O-Wisp', target);
+		},
+		secondary: {
+			chance: 30,
+			status: 'brn',
+		},
 	},
 };
