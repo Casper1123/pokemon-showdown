@@ -98,8 +98,9 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 	},
 	chronaldistortions: {
 		name: 'Chronal Distortions',
+		duration: 0,
 		onFieldStart(target, source) {
-			this.add('-fieldstart', 'Chronal Distortions', `[of] ${source}`);
+			this.add('-fieldstart', 'Chronal Distortions', `[of] ${source}`, '[silent]');
 			this.add('-message', `${source.name} distorts the flow of time on the battlefield!`);
 		},
 		onBasePowerPriority: 8,
