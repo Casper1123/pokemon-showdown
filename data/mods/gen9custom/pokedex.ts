@@ -93,6 +93,10 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Snow Cloak", 1: "Snow Warning", H: "Ice Body" },
 	},
+	dialga: {
+		inherit: true,
+		abilities: { 0: "Pressure", 1: "Telepathy", H: "Chronal Distortions" },
+	},
 	// endregion
 	// region: Gen5
 	conkeldurr: {
@@ -185,8 +189,4 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	// endregion
 	// region: Gen9
 	// endregion
-	dialga: {
-		inherit: true,
-		abilities: { 0: "Pressure", 1: "Telepathy", H: "Chronal Distortions" },
-	},
 };
