@@ -129,6 +129,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 			});
 
 			this.add('-start', source, `move: ${move.name}`, '[future]');
+			this.add('-message', `${source.name}'s ${move.name} is scattered through time.`);
 		},
 		onFieldEnd() {
 			this.add('-fieldend', 'Chronal Distortions');
