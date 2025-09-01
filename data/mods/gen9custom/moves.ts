@@ -57,8 +57,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	sparklyswirl: {
 		inherit: true,
 		basePower: 60,
+		accuracy: 100,
 		pp: 5,
-		isNonStandard: undefined,
 		gen: 9,
 	},
 	razorshell: {
@@ -87,7 +87,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	lightofruin: {
 		inherit: true,
-		isNonstandard: undefined,
 		gen: 9,
 	},
 
