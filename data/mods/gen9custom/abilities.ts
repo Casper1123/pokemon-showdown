@@ -35,3 +35,4 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		},
 	},
 };
+// FIXME: Send data to client properly.
