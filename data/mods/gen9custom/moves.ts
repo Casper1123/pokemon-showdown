@@ -161,11 +161,18 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				}
 			},
 		},
+		onTryMove() {
+			this.attrLastMove('[still]');
+		},
+		onPrepareHit(target, source): {
+			this.add('-anim', source, 'Power Gem', target);
+			this.add('-anim', source, 'Power Gem', target);
+		},
 		target: "normal",
 		type: "Dark",
 		contestType: "Cool",
 		desc: "Phys if Atk > SpA. 30% chance to: Suppress Ability, Paralyze, Drowsy, Confusion or Flinch.",
-		shortDesc: "Phys if Atk > SpA. 30% chance to: Suppress Ability, Paralyze, Drowsy, Confusion or Flinch.",
+		shortDesc: "Phys if Atk > SpA. 30% to inflict a disruptive effect.",
 	},
 	shadowflame: {
 		num: -6,
@@ -179,6 +186,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		target: "normal",
 		pp: 15,
 		priority: 0,
+		gen: 9,
 		flags: { protect: 1, mirror: 1 },
 		onTryMove() {
 			this.attrLastMove('[still]');
