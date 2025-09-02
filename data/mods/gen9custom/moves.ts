@@ -161,6 +161,13 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				}
 			},
 		},
+		onTryMove() {
+			this.attrLastMove('[still]');
+		},
+		onPrepareHit(target, source): {
+			this.add('-anim', source, 'Power Gem', target);
+			this.add('-anim', source, 'Power Gem', target);
+		},
 		target: "normal",
 		type: "Dark",
 		contestType: "Cool",
