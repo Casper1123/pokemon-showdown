@@ -91,6 +91,11 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		gen: 9,
 		isNonstandard: undefined,
 	},
+	floatyfall: {
+		inherit: true,
+		gen: 9,
+		isNonstandard: undefined,
+	},
 
 	// Custom moves:
 	desertsong: {
