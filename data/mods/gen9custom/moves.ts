@@ -60,6 +60,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		accuracy: 100,
 		pp: 5,
 		gen: 9,
+		isNonstandard: undefined,
 	},
 	razorshell: {
 		inherit: true,
@@ -88,6 +89,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	lightofruin: {
 		inherit: true,
 		gen: 9,
+		isNonstandard: undefined,
 	},
 
 	// Custom moves:
