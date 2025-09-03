@@ -16,7 +16,9 @@ if (require.main === module) {
 modPatch.pokedex = getRawModData(modName, "pokedex", compiledOffset);
 modPatch.formatsData = getRawModData(modName, "formats-data", compiledOffset);
 modPatch.moves = getRawModData(modName, "moves", compiledOffset);
+console.log("Creating typechart data ...");
 modPatch.typechart = getRawModData(modName, "typeChart", compiledOffset);
+console.log("typechart data:", modPatch.typechart);
 modPatch.items = getRawModData(modName, "items", compiledOffset);
 modPatch.abilities = getRawModData(modName, "abilities", compiledOffset);
 
