@@ -27,8 +27,8 @@ for (const move of moveData) {
 	if (moveInfo?.condition?.duration && moveInfo.pseudoWeather) {
 		modPatch.conditionsData[moveInfo.pseudoWeather] = { duration: moveInfo.duration };
 	}
-	if (moveInfo?.condition?.duration && moveInfo.pseudoWeather) {
-		modPatch.conditionsData[moveInfo.pseudoWeather] = { duration: moveInfo.duration };
+	if (moveInfo?.condition?.duration && moveInfo.terrain) {
+		modPatch.conditionsData[moveInfo.terrain] = { duration: moveInfo.duration };
 	}
 }
 const conditionData = getRawModData(modName, "conditions", compiledOffset);
