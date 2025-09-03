@@ -27,8 +27,9 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 		// todo: tera blast for everyone
 	}
 
-	// Gen1
-	// Gen2
+	// region Gen1
+	// endregion
+	// region Gen2
 	setMove(data, modPatch, "ampharos", "dracometeor");
 	setMove(data, modPatch, "ampharos", "tailglow");
 	setMove(data, modPatch, "ampharos", "thunderclap");
@@ -36,7 +37,10 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "jumpluff", "trailblaze");
 	setMove(data, modPatch, "jumpluff", "floatyfall");
 	setMove(data, modPatch, "typhlosion", "earthpower");
-	// Gen3
+	setMove(data, modPatch, "typhlosionhisui", "shadowflame");
+	setMove(data, modPatch, "celebi", "timestop");
+	// endregion
+	// region Gen3
 	setMove(data, modPatch, "absol", "lightofruin");
 	setMove(data, modPatch, "absol", "spiritbreak");
 	setMove(data, modPatch, "absol", "partingshot");
@@ -52,7 +56,8 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "deoxys", "bodypress");
 	setMove(data, modPatch, "deoxysdefense", "bodypress");
 	setMove(data, modPatch, "metagross", "swordsdance");
-	// Gen4
+	// endregion
+	// region Gen4
 	setMove(data, modPatch, "hippowdon", "spikes");
 	setMove(data, modPatch, "hippowdon", "knockoff");
 	setMove(data, modPatch, "empoleon", "auroraveil");
@@ -62,7 +67,8 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "shaymin", "lightofruin");
 	setMove(data, modPatch, "shaymin", "floralhealing");
 	setMove(data, modPatch, "glaceon", "glaciate");
-	// Gen5
+	// endregion
+	// region Gen5
 	setMove(data, modPatch, "serperior", "mudshot");
 	setMove(data, modPatch, "conkeldurr", "steamroller");
 	setMove(data, modPatch, "conkeldurr", "fakeout");
@@ -94,9 +100,20 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "cofagrigus", "strengthsap");
 	setMove(data, modPatch, "zoroark", "vacuumwave");
 	setMove(data, modPatch, "zoroarkhisui", "vacuumwave");
-	// Gen6
-	// Gen7
+	setMove(data, modPatch, "zoroarkhisui", "vacuumwave");
+	setMove(data, modPatch, "chandelure", "shadowflame");
+	setMove(data, modPatch, "chandelure", "blueflare");
+	setMove(data, modPatch, "chandelure", "burnup");
+	setMove(data, modPatch, "chandelure", "mindblown");
+	setMove(data, modPatch, "chandelure", "searingshot");
+	// endregion
+	// region Gen6
+	// endregion
+	// region Gen7
 	setMove(data, modPatch, "necrozma", "neutronray"); // Custom signature move. ensure not usable by merged forms.
-	// Gen8
-	// Gen9
+	// endregion
+	// region Gen8
+	// endregion
+	// region Gen9
+	// endregion
 }

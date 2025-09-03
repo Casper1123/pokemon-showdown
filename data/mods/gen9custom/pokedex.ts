@@ -31,6 +31,11 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Blaze", 1: "Frisk", H: "Adaptability" },
 	},
+	celebi: {
+		inherit: true,
+		abilities: { 0: "Natural Cure", H: "Chronal Distortions" },
+		baseStats: { hp: 120, atk: 50, def: 150, spa: 100, spd: 110, spe: 100}
+	},
 	// endregion
 	// region: Gen3
 	absolmega: {
@@ -162,6 +167,10 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Mummy", H: "Cursed Body" },
 		baseStats: { hp: 58, atk: 50, def: 145, spa: 95, spd: 125, spe: 30 },
+	},
+	chandelure: {
+		inherit: true,
+		abilities: { 0: "Flash Fire", 1: "Flame Body", H: "Turboblaze" },
 	},
 	// endregion
 	// region: Gen6

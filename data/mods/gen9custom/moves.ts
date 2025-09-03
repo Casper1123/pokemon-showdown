@@ -84,7 +84,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	snowscape: {
 		inherit: true,
 		desc: "Sets snow for 5 turns. Ice: 1.5x Def, 1.2x Ice-STAB, 0.8x/1.2x spe (based on Trick Room).",
-		shortDesc: "Sets snow for 5 turns. Ice: 1.5x Def, 1.2x Ice-STAB, 0.8x/1.2x spe (based on Trick Room).",
+		shortDesc: "Sets snow for 5 turns. Ice: 1.5x Def, Ice: 1.2x STAB, 0.8x/1.2x spe (based on Trick Room).",
 	},
 	lightofruin: {
 		inherit: true,
@@ -96,6 +96,13 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		gen: 9,
 		isNonstandard: undefined,
 	},
+	roaroftime: {
+		inherit: true,
+		flags: { protect: 1, mirror: 1, metronome: 1, cantusetwice: 1 },
+		self: undefined,
+		desc: "Cannot be used consecutively.",
+		shortDesc: "Cannot be used consecutively.",
+	},
 
 	// Custom moves:
 	desertsong: {
@@ -106,6 +113,12 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		name: "Desert Song",
 		pp: 10,
 		priority: 0,
+		onBasePower() {
+			if (!this.field.isWeather('sandstorm')) {
+				this.debug('Desert Song Sandstorm boost');
+				return this.chainModify([6144, 4096]);
+			}
+		},
 		onAfterHit(target, source, move) {
 			if (!move.hasSheerForce && source.hp) {
 				this.field.setWeather('sandstorm');
@@ -199,5 +212,60 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			chance: 30,
 			status: 'brn',
 		},
+	},
+	timestop: {
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Time Stop",
+		shortDesc: "Protects user. If hit, heals 25%. Forces user out at end of turn.",
+		desc: "The user is protected from most attacks made by other Pokemon during this turn. If the user is hit by an attack while protected, it restores 25% of its maximum HP. At the end of the turn, the user is forced to switch out.",
+		pp: 15,
+		priority: 4,
+		flags: {},
+		stallingMove: true,
+		volatileStatus: 'timestop',
+		onPrepareHit(pokemon) {
+			return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
+		},
+		onHit(pokemon) {
+			pokemon.addVolatile('stall');
+		},
+		condition: {
+			duration: 1,
+			onStart(target) {
+				this.add('-singleturn', target, 'Protect', '[silent]');
+				this.add('-message', `${target.name} encases itself in time.`);
+			},
+			onTryHitPriority: 3,
+			onTryHit(target, source, move) {
+				if (!move.flags['protect'] || move.category === 'Status') {
+					if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
+					if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
+					return;
+				}
+				if (move.smartTarget) {
+					move.smartTarget = false;
+				} else {
+					this.add('-activate', target, 'move: Protect');
+				}
+				const lockedmove = source.getVolatile('lockedmove');
+				if (lockedmove) {
+					if (target.hp < target.maxhp) {
+						const healAmount = Math.floor(target.maxhp / 4);
+						target.heal(healAmount);
+						this.add('-heal', target, target.getHealth, '[from] move: Time Stop');
+					}
+				}
+				return this.NOT_FAIL;
+			},
+			onEnd(target) {
+				target.forceSwitchFlag = true;
+				this.add('-message', `${target.name} fades into the future.`);
+			},
+		},
+		secondary: null,
+		target: "self",
+		type: "Psychic",
 	},
 };
