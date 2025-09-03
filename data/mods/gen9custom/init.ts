@@ -30,6 +30,21 @@ for (const move of moveData) {
 	if (moveInfo?.condition?.duration && moveInfo.terrain) {
 		modPatch.conditionsData[moveInfo.terrain] = { duration: moveInfo.duration };
 	}
+	if (moveInfo?.condition?.duration && moveInfo.weather) {
+		modPatch.conditionsData[moveInfo.weather] = { duration: moveInfo.duration };
+	}
+	if (moveInfo?.condition?.duration && moveInfo.sideCondition) {
+		modPatch.conditionsData[moveInfo.sideCondition] = { duration: moveInfo.duration };
+	}
+	if (moveInfo?.condition?.duration && moveInfo.slotCondition) {
+		modPatch.conditionsData[moveInfo.slotCondition] = { duration: moveInfo.duration };
+	}
+	if (moveInfo?.condition?.duration && moveInfo.volatileStatus) {
+		modPatch.conditionsData[moveInfo.volatileStatus] = { duration: moveInfo.duration };
+	}
+	if (moveInfo?.condition?.duration && moveInfo.status) {
+		modPatch.conditionsData[moveInfo.status] = { duration: moveInfo.duration };
+	}
 }
 const conditionData = getRawModData(modName, "conditions", compiledOffset);
 for (const condition of conditionData) {
