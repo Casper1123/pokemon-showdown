@@ -235,7 +235,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			duration: 1,
 			onStart(target) {
 				this.add('-singleturn', target, 'Protect', '[silent]');
-				this.add('-message', `${target.name} encases itself in time.`);
+				this.add('-message', `${target.name} encases itself in a crystal made of stopped time.`);
 			},
 			onTryHitPriority: 3,
 			onTryHit(target, source, move) {
@@ -255,6 +255,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 						const healAmount = Math.floor(target.maxhp / 4);
 						target.heal(healAmount);
 						this.add('-heal', target, target.getHealth, '[from] move: Time Stop');
+						this.add('-message', `The energy sustains ${target.name} inside the chrysalis.`);
+						// Chrysalis (according to oxford)
+						// a transitional state.
+						// "she emerged from the chrysalis of self-conscious adolescence"
 					}
 				}
 				return this.NOT_FAIL;
