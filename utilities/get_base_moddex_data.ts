@@ -11,7 +11,6 @@ import * as path from 'path';
 export function getRawModData(modName: string, filename: string, compiledOffset: string) {
 	const modPath = path.join(__dirname, compiledOffset, '../data/mods', modName);
 	const filePath = path.join(modPath, filename + ".ts");
-	console.log("Checking file existance");
 	if (!fs.existsSync(filePath)) {
 		console.log("File not found at", filePath);
 		return {};
