@@ -11,7 +11,9 @@ import * as path from 'path';
 export function getRawModData(modName: string, filename: string, compiledOffset: string) {
 	const modPath = path.join(__dirname, compiledOffset, '../data/mods', modName);
 	const filePath = path.join(modPath, filename + ".ts");
+	console.log("Checking file existance");
 	if (!fs.existsSync(filePath)) {
+		console.log("File not found at", filePath);
 		return {};
 	}
 	const fileContent = fs.readFileSync(filePath, 'utf8');
@@ -26,9 +28,10 @@ export function getRawModData(modName: string, filename: string, compiledOffset:
 			// eslint-disable-next-line no-eval
 			return eval(`(${objectLiteral})`);
 		} catch (e) {
+			console.log("Error evaluating", modName, filename);
 			return {};
 		}
 	}
-
+	console.log("No match found");
 	return {};
 }

@@ -1,10 +1,5 @@
 import type { ModdedTypeDataTable } from "../../../sim/dex-data";
 
-// 1 = super effective
-// 0 = neutral
-// 2 = not effective
-// 3 = immune
-
 export const TypeChart: ModdedTypeDataTable = {
 	fairy: {
 		inherit: true,
@@ -31,3 +26,8 @@ export const TypeChart: ModdedTypeDataTable = {
 		},
 	},
 };
+
+// 1 = super effective
+// 0 = neutral
+// 2 = not effective
+// 3 = immune
