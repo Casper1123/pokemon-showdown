@@ -15,10 +15,29 @@ if (require.main === module) {
 
 modPatch.pokedex = getRawModData(modName, "pokedex", compiledOffset);
 modPatch.formatsData = getRawModData(modName, "formats-data", compiledOffset);
-modPatch.moves = getRawModData(modName, "moves", compiledOffset);
+const moveData = getRawModData(modName, "moves", compiledOffset);
+modPatch.moves = moveData;
 modPatch.typechart = getRawModData(modName, "typechart", compiledOffset);
 modPatch.items = getRawModData(modName, "items", compiledOffset);
 modPatch.abilities = getRawModData(modName, "abilities", compiledOffset);
+
+// Construct Conditions data. Note: currently only does Duration.
+for (const move of moveData) {
+	const moveInfo = moveData[move];
+	if (moveInfo?.condition?.duration && moveInfo.pseudoWeather) {
+		modPatch.conditionsData[moveInfo.pseudoWeather] = { duration: moveInfo.duration };
+	}
+	if (moveInfo?.condition?.duration && moveInfo.pseudoWeather) {
+		modPatch.conditionsData[moveInfo.pseudoWeather] = { duration: moveInfo.duration };
+	}
+}
+const conditionData = getRawModData(modName, "conditions", compiledOffset);
+for (const condition of conditionData) {
+	const conditionInfo = conditionData[condition];
+	if (conditionInfo?.duration) {
+		modPatch.conditionsData[condition] = { duration: conditionInfo.duration };
+	}
+}
 
 import { Dex } from "../../../sim/dex";
 if (Scripts) {
