@@ -190,7 +190,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	shadowflame: {
 		num: -6,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 70,
 		type: "Ghost",
 		category: "Special",
 		name: "Shadowflame",
