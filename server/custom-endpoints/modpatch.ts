@@ -17,4 +17,5 @@ export class ModPatch {
 	typechart: ModdedTypeDataTable = {};
 	learnsets: { [ speciesId: Lowercase<string>]: { [moveId: string]: string[] } } = {};
 	formatsData: ModdedSpeciesFormatsDataTable = {};
+
 }
