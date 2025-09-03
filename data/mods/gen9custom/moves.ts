@@ -218,7 +218,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		basePower: 0,
 		category: "Status",
 		name: "Time Stop",
-		shortDesc: "Protects user. If hit, heals 25%. Forces user out at end of turn.",
+		shortDesc: "Protects user. If hit, heals 25%. Switches out.",
 		desc: "The user is protected from most attacks made by other Pokemon during this turn. If the user is hit by an attack while protected, it restores 25% of its maximum HP. At the end of the turn, the user is forced to switch out.",
 		pp: 15,
 		priority: 4,
