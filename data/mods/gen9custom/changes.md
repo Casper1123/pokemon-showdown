@@ -14,7 +14,7 @@ To propose new changes, check out the proposed-changes Forum Channel down below 
 
 # Custom Rules
 
-Here, rules are explained. Standard Smogon rules will be *italisized* and custom rules will be **bolded**.
+Here, rules are explained. Standard Smogon rules will be *italicized* and custom rules will be **bolded**.
 
 ## Validator
 
@@ -65,8 +65,9 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Dragon Rush`: 90 ACC, 15% flinch. <BR>
 `Submission`: 90 BP, 90 ACC, 10 PP. <BR>
 `Trick Room`: Duration increased to 6 turns. <BR>
-`Sparkly Swirl`: 60 BP, 5 PP. <BR> <BR>
-`Desert Song`: *Custom move for Flygon*, 90 BP, 100 ACC, Ground Special, Sound. Sets Sand on hit. <BR>
+`Sparkly Swirl`: 60 BP, 5 PP. <BR> <BR> *Custom moves:* <BR>
+`Desert Song`: 90 BP, 100 ACC, Ground Special, Sound. Sets Sand on hit. If sand is already up, 1.5x damage.<BR>
+`Shadowflame`: 
 
 # Abilities
 `Sand Force`: Scalar changed from 30% to 50%. <BR>
@@ -79,7 +80,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Mega- Ampharos`: Ability is now Teravolt. Stats: `hp: 100, atk: 75, def: 110, spa: 165, spd: 115, spe: 45`. <BR>
 ## Gen 3
 `Breloom`: Stats: `hp: 80, atk: 130, def: 90, spa: 60, spd: 70, spe: 70`. <BR>
-`Aggron`: Stats: `hp: 80, atk: 110, def: 180, spa: 60, spd: 80, spe: 50`. New Moves: Horn Leech, Slack Off.<BR>
+`Aggron`: Stats: `hp: 80, atk: 110, def: 180, spa: 60, spd: 80, spe: 50`. Abilities: Sturdy, Rock Head, Sand Force. New Moves: Horn Leech, Slack Off.<BR>
 `Mega-Aggron`: Stats: `hp: 80, atk: 140, def: 230, spa: 40, spd: 80, spe: 50`. <BR>
 `Mega-Absol`: Type: Dark, Fairy. New Moves: Light of Ruin, Sprit Break, Parting Shot. *Move changes also apply to base Absol.*<BR>
 `Flygon`: Stats: `hp: 80, atk: 100, def: 80, spa: 110, spd: 80, spe: 100`. New Moves: Desert Song, see Moves section.<BR>
@@ -90,6 +91,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Hippowdon`: Stats: `hp: 113, atk: 112, def: 123, spa: 68, spd: 87, spe: 47`. Abilities: Sand Stream, Intimidate. New Moves: Spikes, Knock Off.<BR>
 `Empoleon`: Stats: `hp: 90, atk: 90, def: 95, spa: 111, spd: 101, spe: 60`. Abilities: Torrent, Slush Rush, Competitive. New Moves: Aurora Veil, Reflect, Light Screen.<BR>
 `Shaymin (normal form)`: Type: Grass, Fairy. Stats: `hp: 100, atk: 70, def: 110, spa: 110, spd: 110, spe: 100`. Abilities: Natural Cure, Overgrow, Regenerator. New Moves: Sparkly Swirl, Light of Ruin, Floral Healing. *It is not yet determined if these moves should be banned from Shaymin-Sky.*<BR>
+`Glaceon`: Abilities: Snow Cloak, Ice Body, Snow Warning. New Moves: Glaciate. <BR>
 ## Gen 5
 `Serperior`: New Moves: Mud Shot. <BR>
 `Scolipede`: New Moves: Collision Course. <BR>
@@ -100,11 +102,14 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Terrakion`: New Moves: Accelerock. <BR>
 `Coballion`: Stats: `hp: 91, atk: 90, def: 129, spa: 110, spd: 72, spe: 108`. Abilities: Justified, Competitive. New Moves: Secret Sword, Nasty Plot. <BR>
 `Virizion`: Stats: `hp: 91, atk: 90, def: 72, spa: 110, spd: 129, spe: 108`. Abilities: Justified, Competitive. New Moves: Secret Sword, Nasty Plot. <BR>
-`Zoroark (both formes)`: Stats: `hp: 60, atk: 105, def: 60, spa: 125, spd: 60, spe: 110`. <BR>
+`Zoroark (both formes)`: Stats: `hp: 60, atk: 105, def: 60, spa: 125, spd: 60, spe: 110`. New Moves: Vacuum Wave.<BR>
+`Swanna`: Stats: `hp: 80, atk: 100, def: 70, spa: 87, spd: 63, spe: 98`. Abilities: Drizzle, Big Pecks, Hydration. New Moves: Wave Crash. <BR>
+`Escavalier`: Abilities: Sand Force, Shell Armor, Overcoat. <BR>
 ## Gen 6
 ## Gen 7
 `Golisopod`: Abilities: Emergency Exit, Battle Armor. <BR>
 ## Gen 8
+`Copperajah`: Abilities: Sheer Force, Sand Force, Heavy Metal. <BR>
 ## Gen 9
 ## Other:
 `Hidden Power`: Most Pokémon without access to Hidden Power due to the Dexit in Gen 8+ have access to the move. A list of exclusions follows: `No exclusions as of yet.` <BR>
