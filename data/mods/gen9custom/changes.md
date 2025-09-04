@@ -65,12 +65,20 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Dragon Rush`: 90 ACC, 15% flinch. <BR>
 `Submission`: 90 BP, 90 ACC, 10 PP. <BR>
 `Trick Room`: Duration increased to 6 turns. <BR>
-`Sparkly Swirl`: 60 BP, 5 PP. <BR> <BR> *Custom moves:* <BR>
-`Desert Song`: 90 BP, 100 ACC, Ground Special, Sound. Sets Sand on hit. If sand is already up, 1.5x damage.<BR>
-`Shadowflame`: 
+`Sparkly Swirl`: 60 BP, 5 PP. <BR>
+`Razor Shell`: 85 BP. <BR>
+`Power Gem`: 90 BP, 10 PP. 20% chance +1 SpA. <BR>
+`Roar of Time`: Recharge turn -> Cannot be used consecutively. <BR>
+<BR> *Custom moves:* <BR>
+`Desert Song`: 90 BP, 100 ACC, 10 PP, Ground Special, Sound. Sets Sand on hit. If sand was already up, 1.5x damage.<BR>
+`Neutron Ray`: 100 BP, 100 ACC, 5 PP, Dark Special. Uses highest attacking stat. 30% chance to inflict one of: Paralysis, Ability Suppression, Drowsiness, Confusion or Flinch. <BR>
+`Shadowflame`: 70 BP, 100 ACC, 10 PP, Ghost Special. 30% chance to burn. <BR>
+`Time Stop`: Status, 15 PP, Psychic. Protects the user. At the end of the turn, they switch out. Taking a hit while protected restores 25% of max HP. <BR>
 
 # Abilities
 `Sand Force`: Scalar changed from 30% to 50%. <BR>
+<BR> *Custom Abilities:* <BR>
+`Chronal Distortions`: Sets a primordial pseudoweather (deactivates if all switched out). While active, all attacking moves hit for 0.8x damage. In 2 turns, they hit again for 0.4x damage. This distorted move cannot boost allies stats. *Exceptions that do not hit twice: Fake Out, Doom Desire, Future Sight.* <BR>
 
 # Pokémon
 ## Gen 1
@@ -78,6 +86,8 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 ## Gen 2
 `Ampharos`: Type: Electric, Dragon. Plus Ability replaced with Teravolt. Stats: `hp: 100, atk: 75, def: 85, spa: 115, spd: 90, spe: 55`. New Moves: Draco Meteor, Tail Glow, Thunderclap, Parabolic Charge.<BR>
 `Mega- Ampharos`: Ability is now Teravolt. Stats: `hp: 100, atk: 75, def: 110, spa: 165, spd: 115, spe: 45`. <BR>
+`Typhlosion`: Abilities: Blaze, Flash Fire, Drought. New Moves: Earth Power. <BR>
+`Typhlosion (Hisui)`: Abilities: Blaze, Frisk, Adaptability. New Moves: Shadowflame. <BR>
 ## Gen 3
 `Breloom`: Stats: `hp: 80, atk: 130, def: 90, spa: 60, spd: 70, spe: 70`. <BR>
 `Aggron`: Stats: `hp: 80, atk: 110, def: 180, spa: 60, spd: 80, spe: 50`. Abilities: Sturdy, Rock Head, Sand Force. New Moves: Horn Leech, Slack Off.<BR>
@@ -86,12 +96,16 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Flygon`: Stats: `hp: 80, atk: 100, def: 80, spa: 110, spd: 80, spe: 100`. New Moves: Desert Song, see Moves section.<BR>
 `Sceptile`: Type: Grass, Dragon. New Moves: Chloroblast, Nasty Plot, Draco Meteor. <BR>
 `Manectric`: New Moves: Ice Beam, Parabolic Charge. <BR>
+`Deoxys`: New Moves: Body Press. <BR>
+`Deoxys-Defense`: Stats: `hp: 70, atk: 60, def: 160, spa: 60, spd: 160, spe: 90`. Abilities: Pressure, Unaware, Regenerator. <BR>
+`Metagross`: Abilities: Clear Body, Light Metal, Full Metal Body. New Moves: Swords Dance. <BR>
 ## Gen 4
 `Mega-Garchomp`: Stats: `hp: 108, atk: 170, def: 115, spa: 110, spd: 95, spe: 102`. <BR>
 `Hippowdon`: Stats: `hp: 113, atk: 112, def: 123, spa: 68, spd: 87, spe: 47`. Abilities: Sand Stream, Intimidate. New Moves: Spikes, Knock Off.<BR>
 `Empoleon`: Stats: `hp: 90, atk: 90, def: 95, spa: 111, spd: 101, spe: 60`. Abilities: Torrent, Slush Rush, Competitive. New Moves: Aurora Veil, Reflect, Light Screen.<BR>
 `Shaymin (normal form)`: Type: Grass, Fairy. Stats: `hp: 100, atk: 70, def: 110, spa: 110, spd: 110, spe: 100`. Abilities: Natural Cure, Overgrow, Regenerator. New Moves: Sparkly Swirl, Light of Ruin, Floral Healing. *It is not yet determined if these moves should be banned from Shaymin-Sky.*<BR>
 `Glaceon`: Abilities: Snow Cloak, Ice Body, Snow Warning. New Moves: Glaciate. <BR>
+`Dialga`: Abilities: Pressure, Telepathy, Chronal Distortions. <BR>
 ## Gen 5
 `Serperior`: New Moves: Mud Shot. <BR>
 `Scolipede`: New Moves: Collision Course. <BR>
@@ -105,9 +119,16 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Zoroark (both formes)`: Stats: `hp: 60, atk: 105, def: 60, spa: 125, spd: 60, spe: 110`. New Moves: Vacuum Wave.<BR>
 `Swanna`: Stats: `hp: 80, atk: 100, def: 70, spa: 87, spd: 63, spe: 98`. Abilities: Drizzle, Big Pecks, Hydration. New Moves: Wave Crash. <BR>
 `Escavalier`: Abilities: Sand Force, Shell Armor, Overcoat. <BR>
+`Samurott (Unovan)`: Types: Water, Fighting. Stats: `hp: 95, atk: 110, def: 85, spa: 118, spd: 70, spe: 70`. Abilities: Torrent, Shell Armor, Inner Focus. New Moves: Shell Smash, Sacred Sword, Secret Sword, Close Combat, Wave Crash. <BR>
+`Reuniclus`: Stats: `hp: 110, atk: 65, def: 85, spa: 125, spd: 95, spe: 30`. New Moves: Teleport, Aura Sphere, Vacuum Wave. <BR>
+`Krookodile`: Stats: `hp: 95, atk: 130, def: 90, spa: 65, spd: 75, spe: 92`. Abilities: Intimidate, Moxie, Sand Force. New Moves: Swords Dance. <BR>
+`Cofagrigus`: Stats: `hp: 58, atk: 50, def: 145, spa: 95, spd: 125, spe: 30`. Abilities: Mummy, Cursed Body. New Moves: Strength Sap. <BR>
+`Chandelure`: Abilities: Flame Body, Flash Fire, Turboblaze. New Moves: Blue Flare, Burn Up, Mind Blown, Searing Shot, Shadowflame. <BR>
 ## Gen 6
 ## Gen 7
 `Golisopod`: Abilities: Emergency Exit, Battle Armor. <BR>
+`Nihilego`: Abilities: Beast Boost, Levitate. <BR>
+`Necrozma (Base)`: Types: Dark, Psychic. Stats: `hp: 97, atk: 117, def: 101, spa: 127, spd: 79, spe: 79`. New Moves: Snarl, Neutron Ray.
 ## Gen 8
 `Copperajah`: Abilities: Sheer Force, Sand Force, Heavy Metal. <BR>
 ## Gen 9
