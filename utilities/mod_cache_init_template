@@ -4,7 +4,7 @@ import { Scripts } from "./scripts";
 import { applyChanges } from "./learnset_changes";
 
 // Generates cache file for this custom mode.
-const modName = __dirname.split("\\").slice(-1)[0];
+const modName = path.basename(__dirname);
 const modPatch = new ModPatch();
 console.log(`Creating Cache file for ${modName} ...`);
 
@@ -15,10 +15,54 @@ if (require.main === module) {
 
 modPatch.pokedex = getRawModData(modName, "pokedex", compiledOffset);
 modPatch.formatsData = getRawModData(modName, "formats-data", compiledOffset);
-modPatch.moves = getRawModData(modName, "moves", compiledOffset);
-modPatch.typechart = getRawModData(modName, "typeChart", compiledOffset);
+const moveData = getRawModData(modName, "moves", compiledOffset);
+modPatch.moves = moveData;
+modPatch.typechart = getRawModData(modName, "typechart", compiledOffset);
 modPatch.items = getRawModData(modName, "items", compiledOffset);
 modPatch.abilities = getRawModData(modName, "abilities", compiledOffset);
+
+for (const move in moveData) {
+	const moveInfo = moveData[move];
+	if (moveInfo?.condition?.duration === undefined) {
+		continue;
+	}
+
+	let effectId: any = null;
+	const duration = moveInfo.condition.duration;
+	if (moveInfo.pseudoWeather) {
+		effectId = moveInfo.pseudoWeather;
+	}
+	if (moveInfo.terrain) {
+		effectId = moveInfo.terrain;
+	}
+	if (moveInfo.weather) {
+		effectId = moveInfo.weather;
+	}
+	if (moveInfo.sideCondition) {
+		effectId = moveInfo.sideCondition;
+	}
+	if (moveInfo.slotCondition) {
+		effectId = moveInfo.slotCondition;
+	}
+	if (moveInfo.volatileStatus) {
+		effectId = moveInfo.volatileStatus;
+	}
+	if (moveInfo.status) {
+		effectId = moveInfo.status;
+	}
+	if (!effectId) { effectId = move; } // Default to move id.
+
+	modPatch.conditionsData[effectId] = {
+		duration,
+	}; // Templating for future additional features.
+}
+const conditionData = getRawModData(modName, "conditions", compiledOffset);
+for (const condition in conditionData) {
+	const conditionInfo = conditionData[condition];
+	if (conditionInfo?.duration !== undefined) {
+		modPatch.conditionsData[condition as Lowercase<string>] = { duration: conditionInfo.duration };
+	}
+}
 
 import { Dex } from "../../../sim/dex";
 if (Scripts) {
@@ -30,7 +74,6 @@ if (Scripts) {
 	}
 }
 
-// Write file
 import fs from "fs";
 import path from "path";
 

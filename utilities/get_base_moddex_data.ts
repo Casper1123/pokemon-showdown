@@ -21,13 +21,14 @@ export function getRawModData(modName: string, filename: string, compiledOffset:
 
 	if (exportMatch) {
 		try {
-			const objectLiteral = exportMatch[1].replace(/\};$/, '}');
+			const objectLiteral = exportMatch[1].replace(/\};$/, '}').replace(/\s+as\s+\w+/g, ''); // Remove type casts
 			// I think I know what I'm doing.
 			// I hate it too okay.
 			// eslint-disable-next-line no-eval
 			return eval(`(${objectLiteral})`);
 		} catch (e) {
-			console.log("Error evaluating", modName, filename);
+			console.log("Error evaluating", modName, filename, e);
+			// throw e;
 			return {};
 		}
 	}

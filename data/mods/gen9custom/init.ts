@@ -21,36 +21,46 @@ modPatch.typechart = getRawModData(modName, "typechart", compiledOffset);
 modPatch.items = getRawModData(modName, "items", compiledOffset);
 modPatch.abilities = getRawModData(modName, "abilities", compiledOffset);
 
-// Construct Conditions data. Note: currently only does Duration.
-for (const move of moveData) {
+for (const move in moveData) {
 	const moveInfo = moveData[move];
-	if (moveInfo?.condition?.duration && moveInfo.pseudoWeather) {
-		modPatch.conditionsData[moveInfo.pseudoWeather] = { duration: moveInfo.duration };
+	if (moveInfo?.condition?.duration === undefined) {
+		continue;
 	}
-	if (moveInfo?.condition?.duration && moveInfo.terrain) {
-		modPatch.conditionsData[moveInfo.terrain] = { duration: moveInfo.duration };
+
+	let effectId: any = null;
+	const duration = moveInfo.condition.duration;
+	if (moveInfo.pseudoWeather) {
+		effectId = moveInfo.pseudoWeather;
 	}
-	if (moveInfo?.condition?.duration && moveInfo.weather) {
-		modPatch.conditionsData[moveInfo.weather] = { duration: moveInfo.duration };
+	if (moveInfo.terrain) {
+		effectId = moveInfo.terrain;
 	}
-	if (moveInfo?.condition?.duration && moveInfo.sideCondition) {
-		modPatch.conditionsData[moveInfo.sideCondition] = { duration: moveInfo.duration };
+	if (moveInfo.weather) {
+		effectId = moveInfo.weather;
 	}
-	if (moveInfo?.condition?.duration && moveInfo.slotCondition) {
-		modPatch.conditionsData[moveInfo.slotCondition] = { duration: moveInfo.duration };
+	if (moveInfo.sideCondition) {
+		effectId = moveInfo.sideCondition;
 	}
-	if (moveInfo?.condition?.duration && moveInfo.volatileStatus) {
-		modPatch.conditionsData[moveInfo.volatileStatus] = { duration: moveInfo.duration };
+	if (moveInfo.slotCondition) {
+		effectId = moveInfo.slotCondition;
 	}
-	if (moveInfo?.condition?.duration && moveInfo.status) {
-		modPatch.conditionsData[moveInfo.status] = { duration: moveInfo.duration };
+	if (moveInfo.volatileStatus) {
+		effectId = moveInfo.volatileStatus;
 	}
+	if (moveInfo.status) {
+		effectId = moveInfo.status;
+	}
+	if (!effectId) { effectId = move; } // Default to move id.
+
+	modPatch.conditionsData[effectId] = {
+		duration,
+	}; // Templating for future additional features.
 }
 const conditionData = getRawModData(modName, "conditions", compiledOffset);
-for (const condition of conditionData) {
+for (const condition in conditionData) {
 	const conditionInfo = conditionData[condition];
-	if (conditionInfo?.duration) {
-		modPatch.conditionsData[condition] = { duration: conditionInfo.duration };
+	if (conditionInfo?.duration !== undefined) {
+		modPatch.conditionsData[condition as Lowercase<string>] = { duration: conditionInfo.duration };
 	}
 }
 
@@ -64,7 +74,6 @@ if (Scripts) {
 	}
 }
 
-// Write file
 import fs from "fs";
 import path from "path";
 
