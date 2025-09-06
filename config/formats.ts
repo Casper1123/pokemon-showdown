@@ -34,6 +34,17 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		],
 		unbanlist: [],
 	},
+	{
+		name: "[Gen 9] National Dex Custom - Dupes",
+		desc: "National Dex Custom without Species Clause. Because Luis couldn't stop begging.",
+		mod: 'gen9custom',
+		ruleset: ['Standard AG', 'NatDex Mod', 'Nickname Clause', 'OHKO Clause', 'Evasion Clause', 'Sleep Clause Mod', 'gen9custom UbersAg', 'gen9custom megaray', 'Terastal Clause', 'Illusory Nicknames'],
+		banlist: [
+			'Arena Trap', 'Moody', 'Shadow Tag', 'King\'s Rock',
+			'Quick Claw', 'Razor Fang', 'Assist', 'Baton Pass', 'Last Respects', 'Shed Tail',
+		],
+		unbanlist: [],
+	},
 	// National Dex
 	///////////////////////////////////////////////////////////////////
 	{
