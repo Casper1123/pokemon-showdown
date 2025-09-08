@@ -6,6 +6,14 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Cursed Body", H: "Levitate" },
 	},
+	slowbromega: {
+		inherit: true,
+		baseStats: { hp: 95, atk: 75, def: 180, spa: 100, spd: 110, spe: 30 },
+	},
+	pidgeotmega: {
+		inherit: true,
+		types: ["Electric", "Flying"],
+	},
 	// endregion
 	// region: Gen2
 	ampharos: {
@@ -35,6 +43,15 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Natural Cure", H: "Chronal Distortions" },
 		baseStats: { hp: 120, atk: 50, def: 150, spa: 100, spd: 110, spe: 100 },
+	},
+	suicune: {
+		inherit: true,
+		abilities: { 0: "Pressure", 1: "Inner Focus", H: "Misty Surge" },
+		baseStats: { hp: 100, atk: 75, def: 125, spa: 90, spd: 125, spe: 85 },
+	},
+	raikou: {
+		inherit: true,
+		abilities: { 0: "Pressure", 1: "Inner Focus", H: "Electric Surge" },
 	},
 	// endregion
 	// region: Gen3
@@ -67,6 +84,15 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	metagross: {
 		inherit: true,
 		abilities: { 0: "Clear Body", 1: "Light Metal", H: "Full Metal Body" },
+	},
+	cameruptmega: {
+		inherit: true,
+		baseStats: { hp: 70, atk: 80, def: 120, spa: 145, spd: 125, spe: 20 },
+	},
+	banettemega: {
+		inherit: true,
+		abilities: { 0: "Unseen Fist" },
+		baseStats: { hp: 64, atk: 165, def: 85, spa: 83, spd: 93, spe: 65 },
 	},
 	// endregion
 	// region: Gen4
@@ -171,6 +197,10 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	chandelure: {
 		inherit: true,
 		abilities: { 0: "Flash Fire", 1: "Flame Body", H: "Turboblaze" },
+	},
+	audinomega: {
+		inherit: true,
+		abilities: { 0: "Regenerator" },
 	},
 	// endregion
 	// region: Gen6

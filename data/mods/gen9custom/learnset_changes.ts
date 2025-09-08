@@ -24,10 +24,12 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 			setMove(data, modPatch, id, "hiddenpower");
 		}
 		// todo: protect for everyone
-		// todo: tera blast for everyone
+		// todo: tera blast for everyone?
 	}
 
 	// region Gen1
+	setMove(data, modPatch, "pidgeot", "zapcannon");
+	setMove(data, modPatch, "pidgeot", "thunder");
 	// endregion
 	// region Gen2
 	setMove(data, modPatch, "ampharos", "dracometeor");
@@ -39,6 +41,13 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "typhlosion", "earthpower");
 	setMove(data, modPatch, "typhlosionhisui", "shadowflame");
 	setMove(data, modPatch, "celebi", "timestop");
+	setMove(data, modPatch, "suicune", "mistyexplosion");
+	setMove(data, modPatch, "suicune", "mistball");
+	setMove(data, modPatch, "suicune", "strangesteam");
+	setMove(data, modPatch, "suicune", "recover");
+	setMove(data, modPatch, "steelix", "coil");
+	setMove(data, modPatch, "raikou", "tailwind");
+	setMove(data, modPatch, "houndoom", "fierywrath");
 	// endregion
 	// region Gen3
 	setMove(data, modPatch, "absol", "lightofruin");
@@ -56,6 +65,13 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "deoxys", "bodypress");
 	setMove(data, modPatch, "deoxysdefense", "bodypress");
 	setMove(data, modPatch, "metagross", "swordsdance");
+	setMove(data, modPatch, "altaria", "explosion");
+	setMove(data, modPatch, "altaria", "doubleedge");
+	setMove(data, modPatch, "altaria", "smellingsalts");
+	setMove(data, modPatch, "altaria", "calmmind");
+	setMove(data, modPatch, "altaria", "drainingkiss");
+	setMove(data, modPatch, "camerupt", "sandsearstorm");
+	setMove(data, modPatch, "sharpedo", "swordsdance");
 	// endregion
 	// region Gen4
 	setMove(data, modPatch, "hippowdon", "spikes");
@@ -106,6 +122,8 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "chandelure", "burnup");
 	setMove(data, modPatch, "chandelure", "mindblown");
 	setMove(data, modPatch, "chandelure", "searingshot");
+	setMove(data, modPatch, "audino", "followme");
+	setMove(data, modPatch, "audino", "teleport");
 	// endregion
 	// region Gen6
 	// endregion

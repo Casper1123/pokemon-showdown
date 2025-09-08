@@ -103,6 +103,13 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		desc: "Cannot be used consecutively.",
 		shortDesc: "Cannot be used consecutively.",
 	},
+	eruption: {
+		inherit: true,
+		secondary: {
+			chance: 10,
+			status: 'brn',
+		},
+	},
 
 	// Custom moves:
 	desertsong: {
