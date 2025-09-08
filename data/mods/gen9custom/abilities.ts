@@ -18,6 +18,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		name: "Chronal Distortions",
 		desc: "While on the field, moves hit for 0.8x damage. In 2 turns, it hits again for 0.4x damage, without altering ally stats.",
 		shortDesc: "While active: Moves hit for .8x and .4x in 2 turns.",
+		// Todo: add '-activate'?
 		onStart(source) {
 			this.field.addPseudoWeather('chronaldistortions', source);
 		},
