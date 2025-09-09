@@ -110,6 +110,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	freezeshock: {
 		inherit: true,
+		accuracy: 100,
+		shortDesc: "Raises Atk by 1, hits turn 2. Snow: no charge.",
+		desc: "Raises Atk by 1, hits turn 2. Snow: no charge.",
 		onTryMove(attacker, defender, move) {
 			if (attacker.removeVolatile(move.id)) {
 				return;
@@ -130,6 +133,9 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	iceburn: {
 		inherit: true,
+		accuracy: 100,
+		shortDesc: "Raises SpA by 1, hits turn 2. Snow: no charge.",
+		desc: "Raises SpA by 1, hits turn 2. Snow: no charge.",
 		onTryMove(attacker, defender, move) {
 			if (attacker.removeVolatile(move.id)) {
 				return;
@@ -150,6 +156,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	glaciate: {
 		inherit: true,
+		desc: "100% chance to lower the foe(s) Speed by 2.",
+		shortDesc: "100% chance to lower the foe(s) Speed by 2.",
 		secondary: {
 			chance: 100,
 			boosts: {
