@@ -69,6 +69,10 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Razor Shell`: 85 BP. <BR>
 `Power Gem`: 90 BP, 10 PP. 20% chance +1 SpA. <BR>
 `Roar of Time`: Recharge turn -> Cannot be used consecutively. <BR>
+`Eruption`: Now boosted by Sheer Force. <BR>
+`Freeze Shock`: 100 ACC, Raises Atk by 1, hits turn 2. Snow: no charge. <BR>
+`Ice Burn`: 100 ACC, Raises SpA by 1, hits turn 2. Snow: no charge. <BR>
+`Glaciate`: Lowers speed stat of opponents hit by 2 stages. <BR>
 <BR> *Custom moves:* <BR>
 `Desert Song`: 90 BP, 100 ACC, 10 PP, Ground Special, Sound. Sets Sand on hit. If sand was already up, 1.5x damage.<BR>
 `Neutron Ray`: 100 BP, 100 ACC, 5 PP, Dark Special. Uses highest attacking stat. 30% chance to inflict one of: Paralysis, Ability Suppression, Drowsiness, Confusion or Flinch. <BR>
@@ -83,11 +87,17 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 # Pokémon
 ## Gen 1
 `Gengar`: Access to Levitate. <BR>
+`Mega-Slowbro`: Stats: `hp: 95, atk: 75, def: 180, spa: 100, spd: 110, spe: 30`. <BR>
+`Mega-Pidgeot`: Type: Electric, Flying. New Moves: Zap Cannon, Thunder. <BR>
 ## Gen 2
 `Ampharos`: Type: Electric, Dragon. Plus Ability replaced with Teravolt. Stats: `hp: 100, atk: 75, def: 85, spa: 115, spd: 90, spe: 55`. New Moves: Draco Meteor, Tail Glow, Thunderclap, Parabolic Charge.<BR>
 `Mega- Ampharos`: Ability is now Teravolt. Stats: `hp: 100, atk: 75, def: 110, spa: 165, spd: 115, spe: 45`. <BR>
 `Typhlosion`: Abilities: Blaze, Flash Fire, Drought. New Moves: Earth Power. <BR>
 `Typhlosion (Hisui)`: Abilities: Blaze, Frisk, Adaptability. New Moves: Shadowflame. <BR>
+`Suicune`: Stats: `hp: 100, atk: 75, def: 125, spa: 90, spd: 125, spe: 85`. Abilities: Pressure, Inner Focus, Misty Surge. New Moves: Misty Explosion, Mist Ball, Strange Steam, Recover. <BR>
+`Raikou`: Abilities: Pressure, Inner Focus, Electric Surge. New Moves: Tailwind. <BR>
+`Mega-Steelix`: New Moves: Coil. <BR>
+`Mega-Houndoom`: New Moves: Fiery Wrath. <BR>
 ## Gen 3
 `Breloom`: Stats: `hp: 80, atk: 130, def: 90, spa: 60, spd: 70, spe: 70`. <BR>
 `Aggron`: Stats: `hp: 80, atk: 110, def: 180, spa: 60, spd: 80, spe: 50`. Abilities: Sturdy, Rock Head, Sand Force. New Moves: Horn Leech, Slack Off.<BR>
@@ -99,6 +109,10 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Deoxys`: New Moves: Body Press. <BR>
 `Deoxys-Defense`: Stats: `hp: 70, atk: 60, def: 160, spa: 60, spd: 160, spe: 90`. Abilities: Pressure, Unaware, Regenerator. <BR>
 `Metagross`: Abilities: Clear Body, Light Metal, Full Metal Body. New Moves: Swords Dance. <BR>
+`Mega-Altaria`: New Moves: Explosion, Double Edge, Smelling Salts, Calm Mind, Draining Kiss. <BR>
+`Mega-Camerupt`: Stats: `hp: 70, atk: 80, def: 120, spa: 145, spd: 125, spe: 20`. New Moves: Sandsear Storm. <BR>
+`Mega-Banette`: Stats: `hp: 64, atk: 165, def: 85, spa: 83, spd: 93, spe: 65`. Ability: Unseen Fist. New Moves: Poltergheist, Shadow Force. <BR>
+`Mega-Sharpedo`: New Moves: Swords Dance. <BR>
 ## Gen 4
 `Mega-Garchomp`: Stats: `hp: 108, atk: 170, def: 115, spa: 110, spd: 95, spe: 102`. <BR>
 `Hippowdon`: Stats: `hp: 113, atk: 112, def: 123, spa: 68, spd: 87, spe: 47`. Abilities: Sand Stream, Intimidate. New Moves: Spikes, Knock Off.<BR>
@@ -106,6 +120,13 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Shaymin (normal form)`: Type: Grass, Fairy. Stats: `hp: 100, atk: 70, def: 110, spa: 110, spd: 110, spe: 100`. Abilities: Natural Cure, Overgrow, Regenerator. New Moves: Sparkly Swirl, Light of Ruin, Floral Healing. *It is not yet determined if these moves should be banned from Shaymin-Sky.*<BR>
 `Glaceon`: Abilities: Snow Cloak, Ice Body, Snow Warning. New Moves: Glaciate. <BR>
 `Dialga`: Abilities: Pressure, Telepathy, Chronal Distortions. <BR>
+`Toxicroak`: Stats: `hp: 83, atk: 111, def: 85, spa: 91, spd: 85, spe: 85`. New Moves: Jet Punch, Liquidation, Mach Punch, U-turn. <BR>
+`Rotom`: Stats: `hp: 50, atk: 50, def: 77, spa: 95, spd: 77, spe: 116`. <BR>
+`Rotom-Frost`: Abilities: Levitate, Slush Rush. New Moves: Glaciate, Freeze Dry, Icy Wind. <BR>
+`Rotom-Fan`: Ability: Air Lock. Tailwind, Air Cutter. <BR>
+`Rotom-Heat`: New Moves: Fire Pledge, Heat Wave, Inferno. <BR>
+`Rotom-Mow`: New Moves: Grass Pledge, Magical Leaf, Grass Knot. <BR>
+`Rotom-Wash`: New Moves: Water Pledge, Muddy Water, Scald, Brine. <BR>
 ## Gen 5
 `Serperior`: New Moves: Mud Shot. <BR>
 `Scolipede`: New Moves: Collision Course. <BR>
@@ -124,6 +145,12 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Krookodile`: Stats: `hp: 95, atk: 130, def: 90, spa: 65, spd: 75, spe: 92`. Abilities: Intimidate, Moxie, Sand Force. New Moves: Swords Dance. <BR>
 `Cofagrigus`: Stats: `hp: 58, atk: 50, def: 145, spa: 95, spd: 125, spe: 30`. Abilities: Mummy, Cursed Body. New Moves: Strength Sap. <BR>
 `Chandelure`: Abilities: Flame Body, Flash Fire, Turboblaze. New Moves: Blue Flare, Burn Up, Mind Blown, Searing Shot, Shadowflame. <BR>
+`Mega-Audino`: Ability: Regenerator. New Moves: Follow Me, Teleport. <BR>
+`Beartic`: Stats: `hp: 95, atk: 130, def: 80, spa: 70, spd: 80, spe: 70`. New Moves: Ice Shard. <BR>
+`Beheeyem`: Abilities: Telepathy, Psychic Surge, Analytic. <BR>
+`Musharna`: Abilities: Misty Surge, Synchronize, Telepathy. New Moves: Wide Guard. <BR>
+`Kyurem-White`: New Moves: Glaciate. <BR>
+`Kyurem-Black`: New Moves: Glaciate. <BR>
 ## Gen 6
 ## Gen 7
 `Golisopod`: Abilities: Emergency Exit, Battle Armor. <BR>
