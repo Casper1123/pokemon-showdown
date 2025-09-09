@@ -224,7 +224,7 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	},
 	beheeyem: {
 		inherit: true,
-		abilities: { 0: "Telepathy", 1: "Synchronize", H: "Analytic" },
+		abilities: { 0: "Telepathy", 1: "Psychic Surge", H: "Analytic" },
 	},
 	musharna: {
 		inherit: true,

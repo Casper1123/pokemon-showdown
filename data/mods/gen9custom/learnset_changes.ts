@@ -72,6 +72,8 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "altaria", "drainingkiss");
 	setMove(data, modPatch, "camerupt", "sandsearstorm");
 	setMove(data, modPatch, "sharpedo", "swordsdance");
+	setMove(data, modPatch, "banette", "poltergheist");
+	setMove(data, modPatch, "banette", "shadowforce");
 	// endregion
 	// region Gen4
 	setMove(data, modPatch, "hippowdon", "spikes");
@@ -99,9 +101,9 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "rotomwash", "brine");
 	setMove(data, modPatch, "rotomfan", "tailwind");
 	setMove(data, modPatch, "rotomfan", "aircutter");
-	setMove(data, modPatch, "rotom", "glaciate");
-	setMove(data, modPatch, "rotom", "freezedry");
-	setMove(data, modPatch, "rotom", "icywind");
+	setMove(data, modPatch, "rotomfrost", "glaciate");
+	setMove(data, modPatch, "rotomfrost", "freezedry");
+	setMove(data, modPatch, "rotomfrost", "icywind");
 	// endregion
 	// region Gen5
 	setMove(data, modPatch, "serperior", "mudshot");
@@ -145,6 +147,8 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "audino", "teleport");
 	setMove(data, modPatch, "beartic", "iceshard");
 	setMove(data, modPatch, "musharna", "wideguard");
+	setMove(data, modPatch, "kyuremwhite", "glaciate");
+	setMove(data, modPatch, "kyuremblack", "glaciate");
 	// endregion
 	// region Gen6
 	// endregion
