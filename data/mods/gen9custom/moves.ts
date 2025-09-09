@@ -105,10 +105,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	eruption: {
 		inherit: true,
-		secondary: {
-			chance: 10,
-			status: 'brn',
-		},
+		secondary: {},
 	},
 
 	// Custom moves:
