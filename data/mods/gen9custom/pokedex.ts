@@ -128,6 +128,22 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Pressure", 1: "Telepathy", H: "Chronal Distortions" },
 	},
+	toxicroak: {
+		inherit: true,
+		baseStats: { hp: 83, atk: 111, def: 85, spa: 91, spd: 85, spe: 85 },
+	},
+	rotomfrost: {
+		inherit: true,
+		abilities: { 0: "Levitate", H: "Slush Rush" },
+	},
+	rotomfan: {
+		inherit: true,
+		abilities: { 0: "Air Lock" },
+	},
+	rotom: {
+		inherit: true,
+		baseStats: { hp: 50, atk: 50, def: 77, spa: 95, spd: 77, spe: 116 },
+	},
 	// endregion
 	// region: Gen5
 	conkeldurr: {
@@ -201,6 +217,18 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	audinomega: {
 		inherit: true,
 		abilities: { 0: "Regenerator" },
+	},
+	beartic: {
+		inherit: true,
+		baseStats: { hp: 95, atk: 130, def: 80, spa: 70, spd: 80, spe: 70 },
+	},
+	beheeyem: {
+		inherit: true,
+		abilities: { 0: "Telepathy", 1: "Synchronize", H: "Analytic" },
+	},
+	musharna: {
+		inherit: true,
+		abilities: { 0: "Misty Surge", 1: "Synchronize", H: "Telepathy" },
 	},
 	// endregion
 	// region: Gen6

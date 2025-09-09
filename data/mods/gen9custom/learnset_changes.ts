@@ -83,6 +83,25 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "shaymin", "lightofruin");
 	setMove(data, modPatch, "shaymin", "floralhealing");
 	setMove(data, modPatch, "glaceon", "glaciate");
+	setMove(data, modPatch, "toxicroak", "jetpunch");
+	setMove(data, modPatch, "toxicroak", "machpunch");
+	setMove(data, modPatch, "toxicroak", "liquidation");
+	setMove(data, modPatch, "toxicroak", "uturn");
+	setMove(data, modPatch, "rotomheat", "heatwave");
+	setMove(data, modPatch, "rotomheat", "firepledge");
+	setMove(data, modPatch, "rotomheat", "inferno");
+	setMove(data, modPatch, "rotommow", "grasspledge");
+	setMove(data, modPatch, "rotommow", "magicalleaf");
+	setMove(data, modPatch, "rotommow", "grassknot");
+	setMove(data, modPatch, "rotomwash", "waterpledge");
+	setMove(data, modPatch, "rotomwash", "muddywater");
+	setMove(data, modPatch, "rotomwash", "scald");
+	setMove(data, modPatch, "rotomwash", "brine");
+	setMove(data, modPatch, "rotomfan", "tailwind");
+	setMove(data, modPatch, "rotomfan", "aircutter");
+	setMove(data, modPatch, "rotom", "glaciate");
+	setMove(data, modPatch, "rotom", "freezedry");
+	setMove(data, modPatch, "rotom", "icywind");
 	// endregion
 	// region Gen5
 	setMove(data, modPatch, "serperior", "mudshot");
@@ -124,6 +143,8 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "chandelure", "searingshot");
 	setMove(data, modPatch, "audino", "followme");
 	setMove(data, modPatch, "audino", "teleport");
+	setMove(data, modPatch, "beartic", "iceshard");
+	setMove(data, modPatch, "musharna", "wideguard");
 	// endregion
 	// region Gen6
 	// endregion
