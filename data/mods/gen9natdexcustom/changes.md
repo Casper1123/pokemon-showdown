@@ -91,7 +91,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Mega-Pidgeot`: Type: Electric, Flying. New Moves: Zap Cannon, Thunder. <BR>
 ## Gen 2
 `Ampharos`: Type: Electric, Dragon. Plus Ability replaced with Teravolt. Stats: `hp: 100, atk: 75, def: 85, spa: 115, spd: 90, spe: 55`. New Moves: Draco Meteor, Tail Glow, Thunderclap, Parabolic Charge.<BR>
-`Mega- Ampharos`: Ability is now Teravolt. Stats: `hp: 100, atk: 75, def: 110, spa: 165, spd: 115, spe: 45`. <BR>
+`Mega-Ampharos`: Ability is now Teravolt. Stats: `hp: 100, atk: 75, def: 110, spa: 165, spd: 115, spe: 45`. <BR>
 `Typhlosion`: Abilities: Blaze, Flash Fire, Drought. New Moves: Earth Power. <BR>
 `Typhlosion (Hisui)`: Abilities: Blaze, Frisk, Adaptability. New Moves: Shadowflame. <BR>
 `Suicune`: Stats: `hp: 100, atk: 75, def: 125, spa: 90, spd: 125, spe: 85`. Abilities: Pressure, Inner Focus, Misty Surge. New Moves: Misty Explosion, Mist Ball, Strange Steam, Recover. <BR>
