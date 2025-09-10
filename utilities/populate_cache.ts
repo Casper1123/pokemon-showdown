@@ -8,7 +8,7 @@ import path from 'path';
 export function populateCache(exportedMods: string[]): void {
 	console.log("Cache population initialized.");
 
-	const cachePath = path.resolve(__dirname, "../cache");
+	const cachePath = path.resolve(__dirname, "../../cache");
 
 	// Create cache directory if it doesn't exist
 	if (!fs.existsSync(cachePath)) {
