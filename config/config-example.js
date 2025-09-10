@@ -7,7 +7,7 @@
  * Example: ["gen5custom", "our_own_mons"] <- (If you weren't aware, it's the folder name(s) you need :) )
  * @type {string[]}
  */
-exports.exportedMods = [];
+exports.exportedMods = ["gen9natdexcustom"];
 
 /**
  * The server port - the port to run Pokemon Showdown under
