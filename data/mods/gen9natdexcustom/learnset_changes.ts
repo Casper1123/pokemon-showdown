@@ -11,7 +11,7 @@ import { setMove } from "../../../utilities/mod_alter";
 export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = undefined): void {
 	// Very shoddy script for adding Hidden Power to mons that don't get it (gen8, gen9)
 	// Add Hidden Power to all Pokémon introduced after gen7, because the move was dexited in gen8. Might be risky with Regieleki :/
-	const dex = Dex.mod('gen9custom');
+	const dex = Dex.mod('gen9natdexcustom');
 	for (const species of dex.species.all()) {
 		// Hidden power for everyone gen8+
 		if (species.gen >= 8) {

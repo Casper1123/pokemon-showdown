@@ -11,7 +11,7 @@ describe('Chronal Distortions', () => {
 	});
 
 	it('should set field condition and not expire in 5 turns', () => {
-		battle = common.mod('gen9custom').createBattle([[
+		battle = common.mod('gen9natdexcustom').createBattle([[
 			{ species: 'Dialga', ability: 'chronaldistortions', moves: ['splash'] },
 		], [
 			{ species: 'Dialga', moves: ['splash'] },
@@ -26,7 +26,7 @@ describe('Chronal Distortions', () => {
 	});
 
 	it('should maintain field condition when one user faints but another remains', () => {
-		battle = common.mod('gen9custom').createBattle([[
+		battle = common.mod('gen9natdexcustom').createBattle([[
 			{ species: 'Dialga', ability: 'chronaldistortions', moves: ['earthpower'] },
 		], [
 			{ species: 'Dialga', level: 1, ability: 'chronaldistortions', moves: ['splash'] },
@@ -37,7 +37,7 @@ describe('Chronal Distortions', () => {
 	});
 
 	it('should maintain field condition when one user switches but another remains', () => {
-		battle = common.mod('gen9custom').createBattle([[
+		battle = common.mod('gen9natdexcustom').createBattle([[
 			{ species: 'Dialga', ability: 'chronaldistortions', moves: ['splash'] },
 			{ species: 'Magikarp', ability: 'rattled', moves: ['splash'] },
 		], [
@@ -49,7 +49,7 @@ describe('Chronal Distortions', () => {
 	});
 
 	it('Should activate the move again in 2 turns dealing damage again', () => {
-		battle = common.mod('gen9custom').createBattle([[
+		battle = common.mod('gen9natdexcustom').createBattle([[
 			{ species: 'Dialga', ability: 'chronaldistortions', moves: ['dragonrage', 'splash'] },
 		], [
 			{ species: 'Dialga', ability: 'chronaldistortions', moves: ['dragonrage', 'splash'] },
@@ -69,7 +69,7 @@ describe('Chronal Distortions', () => {
 
 	it('The distorted move is of the same type', () => {
 		// Use psychic against a dark type, then when it hits it should not damage again.
-		battle = common.mod('gen9custom').createBattle({ gameType: 'doubles' }, [[
+		battle = common.mod('gen9natdexcustom').createBattle({ gameType: 'doubles' }, [[
 			{ species: 'Celebi', ability: 'chronaldistortions', moves: ['psychic', 'splash'] },
 			{ species: 'Celebi', ability: 'chronaldistortions', moves: ['psychic', 'splash'] },
 		], [
@@ -100,7 +100,7 @@ describe('Chronal Distortions', () => {
 
 	it('Should hit for less damage into targets with corresponding defensive boosts', () => {
 		// Test using doubles. Make sure to set up Amnesia & Iron Defense
-		battle = common.mod('gen9custom').createBattle({ gameType: 'doubles' }, [[
+		battle = common.mod('gen9natdexcustom').createBattle({ gameType: 'doubles' }, [[
 			{ species: 'Celebi', ability: 'chronaldistortions', moves: ['triattack', 'splash'] },
 			{ species: 'Celebi', ability: 'chronaldistortions', moves: ['triattack', 'splash'] },
 		], [
@@ -134,7 +134,7 @@ describe('Chronal Distortions', () => {
 		const unboostedDamage = [];
 
 		for (let i = 0; i < 100; i++) {
-			battle = common.mod('gen9custom').createBattle({ gameType: 'doubles' }, [[
+			battle = common.mod('gen9natdexcustom').createBattle({ gameType: 'doubles' }, [[
 				{ species: 'ratata', ability: 'chronaldistortions', moves: ['tackle', 'bellydrum'] },
 				{ species: 'ratata', ability: 'chronaldistortions', moves: ['tackle'] },
 			], [
@@ -163,7 +163,7 @@ describe('Chronal Distortions', () => {
 	});
 
 	it('Should deal more damage if it was casted with boosted stats originally', () => {
-		battle = common.mod('gen9custom').createBattle({ gameType: 'doubles' }, [[
+		battle = common.mod('gen9natdexcustom').createBattle({ gameType: 'doubles' }, [[
 			{ species: 'ratata', ability: 'chronaldistortions', moves: ['tackle', 'splash', 'bellydrum'] },
 			{ species: 'ratata', ability: 'chronaldistortions', moves: ['tackle', 'splash'] },
 		], [

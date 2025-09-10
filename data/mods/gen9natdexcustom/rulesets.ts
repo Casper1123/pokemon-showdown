@@ -57,7 +57,7 @@ export const Rulesets: import('../../../sim/dex-formats').FormatDataTable = {
 	///////////////////////////////////////////////////////////////////
 	gen9customubersag: {
 		effectType: 'ValidatorRule',
-		name: 'gen9custom UbersAg',
+		name: 'gen9natdexcustom UbersAg',
 		desc: 'Implements custom behaviour regarding the Ubers and AG mons during team validation. Made for NationalDex formats for singles.',
 		onValidateTeam(team, format, teamHas) {
 			const dex = this.dex;
@@ -99,7 +99,7 @@ export const Rulesets: import('../../../sim/dex-formats').FormatDataTable = {
 
 	gen9custommegaray: {
 		effectType: 'Rule',
-		name: 'gen9custom megaray',
+		name: 'gen9natdexcustom megaray',
 		desc: 'Rayquaza can only Mega Evolve if its player has few enough pokémon for an AG team.',
 
 		onBegin() {
