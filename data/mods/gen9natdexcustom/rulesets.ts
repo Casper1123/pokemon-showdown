@@ -55,7 +55,7 @@ function isUberSet(dex: ModdedDex, set: PokemonSet): boolean {
 export const Rulesets: import('../../../sim/dex-formats').FormatDataTable = {
 	// Custom Rulesets
 	///////////////////////////////////////////////////////////////////
-	gen9customubersag: {
+	gen9natdexcustomubersag: {
 		effectType: 'ValidatorRule',
 		name: 'gen9natdexcustom UbersAg',
 		desc: 'Implements custom behaviour regarding the Ubers and AG mons during team validation. Made for NationalDex formats for singles.',
@@ -97,7 +97,7 @@ export const Rulesets: import('../../../sim/dex-formats').FormatDataTable = {
 		},
 	},
 
-	gen9custommegaray: {
+	gen9natdexcustommegaray: {
 		effectType: 'Rule',
 		name: 'gen9natdexcustom megaray',
 		desc: 'Rayquaza can only Mega Evolve if its player has few enough pokémon for an AG team.',
