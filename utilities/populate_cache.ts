@@ -16,7 +16,9 @@ export function populateCache(exportedMods: string[]): void {
 	}
 
 	// Clear existing cache files
+	console.log("Emptying out exiting cache folder at", cachePath, "...");
 	for (const file of fs.readdirSync(cachePath, { withFileTypes: true })) {
+		console.log(`Removing ${file.name} ...`);
 		fs.rmSync(path.join(cachePath, file.name));
 	}
 
