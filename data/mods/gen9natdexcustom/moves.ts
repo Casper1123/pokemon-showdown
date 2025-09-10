@@ -84,7 +84,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	snowscape: {
 		inherit: true,
 		desc: "Sets snow for 5 turns. Ice: 1.5x Def, 1.2x Ice-STAB, 0.8x/1.2x spe (based on Trick Room).",
-		shortDesc: "Snow for 5 turns. Boosts Ice types offense & Def.",
+		shortDesc: "Snow 5 turns, Ice: 1.5x Def, 1.2x Spe, 1.2x I-STAB",
 	},
 	lightofruin: {
 		inherit: true,
