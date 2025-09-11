@@ -140,4 +140,14 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 			this.add('-message', 'The flow of time returns to normal.');
 		},
 	},
+
+	spatialdistortions: {
+		name: "Spatial Distortions",
+		duration: 0,
+	},
+
+	entropicdistortions: {
+		name: "Entropic Distortions",
+		duration: 0,
+	},
 };

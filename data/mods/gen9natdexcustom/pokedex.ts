@@ -81,6 +81,10 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		abilities: { 0: "Pressure", 1: "Unaware", H: "Regenerator" },
 		baseStats: { hp: 70, atk: 60, def: 160, spa: 60, spd: 160, spe: 90 },
 	},
+	deoxys: {
+		inherit: true,
+		abilities: { 0: "Pressure", H: "Mold Breaker" },
+	},
 	metagross: {
 		inherit: true,
 		abilities: { 0: "Clear Body", 1: "Light Metal", H: "Full Metal Body" },
@@ -128,6 +132,22 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Pressure", 1: "Telepathy", H: "Chronal Distortions" },
 	},
+	dialgaorigin: {
+		inherit: true,
+		abilities: { 0: "Pressure", 1: "Telepathy", H: "Chronal Distortions" },
+	},
+	palkia: {
+		inherit: true,
+		abilities: { 0: "Pressure", 1: "Telepathy", H: "Spatial Distortions" },
+	},
+	palkiaorigin: {
+		inherit: true,
+		abilities: { 0: "Pressure", 1: "Telepathy", H: "Spatial Distortions" },
+	},
+	giratina: {
+		inherit: true,
+		abilities: { 0: "Pressure", 1: "Telepathy", H: "Entropic Distortions" },
+	}, // Todo: Allow Giratina-Origin?
 	toxicroak: {
 		inherit: true,
 		baseStats: { hp: 83, atk: 111, def: 85, spa: 91, spd: 85, spe: 85 },
@@ -229,6 +249,10 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	musharna: {
 		inherit: true,
 		abilities: { 0: "Misty Surge", 1: "Synchronize", H: "Telepathy" },
+	},
+	darmanitan: {
+		inherit: true,
+		abilities: { 0: "Sheer Force", 1: "Gorilla Tactics", H: "Zen Mode" },
 	},
 	// endregion
 	// region: Gen6

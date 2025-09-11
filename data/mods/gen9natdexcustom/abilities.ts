@@ -20,6 +20,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		shortDesc: "While active: Moves hit for .8x and .4x in 2 turns.",
 		// Todo: add '-activate'?
 		onStart(source) {
+			this.add('-ability', source, 'Chronal Distortions');
 			this.field.addPseudoWeather('chronaldistortions', source);
 		},
 		onEnd(pokemon) {
@@ -35,5 +36,46 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			this.field.removePseudoWeather('chronaldistortions');
 		},
 	},
+	spatialdistortions: {
+		name: "Spatial Distortions",
+		desc: "Currently nonfunctional.",
+		shortDesc: "Currently nonfunctional.",
+		onStart(source) {
+			this.add('-ability', source, 'Spatial Distortions');
+			this.field.addPseudoWeather('spatialdistortions', source);
+		},
+		onEnd(pokemon) {
+			if (this.field.pseudoWeather['spatialdistortions']?.source !== pokemon) return;
+			for (const target of this.getAllActive()) {
+				if (target === pokemon) continue;
+				if (target.hasAbility('spatialdistortions')) {
+					this.field.pseudoWeather['spatialdistortions'].source = target;
+					this.add('-message', `${target.name} maintains the distortion!`);
+					return;
+				}
+			}
+			this.field.removePseudoWeather('spatialdistortions');
+		},
+	},
+	entropicdistortions: {
+		name: "Entropic Distortions",
+		desc: "Currently nonfunctional.",
+		shortDesc: "Currently nonfunctional.",
+		onStart(source) {
+			this.add('-ability', source, 'Entropic Distortions');
+			this.field.addPseudoWeather('entropicdistortions', source);
+		},
+		onEnd(pokemon) {
+			if (this.field.pseudoWeather['entropicdistortions']?.source !== pokemon) return;
+			for (const target of this.getAllActive()) {
+				if (target === pokemon) continue;
+				if (target.hasAbility('entropicdistortions')) {
+					this.field.pseudoWeather['entropicdistortions'].source = target;
+					this.add('-message', `${target.name} maintains the distortion!`);
+					return;
+				}
+			}
+			this.field.removePseudoWeather('entropicdistortions');
+		},
+	}
 };
-// FIXME: Send data to client properly.
