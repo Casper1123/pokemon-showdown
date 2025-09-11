@@ -165,6 +165,14 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 		},
 	},
+	coreenforcer: {
+		inherit: true,
+		category: "Physical",
+	},
+	darkvoid: {
+		inherit: true,
+		accuracy: 80,
+	},
 
 	// Custom moves:
 	desertsong: {
