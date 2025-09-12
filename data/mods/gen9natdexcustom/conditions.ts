@@ -221,5 +221,5 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 	entropicdistortions: {
 		name: "Entropic Distortions",
 		duration: 0,
-	}, // Todo: disable Abilities & Items.
+	}, // Todo: disable Abilities & Items?
 };
