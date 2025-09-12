@@ -143,7 +143,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 		},
 	},
 
-	spatialdistortions: { // Todo: Wonder Room toggle?
+	spatialdistortions: {
 		name: "Spatial Distortions",
 		duration: 0,
 		onFieldStart(target, source) {
@@ -169,9 +169,10 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 			if (hasAbilityUser) {
 				this.effectState.abilityActive = true;
 				this.effectState.persistTurns = 0;
+				this.add('-message', 'Space crashes in on itself, fighting an endless struggle.');
 			} else if (this.effectState.abilityActive) {
 				this.effectState.abilityActive = false;
-				this.effectState.persistTurns = 2;
+				this.effectState.persistTurns = 1;
 				this.add('-message', 'Space turns the tides against the distortion ...');
 			} else {
 				this.effectState.persistTurns--;
@@ -197,7 +198,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 		onBeforeMovePriority: 6,
 		onBeforeMove(pokemon, target, move) {
 			if (move.flags['gravity'] && !move.isZ) {
-				this.add('cant', pokemon, 'move: Spatial Distortions', move);
+				this.add('cant', pokemon, 'ability: Spatial Distortions', move);
 				return false;
 			}
 		},
@@ -220,5 +221,5 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 	entropicdistortions: {
 		name: "Entropic Distortions",
 		duration: 0,
-	}, // Todo: disable Abilities & Items. Remove (pseudo)weather, terrain?
+	}, // Todo: disable Abilities & Items.
 };

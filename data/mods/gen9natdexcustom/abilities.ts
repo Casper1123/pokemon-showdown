@@ -18,7 +18,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		name: "Chronal Distortions",
 		desc: "While on the field, moves hit for 0.8x damage. In 2 turns, it hits again for 0.4x damage, without altering ally stats.",
 		shortDesc: "While active: Moves hit for .8x and .4x in 2 turns.",
-		// Todo: add '-activate'?
 		onStart(source) {
 			this.add('-ability', source, 'Chronal Distortions');
 			this.field.addPseudoWeather('chronaldistortions', source);
@@ -38,8 +37,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	spatialdistortions: {
 		name: "Spatial Distortions",
-		desc: "Currently nonfunctional.",
-		shortDesc: "Currently nonfunctional.",
+		desc: "Sets Gravity. After leaving the battlefield, the effect will remain for 2 turns.",
+		shortDesc: "Sets Gravity. Lingers for 2 turns.",
 		onStart(source) {
 			this.add('-ability', source, 'Spatial Distortions');
 			this.field.addPseudoWeather('spatialdistortions', source);
