@@ -101,16 +101,18 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 		duration: 0,
 		onFieldStart(target, source) {
 			this.add('-fieldstart', 'Chronal Distortions', `[of] ${source}`, '[silent]');
-			this.add('-message', `${source.name} distorts the flow of time on the battlefield!`);
+			this.add('-message', `Time seems to slow down and accelerate everywhere at the same time, ${source.name} is distorting the flow of time on the battlefield!`);
 		},
 		onBasePowerPriority: 8,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.category !== 'Status' && move.id !== 'fakeout' && move.id !== 'futuresight' && move.id !== 'doomdesire') {
+			if (move.category !== 'Status' && move.id !== 'fakeout' && move.id !== 'futuresight' &&
+				move.id !== 'doomdesire') {
 				return this.chainModify(0.8);
 			}
 		},
 		onAfterMove(source, target, move) {
-			if (move.category === 'Status' || move.id === 'fakeout' || move.id === 'futuresight' || move.id === 'doomdesire' || !target) return;
+			if (move.category === 'Status' || move.id === 'fakeout' || move.id === 'futuresight' ||
+				move.id === 'doomdesire' || !target) return;
 
 			if (!target.side.addSlotCondition(target, 'distortedmove')) {
 				target.side.addSlotCondition(target, 'distortedmove');
@@ -141,13 +143,82 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 		},
 	},
 
-	spatialdistortions: {
+	spatialdistortions: { // Todo: Wonder Room toggle?
 		name: "Spatial Distortions",
 		duration: 0,
+		onFieldStart(target, source) {
+			this.add('-fieldstart', 'Spatial Distortions', `[of] ${source}`);
+			this.add('-message', `Space looks to be crashing in on itself, fighting back violently; ${source.name} is distorting the space on the battlefield!`);
+			this.effectState.abilityActive = true;
+			this.effectState.persistTurns = 0;
+		},
+		onFieldRestart(target, source) {
+			this.effectState.abilityActive = true;
+			this.effectState.persistTurns = 0;
+		},
+		onFieldResidualOrder: 27,
+		onFieldResidual() {
+			let hasAbilityUser = false;
+			for (const pokemon of this.getAllActive()) {
+				if (pokemon.hasAbility('spatialdistortions')) {
+					hasAbilityUser = true;
+					break;
+				}
+			}
+
+			if (hasAbilityUser) {
+				this.effectState.abilityActive = true;
+				this.effectState.persistTurns = 0;
+			} else if (this.effectState.abilityActive) {
+				this.effectState.abilityActive = false;
+				this.effectState.persistTurns = 2;
+				this.add('-message', 'Space turns the tides against the distortion ...');
+			} else {
+				this.effectState.persistTurns--;
+				if (this.effectState.persistTurns <= 0) {
+					this.field.removePseudoWeather('spatialdistortions');
+					this.add('-message', 'Space rests back in a state of normalcy.');
+					return;
+				}
+				this.add('-message', `Space is winning its fight against the distortion ... (${this.effectState.persistTurns} turn${this.effectState.persistTurns === 1 ? '\'' : 's'})`);
+			}
+		},
+		onModifyAccuracy(accuracy) {
+			if (typeof accuracy !== 'number') return;
+			return this.chainModify([6840, 4096]); // 1.67x accuracy
+		},
+		onDisableMove(pokemon) {
+			for (const moveSlot of pokemon.moveSlots) {
+				if (this.dex.moves.get(moveSlot.id).flags['gravity']) {
+					pokemon.disableMove(moveSlot.id);
+				}
+			}
+		},
+		onBeforeMovePriority: 6,
+		onBeforeMove(pokemon, target, move) {
+			if (move.flags['gravity'] && !move.isZ) {
+				this.add('cant', pokemon, 'move: Spatial Distortions', move);
+				return false;
+			}
+		},
+		onFieldEnd() {
+			this.add('-fieldend', 'Spatial Distortions');
+			this.add('-message', 'Space returns to a state of normalcy.');
+			// Remove grounding effects when field ends, just in case. They're not supposed to be on but SOMEHOW
+			const activePokemon = this.getAllActive();
+			for (const pokemon of activePokemon) {
+				if (pokemon.volatiles['magnetrise']) {
+					delete pokemon.volatiles['magnetrise'];
+				}
+				if (pokemon.volatiles['telekinesis']) {
+					delete pokemon.volatiles['telekinesis'];
+				}
+			}
+		},
 	},
 
 	entropicdistortions: {
 		name: "Entropic Distortions",
 		duration: 0,
-	},
+	}, // Todo: disable Abilities & Items. Remove (pseudo)weather, terrain?
 };
