@@ -76,5 +76,5 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 			this.field.removePseudoWeather('entropicdistortions');
 		},
-	}
+	},
 };
