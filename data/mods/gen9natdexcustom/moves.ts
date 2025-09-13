@@ -173,6 +173,11 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		accuracy: 80,
 	},
+	spacialrend: {
+		inherit: true,
+		accuracy: 85,
+		basePower: 120,
+	},
 
 	// Custom moves:
 	desertsong: {
