@@ -86,7 +86,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Sand Force`: Scalar changed from 30% to 50%. <BR>
 <BR> *Custom Abilities:* <BR>
 `Chronal Distortion`: Sets a primordial pseudoweather. While active, all attacking moves hit for 0.8x damage. In 2 turns, they hit again for 0.4x damage. This distorted move cannot boost allies stats. *Exceptions that do not hit twice: Fake Out, Doom Desire, Future Sight.* <BR>
-`Spatial Distortion`: Sets a primordial pseudoweather that lingers for 2 turns after the last user of the ability leaves the field. Has the effects of Gravity. <BR>
+`Spatial Distortion`: Sets a primordial pseudoweather that lingers for 2 turns if not maintained. Has the effects of Gravity. <BR>
 `Absolute Distortion`: Sets a primordial pseudoweather. Removes all hazards and field conditions (weather, terrain, etc). Blocks all usages of status moves and abilities that set them, except if the user has the `Absolute Distortion` ability.
 
 # Pokémon
