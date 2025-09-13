@@ -44,6 +44,7 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "suicune", "mistyexplosion");
 	setMove(data, modPatch, "suicune", "mistball");
 	setMove(data, modPatch, "suicune", "strangesteam");
+	setMove(data, modPatch, "suicune", "mistyterrain");
 	setMove(data, modPatch, "suicune", "recover");
 	setMove(data, modPatch, "steelix", "coil");
 	setMove(data, modPatch, "raikou", "tailwind");
@@ -104,6 +105,10 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "rotomfrost", "glaciate");
 	setMove(data, modPatch, "rotomfrost", "freezedry");
 	setMove(data, modPatch, "rotomfrost", "icywind");
+	setMove(data, modPatch, "palkia", "originpulse");
+	setMove(data, modPatch, "palkia", "hyperspacehole");
+	setMove(data, modPatch, 'giratina', 'roost');
+	setMove(data, modPatch, 'regigigas', 'protect');
 	// endregion
 	// region Gen5
 	setMove(data, modPatch, "serperior", "mudshot");
