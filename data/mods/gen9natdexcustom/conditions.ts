@@ -1,5 +1,12 @@
 import { type ModdedConditionData } from "../../../sim/dex-conditions";
 
+const weatherAbilities = ['desolateland', 'primordialsea', 'deltastream',
+	'drizzle', 'sandstream', 'snowwarning', 'drought', 'orichalcumpulse'];
+const terrainAbilities = ['psychicsurge', 'mistysurge', 'grassysurge', 'electricsurge', 'hadronengine'];
+const allFieldAbilities = [...weatherAbilities, ...terrainAbilities];
+const protectedPseudoWeathers = ['chronaldistortions', 'spatialdistortions', 'absolutedistortions'];
+const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb'];
+
 export const Conditions: { [k: string]: ModdedConditionData } = {
 	gem: {
 		inherit: true,
@@ -147,7 +154,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 		name: "Spatial Distortions",
 		duration: 0,
 		onFieldStart(target, source) {
-			this.add('-fieldstart', 'Spatial Distortions', `[of] ${source}`);
+			this.add('-fieldstart', 'Spatial Distortions', `[of] ${source}`, '[silent]');
 			this.add('-message', `Space looks to be crashing in on itself, fighting back violently; ${source.name} is distorting the space on the battlefield!`);
 			this.effectState.abilityActive = true;
 			this.effectState.persistTurns = 0;
@@ -218,11 +225,71 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 		},
 	},
 
-	entropicdistortions: {
-		name: "Entropic Distortions",
+	absolutedistortion: {
+		name: "Absolute Distortion",
 		duration: 0,
+		onFieldStart(target, source) {
+			this.add('-fieldstart', 'Absolute Distortion', `[of] ${source}`);
+			this.add('-message', `${source.name} drags everything into the Distortion World!`);
+
+			for (const pokemon of this.getAllActive()) {
+				if (allFieldAbilities.includes(pokemon.getAbility().id)) {
+					pokemon.abilityState.suppressed = true;
+				}
+			}
+
+			this.field.clearWeather();
+			this.field.clearTerrain();
+			for (const pseudoWeather of Object.keys(this.field.pseudoWeather)) {
+				if (!protectedPseudoWeathers.includes(pseudoWeather)) {
+					this.field.removePseudoWeather(pseudoWeather);
+				}
+			}
+			for (const side of this.sides) {
+				for (const hazard of hazards) {
+					side.removeSideCondition(hazard);
+				}
+			}
+		},
+		onTryMove(attacker, defender, move) {
+			if (attacker.hasAbility('absolutedistortion') && !attacker.abilityState.suppressed) return;
+			if (move.category === 'Status' && (
+				move.weather || move.terrain || move.pseudoWeather ||
+				(move.sideCondition && hazards.includes(move.sideCondition))
+			)) {
+				this.add('-fail', attacker, move, '[from] Absolute Distortion');
+				this.add('-message', 'You do not own this realm.'); // Todo: Randomize flavour text from a small pool.
+				return false;
+			}
+		},
+		onSwitchIn(pokemon) {
+			const allowedDistortions = ['chronaldistortions', 'spatialdistortions', 'absolutedistortion'];
+
+			if (allFieldAbilities.includes(pokemon.getAbility().id) && !allowedDistortions.includes(pokemon.getAbility().id)) {
+				pokemon.abilityState.suppressed = true;
+				this.add('-message', `${pokemon.name} cannot use ${pokemon.getAbility().name}, this realm's master forbids it.`);
+			}
+		},
+		onFieldEnd() {
+			this.add('-fieldend', 'Absolute Distortion');
+			this.add('-message', `The Distortion World fades from the surrounding, everything emerges back to normal reality.`);
+
+			const sortedActive = this.getAllActive();
+			this.speedSort(sortedActive);
+
+			for (const pokemon of sortedActive) {
+				if (pokemon.fainted) continue;
+				if (['chronaldistortions', 'spatialdistortions', 'absolutedistortion'].includes(pokemon.getAbility().id)) continue;
+				if (pokemon.volatiles['gastroacid']) continue;
+				const ability = pokemon.getAbility();
+
+				if (allFieldAbilities.includes(ability.id)) {
+					if (pokemon.abilityState.suppressed) {
+						pokemon.abilityState.suppressed = false;
+					}
+					this.singleEvent('Start', ability, pokemon.abilityState, pokemon);
+				}
+			}
+		},
 	},
-	// Todo: Alternate active Wonder & Magic Room. Do not linger.
-	// Disables effects of (Pseudo)Weather, so like a stronger Air Lock. Excludes defensive attributes of Terrain,
-	// like Misty Terrain's status blocking or Grassy Terrains EQ power lowering effect.
 };

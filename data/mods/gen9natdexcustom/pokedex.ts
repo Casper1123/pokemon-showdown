@@ -146,8 +146,12 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	},
 	giratina: {
 		inherit: true,
-		abilities: { 0: "Pressure", 1: "Telepathy", H: "Entropic Distortions" },
-	}, // Todo: Allow Giratina-Origin?
+		abilities: { 0: "Pressure", 1: "Telepathy", H: "Absolute Distortion" },
+	},
+	giratinaorigin: {
+		inherit: true,
+		abilities: { 0: "Levitate", H: "Absolute Distortion" },
+	},
 	toxicroak: {
 		inherit: true,
 		baseStats: { hp: 83, atk: 111, def: 85, spa: 91, spd: 85, spe: 85 },

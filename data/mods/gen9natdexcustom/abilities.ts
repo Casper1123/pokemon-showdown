@@ -56,25 +56,25 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			this.field.removePseudoWeather('spatialdistortions');
 		},
 	},
-	entropicdistortions: {
-		name: "Entropic Distortions",
-		desc: "Currently nonfunctional.",
-		shortDesc: "Currently nonfunctional.",
+	absolutedistortion: {
+		name: "Absolute Distortion",
+		desc: "Plunge the battlefield into the Distortion World, where Weather, Terrain, Pseudoweather and Hazards are yours to rule.",
+		shortDesc: "Removes field effects and Hazards, and restricts setting them.",
 		onStart(source) {
-			this.add('-ability', source, 'Entropic Distortions');
-			this.field.addPseudoWeather('entropicdistortions', source);
+			this.add('-ability', source, 'Absolute Distortion');
+			this.field.addPseudoWeather('absolutedistortion', source);
 		},
 		onEnd(pokemon) {
-			if (this.field.pseudoWeather['entropicdistortions']?.source !== pokemon) return;
+			if (this.field.pseudoWeather['absolutedistortion']?.source !== pokemon) return;
 			for (const target of this.getAllActive()) {
 				if (target === pokemon) continue;
-				if (target.hasAbility('entropicdistortions')) {
-					this.field.pseudoWeather['entropicdistortions'].source = target;
-					this.add('-message', `${target.name} maintains the distortion!`);
+				if (target.hasAbility('absolutedistortion')) {
+					this.field.pseudoWeather['absolutedistortion'].source = target;
+					this.add('-message', `${target.name} upholds the dimension.`); // Todo: better flavour.
 					return;
 				}
 			}
-			this.field.removePseudoWeather('entropicdistortions');
+			this.field.removePseudoWeather('absolutedistortion');
 		},
 	},
 };
