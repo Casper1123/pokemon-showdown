@@ -5,7 +5,7 @@ const weatherAbilities = ['desolateland', 'primordialsea', 'deltastream',
 const terrainAbilities = ['psychicsurge', 'mistysurge', 'grassysurge', 'electricsurge', 'hadronengine'];
 const allFieldAbilities = [...weatherAbilities, ...terrainAbilities];
 const protectedPseudoWeathers = ['chronaldistortions', 'spatialdistortions', 'absolutedistortions'];
-const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb'];
+const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 
 export const Conditions: { [k: string]: ModdedConditionData } = {
 	gem: {
@@ -103,11 +103,11 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 			}
 		},
 	},
-	chronaldistortions: {
-		name: 'Chronal Distortions',
+	chronaldistortion: {
+		name: 'Chronal Distortion',
 		duration: 0,
 		onFieldStart(target, source) {
-			this.add('-fieldstart', 'Chronal Distortions', `[of] ${source}`, '[silent]');
+			this.add('-fieldstart', 'Chronal Distortion', `[of] ${source}`, '[silent]');
 			this.add('-message', `Time seems to slow down and accelerate everywhere at the same time, ${source.name} is distorting the flow of time on the battlefield!`);
 		},
 		onBasePowerPriority: 8,
@@ -145,16 +145,16 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 			this.add('-message', `${source.name}'s ${move.name} is scattered through time.`);
 		},
 		onFieldEnd() {
-			this.add('-fieldend', 'Chronal Distortions');
+			this.add('-fieldend', 'Chronal Distortion');
 			this.add('-message', 'The flow of time returns to normal.');
 		},
 	},
 
 	spatialdistortions: {
-		name: "Spatial Distortions",
+		name: "Spatial Distortion",
 		duration: 0,
 		onFieldStart(target, source) {
-			this.add('-fieldstart', 'Spatial Distortions', `[of] ${source}`, '[silent]');
+			this.add('-fieldstart', 'Spatial Distortion', `[of] ${source}`, '[silent]');
 			this.add('-message', `Space looks to be crashing in on itself, fighting back violently; ${source.name} is distorting the space on the battlefield!`);
 			this.effectState.abilityActive = true;
 			this.effectState.persistTurns = 0;
@@ -167,7 +167,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 		onFieldResidual() {
 			let hasAbilityUser = false;
 			for (const pokemon of this.getAllActive()) {
-				if (pokemon.hasAbility('spatialdistortions')) {
+				if (pokemon.hasAbility('spatialdistortion')) {
 					hasAbilityUser = true;
 					break;
 				}
@@ -184,7 +184,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 			} else {
 				this.effectState.persistTurns--;
 				if (this.effectState.persistTurns <= 0) {
-					this.field.removePseudoWeather('spatialdistortions');
+					this.field.removePseudoWeather('spatialdistortion');
 					this.add('-message', 'Space rests back in a state of normalcy.');
 					return;
 				}
@@ -205,12 +205,12 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 		onBeforeMovePriority: 6,
 		onBeforeMove(pokemon, target, move) {
 			if (move.flags['gravity'] && !move.isZ) {
-				this.add('cant', pokemon, 'ability: Spatial Distortions', move);
+				this.add('cant', pokemon, 'ability: Spatial Distortion', move);
 				return false;
 			}
 		},
 		onFieldEnd() {
-			this.add('-fieldend', 'Spatial Distortions');
+			this.add('-fieldend', 'Spatial Distortion');
 			this.add('-message', 'Space returns to a state of normalcy.');
 			// Remove grounding effects when field ends, just in case. They're not supposed to be on but SOMEHOW
 			const activePokemon = this.getAllActive();

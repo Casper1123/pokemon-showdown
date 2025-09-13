@@ -41,7 +41,7 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	},
 	celebi: {
 		inherit: true,
-		abilities: { 0: "Natural Cure", H: "Chronal Distortions" },
+		abilities: { 0: "Natural Cure", H: "Chronal Distortion" },
 		baseStats: { hp: 120, atk: 50, def: 150, spa: 100, spd: 110, spe: 100 },
 	},
 	suicune: {
@@ -130,19 +130,19 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	},
 	dialga: {
 		inherit: true,
-		abilities: { 0: "Pressure", 1: "Telepathy", H: "Chronal Distortions" },
+		abilities: { 0: "Pressure", 1: "Telepathy", H: "Chronal Distortion" },
 	},
 	dialgaorigin: {
 		inherit: true,
-		abilities: { 0: "Pressure", 1: "Telepathy", H: "Chronal Distortions" },
+		abilities: { 0: "Pressure", 1: "Telepathy", H: "Chronal Distortion" },
 	},
 	palkia: {
 		inherit: true,
-		abilities: { 0: "Pressure", 1: "Telepathy", H: "Spatial Distortions" },
+		abilities: { 0: "Pressure", 1: "Telepathy", H: "Spatial Distortion" },
 	},
 	palkiaorigin: {
 		inherit: true,
-		abilities: { 0: "Pressure", 1: "Telepathy", H: "Spatial Distortions" },
+		abilities: { 0: "Pressure", 1: "Telepathy", H: "Spatial Distortion" },
 	},
 	giratina: {
 		inherit: true,
