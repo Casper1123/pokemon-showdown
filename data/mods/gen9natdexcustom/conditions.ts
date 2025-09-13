@@ -221,5 +221,8 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 	entropicdistortions: {
 		name: "Entropic Distortions",
 		duration: 0,
-	}, // Todo: disable Abilities & Items?
+	},
+	// Todo: Alternate active Wonder & Magic Room. Do not linger.
+	// Disables effects of (Pseudo)Weather, so like a stronger Air Lock. Excludes defensive attributes of Terrain,
+	// like Misty Terrain's status blocking or Grassy Terrains EQ power lowering effect.
 };
