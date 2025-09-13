@@ -150,7 +150,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 		},
 	},
 
-	spatialdistortions: {
+	spatialdistortion: {
 		name: "Spatial Distortion",
 		duration: 0,
 		onFieldStart(target, source) {
