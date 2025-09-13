@@ -179,7 +179,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 				this.add('-message', 'Space crashes in on itself, fighting an endless struggle.');
 			} else if (this.effectState.abilityActive) {
 				this.effectState.abilityActive = false;
-				this.effectState.persistTurns = 1;
+				this.effectState.persistTurns = 2;
 				this.add('-message', 'Space turns the tides against the distortion ...');
 			} else {
 				this.effectState.persistTurns--;
