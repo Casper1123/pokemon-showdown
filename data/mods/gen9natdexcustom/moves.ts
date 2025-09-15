@@ -324,22 +324,21 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				} else {
 					this.add('-activate', target, 'move: Protect');
 				}
-				const lockedmove = source.getVolatile('lockedmove');
-				if (lockedmove) {
-					if (target.hp < target.maxhp) {
-						const healAmount = Math.floor(target.maxhp / 4);
-						target.heal(healAmount);
-						this.add('-heal', target, target.getHealth, '[from] move: Time Stop');
-						this.add('-message', `The energy sustains ${target.name} inside the chrysalis.`);
-						// Chrysalis (according to oxford)
-						// a transitional state.
-						// "she emerged from the chrysalis of self-conscious adolescence"
-					}
+
+				if (target.hp < target.maxhp) {
+					const healAmount = Math.ceil(target.maxhp / 4);
+					target.heal(healAmount);
+					this.add('-heal', target, target.getHealth, '[from] move: Time Stop', '[silent]');
+					this.add('-message', `The energy sustains ${target.name} inside the chrysalis.`);
+					// Chrysalis (according to oxford)
+					// a transitional state.
+					// "she emerged from the chrysalis of self-conscious adolescence"
 				}
+
 				return this.NOT_FAIL;
 			},
 			onEnd(target) {
-				target.forceSwitchFlag = true;
+				target.switchFlag = 'timestop' as ID;
 				this.add('-message', `${target.name} fades into the future.`);
 			},
 		},
