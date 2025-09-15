@@ -53,7 +53,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 					return;
 				}
 			}
-			this.field.removePseudoWeather('spatialdistortion');
 		},
 	},
 	absolutedistortion: {
