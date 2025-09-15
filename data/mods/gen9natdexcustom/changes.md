@@ -80,7 +80,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Desert Song`: 90 BP, 100 ACC, 10 PP, Ground Special, Sound. Sets Sand on hit. If sand was already up, 1.5x damage.<BR>
 `Neutron Ray`: 100 BP, 100 ACC, 5 PP, Dark Special. Uses highest attacking stat. 30% chance to inflict one of: Paralysis, Ability Suppression, Drowsiness, Confusion or Flinch. <BR>
 `Shadowflame`: 70 BP, 100 ACC, 10 PP, Ghost Special. 30% chance to burn. <BR>
-`Time Stop`: Status, 15 PP, Psychic. Protects the user. At the end of the turn, they switch out. Taking a hit while protected restores 25% of max HP. <BR>
+`Time Stop`: Status, 10 PP, Psychic. Protects the user. At the end of the turn, they switch out. Taking a hit while protected restores 25% of max HP. <BR>
 
 # Abilities
 `Sand Force`: Scalar changed from 30% to 50%. <BR>
