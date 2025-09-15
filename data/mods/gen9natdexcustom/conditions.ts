@@ -111,6 +111,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 		onAfterMove(source, target, move) {
 			// FIXME: If move failed, do not do this.
 			// FIXME: Mimic move should not go through protect.
+			// FIXME: Remove Sucker Punch + Thunderclap
 			if (move.category === 'Status' || move.id === 'fakeout' || move.id === 'futuresight' ||
 				move.id === 'doomdesire' || !target) return;
 

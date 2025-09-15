@@ -103,7 +103,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Raikou`: Abilities: Pressure, Inner Focus, Electric Surge. New Moves: Tailwind. <BR>
 `Mega-Steelix`: New Moves: Coil. <BR>
 `Mega-Houndoom`: New Moves: Fiery Wrath. <BR>
-`Celebi`: Stats: `hp: 120, atk: 50, def: 150, spa: 100, spd: 110, spe: 100`. Abilities: Natural Cure, Chronal Distortion. New Moves: Time Stop. <BR>
+`Celebi`: Stats: `hp: 120, atk: 50, def: 130, spa: 100, spd: 110, spe: 100`. Abilities: Natural Cure, Chronal Distortion. New Moves: Time Stop. <BR>
 ## Gen 3
 `Breloom`: Stats: `hp: 80, atk: 130, def: 90, spa: 60, spd: 70, spe: 70`. <BR>
 `Aggron`: Stats: `hp: 80, atk: 110, def: 180, spa: 60, spd: 80, spe: 50`. Abilities: Sturdy, Rock Head, Sand Force. New Moves: Horn Leech, Slack Off.<BR>

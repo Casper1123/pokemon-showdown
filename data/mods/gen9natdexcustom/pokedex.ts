@@ -42,7 +42,7 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	celebi: {
 		inherit: true,
 		abilities: { 0: "Natural Cure", H: "Chronal Distortion" },
-		baseStats: { hp: 120, atk: 50, def: 150, spa: 100, spd: 110, spe: 100 },
+		baseStats: { hp: 120, atk: 50, def: 130, spa: 100, spd: 110, spe: 100 },
 	},
 	suicune: {
 		inherit: true,
