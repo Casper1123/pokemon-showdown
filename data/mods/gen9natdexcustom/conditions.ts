@@ -176,7 +176,6 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 				this.effectState.persistTurns--;
 				if (this.effectState.persistTurns <= 0) {
 					this.field.removePseudoWeather('spatialdistortion');
-					this.add('-message', 'Space rests back in a state of normalcy.');
 					return;
 				}
 				this.add('-message', `Space is winning its fight against the distortion ... (${this.effectState.persistTurns} turn${this.effectState.persistTurns === 1 ? '\'' : 's'})`);
