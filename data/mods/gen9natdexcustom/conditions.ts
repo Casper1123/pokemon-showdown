@@ -75,22 +75,13 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 					this.add('-end', target, `move: ${distortion.moveData.name}`, '[silent]');
 				}
 
-				let actualTarget = target;
 				if (target.fainted) {
-					const adjacentTargets = target.adjacentFoes().filter(pokemon => !pokemon.fainted);
-					const aliveTargets = target.foes().filter(pokemon => !pokemon.fainted);
-					if (adjacentTargets.length > 0) {
-						actualTarget = this.sample(adjacentTargets);
-					} else if (aliveTargets.length > 0) {
-						actualTarget = this.sample(aliveTargets);
-					} else {
-						this.add('-message', `A fragment of a ${distortion.moveData.name} from the past disintegrates in the distance.`);
-						continue;
-					}
+					this.add('-message', `A fragment of a ${distortion.moveData.name} from the past disintegrates in the distance.`);
+					continue;
 				}
-				this.add('-message', `A fragment of a ${distortion.moveData.name} from the past hits ${actualTarget.name}!`);
+				this.add('-message', `A fragment of a ${distortion.moveData.name} from the past hits ${target.name}!`);
 				try {
-					this.actions.tryMoveHit(actualTarget, distortion.source, distortion.moveData as ActiveMove);
+					this.actions.tryMoveHit(target, distortion.source, distortion.moveData as ActiveMove);
 				} catch (e) {
 					console.debug(e, "in move execution.");
 					this.add('-message', `A fragment of a ${distortion.moveData.name} from the past.. fizzles due to an internal server error! THE HORROR!`);
