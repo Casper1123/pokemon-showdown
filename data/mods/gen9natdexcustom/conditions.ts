@@ -7,6 +7,8 @@ const allFieldAbilities = [...weatherAbilities, ...terrainAbilities];
 const protectedPseudoWeathers = ['chronaldistortions', 'spatialdistortions', 'absolutedistortions'];
 const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 
+const chronalDistortionsExceptions = ['fakeout', 'futuresight', 'doomdesire', 'thunderclap'];
+
 export const Conditions: { [k: string]: ModdedConditionData } = {
 	gem: {
 		inherit: true,
@@ -103,17 +105,14 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 		},
 		onBasePowerPriority: 8,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.category !== 'Status' && move.id !== 'fakeout' && move.id !== 'futuresight' &&
-				move.id !== 'doomdesire') {
+			if (move.category !== 'Status' && !chronalDistortionsExceptions.includes(move.id)) {
 				return this.chainModify(0.8);
 			}
 		},
 		onAfterMove(source, target, move) {
-			// FIXME: If move failed, do not do this.
+			// FIXME: If move failed, do not queue. Currently queues when it hits protect or, for example, is a failed sucker.
 			// FIXME: Mimic move should not go through protect.
-			// FIXME: Remove Sucker Punch + Thunderclap
-			if (move.category === 'Status' || move.id === 'fakeout' || move.id === 'futuresight' ||
-				move.id === 'doomdesire' || !target) return;
+			if (move.category === 'Status' || chronalDistortionsExceptions.includes(move.id) || !target) return;
 
 			if (!target.side.addSlotCondition(target, 'distortedmove')) {
 				target.side.addSlotCondition(target, 'distortedmove');
