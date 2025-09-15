@@ -109,6 +109,8 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 			}
 		},
 		onAfterMove(source, target, move) {
+			// FIXME: If move failed, do not do this.
+			// FIXME: Mimic move should not go through protect.
 			if (move.category === 'Status' || move.id === 'fakeout' || move.id === 'futuresight' ||
 				move.id === 'doomdesire' || !target) return;
 
@@ -178,7 +180,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 					this.field.removePseudoWeather('spatialdistortion');
 					return;
 				}
-				this.add('-message', `Space is winning its fight against the distortion ... (${this.effectState.persistTurns} turn${this.effectState.persistTurns === 1 ? '\'' : 's'})`);
+				this.add('-message', `Space is winning its fight against the distortion ... (${this.effectState.persistTurns} turn${this.effectState.persistTurns === 1 ? '' : 's'})`);
 			}
 		},
 		onModifyAccuracy(accuracy) {
