@@ -300,9 +300,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		flags: {},
 		stallingMove: true,
 		volatileStatus: 'timestop',
-		onPrepareHit(pokemon) {
-			return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
-		},
 		onHit(pokemon) {
 			pokemon.addVolatile('stall');
 		},
