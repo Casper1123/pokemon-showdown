@@ -89,12 +89,12 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	lightofruin: {
 		inherit: true,
 		gen: 9,
-		isNonstandard: undefined,
+		isNonstandard: null,
 	},
 	floatyfall: {
 		inherit: true,
 		gen: 9,
-		isNonstandard: undefined,
+		isNonstandard: null,
 	},
 	roaroftime: {
 		inherit: true,
