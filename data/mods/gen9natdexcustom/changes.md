@@ -18,28 +18,29 @@ Here, rules are explained. Standard Smogon rules will be *italicized* and custom
 
 ## Validator
 
-*Species Clause*
-*Nickname Clause*
-*OHKO Clause*
-*Evasion Clause*
-*Obtainable*
-*+Unobtainable*
-*+Past*
-*Sketch Post-Gen 7 Moves*
+*Species Clause* <BR>
+*Nickname Clause* <BR>
+*OHKO Clause* <BR>
+*Evasion Clause* <BR>
+*Obtainable* <BR>
+*+Unobtainable* <BR>
+*+Past* <BR>
+*Sketch Post-Gen 7 Moves* <BR>
+**Illusory Nicknames**: Name a Pokémon with the Illusion ability like another legal species in quotation marks (' or ") to make it display as such in Team Preview.
 
 *Banned items:*
-> King's Rock
-> Quick Claw
+> King's Rock <BR>
+> Quick Claw <BR>
 > Razor Fang
 
 *Banned moves:*
-> Assist
-> Baton Pass
-> Last Respects
-> Shed Tail
+> Assist <BR>
+> Baton Pass <BR>
+> Last Respects <BR>
+> Shed Tail <BR>
 
 *Banned abilities:*
-> Arena Trap
+> Arena Trap <BR>
 > Shadow Tag
 
 **Gen9 Custom UbersAG**
