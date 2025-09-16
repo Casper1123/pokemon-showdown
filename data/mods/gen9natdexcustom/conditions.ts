@@ -7,7 +7,7 @@ const allFieldAbilities = [...weatherAbilities, ...terrainAbilities];
 const protectedPseudoWeathers = ['chronaldistortions', 'spatialdistortions', 'absolutedistortions'];
 const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 
-const chronalDistortionsExceptions = ['fakeout', 'futuresight', 'doomdesire', 'thunderclap'];
+const chronalDistortionsExceptions = ['fakeout', 'futuresight', 'doomdesire', 'thunderclap', 'suckerpunch'];
 
 export const Conditions: { [k: string]: ModdedConditionData } = {
 	gem: {

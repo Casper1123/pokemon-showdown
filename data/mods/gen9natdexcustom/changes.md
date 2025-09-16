@@ -26,7 +26,6 @@ Here, rules are explained. Standard Smogon rules will be *italicized* and custom
 *+Unobtainable* <BR>
 *+Past* <BR>
 *Sketch Post-Gen 7 Moves* <BR>
-**Illusory Nicknames**: Name a Pokémon with the Illusion ability like another legal species in quotation marks (' or ") to make it display as such in Team Preview.
 
 *Banned items:*
 > King's Rock <BR>
@@ -45,8 +44,11 @@ Here, rules are explained. Standard Smogon rules will be *italicized* and custom
 
 **Gen9 Custom UbersAG**
 
-> Implements custom behaviour regarding the Ubers and AG mons during team validation.
+> Implements custom behaviour regarding the Ubers and AG mons during team validation. <BR>
+> You may use 1 Uber on a team, but are capped at 5 Pokémon on the team.
 
+**Illusory Nicknames**
+> Name a Pokémon with the Illusion ability like another legal species in quotation marks (' or ") to make it display as such in Team Preview.
 ## Battle
 
 *Team Preview*
@@ -78,7 +80,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Dark Void`: 80 ACC. <BR>
 `Spatial Rend`: 120 BP, 85 ACC. <BR>
 <BR> *Custom moves:* <BR>
-`Desert Song`: 90 BP, 100 ACC, 10 PP, Ground Special, Sound. Sets Sand on hit. If sand was already up, 1.5x damage.<BR>
+`Desert Song`: 90 BP, 100 ACC, 10 PP, Ground Special, Sound, hits adjacent targets. Sets Sand on hit. If sand was already up, 1.5x damage.<BR>
 `Neutron Ray`: 100 BP, 100 ACC, 5 PP, Dark Special. Uses highest attacking stat. 30% chance to inflict one of: Paralysis, Ability Suppression, Drowsiness, Confusion or Flinch. <BR>
 `Shadowflame`: 70 BP, 100 ACC, 10 PP, Ghost Special. 30% chance to burn. <BR>
 `Time Stop`: Status, 10 PP, Psychic. Protects the user. At the end of the turn, they switch out. Taking a hit while protected restores 25% of max HP. <BR>
@@ -86,7 +88,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 # Abilities
 `Sand Force`: Scalar changed from 30% to 50%. <BR>
 <BR> *Custom Abilities:* <BR>
-`Chronal Distortion`: Sets a primordial pseudoweather. While active, all attacking moves hit for 0.8x damage. In 2 turns, they hit again for 0.4x damage. This distorted move cannot boost allies stats. *Exceptions that do not hit twice: Fake Out, Doom Desire, Future Sight.* <BR>
+`Chronal Distortion`: Sets a primordial pseudoweather. While active, all attacking moves hit for 0.8x damage. In 2 turns, they hit again for 0.4x damage. This distorted move cannot boost allies stats. *Exceptions that do not hit twice: Fake Out, Doom Desire, Future Sight, Thunderclap, Sucker Punch.* <BR>
 `Spatial Distortion`: Sets a primordial pseudoweather that lingers for 2 turns if not maintained. Has the effects of Gravity. <BR>
 `Absolute Distortion`: Sets a primordial pseudoweather. Removes all hazards and field conditions (weather, terrain, etc). Blocks all usages of status moves and abilities that set them, except if the user has the `Absolute Distortion` ability.
 
@@ -172,4 +174,5 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 ## Gen 9
 ## Other:
 `Hidden Power`: Most Pokémon without access to Hidden Power due to the Dexit in Gen 8+ have access to the move. A list of exclusions follows: `No exclusions as of yet.` <BR>
-
+`Snow`: If Ice-typed: 1.5x Def, 1.2x Ice-STAB power, 1.2x/0.8x speed (in/out of Trick room). <BR>
+`Gems`: 1.3x -> 1.5x damage.
