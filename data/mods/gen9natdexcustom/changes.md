@@ -294,7 +294,7 @@ Sets a primordial pseudoweather. While active, all attacking moves hit for 0.8x 
 In 2 turns, they hit again for 0.4x damage. This distorted move cannot boost allies stats.<BR>
 *Exceptions that do not hit twice: Fake Out, Doom Desire, Future Sight, Thunderclap, Sucker Punch.* <BR>
 **Users:**<BR>
-![Dialga][dialga-gif] ![Celebi][celebi-gif] ![Dialga-Origin][dialga-origin-gif]
+![Dialga][dialga-gif] ![Dialga-Origin][dialga-origin-gif] ![Celebi][celebi-gif]
 ### Spatial Distortion
 Sets a primordial pseudoweather that lingers for 2 turns if not maintained. Has the effects of Gravity. <BR>
 **Users:**<BR>
