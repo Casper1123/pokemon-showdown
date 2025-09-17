@@ -8,7 +8,9 @@ Region & generation: `National Dex`, `gen9`
 
 # Player information
 
-`[Gen9] National Dex Custom` is a format that brings customized changes to the gen9 National Dex OU format (officially supported). With the power of customized mods, we aim to make changes to underpowered, overshadowed, powercrept or just interesting pokémon, items, moves, abilities and whatever we see as both interesting and fitting.
+`[Gen9] National Dex Custom` is a format that brings customized changes to the gen9 National Dex OU format (officially supported).
+With the power of customized mods, we aim to make changes to underpowered, overshadowed, powercrept or just interesting pokémon,
+items, moves, abilities and whatever we see as both interesting and fitting.
 Radical changes may occur to change up the meta.
 To propose new changes, check out the proposed-changes Forum Channel down below (read the posting guidelines before you post).
 
@@ -44,11 +46,11 @@ Here, rules are explained. Standard Smogon rules will be *italicized* and custom
 
 **Gen9 Custom UbersAG**
 
-> Implements custom behaviour regarding the Ubers and AG mons during team validation. <BR>
-> You may use 1 Uber on a team, but are capped at 5 Pokémon on the team.
+> Implements custom behaviour regarding the Ubers and AG mons during team validation. <BR><BR>
+> **You may use 1 Uber on a team, but are capped at 5 Pokémon on the team.**
 
 **Illusory Nicknames**
-> Name a Pokémon with the Illusion ability like another legal species in quotation marks (' or ") to make it display as such in Team Preview.
+> Name a Pokémon with the Illusion ability like another legal species in quotation marks (' or ") to make it display as such in Team Preview. <BR>*Example: `"Heatran"`*
 ## Battle
 
 *Team Preview*
@@ -173,6 +175,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 `Copperajah`: Abilities: Sheer Force, Sand Force, Heavy Metal. <BR>
 ## Gen 9
 ## Other:
-`Hidden Power`: Most Pokémon without access to Hidden Power due to the Dexit in Gen 8+ have access to the move. A list of exclusions follows: `No exclusions as of yet.` <BR>
-`Snow`: If Ice-typed: 1.5x Def, 1.2x Ice-STAB power, 1.2x/0.8x speed (in/out of Trick room). <BR>
-`Gems`: 1.3x -> 1.5x damage.
+`Hidden Power`: Most Pokémon without access to Hidden Power due to the Dexit in Gen 8+ have access to the move. A list of exclusions follows: `No exclusions as of yet.` <BR><BR>
+`Snow`: If Ice-typed: 1.5x Def, 1.2x Ice-STAB power, 1.2x/0.8x speed (in/out of Trick room). <BR><BR>
+`Gems`: 1.3x -> 1.5x damage. All gems allowed. <BR><BR>
+`Fairy (type)`: Bug resistance -> neutrality. <BR><BR>
