@@ -223,7 +223,7 @@ Some benefitting mons: <BR>
 ![Samurott-Hisui][samurott-hisui-gif] ![Samurott][samurott-gif] ![Cloyster][cloyster-gif] ![Crawdaunt][crawdaunt-gif] ![Golisopod][golisopod-gif]
 
 ### ![Dragon][dragon-type]![Special][special-move] Roar of Time
-Recharge move --> Cannot be used twice in a row.<BR>
+Recharge move --> Cannot be used consecutively. *(Must use another move after using this)*<BR>
 Benefitting mons: <BR>
 ![Dialga][dialga-gif] ![Dialga-Origin][dialga-origin-gif]
 
