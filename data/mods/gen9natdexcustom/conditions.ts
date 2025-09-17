@@ -4,7 +4,7 @@ const weatherAbilities = ['desolateland', 'primordialsea', 'deltastream',
 	'drizzle', 'sandstream', 'snowwarning', 'drought', 'orichalcumpulse'];
 const terrainAbilities = ['psychicsurge', 'mistysurge', 'grassysurge', 'electricsurge', 'hadronengine'];
 const allFieldAbilities = [...weatherAbilities, ...terrainAbilities];
-const protectedPseudoWeathers = ['chronaldistortions', 'spatialdistortions', 'absolutedistortions'];
+const protectedPseudoWeathers = ['chronaldistortions', 'spacialdistortions', 'absolutedistortions'];
 const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 
 const chronalDistortionsExceptions = ['fakeout', 'futuresight', 'doomdesire', 'thunderclap', 'suckerpunch'];
@@ -143,11 +143,11 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 		},
 	},
 
-	spatialdistortion: {
-		name: "Spatial Distortion",
+	spacialdistortion: {
+		name: "Spacial Distortion",
 		duration: 0,
 		onFieldStart(target, source) {
-			this.add('-fieldstart', 'Spatial Distortion', `[of] ${source}`, '[silent]');
+			this.add('-fieldstart', 'Spacial Distortion', `[of] ${source}`, '[silent]');
 			this.add('-message', `Space looks to be crashing in on itself, fighting back violently; ${source.name} is distorting the space on the battlefield!`);
 			this.effectState.abilityActive = true;
 			this.effectState.persistTurns = 0;
@@ -160,7 +160,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 		onFieldResidual() {
 			let hasAbilityUser = false;
 			for (const pokemon of this.getAllActive()) {
-				if (pokemon.hasAbility('spatialdistortion')) {
+				if (pokemon.hasAbility('spacialdistortion')) {
 					hasAbilityUser = true;
 					break;
 				}
@@ -177,7 +177,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 			} else {
 				this.effectState.persistTurns--;
 				if (this.effectState.persistTurns <= 0) {
-					this.field.removePseudoWeather('spatialdistortion');
+					this.field.removePseudoWeather('spacialdistortion');
 					return;
 				}
 				this.add('-message', `Space is winning its fight against the distortion ... (${this.effectState.persistTurns} turn${this.effectState.persistTurns === 1 ? '' : 's'})`);
@@ -197,12 +197,12 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 		onBeforeMovePriority: 6,
 		onBeforeMove(pokemon, target, move) {
 			if (move.flags['gravity'] && !move.isZ) {
-				this.add('cant', pokemon, 'ability: Spatial Distortion', move);
+				this.add('cant', pokemon, 'ability: Spacial Distortion', move);
 				return false;
 			}
 		},
 		onFieldEnd() {
-			this.add('-fieldend', 'Spatial Distortion');
+			this.add('-fieldend', 'Spacial Distortion');
 			this.add('-message', 'Space returns to a state of normalcy.');
 			// Remove grounding effects when field ends, just in case. They're not supposed to be on but SOMEHOW
 			const activePokemon = this.getAllActive();
@@ -255,7 +255,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 			}
 		},
 		onSwitchIn(pokemon) {
-			const allowedDistortions = ['chronaldistortions', 'spatialdistortions', 'absolutedistortion'];
+			const allowedDistortions = ['chronaldistortions', 'spacialdistortions', 'absolutedistortion'];
 
 			if (allFieldAbilities.includes(pokemon.getAbility().id) && !allowedDistortions.includes(pokemon.getAbility().id)) {
 				pokemon.abilityState.suppressed = true;
@@ -271,7 +271,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 
 			for (const pokemon of sortedActive) {
 				if (pokemon.fainted) continue;
-				if (['chronaldistortions', 'spatialdistortions', 'absolutedistortion'].includes(pokemon.getAbility().id)) continue;
+				if (['chronaldistortions', 'spacialdistortions', 'absolutedistortion'].includes(pokemon.getAbility().id)) continue;
 				if (pokemon.volatiles['gastroacid']) continue;
 				const ability = pokemon.getAbility();
 

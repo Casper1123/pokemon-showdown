@@ -64,27 +64,27 @@ Here, rules are explained. Standard Smogon rules will be *italicized* and custom
 # Mod changes
 Changes are displayed by category; Item, Move, Ability, Pokémon.
 
-[status-move]: https://play.pokemonshowdown.com/sprites/categories/Status.png
-[physical-move]: https://play.pokemonshowdown.com/sprites/categories/Physical.png
-[special-move]: https://play.pokemonshowdown.com/sprites/categories/Special.png
-[normal-type]: https://play.pokemonshowdown.com/sprites/types/Normal.png
-[fire-type]: https://play.pokemonshowdown.com/sprites/types/Fire.png
-[water-type]: https://play.pokemonshowdown.com/sprites/types/Water.png
-[electric-type]: https://play.pokemonshowdown.com/sprites/types/Electric.png
-[grass-type]: https://play.pokemonshowdown.com/sprites/types/Grass.png
-[ice-type]: https://play.pokemonshowdown.com/sprites/types/Ice.png
-[fighting-type]: https://play.pokemonshowdown.com/sprites/types/Fighting.png
-[poison-type]: https://play.pokemonshowdown.com/sprites/types/Poison.png
-[ground-type]: https://play.pokemonshowdown.com/sprites/types/Ground.png
-[flying-type]: https://play.pokemonshowdown.com/sprites/types/Flying.png
-[psychic-type]: https://play.pokemonshowdown.com/sprites/types/Psychic.png
-[bug-type]: https://play.pokemonshowdown.com/sprites/types/Bug.png
-[rock-type]: https://play.pokemonshowdown.com/sprites/types/Rock.png
-[ghost-type]: https://play.pokemonshowdown.com/sprites/types/Ghost.png
-[dragon-type]: https://play.pokemonshowdown.com/sprites/types/Dragon.png
-[dark-type]: https://play.pokemonshowdown.com/sprites/types/Dark.png
-[steel-type]: https://play.pokemonshowdown.com/sprites/types/Steel.png
-[fairy-type]: https://play.pokemonshowdown.com/sprites/types/Fairy.png
+[status]: https://play.pokemonshowdown.com/sprites/categories/Status.png
+[physical]: https://play.pokemonshowdown.com/sprites/categories/Physical.png
+[special]: https://play.pokemonshowdown.com/sprites/categories/Special.png
+[normal]: https://play.pokemonshowdown.com/sprites/types/Normal.png
+[fire]: https://play.pokemonshowdown.com/sprites/types/Fire.png
+[water]: https://play.pokemonshowdown.com/sprites/types/Water.png
+[electric]: https://play.pokemonshowdown.com/sprites/types/Electric.png
+[grass]: https://play.pokemonshowdown.com/sprites/types/Grass.png
+[ice]: https://play.pokemonshowdown.com/sprites/types/Ice.png
+[fighting]: https://play.pokemonshowdown.com/sprites/types/Fighting.png
+[poison]: https://play.pokemonshowdown.com/sprites/types/Poison.png
+[ground]: https://play.pokemonshowdown.com/sprites/types/Ground.png
+[flying]: https://play.pokemonshowdown.com/sprites/types/Flying.png
+[psychic]: https://play.pokemonshowdown.com/sprites/types/Psychic.png
+[bug]: https://play.pokemonshowdown.com/sprites/types/Bug.png
+[rock]: https://play.pokemonshowdown.com/sprites/types/Rock.png
+[ghost]: https://play.pokemonshowdown.com/sprites/types/Ghost.png
+[dragon]: https://play.pokemonshowdown.com/sprites/types/Dragon.png
+[dark]: https://play.pokemonshowdown.com/sprites/types/Dark.png
+[steel]: https://play.pokemonshowdown.com/sprites/types/Steel.png
+[fairy]: https://play.pokemonshowdown.com/sprites/types/Fairy.png
 
 [sec-item]: .
 [watergem]: https://play.pokemonshowdown.com/sprites/itemicons/water-gem.png
@@ -96,6 +96,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [charizard-mega-x]: https://play.pokemonshowdown.com/sprites/gen5ani/charizard-megax.gif
 [starmie]: https://play.pokemonshowdown.com/sprites/gen5ani/starmie.gif
 [cloyster]: https://play.pokemonshowdown.com/sprites/gen5ani/cloyster.gif
+[pidgeot]: https://play.pokemonshowdown.com/sprites/gen5ani/pidgeot.gif
 [slowbro-mega]: https://play.pokemonshowdown.com/sprites/gen5/slowbro-mega.png
 [pidgeot-mega]: https://play.pokemonshowdown.com/sprites/gen5/pidgeot-mega.png
 
@@ -104,15 +105,21 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [typhlosion]: https://play.pokemonshowdown.com/sprites/gen5ani/typhlosion.gif
 [typhlosion-hisui]: https://play.pokemonshowdown.com/sprites/gen5/typhlosion-hisui.png
 [steelix-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/steelix-mega.gif
+[steelix]: https://play.pokemonshowdown.com/sprites/gen5ani/steelix.gif
 [ampharos]: https://play.pokemonshowdown.com/sprites/gen5ani/ampharos.gif
 [ampharos-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/ampharos-mega.gif
 [suicune]: https://play.pokemonshowdown.com/sprites/gen5ani/suicune.gif
 [raikou]: https://play.pokemonshowdown.com/sprites/gen5ani/raikou.gif
-[houndoom-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/houndoom-mega.gif
+[houndoom-mega]: https://play.pokemonshowdown.com/sprites/gen5/houndoom-mega.png
+[houndoom]: https://play.pokemonshowdown.com/sprites/gen5ani/houndoom.gif
 
 [sec-gen3]: .
 [salamence]: https://play.pokemonshowdown.com/sprites/gen5ani/salamence.gif
 [flygon]: https://play.pokemonshowdown.com/sprites/gen5ani/flygon.gif
+[camerupt]: https://play.pokemonshowdown.com/sprites/gen5ani/camerupt.gif
+[sharpedo]: https://play.pokemonshowdown.com/sprites/gen5ani/sharpedo.gif
+[sharpedo-mega]: https://play.pokemonshowdown.com/sprites/gen5/sharpedo-mega.png
+[banette]: https://play.pokemonshowdown.com/sprites/gen5ani/banette.gif
 [camerupt-mega]: https://play.pokemonshowdown.com/sprites/gen5/camerupt-mega.png
 [metagross]: https://play.pokemonshowdown.com/sprites/gen5ani/metagross.gif
 [crawdaunt]: https://play.pokemonshowdown.com/sprites/gen5ani/crawdaunt.gif
@@ -120,13 +127,18 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [aggron]: https://play.pokemonshowdown.com/sprites/gen5ani/aggron.gif
 [aggron-mega]: https://play.pokemonshowdown.com/sprites/gen5/aggron-mega.png
 [absol-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/absol-mega.gif
+[absol]: https://play.pokemonshowdown.com/sprites/gen5ani/absol.gif
 [sceptile]: https://play.pokemonshowdown.com/sprites/gen5ani/sceptile.gif
+[sceptile-mega]: https://play.pokemonshowdown.com/sprites/gen5/sceptile-mega.png
 [manectric]: https://play.pokemonshowdown.com/sprites/gen5ani/manectric.gif
+[manectric-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/manectric-mega.gif
 [deoxys]: https://play.pokemonshowdown.com/sprites/gen5ani/deoxys.gif
 [deoxys-defense]: https://play.pokemonshowdown.com/sprites/gen5ani/deoxys-defense.gif
 [altaria-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/altaria-mega.gif
 [banette-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/banette-mega.gif
 [sharpedo-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/sharpedo-mega.gif
+[altaria]: https://play.pokemonshowdown.com/sprites/gen5ani/altaria.gif
+[altaria-mega]: https://play.pokemonshowdown.com/sprites/gen5/altaria-mega.png
 
 
 [sec-gen4]: .
@@ -176,85 +188,84 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 
 
 # Moves
-### ![Dragon][dragon-type]![Physical][physical-move] Core Enforcer
-Move type: ![Special][special-move] -> ![Physical][physical-move] <BR>
+### ![dragon]![physical] Core Enforcer
+Move type: ![special] -> ![physical] <BR>
 Benefitting mons: <BR>
-![Zygarde][zygarde-50%]
+![zygarde-50%]
 
-### ![Dark][dark-type]![Status][status-move] Dark Void
+### ![dark]![status] Dark Void
 ACC: `50` --> `80` <BR>
 Benefitting mons: <BR>
-![Darkrai][darkrai]
+![darkrai]
 
-### ![Dragon][dragon-type]![Physical][physical-move] Dragon Rush
+### ![dragon]![physical] Dragon Rush
 ACC: `75` --> `90` <BR>
 Flinch: `20%` --> `15%` <BR>
 Benefitting mons: <BR>
-![Garchomp][garchomp] ![Haxorus][haxorus] ![Charizard-Mega-X][charizard-mega-x] 
-![Dragapult][dragapult] ![Salamence][salamence] ![Flygon][flygon] ![Dracozolt][dracozolt]
+![garchomp] ![haxorus] ![charizard-mega-x] ![dragapult] ![salamence] ![flygon] ![dracozolt]
 
-### ![Fire][fire-type]![Special][special-move] Eruption
+### ![fire]![special] Eruption
 Is now boosted by **Sheer Force**. <BR>
 Benefitting mons: <BR>
-![Camerupt-Mega][camerupt-mega]
+![camerupt-mega]
 
-### ![Ice][ice-type]![Physical][physical-move] Freeze Shock
+### ![ice]![physical] Freeze Shock
 ACC: `90` --> `100` <BR>
 When charging, gain `+1 Atk`. If in Snow, immediately finish charging. <BR>
 Benefitting mons: <BR>
-![Kyurem-Black][kyurem-black]
+![kyurem-black]
 
-### ![Ice][ice-type]![Special][special-move] Glaciate
+### ![ice]![special] Glaciate
 Secondary: `-1 Spe` --> `-2 Spe`<BR>
 Benefitting mons: <BR>
-![Kyurem][kyurem] ![Kyurem-White][kyurem-white] ![Kyurem-Black][kyurem-black] ![Glaceon][glaceon] ![Rotom-Frost][rotom-frost]
+![kyurem] ![kyurem-white] ![kyurem-black] ![glaceon] ![rotom-frost]
 
-### ![Fighting][fighting-type]![Physical][physical-move] Hammer Arm
+### ![fighting]![physical] Hammer Arm
 BP: `100` --> `120`<BR>
 ACC: `90` --> `100`<BR>
 Benefitting mons: <BR>
-![Conkeldurr][conkeldurr] ![Emboar][emboar] ![Metagross][metagross]
+![conkeldurr] ![emboar] ![metagross]
 
-### ![Ice][ice-type]![Special][special-move] Ice Burn
+### ![ice]![special] Ice Burn
 ACC: `90` --> `100` <BR>
 When charging, gain `+1 SpA`. If in Snow, immediately finish charging. <BR>
 Benefitting mons: <BR>
-![Kyurem-White][kyurem-white]
+![kyurem-white]
 
-### ![Ground][ground-type]![Special][special-move] Mud Shot
+### ![ground]![special] Mud Shot
 BP: `55` --> `70`<BR>
 PP: `15` --> `10`<BR>
 Benefitting mons: <BR>
-![Serperior][serperior]
+![serperior]
 
-### ![Rock][rock-type]![Special][special-move] Power Gem
+### ![rock]![special] Power Gem
 BP: `80` --> `90`<BR>
 PP: `20` --> `10`<BR>
 New secondary: 20% `+1 SpA`<BR>
 Benefitting mons: <BR>
-![Nihilego][nihilego] ![Glimmora][glimmora] ![Mega-Diancie][diancie-mega] ![Necrozma][necrozma] ![Sandy Shocks][sandyshocks] ![Starmie][starmie]
+![nihilego] ![glimmora] ![diancie-mega] ![necrozma] ![sandyshocks] ![starmie]
 
-### ![Water][water-type]![Physical][physical-move] Razor Shell
+### ![water]![physical] Razor Shell
 BP: `75` --> `85`<BR>
 Some benefitting mons: <BR>
-![Samurott-Hisui][samurott-hisui] ![Samurott][samurott] ![Cloyster][cloyster] ![Crawdaunt][crawdaunt] ![Golisopod][golisopod]
+![samurott-hisui] ![samurott] ![cloyster] ![crawdaunt] ![golisopod]
 
-### ![Dragon][dragon-type]![Special][special-move] Roar of Time
+### ![dragon]![special] Roar of Time
 Recharge move --> Cannot be used consecutively.<BR>
 Benefitting mons: <BR>
-![Dialga][dialga] ![Dialga-Origin][dialga-origin]
+![dialga] ![dialga-origin]
 
-### ![Dragon][dragon-type]![Special][special-move] Spacial Rend
+### ![dragon]![special] Spacial Rend
 BP: `100` --> `120`<BR>
 ACC: `95` --> `85`<BR>
 Benefitting mons: <BR>
-![Palkia][palkia] ![Palkia-Origin][palkia-origin]
+![palkia] ![palkia-origin]
 
 ### Sparkly Swirl
 BP: `90` --> `60`<BR>
 PP: `15` --> `5`<BR>
 Benefitting mons: <BR>
-![Shaymin][shaymin]
+![shaymin]
 
 ### Submission
 BP: `80` --> `90`<BR>
@@ -267,43 +278,43 @@ Benefitting mons: <BR>
 > **Too many to list.**
 
 ## Custom moves
-### ![Ground][ground-type]![Special][special-move] Desert Song 
+### ![ground]![special] Desert Song 
 BP: 90<BR>
 ACC: 100<BR>
 PP: 10<BR>
 Sound (bypasses Substitute), hits adjacent targets.<BR>
 Sets Sand on hit. If sand was already up, 1.5x damage.<BR>
 **Users:** <BR>
-![Flygon][flygon]
+![flygon]
 
-### ![Dark][dark-type]![Special][special-move] Neutron Ray 
+### ![dark]![special] Neutron Ray 
 BP: 100<BR>
 ACC: 100<BR>
 PP: 5<BR>
 Uses highest attacking stat.<BR>
 30% chance to inflict one of: Paralysis, Ability Suppression, Drowsiness, Confusion or Flinch. <BR>
 **Users:**<BR>
-![Necrozma][necrozma]
+![necrozma]
 
-### ![Ghost][ghost-type]![Special][special-move] Shadowflame
+### ![ghost]![special] Shadowflame
 BP: 70<BR>
 ACC: 100<BR>
 PP: 10<BR>30% chance to burn. <BR>
 **Users:**<BR>
-![Chandelure][chandelure] ![Typhlosion-Hisui][typhlosion-hisui]
+![chandelure] ![typhlosion-hisui]
 
-### ![Psychic][psychic-type]![Status][status-move] Time Stop
+### ![psychic]![status] Time Stop
 PP: 10<BR>
 Protects the user. At the end of the turn, they switch out.<BR>
 Taking a hit while protected restores 25% of max HP. <BR>
 **Users:**<BR>
-![Celebi][celebi]
+![celebi]
 
 # Abilities
 ### Sand Force
-Damage dealt by moves of type ![Ground][ground-type] ![Rock][rock-type] ![Steel][steel-type] type deal `30% -> 50%` more damage during Sandstorm.<BR>
+Damage dealt by moves of type ![ground] ![rock] ![steel] type deal `30% -> 50%` more damage during Sandstorm.<BR>
 **Users:**<BR>
-![Garchomp-Mega][garchomp-mega] ![Excadrill][excadrill] ![Krookodile][krookodile] ![Steelix-Mega][steelix-mega]
+![garchomp-mega] ![excadrill] ![krookodile] ![steelix-mega]
 
 ## Custom Abilities
 ### Chronal Distortion 
@@ -311,25 +322,34 @@ Sets a primordial pseudoweather. While active, all attacking moves hit for 0.8x 
 In 2 turns, they hit again for 0.4x damage. This distorted move cannot boost allies stats.<BR>
 *Exceptions that do not hit twice: Fake Out, Doom Desire, Future Sight, Thunderclap, Sucker Punch.* <BR>
 **Users:**<BR>
-![Dialga][dialga] ![Dialga-Origin][dialga-origin] ![Celebi][celebi]
+![dialga] ![dialga-origin] ![celebi]
 ### Spatial Distortion
 Sets a primordial pseudoweather that lingers for 2 turns if not maintained. Has the effects of Gravity. <BR>
 **Users:**<BR>
-![Palkia][palkia] ![Palkia-Origin][palkia-origin]
+![palkia] ![palkia-origin]
 
 ### Absolute Distortion
 Sets a primordial pseudoweather. Removes all hazards and field conditions (weather, terrain, etc). <BR>
 Blocks all usages of status moves and abilities that set them, except if the user has the `Absolute Distortion` ability. <BR>
 **Users:**<BR>
-![Giratina][giratina] ![Giratina-Origin][giratina-origin]
+![giratina] ![giratina-origin]
 
 # Pokémon
 ## Gen 1
-### ![Gengar][gengar]
+### ![gengar]
 Abilities: `Cursed Body`, `Levitate`
 
-### ![Mega-Slowbro][slowbro-mega]
-Base Stats:<BR>
+### ![pidgeot]![pidgeot-mega]
+**Mega:**<BR>
+Type: ![normal]![flying] --> ![electric]![flying]<BR>
+<BR>
+**Shared:**<BR>
+New Moves: <BR>
+- ![electric]![special] Thunder
+- ![electric]![special] Zap Cannon
+
+### ![slowbro-mega]
+Base Stats:
 - hp: `95`
 - atk: `75`
 - def: `180`
@@ -338,45 +358,311 @@ Base Stats:<BR>
 - spe: `30`
 - Total: `590`
 
-### ![Mega-Pidgeot][pidgeot-mega]
-Type: ![Normal][normal-type]![Flying][flying-type] --> ![Electric][electric-type]![Flying][flying-type]<BR>
-New Moves: <BR>
-- ![Electric][electric-type]![Special][special-move] Zap Cannon
-- ![Electric][electric-type]![Special][special-move] Thunder
-
 ## Gen 2
-### ![Ampharos][ampharos]![Ampharos-Mega][ampharos-mega]
-`Ampharos`: Type: Electric, Dragon. Plus Ability replaced with Teravolt. Stats: `hp: 100, atk: 75, def: 85, spa: 115, spd: 90, spe: 55`. New Moves: Draco Meteor, Tail Glow, Thunderclap, Parabolic Charge.<BR>
-`Mega-Ampharos`: Ability is now Teravolt. Stats: `hp: 100, atk: 75, def: 110, spa: 165, spd: 115, spe: 45`. <BR>
-`Typhlosion`: Abilities: Blaze, Flash Fire, Drought. New Moves: Earth Power. <BR>
-`Typhlosion (Hisui)`: Abilities: Blaze, Frisk, Adaptability. New Moves: Shadowflame. <BR>
-`Suicune`: Stats: `hp: 100, atk: 75, def: 125, spa: 90, spd: 125, spe: 85`. Abilities: Pressure, Inner Focus, Misty Surge. New Moves: Misty Terrain, Misty Explosion, Mist Ball, Strange Steam, Recover. <BR>
-`Raikou`: Abilities: Pressure, Inner Focus, Electric Surge. New Moves: Tailwind. <BR>
-`Mega-Steelix`: New Moves: Coil. <BR>
-`Mega-Houndoom`: New Moves: Fiery Wrath. <BR>
-`Celebi`: Stats: `hp: 120, atk: 50, def: 130, spa: 100, spd: 110, spe: 100`. Abilities: Natural Cure, Chronal Distortion. New Moves: Time Stop. <BR>
+### ![ampharos]![ampharos-mega]
+**Base:** <BR>
+Type: ![electric] --> ![electric]![dragon]<BR>
+Abilities: `Static`, `Teravolt` <BR>
+Base Stats:
+- hp: `90` --> `100` (`+10`)
+- atk: `75`
+- def: `85`
+- spa: `115`
+- spd: `90`
+- spe: `55`
+- Total: `510` --> `520`
+
+**Mega:** <BR>
+Ability: `Mold Breaker` --> `Teravolt` *No functional difference, just cooler.*<BR>
+Base Stats:
+- hp: `90` --> `100` (`+10`)
+- atk: `95`
+- def: `105` --> `110` (`+5`)
+- spa: `165`
+- spd: `110` --> `115` (`+5`)
+- spe: `45`
+- Total: `610` --> `630` <BR>
+
+**Shared:** <BR>
+New Moves: <BR>
+- ![Bug]![status] Tail Glow
+- ![dragon]![special] Draco Meteor
+- ![electric]![special] Parabolic Charge
+- ![electric]![special] Thunderclap
+
+### ![celebi]
+Abilities: `Natural Cure`, `Chronal Distortion` <BR>
+New Moves: <BR>
+- ![psychic]![status] Time Stop <BR>
+
+Base Stats:
+- hp: `100` --> `120` (`+20`)
+- atk: `100` --> `50` (`-50`)
+- def: `100` --> `130` (`+30`)
+- spa: `100`
+- spd: `100` --> `110` (`+10`)
+- spe: `100`
+- Total: `600` --> `610`
+
+### ![houndoom]![houndoom-mega]
+New Moves: <BR>
+- ![dark]![special] Fiery Wrath
+
+### ![raikou]
+Abilities: `Pressure`, `Inner Focus`, `Electric Surge` <BR>
+New Moves: <BR>
+- ![flying]![status] Tailwind
+
+### ![steelix]![steelix-mega]
+New Moves: <BR>
+- ![poison]![status] Coil
+
+### ![suicune]
+Abilities: `Pressure`, `Inner Focus`, `Misty Surge` <BR>
+New Moves: <BR>
+- ![fairy]![special] Misty Explosion
+- ![fairy]![status] Misty Terrain
+- ![fairy]![special]Strange Steam
+- ![normal]![status] Recover
+- ![psychic]![special] Mist Ball
+
+
+Base Stats:
+- hp: `100`
+- atk: `75`
+- def: `115` --> `125` (`+10`)
+- spa: `90`
+- spd: `115` --> `125` (`+10`)
+- spe: `85`
+- Total: `580` --> `600`
+
+### ![typhlosion]
+Abilities: `Blaze`, `Flash Fire`, `Drought` <BR>
+New Moves: <BR>
+- ![ground]![special] Earth Power
+
+### ![Typhlosion-Hisui]
+Abilities: `Blaze`, `Frisk`, `Adaptability` <BR>
+New Moves: <BR>
+- ![ghost]![special] Shadowflame
+
+
 ## Gen 3
-`Breloom`: Stats: `hp: 80, atk: 130, def: 90, spa: 60, spd: 70, spe: 70`. <BR>
-`Aggron`: Stats: `hp: 80, atk: 110, def: 180, spa: 60, spd: 80, spe: 50`. Abilities: Sturdy, Rock Head, Sand Force. New Moves: Horn Leech, Slack Off.<BR>
-`Mega-Aggron`: Stats: `hp: 80, atk: 140, def: 230, spa: 40, spd: 80, spe: 50`. <BR>
-`Mega-Absol`: Type: Dark, Fairy. New Moves: Light of Ruin, Sprit Break, Parting Shot. *Move changes also apply to base Absol.*<BR>
-`Flygon`: Stats: `hp: 80, atk: 100, def: 80, spa: 110, spd: 80, spe: 100`. New Moves: Desert Song, see Moves section.<BR>
-`Sceptile`: Type: Grass, Dragon. New Moves: Chloroblast, Nasty Plot, Draco Meteor. <BR>
-`Manectric`: New Moves: Ice Beam, Parabolic Charge. <BR>
-`Deoxys`: Abilities: Pressure, Mold Breaker. New Moves: Body Press. <BR>
-`Deoxys-Defense`: Stats: `hp: 70, atk: 60, def: 160, spa: 60, spd: 160, spe: 90`. Abilities: Pressure, Unaware, Regenerator. <BR>
-`Metagross`: Abilities: Clear Body, Light Metal, Full Metal Body. New Moves: Swords Dance. <BR>
-`Mega-Altaria`: New Moves: Explosion, Double Edge, Smelling Salts, Calm Mind, Draining Kiss. <BR>
-`Mega-Camerupt`: Stats: `hp: 70, atk: 80, def: 120, spa: 145, spd: 125, spe: 20`. New Moves: Sandsear Storm. <BR>
-`Mega-Banette`: Stats: `hp: 64, atk: 165, def: 85, spa: 83, spd: 93, spe: 65`. Ability: Unseen Fist. New Moves: Poltergheist, Shadow Force. <BR>
-`Mega-Sharpedo`: New Moves: Swords Dance. <BR>
+### ![absol]![absol-mega]
+**Mega:** <BR>
+Type: ![dark] --> ![dark]![fairy] <BR>
+<BR>
+**Shared:**<BR>
+New Moves: <BR>
+- ![fairy]![special] Light of Ruin
+- ![dark]![status] Parting Shot
+- ![fairy]![physical] Spirit Break
+
+### ![aggron]![aggron-mega]
+**Base:** <BR>
+Abilities: `Sturdy`, `Rock Head`, `Sand Force` <BR>
+Base Stats:
+- hp: `70` --> `80` (`+10`)
+- atk: `110`
+- def: `180`
+- spa: `60`
+- spd: `60` --> `80` (`+20`)
+- spe: `50`
+- Total: `530` --> `560`
+
+**Mega:** <BR>
+Base Stats:
+- hp: `70` --> `80` (`+10`)
+- atk: `140`
+- def: `230`
+- spa: `60`
+- spd: `80` --> `100` (`+20`)
+- spe: `50`
+- Total: `630` --> `560`
+
+### ![altaria]![altaria-mega]
+New Moves:
+- ![fairy]![special] Draining Kiss
+- ![normal]![physical] Double Edge
+- ![normal]![physical] Explosion
+- ![normal]![physical] Smelling Salts
+- ![psychic]![status] Calm Mind
+
+### ![banette]![banette-mega]
+**Mega:**<BR>
+Ability: `Unseen Fist`<BR>
+Base Stats:
+- hp: `64`
+- atk: `165`
+- def: `75` --> `85` (`+10`)
+- spa: `93` --> `83` (`-10`)
+- spd: `83` --> `93` (`+10`)
+- spe: `75` --> `65` (`-10`)
+- Total: `555`
+
+**Shared:**
+New Moves:
+- ![ghost]![physical] Poltergheist
+- ![ghost]![physical] Shadow Force
+
+
+### ![breloom]
+Base Stats:
+- hp: `60` --> `80` (`+20`)
+- atk: `130`
+- def: `80` --> `90` (`+10`)
+- spa: `60`
+- spd: `60` --> `70` (`+10`)
+- spe: `70`
+- Total: `460` --> `500`
+
+**Shared:**<BR>
+New Moves: <BR>
+- ![grass]![physical] Horn Leech
+- ![normal]![status] Slack Off
+
+### ![camerupt]![camerupt-mega]
+**Mega:**<BR>
+Base Stats:
+- hp: `70`
+- atk: `120` --> `80` (`-40`)
+- def: `100` --> `120` (`+20`)
+- spa: `145`
+- spd: `105` --> `125` (`+20`)
+- spe: `20`
+- Total: `560`
+
+**Shared:**
+New Moves:
+- ![ground]![special] Sandsear Storm
+
+### ![deoxys]![deoxys-defense]
+**Base:** <BR>
+Abilities: `Pressure`, `Mold Breaker` <BR>
+<BR>
+
+**Defense:** <BR>
+Abilities: `Pressure`, `Unaware`, `Regenerator` <BR>
+Base Stats:
+- hp: `50` --> `70` (`+20`)
+- atk: `70` --> `60` (`-10`)
+- def: `160`
+- spa: `70` --> `60` (`-10`)
+- spd: `160`
+- spe: `90`
+- Total: `600`
+  <BR>
+
+**Shared:** <BR>
+New Moves:
+- ![fighting]![physical] Body Press
+
+### ![flygon]
+New Moves: <BR>
+- ![ground]![special] Desert Song
+
+Base Stats:
+- hp: `80`
+- atk: `100`
+- def: `80`
+- spa: `80` --> `110` (`+30`)
+- spd: `80`
+- spe: `100`
+- Total: `520` --> `550`
+
+### ![manectric]![manectric-mega]
+New Moves: <BR>
+- ![electric]![special] Parabolic Charge
+- ![ice]![special] Ice Beam
+
+### ![metagross]
+Abiliites: `Clear Body`, `Light Metal`, `Full Metal Body`<BR>
+New Moves:
+- ![normal]![status] Swords Dance
+
+### ![sceptile] ![sceptile-mega]
+**Base:** <BR>
+Type: ![grass] --> ![grass]![dragon] <BR>
+<BR>
+**Shared:** <BR>
+New Moves: <BR>
+- ![dark]![status] Nasty Plot
+- ![dragon]![special] Draco Meteor
+- ![grass]![special] Chloroblast
+
+### ![sharpedo]![sharpedo-mega]
+New Moves:
+- ![normal]![status] Swords Dance
+
 ## Gen 4
-`Mega-Garchomp`: Stats: `hp: 108, atk: 170, def: 115, spa: 110, spd: 95, spe: 102`. <BR>
-`Hippowdon`: Stats: `hp: 113, atk: 112, def: 123, spa: 68, spd: 87, spe: 47`. Abilities: Sand Stream, Intimidate. New Moves: Spikes, Knock Off.<BR>
-`Empoleon`: Stats: `hp: 90, atk: 90, def: 95, spa: 111, spd: 101, spe: 60`. Abilities: Torrent, Slush Rush, Competitive. New Moves: Aurora Veil, Reflect, Light Screen.<BR>
-`Shaymin (normal form)`: Type: Grass, Fairy. Stats: `hp: 100, atk: 70, def: 110, spa: 110, spd: 110, spe: 100`. Abilities: Natural Cure, Overgrow, Regenerator. New Moves: Sparkly Swirl, Light of Ruin, Floral Healing. *It is not yet determined if these moves should be banned from Shaymin-Sky.*<BR>
-`Glaceon`: Abilities: Snow Cloak, Ice Body, Snow Warning. New Moves: Glaciate. <BR>
-`Dialga`: Abilities: Pressure, Telepathy, Chronal Distortion. *Also applies to Origin form.*<BR>
+### ![garchomp-mega]
+Base Stats:
+- hp: `108`
+- atk: `170`
+- def: `115`
+- spa: `120` --> `110` (`-10`) 
+- spd: `95`
+- spe: `92` --> `102` (`+10`)
+- Total: `700`
+
+### ![hippowdon]
+Abilities: `Sand Stream`, `Intimidate` <BR>
+New Moves:
+- ![dark]![physical] Knock Off
+- ![ground]![status] Spikes
+
+Base Stats:
+- hp: `108` --> `113` (`+5`)
+- atk: `112`
+- def: `118` --> `123` (`+5`)
+- spa: `68`
+- spd: `72` --> `87` (`+15`)
+- spe: `47`
+- Total: `525` --> `550`
+
+### ![empoleon]
+Abilities: `Torrent`, `Slush Rush`, `Competitive`<BR>
+New Moves:
+- ![ice]![status] Aurora Veil
+- ![psychic]![status] Light Screen
+- ![psychic]![status] Reflect
+
+Base Stats:
+- hp: `84` --> `90` (`+6`)
+- atk: `86` --> `90` (`+4`)
+- def: `88` --> `95` (`+7`)
+- spa: `111`
+- spd: `101`
+- spe: `60`
+- Total: `530` --> `547`
+
+### ![shaymin]
+Type: ![grass] --> ![grass]![fairy]<BR>
+Abilities: `Natural Cure`, `Overgrow`, `Regenerator`<BR>
+New Moves:
+- ![fairy]![status] Floral Healing
+- ![fairy]![special] Light of Ruin
+- ![fairy]![special] Sparkly Swirl
+
+Base Stats:
+- hp: `100`
+- atk: `100` --> `70` (`-30`)
+- def: `100` --> `110` (`+10`)
+- spa: `100` --> `110` (`+10`)
+- spd: `100` --> `110` (`+10`)
+- spe: `100`
+- Total: `600`
+
+### ![glaceon]
+Abilities: `Snow Cloak`, `Ice Body`, `Snow Warning`
+New Moves:
+- ![ice]![special] Glaciate
+
+### ![dialga]![dialga-origin]
+Abilities: `Pressure`, `Telepathy`, `Chronal Distortion`
+
+### ![palkia]![palkia-origin]
+Abilities: `Pressure`, `Telepathy`, `Spacial Distortion`
 `Palkia`: Abilities: Pressure, Telepathy, Spatial Distortion. *Also applies to Origin form.* New Moves: Origin Pulse, Hyperspace Hole<BR>
 `Giratina`: Abilities: Pressure, Telepathy, Absolute Distortion. *Also applies to Origin form. New Moves: Roost*<BR>
 `Toxicroak`: Stats: `hp: 83, atk: 111, def: 85, spa: 91, spd: 85, spe: 85`. New Moves: Jet Punch, Liquidation, Mach Punch, U-turn. <BR>
@@ -427,13 +713,13 @@ Most Pokémon without access to Hidden Power due to the Dexit in Gen 8+ have acc
 Exclusions: `No exclusions as of yet.`
 
 ### Snow (weather condition)
-![Ice][ice-type] types only:<BR>
-`1.5x` Def, `1.2x` ![Ice][ice-type]-damage, `1.2x`/`0.8x` speed (in/out of Trick room).
+![ice] types only:<BR>
+`1.5x` Def, `1.2x` ![ice]-damage, `1.2x`/`0.8x` speed (in/out of Trick room).
 
-## Gems![Fire Gem][firegem]![Water Gem][watergem]![Grass Gem][grassgem] (items)
+## Gems![firegem]![watergem]![grassgem] (items)
 All gems allowed.<BR>
 `1.3x` -> `1.5x` damage.
 
-### ![Fairy][fairy-type] (type)
+### ![fairy] (type)
 Damage taken: <BR>
-![Bug][bug-type]: `0.5x` --> `1x`
+![bug]: `0.5x` --> `1x`

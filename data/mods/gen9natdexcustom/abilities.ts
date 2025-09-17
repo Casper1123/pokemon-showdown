@@ -35,20 +35,20 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			this.field.removePseudoWeather('chronaldistortion');
 		},
 	},
-	spatialdistortion: {
-		name: "Spatial Distortion",
+	spacialdistortion: {
+		name: "Spacial Distortion",
 		desc: "Sets Gravity. After leaving the battlefield, the effect will remain for 2 turns.",
 		shortDesc: "Sets Gravity. Lingers for 2 turns.",
 		onStart(source) {
-			this.add('-ability', source, 'Spatial Distortion');
-			this.field.addPseudoWeather('spatialdistortion', source);
+			this.add('-ability', source, 'Spacial Distortion');
+			this.field.addPseudoWeather('spacialdistortion', source);
 		},
 		onEnd(pokemon) {
-			if (this.field.pseudoWeather['spatialdistortion']?.source !== pokemon) return;
+			if (this.field.pseudoWeather['spacialdistortion']?.source !== pokemon) return;
 			for (const target of this.getAllActive()) {
 				if (target === pokemon) continue;
-				if (target.hasAbility('spatialdistortion')) {
-					this.field.pseudoWeather['spatialdistortion'].source = target;
+				if (target.hasAbility('spacialdistortion')) {
+					this.field.pseudoWeather['spacialdistortion'].source = target;
 					this.add('-message', `${target.name} maintains the distortion!`);
 					return;
 				}

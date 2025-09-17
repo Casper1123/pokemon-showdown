@@ -70,7 +70,7 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	},
 	aggronmega: {
 		inherit: true,
-		baseStats: { hp: 80, atk: 140, def: 230, spa: 40, spd: 80, spe: 50 },
+		baseStats: { hp: 80, atk: 140, def: 230, spa: 60, spd: 100, spe: 50 },
 	},
 	sceptile: {
 		inherit: true,
@@ -138,7 +138,7 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	},
 	palkia: {
 		inherit: true,
-		abilities: { 0: "Pressure", 1: "Telepathy", H: "Spatial Distortion" },
+		abilities: { 0: "Pressure", 1: "Telepathy", H: "Spacial Distortion" },
 	},
 	palkiaorigin: {
 		inherit: true,
