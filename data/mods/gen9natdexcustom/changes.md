@@ -64,38 +64,251 @@ Here, rules are explained. Standard Smogon rules will be *italicized* and custom
 # Mod changes
 Changes are displayed by category; Item, Move, Ability, Pokémon.
 
+[status-move]: https://play.pokemonshowdown.com/sprites/categories/Status.png
+[physical-move]: https://play.pokemonshowdown.com/sprites/categories/Physical.png
+[special-move]: https://play.pokemonshowdown.com/sprites/categories/Special.png
+[normal-type]: https://play.pokemonshowdown.com/sprites/types/Normal.png
+[fire-type]: https://play.pokemonshowdown.com/sprites/types/Fire.png
+[water-type]: https://play.pokemonshowdown.com/sprites/types/Water.png
+[electric-type]: https://play.pokemonshowdown.com/sprites/types/Electric.png
+[grass-type]: https://play.pokemonshowdown.com/sprites/types/Grass.png
+[ice-type]: https://play.pokemonshowdown.com/sprites/types/Ice.png
+[fighting-type]: https://play.pokemonshowdown.com/sprites/types/Fighting.png
+[poison-type]: https://play.pokemonshowdown.com/sprites/types/Poison.png
+[ground-type]: https://play.pokemonshowdown.com/sprites/types/Ground.png
+[flying-type]: https://play.pokemonshowdown.com/sprites/types/Flying.png
+[psychic-type]: https://play.pokemonshowdown.com/sprites/types/Psychic.png
+[bug-type]: https://play.pokemonshowdown.com/sprites/types/Bug.png
+[rock-type]: https://play.pokemonshowdown.com/sprites/types/Rock.png
+[ghost-type]: https://play.pokemonshowdown.com/sprites/types/Ghost.png
+[dragon-type]: https://play.pokemonshowdown.com/sprites/types/Dragon.png
+[dark-type]: https://play.pokemonshowdown.com/sprites/types/Dark.png
+[steel-type]: https://play.pokemonshowdown.com/sprites/types/Steel.png
+[fairy-type]: https://play.pokemonshowdown.com/sprites/types/Fairy.png
+
+[sec-item]: .
+[watergem]: https://play.pokemonshowdown.com/sprites/itemicons/water-gem.png
+[firegem]: https://play.pokemonshowdown.com/sprites/itemicons/fire-gem.png
+[grassgem]: https://play.pokemonshowdown.com/sprites/itemicons/grass-gem.png
+
+[sec-gen1]: .
+[gengar-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/gengar.gif
+[charizard-mega-x-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/charizard-megax.gif
+[starmie-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/starmie.gif
+[cloyster-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/cloyster.gif
+
+[sec-gen2]: .
+[celebi-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/celebi.gif
+[typhlosion-hisui-gif]: https://play.pokemonshowdown.com/sprites/gen5/typhlosion-hisui.png
+[steelix-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/steelix-mega.gif
+
+[sec-gen3]: .
+[salamence-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/salamence.gif
+[flygon-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/flygon.gif
+[camerupt-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5/camerupt-mega.png
+[metagross-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/metagross.gif
+[crawdaunt-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/crawdaunt.gif
+
+[sec-gen4]: .
+[darkrai-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/darkrai.gif
+[garchomp-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/garchomp.gif
+[garchomp-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/garchomp-mega.gif
+[glaceon-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/glaceon.gif
+[rotom-frost-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/rotom-frost.gif
+[palkia-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/palkia.gif
+[dialga-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/dialga.gif
+[palkia-origin-gif]: https://play.pokemonshowdown.com/sprites/gen5/palkia-origin.png
+[dialga-origin-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/dialga-origin.gif
+[shaymin-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/shaymin.gif
+[giratina-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/giratina.gif
+[giratina-origin-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/giratina-origin.gif
+
+
+[sec-gen5]: .
+[haxorus-gif]: https://play.pokemonshowdown.com/sprites/gen5ani-shiny/haxorus.gif
+[kyurem-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/kyurem.gif
+[kyurem-black-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/kyurem-black.gif
+[kyurem-white-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/kyurem-white.gif
+[conkeldurr-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/conkeldurr.gif
+[emboar-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/emboar.gif
+[serperior-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/serperior.gif
+[samurott-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/samurott.gif
+[samurott-hisui-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/samurott-hisui.gif
+[chandelure-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/chandelure.gif
+[excadrill-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/excadrill.gif
+[krookodile-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/krookodile.gif
+
+[sec-gen6]: .
+[zygarde-50%-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/zygarde.gif
+[diancie-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5/diancie-mega.png
+
+[sec-gen7]: .
+[nihilego-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/nihilego.gif
+[necrozma-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/necrozma.gif
+[golisopod-gif]: https://play.pokemonshowdown.com/sprites/gen5/golisopod.png
+
+[sec-gen8]: .
+[dragapult-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/dragapult.gif
+[dracozolt-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/dracozolt.gif
+
+
+[sec-gen9]: .
+[glimmora-gif]: https://play.pokemonshowdown.com/sprites/gen5/glimmora.png
+[sandyshocks-gif]: https://play.pokemonshowdown.com/sprites/gen5/sandyshocks.png
+
+
+
 # Moves
-`Mud Shot`: 70 BP, 10 PP. <BR>
-`Hammer Arm`: 120 BP, 100 ACC. <BR>
-`Dragon Rush`: 90 ACC, 15% flinch. <BR>
-`Submission`: 90 BP, 90 ACC, 10 PP. <BR>
-`Trick Room`: Duration increased to 6 turns. <BR>
-`Sparkly Swirl`: 60 BP, 5 PP. <BR>
-`Razor Shell`: 85 BP. <BR>
-`Power Gem`: 90 BP, 10 PP. 20% chance +1 SpA. <BR>
-`Roar of Time`: Recharge turn -> Cannot be used consecutively. <BR>
-`Eruption`: Now boosted by Sheer Force. <BR>
-`Freeze Shock`: 100 ACC, Raises Atk by 1, hits turn 2. Snow: no charge. <BR>
-`Ice Burn`: 100 ACC, Raises SpA by 1, hits turn 2. Snow: no charge. <BR>
-`Glaciate`: Lowers speed stat of opponents hit by 2 stages. <BR>
-`Core Enforcer`: Physical move. Does not make contact. <BR>
-`Dark Void`: 80 ACC. <BR>
-`Spatial Rend`: 120 BP, 85 ACC. <BR>
-<BR> *Custom moves:* <BR>
-`Desert Song`: 90 BP, 100 ACC, 10 PP, Ground Special, Sound, hits adjacent targets. Sets Sand on hit. If sand was already up, 1.5x damage.<BR>
-`Neutron Ray`: 100 BP, 100 ACC, 5 PP, Dark Special. Uses highest attacking stat. 30% chance to inflict one of: Paralysis, Ability Suppression, Drowsiness, Confusion or Flinch. <BR>
-`Shadowflame`: 70 BP, 100 ACC, 10 PP, Ghost Special. 30% chance to burn. <BR>
-`Time Stop`: Status, 10 PP, Psychic. Protects the user. At the end of the turn, they switch out. Taking a hit while protected restores 25% of max HP. <BR>
+### ![Dragon][dragon-type]![Physical][physical-move] Core Enforcer
+Move type: ![Special][special-move] -> ![Physical][physical-move] <BR>
+Benefitting mons: <BR>
+![Zygarde][zygarde-50%-gif]
+
+### ![Dark][dark-type]![Status][status-move] Dark Void
+ACC: `50` --> `80` <BR>
+Benefitting mons: <BR>
+![Darkrai][darkrai-gif]
+
+### ![Dragon][dragon-type]![Physical][physical-move] Dragon Rush
+ACC: `75` --> `90` <BR>
+Flinch: `20%` --> `15%` <BR>
+Benefitting mons: <BR>
+![Garchomp][garchomp-gif] ![Haxorus][haxorus-gif] ![Charizard-Mega-X][charizard-mega-x-gif] 
+![Dragapult][dragapult-gif] ![Salamence][salamence-gif] ![Flygon][flygon-gif] ![Dracozolt][dracozolt-gif]
+
+### ![Fire][fire-type]![Special][special-move] Eruption
+Is now boosted by **Sheer Force**. <BR>
+Benefitting mons: <BR>
+![Camerupt-Mega][camerupt-mega-gif]
+
+### ![Ice][ice-type]![Physical][physical-move] Freeze Shock
+ACC: `90` --> `100` <BR>
+When charging, gain `+1 Atk`. If in Snow, immediately finish charging. <BR>
+Benefitting mons: <BR>
+![Kyurem-Black][kyurem-black-gif]
+
+### ![Ice][ice-type]![Special][special-move] Glaciate
+Opponent speed: `-1` --> `-2`<BR>
+Benefitting mons: <BR>
+![Kyurem][kyurem-gif] ![Kyurem-White][kyurem-white-gif] ![Kyurem-Black][kyurem-black-gif] ![Glaceon][glaceon-gif] ![Rotom-Frost][rotom-frost-gif]
+
+### ![Fighting][fighting-type]![Physical][physical-move] Hammer Arm
+BP: `100` --> `120`<BR>
+ACC: `90` --> `100`<BR>
+Benefitting mons: <BR>
+![Conkeldurr][conkeldurr-gif] ![Emboar][emboar-gif] ![Metagross][metagross-gif]
+
+### ![Ice][ice-type]![Special][special-move] Ice Burn
+ACC: `90` --> `100` <BR>
+When charging, gain `+1 SpA`. If in Snow, immediately finish charging. <BR>
+Benefitting mons: <BR>
+![Kyurem-White][kyurem-white-gif]
+
+### ![Ground][ground-type]![Special][special-move] Mud Shot
+BP: `55` --> `70`<BR>
+PP: `15` --> `10`<BR>
+Benefitting mons: <BR>
+![Serperior][serperior-gif]
+
+### ![Rock][rock-type]![Special][special-move] Power Gem
+BP: `80` --> `90`<BR>
+PP: `20` --> `10`<BR>
+New secondary: 20% `+1 SpA`<BR>
+Benefitting mons: <BR>
+![Nihilego][nihilego-gif] ![Glimmora][glimmora-gif] ![Mega-Diancie][diancie-mega-gif] ![Necrozma][necrozma-gif] ![Sandy Shocks][sandyshocks-gif] ![Starmie][starmie-gif]
+
+### ![Water][water-type]![Physical][physical-move] Razor Shell
+BP: `75` --> `85`<BR>
+Some benefitting mons: <BR>
+![Samurott-Hisui][samurott-hisui-gif] ![Samurott][samurott-gif] ![Cloyster][cloyster-gif] ![Crawdaunt][crawdaunt-gif] ![Golisopod][golisopod-gif]
+
+### ![Dragon][dragon-type]![Special][special-move] Roar of Time
+Recharge move --> Cannot be used twice in a row.<BR>
+Benefitting mons: <BR>
+![Dialga][dialga-gif] ![Dialga-Origin][dialga-origin-gif]
+
+### ![Dragon][dragon-type]![Special][special-move] Spacial Rend
+BP: `100` --> `120`<BR>
+ACC: `95` --> `85`<BR>
+Benefitting mons: <BR>
+![Palkia][palkia-gif] ![Palkia-Origin][palkia-origin-gif]
+
+### Sparkly Swirl
+BP: `90` --> `60`<BR>
+PP: `15` --> `5`<BR>
+Benefitting mons: <BR>
+![Shaymin][shaymin-gif]
+
+### Submission
+BP: `80` --> `90`<BR>
+ACC: `80` --> `90`<BR>
+PP: `20` --> `10`. <BR>
+
+### Trick Room
+Duration: `5` --> `6` turns.
+Benefitting mons: <BR>
+> **Too many to list.**
+
+## Custom moves
+### ![Ground][ground-type]![Special][special-move] Desert Song 
+BP: 90<BR>
+ACC: 100<BR>
+PP: 10<BR>
+Sound (bypasses Substitute), hits adjacent targets.<BR>
+Sets Sand on hit. If sand was already up, 1.5x damage.<BR>
+**Users:** <BR>
+![Flygon][flygon-gif]
+
+### ![Dark][dark-type]![Special][special-move] Neutron Ray 
+BP: 100<BR>
+ACC: 100<BR>
+PP: 5<BR>
+Uses highest attacking stat.<BR>
+30% chance to inflict one of: Paralysis, Ability Suppression, Drowsiness, Confusion or Flinch. <BR>
+**Users:**<BR>
+![Necrozma][necrozma-gif]
+
+### ![Ghost][ghost-type]![Special][special-move] Shadowflame
+BP: 70<BR>
+ACC: 100<BR>
+PP: 10<BR>30% chance to burn. <BR>
+**Users:**<BR>
+![Chandelure][chandelure-gif] ![Typhlosion-Hisui][typhlosion-hisui-gif]
+
+### ![Psychic][psychic-type]![Status][status-move] Time Stop
+PP: 10<BR>
+Protects the user. At the end of the turn, they switch out.<BR>
+Taking a hit while protected restores 25% of max HP. <BR>
+**Users:**<BR>
+![Celebi][celebi-gif]
 
 # Abilities
-`Sand Force`: Scalar changed from 30% to 50%. <BR>
-<BR> *Custom Abilities:* <BR>
-`Chronal Distortion`: Sets a primordial pseudoweather. While active, all attacking moves hit for 0.8x damage. In 2 turns, they hit again for 0.4x damage. This distorted move cannot boost allies stats. *Exceptions that do not hit twice: Fake Out, Doom Desire, Future Sight, Thunderclap, Sucker Punch.* <BR>
-`Spatial Distortion`: Sets a primordial pseudoweather that lingers for 2 turns if not maintained. Has the effects of Gravity. <BR>
-`Absolute Distortion`: Sets a primordial pseudoweather. Removes all hazards and field conditions (weather, terrain, etc). Blocks all usages of status moves and abilities that set them, except if the user has the `Absolute Distortion` ability.
+### Sand Force
+Damage dealt by moves of type ![Ground][ground-type] ![Rock][rock-type] ![Steel][steel-type] type deal `30% -> 50%` more damage during Sandstorm.<BR>
+**Users:**<BR>
+![Garchomp-Mega][garchomp-mega-gif] ![Excadrill][excadrill-gif] ![Krookodile][krookodile-gif] ![Steelix-Mega][steelix-mega-gif]
+
+## Custom Abilities
+### Chronal Distortion 
+Sets a primordial pseudoweather. While active, all attacking moves hit for 0.8x damage.<BR>
+In 2 turns, they hit again for 0.4x damage. This distorted move cannot boost allies stats.<BR>
+*Exceptions that do not hit twice: Fake Out, Doom Desire, Future Sight, Thunderclap, Sucker Punch.* <BR>
+**Users:**<BR>
+![Dialga][dialga-gif] ![Celebi][celebi-gif] ![Dialga-Origin][dialga-origin-gif]
+### Spatial Distortion
+Sets a primordial pseudoweather that lingers for 2 turns if not maintained. Has the effects of Gravity. <BR>
+**Users:**<BR>
+![Palkia][palkia-gif] ![Palkia-Origin][palkia-origin-gif]
+
+### Absolute Distortion
+Sets a primordial pseudoweather. Removes all hazards and field conditions (weather, terrain, etc). <BR>
+Blocks all usages of status moves and abilities that set them, except if the user has the `Absolute Distortion` ability. <BR>
+**Users:**<BR>
+![Giratina][giratina-gif] ![Giratina-Origin][giratina-origin-gif]
 
 # Pokémon
 ## Gen 1
+
 `Gengar`: Access to Levitate. <BR>
 `Mega-Slowbro`: Stats: `hp: 95, atk: 75, def: 180, spa: 100, spd: 110, spe: 30`. <BR>
 `Mega-Pidgeot`: Type: Electric, Flying. New Moves: Zap Cannon, Thunder. <BR>
@@ -174,8 +387,20 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 ## Gen 8
 `Copperajah`: Abilities: Sheer Force, Sand Force, Heavy Metal. <BR>
 ## Gen 9
+
 ## Other:
-`Hidden Power`: Most Pokémon without access to Hidden Power due to the Dexit in Gen 8+ have access to the move. A list of exclusions follows: `No exclusions as of yet.` <BR><BR>
-`Snow`: If Ice-typed: 1.5x Def, 1.2x Ice-STAB power, 1.2x/0.8x speed (in/out of Trick room). <BR><BR>
-`Gems`: 1.3x -> 1.5x damage. All gems allowed. <BR><BR>
-`Fairy (type)`: Bug resistance -> neutrality. <BR><BR>
+### Hidden Power (move)
+Most Pokémon without access to Hidden Power due to the Dexit in Gen 8+ have access to the move.<BR>
+Exclusions: `No exclusions as of yet.`
+
+### Snow (weather condition)
+![Ice][ice-type] types only:<BR>
+`1.5x` Def, `1.2x` ![Ice][ice-type]-damage, `1.2x`/`0.8x` speed (in/out of Trick room).
+
+## Gems![Fire Gem][firegem]![Water Gem][watergem]![Grass Gem][grassgem] (items)
+All gems allowed.<BR>
+`1.3x` -> `1.5x` damage.
+
+### ![Fairy][fairy-type] (type)
+Damage taken: <BR>
+![Bug][bug-type]: `0.5x` --> `1x`
