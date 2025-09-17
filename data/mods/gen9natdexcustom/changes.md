@@ -96,11 +96,19 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [charizard-mega-x-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/charizard-megax.gif
 [starmie-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/starmie.gif
 [cloyster-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/cloyster.gif
+[slowbro-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5/slowbro-mega.png
+[pidgeot-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5/pidgeot-mega.png
 
 [sec-gen2]: .
 [celebi-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/celebi.gif
+[typhlosion-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/typhlosion.gif
 [typhlosion-hisui-gif]: https://play.pokemonshowdown.com/sprites/gen5/typhlosion-hisui.png
 [steelix-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/steelix-mega.gif
+[ampharos-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/ampharos.gif
+[ampharos-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/ampharos-mega.gif
+[suicune-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/suicune.gif
+[raikou-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/raikou.gif
+[houndoom-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/houndoom-mega.gif
 
 [sec-gen3]: .
 [salamence-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/salamence.gif
@@ -108,6 +116,18 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [camerupt-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5/camerupt-mega.png
 [metagross-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/metagross.gif
 [crawdaunt-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/crawdaunt.gif
+[breloom-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/breloom.gif
+[aggron-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/aggron.gif
+[aggron-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5/aggron-mega.png
+[absol-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/absol-mega.gif
+[sceptile-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/sceptile.gif
+[manectric-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/manectric.gif
+[deoxys-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/deoxys.gif
+[deoxys-defense-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/deoxys-defense.gif
+[altaria-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/altaria-mega.gif
+[banette-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/banette-mega.gif
+[sharpedo-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/sharpedo-mega.gif
+
 
 [sec-gen4]: .
 [darkrai-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/darkrai.gif
@@ -122,7 +142,6 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [shaymin-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/shaymin.gif
 [giratina-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/giratina.gif
 [giratina-origin-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/giratina-origin.gif
-
 
 [sec-gen5]: .
 [haxorus-gif]: https://play.pokemonshowdown.com/sprites/gen5ani-shiny/haxorus.gif
@@ -151,11 +170,9 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [dragapult-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/dragapult.gif
 [dracozolt-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/dracozolt.gif
 
-
 [sec-gen9]: .
 [glimmora-gif]: https://play.pokemonshowdown.com/sprites/gen5/glimmora.png
 [sandyshocks-gif]: https://play.pokemonshowdown.com/sprites/gen5/sandyshocks.png
-
 
 
 # Moves
@@ -223,7 +240,7 @@ Some benefitting mons: <BR>
 ![Samurott-Hisui][samurott-hisui-gif] ![Samurott][samurott-gif] ![Cloyster][cloyster-gif] ![Crawdaunt][crawdaunt-gif] ![Golisopod][golisopod-gif]
 
 ### ![Dragon][dragon-type]![Special][special-move] Roar of Time
-Recharge move --> Cannot be used consecutively. *(Must use another move after using this)*<BR>
+Recharge move --> Cannot be used consecutively.<BR>
 Benefitting mons: <BR>
 ![Dialga][dialga-gif] ![Dialga-Origin][dialga-origin-gif]
 
@@ -308,9 +325,11 @@ Blocks all usages of status moves and abilities that set them, except if the use
 
 # Pokémon
 ## Gen 1
+### ![Gengar][gengar-gif]
+Abilities: `Cursed Body`, `Levitate`
 
-`Gengar`: Access to Levitate. <BR>
-`Mega-Slowbro`: Stats: `hp: 95, atk: 75, def: 180, spa: 100, spd: 110, spe: 30`. <BR>
+### ![Mega-Slowbro][slowbro-mega-gif]
+Stats: `hp: 95, atk: 75, def: 180, spa: 100, spd: 110, spe: 30`<BR>
 `Mega-Pidgeot`: Type: Electric, Flying. New Moves: Zap Cannon, Thunder. <BR>
 ## Gen 2
 `Ampharos`: Type: Electric, Dragon. Plus Ability replaced with Teravolt. Stats: `hp: 100, atk: 75, def: 85, spa: 115, spd: 90, spe: 55`. New Moves: Draco Meteor, Tail Glow, Thunderclap, Parabolic Charge.<BR>
