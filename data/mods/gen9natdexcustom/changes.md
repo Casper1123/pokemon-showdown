@@ -217,7 +217,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 
 # Moves
 ### ![dragon]![physical] Core Enforcer
-Move type: ![special] -> ![physical] <BR>
+Move category: ![special] -> ![physical] <BR>
 Benefitting mons: <BR>
 ![zygarde-50%]
 
