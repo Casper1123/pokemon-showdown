@@ -273,7 +273,6 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	necrozma: {
 		inherit: true,
 		types: ["Psychic", "Dark"],
-		baseStats: { hp: 97, atk: 117, def: 101, spa: 127, spd: 79, spe: 79 },
 	},
 	// endregion
 	// region: Gen8

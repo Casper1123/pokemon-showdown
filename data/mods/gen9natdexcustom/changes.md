@@ -134,7 +134,6 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [manectric-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/manectric-mega.gif
 [deoxys]: https://play.pokemonshowdown.com/sprites/gen5ani/deoxys.gif
 [deoxys-defense]: https://play.pokemonshowdown.com/sprites/gen5ani/deoxys-defense.gif
-[altaria-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/altaria-mega.gif
 [banette-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/banette-mega.gif
 [sharpedo-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/sharpedo-mega.gif
 [altaria]: https://play.pokemonshowdown.com/sprites/gen5ani/altaria.gif
@@ -154,6 +153,15 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [shaymin]: https://play.pokemonshowdown.com/sprites/gen5ani/shaymin.gif
 [giratina]: https://play.pokemonshowdown.com/sprites/gen5ani/giratina.gif
 [giratina-origin]: https://play.pokemonshowdown.com/sprites/gen5ani/giratina-origin.gif
+[rotom]: https://play.pokemonshowdown.com/sprites/gen5ani/rotom.gif
+[rotom-wash]: https://play.pokemonshowdown.com/sprites/gen5ani/rotom-wash.gif
+[rotom-mow]: https://play.pokemonshowdown.com/sprites/gen5ani/rotom-mow.gif
+[rotom-heat]: https://play.pokemonshowdown.com/sprites/gen5ani/rotom-heat.gif
+[rotom-fan]: https://play.pokemonshowdown.com/sprites/gen5ani/rotom-fan.gif
+[regigigas]: https://play.pokemonshowdown.com/sprites/gen5ani/regigigas.gif
+[toxicroak]: https://play.pokemonshowdown.com/sprites/gen5ani/toxicroak.gif
+[empoleon]: https://play.pokemonshowdown.com/sprites/gen5ani/empoleon.gif
+[hippowdon]: https://play.pokemonshowdown.com/sprites/gen5ani/hippowdon.gif
 
 [sec-gen5]: .
 [haxorus]: https://play.pokemonshowdown.com/sprites/gen5ani-shiny/haxorus.gif
@@ -168,6 +176,25 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [chandelure]: https://play.pokemonshowdown.com/sprites/gen5ani/chandelure.gif
 [excadrill]: https://play.pokemonshowdown.com/sprites/gen5ani/excadrill.gif
 [krookodile]: https://play.pokemonshowdown.com/sprites/gen5ani/krookodile.gif
+[scolipede]: https://play.pokemonshowdown.com/sprites/gen5ani/scolipede.gif
+[durant]: https://play.pokemonshowdown.com/sprites/gen5ani/durant.gif
+[gigalith]: https://play.pokemonshowdown.com/sprites/gen5ani/gigalith.gif
+[terrakion]: https://play.pokemonshowdown.com/sprites/gen5ani/terrakion.gif
+[virizion]: https://play.pokemonshowdown.com/sprites/gen5ani/virizion.gif
+[coballion]: https://play.pokemonshowdown.com/sprites/gen5ani/coballion.gif
+[zoroark]: https://play.pokemonshowdown.com/sprites/gen5ani/zoroark.gif
+[zoroark-hisui]: https://play.pokemonshowdown.com/sprites/gen5ani/zoroark-hisui.gif
+[swanna]: https://play.pokemonshowdown.com/sprites/gen5ani/swanna.gif
+[excavalier]: https://play.pokemonshowdown.com/sprites/gen5ani/excavalier.gif
+[reuniclus]: https://play.pokemonshowdown.com/sprites/gen5ani/reuniclus.gif
+[cofagrigus]: https://play.pokemonshowdown.com/sprites/gen5ani/cofagrigus.gif
+[audino]: https://play.pokemonshowdown.com/sprites/gen5ani/audino.gif
+[audino-mega]: https://play.pokemonshowdown.com/sprites/gen5/audino-mega.png
+[beartic]: https://play.pokemonshowdown.com/sprites/gen5ani/beartic.gif
+[beyeeyem]: https://play.pokemonshowdown.com/sprites/gen5ani/beyeeyem.gif
+[musharna]: https://play.pokemonshowdown.com/sprites/gen5ani/musharna.gif
+[darmanitan]: https://play.pokemonshowdown.com/sprites/gen5ani/darmanitan.gif
+
 
 [sec-gen6]: .
 [zygarde-50%]: https://play.pokemonshowdown.com/sprites/gen5ani/zygarde.gif
@@ -181,6 +208,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [sec-gen8]: .
 [dragapult]: https://play.pokemonshowdown.com/sprites/gen5ani/dragapult.gif
 [dracozolt]: https://play.pokemonshowdown.com/sprites/gen5ani/dracozolt.gif
+[copperajah]: https://play.pokemonshowdown.com/sprites/gen5/copperajah.png
 
 [sec-gen9]: .
 [glimmora]: https://play.pokemonshowdown.com/sprites/gen5/glimmora.png
@@ -654,7 +682,7 @@ Base Stats:
 - Total: `600`
 
 ### ![glaceon]
-Abilities: `Snow Cloak`, `Ice Body`, `Snow Warning`
+Abilities: `Snow Cloak`, `Ice Body`, `Snow Warning`<BR>
 New Moves:
 - ![ice]![special] Glaciate
 
@@ -663,48 +691,336 @@ Abilities: `Pressure`, `Telepathy`, `Chronal Distortion`
 
 ### ![palkia]![palkia-origin]
 Abilities: `Pressure`, `Telepathy`, `Spacial Distortion`
-`Palkia`: Abilities: Pressure, Telepathy, Spatial Distortion. *Also applies to Origin form.* New Moves: Origin Pulse, Hyperspace Hole<BR>
-`Giratina`: Abilities: Pressure, Telepathy, Absolute Distortion. *Also applies to Origin form. New Moves: Roost*<BR>
-`Toxicroak`: Stats: `hp: 83, atk: 111, def: 85, spa: 91, spd: 85, spe: 85`. New Moves: Jet Punch, Liquidation, Mach Punch, U-turn. <BR>
-`Rotom`: Stats: `hp: 50, atk: 50, def: 77, spa: 95, spd: 77, spe: 116`. <BR>
-`Rotom-Frost`: Abilities: Levitate, Slush Rush. New Moves: Glaciate, Freeze Dry, Icy Wind. <BR>
-`Rotom-Fan`: Ability: Air Lock. Tailwind, Air Cutter. <BR>
-`Rotom-Heat`: New Moves: Fire Pledge, Heat Wave, Inferno. <BR>
-`Rotom-Mow`: New Moves: Grass Pledge, Magical Leaf, Grass Knot. <BR>
-`Rotom-Wash`: New Moves: Water Pledge, Muddy Water, Scald, Brine. <BR>
-`Regigigas`: New Moves: Protect. <BR>
+New Moves:
+- ![psychic]![special] Hyperspace Hole
+- ![water]![special] Origin Pulse
+
+### ![giratina]![giratina-origin]
+**Base:** <BR>
+Abilities: `Pressure`, `Telepathy`, `Absolute Distortion` <BR>
+<BR>
+**Origin:**<BR>
+Abiliites: `Levitate`, `Absolute Distortion` <BR>
+<BR>
+**Shared:**<BR>
+New Moves:
+- ![flying]![status] Roost
+
+### ![toxicroak]
+New Moves:
+- ![bug]![physical] U-turn
+- ![fighting]![physical] Mach Punch
+- ![water]![physical] Jet Punch
+- ![water]![physical] Liquidation
+
+Base Stats:
+- hp: `83`
+- atk: `106` --> `111` (`+5`)
+- def: `65` --> `85` (`+20`)
+- spa: `86` --> `91` (`+5`)
+- spd: `65` --> `85` (`+20`)
+- spe: `85`
+- Total: `490` --> `540`
+
+### ![rotom]
+Base Stats:
+- hp: `50`
+- atk: `50`
+- def: `77`
+- spa: `95`
+- spd: `77`
+- spe: `91` --> `116` (`+20`)
+- Total: `440` --> `460`
+
+### ![rotom-frost]
+Abilities: `Levitate`, `Slush Rush`<BR>
+New Moves:
+- ![ice]![special] Freeze Dry
+- ![ice]![special] Glaciate
+- ![ice]![special] Icy Wind
+
+### ![rotom-fan]
+Abilities: `Air Lock`<BR>
+New Moves:
+- ![flying]![special] Air Cutter
+- ![flying]![status] Tailwind
+
+### ![rotom-heat]
+New Moves:
+- ![fire]![special] Fire Pledge
+- ![fire]![special] Heat Wave
+- ![fire]![special] Inferno
+
+### ![rotom-mow]
+New Moves:
+- ![grass]![special] Grass Knot
+- ![grass]![special] Grass Pledge
+- ![grass]![special] Magical Leaf
+
+### ![rotom-wash]
+New Moves:
+- ![water]![special] Brine
+- ![water]![special] Muddy Water
+- ![water]![special] Scald
+- ![water]![special] Water Pledge
+
+### ![regigigas]
+New Moves:
+- ![normal]![status] Protect
+
+
 ## Gen 5
-`Serperior`: New Moves: Mud Shot. <BR>
-`Scolipede`: New Moves: Collision Course. <BR>
-`Conkeldurr`: Stats: `hp: 115, atk: 160, def: 95, spa: 55, spd: 65, spe: 45`. New Moves: Steamroller, Fake Out, Meteor Mash.<BR>
-`Haxorus`: Stats: `hp: 78, atk: 147, def: 90, spa: 60, spd: 90, spe: 100`. Abilities: Regenerator, Tough Claws, Mold Breaker. New Moves: Dragon Rush<BR>
-`Durant`: Abilities: Defiant, Hustle, Truant. New Moves: High Horsepower.<BR>
-`Gigalith`: Stats: `hp: 85, atk: 135, def: 130, spa: 60, spd: 100, spe: 25`. New Moves: Shore Up, Diamond Storm, Trick Room.<BR>
-`Terrakion`: New Moves: Accelerock. <BR>
-`Coballion`: Stats: `hp: 91, atk: 90, def: 129, spa: 110, spd: 72, spe: 108`. Abilities: Justified, Competitive. New Moves: Secret Sword, Nasty Plot. <BR>
-`Virizion`: Stats: `hp: 91, atk: 90, def: 72, spa: 110, spd: 129, spe: 108`. Abilities: Justified, Competitive. New Moves: Secret Sword, Nasty Plot. <BR>
-`Zoroark (both formes)`: Stats: `hp: 60, atk: 105, def: 60, spa: 125, spd: 60, spe: 110`. New Moves: Vacuum Wave.<BR>
-`Swanna`: Stats: `hp: 80, atk: 100, def: 70, spa: 87, spd: 63, spe: 98`. Abilities: Drizzle, Big Pecks, Hydration. New Moves: Wave Crash. <BR>
-`Escavalier`: Abilities: Sand Force, Shell Armor, Overcoat. <BR>
-`Samurott (Unovan)`: Types: Water, Fighting. Stats: `hp: 95, atk: 110, def: 85, spa: 118, spd: 70, spe: 70`. Abilities: Torrent, Shell Armor, Inner Focus. New Moves: Shell Smash, Sacred Sword, Secret Sword, Close Combat, Wave Crash. <BR>
-`Reuniclus`: Stats: `hp: 110, atk: 65, def: 85, spa: 125, spd: 95, spe: 30`. New Moves: Teleport, Aura Sphere, Vacuum Wave. <BR>
-`Krookodile`: Stats: `hp: 95, atk: 130, def: 90, spa: 65, spd: 75, spe: 92`. Abilities: Intimidate, Moxie, Sand Force. New Moves: Swords Dance. <BR>
-`Cofagrigus`: Stats: `hp: 58, atk: 50, def: 145, spa: 95, spd: 125, spe: 30`. Abilities: Mummy, Cursed Body. New Moves: Strength Sap. <BR>
-`Chandelure`: Abilities: Flame Body, Flash Fire, Turboblaze. New Moves: Blue Flare, Burn Up, Mind Blown, Searing Shot, Shadowflame. <BR>
-`Mega-Audino`: Ability: Regenerator. New Moves: Follow Me, Teleport. <BR>
-`Beartic`: Stats: `hp: 95, atk: 130, def: 80, spa: 70, spd: 80, spe: 70`. New Moves: Ice Shard. <BR>
-`Beheeyem`: Abilities: Telepathy, Psychic Surge, Analytic. <BR>
-`Musharna`: Abilities: Misty Surge, Synchronize, Telepathy. New Moves: Wide Guard. <BR>
-`Kyurem-White`: New Moves: Glaciate. <BR>
-`Kyurem-Black`: New Moves: Glaciate. <BR>
-`Darmanitan`: Abilities: Sheer Force, Gorilla Tactics, Zen Mode. <BR>
+### ![serperior]
+New Moves:
+- ![ground]![special] Mud Shot
+
+### ![scolipede]
+New Moves:
+- ![fighting]![physical] Collision Course
+
+### ![conkeldurr]
+New Moves:
+- ![bug]![physical] Steamroller
+- ![normal]![physical] Fake Out
+- ![steel]![physical] Meteor Mash
+
+Base Stats:
+- hp: `105` --> `115` (`+10`)
+- atk: `140` --> `160` (`+20`)
+- def: `95`
+- spa: `55`
+- spd: `65`
+- spe: `45`
+- Total: `505` --> `535`
+
+### ![haxorus]
+Abilities: `Regenerator`, `Tough Claws`, `Mold Breaker`<BR>
+New Moves
+- ![dragon]![physical] Dragon Rush
+
+Base Stats:
+- hp: `76` --> `78` (`+2`)
+- atk: `147`
+- def: `90`
+- spa: `60`
+- spd: `70` --> `90` (`+20`)
+- spe: `97` --> `100` (`+3`)
+- Total: `540` --> `565`
+
+### ![durant]
+Abilities: `Defiant`, `Hustle`, `Truant`<BR>
+New Moves:
+- ![ground]![physical] High Horsepower
+
+### ![gigalith]
+New Moves:
+- ![ground]![status] Shore Up
+- ![psychic]![status] Trick Room
+- ![rock]![physical] Diamond Storm
+
+Base Stats:
+- hp: `85`
+- atk: `135`
+- def: `130`
+- spa: `60`
+- spd: `80` --> `100` (`+20`)
+- spe: `25`
+- Total: `515` --> `535`
+
+### ![terrakion]
+New Moves:
+- ![rock]![physical] Accelerock
+
+### ![cobalion]
+Abilities: `Justified`, `Competitive`<BR>
+New Moves:
+- ![dark]![status] Nasty Plot
+- ![fighting]![special] Secret Sword
+
+Base Stats:
+- hp: `91`
+- atk: `90`
+- def: `129`
+- spa: `90` --> `110` (`+20`)
+- spd: `72`
+- spe: `108`
+- Total: `580` --> `600`
+
+### ![virizion]
+Abilities: `Justified`, `Competitive`<BR>
+New Moves:
+- ![dark]![status] Nasty Plot
+- ![fighting]![special] Secret Sword
+
+Base Stats:
+- hp: `91`
+- atk: `90`
+- def: `72`
+- spa: `90` --> `110` (`+20`)
+- spd: `129`
+- spe: `108`
+- Total: `580` --> `600`
+
+### ![zoroark]![zoroark-hisui]
+New Moves:
+- ![fighting]![special] Vacuum Wave
+
+Base Stats (Unovan | Hisui)
+- hp: `60` | `55` --> `60` (`~|+5`)
+- atk: `105` | `100` --> `105` (`~|+5`)
+- def: `60` | `60`
+- spa: `120` | `125` --> `125` (`+5|~`)
+- spd: `60` |  `60`
+- spe: `105` | `110` --> `110` (`+5|~`)
+- Total: `510` | `510` --> `520` | `520`
+
+### ![swanna]
+Abilities: `Drizzle`, `Big Pecks`, `Hydration`<BR>
+New Moves:
+- ![water]![physical] Wave Crash
+
+Base Stats:
+- hp: `75` --> `80` (`+5`)
+- atk: `87` --> `100` (`+13`)
+- def: `63` --> `70` (`+7`)
+- spa: `87`
+- spd: `63`
+- spe: `98`
+- Total: `473` --> `498`
+
+### ![escavalier]
+Abilities: `Sand Force`, `Shell Armor`, `Overcoat`
+
+### ![samurott]
+Type: ![water] --> ![water]![fighting] <BR>
+Abilities: `Torrent`, `Shell Armor`, `Inner Focus` <BR>
+New Moves:
+- ![fighting]![physical] Close Combat
+- ![fighting]![physical] Sacred Sword
+- ![fighting]![physical] Secret Sword
+- ![normal]![status] Shell Smash
+- ![water]![physical] Wave Crash
+
+Base Stats:
+- hp: `95`
+- atk: `100` --> `110` (`+10`)
+- def: `85`
+- spa: `108` --> `118` (`+10`)
+- spd: `70`
+- spe: `70`
+- Total: `528` --> `548`
+
+### ![reuniclus]
+New Moves:
+- ![fighting]![special] Aura Sphere
+- ![fighting]![special] Vacuum Wave
+- ![psychic]![status] Teleport
+
+Base Stats:
+- hp: `110`
+- atk: `65`
+- def: `75` --> `85` (`+10`)
+- spa: `125`
+- spd: `85` --> `95` (`+10`)
+- spe: `30`
+- Total: `490` --> `510`
+
+### ![krookodile]
+Abilities: `Intimidate`, `Moxie`, `Sand Force`<BR>
+New Moves:
+- ![normal]![status] Swords Dance
+
+Base Stats:
+- hp: `95`
+- atk: `117` --> `130` (`+13`)
+- def: `80` --> `90` (`+10`)
+- spa: `65`
+- spd: `70` --> `75` (`+5`)
+- spe: `92`
+- Total: `519` --> `547`
+
+### ![cofagrigus]
+Abilities: `Mummy`, `Cursed Body`<BR>
+New Moves:
+- ![grass]![status] Strength Sap
+
+Base Stats:
+- hp: `58`
+- atk: `50`
+- def: `145`
+- spa: `95`
+- spd: `105` --> `125` (`+20`)
+- spe: `30`
+- Total: `483` -> `503`
+
+### ![chandelure]
+Abilities: `Flame Body`, `Flash Fire`, `Turboblaze`<BR>
+New Moves:
+- ![fire]![special] Blue Flare
+- ![fire]![special] Burn Up
+- ![fire]![special] Mind Blown
+- ![fire]![special] Searing Shot
+- ![ghost]![special] Shadowflame
+
+### ![audino]![audino-mega]
+**Mega:**<BR>
+Ability: `Regenerator`<BR>
+<BR>
+**Shared:**<BR>
+New Moves:
+- ![normal]![status] Follow Me
+- ![psychic]![status] Teleport
+
+### ![beartic]
+New Moves:
+- ![ice]![physical] Ice Shard
+
+Base Stats:
+- hp: `95`
+- atk: `130`
+- def: `80`
+- spa: `70`
+- spd: `80`
+- spe: `50` --> `70` (`+20`)
+- Total: `505` --> `525`
+
+### ![beyeeyem]
+Abilities: `Telepathy`, `Psychic Surge`, `Analytic`
+
+### ![musharna]
+Abilities: `Misty Surge`, `Synchronize`, `Telepathy`<BR>
+New Moves:
+- ![rock]![status] Wide Guard
+
+### ![kyurem-white]
+New Moves:
+- ![ice]![special] Glaciate
+
+### ![kyurem-black]
+New Moves:
+- ![ice]![special] Glaciate
+
+### ![darmanitan]
+Abilities: `Sheer Force`, `Gorilla Tactics`, `Zen Mode`
+
 ## Gen 6
 ## Gen 7
-`Golisopod`: Abilities: Emergency Exit, Battle Armor. <BR>
-`Nihilego`: Abilities: Beast Boost, Levitate. <BR>
-`Necrozma (Base)`: Types: Dark, Psychic. Stats: `hp: 97, atk: 117, def: 101, spa: 127, spd: 79, spe: 79`. New Moves: Snarl, Neutron Ray.
+### ![golisopod]
+Abilities: `Emergency Exit`, `Battle Armor`
+
+### ![nihilego]
+Abilities: `Beast Boost`, `Levitate`
+
+### ![necrozma]
+Type: ![dark] --> ![dark]![psychic]<BR>
+New Moves:
+- ![dark]![special] Neutron Ray
+- ![dark]![special] Snarl
+
+
 ## Gen 8
-`Copperajah`: Abilities: Sheer Force, Sand Force, Heavy Metal. <BR>
+### ![copperajah]
+Abilities: `Sheer Force`, `Sand Force`, `Heavy Metal`
 ## Gen 9
 
 ## Other:
