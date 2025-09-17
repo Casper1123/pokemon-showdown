@@ -245,7 +245,7 @@ ACC: `80` --> `90`<BR>
 PP: `20` --> `10`. <BR>
 
 ### Trick Room
-Duration: `5` --> `6` turns.
+Duration: `5` --> `6` turns.<BR>
 Benefitting mons: <BR>
 > **Too many to list.**
 
