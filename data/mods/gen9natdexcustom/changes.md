@@ -92,169 +92,169 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [grassgem]: https://play.pokemonshowdown.com/sprites/itemicons/grass-gem.png
 
 [sec-gen1]: .
-[gengar-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/gengar.gif
-[charizard-mega-x-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/charizard-megax.gif
-[starmie-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/starmie.gif
-[cloyster-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/cloyster.gif
-[slowbro-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5/slowbro-mega.png
-[pidgeot-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5/pidgeot-mega.png
+[gengar]: https://play.pokemonshowdown.com/sprites/gen5ani/gengar.gif
+[charizard-mega-x]: https://play.pokemonshowdown.com/sprites/gen5ani/charizard-megax.gif
+[starmie]: https://play.pokemonshowdown.com/sprites/gen5ani/starmie.gif
+[cloyster]: https://play.pokemonshowdown.com/sprites/gen5ani/cloyster.gif
+[slowbro-mega]: https://play.pokemonshowdown.com/sprites/gen5/slowbro-mega.png
+[pidgeot-mega]: https://play.pokemonshowdown.com/sprites/gen5/pidgeot-mega.png
 
 [sec-gen2]: .
-[celebi-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/celebi.gif
-[typhlosion-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/typhlosion.gif
-[typhlosion-hisui-gif]: https://play.pokemonshowdown.com/sprites/gen5/typhlosion-hisui.png
-[steelix-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/steelix-mega.gif
-[ampharos-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/ampharos.gif
-[ampharos-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/ampharos-mega.gif
-[suicune-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/suicune.gif
-[raikou-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/raikou.gif
-[houndoom-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/houndoom-mega.gif
+[celebi]: https://play.pokemonshowdown.com/sprites/gen5ani/celebi.gif
+[typhlosion]: https://play.pokemonshowdown.com/sprites/gen5ani/typhlosion.gif
+[typhlosion-hisui]: https://play.pokemonshowdown.com/sprites/gen5/typhlosion-hisui.png
+[steelix-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/steelix-mega.gif
+[ampharos]: https://play.pokemonshowdown.com/sprites/gen5ani/ampharos.gif
+[ampharos-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/ampharos-mega.gif
+[suicune]: https://play.pokemonshowdown.com/sprites/gen5ani/suicune.gif
+[raikou]: https://play.pokemonshowdown.com/sprites/gen5ani/raikou.gif
+[houndoom-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/houndoom-mega.gif
 
 [sec-gen3]: .
-[salamence-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/salamence.gif
-[flygon-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/flygon.gif
-[camerupt-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5/camerupt-mega.png
-[metagross-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/metagross.gif
-[crawdaunt-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/crawdaunt.gif
-[breloom-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/breloom.gif
-[aggron-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/aggron.gif
-[aggron-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5/aggron-mega.png
-[absol-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/absol-mega.gif
-[sceptile-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/sceptile.gif
-[manectric-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/manectric.gif
-[deoxys-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/deoxys.gif
-[deoxys-defense-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/deoxys-defense.gif
-[altaria-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/altaria-mega.gif
-[banette-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/banette-mega.gif
-[sharpedo-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/sharpedo-mega.gif
+[salamence]: https://play.pokemonshowdown.com/sprites/gen5ani/salamence.gif
+[flygon]: https://play.pokemonshowdown.com/sprites/gen5ani/flygon.gif
+[camerupt-mega]: https://play.pokemonshowdown.com/sprites/gen5/camerupt-mega.png
+[metagross]: https://play.pokemonshowdown.com/sprites/gen5ani/metagross.gif
+[crawdaunt]: https://play.pokemonshowdown.com/sprites/gen5ani/crawdaunt.gif
+[breloom]: https://play.pokemonshowdown.com/sprites/gen5ani/breloom.gif
+[aggron]: https://play.pokemonshowdown.com/sprites/gen5ani/aggron.gif
+[aggron-mega]: https://play.pokemonshowdown.com/sprites/gen5/aggron-mega.png
+[absol-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/absol-mega.gif
+[sceptile]: https://play.pokemonshowdown.com/sprites/gen5ani/sceptile.gif
+[manectric]: https://play.pokemonshowdown.com/sprites/gen5ani/manectric.gif
+[deoxys]: https://play.pokemonshowdown.com/sprites/gen5ani/deoxys.gif
+[deoxys-defense]: https://play.pokemonshowdown.com/sprites/gen5ani/deoxys-defense.gif
+[altaria-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/altaria-mega.gif
+[banette-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/banette-mega.gif
+[sharpedo-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/sharpedo-mega.gif
 
 
 [sec-gen4]: .
-[darkrai-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/darkrai.gif
-[garchomp-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/garchomp.gif
-[garchomp-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/garchomp-mega.gif
-[glaceon-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/glaceon.gif
-[rotom-frost-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/rotom-frost.gif
-[palkia-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/palkia.gif
-[dialga-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/dialga.gif
-[palkia-origin-gif]: https://play.pokemonshowdown.com/sprites/gen5/palkia-origin.png
-[dialga-origin-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/dialga-origin.gif
-[shaymin-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/shaymin.gif
-[giratina-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/giratina.gif
-[giratina-origin-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/giratina-origin.gif
+[darkrai]: https://play.pokemonshowdown.com/sprites/gen5ani/darkrai.gif
+[garchomp]: https://play.pokemonshowdown.com/sprites/gen5ani/garchomp.gif
+[garchomp-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/garchomp-mega.gif
+[glaceon]: https://play.pokemonshowdown.com/sprites/gen5ani/glaceon.gif
+[rotom-frost]: https://play.pokemonshowdown.com/sprites/gen5ani/rotom-frost.gif
+[palkia]: https://play.pokemonshowdown.com/sprites/gen5ani/palkia.gif
+[dialga]: https://play.pokemonshowdown.com/sprites/gen5ani/dialga.gif
+[palkia-origin]: https://play.pokemonshowdown.com/sprites/gen5/palkia-origin.png
+[dialga-origin]: https://play.pokemonshowdown.com/sprites/gen5ani/dialga-origin.gif
+[shaymin]: https://play.pokemonshowdown.com/sprites/gen5ani/shaymin.gif
+[giratina]: https://play.pokemonshowdown.com/sprites/gen5ani/giratina.gif
+[giratina-origin]: https://play.pokemonshowdown.com/sprites/gen5ani/giratina-origin.gif
 
 [sec-gen5]: .
-[haxorus-gif]: https://play.pokemonshowdown.com/sprites/gen5ani-shiny/haxorus.gif
-[kyurem-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/kyurem.gif
-[kyurem-black-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/kyurem-black.gif
-[kyurem-white-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/kyurem-white.gif
-[conkeldurr-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/conkeldurr.gif
-[emboar-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/emboar.gif
-[serperior-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/serperior.gif
-[samurott-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/samurott.gif
-[samurott-hisui-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/samurott-hisui.gif
-[chandelure-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/chandelure.gif
-[excadrill-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/excadrill.gif
-[krookodile-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/krookodile.gif
+[haxorus]: https://play.pokemonshowdown.com/sprites/gen5ani-shiny/haxorus.gif
+[kyurem]: https://play.pokemonshowdown.com/sprites/gen5ani/kyurem.gif
+[kyurem-black]: https://play.pokemonshowdown.com/sprites/gen5ani/kyurem-black.gif
+[kyurem-white]: https://play.pokemonshowdown.com/sprites/gen5ani/kyurem-white.gif
+[conkeldurr]: https://play.pokemonshowdown.com/sprites/gen5ani/conkeldurr.gif
+[emboar]: https://play.pokemonshowdown.com/sprites/gen5ani/emboar.gif
+[serperior]: https://play.pokemonshowdown.com/sprites/gen5ani/serperior.gif
+[samurott]: https://play.pokemonshowdown.com/sprites/gen5ani/samurott.gif
+[samurott-hisui]: https://play.pokemonshowdown.com/sprites/gen5ani/samurott-hisui.gif
+[chandelure]: https://play.pokemonshowdown.com/sprites/gen5ani/chandelure.gif
+[excadrill]: https://play.pokemonshowdown.com/sprites/gen5ani/excadrill.gif
+[krookodile]: https://play.pokemonshowdown.com/sprites/gen5ani/krookodile.gif
 
 [sec-gen6]: .
-[zygarde-50%-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/zygarde.gif
-[diancie-mega-gif]: https://play.pokemonshowdown.com/sprites/gen5/diancie-mega.png
+[zygarde-50%]: https://play.pokemonshowdown.com/sprites/gen5ani/zygarde.gif
+[diancie-mega]: https://play.pokemonshowdown.com/sprites/gen5/diancie-mega.png
 
 [sec-gen7]: .
-[nihilego-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/nihilego.gif
-[necrozma-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/necrozma.gif
-[golisopod-gif]: https://play.pokemonshowdown.com/sprites/gen5/golisopod.png
+[nihilego]: https://play.pokemonshowdown.com/sprites/gen5ani/nihilego.gif
+[necrozma]: https://play.pokemonshowdown.com/sprites/gen5ani/necrozma.gif
+[golisopod]: https://play.pokemonshowdown.com/sprites/gen5/golisopod.png
 
 [sec-gen8]: .
-[dragapult-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/dragapult.gif
-[dracozolt-gif]: https://play.pokemonshowdown.com/sprites/gen5ani/dracozolt.gif
+[dragapult]: https://play.pokemonshowdown.com/sprites/gen5ani/dragapult.gif
+[dracozolt]: https://play.pokemonshowdown.com/sprites/gen5ani/dracozolt.gif
 
 [sec-gen9]: .
-[glimmora-gif]: https://play.pokemonshowdown.com/sprites/gen5/glimmora.png
-[sandyshocks-gif]: https://play.pokemonshowdown.com/sprites/gen5/sandyshocks.png
+[glimmora]: https://play.pokemonshowdown.com/sprites/gen5/glimmora.png
+[sandyshocks]: https://play.pokemonshowdown.com/sprites/gen5/sandyshocks.png
 
 
 # Moves
 ### ![Dragon][dragon-type]![Physical][physical-move] Core Enforcer
 Move type: ![Special][special-move] -> ![Physical][physical-move] <BR>
 Benefitting mons: <BR>
-![Zygarde][zygarde-50%-gif]
+![Zygarde][zygarde-50%]
 
 ### ![Dark][dark-type]![Status][status-move] Dark Void
 ACC: `50` --> `80` <BR>
 Benefitting mons: <BR>
-![Darkrai][darkrai-gif]
+![Darkrai][darkrai]
 
 ### ![Dragon][dragon-type]![Physical][physical-move] Dragon Rush
 ACC: `75` --> `90` <BR>
 Flinch: `20%` --> `15%` <BR>
 Benefitting mons: <BR>
-![Garchomp][garchomp-gif] ![Haxorus][haxorus-gif] ![Charizard-Mega-X][charizard-mega-x-gif] 
-![Dragapult][dragapult-gif] ![Salamence][salamence-gif] ![Flygon][flygon-gif] ![Dracozolt][dracozolt-gif]
+![Garchomp][garchomp] ![Haxorus][haxorus] ![Charizard-Mega-X][charizard-mega-x] 
+![Dragapult][dragapult] ![Salamence][salamence] ![Flygon][flygon] ![Dracozolt][dracozolt]
 
 ### ![Fire][fire-type]![Special][special-move] Eruption
 Is now boosted by **Sheer Force**. <BR>
 Benefitting mons: <BR>
-![Camerupt-Mega][camerupt-mega-gif]
+![Camerupt-Mega][camerupt-mega]
 
 ### ![Ice][ice-type]![Physical][physical-move] Freeze Shock
 ACC: `90` --> `100` <BR>
 When charging, gain `+1 Atk`. If in Snow, immediately finish charging. <BR>
 Benefitting mons: <BR>
-![Kyurem-Black][kyurem-black-gif]
+![Kyurem-Black][kyurem-black]
 
 ### ![Ice][ice-type]![Special][special-move] Glaciate
 Secondary: `-1 Spe` --> `-2 Spe`<BR>
 Benefitting mons: <BR>
-![Kyurem][kyurem-gif] ![Kyurem-White][kyurem-white-gif] ![Kyurem-Black][kyurem-black-gif] ![Glaceon][glaceon-gif] ![Rotom-Frost][rotom-frost-gif]
+![Kyurem][kyurem] ![Kyurem-White][kyurem-white] ![Kyurem-Black][kyurem-black] ![Glaceon][glaceon] ![Rotom-Frost][rotom-frost]
 
 ### ![Fighting][fighting-type]![Physical][physical-move] Hammer Arm
 BP: `100` --> `120`<BR>
 ACC: `90` --> `100`<BR>
 Benefitting mons: <BR>
-![Conkeldurr][conkeldurr-gif] ![Emboar][emboar-gif] ![Metagross][metagross-gif]
+![Conkeldurr][conkeldurr] ![Emboar][emboar] ![Metagross][metagross]
 
 ### ![Ice][ice-type]![Special][special-move] Ice Burn
 ACC: `90` --> `100` <BR>
 When charging, gain `+1 SpA`. If in Snow, immediately finish charging. <BR>
 Benefitting mons: <BR>
-![Kyurem-White][kyurem-white-gif]
+![Kyurem-White][kyurem-white]
 
 ### ![Ground][ground-type]![Special][special-move] Mud Shot
 BP: `55` --> `70`<BR>
 PP: `15` --> `10`<BR>
 Benefitting mons: <BR>
-![Serperior][serperior-gif]
+![Serperior][serperior]
 
 ### ![Rock][rock-type]![Special][special-move] Power Gem
 BP: `80` --> `90`<BR>
 PP: `20` --> `10`<BR>
 New secondary: 20% `+1 SpA`<BR>
 Benefitting mons: <BR>
-![Nihilego][nihilego-gif] ![Glimmora][glimmora-gif] ![Mega-Diancie][diancie-mega-gif] ![Necrozma][necrozma-gif] ![Sandy Shocks][sandyshocks-gif] ![Starmie][starmie-gif]
+![Nihilego][nihilego] ![Glimmora][glimmora] ![Mega-Diancie][diancie-mega] ![Necrozma][necrozma] ![Sandy Shocks][sandyshocks] ![Starmie][starmie]
 
 ### ![Water][water-type]![Physical][physical-move] Razor Shell
 BP: `75` --> `85`<BR>
 Some benefitting mons: <BR>
-![Samurott-Hisui][samurott-hisui-gif] ![Samurott][samurott-gif] ![Cloyster][cloyster-gif] ![Crawdaunt][crawdaunt-gif] ![Golisopod][golisopod-gif]
+![Samurott-Hisui][samurott-hisui] ![Samurott][samurott] ![Cloyster][cloyster] ![Crawdaunt][crawdaunt] ![Golisopod][golisopod]
 
 ### ![Dragon][dragon-type]![Special][special-move] Roar of Time
 Recharge move --> Cannot be used consecutively.<BR>
 Benefitting mons: <BR>
-![Dialga][dialga-gif] ![Dialga-Origin][dialga-origin-gif]
+![Dialga][dialga] ![Dialga-Origin][dialga-origin]
 
 ### ![Dragon][dragon-type]![Special][special-move] Spacial Rend
 BP: `100` --> `120`<BR>
 ACC: `95` --> `85`<BR>
 Benefitting mons: <BR>
-![Palkia][palkia-gif] ![Palkia-Origin][palkia-origin-gif]
+![Palkia][palkia] ![Palkia-Origin][palkia-origin]
 
 ### Sparkly Swirl
 BP: `90` --> `60`<BR>
 PP: `15` --> `5`<BR>
 Benefitting mons: <BR>
-![Shaymin][shaymin-gif]
+![Shaymin][shaymin]
 
 ### Submission
 BP: `80` --> `90`<BR>
@@ -274,7 +274,7 @@ PP: 10<BR>
 Sound (bypasses Substitute), hits adjacent targets.<BR>
 Sets Sand on hit. If sand was already up, 1.5x damage.<BR>
 **Users:** <BR>
-![Flygon][flygon-gif]
+![Flygon][flygon]
 
 ### ![Dark][dark-type]![Special][special-move] Neutron Ray 
 BP: 100<BR>
@@ -283,27 +283,27 @@ PP: 5<BR>
 Uses highest attacking stat.<BR>
 30% chance to inflict one of: Paralysis, Ability Suppression, Drowsiness, Confusion or Flinch. <BR>
 **Users:**<BR>
-![Necrozma][necrozma-gif]
+![Necrozma][necrozma]
 
 ### ![Ghost][ghost-type]![Special][special-move] Shadowflame
 BP: 70<BR>
 ACC: 100<BR>
 PP: 10<BR>30% chance to burn. <BR>
 **Users:**<BR>
-![Chandelure][chandelure-gif] ![Typhlosion-Hisui][typhlosion-hisui-gif]
+![Chandelure][chandelure] ![Typhlosion-Hisui][typhlosion-hisui]
 
 ### ![Psychic][psychic-type]![Status][status-move] Time Stop
 PP: 10<BR>
 Protects the user. At the end of the turn, they switch out.<BR>
 Taking a hit while protected restores 25% of max HP. <BR>
 **Users:**<BR>
-![Celebi][celebi-gif]
+![Celebi][celebi]
 
 # Abilities
 ### Sand Force
 Damage dealt by moves of type ![Ground][ground-type] ![Rock][rock-type] ![Steel][steel-type] type deal `30% -> 50%` more damage during Sandstorm.<BR>
 **Users:**<BR>
-![Garchomp-Mega][garchomp-mega-gif] ![Excadrill][excadrill-gif] ![Krookodile][krookodile-gif] ![Steelix-Mega][steelix-mega-gif]
+![Garchomp-Mega][garchomp-mega] ![Excadrill][excadrill] ![Krookodile][krookodile] ![Steelix-Mega][steelix-mega]
 
 ## Custom Abilities
 ### Chronal Distortion 
@@ -311,27 +311,41 @@ Sets a primordial pseudoweather. While active, all attacking moves hit for 0.8x 
 In 2 turns, they hit again for 0.4x damage. This distorted move cannot boost allies stats.<BR>
 *Exceptions that do not hit twice: Fake Out, Doom Desire, Future Sight, Thunderclap, Sucker Punch.* <BR>
 **Users:**<BR>
-![Dialga][dialga-gif] ![Dialga-Origin][dialga-origin-gif] ![Celebi][celebi-gif]
+![Dialga][dialga] ![Dialga-Origin][dialga-origin] ![Celebi][celebi]
 ### Spatial Distortion
 Sets a primordial pseudoweather that lingers for 2 turns if not maintained. Has the effects of Gravity. <BR>
 **Users:**<BR>
-![Palkia][palkia-gif] ![Palkia-Origin][palkia-origin-gif]
+![Palkia][palkia] ![Palkia-Origin][palkia-origin]
 
 ### Absolute Distortion
 Sets a primordial pseudoweather. Removes all hazards and field conditions (weather, terrain, etc). <BR>
 Blocks all usages of status moves and abilities that set them, except if the user has the `Absolute Distortion` ability. <BR>
 **Users:**<BR>
-![Giratina][giratina-gif] ![Giratina-Origin][giratina-origin-gif]
+![Giratina][giratina] ![Giratina-Origin][giratina-origin]
 
 # Pokémon
 ## Gen 1
-### ![Gengar][gengar-gif]
+### ![Gengar][gengar]
 Abilities: `Cursed Body`, `Levitate`
 
-### ![Mega-Slowbro][slowbro-mega-gif]
-Stats: `hp: 95, atk: 75, def: 180, spa: 100, spd: 110, spe: 30`<BR>
-`Mega-Pidgeot`: Type: Electric, Flying. New Moves: Zap Cannon, Thunder. <BR>
+### ![Mega-Slowbro][slowbro-mega]
+Base Stats:<BR>
+- hp: `95`
+- atk: `75`
+- def: `180`
+- spa: `130` --> `100` (`-30`)
+- spd: `80` --> `110` (`+30`)
+- spe: `30`
+- Total: `590`
+
+### ![Mega-Pidgeot][pidgeot-mega]
+Type: ![Normal][normal-type]![Flying][flying-type] --> ![Electric][electric-type]![Flying][flying-type]<BR>
+New Moves: <BR>
+- ![Electric][electric-type]![Special][special-move] Zap Cannon
+- ![Electric][electric-type]![Special][special-move] Thunder
+
 ## Gen 2
+### ![Ampharos][ampharos]![Ampharos-Mega][ampharos-mega]
 `Ampharos`: Type: Electric, Dragon. Plus Ability replaced with Teravolt. Stats: `hp: 100, atk: 75, def: 85, spa: 115, spd: 90, spe: 55`. New Moves: Draco Meteor, Tail Glow, Thunderclap, Parabolic Charge.<BR>
 `Mega-Ampharos`: Ability is now Teravolt. Stats: `hp: 100, atk: 75, def: 110, spa: 165, spd: 115, spe: 45`. <BR>
 `Typhlosion`: Abilities: Blaze, Flash Fire, Drought. New Moves: Earth Power. <BR>
