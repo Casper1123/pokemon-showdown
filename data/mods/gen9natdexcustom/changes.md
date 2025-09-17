@@ -205,7 +205,7 @@ Benefitting mons: <BR>
 ![Kyurem-Black][kyurem-black-gif]
 
 ### ![Ice][ice-type]![Special][special-move] Glaciate
-Opponent speed: `-1` --> `-2`<BR>
+Secondary: `-1 Spe` --> `-2 Spe`<BR>
 Benefitting mons: <BR>
 ![Kyurem][kyurem-gif] ![Kyurem-White][kyurem-white-gif] ![Kyurem-Black][kyurem-black-gif] ![Glaceon][glaceon-gif] ![Rotom-Frost][rotom-frost-gif]
 
