@@ -178,6 +178,41 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		accuracy: 85,
 		basePower: 120,
 	},
+	thunderwave: {
+		inherit: true,
+		onPrepareHit(target, source, move) {
+			if (source.hasType('Electric')) source.addVolatile('thunderwave');
+		},
+		condition: {
+			noCopy: true,
+			duration: 1,
+			onSourceInvulnerabilityPriority: 1,
+			onSourceInvulnerability(target, source, move) {
+				if (move && source === this.effectState.target) return 0;
+			},
+			onSourceAccuracy(accuracy, target, source, move) {
+				if (move && source === this.effectState.target) return true;
+			},
+		},
+	},
+
+	willowisp: {
+		inherit: true,
+		onPrepareHit(target, source, move) {
+			if (source.hasType('Fire')) source.addVolatile('willowisp');
+		},
+		condition: {
+			noCopy: true,
+			duration: 1,
+			onSourceInvulnerabilityPriority: 1,
+			onSourceInvulnerability(target, source, move) {
+				if (move && source === this.effectState.target) return 0;
+			},
+			onSourceAccuracy(accuracy, target, source, move) {
+				if (move && source === this.effectState.target) return true;
+			},
+		},
+	},
 
 	// Custom moves:
 	desertsong: {

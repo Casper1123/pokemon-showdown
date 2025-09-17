@@ -289,19 +289,29 @@ ACC: `95` --> `85`<BR>
 Benefitting mons: <BR>
 ![palkia] ![palkia-origin]
 
-### Sparkly Swirl
+### ![fairy]![special] Sparkly Swirl
 BP: `90` --> `60`<BR>
 PP: `15` --> `5`<BR>
 Benefitting mons: <BR>
 ![shaymin]
 
-### Submission
+### ![fighting]![physical] Submission
 BP: `80` --> `90`<BR>
 ACC: `80` --> `90`<BR>
 PP: `20` --> `10`. <BR>
 
-### Trick Room
+### ![electric]![status] Thunder Wave
+![electric] type: cannot miss.<BR>
+Benefitting mons: <BR>
+> **Too many to list.**
+
+### ![psychic]![status] Trick Room
 Duration: `5` --> `6` turns.<BR>
+Benefitting mons: <BR>
+> **Too many to list.**
+
+### ![fire]![status] Will-o-Wisp
+![fire] type: cannot miss.<BR>
 Benefitting mons: <BR>
 > **Too many to list.**
 
