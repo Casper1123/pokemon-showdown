@@ -109,6 +109,23 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "palkia", "hyperspacehole");
 	setMove(data, modPatch, 'giratina', 'roost');
 	setMove(data, modPatch, 'regigigas', 'protect');
+	setMove(data, modPatch, 'giratina', 'spikes');
+	setMove(data, modPatch, 'giratina', 'toxicspikes');
+	setMove(data, modPatch, 'giratina', 'stealthrock');
+	setMove(data, modPatch, 'giratina', 'sandstorm');
+	setMove(data, modPatch, 'giratina', 'hail');
+	setMove(data, modPatch, 'giratina', 'snowscape');
+	setMove(data, modPatch, 'giratina', 'grassyterrain');
+	setMove(data, modPatch, 'giratina', 'electricterrain');
+	setMove(data, modPatch, 'giratina', 'psychicterrain');
+	setMove(data, modPatch, 'giratina', 'mistyterrain');
+	setMove(data, modPatch, 'giratina', 'fairylock');
+	setMove(data, modPatch, 'giratina', 'iondeluge');
+	setMove(data, modPatch, 'giratina', 'magicroom');
+	setMove(data, modPatch, 'giratina', 'mudsport');
+	setMove(data, modPatch, 'giratina', 'wonderroom');
+	setMove(data, modPatch, 'giratina', 'trickroom');
+	setMove(data, modPatch, 'giratina', 'watersport');
 	// endregion
 	// region Gen5
 	setMove(data, modPatch, "serperior", "mudshot");
