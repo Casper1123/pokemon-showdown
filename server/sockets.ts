@@ -349,7 +349,7 @@ export class ServerStream extends Streams.ObjectReadWriteStream<string> {
 					if (moddataHandler(req, res)) return;
 					if (availableModsHandler(req, res)) return;
 					if (formatModsHandler(req, res)) return;
-					if (assetsHandler(req, res)) return;
+					// if (assetsHandler(req, res)) return;
 					if (config.customhttpresponse?.(req, res)) {
 						return;
 					}
