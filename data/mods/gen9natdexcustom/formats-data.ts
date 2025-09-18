@@ -1944,7 +1944,7 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 		tier: "Uber",
 	},
 	zygarde: {
-		tier: "Uber",
+		tier: "OU",
 	},
 	zygarde10: {
 		tier: "UU",
