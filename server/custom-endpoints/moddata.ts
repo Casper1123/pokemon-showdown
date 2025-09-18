@@ -13,7 +13,7 @@ export function moddataHandler(req: IncomingMessage, res: ServerResponse): boole
 
 	try {
 		// modId not given or does not exist within mod files.
-		if (!modId || !fs.existsSync(path.join(__dirname, '../../../data/mods', modId))) { throw new Error(); }
+		if (!modId || !fs.existsSync(path.join(__dirname, '../../../data/mods', modId)) || !Config.exportedMods.includes(modId)) { throw new Error(); }
 		exists = true;
 		// File not cached and can thus not be loaded
 		if (!fs.existsSync(filepath)) { throw new Error(); }
