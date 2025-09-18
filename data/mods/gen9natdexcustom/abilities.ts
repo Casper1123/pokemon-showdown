@@ -81,7 +81,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			this.add('-message', `${pokemon.name} spots its prey.`);
 			this.add('-ability', pokemon, 'Apex Predator');
 
-			function getFirstAvailableMove(battle: Battle) {
+			// @ts-expect-error Cannot set type bc of the annoying init script.
+			function getFirstAvailableMove(battle) {
 				for (const moveSlot of pokemon.moveSlots) {
 					if (moveSlot.pp > 0 && !moveSlot.disabled) {
 						return battle.dex.getActiveMove(moveSlot.id);
@@ -90,7 +91,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return null;
 			}
 
-			function getPreferredTarget(battle: Battle, move: Move) {
+			// @ts-expect-error
+			function getPreferredTarget(battle, move) {
 				if (move.target === 'self' || move.target === 'allies') {
 					return pokemon;
 				}
