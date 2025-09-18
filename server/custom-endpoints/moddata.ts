@@ -2,7 +2,7 @@ import type { IncomingMessage, ServerResponse } from 'http';
 import fs from "fs";
 import path from "path";
 
-export function assetHandler(req: IncomingMessage, res: ServerResponse): boolean {
+export function moddataHandler(req: IncomingMessage, res: ServerResponse): boolean {
 	if (!req.url?.startsWith('/data/assets')) return false;
 
 	const url = new URL(req.url, `https://${req.headers.host}`);
