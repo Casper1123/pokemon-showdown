@@ -2458,7 +2458,7 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 		tier: "Illegal",
 	},
 	dragapult: {
-		tier: "Uber",
+		tier: "OU",
 	},
 	zacian: {
 		tier: "Uber",

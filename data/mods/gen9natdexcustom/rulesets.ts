@@ -43,7 +43,8 @@ function isUberSet(dex: ModdedDex, set: PokemonSet): boolean {
 		(baseSpecies === 'Zamazenta' && itemId === 'rustedshield') ||
 		(id === 'ogerponhearthflamemask') ||
 		(megaUberCombos.has(itemId)) ||
-		(id.startsWith('zygarde') && abilityId === 'powerconstruct')
+		(id.startsWith('zygarde') && abilityId === 'powerconstruct') ||
+		(species.name === 'Dragapult' && set.item.endsWith('ium Z'))
 	) {
 		return true;
 	}
