@@ -76,4 +76,44 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			this.field.removePseudoWeather('absolutedistortion');
 		},
 	},
+	apexpredator: {
+		onStart(pokemon) {
+			this.add('-message', `${pokemon.name} spots its prey.`);
+			this.add('-ability', pokemon, 'Apex Predator');
+
+			function getFirstAvailableMove(battle: Battle) {
+				for (const moveSlot of pokemon.moveSlots) {
+					if (moveSlot.pp > 0 && !moveSlot.disabled) {
+						return battle.dex.getActiveMove(moveSlot.id);
+					}
+				}
+				return null;
+			}
+
+			function getPreferredTarget(battle: Battle, move: Move) {
+				if (move.target === 'self' || move.target === 'allies') {
+					return pokemon;
+				}
+
+				const sourceLoc = pokemon.getLocOf(pokemon);
+				const opposingLoc = -sourceLoc;
+
+				const directOpponent = battle.getTarget(pokemon, move, opposingLoc);
+				if (directOpponent && !directOpponent.fainted) {
+					return directOpponent;
+				}
+
+				return battle.getRandomTarget(pokemon, move);
+			}
+
+			const firstMove = getFirstAvailableMove(this);
+			if (!firstMove) { return; }
+
+			const target = getPreferredTarget(this, firstMove);
+			this.actions.useMove(firstMove, pokemon, { target });
+		},
+		name: "Apex Predator",
+		desc: "On switch-in, uses first move in moveset.",
+		shortDesc: "On switch-in, uses first move in moveset.",
+	},
 };
