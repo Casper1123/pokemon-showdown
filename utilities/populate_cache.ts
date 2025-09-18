@@ -22,6 +22,8 @@ export function populateCache(exportedMods: string[]): void {
 		fs.rmSync(path.join(cachePath, file.name));
 	}
 
+	// TODO: cache available assets. File types specified inside of the server endpoint.
+
 	// Create new cache files from mod configs
 	const distModsPath = path.resolve(__dirname, '../../dist/data/mods');
 	for (const modName of exportedMods) {

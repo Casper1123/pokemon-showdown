@@ -22,7 +22,7 @@ import { StaticServer } from '../lib/static-server';
 import { moddataHandler } from "./custom-endpoints/moddata";
 import { availableModsHandler } from "./custom-endpoints/available_custom_formats";
 import {formatModsHandler} from "./custom-endpoints/formatmods";
-import {assetHandler} from "./custom-endpoints/custom_assets";
+import {assetHandler} from "./custom-endpoints/assets";
 
 type StreamWorker = ProcessManager.StreamWorker;
 
