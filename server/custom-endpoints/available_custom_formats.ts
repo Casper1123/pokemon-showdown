@@ -3,8 +3,6 @@ import type { IncomingMessage, ServerResponse } from 'http';
 export function availableModsHandler(req: IncomingMessage, res: ServerResponse): boolean {
 	if (!req.url?.startsWith('/data/availablemods')) return false;
 
-	const url = new URL(req.url, `https://${req.headers.host}`);
-
 	try {
 		res.setHeader('Content-Type', 'application/json');
 		res.setHeader('Access-Control-Allow-Origin', '*');

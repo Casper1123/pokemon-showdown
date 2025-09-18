@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 
 export function assetsHandler(req: IncomingMessage, res: ServerResponse): boolean {
-	if (!req.url?.startsWith('/data/moddata')) return false;
+	if (!req.url?.startsWith('/data/assets')) return false;
 
 	res.statusCode = 503;
 	res.setHeader('Content-Type', 'application/json');

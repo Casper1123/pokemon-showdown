@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 
 export function moddataHandler(req: IncomingMessage, res: ServerResponse): boolean {
-	if (!req.url?.startsWith('/data/assets')) return false;
+	if (!req.url?.startsWith('/data/moddata')) return false;
 
 	const url = new URL(req.url, `https://${req.headers.host}`);
 	const modId = url.searchParams.get('mod');
