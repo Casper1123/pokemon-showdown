@@ -1049,7 +1049,7 @@ Exclusions: `No exclusions as of yet.`
 ![ice] types only:<BR>
 `1.5x` Def, `1.2x` ![ice]-damage, `1.2x`/`0.8x` speed (in/out of Trick room).
 
-## Gems![firegem]![watergem]![grassgem] (items)
+### Gems![firegem]![watergem]![grassgem] (items)
 All gems allowed.<BR>
 `1.3x` -> `1.5x` damage.
 
