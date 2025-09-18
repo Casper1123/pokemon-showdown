@@ -180,6 +180,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	thunderwave: {
 		inherit: true,
+		desc: "Paralyzes target. Electric types can't miss.",
+		shortDesc: "Paralyzes target. Electric types can't miss.",
 		onPrepareHit(target, source, move) {
 			if (source.hasType('Electric')) source.addVolatile('thunderwave');
 		},
@@ -198,6 +200,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 
 	willowisp: {
 		inherit: true,
+		desc: "Burns target. Fire types can't miss.",
+		shortDesc: "Burns target. Fire types can't miss.",
 		onPrepareHit(target, source, move) {
 			if (source.hasType('Fire')) source.addVolatile('willowisp');
 		},
