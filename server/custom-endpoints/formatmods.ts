@@ -3,7 +3,6 @@ import { Dex } from "../../sim/dex";
 
 export function formatModsHandler(req: IncomingMessage, res: ServerResponse): boolean {
 	if (!req.url?.startsWith('/data/formatmods')) return false;
-	const url = new URL(req.url, `https://${req.headers.host}`);
 
 	try {
 		const customModFormats: { [formatId: string]: string } = {};

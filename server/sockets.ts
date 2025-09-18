@@ -22,6 +22,7 @@ import { StaticServer } from '../lib/static-server';
 import { moddataHandler } from "./custom-endpoints/moddata";
 import { availableModsHandler } from "./custom-endpoints/available_custom_formats";
 import {formatModsHandler} from "./custom-endpoints/formatmods";
+import {assetHandler} from "./custom-endpoints/custom_assets";
 
 type StreamWorker = ProcessManager.StreamWorker;
 
@@ -348,6 +349,7 @@ export class ServerStream extends Streams.ObjectReadWriteStream<string> {
 					if (moddataHandler(req, res)) return;
 					if (availableModsHandler(req, res)) return;
 					if (formatModsHandler(req, res)) return;
+					if (assetHandler(req, res)) return;
 					if (config.customhttpresponse?.(req, res)) {
 						return;
 					}
