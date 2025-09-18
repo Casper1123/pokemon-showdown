@@ -114,8 +114,15 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			const target = getPreferredTarget(this, firstMove);
 			this.actions.useMove(firstMove, pokemon, { target });
 		},
+		onTryBoost(boost, target, source, effect) {
+			if (effect.name === 'Intimidate' && boost.atk) {
+				delete boost.atk;
+				this.add('-message', `${target.name} does not care about your feeble attempt to scare it.`);
+				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Apex Predator', `[of] ${target}`);
+			}
+		},
 		name: "Apex Predator",
-		desc: "On switch-in, uses first move in moveset.",
-		shortDesc: "On switch-in, uses first move in moveset.",
+		desc: "On switch-in, uses first move in moveset. Immune to Intimidate",
+		shortDesc: "On switch-in, uses first move in moveset. Immune to Intimidate",
 	},
 };
