@@ -722,7 +722,24 @@ Abiliites: `Levitate`, `Absolute Distortion` <BR>
 <BR>
 **Shared:**<BR>
 New Moves:
+- ![electric]![status] Electric Terrain
+- ![electric]![status] Ion Deluge
+- ![fairy]![status] Fairy Lock
+- ![fairy]![status] Misty Terrain
 - ![flying]![status] Roost
+- ![grass]![status] Grassy Terrain
+- ![ground]![status] Mud Sport
+- ![ground]![status] Spikes
+- ![ice]![status] Hail
+- ![ice]![status] Snowscape
+- ![poison]![status] Toxic Spikes
+- ![psychic]![status] Magic Room
+- ![psychic]![status] Psychic Terrain
+- ![psychic]![status] Trick Room
+- ![psychic]![status] Wonder Room
+- ![rock]![status] Sandstorm
+- ![rock]![status] Stealth Rock
+- ![water]![status] Water Sport
 
 ### ![toxicroak]
 New Moves:
