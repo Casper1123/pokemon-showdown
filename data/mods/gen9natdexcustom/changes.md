@@ -372,6 +372,12 @@ Blocks all usages of status moves and abilities that set them, except if the use
 **Users:**<BR>
 ![giratina] ![giratina-origin]
 
+### Apex Predator
+When activated (on switch-in, after removal of ability suppression or when the ability is replaced into), 
+immediately uses the first move in the learnset. <BR>
+**Users:**<BR>
+**NONE.** *Be patient :)*
+
 # Pokémon
 ## Gen 1
 ### ![gengar]
