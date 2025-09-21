@@ -27,10 +27,6 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		abilities: { 0: "Teravolt" },
 		baseStats: { hp: 100, atk: 75, def: 110, spa: 165, spd: 115, spe: 45 },
 	},
-	jumpluff: {
-		inherit: true,
-		abilities: { 0: "Chlorophyll", 1: "Huge Power", H: "Infiltrator" },
-	},
 	typhlosion: {
 		inherit: true,
 		abilities: { 0: "Blaze", 1: "Flash Fire", H: "Drought" },
