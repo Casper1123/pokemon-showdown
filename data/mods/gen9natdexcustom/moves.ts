@@ -220,7 +220,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 
 	// Custom moves:
 	desertsong: {
-		num: -4,
+		num: -50,
 		accuracy: 100,
 		basePower: 90,
 		category: "Special",
@@ -251,7 +251,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
 	},
 	neutronray: {
-		num: -5,
+		num: -51,
 		accuracy: 100,
 		basePower: 100,
 		category: "Special",
@@ -302,7 +302,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		shortDesc: "Phys if Atk > SpA. 30% to inflict a disruptive effect.",
 	},
 	shadowflame: {
-		num: -6,
+		num: -52,
 		accuracy: 100,
 		basePower: 70,
 		type: "Ghost",
@@ -328,6 +328,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		},
 	},
 	timestop: {
+		num: -53,
+		gen: 9,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
