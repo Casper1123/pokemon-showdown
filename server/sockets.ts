@@ -23,6 +23,7 @@ import { moddataHandler } from "./custom-endpoints/moddata";
 import { availableModsHandler } from "./custom-endpoints/available_custom_formats";
 import { formatModsHandler } from "./custom-endpoints/formatmods";
 import { assetsHandler } from "./custom-endpoints/assets";
+import {handleCustomEndpoints} from "./custom-endpoints/handle-endpoints";
 
 type StreamWorker = ProcessManager.StreamWorker;
 
@@ -346,10 +347,7 @@ export class ServerStream extends Streams.ObjectReadWriteStream<string> {
 				// console.log(`static rq: ${req.socket.remoteAddress}:${req.socket.remotePort} -> ${req.socket.localAddress}:${req.socket.localPort} - ${req.method} ${req.url} ${req.httpVersion} - ${req.rawHeaders.join('|')}`);
 				req.resume();
 				req.addListener('end', () => {
-					if (moddataHandler(req, res)) return;
-					if (availableModsHandler(req, res)) return;
-					if (formatModsHandler(req, res)) return;
-					// if (assetsHandler(req, res)) return;
+					if (handleCustomEndpoints(req, res)) return;
 					if (config.customhttpresponse?.(req, res)) {
 						return;
 					}
