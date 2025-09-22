@@ -113,6 +113,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 			// FIXME: If move failed, do not queue. Currently queues when it hits protect or, for example, is a failed sucker.
 			// FIXME: Mimic move should not go through protect.
 			// FIXME: Test with U-turn!
+			// FIXME: Re-add moves with correct duration on mon switch as it's not visible after the switch.
 			if (move.category === 'Status' || chronalDistortionsExceptions.includes(move.id) || !target) return;
 
 			if (!target.side.addSlotCondition(target, 'distortedmove')) {
