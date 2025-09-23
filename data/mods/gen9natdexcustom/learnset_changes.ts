@@ -124,6 +124,7 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, 'giratina', 'wonderroom');
 	setMove(data, modPatch, 'giratina', 'trickroom');
 	setMove(data, modPatch, 'giratina', 'watersport');
+	setMove(data, modPatch, 'giratina', 'recover');
 	// endregion
 	// region Gen5
 	setMove(data, modPatch, "serperior", "mudshot");
