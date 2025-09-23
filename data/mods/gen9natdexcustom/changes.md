@@ -205,6 +205,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [nihilego]: https://play.pokemonshowdown.com/sprites/gen5ani/nihilego.gif
 [necrozma]: https://play.pokemonshowdown.com/sprites/gen5ani/necrozma.gif
 [golisopod]: https://play.pokemonshowdown.com/sprites/gen5/golisopod.png
+[mimikyu]: https://play.pokemonshowdown.com/sprites/gen5ani/mimikyu.gif
 
 [sec-gen8]: .
 [dragapult]: https://play.pokemonshowdown.com/sprites/gen5ani/dragapult.gif
@@ -214,7 +215,8 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [sec-gen9]: .
 [glimmora]: https://play.pokemonshowdown.com/sprites/gen5/glimmora.png
 [sandyshocks]: https://play.pokemonshowdown.com/sprites/gen5/sandyshocks.png
-
+[ceruledge]: https://play.pokemonshowdown.com/sprites/gen5/ceruledge.png
+[ironvaliant]: https://play.pokemonshowdown.com/sprites/gen5ani/ironvaliant.gif
 
 # Moves
 ### ![dragon]![physical] Core Enforcer
@@ -284,6 +286,11 @@ Recharge move --> Cannot be used consecutively.<BR>
 Benefitting mons: <BR>
 ![dialga] ![dialga-origin]
 
+### ![ghost]![physical] Shadow Claw
+BP: `70` --> `80`<BR>
+Benefitting mons: <BR>
+![giratina]![giratina-origin]![mimikyu]![zoroark-hisui]![ceruledge]![banette-mega]![ironvaliant]
+
 ### ![dragon]![special] Spacial Rend
 BP: `100` --> `120`<BR>
 ACC: `95` --> `85`<BR>
@@ -336,11 +343,20 @@ Uses highest attacking stat.<BR>
 ![necrozma]
 
 ### ![ghost]![special] Shadowflame
-BP: 70<BR>
+BP: 80<BR>
 ACC: 100<BR>
 PP: 10<BR>30% chance to burn. <BR>
 **Users:**<BR>
 ![chandelure] ![typhlosion-hisui]
+
+### ![ghost]![physical] Stalk
+BP: 80<BR>
+ACC: 100<BR>
+PP: 15<BR>
+20% chance to Flinch. <BR>
+If moving after the target, deals 1.5x damage instead.<BR>
+**Users:**<BR>
+**NONE.** *Be patient :)*
 
 ### ![psychic]![status] Time Stop
 PP: 10<BR>

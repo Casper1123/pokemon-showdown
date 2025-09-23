@@ -197,7 +197,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 		},
 	},
-
 	willowisp: {
 		inherit: true,
 		desc: "Burns target. Fire types can't miss.",
@@ -216,6 +215,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				if (move && source === this.effectState.target) return true;
 			},
 		},
+	},
+	shadowclaw: {
+		inherit: true,
+		basePower: 80,
 	},
 
 	// Custom moves:
@@ -304,7 +307,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	shadowflame: {
 		num: -52,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 80,
 		type: "Ghost",
 		category: "Special",
 		name: "Shadowflame",
@@ -383,5 +386,43 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		secondary: null,
 		target: "self",
 		type: "Psychic",
+	},
+	stalk: {
+		num: -53,
+		type: "Ghost",
+		basePower: 80,
+		accuracy: 100,
+		category: "Physical",
+		pp: 15,
+		flags: { protect: 1, mirror: 1, contact: 1 },
+		gen: 9,
+		priority: 0,
+		target: "normal",
+
+		name: "Stalk",
+		shortDesc: "20% flinch. 1.5x BP when moving after target.",
+		desc: "20% flinch. 1.5x BP when moving after target.",
+
+		onTryMove() {
+			this.attrLastMove('[still]');
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Shadow Sneak', target);
+			this.add('-anim', source, 'Shadow Claw', target);
+		},
+		secondary: {
+			chance: 20,
+			volatileStatus: 'flinch',
+		},
+		basePowerCallback(pokemon, target, move) {
+			if (!target.newlySwitched && !this.queue.willMove(target)) {
+				this.debug('Stalk damage boost');
+				this.add('-message', `${pokemon} surprises their target from behind.`);
+				return move.basePower * 1.5;
+			}
+			this.debug('Stalk NOT boosted');
+			this.add('-message', `${pokemon} attacks their target with sudden force.`);
+			return move.basePower;
+		},
 	},
 };
