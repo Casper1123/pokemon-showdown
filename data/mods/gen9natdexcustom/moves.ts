@@ -388,7 +388,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		type: "Psychic",
 	},
 	stalk: {
-		num: -53,
+		num: -54,
 		type: "Ghost",
 		basePower: 80,
 		accuracy: 100,
