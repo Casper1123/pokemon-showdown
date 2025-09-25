@@ -50,6 +50,13 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 		onRestart(target, source, sourceEffect) {
 			return true;
 		},
+		onSwitchIn(target) {
+			if (this.effectState.moves) {
+				for (const moveData of this.effectState.moves) {
+					this.add('-start', target, `move: ${moveData.moveData.name}`, '[future]', '[silent]');
+				}
+			}
+		},
 		onResidualOrder: 3,
 		onResidual(target) {
 			if (!this.effectState.moves || this.effectState.moves.length === 0) {
@@ -111,10 +118,12 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 		},
 		onAfterMove(source, target, move) {
 			// FIXME: If move failed, do not queue. Currently queues when it hits protect or, for example, is a failed sucker.
-			// FIXME: Mimic move should not go through protect.
-			// FIXME: Test with U-turn!
 			// FIXME: Re-add moves with correct duration on mon switch as it's not visible after the switch.
 			if (move.category === 'Status' || chronalDistortionsExceptions.includes(move.id) || !target) return;
+
+			if (source.moveThisTurnResult === false || source.moveThisTurnResult === null) {
+				return; // Skip failed moves.
+			}
 
 			if (!target.side.addSlotCondition(target, 'distortedmove')) {
 				target.side.addSlotCondition(target, 'distortedmove');
@@ -133,6 +142,9 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 					...move,
 					basePower: Math.floor(move.basePower * 0.4),
 					selfBoost: null,
+					selfSwitch: false, // Prevent moves like u-turn from switching the user out if they pivoted out and came back in.
+					isExternal: true, // Prevent Dancer from triggering from a Fiery Dance and the likes.
+					flags: { protect: 1, ...move.flags },
 				},
 			});
 
