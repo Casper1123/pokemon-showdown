@@ -73,8 +73,10 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onStart(source) {
 			this.add('-ability', source, 'Absolute Distortion');
 			this.field.addPseudoWeather('absolutedistortion', source);
-			for (const hazard of hazards) {
-				source.side.removeSideCondition(hazard);
+			for (const condition of hazards) {
+				if (source.side.removeSideCondition(condition)) {
+					this.add('-sideend', source.side, this.dex.conditions.get(condition).name, '[from] ability: Absolute Distortion', `[of] ${source}`);
+				}
 			}
 		},
 		onEnd(pokemon) {
