@@ -239,10 +239,8 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 					this.field.removePseudoWeather(pseudoWeather);
 				}
 			}
-			for (const side of this.sides) {
-				for (const hazard of hazards) {
-					side.removeSideCondition(hazard);
-				}
+			for (const hazard of hazards) {
+				source.side.removeSideCondition(hazard);
 			}
 		},
 		onTryMove(attacker, defender, move) {
