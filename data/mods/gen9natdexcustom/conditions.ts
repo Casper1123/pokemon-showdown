@@ -5,7 +5,7 @@ const weatherAbilities = ['desolateland', 'primordialsea', 'deltastream',
 const terrainAbilities = ['psychicsurge', 'mistysurge', 'grassysurge', 'electricsurge', 'hadronengine'];
 const allFieldAbilities = [...weatherAbilities, ...terrainAbilities];
 const protectedPseudoWeathers = ['chronaldistortions', 'spacialdistortions', 'absolutedistortions'];
-const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+export const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 
 const chronalDistortionsExceptions = ['fakeout', 'futuresight', 'doomdesire', 'thunderclap', 'suckerpunch'];
 
@@ -238,9 +238,6 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 				if (!protectedPseudoWeathers.includes(toID(pseudoWeather))) {
 					this.field.removePseudoWeather(pseudoWeather);
 				}
-			}
-			for (const hazard of hazards) {
-				source.side.removeSideCondition(hazard);
 			}
 		},
 		onTryMove(attacker, defender, move) {

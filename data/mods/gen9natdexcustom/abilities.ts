@@ -1,3 +1,5 @@
+import {hazards} from "./conditions";
+
 export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTable = {
 	sandforce: {
 		inherit: true,
@@ -71,6 +73,9 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onStart(source) {
 			this.add('-ability', source, 'Absolute Distortion');
 			this.field.addPseudoWeather('absolutedistortion', source);
+			for (const hazard of hazards) {
+				source.side.removeSideCondition(hazard);
+			}
 		},
 		onEnd(pokemon) {
 			if (this.field.pseudoWeather['absolutedistortion']?.source !== pokemon) return;
