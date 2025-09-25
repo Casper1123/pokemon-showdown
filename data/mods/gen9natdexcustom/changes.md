@@ -724,7 +724,7 @@ New Moves:
 Abilities: `Pressure`, `Telepathy`, `Chronal Distortion`
 
 ### ![palkia]![palkia-origin]
-Abilities: `Pressure`, `Telepathy`, `Spacial Distortion`
+Abilities: `Pressure`, `Telepathy`, `Spacial Distortion`<BR>
 New Moves:
 - ![psychic]![special] Hyperspace Hole
 - ![water]![special] Origin Pulse
