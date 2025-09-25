@@ -235,7 +235,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 			this.field.clearWeather();
 			this.field.clearTerrain();
 			for (const pseudoWeather of Object.keys(this.field.pseudoWeather)) {
-				if (!protectedPseudoWeathers.includes(pseudoWeather)) {
+				if (!protectedPseudoWeathers.includes(toID(pseudoWeather))) {
 					this.field.removePseudoWeather(pseudoWeather);
 				}
 			}
