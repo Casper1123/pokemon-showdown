@@ -273,7 +273,7 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 		},
 		onFieldEnd() {
 			this.add('-fieldend', 'Absolute Distortion');
-			this.add('-message', `The Distortion World fades from the surrounding, everything emerges back to normal reality.`);
+			this.add('-message', `The Distortion World fades from the surroundings, everything emerges back to normal reality.`);
 
 			const sortedActive = this.getAllActive();
 			this.speedSort(sortedActive);
