@@ -1063,7 +1063,7 @@ Abilities: `Emergency Exit`, `Battle Armor`
 Abilities: `Beast Boost`, `Levitate`
 
 ### ![necrozma]
-Type: ![dark] --> ![dark]![psychic]<BR>
+Type: ![psychic] --> ![psychic]![dark]<BR>
 New Moves:
 - ![dark]![special] Neutron Ray
 - ![dark]![special] Snarl

@@ -117,8 +117,6 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 			}
 		},
 		onAfterMove(source, target, move) {
-			// FIXME: If move failed, do not queue. Currently queues when it hits protect or, for example, is a failed sucker.
-			// FIXME: Re-add moves with correct duration on mon switch as it's not visible after the switch.
 			if (move.category === 'Status' || chronalDistortionsExceptions.includes(move.id) || !target) return;
 
 			if (source.moveThisTurnResult === false || source.moveThisTurnResult === null) {
