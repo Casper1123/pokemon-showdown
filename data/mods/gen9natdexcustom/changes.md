@@ -780,8 +780,8 @@ Base Stats:
 - def: `77`
 - spa: `95`
 - spd: `77`
-- spe: `91` --> `116` (`+20`)
-- Total: `440` --> `460`
+- spe: `91` --> `116` (`+25`)
+- Total: `440` --> `465`
 
 ### ![rotom-frost]
 Abilities: `Levitate`, `Slush Rush`<BR>
