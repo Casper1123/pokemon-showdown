@@ -131,7 +131,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			if (!firstMove) { return; }
 
 			const target = getPreferredTarget(this, firstMove);
-			this.add('-message', `${pokemon.name} has found its prey.`);
 			this.actions.useMove(firstMove, pokemon, { target });
 		},
 		onTryBoost(boost, target, source, effect) {
