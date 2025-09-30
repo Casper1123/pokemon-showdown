@@ -48,7 +48,8 @@ Here, rules are explained. Standard Smogon rules will be *italicized* and custom
 
 > Implements custom behaviour regarding the Ubers and AG mons during team validation. <BR><BR>
 > **You may use 1 Uber on a team, but are capped at 5 Pokémon on the team.**
-> *Note: Dragapult with a Z-crystal is counted as an Uber.*
+> *Dragapult with a Z-crystal is counted as an Uber.*
+> *Zygarde with Thousand Arrows is counted as an Uber.*
 
 **Illusory Nicknames**
 > Name a Pokémon with the Illusion ability like another legal species in quotation marks (' or ") to make it display as such in Team Preview. <BR>*Example: `"Heatran"`*
@@ -100,6 +101,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [pidgeot]: https://play.pokemonshowdown.com/sprites/gen5ani/pidgeot.gif
 [slowbro-mega]: https://play.pokemonshowdown.com/sprites/gen5/slowbro-mega.png
 [pidgeot-mega]: https://play.pokemonshowdown.com/sprites/gen5/pidgeot-mega.png
+[moltres-galar]: https://play.pokemonshowdown.com/sprites/gen5/moltres-galar.png
 
 [sec-gen2]: .
 [celebi]: https://play.pokemonshowdown.com/sprites/gen5ani/celebi.gif
@@ -113,6 +115,8 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [raikou]: https://play.pokemonshowdown.com/sprites/gen5ani/raikou.gif
 [houndoom-mega]: https://play.pokemonshowdown.com/sprites/gen5/houndoom-mega.png
 [houndoom]: https://play.pokemonshowdown.com/sprites/gen5ani/houndoom.gif
+[politoed]: https://play.pokemonshowdown.com/sprites/gen5ani/politoed.gif
+[crobat]: https://play.pokemonshowdown.com/sprites/gen5ani/crobat.gif
 
 [sec-gen3]: .
 [salamence]: https://play.pokemonshowdown.com/sprites/gen5ani/salamence.gif
@@ -163,6 +167,9 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [toxicroak]: https://play.pokemonshowdown.com/sprites/gen5ani/toxicroak.gif
 [empoleon]: https://play.pokemonshowdown.com/sprites/gen5ani/empoleon.gif
 [hippowdon]: https://play.pokemonshowdown.com/sprites/gen5ani/hippowdon.gif
+[gallade]: https://play.pokemonshowdown.com/sprites/gen5ani/gallade.gif
+[gallade-mega]: https://play.pokemonshowdown.com/sprites/gen5/gallade-mega.png
+
 
 [sec-gen5]: .
 [haxorus]: https://play.pokemonshowdown.com/sprites/gen5ani-shiny/haxorus.gif
@@ -186,26 +193,32 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [zoroark]: https://play.pokemonshowdown.com/sprites/gen5ani/zoroark.gif
 [zoroark-hisui]: https://play.pokemonshowdown.com/sprites/gen5ani/zoroark-hisui.gif
 [swanna]: https://play.pokemonshowdown.com/sprites/gen5ani/swanna.gif
-[excavalier]: https://play.pokemonshowdown.com/sprites/gen5ani/excavalier.gif
+[escavalier]: https://play.pokemonshowdown.com/sprites/gen5ani/escavalier.gif
 [reuniclus]: https://play.pokemonshowdown.com/sprites/gen5ani/reuniclus.gif
 [cofagrigus]: https://play.pokemonshowdown.com/sprites/gen5ani/cofagrigus.gif
 [audino]: https://play.pokemonshowdown.com/sprites/gen5ani/audino.gif
 [audino-mega]: https://play.pokemonshowdown.com/sprites/gen5/audino-mega.png
 [beartic]: https://play.pokemonshowdown.com/sprites/gen5ani/beartic.gif
-[beyeeyem]: https://play.pokemonshowdown.com/sprites/gen5ani/beyeeyem.gif
+[beheeyem]: https://play.pokemonshowdown.com/sprites/gen5ani/beheeyem.gif
 [musharna]: https://play.pokemonshowdown.com/sprites/gen5ani/musharna.gif
 [darmanitan]: https://play.pokemonshowdown.com/sprites/gen5ani/darmanitan.gif
+[keldeo]: https://play.pokemonshowdown.com/sprites/gen5ani/keldeo.gif
+[keldeo-resolute]: https://play.pokemonshowdown.com/sprites/gen5ani/keldeo-resolute.gif
+[victini]: https://play.pokemonshowdown.com/sprites/gen5ani/victini.gif
+
 
 
 [sec-gen6]: .
 [zygarde-50%]: https://play.pokemonshowdown.com/sprites/gen5ani/zygarde.gif
 [diancie-mega]: https://play.pokemonshowdown.com/sprites/gen5/diancie-mega.png
+[noivern]: https://play.pokemonshowdown.com/sprites/gen5ani/noivern.gif
 
 [sec-gen7]: .
 [nihilego]: https://play.pokemonshowdown.com/sprites/gen5ani/nihilego.gif
 [necrozma]: https://play.pokemonshowdown.com/sprites/gen5ani/necrozma.gif
 [golisopod]: https://play.pokemonshowdown.com/sprites/gen5/golisopod.png
 [mimikyu]: https://play.pokemonshowdown.com/sprites/gen5ani/mimikyu.gif
+[xurkitree]: https://play.pokemonshowdown.com/sprites/gen5ani/xurkitree.gif
 
 [sec-gen8]: .
 [dragapult]: https://play.pokemonshowdown.com/sprites/gen5ani/dragapult.gif
@@ -356,7 +369,7 @@ PP: 15<BR>
 20% chance to Flinch. <BR>
 If moving after the target, deals 1.5x damage instead.<BR>
 **Users:**<BR>
-**NONE.** *Be patient :)*
+![banette]![banette-mega]
 
 ### ![psychic]![status] Time Stop
 PP: 10<BR>
@@ -394,7 +407,7 @@ When activated (on switch-in, after removal of ability suppression or when the a
 immediately uses the first move in the learnset. <BR>
 Also provides an immunity to the Atk drop from Intimidate. <BR>
 **Users:**<BR>
-**NONE.** *Be patient :)*
+![scolipede]
 
 # Pokémon
 ## Gen 1
@@ -419,6 +432,10 @@ Base Stats:
 - spd: `80` --> `110` (`+30`)
 - spe: `30`
 - Total: `590`
+
+### ![moltres-galar]
+New Moves:
+- ![flying]![status] Roost
 
 ## Gen 2
 ### ![ampharos]![ampharos-mega]
@@ -508,6 +525,31 @@ Abilities: `Blaze`, `Frisk`, `Adaptability` <BR>
 New Moves: <BR>
 - ![ghost]![special] Shadowflame
 
+### ![politoed]
+Base Stats: <BR>
+- hp: `90`
+- atk: `75`
+- def: `75` --> `100` (`+25`)
+- spa: `90`
+- spd: `100`
+- spe: `70`
+- Total: `500` --> `525`
+
+New Moves: <BR>
+- ![normal]![status] Recover
+
+### ![crobat]
+Base Stats:
+- hp: `85`
+- atk: `90` --> `100` (`+10`)
+- def: `80`
+- spa: `70`
+- spd: `80`
+- spe: `130`
+- Total: `535` --> `545`
+
+New Moves:
+- ![poison]![physical] Gunk Shot
 
 ## Gen 3
 ### ![absol]![absol-mega]
@@ -542,6 +584,11 @@ Base Stats:
 - spe: `50`
 - Total: `630` --> `560`
 
+**Shared:**<BR>
+New Moves: <BR>
+- ![grass]![physical] Horn Leech
+- ![normal]![status] Slack Off
+
 ### ![altaria]![altaria-mega]
 New Moves:
 - ![fairy]![special] Draining Kiss
@@ -562,10 +609,11 @@ Base Stats:
 - spe: `75` --> `65` (`-10`)
 - Total: `555`
 
-**Shared:**
+**Shared:**<BR>
 New Moves:
 - ![ghost]![physical] Poltergheist
 - ![ghost]![physical] Shadow Force
+- ![ghost]![physical] Stalk
 
 
 ### ![breloom]
@@ -577,11 +625,6 @@ Base Stats:
 - spd: `60` --> `70` (`+10`)
 - spe: `70`
 - Total: `460` --> `500`
-
-**Shared:**<BR>
-New Moves: <BR>
-- ![grass]![physical] Horn Leech
-- ![normal]![status] Slack Off
 
 ### ![camerupt]![camerupt-mega]
 **Mega:**<BR>
@@ -819,6 +862,17 @@ New Moves:
 New Moves:
 - ![normal]![status] Protect
 
+### ![gallade]![gallade-mega]
+**Base:**<BR>
+Abilities: `Inner Focus`, `Sharpness`, `Justified` <BR>
+<BR>
+**Mega:**<BR>
+Ability: `Sharpness` <BR>
+<BR>
+**Shared:**<BR>
+New Moves: <BR>
+- ![poison]![physical] Cross Poison
+
 
 ## Gen 5
 ### ![serperior]
@@ -826,6 +880,7 @@ New Moves:
 - ![ground]![special] Mud Shot
 
 ### ![scolipede]
+Abilities: `Poison Point`, `Apex Predator`, `Speed Boost`<BR>
 New Moves:
 - ![fighting]![physical] Collision Course
 
@@ -1035,8 +1090,16 @@ Base Stats:
 - spe: `50` --> `70` (`+20`)
 - Total: `505` --> `525`
 
-### ![beyeeyem]
-Abilities: `Telepathy`, `Psychic Surge`, `Analytic`
+### ![beheeyem]
+Abilities: `Telepathy`, `Psychic Surge`, `Analytic` <BR>
+Base Stats:
+- hp: `75`
+- atk: `75`
+- def: `75` --> `95` (`+20`)
+- spa: `125`
+- spd: `95`
+- spe: `40`
+- Total: `485` --> `505`
 
 ### ![musharna]
 Abilities: `Misty Surge`, `Synchronize`, `Telepathy`<BR>
@@ -1054,7 +1117,19 @@ New Moves:
 ### ![darmanitan]
 Abilities: `Sheer Force`, `Gorilla Tactics`, `Zen Mode`
 
+### ![keldeo]![keldeo-resolute]
+**Shared:**<BR>
+Abilities: `Justified`, `Competitive`
+
+
+### ![victini]
+New Moves:
+- ![psychic]![physical] Psycho Cut
+
 ## Gen 6
+### ![noivern]
+Type: ![dragon]![flying] --> ![dragon]![normal]
+ 
 ## Gen 7
 ### ![golisopod]
 Abilities: `Emergency Exit`, `Battle Armor`
@@ -1068,6 +1143,8 @@ New Moves:
 - ![dark]![special] Neutron Ray
 - ![dark]![special] Snarl
 
+### ![xurkitree]
+Abilities: `Beast Boost`, `Transistor`
 
 ## Gen 8
 ### ![copperajah]

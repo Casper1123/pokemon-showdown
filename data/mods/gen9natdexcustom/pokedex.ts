@@ -45,9 +45,17 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		abilities: { 0: "Pressure", 1: "Inner Focus", H: "Misty Surge" },
 		baseStats: { hp: 100, atk: 75, def: 125, spa: 90, spd: 125, spe: 85 },
 	},
+	politoed: {
+		inherit: true,
+		baseStats: { hp: 90, atk: 75, def: 100, spa: 90, spd: 100, spe: 70 },
+	},
 	raikou: {
 		inherit: true,
 		abilities: { 0: "Pressure", 1: "Inner Focus", H: "Electric Surge" },
+	},
+	crobat: {
+		inherit: true,
+		baseStats: { hp: 85, atk: 100, def: 80, spa: 70, spd: 80, spe: 130 },
 	},
 	// endregion
 	// region: Gen3
@@ -93,6 +101,14 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Unseen Fist" },
 		baseStats: { hp: 64, atk: 165, def: 85, spa: 83, spd: 93, spe: 65 },
+	},
+	gallade: {
+		inherit: true,
+		abilities: { 0: "Inner Focus", 1: "Sharpness", H: "Justified" },
+	},
+	gallademega: {
+		inherit: true,
+		abilities: { 0: "Sharpness" },
 	},
 	// endregion
 	// region: Gen4
@@ -245,6 +261,7 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	beheeyem: {
 		inherit: true,
 		abilities: { 0: "Telepathy", 1: "Psychic Surge", H: "Analytic" },
+		baseStats: { hp: 75, atk: 75, def: 95, spa: 125, spd: 95, spe: 40 },
 	},
 	musharna: {
 		inherit: true,
@@ -254,8 +271,24 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Sheer Force", 1: "Gorilla Tactics", H: "Zen Mode" },
 	},
+	keldeo: {
+		inherit: true,
+		abilities: { 0: "Justified", 1: "Competitive" },
+	},
+	keldeoresolute: {
+		inherit: true,
+		abilities: { 0: "Justified", 1: "Competitive" },
+	},
+	scolipede: {
+		inherit: true,
+		abilities: { 0: "Poison Point", 1: "Apex Predator", H: "Speed Boost" },
+	},
 	// endregion
 	// region: Gen6
+	noivern: {
+		inherit: true,
+		types: ["Dragon", "Normal"],
+	},
 	// endregion
 	// region: Gen7
 	golispod: {
@@ -269,6 +302,10 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	necrozma: {
 		inherit: true,
 		types: ["Psychic", "Dark"],
+	},
+	xurkitree: {
+		inherit: true,
+		abilities: { 0: "Beast Boost", H: "Transistor" },
 	},
 	// endregion
 	// region: Gen8

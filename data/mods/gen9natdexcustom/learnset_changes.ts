@@ -30,6 +30,7 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	// region Gen1
 	setMove(data, modPatch, "pidgeot", "zapcannon");
 	setMove(data, modPatch, "pidgeot", "thunder");
+	setMove(data, modPatch, "moltresgalar", "roost");
 	// endregion
 	// region Gen2
 	setMove(data, modPatch, "ampharos", "dracometeor");
@@ -47,6 +48,8 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "steelix", "coil");
 	setMove(data, modPatch, "raikou", "tailwind");
 	setMove(data, modPatch, "houndoom", "fierywrath");
+	setMove(data, modPatch, "politoed", "recover");
+	setMove(data, modPatch, "crobat", "gunkshot");
 	// endregion
 	// region Gen3
 	setMove(data, modPatch, "absol", "lightofruin");
@@ -73,6 +76,7 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "sharpedo", "swordsdance");
 	setMove(data, modPatch, "banette", "poltergheist");
 	setMove(data, modPatch, "banette", "shadowforce");
+	setMove(data, modPatch, "banette", "stalk");
 	// endregion
 	// region Gen4
 	setMove(data, modPatch, "hippowdon", "spikes");
@@ -125,6 +129,7 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, 'giratina', 'trickroom');
 	setMove(data, modPatch, 'giratina', 'watersport');
 	setMove(data, modPatch, 'giratina', 'recover');
+	setMove(data, modPatch, "gallade", "crosspoison");
 	// endregion
 	// region Gen5
 	setMove(data, modPatch, "serperior", "mudshot");
@@ -170,6 +175,7 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "musharna", "wideguard");
 	setMove(data, modPatch, "kyuremwhite", "glaciate");
 	setMove(data, modPatch, "kyuremblack", "glaciate");
+	setMove(data, modPatch, "victini", "psychocut");
 	// endregion
 	// region Gen6
 	// endregion
