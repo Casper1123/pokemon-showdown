@@ -188,7 +188,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [gigalith]: https://play.pokemonshowdown.com/sprites/gen5ani/gigalith.gif
 [terrakion]: https://play.pokemonshowdown.com/sprites/gen5ani/terrakion.gif
 [virizion]: https://play.pokemonshowdown.com/sprites/gen5ani/virizion.gif
-[coballion]: https://play.pokemonshowdown.com/sprites/gen5ani/coballion.gif
+[cobalion]: https://play.pokemonshowdown.com/sprites/gen5ani/cobalion.gif
 [zoroark]: https://play.pokemonshowdown.com/sprites/gen5ani/zoroark.gif
 [zoroark-hisui]: https://play.pokemonshowdown.com/sprites/gen5ani/zoroark-hisui.gif
 [swanna]: https://play.pokemonshowdown.com/sprites/gen5ani/swanna.gif
