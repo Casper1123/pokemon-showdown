@@ -97,8 +97,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 3,
 		flags: {},
 		onStart(pokemon) {
-			this.add('-message', `${pokemon.name} spots its prey.`);
 			this.add('-ability', pokemon, 'Apex Predator');
+			this.add('-message', `${pokemon.name} spots its prey.`);
 
 			// @ts-expect-error Cannot set type bc of the annoying init script.
 			function getFirstAvailableMove(battle) {
@@ -136,8 +136,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onTryBoost(boost, target, source, effect) {
 			if (effect.name === 'Intimidate' && boost.atk) {
 				delete boost.atk;
-				this.add('-message', `${target.name} does not care about your feeble attempt to scare it.`);
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Apex Predator', `[of] ${target}`);
+				this.add('-message', `${target.name} does not care about your feeble attempt to scare it.`);
 			}
 		},
 		name: "Apex Predator",
