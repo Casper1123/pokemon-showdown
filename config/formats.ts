@@ -34,6 +34,17 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		],
 		unbanlist: [],
 	},
+	{
+		name: "[Gen 9] National Dex Custom Doubles",
+		desc: "A VGC-styled doubles variant of National Dex Custom.",
+		mod: 'gen9natdexcustom',
+		gameType: "doubles",
+		ruleset: ['gen9natdexcustom UbersAg', 'gen9natdexcustom megaray', 'Illusory Nicknames',  // Custom
+			'Dynamax Clause', // Natdex
+			'Open Team Sheets', 'Item Clause = 1', 'Cancel Mod', 'Species Clause', 'Nickname Clause'], // VGC
+		banlist: ['Shedinja', 'Assist'],
+		unbanlist: []
+	},
 	// National Dex
 	///////////////////////////////////////////////////////////////////
 	{
