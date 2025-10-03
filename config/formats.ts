@@ -41,7 +41,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		gameType: "doubles",
 		ruleset: ['gen9natdexcustom UbersAg', 'gen9natdexcustom megaray', 'Illusory Nicknames', // Custom
 			'Dynamax Clause', 'Natdex Mod', // Natdex
-			'Open Team Sheets', 'Item Clause = 1', 'Cancel Mod', 'Species Clause', 'Nickname Clause', '!! Adjust Level = 50', 'Team Preview', 'Picked Team Size = Auto'], // VGC
+			'Open Team Sheets', 'Item Clause = 1', 'Cancel Mod', 'Species Clause', 'Nickname Clause', 'Adjust Level = 50', 'Team Preview', 'Picked Team Size = Auto'], // VGC
 		banlist: ['Shedinja', 'Assist'],
 		unbanlist: ['Mythical', 'Restricted Legendary', 'Greninja-Bond'],
 	},
