@@ -108,7 +108,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 					}
 				}
 				return null;
-			}
+			} // FIXME: Does not actually select the first move, seems to do it semi-randomly.
 
 			// @ts-expect-error
 			function getPreferredTarget(battle, move) {
