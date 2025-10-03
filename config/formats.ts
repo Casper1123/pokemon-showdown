@@ -35,7 +35,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		unbanlist: [],
 	},
 	{
-		name: "[Gen 9] National Dex Custom Doubles",
+		name: "[Gen 9] National Dex Custom VGC",
 		desc: "A VGC-styled doubles variant of National Dex Custom.",
 		mod: 'gen9natdexcustom',
 		gameType: "doubles",
