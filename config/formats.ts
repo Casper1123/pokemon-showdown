@@ -43,7 +43,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Dynamax Clause', 'Natdex Mod', // Natdex
 			'Open Team Sheets', 'Item Clause = 1', 'Cancel Mod', 'Species Clause', 'Nickname Clause', 'Adjust Level = 50', 'Picked Team Size = Auto'], // VGC
 		banlist: ['Shedinja', 'Assist'],
-		unbanlist: ['Mythical', 'Restricted Legendary', 'Greninja-Bond'],
+		unbanlist: ['Greninja-Bond'], // 'Mythical', 'Restricted Legendary',
 	},
 	// National Dex
 	///////////////////////////////////////////////////////////////////
