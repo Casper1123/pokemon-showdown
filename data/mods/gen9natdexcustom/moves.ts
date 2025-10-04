@@ -59,7 +59,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		basePower: 60,
 		accuracy: 100,
 		pp: 5,
-		gen: 9.3,
+		gen: 9,
 		isNonstandard: undefined,
 	},
 	razorshell: {
@@ -88,12 +88,12 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	lightofruin: {
 		inherit: true,
-		gen: 9.3,
+		gen: 9,
 		isNonstandard: null,
 	},
 	floatyfall: {
 		inherit: true,
-		gen: 9.3,
+		gen: 9,
 		isNonstandard: null,
 	},
 	roaroftime: {
@@ -252,7 +252,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		desc: "1.5x power in Sand. Sets sand if inactive.",
 		shortDesc: "1.5x power in Sand. Sets sand if inactive.",
 		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
-		gen: 9.3,
+		gen: 9,
 	},
 	neutronray: {
 		num: -51,
@@ -304,7 +304,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		contestType: "Cool",
 		desc: "Phys if Atk > SpA. 30% chance to: Suppress Ability, Paralyze, Drowsy, Confusion or Flinch.",
 		shortDesc: "Phys if Atk > SpA. 30% to inflict a disruptive effect.",
-		gen: 9.3,
+		gen: 9,
 	},
 	shadowflame: {
 		num: -52,
@@ -318,7 +318,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		target: "normal",
 		pp: 15,
 		priority: 0,
-		gen: 9.3,
+		gen: 9,
 		flags: { protect: 1, mirror: 1 },
 		onTryMove() {
 			this.attrLastMove('[still]');
@@ -334,7 +334,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	timestop: {
 		num: -53,
-		gen: 9.3,
+		gen: 9,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -397,7 +397,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		category: "Physical",
 		pp: 15,
 		flags: { protect: 1, mirror: 1, contact: 1 },
-		gen: 9.3,
+		gen: 9,
 		priority: 0,
 		target: "normal",
 
