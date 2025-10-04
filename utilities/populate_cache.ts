@@ -6,6 +6,11 @@ import path from 'path';
  * @param exportedMods - An array of mod names to process.
  */
 export function populateCache(exportedMods: string[]): void {
+	return;
+
+	// Code below is precated and out of use.
+	// Kept here for archival purposes. Populate Cache endpoint is retained for future uses.
+	// @ts-ignore
 	console.log("Cache population initialized.");
 
 	const cachePath = path.resolve(__dirname, "../../cache");
@@ -21,8 +26,6 @@ export function populateCache(exportedMods: string[]): void {
 		console.log(`Removing ${file.name} ...`);
 		fs.rmSync(path.join(cachePath, file.name));
 	}
-
-	// TODO: cache available assets. File types specified inside of the server endpoint.
 
 	// Create new cache files from mod configs
 	const distModsPath = path.resolve(__dirname, '../../dist/data/mods');

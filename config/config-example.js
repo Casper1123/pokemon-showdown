@@ -1,14 +1,5 @@
 'use strict';
 
-
-/**
- * The names of custom mods that are to be exported to connected clients.
- * Fill the array with strings accordingly.
- * Example: ["gen5custom", "our_own_mons"] <- (If you weren't aware, it's the folder name(s) you need :) )
- * @type {string[]}
- */
-exports.exportedMods = ["gen9natdexcustom"];
-
 /**
  * The server port - the port to run Pokemon Showdown under
  *
