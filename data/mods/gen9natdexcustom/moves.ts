@@ -252,6 +252,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		desc: "1.5x power in Sand. Sets sand if inactive.",
 		shortDesc: "1.5x power in Sand. Sets sand if inactive.",
 		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
+		gen: 9.3,
 	},
 	neutronray: {
 		num: -51,
@@ -303,6 +304,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		contestType: "Cool",
 		desc: "Phys if Atk > SpA. 30% chance to: Suppress Ability, Paralyze, Drowsy, Confusion or Flinch.",
 		shortDesc: "Phys if Atk > SpA. 30% to inflict a disruptive effect.",
+		gen: 9.3,
 	},
 	shadowflame: {
 		num: -52,

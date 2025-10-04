@@ -1,4 +1,4 @@
-import {hazards} from "./conditions";
+import { hazards } from "./conditions";
 
 export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTable = {
 	sandforce: {
@@ -20,6 +20,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		num: -4,
 		rating: 3,
 		flags: {},
+		gen: 9.3,
 		name: "Chronal Distortion",
 		desc: "While on the field, moves hit for 0.8x damage. In 2 turns, it hits again for 0.4x damage, without altering ally stats.",
 		shortDesc: "While active: Moves hit for .8x and .4x in 2 turns.",
@@ -44,6 +45,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		num: -5,
 		rating: 3,
 		flags: {},
+		gen: 9.3,
 		name: "Spacial Distortion",
 		desc: "Sets Gravity. After leaving the battlefield, the effect will remain for 2 turns.",
 		shortDesc: "Sets Gravity. Lingers for 2 turns.",
@@ -67,6 +69,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		num: -6,
 		rating: 3,
 		flags: {},
+		gen: 9.3,
 		name: "Absolute Distortion",
 		desc: "Plunge the battlefield into the Distortion World, where Weather, Terrain, Pseudoweather and Hazards are yours to rule.",
 		shortDesc: "Removes field effects and Hazards, and restricts setting them.",
@@ -143,5 +146,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		name: "Apex Predator",
 		desc: "On switch-in, uses first move in moveset. Immune to Intimidate",
 		shortDesc: "On switch-in, uses first move in moveset. Immune to Intimidate",
+		gen: 9.3,
 	},
 };
