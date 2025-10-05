@@ -857,10 +857,6 @@ New Moves:
 - ![water]![special] Scald
 - ![water]![special] Water Pledge
 
-### ![regigigas]
-New Moves:
-- ![normal]![status] Protect
-
 ### ![gallade]![gallade-mega]
 **Base:**<BR>
 Abilities: `Inner Focus`, `Sharpness`, `Justified` <BR>
@@ -1151,10 +1147,6 @@ Abilities: `Sheer Force`, `Sand Force`, `Heavy Metal`
 ## Gen 9
 
 ## Other:
-### Hidden Power (move)
-Most Pokémon without access to Hidden Power due to the Dexit in Gen 8+ have access to the move.<BR>
-Exclusions: `No exclusions as of yet.`
-
 ### Snow (weather condition)
 ![ice] types only:<BR>
 `1.5x` Def, `1.2x` ![ice]-damage, `1.2x`/`0.8x` speed (in/out of Trick room).
