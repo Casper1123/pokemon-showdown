@@ -22133,4 +22133,211 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fire",
 		contestType: "Beautiful",
 	},
+
+	// Custom moves:
+	desertsong: {
+		num: -50,
+		accuracy: 100,
+		basePower: 90,
+		category: "Special",
+		name: "Desert Song",
+		pp: 10,
+		priority: 0,
+		onBasePower() {
+			if (!this.field.isWeather('sandstorm')) {
+				this.debug('Desert Song Sandstorm boost');
+				return this.chainModify([6144, 4096]);
+			}
+		},
+		onAfterHit(target, source, move) {
+			if (!move.hasSheerForce && source.hp) {
+				this.field.setWeather('sandstorm');
+			}
+		},
+		onAfterSubDamage(damage, target, source, move) {
+			if (!move.hasSheerForce && source.hp) {
+				this.field.setWeather('sandstorm');
+			}
+		},
+		secondary: {}, // Boosted by Sheer Force.
+		target: "allAdjacentFoes",
+		type: "Ground",
+		desc: "1.5x power in Sand. Sets sand if inactive.",
+		shortDesc: "1.5x power in Sand. Sets sand if inactive.",
+		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
+		gen: 9,
+	},
+	neutronray: {
+		num: -51,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Neutron Ray",
+		pp: 5,
+		priority: 0,
+		flags: { protect: 1, mirror: 1 },
+		onModifyMove(move, pokemon) {
+			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
+		},
+		secondary: {
+			chance: 30,
+			onHit(target, source) {
+				// Ability Suppress, Par, Drowsy, Confusion, Flinch
+				const result = this.random(5);
+				switch (result) {
+					case 0:
+						target.trySetStatus('gastroacid', source);
+						break;
+					case 1:
+						target.trySetStatus('par', source);
+						break;
+					case 2:
+						target.trySetStatus('yawn', source);
+						break;
+					case 3:
+						target.trySetStatus('confusion', source);
+						break;
+					case 4:
+						target.trySetStatus('flinch', source);
+						break;
+					default:
+						break;
+				}
+			},
+		},
+		onTryMove() {
+			this.attrLastMove('[still]');
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Power Gem', target);
+			this.add('-anim', source, 'Power Gem', target);
+		},
+		target: "normal",
+		type: "Dark",
+		contestType: "Cool",
+		desc: "Phys if Atk > SpA. 30% chance to: Suppress Ability, Paralyze, Drowsy, Confusion or Flinch.",
+		shortDesc: "Phys if Atk > SpA. 30% to inflict a disruptive effect.",
+		gen: 9,
+	},
+	shadowflame: {
+		num: -52,
+		accuracy: 100,
+		basePower: 80,
+		type: "Ghost",
+		category: "Special",
+		name: "Shadowflame",
+		desc: "30% chance to burn.",
+		shortDesc: "30% chance to burn.",
+		target: "normal",
+		pp: 15,
+		priority: 0,
+		gen: 9,
+		flags: { protect: 1, mirror: 1 },
+		onTryMove() {
+			this.attrLastMove('[still]');
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Shadow Ball', target);
+			this.add('-anim', source, 'Will-O-Wisp', target);
+		},
+		secondary: {
+			chance: 30,
+			status: 'brn',
+		},
+	},
+	timestop: {
+		num: -53,
+		gen: 9,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Time Stop",
+		shortDesc: "Protects user. If hit, heals 25%. Switches out.",
+		desc: "The user is protected from most attacks made by other Pokemon during this turn. If the user is hit by an attack while protected, it restores 25% of its maximum HP. At the end of the turn, the user is forced to switch out.",
+		pp: 10,
+		priority: 4,
+		flags: {},
+		stallingMove: true,
+		volatileStatus: 'timestop',
+		onHit(pokemon) {
+			pokemon.addVolatile('stall');
+		},
+		condition: {
+			duration: 1,
+			onStart(target) {
+				this.add('-singleturn', target, 'Protect', '[silent]');
+				this.add('-message', `${target.name} encases itself in a crystal made of stopped time.`);
+			},
+			onTryHitPriority: 3,
+			onTryHit(target, source, move) {
+				if (!move.flags['protect'] || move.category === 'Status') {
+					if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
+					if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
+					return;
+				}
+				if (move.smartTarget) {
+					move.smartTarget = false;
+				} else {
+					this.add('-activate', target, 'move: Protect');
+				}
+
+				if (target.hp < target.maxhp) {
+					const healAmount = Math.ceil(target.maxhp / 4);
+					target.heal(healAmount);
+					this.add('-heal', target, target.getHealth, '[from] move: Time Stop', '[silent]');
+					this.add('-message', `The energy sustains ${target.name} inside the chrysalis.`);
+					// Chrysalis (according to oxford)
+					// a transitional state.
+					// "she emerged from the chrysalis of self-conscious adolescence"
+				}
+
+				return this.NOT_FAIL;
+			},
+			onEnd(target) {
+				target.switchFlag = 'timestop' as ID;
+				this.add('-message', `${target.name} fades into the future.`);
+			},
+		},
+		secondary: null,
+		target: "self",
+		type: "Psychic",
+	},
+	stalk: {
+		num: -54,
+		type: "Ghost",
+		basePower: 80,
+		accuracy: 100,
+		category: "Physical",
+		pp: 15,
+		flags: { protect: 1, mirror: 1, contact: 1 },
+		gen: 9,
+		priority: 0,
+		target: "normal",
+
+		name: "Stalk",
+		shortDesc: "20% flinch. 1.5x BP when moving after target.",
+		desc: "20% flinch. 1.5x BP when moving after target.",
+
+		onTryMove() {
+			this.attrLastMove('[still]');
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Shadow Sneak', target);
+			this.add('-anim', source, 'Shadow Claw', target);
+		},
+		secondary: {
+			chance: 20,
+			volatileStatus: 'flinch',
+		},
+		basePowerCallback(pokemon, target, move) {
+			if (!target.newlySwitched && !this.queue.willMove(target)) {
+				this.debug('Stalk damage boost');
+				this.add('-message', `${pokemon} surprises their target from behind.`);
+				return move.basePower * 1.5;
+			}
+			this.debug('Stalk NOT boosted');
+			this.add('-message', `${pokemon} attacks their target with sudden force.`);
+			return move.basePower;
+		},
+	},
 };
