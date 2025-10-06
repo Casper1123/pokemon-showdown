@@ -350,7 +350,7 @@ BP: 100<BR>
 ACC: 100<BR>
 PP: 5<BR>
 Uses highest attacking stat.<BR>
-30% chance to inflict one of: Paralysis, Ability Suppression, Drowsiness, Confusion or Flinch. <BR>
+50% chance to inflict one of: Paralysis, Ability Suppression, Drowsiness, Confusion or Flinch. <BR>
 **Users:**<BR>
 ![necrozma]
 

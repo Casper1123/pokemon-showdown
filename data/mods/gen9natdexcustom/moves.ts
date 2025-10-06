@@ -16,6 +16,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			chance: 15,
 			volatileStatus: 'flinch',
 		},
+		desc: 'Deals damage and has a 15% chance to flinch the target.',
 	},
 	submission: {
 		inherit: true,
@@ -61,6 +62,13 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 5,
 		gen: 9,
 		isNonstandard: undefined,
+		onTryMove() {
+			this.attrLastMove('[still]');
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Quiver Dance', target);
+			this.add('-anim', source, 'Moonblast', target);
+		},
 	},
 	razorshell: {
 		inherit: true,
@@ -89,7 +97,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	lightofruin: {
 		inherit: true,
 		gen: 9,
-		isNonstandard: null,
+		isNonstandard: 'Past',
 	},
 	floatyfall: {
 		inherit: true,
@@ -246,6 +254,14 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.field.setWeather('sandstorm');
 			}
 		},
+		onTryMove() {
+			this.attrLastMove('[still]');
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Hyper Voice', target);
+			this.add('-anim', source, 'Sand Tomb', target);
+			this.add('-anim', source, 'Earthquake', target);
+		},
 		secondary: {}, // Boosted by Sheer Force.
 		target: "allAdjacentFoes",
 		type: "Ground",
@@ -267,7 +283,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
 		},
 		secondary: {
-			chance: 30,
+			chance: 50,
 			onHit(target, source) {
 				// Ability Suppress, Par, Drowsy, Confusion, Flinch
 				const result = this.random(5);
