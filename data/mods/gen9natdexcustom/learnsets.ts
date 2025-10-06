@@ -127,12 +127,6 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			bodypress: ['9L1'],
 		}
 	},
-	deoxysdefense: {
-		inherit: true,
-		learnset: {
-			bodypress: ['9L1'],
-		}
-	},
 	metagross: {
 		inherit: true,
 		learnset: {
