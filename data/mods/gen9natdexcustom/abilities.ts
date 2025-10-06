@@ -102,9 +102,12 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onStart(pokemon) {
 			// @ts-expect-error Cannot set type bc of the annoying init script.
 			function getFirstAvailableMove(battle) {
-				const moveSlot = pokemon.moveSlots[0];
-				if (moveSlot?.pp > 0 && !moveSlot?.disabled) {
-					return battle.dex.getActiveMove(moveSlot.id);
+				for (const moveSlot of pokemon.moveSlots) {
+					if (moveSlot.pp > 0 && !moveSlot.disabled) {
+						const move = battle.dex.getActiveMove(moveSlot.id);
+						if (move.category === 'Status') continue;
+						return move;
+					}
 				}
 				return null;
 			} // FIXME: Does not actually select the first move, seems to do it semi-randomly.
@@ -142,8 +145,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		name: "Apex Predator",
-		desc: "On switch-in, uses first move in moveset. Immune to Intimidate",
-		shortDesc: "On switch-in, uses first move in moveset. Immune to Intimidate",
+		desc: "On switch-in, uses first attacking move in moveset. Immune to Intimidate",
+		shortDesc: "On switch-in, uses first attacking move in moveset. Immune to Intimidate",
 		gen: 9,
 	},
 };
