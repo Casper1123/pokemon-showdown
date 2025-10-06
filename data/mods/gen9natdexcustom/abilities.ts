@@ -47,8 +47,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		flags: {},
 		gen: 9,
 		name: "Spacial Distortion",
-		desc: "Sets Gravity. After leaving the battlefield, the effect will remain for 2 turns.",
-		shortDesc: "Sets Gravity. Lingers for 2 turns.",
+		desc: "Sets Gravity. After leaving the battlefield, the effect will remain for 3 turns.",
+		shortDesc: "Sets Gravity. Lingers for 3 turns.",
 		onStart(source) {
 			this.add('-ability', source, 'Spacial Distortion');
 			this.field.addPseudoWeather('spacialdistortion', source);

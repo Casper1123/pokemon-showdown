@@ -391,7 +391,7 @@ In 2 turns, they hit again for 0.4x damage. This distorted move cannot boost all
 **Users:**<BR>
 ![dialga] ![dialga-origin] ![celebi]
 ### Spatial Distortion
-Sets a primordial pseudoweather that lingers for 2 turns if not maintained. Has the effects of Gravity. <BR>
+Sets a primordial pseudoweather that lingers for 3 turns if not maintained. Has the effects of Gravity. <BR>
 **Users:**<BR>
 ![palkia] ![palkia-origin]
 
