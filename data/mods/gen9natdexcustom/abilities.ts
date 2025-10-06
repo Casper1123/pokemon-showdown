@@ -100,15 +100,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		rating: 3,
 		flags: {},
 		onStart(pokemon) {
-			this.add('-ability', pokemon, 'Apex Predator');
-			this.add('-message', `${pokemon.name} spots its prey.`);
-
 			// @ts-expect-error Cannot set type bc of the annoying init script.
 			function getFirstAvailableMove(battle) {
-				for (const moveSlot of pokemon.moveSlots) {
-					if (moveSlot.pp > 0 && !moveSlot.disabled) {
-						return battle.dex.getActiveMove(moveSlot.id);
-					}
+				const moveSlot = pokemon.moveSlots[0];
+				if (moveSlot?.pp > 0 && !moveSlot?.disabled) {
+					return battle.dex.getActiveMove(moveSlot.id);
 				}
 				return null;
 			} // FIXME: Does not actually select the first move, seems to do it semi-randomly.
@@ -134,6 +130,8 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			if (!firstMove) { return; }
 
 			const target = getPreferredTarget(this, firstMove);
+			// this.add('-ability', pokemon, 'Apex Predator');
+			this.add('-message', `${pokemon.name} spots its prey.`);
 			this.actions.useMove(firstMove, pokemon, { target });
 		},
 		onTryBoost(boost, target, source, effect) {
