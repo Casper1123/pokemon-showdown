@@ -14,4 +14,9 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 		tier: "Illegal",
 		natDexTier: "OU",
 	},
+	garchompmega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+		natDexTier: "OU",
+	},
 };
