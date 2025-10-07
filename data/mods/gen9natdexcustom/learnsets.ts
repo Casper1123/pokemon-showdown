@@ -250,6 +250,13 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			hyperspacehole: ['9L1'],
 		}
 	},
+	palkiaorigin: {
+		inherit: true,
+		learnset: {
+			originpulse: ['9L1'],
+			hyperspacehole: ['9L1'],
+		}
+	},
 	giratina: {
 		inherit: true,
 		learnset: {
