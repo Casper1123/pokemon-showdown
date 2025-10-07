@@ -267,7 +267,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		type: "Ground",
 		desc: "1.5x power in Sand. Sets sand if inactive.",
 		shortDesc: "1.5x power in Sand. Sets sand if inactive.",
-		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
+		flags: { protect: 1, mirror: 1, bypasssub: 1, metronome: 1 },
 		gen: 9,
 	},
 	neutronray: {
@@ -278,7 +278,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		name: "Neutron Ray",
 		pp: 5,
 		priority: 0,
-		flags: { protect: 1, mirror: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1 },
 		onModifyMove(move, pokemon) {
 			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
 		},
@@ -335,7 +335,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		pp: 15,
 		priority: 0,
 		gen: 9,
-		flags: { protect: 1, mirror: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1 },
 		onTryMove() {
 			this.attrLastMove('[still]');
 		},
@@ -359,7 +359,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		desc: "The user is protected from most attacks made by other Pokemon during this turn. If the user is hit by an attack while protected, it restores 25% of its maximum HP. At the end of the turn, the user is forced to switch out.",
 		pp: 10,
 		priority: 4,
-		flags: {},
+		flags: { heal: 1 },
 		stallingMove: true,
 		volatileStatus: 'timestop',
 		onHit(pokemon) {
@@ -412,7 +412,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		accuracy: 100,
 		category: "Physical",
 		pp: 15,
-		flags: { protect: 1, mirror: 1, contact: 1 },
+		flags: { protect: 1, mirror: 1, contact: 1, metronome: 1, slicing: 1, bite: 1, nosleeptalk: 1},
 		gen: 9,
 		priority: 0,
 		target: "normal",
