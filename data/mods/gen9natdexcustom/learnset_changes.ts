@@ -65,7 +65,6 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "sceptile", "chloroblast");
 	setMove(data, modPatch, "sceptile", "nastyplot");
 	setMove(data, modPatch, "deoxys", "bodypress");
-	setMove(data, modPatch, "deoxysdefense", "bodypress");
 	setMove(data, modPatch, "metagross", "swordsdance");
 	setMove(data, modPatch, "altaria", "explosion");
 	setMove(data, modPatch, "altaria", "doubleedge");
