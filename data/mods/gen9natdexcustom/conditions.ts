@@ -244,8 +244,17 @@ export const Conditions: { [k: string]: ModdedConditionData } = {
 
 			this.field.clearWeather();
 			this.field.clearTerrain();
+			function toIdLocal(text: any): ID {
+				// Workaround for non-reference errors until I fix this shit.
+				if (typeof text !== 'string') {
+					if (text) text = text.id || text.userid || text.roomid || text;
+					if (typeof text === 'number') text = `${text}`;
+					else if (typeof text !== 'string') return '';
+				}
+				return text.toLowerCase().replace(/[^a-z0-9]+/g, '') as ID;
+			}
 			for (const pseudoWeather of Object.keys(this.field.pseudoWeather)) {
-				if (!protectedPseudoWeathers.includes(toID(pseudoWeather))) {
+				if (!protectedPseudoWeathers.includes(toIdLocal(pseudoWeather))) {
 					this.field.removePseudoWeather(pseudoWeather);
 				}
 			}
