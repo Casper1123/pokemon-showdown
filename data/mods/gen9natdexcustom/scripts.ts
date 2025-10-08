@@ -9,7 +9,7 @@ export const Scripts: ModdedBattleScriptsData = {
 	pokemon: {
 		isGrounded(negateImmunity) {
 			if ('gravity' in this.battle.field.pseudoWeather ||
-				'spacialdistortions' in this.battle.field.pseudoWeather) return true;
+				'spacialdistortion' in this.battle.field.pseudoWeather) return true;
 			if ('ingrain' in this.volatiles && this.battle.gen >= 4) return true;
 			if ('smackdown' in this.volatiles) return true;
 			const item = (this.ignoringItem() ? '' : this.item);
