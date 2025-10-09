@@ -1,6 +1,7 @@
 cache
 /config/*
 !/config/formats.ts
+!/config/avatars/*.png
 /logs/**/*
 /test/modlogs
 /test/replays/*.html
