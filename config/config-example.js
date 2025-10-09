@@ -553,6 +553,7 @@ exports.chatlogreader = 'fs';
  *     - minigame: make minigames (hangman, polls, etc.).
  *     - game: make games.
  */
+exports.nocustomgrouplist = true;
 exports.grouplist = [
 	{
 		symbol: '~',
