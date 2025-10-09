@@ -1,4 +1,4 @@
-import {applyChanges} from "./learnset_changes";
+import { applyChanges } from "./learnset_changes";
 
 export const Scripts: ModdedBattleScriptsData = {
 	inherit: 'gen9',
