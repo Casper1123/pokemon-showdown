@@ -29,11 +29,13 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		condition: {
 			duration: 6,
 			durationCallback(source, effect) {
+				let timer = 5;
+				if (this.format.gameType !== 'singles') timer += 1;
 				if (source?.hasAbility('persistent')) {
 					this.add('-activate', source, 'ability: Persistent', '[move] Trick Room');
-					return 8;
+					timer += 2;
 				}
-				return 6;
+				return timer;
 			},
 			onFieldStart(target, source) {
 				if (source?.hasAbility('persistent')) {
@@ -52,8 +54,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.add('-fieldend', 'move: Trick Room');
 			},
 		},
-		shortDesc: "Goes last. For 6 turns, turn order is reversed.",
-		desc: "-7 priority. For 6 turns, speed inside priority brackets is reversed (slow before fast).",
+		shortDesc: "Goes last. For 5 (singles: 6) turns, turn order is reversed.",
+		desc: "-7 priority. For 5 (singles: 6) turns, speed inside priority brackets is reversed (slow before fast).",
 	},
 	sparklyswirl: {
 		inherit: true,

@@ -326,7 +326,7 @@ Benefitting mons: <BR>
 > **Too many to list.**
 
 ### ![psychic]![status] Trick Room
-Duration: `5` --> `6` turns.<BR>
+Duration: `5` --> `6` turns. ***Singles only!***<BR>
 Benefitting mons: <BR>
 > **Too many to list.**
 
