@@ -2,7 +2,7 @@ const weatherAbilities = ['desolateland', 'primordialsea', 'deltastream',
 	'drizzle', 'sandstream', 'snowwarning', 'drought', 'orichalcumpulse'];
 const terrainAbilities = ['psychicsurge', 'mistysurge', 'grassysurge', 'electricsurge', 'hadronengine'];
 const allFieldAbilities = [...weatherAbilities, ...terrainAbilities];
-const protectedPseudoWeathers = ['chronaldistortions', 'spacialdistortions', 'absolutedistortions'];
+const protectedPseudoWeathers = ['chronaldistortion', 'spacialdistortion', 'absolutedistortion'];
 export const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 const chronalDistortionsExceptions = ['fakeout', 'futuresight', 'doomdesire', 'thunderclap', 'suckerpunch'];
 
