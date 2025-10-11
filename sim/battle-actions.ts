@@ -125,6 +125,10 @@ export class BattleActions {
 			oldActive.statsLoweredThisTurn = false;
 			oldActive.position = pokemon.position;
 			if (oldActive.fainted) oldActive.status = '';
+			if (this.battle.gen <= 4) {
+				pokemon.lastItem = oldActive.lastItem;
+				oldActive.lastItem = '';
+			}
 			pokemon.position = pos;
 			side.pokemon[pokemon.position] = pokemon;
 			side.pokemon[oldActive.position] = oldActive;
@@ -136,8 +140,8 @@ export class BattleActions {
 		for (const moveSlot of pokemon.moveSlots) {
 			moveSlot.used = false;
 		}
-		pokemon.abilityState.effectOrder = this.battle.effectOrder++;
-		pokemon.itemState.effectOrder = this.battle.effectOrder++;
+		pokemon.abilityState = this.battle.initEffectState({ id: pokemon.ability, target: pokemon });
+		pokemon.itemState = this.battle.initEffectState({ id: pokemon.item, target: pokemon });
 		this.battle.runEvent('BeforeSwitchIn', pokemon);
 		if (sourceEffect) {
 			this.battle.add(isDrag ? 'drag' : 'switch', pokemon, pokemon.getFullDetails, `[from] ${sourceEffect}`);
@@ -1597,7 +1601,7 @@ export class BattleActions {
 			return false;
 		}
 
-		if (move.ohko) return target.maxhp;
+		if (move.ohko) return this.battle.gen === 3 ? target.hp : target.maxhp;
 		if (move.damageCallback) return move.damageCallback.call(this.battle, source, target);
 		if (move.damage === 'level') {
 			return source.level;
@@ -1651,9 +1655,9 @@ export class BattleActions {
 		}
 
 		const dexMove = this.dex.moves.get(move.id);
-		if (
-			basePower < 60 && source.getTypes(true).includes(move.type) && source.terastallized &&
-			dexMove.priority <= 0 && !dexMove.multihit &&
+		if (source.terastallized && (source.terastallized === 'Stellar' ?
+			!source.stellarBoostedTypes.includes(move.type) : source.hasType(move.type)) &&
+			basePower < 60 && dexMove.priority <= 0 && !dexMove.multihit &&
 			// Hard move.basePower check for moves like Dragon Energy that have variable BP
 			!((move.basePower === 0 || move.basePower === 150) && move.basePowerCallback)
 		) {
