@@ -49,7 +49,7 @@ function isUberSet(dex: ModdedDex, set: PokemonSet): boolean {
 		return true;
 	}
 
-	return species.tier === 'Uber';
+	return species.natDexTier === 'Uber' || species.natDexTier === 'MOD Uber';
 }
 
 // The list of formats is stored in config/formats.js
