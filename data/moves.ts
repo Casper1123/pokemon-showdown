@@ -226,6 +226,18 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { mirror: 1, noassist: 1, failcopycat: 1, bite: 1, contact: 1 },
 		breaksProtect: true,
 		// Breaking protection implemented in scripts.js
+		onTryHit(target, source, move) {
+			const protectVolatiles = [
+				'banefulbunker', 'burningbulwark', 'kingsshield',
+				'obstruct', 'protect', 'silktrap', 'spikyshield', 'timestop'
+			];
+
+			for (const effectid of protectVolatiles) {
+				if (target.volatiles[effectid]) {
+					return false;
+				}
+			}
+		},
 		secondary: null,
 		target: "normal",
 		type: "Ghost",

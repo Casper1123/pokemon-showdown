@@ -220,6 +220,14 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [golisopod]: https://play.pokemonshowdown.com/sprites/gen5/golisopod.png
 [mimikyu]: https://play.pokemonshowdown.com/sprites/gen5ani/mimikyu.gif
 [xurkitree]: https://play.pokemonshowdown.com/sprites/gen5ani/xurkitree.gif
+[minior]: https://play.pokemonshowdown.com/sprites/gen5ani/minior.gif
+[minior-blue]: https://play.pokemonshowdown.com/sprites/gen5ani/minior-blue.gif
+[minior-green]: https://play.pokemonshowdown.com/sprites/gen5ani/minior-green.gif
+[minior-indigo]: https://play.pokemonshowdown.com/sprites/gen5ani/minior-indigo.gif
+[minior-meteor]: https://play.pokemonshowdown.com/sprites/gen5ani/minior-meteor.gif
+[minior-orange]: https://play.pokemonshowdown.com/sprites/gen5ani/minior-orange.gif
+[minior-violet]: https://play.pokemonshowdown.com/sprites/gen5ani/minior-violet.gif
+[minior-yellow]: https://play.pokemonshowdown.com/sprites/gen5ani/minior-yellow.gif
 
 [sec-gen8]: .
 [dragapult]: https://play.pokemonshowdown.com/sprites/gen5ani/dragapult.gif
@@ -393,6 +401,14 @@ Breaks protect (just like Feint), but has no priority. <BR>
 Damage dealt by moves of type ![ground] ![rock] ![steel] type deal `30% -> 50%` more damage during Sandstorm.<BR>
 **Users:**<BR>
 ![garchomp-mega] ![excadrill] ![krookodile] ![steelix-mega]
+
+### Shields Down
+Ability description goes here: <BR>
+Now works like Stance Change (protective move: ![normal]![status]Protect). <BR>
+Additionally grants Status immunity.
+**Users:**<BR>
+![minior-meteor]![minior]![minior-blue]![minior-green]![minior-indigo]![minior-orange]![minior-violet]![minior-yellow]
+
 
 ## Custom Abilities
 ### Chronal Distortion 
@@ -1171,6 +1187,14 @@ New Moves:
 
 ### ![xurkitree]
 Abilities: `Beast Boost`, `Transistor`
+
+
+### ![minior-meteor]![minior]![minior-blue]![minior-green]![minior-indigo]![minior-orange]![minior-violet]![minior-yellow]
+Signature ability modified in the Abilities changes section of this document.<BR>
+**New Moves:**
+- ![flying]![physical] Air Slash
+- ![flying]![special] Hurricane
+- ![rock]![physical] Accelerock
 
 ## Gen 8
 ### ![copperajah]
