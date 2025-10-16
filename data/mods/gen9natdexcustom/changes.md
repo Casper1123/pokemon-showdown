@@ -736,7 +736,7 @@ Abilities: `Torrent`, `Damp`, `Regenerator` _(super original, I know)_
 Typing: ![dragon]![psychic] --> ![dragon]![fairy]<BR>
 <BR>
 **Shared:**
-**New Moves:**
+New Moves:
 - ![fairy]![special] Moonblast
 
 ## Gen 4
@@ -1184,7 +1184,9 @@ Type: ![dragon]![flying] --> ![dragon]![normal]
  
 ## Gen 7
 ### ![golisopod]
-Abilities: `Emergency Exit`, `Battle Armor`
+Abilities: `Emergency Exit`, `Battle Armor`<BR>
+New Moves:
+- ![bug]![physical] U-turn
 
 ### ![nihilego]
 Abilities: `Beast Boost`, `Levitate`
@@ -1201,7 +1203,7 @@ Abilities: `Beast Boost`, `Transistor`
 
 ### ![minior-meteor]![minior]![minior-blue]![minior-green]![minior-indigo]![minior-orange]![minior-violet]![minior-yellow]
 Signature ability modified in the Abilities changes section of this document.<BR>
-**New Moves:**
+New Moves:
 - ![flying]![physical] Air Slash
 - ![flying]![special] Hurricane
 - ![rock]![physical] Accelerock

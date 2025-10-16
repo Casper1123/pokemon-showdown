@@ -185,6 +185,7 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "minior", "accelerock");
 	setMove(data, modPatch, "minior", "hurricane");
 	setMove(data, modPatch, "minior", "airslash");
+	setMove(data, modPatch, "golisopod", "uturn");
 	// endregion
 	// region Gen8
 	// endregion
