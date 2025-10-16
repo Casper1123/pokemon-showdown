@@ -174,6 +174,8 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "kyuremwhite", "glaciate");
 	setMove(data, modPatch, "kyuremblack", "glaciate");
 	setMove(data, modPatch, "victini", "psychocut");
+	setMove(data, modPatch, "basculegion", "shadowfang");
+	setMove(data, modPatch, "basculegionf", "shadowfang");
 	// endregion
 	// region Gen6
 	// endregion

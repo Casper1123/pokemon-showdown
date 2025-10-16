@@ -110,6 +110,10 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Sharpness" },
 	},
+	swampert: {
+		inherit: true,
+		abilities: { 0: "Torrent", 1: "Damp", H: "Regenerator" },
+	},
 	// endregion
 	// region: Gen4
 	garchompmega: {
@@ -282,6 +286,10 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	scolipede: {
 		inherit: true,
 		abilities: { 0: "Poison Point", 1: "Apex Predator", H: "Speed Boost" },
+	},
+	basculegionf: {
+		inherit: true,
+		baseStats: { hp: 120, atk: 80, def: 65, spa: 112, spd: 75, spe: 78 },
 	},
 	// endregion
 	// region: Gen6
