@@ -114,6 +114,10 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Torrent", 1: "Damp", H: "Regenerator" },
 	},
+	latiasmega: {
+		inherit: true,
+		types: ["Dragon", "Fairy"],
+	},
 	// endregion
 	// region: Gen4
 	garchompmega: {

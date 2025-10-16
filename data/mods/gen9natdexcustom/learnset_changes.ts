@@ -76,6 +76,7 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "banette", "poltergheist");
 	setMove(data, modPatch, "banette", "shadowforce");
 	setMove(data, modPatch, "banette", "stalk");
+	setMove(data, modPatch, "latias", "moonblast");
 	// endregion
 	// region Gen4
 	setMove(data, modPatch, "hippowdon", "spikes");

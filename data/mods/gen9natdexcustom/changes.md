@@ -143,6 +143,8 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [altaria]: https://play.pokemonshowdown.com/sprites/gen5ani/altaria.gif
 [altaria-mega]: https://play.pokemonshowdown.com/sprites/gen5/altaria-mega.png
 [swampert]: https://play.pokemonshowdown.com/sprites/gen5ani/swampert.gif
+[latias]: https://play.pokemonshowdown.com/sprites/gen5ani/latias.gif
+[latias-mega]: https://play.pokemonshowdown.com/sprites/gen5ani-shiny/latias-mega.gif
 
 [sec-gen4]: .
 [darkrai]: https://play.pokemonshowdown.com/sprites/gen5ani/darkrai.gif
@@ -728,6 +730,14 @@ New Moves:
 ### ![swampert]
 **Base:** <BR>
 Abilities: `Torrent`, `Damp`, `Regenerator` _(super original, I know)_
+
+### ![latias]![latias-mega]
+**Mega:**<BR>
+Typing: ![dragon]![psychic] --> ![dragon]![fairy]<BR>
+<BR>
+**Shared:**
+**New Moves:**
+- ![fairy]![special] Moonblast
 
 ## Gen 4
 ### ![garchomp-mega]
