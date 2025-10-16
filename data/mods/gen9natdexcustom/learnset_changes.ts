@@ -179,6 +179,9 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	// endregion
 	// region Gen7
 	setMove(data, modPatch, "necrozma", "neutronray"); // Custom signature move. ensure not usable by merged forms.
+	setMove(data, modPatch, "minior", "accelerock");
+	setMove(data, modPatch, "minior", "hurricane");
+	setMove(data, modPatch, "minior", "airslash");
 	// endregion
 	// region Gen8
 	// endregion

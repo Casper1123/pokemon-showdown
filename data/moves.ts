@@ -61,23 +61,23 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				// Ability Suppress, Par, Drowsy, Confusion, Flinch
 				const result = this.random(5);
 				switch (result) {
-					case 0:
-						target.trySetStatus('gastroacid', source);
-						break;
-					case 1:
-						target.trySetStatus('par', source);
-						break;
-					case 2:
-						target.trySetStatus('yawn', source);
-						break;
-					case 3:
-						target.trySetStatus('confusion', source);
-						break;
-					case 4:
-						target.trySetStatus('flinch', source);
-						break;
-					default:
-						break;
+				case 0:
+					target.trySetStatus('gastroacid', source);
+					break;
+				case 1:
+					target.trySetStatus('par', source);
+					break;
+				case 2:
+					target.trySetStatus('yawn', source);
+					break;
+				case 3:
+					target.trySetStatus('confusion', source);
+					break;
+				case 4:
+					target.trySetStatus('flinch', source);
+					break;
+				default:
+					break;
 				}
 			},
 		},
@@ -185,7 +185,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		category: "Physical",
 		pp: 15,
-		flags: { protect: 1, mirror: 1, contact: 1, metronome: 1, slicing: 1, bite: 1, nosleeptalk: 1},
+		flags: { protect: 1, mirror: 1, contact: 1, metronome: 1, slicing: 1, bite: 1, nosleeptalk: 1 },
 		priority: 0,
 		target: "normal",
 
@@ -215,7 +215,25 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			return move.basePower;
 		},
 	},
-
+	shadowfangs: {
+		num: -55,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Shadow Fangs",
+		pp: 10,
+		priority: 0,
+		flags: { mirror: 1, noassist: 1, failcopycat: 1, bite: 1, contact: 1 },
+		breaksProtect: true,
+		// Breaking protection implemented in scripts.js
+		secondary: null,
+		target: "normal",
+		type: "Ghost",
+		contestType: "Clever",
+		desc: "Breaks protect.",
+		shortDesc: "Breaks protect.",
+		isNonstandard: "Custom",
+	},
 
 	"10000000voltthunderbolt": {
 		num: 719,

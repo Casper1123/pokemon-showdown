@@ -252,4 +252,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	shadowfangs: {
+		inherit: true,
+		isNonstandard: null,
+	},
 };
