@@ -55,7 +55,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		name: "Shields Down",
 		rating: 4,
 		num: 176,
-		desc: "Transforms into Meteor-forme when using an attacking move. Use Protect to transform back. Immune to Status in Meteor forme.",
+		desc: "Transforms into Meteor-form when using an attacking move. Use Protect to transform back. Immune to Status.",
 		shortDesc: "Stance Change with Protect. Immune to Status.",
 	},
 };
