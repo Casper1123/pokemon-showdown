@@ -142,7 +142,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [sharpedo-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/sharpedo-mega.gif
 [altaria]: https://play.pokemonshowdown.com/sprites/gen5ani/altaria.gif
 [altaria-mega]: https://play.pokemonshowdown.com/sprites/gen5/altaria-mega.png
-
+[swampert]: https://play.pokemonshowdown.com/sprites/gen5ani/swampert.gif
 
 [sec-gen4]: .
 [darkrai]: https://play.pokemonshowdown.com/sprites/gen5ani/darkrai.gif
@@ -204,6 +204,8 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [keldeo]: https://play.pokemonshowdown.com/sprites/gen5ani/keldeo.gif
 [keldeo-resolute]: https://play.pokemonshowdown.com/sprites/gen5ani/keldeo-resolute.gif
 [victini]: https://play.pokemonshowdown.com/sprites/gen5ani/victini.gif
+[basculegion]: https://play.pokemonshowdown.com/sprites/gen5ani/basculegion.gif
+[basculegion-f]: https://play.pokemonshowdown.com/sprites/gen5ani/basculegion-f.gif
 
 
 
@@ -376,6 +378,15 @@ Protects the user. At the end of the turn, they switch out.<BR>
 Taking a hit while protected restores 25% of max HP. <BR>
 **Users:**<BR>
 ![celebi]
+
+### ![ghost]![physical] Shadow Fangs
+BP: 70<BR>
+ACC: 100<BR>
+PP: 10<BR>
+Breaks protect (just like Feint), but has no priority. <BR>
+**Users:**<BR>
+![basculegion]![basculegion-f]
+
 
 # Abilities
 ### Sand Force
@@ -697,6 +708,10 @@ New Moves: <BR>
 ### ![sharpedo]![sharpedo-mega]
 New Moves:
 - ![normal]![status] Swords Dance
+
+### ![swampert]
+**Base:** <BR>
+Abilities: `Torrent`, `Damp`, `Regenerator` _(super original, I know)_
 
 ## Gen 4
 ### ![garchomp-mega]
@@ -1120,6 +1135,22 @@ Abilities: `Justified`, `Competitive`
 ### ![victini]
 New Moves:
 - ![psychic]![physical] Psycho Cut
+
+### ![basculegion] ![basculegion-f]
+**Female:**<BR>
+Base Stats:
+- hp: `120`
+- atk: `92` --> `80` (`-12`)
+- def: `65`
+- spa: `100` --> `112` (`+12`)
+- spd: `75`
+- spe: `78`
+- Total: `530`
+
+**Shared:**<BR>
+New Moves:
+- ![ghost]![physical] Shadow Fangs
+
 
 ## Gen 6
 ### ![noivern]
