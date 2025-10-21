@@ -190,5 +190,6 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	// region Gen8
 	// endregion
 	// region Gen9
+	setMove(data, modPatch, "slitherwing", "victorydance");
 	// endregion
 }

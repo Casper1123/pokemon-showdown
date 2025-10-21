@@ -243,6 +243,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [sandyshocks]: https://play.pokemonshowdown.com/sprites/gen5/sandyshocks.png
 [ceruledge]: https://play.pokemonshowdown.com/sprites/gen5/ceruledge.png
 [ironvaliant]: https://play.pokemonshowdown.com/sprites/gen5ani/ironvaliant.gif
+[slitherwing]: https://play.pokemonshowdown.com/sprites/gen5/slitherwing.png
 
 # Moves
 ### ![dragon]![physical] Core Enforcer
@@ -1213,7 +1214,11 @@ New Moves:
 ## Gen 8
 ### ![copperajah]
 Abilities: `Sheer Force`, `Sand Force`, `Heavy Metal`
+
 ## Gen 9
+### ![slitherwing]
+New Moves:
+- ![fighting]![status] Victory Dance
 
 ## Other:
 ### Snow (weather condition)
