@@ -1194,7 +1194,7 @@ New Moves:
 Abilities: `Beast Boost`, `Levitate`
 
 ### ![necrozma]
-Type: ![psychic] --> ![psychic]![dark]<BR>
+Type: ![psychic] --> ![dark]<BR>
 New Moves:
 - ![dark]![special] Neutron Ray
 - ![dark]![special] Snarl

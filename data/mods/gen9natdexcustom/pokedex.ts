@@ -313,7 +313,7 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	},
 	necrozma: {
 		inherit: true,
-		types: ["Psychic", "Dark"],
+		types: ["Dark"],
 	},
 	xurkitree: {
 		inherit: true,
