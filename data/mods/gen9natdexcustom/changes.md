@@ -232,6 +232,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [minior-orange]: https://play.pokemonshowdown.com/sprites/gen5ani/minior-orange.gif
 [minior-violet]: https://play.pokemonshowdown.com/sprites/gen5ani/minior-violet.gif
 [minior-yellow]: https://play.pokemonshowdown.com/sprites/gen5ani/minior-yellow.gif
+[tapu-bulu]: https://play.pokemonshowdown.com/sprites/gen5ani/tapubulu.gif
 
 [sec-gen8]: .
 [dragapult]: https://play.pokemonshowdown.com/sprites/gen5ani/dragapult.gif
@@ -1210,6 +1211,11 @@ New Moves:
 - ![flying]![physical] Air Slash
 - ![flying]![special] Hurricane
 - ![rock]![physical] Accelerock
+
+### ![tapu-bulu]
+New Moves:
+- ![fairy]![physical] Play Rough
+- ![fairy]![physical] Spirit Break
 
 ## Gen 8
 ### ![copperajah]
