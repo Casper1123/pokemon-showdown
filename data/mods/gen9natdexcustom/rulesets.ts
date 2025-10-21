@@ -44,7 +44,8 @@ function isUberSet(dex: ModdedDex, set: PokemonSet): boolean {
 		(id === 'ogerponhearthflamemask') ||
 		(megaUberCombos.has(itemId)) ||
 		(id.startsWith('zygarde') && abilityId === 'powerconstruct') ||
-		(species.name === 'Dragapult' && set.item.endsWith('ium Z'))
+		(species.name === 'Dragapult' && set.item.endsWith('ium Z')) ||
+		(species.id === 'zygarde' && (set.moves.includes('thousandarrows') || set.moves.includes('thousandwaves')))
 	) {
 		return true;
 	}

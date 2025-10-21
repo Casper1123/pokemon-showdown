@@ -49,6 +49,7 @@ Here, rules are explained. Standard Smogon rules will be *italicized* and custom
 > Implements custom behaviour regarding the Ubers and AG mons during team validation. <BR><BR>
 > **You may use 1 Uber on a team, but are capped at 5 Pokémon on the team.**
 > *Dragapult with a Z-crystal is counted as an Uber.*
+> *Zygarde 50% (so not 10%) with Thousand Arrows or Thousand Waves in it's moves is counted as an Uber.*
 
 **Illusory Nicknames**
 > Name a Pokémon with the Illusion ability like another legal species in quotation marks (' or ") to make it display as such in Team Preview. <BR>*Example: `"Heatran"`*
