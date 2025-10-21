@@ -30,6 +30,10 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		inherit: true,
 		isNonstandard: null,
 	},
+	frolicking: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	shieldsdown: {
 		onModifyMovePriority: 1,
 		onModifyMove(move, attacker, defender) {

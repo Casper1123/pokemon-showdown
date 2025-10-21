@@ -173,7 +173,87 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "On switch-in, uses first attacking move in moveset. Immune to Intimidate",
 		gen: 9,
 	},
-
+	frolicking: {
+		isNonstandard: "Custom",
+		num: -8,
+		rating: 5,
+		// Not immune to Mold Breaker.
+		flags: { breakable: 1 },
+		name: "Frolicking",
+		desc: "Gains Grass resistances and STAB. In Grassy Terrain, gains 1.5x to both defenses and restores twice as much hp from Grassy Terrain and Leftovers.",
+		shortDesc: "Gains Grass resistances and STAB. 1.5x to defenses and 2x residual healing in Grassy Terrain.",
+		gen: 9,
+		// Extra def in grassy terrain.
+		onModifyDef(pokemon) {
+			if (this.field.isTerrain('grassyterrain')) return this.chainModify(1.5);
+		},
+		onModifySpD(pokemon) {
+			if (this.field.isTerrain('grassyterrain')) return this.chainModify(1.5);
+		},
+		onTryHeal(damage, target, source, effect) {
+			if (effect?.id === 'leftovers' || effect?.id === 'grassyterrain' && this.field.isTerrain('grassyterrain')) {
+				this.add('-activate', target, 'ability: Terravore');
+				this.chainModify(2);
+			}
+		},
+		// Grass STAB and resistances.
+		onEffectiveness(typeMod, target, type, move) {
+			const grassEffectiveness = this.dex.getEffectiveness(type, 'Grass');
+			if (grassEffectiveness < 0) {
+				return typeMod + grassEffectiveness;
+			}
+		},
+		onModifySTAB(stab, source, target, move) {
+			if (move.type === 'Grass') {
+				if (stab === 2) {
+					return 2.25;
+				}
+				return 2;
+			}
+		},
+	},
+	terravore: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Rock') {
+				move.accuracy = true;
+				if (!this.heal(target.baseMaxhp / 8)) {
+					this.add('-immune', target, '[from] ability: Terravore');
+				}
+				target.addVolatile('terravore');
+				return null;
+			}
+		},
+		onEnd(pokemon) {
+			pokemon.removeVolatile('terravore');
+		},
+		condition: {
+			noCopy: true, // doesn't get copied by Baton Pass
+			onStart(target) {
+				this.add('-start', target, 'ability: Terravore');
+			},
+			onModifyAtkPriority: 5,
+			onModifyAtk(atk, attacker, defender, move) {
+				if (move.type === 'Rock' && attacker.hasAbility('terravore')) {
+					this.debug('Terravore boost');
+					return this.chainModify(1.25);
+				}
+			},
+			onModifySpAPriority: 5,
+			onModifySpA(atk, attacker, defender, move) {
+				if (move.type === 'Rock' && attacker.hasAbility('terravore')) {
+					this.debug('Terravore boost');
+					return this.chainModify(1.25);
+				}
+			},
+			onEnd(target) {
+				this.add('-end', target, 'ability: Terravore', '[silent]');
+			},
+		},
+		flags: { breakable: 1 },
+		name: "Terravore",
+		rating: 4,
+		num: -9,
+	},
 
 	noability: {
 		isNonstandard: "Past",
