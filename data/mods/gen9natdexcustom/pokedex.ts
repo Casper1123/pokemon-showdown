@@ -295,6 +295,18 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		baseStats: { hp: 120, atk: 80, def: 65, spa: 112, spd: 75, spe: 78 },
 	},
+	klink: {
+		inherit: true,
+		abilities: { 0: "Plus", 1: "Levitate", H: "Clear Body" },
+	},
+	klang: {
+		inherit: true,
+		abilities: { 0: "Plus", 1: "Levitate", H: "Clear Body" },
+	},
+	klinklang: {
+		inherit: true,
+		abilities: { 0: "Plus", 1: "Levitate", H: "Clear Body" },
+	},
 	// endregion
 	// region: Gen6
 	noivern: {

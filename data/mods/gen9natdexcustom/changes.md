@@ -210,7 +210,9 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [victini]: https://play.pokemonshowdown.com/sprites/gen5ani/victini.gif
 [basculegion]: https://play.pokemonshowdown.com/sprites/gen5ani/basculegion.gif
 [basculegion-f]: https://play.pokemonshowdown.com/sprites/gen5ani/basculegion-f.gif
-
+[klink]: https://play.pokemonshowdown.com/sprites/gen5ani/klink.gif
+[klang]: https://play.pokemonshowdown.com/sprites/gen5ani/klang.gif
+[klinklang]: https://play.pokemonshowdown.com/sprites/gen5ani/klinklang.gif
 
 
 [sec-gen6]: .
@@ -1180,6 +1182,9 @@ Base Stats:
 **Shared:**<BR>
 New Moves:
 - ![ghost]![physical] Shadow Fangs
+
+### ![klink]![klang]![klinklang]
+Abilities: `Plus`, `Levitate`, `Clear Body`
 
 
 ## Gen 6
