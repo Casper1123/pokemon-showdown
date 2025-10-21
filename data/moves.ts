@@ -229,7 +229,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onTryHit(target, source, move) {
 			const protectVolatiles = [
 				'banefulbunker', 'burningbulwark', 'kingsshield',
-				'obstruct', 'protect', 'silktrap', 'spikyshield', 'timestop'
+				'obstruct', 'protect', 'silktrap', 'spikyshield', 'timestop',
 			];
 
 			for (const effectid of protectVolatiles) {
@@ -237,6 +237,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					return false;
 				}
 			}
+		},
+		onTryMove() {
+			this.attrLastMove('[still]');
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Bite', target);
 		},
 		secondary: null,
 		target: "normal",
