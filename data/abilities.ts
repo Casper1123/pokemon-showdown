@@ -192,7 +192,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onTryHeal(damage, target, source, effect) {
 			if (effect?.id === 'leftovers' || effect?.id === 'grassyterrain' && this.field.isTerrain('grassyterrain')) {
-				this.add('-activate', target, 'ability: Terravore');
+				this.add('-activate', target, 'ability: Frolicking');
 				this.chainModify(2);
 			}
 		},
@@ -200,11 +200,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onEffectiveness(typeMod, target, type, move) {
 			const grassEffectiveness = this.dex.getEffectiveness(type, 'Grass');
 			if (grassEffectiveness < 0) {
+				this.add('-activate', target, 'ability: Frolicking');
 				return typeMod + grassEffectiveness;
 			}
 		},
 		onModifySTAB(stab, source, target, move) {
 			if (move.type === 'Grass') {
+				this.add('-activate', target, 'ability: Frolicking');
 				if (stab === 2) {
 					return 2.25;
 				}
