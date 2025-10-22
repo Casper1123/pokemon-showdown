@@ -101,6 +101,11 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 		natDexTier: "MOD",
 		doublesTier: "DMOD",
 	},
+	meganium: {
+		tier: "ZU",
+		natDexTier: "MOD",
+		doublesTier: "DMOD",
+	},
 	// endregion
 	// region gen3
 	absolmega: {
@@ -490,6 +495,12 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 		natDexTier: "MOD",
 		doublesTier: "DMOD",
 	},
+	shiinotic: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+		natDexTier: "MOD",
+		doublesTier: "DMOD",
+	},
 	// endregion
 	// region gen9
 	slitherwing: {
@@ -497,5 +508,6 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 		natDexTier: "MOD",
 		doublesTier: "DMOD",
 	},
+	// endregion
 	// endregion
 };
