@@ -57,6 +57,10 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		baseStats: { hp: 85, atk: 100, def: 80, spa: 70, spd: 80, spe: 130 },
 	},
+	meganium: {
+		inherit: true,
+		abilities: { 0: "Overgrow", 1: "Leaf Guard", H: "Grassy Surge" },
+	},
 	// endregion
 	// region: Gen3
 	absolmega: {
@@ -336,6 +340,20 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	copperajah: {
 		inherit: true,
 		abilities: { 0: "Sheer Force", 1: "Sand Force", H: "Heavy Metal" },
+	},
+	shiinotic: {
+		inherit: true,
+		abilities: { 0: "Effect Spore", 1: "Rain Dish", H: "Grassy Surge" },
+	},
+	wooloo: {
+		inherit: true,
+		abilities: { 0: "Fluffy", 1: "Bulletproof", H: "Frolicking" },
+		baseStats: { hp: 60, atk: 70, def: 70, spa: 50, spd: 60, spe: 48 },
+	},
+	dubwool: {
+		inherit: true,
+		abilities: { 0: "Fluffy", 1: "Bulletproof", H: "Frolicking" },
+		baseStats: { hp: 90, atk: 95, def: 100, spa: 60, spd: 90, spe: 88 },
 	},
 	// endregion
 	// region: Gen9

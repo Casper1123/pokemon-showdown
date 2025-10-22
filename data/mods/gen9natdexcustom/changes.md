@@ -118,6 +118,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [houndoom]: https://play.pokemonshowdown.com/sprites/gen5ani/houndoom.gif
 [politoed]: https://play.pokemonshowdown.com/sprites/gen5ani/politoed.gif
 [crobat]: https://play.pokemonshowdown.com/sprites/gen5ani/crobat.gif
+[meganium]: https://play.pokemonshowdown.com/sprites/gen5ani/meganium.gif
 
 [sec-gen3]: .
 [salamence]: https://play.pokemonshowdown.com/sprites/gen5ani/salamence.gif
@@ -240,6 +241,12 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [dragapult]: https://play.pokemonshowdown.com/sprites/gen5ani/dragapult.gif
 [dracozolt]: https://play.pokemonshowdown.com/sprites/gen5ani/dracozolt.gif
 [copperajah]: https://play.pokemonshowdown.com/sprites/gen5/copperajah.png
+[shiinotic]: https://play.pokemonshowdown.com/sprites/gen5ani/shiinotic.gif
+[wooloo]: https://play.pokemonshowdown.com/sprites/gen5ani/wooloo.gif
+[wooloo-shiny]: https://play.pokemonshowdown.com/sprites/gen5ani-shiny/wooloo.gif
+[dubwool]: https://play.pokemonshowdown.com/sprites/gen5ani/dubwool.gif
+[dubwool-shiny]: https://play.pokemonshowdown.com/sprites/gen5ani-shiny/dubwool.gif
+
 
 [sec-gen9]: .
 [glimmora]: https://play.pokemonshowdown.com/sprites/gen5/glimmora.png
@@ -443,6 +450,17 @@ Also provides an immunity to the Atk drop from Intimidate. <BR>
 **Users:**<BR>
 ![scolipede]
 
+### Frolicking
+Grants the user ![grass]-STAB and resistances.<BR>
+While grassy terrain is active, doubles healing from Grassy Terrain and Leftovers and boosts defenses by 1.5x. <BR>
+**Users:**<BR>
+![wooloo]![wooloo-shiny]![dubwool]![dubwool-shiny] *More to come soon don't worry.*
+
+### Terravore
+When hit with a ![rock]-type attack, restores 1/8 of max HP and gains Terravore effect, boosting ![rock]-type damage by 1.25x.
+**Users:**<BR>
+*None yet, coming soon.*
+
 # Pokémon
 ## Gen 1
 ### ![gengar]
@@ -584,6 +602,9 @@ Base Stats:
 
 New Moves:
 - ![poison]![physical] Gunk Shot
+
+### ![meganium]
+Abilities: `Overgrow`, `Leaf Guard`, `Grassy Surge`
 
 ## Gen 3
 ### ![absol]![absol-mega]
@@ -1225,6 +1246,67 @@ New Moves:
 ## Gen 8
 ### ![copperajah]
 Abilities: `Sheer Force`, `Sand Force`, `Heavy Metal`
+
+### ![shiinotic]
+Abilities: `Effect Spore`, `Rain Dish`, `Grassy Surge`
+
+### ![wooloo]![wooloo-shiny]![dubwool]![dubwool-shiny]
+*Admittedly a biased take on these, but they're cute so cope.*<BR>
+**Wooloo:**<BR>
+New Moves:
+- ![fighting]![physical] Body Press
+
+**Base Stats:**
+- hp: `42` --> `60` (`+18`)
+- atk: `40` --> `70` (`+30`)
+- def: `55` --> `70` (`+15`)
+- spa: `40` --> `50` (`+10`)
+- spd: `45` --> `60` (`+15`)
+- spe: `48`
+- Total: `270` --> `358`
+
+**Dubwool:**<BR>
+New Moves:
+- ![bug]![physical] Megahorn
+- ![grass]![physical] Horn Leech
+
+**Base Stats:**
+- hp: `72` --> `90` (`+10`)
+- atk: `80` --> `95` (`+15`)
+- def: `100`
+- spa: `60`
+- spd: `90`
+- spe: `88`
+- Total: `490`--> `515`
+
+**Shared:**
+Abilities: `Fluffy`, `Bulletproof`, `Frolicking`<BR>
+New Moves:
+- ![bug]![physical] Lunge
+- ![bug]![physical] Steamroller
+- ![dark]![physical] Bite
+- ![dark]![physical] Crunch
+- ![dark]![physical] Pursuit
+- ![dark]![status] Fake Tears
+- ![dark]![status] Quash
+- ![electric]![physical] Nuzzle
+- ![fairy]![physical] Play Rough
+- ![fairy]![status] Baby-Doll Eyes
+- ![fairy]![status] Tearful Look
+- ![fighting]![physical] Collision Course
+- ![fighting]![status] Quick Guard
+- ![grass]![physical] Grassy Glide
+- ![grass]![physical] Trailblaze
+- ![ground]![physical] Headlong Rush
+- ![ground]![physical] Stomping Tantrum
+- ![normal]![physical] Head Charge
+- ![normal]![status] Tickle
+- ![normal]![status] Slack Off
+- ![normal]![status] Yawn
+- ![psychic]![status] Amnesia
+- ![rock]![physical] Head Smash
+- ![steel]![physical] Iron Head
+- ![steel]![physical] Steel Roller
 
 ## Gen 9
 ### ![slitherwing]
