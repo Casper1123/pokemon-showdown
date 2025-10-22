@@ -470,11 +470,14 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 		natDexTier: "MOD",
 		doublesTier: "DMOD",
 	},
+	tapubulu: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+		natDexTier: "MOD",
+		doublesTier: "DMOD",
+	},
 	// endregion
 	// region gen8
-
-	// endregion
-	// region gen9
 	wooloo: {
 		isNonstandard: "Past",
 		tier: "Illegal",
@@ -488,5 +491,11 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 		doublesTier: "DMOD",
 	},
 	// endregion
+	// region gen9
+	slitherwing: {
+		tier: "UU",
+		natDexTier: "MOD",
+		doublesTier: "DMOD",
+	},
 	// endregion
 };
