@@ -475,7 +475,18 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 
 	// endregion
 	// region gen9
-
+	wooloo: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+		natDexTier: "MOD",
+		doublesTier: "DMOD",
+	},
+	dubwool: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+		natDexTier: "MOD",
+		doublesTier: "DMOD",
+	},
 	// endregion
 	// endregion
 };
