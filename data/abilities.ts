@@ -191,7 +191,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (this.field.isTerrain('grassyterrain')) return this.chainModify(1.5);
 		},
 		onTryHeal(damage, target, source, effect) {
-			if (effect?.id === 'leftovers' || effect?.id === 'grassyterrain' && this.field.isTerrain('grassyterrain')) {
+			if (effect?.id === 'leftovers' || effect?.id === 'grassyterrain' && this.field.isTerrain('grassyterrain') && target.hp != target.maxhp) {
 				this.add('-activate', target, 'ability: Frolicking');
 				this.chainModify(2);
 			}
@@ -199,7 +199,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		// Grass STAB and resistances.
 		onEffectiveness(typeMod, target, type, move) {
 			const grassEffectiveness = this.dex.getEffectiveness(type, 'Grass');
-			if (grassEffectiveness < 0 && (move.category == 'Special' || move.category == 'Special')) {
+			if (grassEffectiveness < 0 && (move.category === 'Special' || move.category === 'Physical')) {
 				this.add('-activate', target, 'ability: Frolicking');
 				this.add('-message', `${target?.name} resists ${move} because it's completely covered in grass!`);
 				return typeMod + grassEffectiveness;
