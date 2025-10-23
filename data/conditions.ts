@@ -245,9 +245,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		},
 		onSetAbility(ability, target, source, effect) {
 			const allowedDistortions = ['chronaldistortions', 'spacialdistortions', 'absolutedistortion'];
-			if (allFieldAbilities.includes(target.getAbility().id) && !allowedDistortions.includes(target.getAbility().id)) {
+			if (allFieldAbilities.includes(toID(ability)) && !allowedDistortions.includes(toID(ability))) {
 				target.abilityState.suppressed = true;
-				this.add('-message', `${target.name}'s ${ability} is suppressed by Absolute Distortion!`);
+				this.add('-message', `${target.name} cannot use ${target.getAbility().name}, this realm's master forbids it.`);
 			} else { target.abilityState.suppressed = true; }
 		},
 		onAfterMega(pokemon) {
@@ -255,7 +255,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			const ability = pokemon.getAbility();
 			if (allFieldAbilities.includes(ability.id) && !allowedDistortions.includes(ability.id)) {
 				pokemon.abilityState.suppressed = true;
-				this.add('-message', `${pokemon.name}'s ${ability.name} is suppressed by Absolute Distortion after Mega Evolution!`);
+				this.add('-message', `${pokemon.name} cannot use ${pokemon.getAbility().name}, this realm's master forbids it.`);
 			} else { pokemon.abilityState.suppressed = true; }
 		},
 		onAfterTerastallization(pokemon) {
@@ -263,7 +263,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			const ability = pokemon.getAbility();
 			if (allFieldAbilities.includes(ability.id) && !allowedDistortions.includes(ability.id)) {
 				pokemon.abilityState.suppressed = true;
-				this.add('-message', `${pokemon.name}'s ${ability.name} is suppressed by Absolute Distortion after Terastallization!`);
+				this.add('-message', `${pokemon.name} cannot use ${pokemon.getAbility().name}, this realm's master forbids it.`);
 			} else { pokemon.abilityState.suppressed = true; }
 		},
 		onFieldEnd() {
