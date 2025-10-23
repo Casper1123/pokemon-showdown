@@ -122,7 +122,6 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			this.add('-message', 'The flow of time returns to normal.');
 		},
 	},
-
 	spacialdistortion: {
 		name: "Spacial Distortion",
 		duration: 0,
@@ -196,7 +195,6 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 		},
 	},
-
 	absolutedistortion: {
 		name: "Absolute Distortion",
 		duration: 0,
@@ -240,11 +238,33 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		},
 		onSwitchIn(pokemon) {
 			const allowedDistortions = ['chronaldistortions', 'spacialdistortions', 'absolutedistortion'];
-
 			if (allFieldAbilities.includes(pokemon.getAbility().id) && !allowedDistortions.includes(pokemon.getAbility().id)) {
 				pokemon.abilityState.suppressed = true;
 				this.add('-message', `${pokemon.name} cannot use ${pokemon.getAbility().name}, this realm's master forbids it.`);
-			}
+			} else { pokemon.abilityState.suppressed = true; }
+		},
+		onSetAbility(ability, target, source, effect) {
+			const allowedDistortions = ['chronaldistortions', 'spacialdistortions', 'absolutedistortion'];
+			if (allFieldAbilities.includes(target.getAbility().id) && !allowedDistortions.includes(target.getAbility().id)) {
+				target.abilityState.suppressed = true;
+				this.add('-message', `${target.name}'s ${ability} is suppressed by Absolute Distortion!`);
+			} else { target.abilityState.suppressed = true; }
+		},
+		onAfterMega(pokemon) {
+			const allowedDistortions = ['chronaldistortions', 'spacialdistortions', 'absolutedistortion'];
+			const ability = pokemon.getAbility();
+			if (allFieldAbilities.includes(ability.id) && !allowedDistortions.includes(ability.id)) {
+				pokemon.abilityState.suppressed = true;
+				this.add('-message', `${pokemon.name}'s ${ability.name} is suppressed by Absolute Distortion after Mega Evolution!`);
+			} else { pokemon.abilityState.suppressed = true; }
+		},
+		onAfterTerastallization(pokemon) {
+			const allowedDistortions = ['chronaldistortions', 'spacialdistortions', 'absolutedistortion'];
+			const ability = pokemon.getAbility();
+			if (allFieldAbilities.includes(ability.id) && !allowedDistortions.includes(ability.id)) {
+				pokemon.abilityState.suppressed = true;
+				this.add('-message', `${pokemon.name}'s ${ability.name} is suppressed by Absolute Distortion after Terastallization!`);
+			} else { pokemon.abilityState.suppressed = true; }
 		},
 		onFieldEnd() {
 			this.add('-fieldend', 'Absolute Distortion');
