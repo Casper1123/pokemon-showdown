@@ -65,7 +65,7 @@ export const Scripts: ModdedBattleScriptsData = {
 			// Check if Absolute Distortion should suppress this ability
 			if (this.battle.field.pseudoWeather['absolutedistortion'] || this.battle.field.pseudoWeather['Absolute Distortion']) {
 				if (allFieldAbilities.includes(ability.id) && !protectedPseudoWeathers.includes(ability.id)) {
-					this.abilityState.suppressed = true;
+					this.abilityState.suppressed = true; // IMPORTANT: Has to happen before the singleEvent call below, otherwise newly aquired abilities from mega and such will start.
 				}
 			}
 			if (ability.id && this.battle.gen > 3 &&

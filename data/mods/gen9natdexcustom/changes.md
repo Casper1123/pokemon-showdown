@@ -457,7 +457,7 @@ While grassy terrain is active, doubles healing from Grassy Terrain and Leftover
 ![wooloo]![wooloo-shiny]![dubwool]![dubwool-shiny] *More to come soon don't worry.*
 
 ### Terravore
-When hit with a ![rock]-type attack, restores 1/8 of max HP and gains Terravore effect, boosting ![rock]-type damage by 1.25x.
+When hit with a ![rock]-type attack, restores 1/8 of max HP and gains Terravore effect, boosting ![rock]-type damage by 1.25x.<BR>
 **Users:**<BR>
 *None yet, coming soon.*
 
