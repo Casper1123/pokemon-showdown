@@ -200,7 +200,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		// Grass STAB and resistances.
 		onEffectiveness(typeMod, target, type, move) {
 			const grassEffectiveness = this.dex.getEffectiveness(type, 'Grass');
-			this.add('-message', `Debug message: grassEffectiveness = ${grassEffectiveness}. Move category = ${move.category}. Type mod = ${typeMOd}`);
+			this.add('-message', `Debug message: grassEffectiveness = ${grassEffectiveness}. Move category = ${move.category}. Type mod = ${typeMod}`);
 			if (grassEffectiveness < 0 && (move.category === 'Special' || move.category === 'Physical')) {
 				this.add('-activate', target, 'ability: Frolicking');
 				this.add('-message', `${target?.name} resists ${move} because it's completely covered in grass!`);
