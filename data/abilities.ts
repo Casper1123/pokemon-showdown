@@ -200,11 +200,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		// Grass STAB and resistances.
 		onEffectiveness(typeMod, target, type, move) {
 			const grassEffectiveness = this.dex.getEffectiveness(type, 'Grass');
-			this.add('-message', `Debug message: grassEffectiveness = ${grassEffectiveness}. Move category = ${move.category}. Type mod = ${typeMod}`);
-			if (grassEffectiveness < 0 && (move.category === 'Special' || move.category === 'Physical')) {
+			const grassImmune = this.dex.getImmunity(type, 'Grass');
+			this.add('-message', `Debug message: grassEffectiveness = ${grassEffectiveness}. Move category = ${move.category}. Type mod = ${typeMod}. grassImmune = ${grassImmune}.`);
+			if ((grassEffectiveness < 0 || grassImmune) && (move.category === 'Special' || move.category === 'Physical')) {
 				this.add('-activate', target, 'ability: Frolicking');
 				this.add('-message', `${target?.name} resists ${move} because it's completely covered in grass!`);
-				return typeMod + grassEffectiveness;
+				return (typeMod + grassEffectiveness) * (grassImmune ? 0 : 1);
 			}
 		},
 		onModifySTAB(stab, source, target, move) {
