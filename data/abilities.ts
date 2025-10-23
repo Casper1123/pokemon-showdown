@@ -191,6 +191,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifySpD(pokemon) {
 			if (this.field.isTerrain('grassyterrain')) return this.chainModify(1.5);
 		},
+		onTerrainChange(target, source, effect) {
+			if (this.field.isTerrain('grassyterrain')) {
+				this.add('-activate', target, 'ability: Frolicking');
+				this.add('-message', `${target.name} jumps around happily in the field.`);
+				this.add('-message', `It's defenses are raised.`);
+			}
+		},
 		onTryHeal(damage, target, source, effect) {
 			if ((effect?.id === 'leftovers' || effect?.id === 'grassyterrain') && this.field.isTerrain('grassyterrain') && target.hp !== target.maxhp) {
 				this.add('-activate', target, 'ability: Frolicking');
