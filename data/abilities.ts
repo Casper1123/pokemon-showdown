@@ -199,14 +199,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		// Grass STAB and resistances.
 		onEffectiveness(typeMod, target, type, move) {
 			const grassEffectiveness = this.dex.getEffectiveness(type, 'Grass');
-			if (grassEffectiveness < 0) {
+			if (grassEffectiveness < 0 && (move.category == 'Special' || move.category == 'Special')) {
 				this.add('-activate', target, 'ability: Frolicking');
+				this.add('-message', `${target?.name} resists ${move} because it's completely covered in grass!`);
 				return typeMod + grassEffectiveness;
 			}
 		},
 		onModifySTAB(stab, source, target, move) {
 			if (move.type === 'Grass') {
-				this.add('-activate', target, 'ability: Frolicking');
+				this.add('-activate', source, 'ability: Frolicking');
 				if (stab === 2) {
 					return 2.25;
 				}
