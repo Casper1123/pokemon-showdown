@@ -193,14 +193,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onTryHeal(damage, target, source, effect) {
 			if (effect?.id === 'leftovers' || effect?.id === 'grassyterrain' && this.field.isTerrain('grassyterrain') && target.hp !== target.maxhp) {
 				this.add('-activate', target, 'ability: Frolicking');
-				this.add('-message', `${target.name} munches on some ${effect.id === 'leftovers' ? 'leftovers' : 'grass'}.`)
+				this.add('-message', `${target.name} munches on some ${effect.id === 'leftovers' ? 'leftovers' : 'grass'}.`);
 				this.chainModify(2);
 			}
 		},
 		// Grass STAB and resistances.
 		onEffectiveness(typeMod, target, type, move) {
-			const grassEffectiveness = this.dex.getEffectiveness(type, 'Grass');
-			const grassImmune = this.dex.getImmunity(type, 'Grass');
+			const grassEffectiveness = this.dex.getEffectiveness(move.type, 'Grass');
+			const grassImmune = this.dex.getImmunity(move.type, 'Grass');
 			this.add('-message', `Debug message: grassEffectiveness = ${grassEffectiveness}. Move category = ${move.category}. Type mod = ${typeMod}. grassImmune = ${grassImmune}.`);
 			if ((grassEffectiveness < 0 || grassImmune) && (move.category === 'Special' || move.category === 'Physical')) {
 				this.add('-activate', target, 'ability: Frolicking');
