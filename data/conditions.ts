@@ -241,14 +241,14 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			if (allFieldAbilities.includes(pokemon.getAbility().id) && !allowedDistortions.includes(pokemon.getAbility().id)) {
 				pokemon.abilityState.suppressed = true;
 				this.add('-message', `${pokemon.name} cannot use ${pokemon.getAbility().name}, this realm's master forbids it.`);
-			} else { pokemon.abilityState.suppressed = true; }
+			} else { pokemon.abilityState.suppressed = false; }
 		},
 		onSetAbility(ability, target, source, effect) {
 			const allowedDistortions = ['chronaldistortions', 'spacialdistortions', 'absolutedistortion'];
 			if (allFieldAbilities.includes(toID(ability)) && !allowedDistortions.includes(toID(ability))) {
 				target.abilityState.suppressed = true;
 				this.add('-message', `${target.name} cannot use ${target.getAbility().name}, this realm's master forbids it.`);
-			} else { target.abilityState.suppressed = true; }
+			} else { target.abilityState.suppressed = false; }
 		},
 		onAfterMega(pokemon) {
 			const allowedDistortions = ['chronaldistortions', 'spacialdistortions', 'absolutedistortion'];
@@ -256,7 +256,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			if (allFieldAbilities.includes(ability.id) && !allowedDistortions.includes(ability.id)) {
 				pokemon.abilityState.suppressed = true;
 				this.add('-message', `${pokemon.name} cannot use ${pokemon.getAbility().name}, this realm's master forbids it.`);
-			} else { pokemon.abilityState.suppressed = true; }
+			} else { pokemon.abilityState.suppressed = false; }
 		},
 		onAfterTerastallization(pokemon) {
 			const allowedDistortions = ['chronaldistortions', 'spacialdistortions', 'absolutedistortion'];
@@ -264,7 +264,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			if (allFieldAbilities.includes(ability.id) && !allowedDistortions.includes(ability.id)) {
 				pokemon.abilityState.suppressed = true;
 				this.add('-message', `${pokemon.name} cannot use ${pokemon.getAbility().name}, this realm's master forbids it.`);
-			} else { pokemon.abilityState.suppressed = true; }
+			} else { pokemon.abilityState.suppressed = false; }
 		},
 		onFieldEnd() {
 			this.add('-fieldend', 'Absolute Distortion');
