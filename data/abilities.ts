@@ -191,7 +191,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (this.field.isTerrain('grassyterrain')) return this.chainModify(1.5);
 		},
 		onTryHeal(damage, target, source, effect) {
-			if (effect?.id === 'leftovers' || effect?.id === 'grassyterrain' && this.field.isTerrain('grassyterrain') && target.hp !== target.maxhp) {
+			if ((effect?.id === 'leftovers' || effect?.id === 'grassyterrain') && this.field.isTerrain('grassyterrain') && target.hp !== target.maxhp) {
 				this.add('-activate', target, 'ability: Frolicking');
 				this.add('-message', `${target.name} munches on some ${effect.id === 'leftovers' ? 'leftovers' : 'grass'}.`);
 				this.chainModify(2);
