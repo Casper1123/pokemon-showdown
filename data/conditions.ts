@@ -1,10 +1,10 @@
-const weatherAbilities = ['desolateland', 'primordialsea', 'deltastream',
+export const weatherAbilities = ['desolateland', 'primordialsea', 'deltastream',
 	'drizzle', 'sandstream', 'snowwarning', 'drought', 'orichalcumpulse'];
-const terrainAbilities = ['psychicsurge', 'mistysurge', 'grassysurge', 'electricsurge', 'hadronengine'];
-const allFieldAbilities = [...weatherAbilities, ...terrainAbilities];
-const protectedPseudoWeathers = ['chronaldistortion', 'spacialdistortion', 'absolutedistortion'];
+export const terrainAbilities = ['psychicsurge', 'mistysurge', 'grassysurge', 'electricsurge', 'hadronengine'];
+export const allFieldAbilities = [...weatherAbilities, ...terrainAbilities];
+export const protectedPseudoWeathers = ['chronaldistortion', 'spacialdistortion', 'absolutedistortion'];
 export const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
-const chronalDistortionsExceptions = ['fakeout', 'futuresight', 'doomdesire', 'thunderclap', 'suckerpunch'];
+export const chronalDistortionsExceptions = ['fakeout', 'futuresight', 'doomdesire', 'thunderclap', 'suckerpunch'];
 
 export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 	// Custom
@@ -237,23 +237,20 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 		},
 		onSwitchIn(pokemon) {
-			const allowedDistortions = ['chronaldistortions', 'spacialdistortions', 'absolutedistortion'];
-			if (allFieldAbilities.includes(pokemon.getAbility().id) && !allowedDistortions.includes(pokemon.getAbility().id)) {
+			if (allFieldAbilities.includes(pokemon.getAbility().id) && !protectedPseudoWeathers.includes(pokemon.getAbility().id)) {
 				pokemon.abilityState.suppressed = true;
 				this.add('-message', `${pokemon.name} cannot use ${pokemon.getAbility().name}, this realm's master forbids it.`);
 			} else { pokemon.abilityState.suppressed = false; }
 		},
 		onSetAbility(ability, target, source, effect) {
-			const allowedDistortions = ['chronaldistortions', 'spacialdistortions', 'absolutedistortion'];
-			if (allFieldAbilities.includes(toID(ability)) && !allowedDistortions.includes(toID(ability))) {
+			if (allFieldAbilities.includes(toID(ability)) && !protectedPseudoWeathers.includes(toID(ability))) {
 				target.abilityState.suppressed = true;
 				this.add('-message', `${target.name} cannot use ${target.getAbility().name}, this realm's master forbids it.`);
 			} else { target.abilityState.suppressed = false; }
 		},
 		onAfterMega(pokemon) {
-			const allowedDistortions = ['chronaldistortions', 'spacialdistortions', 'absolutedistortion'];
 			const ability = pokemon.getAbility();
-			if (allFieldAbilities.includes(ability.id) && !allowedDistortions.includes(ability.id)) {
+			if (allFieldAbilities.includes(ability.id) && !protectedPseudoWeathers.includes(ability.id)) {
 				pokemon.abilityState.suppressed = true;
 				this.add('-message', `${pokemon.name} cannot use ${pokemon.getAbility().name}, this realm's master forbids it.`);
 			} else { pokemon.abilityState.suppressed = false; }
@@ -261,7 +258,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		onAfterTerastallization(pokemon) {
 			const allowedDistortions = ['chronaldistortions', 'spacialdistortions', 'absolutedistortion'];
 			const ability = pokemon.getAbility();
-			if (allFieldAbilities.includes(ability.id) && !allowedDistortions.includes(ability.id)) {
+			if (allFieldAbilities.includes(ability.id) && !protectedPseudoWeathers.includes(ability.id)) {
 				pokemon.abilityState.suppressed = true;
 				this.add('-message', `${pokemon.name} cannot use ${pokemon.getAbility().name}, this realm's master forbids it.`);
 			} else { pokemon.abilityState.suppressed = false; }

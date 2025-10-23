@@ -36,6 +36,7 @@ import { hazards } from "./conditions";
 
 export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	// Custom
+	// IMPORTANT: DISTORTIONS REQUIRE SCRIPTS FOUND IN GEN9NATDEXCUSTOM.scripts.ts
 	chronaldistortion: {
 		isNonstandard: "Custom",
 		num: -4,

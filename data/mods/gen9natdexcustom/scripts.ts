@@ -1,4 +1,5 @@
 import { applyChanges } from "./learnset_changes";
+import { allFieldAbilities, protectedPseudoWeathers } from "../../conditions";
 
 export const Scripts: ModdedBattleScriptsData = {
 	inherit: 'gen9',
@@ -41,6 +42,37 @@ export const Scripts: ModdedBattleScriptsData = {
 				}
 			}
 			return false;
+		},
+		setAbility(ability, source, isFromFormeChange, isTransform) {
+			if (!this.hp) return false;
+			if (typeof ability === 'string') ability = this.battle.dex.abilities.get(ability);
+			const oldAbility = this.ability;
+			if (!isFromFormeChange) {
+				if (ability.flags['cantsuppress'] || this.getAbility().flags['cantsuppress']) return false;
+			}
+			if (!isFromFormeChange && !isTransform) {
+				const setAbilityEvent = this.battle.runEvent('SetAbility', this, source, this.battle.effect, ability);
+				if (!setAbilityEvent) return setAbilityEvent;
+			}
+			this.battle.singleEvent('End', this.battle.dex.abilities.get(oldAbility), this.abilityState, this, source);
+			if (this.battle.effect && this.battle.effect.effectType === 'Move' && !isFromFormeChange) {
+				this.battle.add('-endability', this, this.battle.dex.abilities.get(oldAbility),
+					`[from] move: ${this.battle.dex.moves.get(this.battle.effect.id)}`);
+			}
+			this.ability = ability.id;
+			this.abilityState = this.battle.initEffectState({ id: ability.id, target: this });
+
+			// Check if Absolute Distortion should suppress this ability
+			if (this.battle.field.pseudoWeather['absolutedistortion'] || this.battle.field.pseudoWeather['Absolute Distortion']) {
+				if (allFieldAbilities.includes(ability.id) && !protectedPseudoWeathers.includes(ability.id)) {
+					this.abilityState.suppressed = true;
+				}
+			}
+			if (ability.id && this.battle.gen > 3 &&
+				(!isTransform || oldAbility !== ability.id || this.battle.gen <= 4)) {
+				this.battle.singleEvent('Start', ability, this.abilityState, this, source);
+			}
+			return oldAbility;
 		},
 	},
 };
