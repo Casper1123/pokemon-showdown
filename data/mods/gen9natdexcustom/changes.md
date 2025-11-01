@@ -1271,13 +1271,13 @@ New Moves:
 - ![grass]![physical] Horn Leech
 
 **Base Stats:**
-- hp: `72` --> `90` (`+10`)
+- hp: `72` --> `90` (`+18`)
 - atk: `80` --> `95` (`+15`)
 - def: `100`
 - spa: `60`
 - spd: `90`
 - spe: `88`
-- Total: `490`--> `515`
+- Total: `490`--> `523`
 
 **Shared:**
 Abilities: `Fluffy`, `Bulletproof`, `Frolicking`<BR>
