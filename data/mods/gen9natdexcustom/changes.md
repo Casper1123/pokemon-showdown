@@ -151,6 +151,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 
 [sec-gen4]: .
 [darkrai]: https://play.pokemonshowdown.com/sprites/gen5ani/darkrai.gif
+[drapion]: https://play.pokemonshowdown.com/sprites/gen5ani/drapion.gif
 [garchomp]: https://play.pokemonshowdown.com/sprites/gen5ani/garchomp.gif
 [garchomp-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/garchomp-mega.gif
 [glaceon]: https://play.pokemonshowdown.com/sprites/gen5ani/glaceon.gif
@@ -936,6 +937,10 @@ Ability: `Sharpness` <BR>
 New Moves: <BR>
 - ![poison]![physical] Cross Poison
 
+### ![drapion]
+New Moves:
+- ![dark]![physical] Wicked Blow
+
 
 ## Gen 5
 ### ![serperior]
@@ -1139,6 +1144,7 @@ Ability: `Regenerator`<BR>
 New Moves:
 - ![normal]![status] Follow Me
 - ![psychic]![status] Teleport
+- ![electric]![physical] Nuzzle
 
 ### ![beartic]
 New Moves:

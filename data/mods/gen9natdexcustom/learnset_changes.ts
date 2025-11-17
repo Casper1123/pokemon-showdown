@@ -129,6 +129,7 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, 'giratina', 'watersport');
 	setMove(data, modPatch, 'giratina', 'recover');
 	setMove(data, modPatch, "gallade", "crosspoison");
+	setMove(data, modPatch, "drapion", "wickedblow");
 	// endregion
 	// region Gen5
 	setMove(data, modPatch, "serperior", "mudshot");
@@ -170,6 +171,7 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "chandelure", "searingshot");
 	setMove(data, modPatch, "audino", "followme");
 	setMove(data, modPatch, "audino", "teleport");
+	setMove(data, modPatch, "audino", "nuzzle");
 	setMove(data, modPatch, "beartic", "iceshard");
 	setMove(data, modPatch, "musharna", "wideguard");
 	setMove(data, modPatch, "kyuremwhite", "glaciate");
