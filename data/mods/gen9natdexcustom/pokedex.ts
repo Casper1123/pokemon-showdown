@@ -319,7 +319,7 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	},
 	// endregion
 	// region: Gen7
-	golispod: {
+	golisopod: {
 		inherit: true,
 		abilities: { 0: "Emergency Exit", H: "Battle Armor" },
 	},
