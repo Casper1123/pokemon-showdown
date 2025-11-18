@@ -157,9 +157,10 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	registeel: {
 		inherit: true,
 		abilities: { 0: "Clear Body", 1: "Light Metal", H: "Midas Touch" },
+	},
 	regirock: {
 		inherit: true,
-		abilities: { 0: "Sturdy", 1: "Terravore", H: "Clear Body" }
+		abilities: { 0: "Sturdy", 1: "Terravore", H: "Clear Body" },
 	},
 	// endregion
 	// region: Gen4
