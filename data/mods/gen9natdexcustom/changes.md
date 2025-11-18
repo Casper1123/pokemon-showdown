@@ -119,6 +119,9 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [politoed]: https://play.pokemonshowdown.com/sprites/gen5ani/politoed.gif
 [crobat]: https://play.pokemonshowdown.com/sprites/gen5ani/crobat.gif
 [meganium]: https://play.pokemonshowdown.com/sprites/gen5ani/meganium.gif
+[larvitar]: https://play.pokemonshowdown.com/sprites/gen5ani/larvitar.gif
+[pupitar]: https://play.pokemonshowdown.com/sprites/gen5ani/pupitar.gif
+[tyranitar]: https://play.pokemonshowdown.com/sprites/gen5ani/tyranitar.gif
 
 [sec-gen3]: .
 [salamence]: https://play.pokemonshowdown.com/sprites/gen5ani/salamence.gif
@@ -148,6 +151,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [swampert]: https://play.pokemonshowdown.com/sprites/gen5ani/swampert.gif
 [latias]: https://play.pokemonshowdown.com/sprites/gen5ani/latias.gif
 [latias-mega]: https://play.pokemonshowdown.com/sprites/gen5ani-shiny/latias-mega.gif
+[regirock]: https://play.pokemonshowdown.com/sprites/gen5ani/regirock.gif
 
 [sec-gen4]: .
 [darkrai]: https://play.pokemonshowdown.com/sprites/gen5ani/darkrai.gif
@@ -460,7 +464,7 @@ While grassy terrain is active, doubles healing from Grassy Terrain and Leftover
 ### Terravore
 When hit with a ![rock]-type attack, restores 1/8 of max HP and gains Terravore effect, boosting ![rock]-type damage by 1.25x.<BR>
 **Users:**<BR>
-*None yet, coming soon.*
+![larvitar]![pupitar]![tyranitar]![regirock]
 
 # Pokémon
 ## Gen 1
