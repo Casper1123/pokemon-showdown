@@ -316,7 +316,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 	},
 
-	
+
 	noability: {
 		isNonstandard: "Past",
 		flags: {},
