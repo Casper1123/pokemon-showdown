@@ -273,7 +273,50 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4,
 		num: -9,
 	},
+	midastouch: {
+		flags: { breakable: 1 },
+		name: "Midas Touch",
+		desc: "Any contact sets target to Steel with Good as Gold. Takes 12.5% each turn.",
+		shortDesc: "Any contact sets target to Steel with Good as Gold. Takes 12.5% each turn.",
+		rating: 3,
+		num: -10,
 
+		// On making contact.
+		onSourceDamagingHit(damage, target, source, move) {
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (this.checkMoveMakesContact(move, target, source)) {
+				this.add('-start', target, 'typechange', 'Steel');
+				target.setAbility('goodasgold');
+				target.addVolatile('midastouch');
+				this.add('-activate', target, 'ability: Midas Touch');
+				this.add('-message', `${target.name} has turned to brittle gold!`);
+			}
+		},
+		onDamagingHit(damage, target, source, move) {
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (this.checkMoveMakesContact(move, source, target)) {
+				this.add('-start', target, 'typechange', 'Steel');
+				target.setAbility('goodasgold');
+				target.addVolatile('midastouch');
+				this.add('-activate', target, 'ability: Midas Touch');
+				this.add('-message', `${target.name} has turned to brittle gold!`);
+			}
+		},
+
+		// DoT status
+		condition: {
+			onStart(pokemon, source) {
+				this.add('-start', pokemon, 'Midas Touch', `[of] ${source}`);
+			},
+			onResidualOrder: 12,
+			onResidual(pokemon) {
+				this.damage(pokemon.baseMaxhp / 8);
+				this.add('-message', `${pokemon.name} is crumbling apart!`);
+			},
+		},
+	},
+
+	
 	noability: {
 		isNonstandard: "Past",
 		flags: {},

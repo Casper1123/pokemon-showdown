@@ -103,6 +103,11 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [slowbro-mega]: https://play.pokemonshowdown.com/sprites/gen5/slowbro-mega.png
 [pidgeot-mega]: https://play.pokemonshowdown.com/sprites/gen5/pidgeot-mega.png
 [moltres-galar]: https://play.pokemonshowdown.com/sprites/gen5/moltres-galar.png
+[persian]: https://play.pokemonshowdown.com/sprites/gen5ani/persian.gif
+[persian-alola]: https://play.pokemonshowdown.com/sprites/gen5ani/persian-alola.gif
+[grimer]: https://play.pokemonshowdown.com/sprites/gen5ani/grimer.gif
+[muk]: https://play.pokemonshowdown.com/sprites/gen5ani/muk.gif
+[muk-alola]: https://play.pokemonshowdown.com/sprites/gen5ani/muk-alola.gif
 
 [sec-gen2]: .
 [celebi]: https://play.pokemonshowdown.com/sprites/gen5ani/celebi.gif
@@ -119,6 +124,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [politoed]: https://play.pokemonshowdown.com/sprites/gen5ani/politoed.gif
 [crobat]: https://play.pokemonshowdown.com/sprites/gen5ani/crobat.gif
 [meganium]: https://play.pokemonshowdown.com/sprites/gen5ani/meganium.gif
+[registeel]: https://play.pokemonshowdown.com/sprites/gen5ani/registeel.gif
 
 [sec-gen3]: .
 [salamence]: https://play.pokemonshowdown.com/sprites/gen5ani/salamence.gif
@@ -174,6 +180,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [hippowdon]: https://play.pokemonshowdown.com/sprites/gen5ani/hippowdon.gif
 [gallade]: https://play.pokemonshowdown.com/sprites/gen5ani/gallade.gif
 [gallade-mega]: https://play.pokemonshowdown.com/sprites/gen5/gallade-mega.png
+[dusknoir]: https://play.pokemonshowdown.com/sprites/gen5ani/dusknoir.gif
 
 
 [sec-gen5]: .
@@ -255,6 +262,8 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [ceruledge]: https://play.pokemonshowdown.com/sprites/gen5/ceruledge.png
 [ironvaliant]: https://play.pokemonshowdown.com/sprites/gen5ani/ironvaliant.gif
 [slitherwing]: https://play.pokemonshowdown.com/sprites/gen5/slitherwing.png
+[gholdengo]: https://play.pokemonshowdown.com/sprites/gen5ani/gholdengo.gif
+[kingambit]: https://play.pokemonshowdown.com/sprites/gen5/kingambit.png
 
 # Moves
 ### ![dragon]![physical] Core Enforcer
@@ -462,6 +471,11 @@ When hit with a ![rock]-type attack, restores 1/8 of max HP and gains Terravore 
 **Users:**<BR>
 *None yet, coming soon.*
 
+### Midas Touch
+Any Pokémon making contact or made contact with will have their type set to ![steel], ability to ***Good as Gold*** and they take 12.5% of max hp each turn. <BR>
+**Users:**<BR>
+![persian]![persian-alola]![grimer]![muk]![muk-alola]![registeel]![dusknoir]
+
 # Pokémon
 ## Gen 1
 ### ![gengar]
@@ -489,6 +503,10 @@ Base Stats:
 ### ![moltres-galar]
 New Moves:
 - ![flying]![status] Roost
+
+### ![grimer]![muk]![muk-alola]
+**Shared:**<BR>
+All formes get access to the custom Ability ***Midas Touch***. Each one has had one of it's abilities replaced.
 
 ## Gen 2
 ### ![ampharos]![ampharos-mega]

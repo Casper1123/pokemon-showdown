@@ -14,6 +14,26 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		types: ["Electric", "Flying"],
 	},
+	persian: {
+		inherit: true,
+		abilities: { 0: "Limber", 1: "Technician", H: "Midas Touch" },
+	},
+	persianalola: {
+		inherit: true,
+		abilities: { 0: "Fur Coat", 1: "Technician", H: "Midas Touch" },
+	},
+	grimer: {
+		inherit: true,
+		abilities: { 0: "Midas Touch", 1: "Sticky Hold", H: "Poison Touch" },
+	},
+	muk: {
+		inherit: true,
+		abilities: { 0: "Midas Touch", 1: "Sticky Hold", H: "Poison Touch" },
+	},
+	mukalola: {
+		inherit: true,
+		abilities: { 0: "Poison Touch", 1: "Midas Touch", H: "Power of Alchemy" },
+	},
 	// endregion
 	// region: Gen2
 	ampharos: {
@@ -122,6 +142,10 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		types: ["Dragon", "Fairy"],
 	},
+	registeel: {
+		inherit: true,
+		abilities: { 0: "Clear Body", 1: "Light Metal", H: "Midas Touch" },
+	},
 	// endregion
 	// region: Gen4
 	garchompmega: {
@@ -191,6 +215,10 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	rotom: {
 		inherit: true,
 		baseStats: { hp: 50, atk: 50, def: 77, spa: 95, spd: 77, spe: 116 },
+	},
+	dusknoir: {
+		inherit: true,
+		abilities: { 0: "Pressure", 1: "Frisk", H: "Midas Touch" },
 	},
 	// endregion
 	// region: Gen5
