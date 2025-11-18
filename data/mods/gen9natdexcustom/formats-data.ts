@@ -106,6 +106,11 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 		natDexTier: "MOD",
 		doublesTier: "DMOD",
 	},
+	tyranitar: {
+		tier: "UU",
+		natDexTier: "MOD",
+		doublesTier: "DMOD",
+	},
 	// endregion
 	// region gen3
 	absolmega: {

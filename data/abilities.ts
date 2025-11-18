@@ -232,6 +232,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 	},
 	terravore: {
+		desc: "12.5% Heal on Rock hit. 30% boost after absorption.",
+		shortDesc: "12.5% Heal on Rock hit. 30% boost after absorption.",
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Rock') {
 				move.accuracy = true;

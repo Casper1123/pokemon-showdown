@@ -81,6 +81,18 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Overgrow", 1: "Leaf Guard", H: "Grassy Surge" },
 	},
+	larvitar: {
+		inherit: true,
+		abilities: { 0: "Guts", 1: "Terravore", H: "Sand Veil" },
+	},
+	pupitar: {
+		inherit: true,
+		abilities: { 0: "Shed Skin", H: "Terravore" },
+	},
+	tyranitar: {
+		inherit: true,
+		abilities: { 0: "Unnerve", 1: "Terravore", H: "Sand Stream" },
+	},
 	// endregion
 	// region: Gen3
 	absolmega: {
@@ -145,6 +157,9 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	registeel: {
 		inherit: true,
 		abilities: { 0: "Clear Body", 1: "Light Metal", H: "Midas Touch" },
+	regirock: {
+		inherit: true,
+		abilities: { 0: "Sturdy", 1: "Terravore", H: "Clear Body" }
 	},
 	// endregion
 	// region: Gen4
