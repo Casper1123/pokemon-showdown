@@ -188,6 +188,8 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "minior", "hurricane");
 	setMove(data, modPatch, "minior", "airslash");
 	setMove(data, modPatch, "golisopod", "uturn");
+	setMove(data, modPatch, "tapubulu", "spiritbreak");
+	setMove(data, modPatch, "tapubulu", "playrough");
 	// endregion
 	// region Gen8
 	setMove(data, modPatch, "wooloo", "bodypress");
