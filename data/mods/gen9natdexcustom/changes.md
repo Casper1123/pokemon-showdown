@@ -407,7 +407,7 @@ PP: 15<BR>
 20% chance to Flinch. <BR>
 If moving after the target, deals 1.5x damage instead.<BR>
 **Users:**<BR>
-![banette]![banette-mega]
+![banette]![banette-mega]![giratina]![giratina-origin]
 
 ### ![psychic]![status] Time Stop
 PP: 10<BR>
@@ -876,6 +876,7 @@ New Moves:
 - ![fairy]![status] Fairy Lock
 - ![fairy]![status] Misty Terrain
 - ![flying]![status] Roost
+- ![ghost]![physical] Stalk
 - ![grass]![status] Grassy Terrain
 - ![ground]![status] Mud Sport
 - ![ground]![status] Spikes
