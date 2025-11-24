@@ -908,6 +908,9 @@ Base Stats:
 - Total: `490` --> `540`
 
 ### ![rotom]
+New Moves: *These carry over to all other forms*
+- ![normal]![status] Recover
+
 Base Stats:
 - hp: `50`
 - atk: `50`

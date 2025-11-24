@@ -93,6 +93,12 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "toxicroak", "liquidation");
 	setMove(data, modPatch, "toxicroak", "uturn");
 	setMove(data, modPatch, "rotomheat", "heatwave");
+	setMove(data, modPatch, "rotom", "recover");
+	setMove(data, modPatch, "rotomheat", "recover");
+	setMove(data, modPatch, "rotommow", "recover");
+	setMove(data, modPatch, "rotomwash", "recover");
+	setMove(data, modPatch, "rotomfan", "recover");
+	setMove(data, modPatch, "rotomfrost", "recover");
 	setMove(data, modPatch, "rotomheat", "firepledge");
 	setMove(data, modPatch, "rotomheat", "inferno");
 	setMove(data, modPatch, "rotommow", "grasspledge");
