@@ -278,8 +278,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	midastouch: {
 		flags: { breakable: 1 },
 		name: "Midas Touch",
-		desc: "Any contact sets target to Steel with Good as Gold. Takes 12.5% each turn.",
-		shortDesc: "Any contact sets target to Steel with Good as Gold. Takes 12.5% each turn.",
+		desc: "Any contact sets target to Steel with Good as Gold, dealing 12.5% each turn.",
+		shortDesc: "Any contact sets target to Steel with Good as Gold, dealing 12.5% each turn.",
 		rating: 3,
 		num: -10,
 
