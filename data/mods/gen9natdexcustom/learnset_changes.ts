@@ -148,6 +148,7 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	setMove(data, modPatch, "scolipede", "collisioncourse");
 	setMove(data, modPatch, "haxorus", "dragonrush");
 	setMove(data, modPatch, "durant", "highhorsepower");
+	setMove(data, modPatch, "durant", "stealthrock");
 	setMove(data, modPatch, "gigalith", "diamondstorm");
 	setMove(data, modPatch, "gigalith", "shoreup");
 	setMove(data, modPatch, "gigalith", "trickroom");

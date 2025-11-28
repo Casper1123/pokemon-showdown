@@ -1013,6 +1013,7 @@ Base Stats:
 Abilities: `Defiant`, `Hustle`, `Truant`<BR>
 New Moves:
 - ![ground]![physical] High Horsepower
+- ![rock]![status] Stealth Rock
 
 ### ![gigalith]
 New Moves:
