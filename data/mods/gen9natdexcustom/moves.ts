@@ -100,6 +100,12 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		gen: 9,
 		isNonstandard: undefined,
+		onTryMove() {
+			this.attrLastMove('[still]');
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Luster Purge', target);
+		},
 	},
 	roaroftime: {
 		inherit: true,
