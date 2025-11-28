@@ -30,6 +30,8 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 	// region Gen1
 	setMove(data, modPatch, "pidgeot", "zapcannon");
 	setMove(data, modPatch, "pidgeot", "thunder");
+	setMove(data, modPatch, "pidgeot", "inferno");
+	setMove(data, modPatch, "pidgeot", "focusblast");
 	setMove(data, modPatch, "moltresgalar", "roost");
 	// endregion
 	// region Gen2

@@ -493,6 +493,8 @@ Type: ![normal]![flying] --> ![electric]![flying]<BR>
 New Moves: <BR>
 - ![electric]![special] Thunder
 - ![electric]![special] Zap Cannon
+- ![fire]![special] Inferno
+- ![fighting]![special] Focus Blast
 
 ### ![slowbro-mega]
 Base Stats:
