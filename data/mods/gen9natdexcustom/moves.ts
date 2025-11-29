@@ -99,7 +99,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	lightofruin: {
 		inherit: true,
 		gen: 9,
-		isNonstandard: undefined,
+		isNonstandard: null,
 		onTryMove() {
 			this.attrLastMove('[still]');
 		},
