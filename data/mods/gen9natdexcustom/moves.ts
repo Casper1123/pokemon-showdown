@@ -30,7 +30,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			duration: 6,
 			durationCallback(source, effect) {
 				let timer = 5;
-				if (this.format.gameType !== 'singles') timer += 1;
+				if (this.format.gameType !== 'doubles') timer += 1;
 				if (source?.hasAbility('persistent')) {
 					this.add('-activate', source, 'ability: Persistent', '[move] Trick Room');
 					timer += 2;
