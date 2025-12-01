@@ -91,8 +91,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Dark",
 		contestType: "Cool",
-		desc: "Phys if Atk > SpA. 30% chance to: Suppress Ability, Paralyze, Drowsy, Confusion or Flinch.",
-		shortDesc: "Phys if Atk > SpA. 30% to inflict a disruptive effect.",
+		desc: "Phys if Atk > SpA. 50% chance to: Suppress Ability, Paralyze, Drowsy, Confusion or Flinch.",
+		shortDesc: "Phys if Atk > SpA. 50% to inflict a disruptive effect.",
 	},
 	shadowflame: {
 		isNonstandard: "Custom",
