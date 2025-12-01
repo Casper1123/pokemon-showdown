@@ -432,7 +432,6 @@ Damage dealt by moves of type ![ground] ![rock] ![steel] type deal `30% -> 50%` 
 ![garchomp-mega] ![excadrill] ![krookodile] ![steelix-mega]
 
 ### Shields Down
-Ability description goes here: <BR>
 Now works like Stance Change (protective move: ![normal]![status]Protect). <BR>
 Additionally grants Status immunity.
 **Users:**<BR>
