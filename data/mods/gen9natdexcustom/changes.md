@@ -1099,7 +1099,7 @@ Abilities: `Torrent`, `Shell Armor`, `Inner Focus` <BR>
 New Moves:
 - ![fighting]![physical] Close Combat
 - ![fighting]![physical] Sacred Sword
-- ![fighting]![physical] Secret Sword
+- ![fighting]![special] Secret Sword
 - ![normal]![status] Shell Smash
 - ![water]![physical] Wave Crash
 
