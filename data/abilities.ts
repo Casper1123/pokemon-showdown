@@ -285,7 +285,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 
 		// On making contact.
 		onSourceDamagingHit(damage, target, source, move) {
-			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak') || source.hasAbility('midastouch')) return;
 			if (this.checkMoveMakesContact(move, target, source)) {
 				this.add('-start', target, 'typechange', 'Steel');
 				target.setAbility('goodasgold');
@@ -295,7 +295,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onDamagingHit(damage, target, source, move) {
-			if (source.hasAbility('shielddust') || source.hasItem('covertcloak')) return;
+			if (source.hasAbility('shielddust') || source.hasItem('covertcloak') || source.hasAbility('midastouch')) return;
 			if (this.checkMoveMakesContact(move, source, target)) {
 				this.add('-start', source, 'typechange', 'Steel');
 				source.setAbility('goodasgold');
