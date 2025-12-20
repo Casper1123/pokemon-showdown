@@ -295,13 +295,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onDamagingHit(damage, target, source, move) {
-			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (source.hasAbility('shielddust') || source.hasItem('covertcloak')) return;
 			if (this.checkMoveMakesContact(move, source, target)) {
-				this.add('-start', target, 'typechange', 'Steel');
-				target.setAbility('goodasgold');
-				target.addVolatile('midastouch');
-				this.add('-activate', target, 'ability: Midas Touch');
-				this.add('-message', `${target.name} has turned to brittle gold!`);
+				this.add('-start', source, 'typechange', 'Steel');
+				source.setAbility('goodasgold');
+				source.addVolatile('midastouch');
+				this.add('-activate', source, 'ability: Midas Touch');
+				this.add('-message', `${source.name} has turned to brittle gold!`);
 			}
 		},
 
