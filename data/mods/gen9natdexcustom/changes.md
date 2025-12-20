@@ -476,6 +476,7 @@ When hit with a ![rock]-type attack, restores 1/8 of max HP and gains Terravore 
 
 ### Midas Touch
 Any Pokémon making contact or made contact with will have their type set to ![steel], ability to ***Good as Gold*** and they take 12.5% of max hp each turn. <BR>
+**Midas Touch** holders are immune to this effect. <BR>
 **Users:**<BR>
 ![persian]![persian-alola]![grimer]![muk]![muk-alola]![registeel]![dusknoir]
 
