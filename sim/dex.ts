@@ -165,7 +165,6 @@ export class ModdedDex {
 
 	mod(mod: string | undefined): ModdedDex {
 		if (!dexes['base'].modsLoaded) dexes['base'].includeMods();
-		console.log('Accessing data for mod', mod);
 		return dexes[mod || 'base'].includeData();
 	}
 
