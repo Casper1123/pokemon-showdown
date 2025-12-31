@@ -425,4 +425,9 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 	},
 	// endregion
 	// endregion
+	lurantis: {
+		tier: "ZU",
+		natDexTier: "RUBL",
+		natDexDoublesOverride: "(Uber)",
+	},
 };
