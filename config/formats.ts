@@ -41,7 +41,9 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		gameType: "doubles",
 		ruleset: ["Team Preview", // 'Illusory Nicknames', Does not work with Open Team Sheets// Custom  'gen9natdexcustom UbersAg', 'gen9natdexcustom megaray',
 			'Dynamax Clause', 'Natdex Mod', '+move:lightofruin', // Natdex
-			'Open Team Sheets', 'Item Clause = 1', 'Cancel Mod', 'Species Clause', 'Nickname Clause', 'Adjust Level = 50', 'Picked Team Size = Auto', 'Mega Rayquaza Clause', 'Best Of = 3'], // VGC
+			'Open Team Sheets', 'Item Clause = 1', 'Cancel Mod', 'Species Clause', 'Nickname Clause', 'Adjust Level = 50', 'Picked Team Size = Auto', 'Mega Rayquaza Clause', 'Best Of = 3', // VGC
+			'Z-Move Clause', 'Mega Evolution Clause', // Other
+		],
 		banlist: ['Shedinja', 'Assist'],
 		unbanlist: ['Greninja-Bond'], // 'Mythical', 'Restricted Legendary',
 	},

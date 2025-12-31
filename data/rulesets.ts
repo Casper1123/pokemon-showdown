@@ -1485,6 +1485,25 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 			this.add('rule', 'Z-Move Clause: Z-Moves are banned');
 		},
 	},
+	megaevolutionclause: {
+		effectType: 'ValidatorRule',
+		name: 'Mega Evolution Clause',
+		desc: "Bans Pok&eacute;mon from holding Mega Stones or Mega Evolving some other way",
+		onValidateSet(set) {
+			const item = this.dex.items.get(set.item);
+			if (item.megaStone) return [`${set.name || set.species}'s item ${item.name} is banned by Mega Evolution Clause.`];
+		},
+		onBegin() {
+			this.add('rule', 'Mega Evolution Clause: Mega Evolutions are banned');
+
+			// Force prevent mega evolution.
+			for (const side of this.sides) {
+				for (const mon of side.pokemon) {
+					mon.canMegaEvo = null;
+				}
+			}
+		},
+	},
 	notfullyevolved: {
 		effectType: 'ValidatorRule',
 		name: 'Not Fully Evolved',
