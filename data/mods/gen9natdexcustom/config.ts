@@ -18,7 +18,7 @@ export const ModConfig = {
 	doublesMaxAG: 0,
 
 	doublesUberTeamSize: 6,
-	doublesUberAGTeamSize: 4,
-	doubleMegaWhenUbersAG: true,
-	doubleMaxMechanics: -1,
+	doublesAGTeamSize: 0,
+	doublesMegaWhenUbersAG: true,
+	doublesMaxMechanics: -1,
 };

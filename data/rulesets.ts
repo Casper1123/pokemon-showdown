@@ -245,13 +245,14 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 		],
 		onValidateSet(set) {
 			const species = this.dex.species.get(set.species);
-			if (species.natDexTier === 'Illegal') {
+			const speciesTier = (species.natDexDoublesOverride && this.format.gameType === 'doubles') ? species.natDexDoublesOverride : species.natDexTier;
+			if (speciesTier === 'Illegal') {
 				if (this.ruleTable.has(`+pokemon:${species.id}`)) return;
 				return [`${set.name || set.species} does not exist in the National Dex.`];
 			}
 			const requireObtainable = this.ruleTable.has('obtainable');
 			if (requireObtainable) {
-				if (species.natDexTier === "Unreleased") {
+				if (speciesTier === "Unreleased") {
 					const basePokemon = this.toID(species.baseSpecies);
 					if (this.ruleTable.has(`+pokemon:${species.id}`) || this.ruleTable.has(`+basepokemon:${basePokemon}`)) {
 						return;
@@ -2497,7 +2498,7 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 			};
 			const tiers = ['ou', 'uubl', 'uu', 'rubl', 'ru', 'nubl', 'nu', 'publ', 'pu', 'zubl', 'zu', 'nfe', 'lc'];
 			const isNatDex = !!this.ruleTable?.has('natdexmod');
-			let tier: string = this.toID(isNatDex ? species.natDexTier : species.tier);
+			let tier: string = this.toID(isNatDex ? ((species.natDexDoublesOverride && this.format.gameType === 'doubles') ? species.natDexDoublesOverride : species.natDexTier) : species.tier);
 			if (!(tier in boosts)) return;
 			// Non-Pokemon bans in lower tiers
 			if (target && !isNatDex) {
@@ -2916,7 +2917,7 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 		onChangeSet(set, format, setHas, teamHas) {
 			let species = this.dex.species.get(set.species);
 			if (
-				(species.natDexTier === 'Illegal' || species.forme.includes('Totem')) &&
+				(((species.natDexDoublesOverride && this.format.gameType === 'doubles') ? species.natDexDoublesOverride : species.natDexTier) === 'Illegal' || species.forme.includes('Totem')) &&
 				!['Eevee-Starter', 'Floette-Eternal', 'Greninja-Ash', 'Pikachu-Starter', 'Xerneas-Neutral'].includes(species.name) &&
 				!this.ruleTable.has(`+pokemon:${species.id}`)
 			) {

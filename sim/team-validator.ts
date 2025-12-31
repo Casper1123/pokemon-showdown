@@ -1755,8 +1755,10 @@ export class TeamValidator {
 		const doublesTierTag = 'pokemontag:' + toID(doublesTier);
 		setHas[doublesTierTag] = true;
 
-		const ndTier = tierSpecies.natDexTier === '(PU)' ? 'ZU' :
-			tierSpecies.natDexTier === '(NU)' ? 'PU' : tierSpecies.natDexTier;
+		let ndTier;
+		if (this.format.gameType === 'doubles' && tierSpecies.natDexDoublesOverride) ndTier = tierSpecies.natDexDoublesOverride;
+		else ndTier	= tierSpecies.natDexTier;
+		ndTier = ndTier === '(PU)' ? 'ZU' :	ndTier === '(NU)' ? 'PU' : ndTier;
 		const ndTierTag = 'pokemontag:nd' + toID(ndTier);
 		setHas[ndTierTag] = true;
 
