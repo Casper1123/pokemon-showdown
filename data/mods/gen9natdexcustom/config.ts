@@ -10,7 +10,7 @@ export const ModConfig = {
 	// Other
 	megaWhenUbersAG: true, // Allows the use of Mega Stones if an Uber is on the team
 	maxMechanics: -1, // Limits the amount of battle mechanics; Includes: Gems, Mega, Z-moves, Tera, Uber -1 if any.
-	// todo: make rule for this.
+	// todo: implement into rules
 
 	// Doubles
 	doublesMaxRestricted: 0,
