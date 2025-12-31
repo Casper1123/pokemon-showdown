@@ -248,19 +248,19 @@ export const Tags: { [id: IDEntry]: TagData } = {
 	// -------------
 	ndag: {
 		name: "ND AG",
-		speciesFilter: species => species.natDexTier === 'AG',
+		speciesFilter: species => (species.natDexDoublesOverride ? species.natDexDoublesOverride : species.natDexTier) === 'AG',
 	},
 	nduber: {
 		name: "ND Uber",
-		speciesFilter: species => species.natDexTier === 'Uber' || species.natDexTier === '(Uber)',
+		speciesFilter: species => ['Uber', '(Uber)'].includes(species.natDexDoublesOverride ? species.natDexDoublesOverride : species.natDexTier),
 	},
 	ndmoduber: {
 		name: "ND MOD Uber",
-		speciesFilter: species => species.natDexTier === 'MOD Uber',
+		speciesFilter: species => (species.natDexDoublesOverride ? species.natDexDoublesOverride : species.natDexTier) === 'MOD Uber',
 	},
 	ndmod: {
 		name: "MOD",
-		speciesFilter: species => species.natDexTier === 'MOD',
+		speciesFilter: species => (species.natDexDoublesOverride ? species.natDexDoublesOverride : species.natDexTier) === 'MOD',
 	},
 	nddmoduber: {
 		name: "ND DMOD Uber",
@@ -272,31 +272,31 @@ export const Tags: { [id: IDEntry]: TagData } = {
 	},
 	ndou: {
 		name: "ND OU",
-		speciesFilter: species => species.natDexTier === 'OU' || species.natDexTier === '(OU)',
+		speciesFilter: species => ['OU', '(OU)'].includes(species.natDexDoublesOverride ? species.natDexDoublesOverride : species.natDexTier),
 	},
 	nduubl: {
 		name: "ND UUBL",
-		speciesFilter: species => species.natDexTier === 'UUBL',
+		speciesFilter: species => (species.natDexDoublesOverride ? species.natDexDoublesOverride : species.natDexTier) === 'UUBL',
 	},
 	nduu: {
 		name: "ND UU",
-		speciesFilter: species => species.natDexTier === 'UU',
+		speciesFilter: species => (species.natDexDoublesOverride ? species.natDexDoublesOverride : species.natDexTier) === 'UU',
 	},
 	ndrubl: {
 		name: "ND RUBL",
-		speciesFilter: species => species.natDexTier === 'RUBL',
+		speciesFilter: species => (species.natDexDoublesOverride ? species.natDexDoublesOverride : species.natDexTier) === 'RUBL',
 	},
 	ndru: {
 		name: "ND RU",
-		speciesFilter: species => species.natDexTier === 'RU',
+		speciesFilter: species => (species.natDexDoublesOverride ? species.natDexDoublesOverride : species.natDexTier) === 'RU',
 	},
 	ndnfe: {
 		name: "ND NFE",
-		speciesFilter: species => species.natDexTier === 'NFE',
+		speciesFilter: species => (species.natDexDoublesOverride ? species.natDexDoublesOverride : species.natDexTier) === 'NFE',
 	},
 	ndlc: {
 		name: "ND LC",
-		speciesFilter: species => species.natDexTier === 'LC',
+		speciesFilter: species => (species.natDexDoublesOverride ? species.natDexDoublesOverride : species.natDexTier) === 'LC',
 	},
 
 	// Legality tags
