@@ -44,7 +44,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'Force Open Team Sheets', 'Item Clause = 1', 'Cancel Mod', 'Species Clause', 'Nickname Clause', 'Adjust Level = 50', 'Picked Team Size = Auto', 'Mega Rayquaza Clause', 'Best Of = 3', // VGC
 			'Z-Move Clause', 'Mega Evolution Clause', // Other
 		],
-		banlist: ['Shedinja', 'Assist'],
+		banlist: ['Shedinja', 'Assist', 'Uber', 'AG', 'MOD Uber'],
 		unbanlist: ['Greninja-Bond'], // 'Mythical', 'Restricted Legendary',
 	},
 	// National Dex
