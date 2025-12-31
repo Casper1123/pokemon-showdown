@@ -54,7 +54,7 @@ function isUberSet(dex: ModdedDex, set: PokemonSet, doubles: boolean): boolean {
 
 	let tier = species.natDexTier;
 	if (doubles && species.natDexDoublesOverride) tier = species.natDexDoublesOverride;
-	return tier === 'Uber' || tier === 'MOD Uber';
+	return tier === 'Uber' || tier === 'MOD Uber' || tier === '(Uber)';
 }
 
 // The list of formats is stored in config/formats.js
