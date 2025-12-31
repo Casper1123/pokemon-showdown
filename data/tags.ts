@@ -136,6 +136,14 @@ export const Tags: { [id: IDEntry]: TagData } = {
 		name: "Uber",
 		speciesFilter: species => species.tier === 'Uber' || species.tier === '(Uber)' || species.tier === 'AG',
 	},
+	moduber: {
+		name: "MOD Uber",
+		speciesFilter: species => species.tier === 'MOD Uber',
+	},
+	mod: {
+		name: "MOD",
+		speciesFilter: species => species.tier === 'MOD',
+	},
 	ou: {
 		name: "OU",
 		speciesFilter: species => species.tier === 'OU' || species.tier === '(OU)',
@@ -211,6 +219,14 @@ export const Tags: { [id: IDEntry]: TagData } = {
 		name: "DUber",
 		speciesFilter: species => species.doublesTier === 'DUber' || species.doublesTier === '(DUber)',
 	},
+	dmoduber: {
+		name: "DMOD Uber",
+		speciesFilter: species => species.doublesTier === 'DMOD Uber',
+	},
+	dmod: {
+		name: "DMOD",
+		speciesFilter: species => species.doublesTier === 'DMOD',
+	},
 	dou: {
 		name: "DOU",
 		speciesFilter: species => species.doublesTier === 'DOU' || species.doublesTier === '(DOU)',
@@ -237,6 +253,22 @@ export const Tags: { [id: IDEntry]: TagData } = {
 	nduber: {
 		name: "ND Uber",
 		speciesFilter: species => species.natDexTier === 'Uber' || species.natDexTier === '(Uber)',
+	},
+	ndmoduber: {
+		name: "ND MOD Uber",
+		speciesFilter: species => species.natDexTier === 'MOD Uber',
+	},
+	ndmod: {
+		name: "MOD",
+		speciesFilter: species => species.natDexTier === 'MOD',
+	},
+	nddmoduber: {
+		name: "ND DMOD Uber",
+		speciesFilter: species => (species.natDexDoublesOverride ? species.natDexDoublesOverride : species.natDexTier) === 'MOD Uber',
+	},
+	nddmodr: {
+		name: "ND DMOD Uber",
+		speciesFilter: species => (species.natDexDoublesOverride ? species.natDexDoublesOverride : species.natDexTier) === 'MOD',
 	},
 	ndou: {
 		name: "ND OU",
