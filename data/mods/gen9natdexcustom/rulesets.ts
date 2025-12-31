@@ -82,28 +82,22 @@ export const Rulesets: import('../../../sim/dex-formats').FormatDataTable = {
 
 			const problems: string[] = [];
 
-			if ((!isDoubles && uberCount > ModConfig.maxUber) || (isDoubles && uberCount > ModConfig.doublesMaxUber)) {
+			if (uberCount > (isDoubles ? ModConfig.doublesMaxUber : ModConfig.maxUber)) {
 				problems.push(`You may only use up to ${ModConfig.maxUber} Uber-tier Pokémon (you have ${uberCount}).`);
 			}
 
-			if ((!isDoubles && agCount > ModConfig.maxAG) || (isDoubles && agCount > ModConfig.doublesMaxAG)) {
+			if (agCount > (isDoubles ? ModConfig.doublesMaxAG : ModConfig.maxAG)) {
 				problems.push(`You may only use up to ${ModConfig.maxAG} AG-tier Pokémon (you have ${agCount}).`);
 			}
 
-			if (
-				(!isDoubles && uberCount + agCount > ModConfig.maxRestricted) ||
-				(isDoubles && uberCount + agCount > ModConfig.doublesMaxRestricted)) {
+			if (uberCount + agCount > (isDoubles ? ModConfig.doublesMaxRestricted : ModConfig.maxRestricted)) {
 				problems.push(`You may not use more than ${ModConfig.maxRestricted} Pokémon from the Uber or AG tiers combined (you have ${uberCount + agCount}).`);
 			}
 
-			if (
-				(!isDoubles && uberCount > 0 && team.length > ModConfig.uberTeamSize) ||
-				(isDoubles && uberCount > 0 && team.length > ModConfig.doublesUberTeamSize)) {
+			if (uberCount > 0 && team.length > (isDoubles ? ModConfig.doublesUberTeamSize : ModConfig.uberTeamSize)) {
 				problems.push(`Teams with Uber-tier Pokémon may only have up to ${ModConfig.uberTeamSize} total Pokémon (you have ${team.length}).`);
 			}
-			if (
-				(!isDoubles && agCount > 0 && team.length > ModConfig.agTeamSize) ||
-				(isDoubles && agCount > 0 && team.length > ModConfig.doublesAGTeamSize)) {
+			if (agCount > 0 && team.length > (isDoubles ? ModConfig.doublesAGTeamSize : ModConfig.agTeamSize)) {
 				problems.push(`Teams with AG-tier Pokémon may only have up to ${ModConfig.agTeamSize} total Pokémon (you have ${team.length}).`);
 			}
 
