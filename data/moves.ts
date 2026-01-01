@@ -1,5 +1,24 @@
 // List of flags and their descriptions can be found in sim/dex-moves.ts
 
+/*
+	movename: {
+		num: -55,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Shadow Fangs",
+		pp: 10,
+		priority: 0,
+		flags: {},
+		secondary: null,
+		target: "normal",
+		type: "Ghost",
+		desc: "Breaks protect.",
+		shortDesc: "Breaks protect.",
+		isNonstandard: "Custom",
+	},
+ */
+
 export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	// Custom moves:
 	desertsong: {
@@ -244,6 +263,80 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		desc: "Breaks protect.",
 		shortDesc: "Breaks protect.",
 		isNonstandard: "Custom",
+	},
+	needlethrow: {
+		num: -56,
+		accuracy: 90,
+		basePower: 100,
+		category: "Physical",
+		name: "Needle Throw",
+		pp: 15,
+		priority: 0,
+		flags: { bullet: 1, distance: 1, gravity: 1, metronome: 1, mirror: 1, protect: 1, slicing: 1, snatch: 1 },
+		secondaries: [
+			{
+				chance: 100,
+				boosts: {
+					spe: -1,
+				},
+			},
+			{
+				chance: 15,
+				volatileStatus: 'flinch',
+			},
+		],
+		target: "normal",
+		type: "Steel",
+		desc: "15% Flinch. Target: -1 Spe.",
+		shortDesc: "15% Flinch. Lowers the target's Speed by 1 stage.",
+		isNonstandard: "Custom",
+	},
+	weavegarments: {
+		num: -57,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Weave Garments",
+		pp: 10,
+		priority: 0,
+		flags: { },
+		secondaries: null,
+		target: "adjacentAllyOrSelf",
+		type: "Bug",
+		desc: "+1 SpD, Spe & Acc and immune to status. Wears off after status effect, Fire or Ice move.",
+		shortDesc: "+1 SpD, Spe & Acc and immune to status. Wears off after status effect, Fire or Ice move.",
+		isNonstandard: "Custom",
+
+		volatileStatus: 'wovengarments',
+		onTryHit(target, source, move) {
+			if (move.volatileStatus && target.volatiles['wovengarments']) {
+				this.add('-message', `${target.name} is already wearing appropriate attire!`);
+				return false;
+			}
+		},
+		condition: {
+			name: "Woven Garments",
+			onStart(pokemon, source) {
+				this.add('-start', pokemon, 'Woven Garments', `[of] ${source}`);
+				this.boost({ spe: 1, spd: 1, accuracy: 1 }, source);
+			},
+			onEnd(target) {
+				this.add('-message', `${target.name}'s fine garments lie in ruin!`);
+				this.boost({ spe: -1, spd: -1, accuracy: -1 }, target);
+			},
+			onFoeSetStatus(status, target, source, effect) {
+				// ['par', 'slp', 'brn', 'frz', 'psn', 'tox']
+				if (!['par', 'slp', 'brn', 'frz', 'psn', 'tox'].includes(status.id)) return;
+				target.removeVolatile('wovengarments');
+				return false;
+			},
+			onAfterHit(source, target, move) {
+				if (move.category === 'Status') return;
+				if (!['fire', 'ice'].includes(move.type)) return;
+
+				target.removeVolatile('wovengarments');
+			},
+		},
 	},
 
 	"10000000voltthunderbolt": {

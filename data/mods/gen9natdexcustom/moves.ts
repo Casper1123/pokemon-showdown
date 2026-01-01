@@ -257,4 +257,12 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	needlethrow: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	weavegarments: {
+		inherit: true,
+		isNonstandard: null,
+	},
 };
