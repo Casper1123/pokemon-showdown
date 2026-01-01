@@ -284,7 +284,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		flags: { breakable: 1 },
 		name: "Terravore",
-		rating: 4,
+		rating: 2,
 		num: -9,
 	},
 	midastouch: {
