@@ -52,7 +52,12 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 		natDexTier: "Uber",
 		natDexDoublesOverride: "OU",
 	},
-
+	sneasler: {
+		tier: "Uber",
+		doublesTier: "DOU",
+		natDexTier: "Uber",
+		natDexDoublesOverride: "OU",
+	},
 	blazikenmega: {
 		isNonstandard: "Past",
 		tier: "Illegal",
