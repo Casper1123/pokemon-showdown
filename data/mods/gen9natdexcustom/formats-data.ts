@@ -26,6 +26,12 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 		natDexTier: "OU",
 		natDexDoublesOverride: "Uber",
 	},
+	terapagosterastal: {
+		tier: "Uber",
+		doublesTier: "DUber",
+		natDexTier: "OU",
+		natDexDoublesOverride: "Uber",
+	},
 	terapagosstellar: {
 		tier: "Uber",
 		doublesTier: "DUber",
