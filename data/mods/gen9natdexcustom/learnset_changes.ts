@@ -1,4 +1,3 @@
-import type { ModPatch } from "../../../server/custom-endpoints/modpatch";
 import { Dex } from '../../../sim/dex';
 import { setMove } from "../../../utilities/mod_alter";
 
@@ -6,9 +5,8 @@ import { setMove } from "../../../utilities/mod_alter";
  * A function to apply movepool changes. Works like the script in 'mods/vaporemons'
  * just outside of the scripts.ts file to allow us to easily inject a patch object to track changes applied to the mod.
  * @param data
- * @param modPatch
  */
-export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = undefined): void {
+export function applyChanges(data: ModdedDex): void {
 	// Very shoddy script for adding Hidden Power to mons that don't get it (gen8, gen9)
 	// Add Hidden Power to all Pokémon introduced after gen7, because the move was dexited in gen8. Might be risky with Regieleki :/
 	const dex = Dex.mod('gen9natdexcustom');
@@ -21,242 +19,250 @@ export function applyChanges(data: ModdedDex, modPatch: ModPatch | undefined = u
 			} else if (!data.data.Learnsets[id].learnset) {
 				data.data.Learnsets[id].learnset = {};
 			}
-			setMove(data, modPatch, id, "hiddenpower");
+			setMove(data, id, "hiddenpower");
 		}
-		// todo: protect for everyone
-		// todo: tera blast for everyone?
+		// tera blast for everyone?
+		if (species.gen < 9) {
+			const id = species.id;
+			if (!data.data.Learnsets[id]) {
+				continue;
+			} else if (!data.data.Learnsets[id].learnset) {
+				data.data.Learnsets[id].learnset = {};
+			}
+			setMove(data, id, "terablast");
+		}
 	}
 
 	// region Gen1
-	setMove(data, modPatch, "pidgeot", "zapcannon");
-	setMove(data, modPatch, "pidgeot", "thunder");
-	setMove(data, modPatch, "pidgeot", "inferno");
-	setMove(data, modPatch, "pidgeot", "focusblast");
-	setMove(data, modPatch, "moltresgalar", "roost");
+	setMove(data, "pidgeot", "zapcannon");
+	setMove(data, "pidgeot", "thunder");
+	setMove(data, "pidgeot", "inferno");
+	setMove(data, "pidgeot", "focusblast");
+	setMove(data, "moltresgalar", "roost");
 	// endregion
 	// region Gen2
-	setMove(data, modPatch, "ampharos", "dracometeor");
-	setMove(data, modPatch, "ampharos", "tailglow");
-	setMove(data, modPatch, "ampharos", "thunderclap");
-	setMove(data, modPatch, "ampharos", "paraboliccharge");
-	setMove(data, modPatch, "typhlosion", "earthpower");
-	setMove(data, modPatch, "typhlosionhisui", "shadowflame");
-	setMove(data, modPatch, "celebi", "timestop");
-	setMove(data, modPatch, "suicune", "mistyexplosion");
-	setMove(data, modPatch, "suicune", "mistball");
-	setMove(data, modPatch, "suicune", "strangesteam");
-	setMove(data, modPatch, "suicune", "mistyterrain");
-	setMove(data, modPatch, "suicune", "recover");
-	setMove(data, modPatch, "steelix", "coil");
-	setMove(data, modPatch, "raikou", "tailwind");
-	setMove(data, modPatch, "houndoom", "fierywrath");
-	setMove(data, modPatch, "politoed", "recover");
-	setMove(data, modPatch, "crobat", "gunkshot");
+	setMove(data, "ampharos", "dracometeor");
+	setMove(data, "ampharos", "tailglow");
+	setMove(data, "ampharos", "thunderclap");
+	setMove(data, "ampharos", "paraboliccharge");
+	setMove(data, "typhlosion", "earthpower");
+	setMove(data, "typhlosionhisui", "shadowflame");
+	setMove(data, "celebi", "timestop");
+	setMove(data, "suicune", "mistyexplosion");
+	setMove(data, "suicune", "mistball");
+	setMove(data, "suicune", "strangesteam");
+	setMove(data, "suicune", "mistyterrain");
+	setMove(data, "suicune", "recover");
+	setMove(data, "steelix", "coil");
+	setMove(data, "raikou", "tailwind");
+	setMove(data, "houndoom", "fierywrath");
+	setMove(data, "politoed", "recover");
+	setMove(data, "crobat", "gunkshot");
 	// endregion
 	// region Gen3
-	setMove(data, modPatch, "absol", "lightofruin");
-	setMove(data, modPatch, "absol", "spiritbreak");
-	setMove(data, modPatch, "absol", "partingshot");
-	setMove(data, modPatch, "flygon", "desertsong"); // Custom signature move.
-	setMove(data, modPatch, "flygon", "nastyplot");
-	setMove(data, modPatch, "aggron", "hornleech");
-	setMove(data, modPatch, "aggron", "slackoff");
-	setMove(data, modPatch, "manectric", "icebeam");
-	setMove(data, modPatch, "manectric", "paraboliccharge");
-	setMove(data, modPatch, "sceptile", "dracometeor");
-	setMove(data, modPatch, "sceptile", "chloroblast");
-	setMove(data, modPatch, "sceptile", "nastyplot");
-	setMove(data, modPatch, "deoxys", "bodypress");
-	setMove(data, modPatch, "metagross", "swordsdance");
-	setMove(data, modPatch, "altaria", "explosion");
-	setMove(data, modPatch, "altaria", "doubleedge");
-	setMove(data, modPatch, "altaria", "smellingsalts");
-	setMove(data, modPatch, "altaria", "calmmind");
-	setMove(data, modPatch, "altaria", "drainingkiss");
-	setMove(data, modPatch, "camerupt", "sandsearstorm");
-	setMove(data, modPatch, "sharpedo", "swordsdance");
-	setMove(data, modPatch, "banette", "poltergheist");
-	setMove(data, modPatch, "banette", "shadowforce");
-	setMove(data, modPatch, "banette", "stalk");
-	setMove(data, modPatch, "latias", "moonblast");
+	setMove(data, "absol", "lightofruin");
+	setMove(data, "absol", "spiritbreak");
+	setMove(data, "absol", "partingshot");
+	setMove(data, "flygon", "desertsong"); // Custom signature move.
+	setMove(data, "flygon", "nastyplot");
+	setMove(data, "aggron", "hornleech");
+	setMove(data, "aggron", "slackoff");
+	setMove(data, "manectric", "icebeam");
+	setMove(data, "manectric", "paraboliccharge");
+	setMove(data, "sceptile", "dracometeor");
+	setMove(data, "sceptile", "chloroblast");
+	setMove(data, "sceptile", "nastyplot");
+	setMove(data, "deoxys", "bodypress");
+	setMove(data, "metagross", "swordsdance");
+	setMove(data, "altaria", "explosion");
+	setMove(data, "altaria", "doubleedge");
+	setMove(data, "altaria", "smellingsalts");
+	setMove(data, "altaria", "calmmind");
+	setMove(data, "altaria", "drainingkiss");
+	setMove(data, "camerupt", "sandsearstorm");
+	setMove(data, "sharpedo", "swordsdance");
+	setMove(data, "banette", "poltergheist");
+	setMove(data, "banette", "shadowforce");
+	setMove(data, "banette", "stalk");
+	setMove(data, "latias", "moonblast");
 	// endregion
 	// region Gen4
-	setMove(data, modPatch, "hippowdon", "spikes");
-	setMove(data, modPatch, "hippowdon", "knockoff");
-	setMove(data, modPatch, "empoleon", "auroraveil");
-	setMove(data, modPatch, "empoleon", "reflect");
-	setMove(data, modPatch, "empoleon", "lightscreen");
-	setMove(data, modPatch, "shaymin", "sparklyswirl");
-	setMove(data, modPatch, "shaymin", "lightofruin");
-	setMove(data, modPatch, "shaymin", "floralhealing");
-	setMove(data, modPatch, "glaceon", "glaciate");
-	setMove(data, modPatch, "toxicroak", "jetpunch");
-	setMove(data, modPatch, "toxicroak", "machpunch");
-	setMove(data, modPatch, "toxicroak", "liquidation");
-	setMove(data, modPatch, "toxicroak", "uturn");
-	setMove(data, modPatch, "rotomheat", "heatwave");
-	setMove(data, modPatch, "rotom", "recover");
-	setMove(data, modPatch, "rotomheat", "recover");
-	setMove(data, modPatch, "rotommow", "recover");
-	setMove(data, modPatch, "rotomwash", "recover");
-	setMove(data, modPatch, "rotomfan", "recover");
-	setMove(data, modPatch, "rotomfrost", "recover");
-	setMove(data, modPatch, "rotomheat", "firepledge");
-	setMove(data, modPatch, "rotomheat", "inferno");
-	setMove(data, modPatch, "rotommow", "grasspledge");
-	setMove(data, modPatch, "rotommow", "magicalleaf");
-	setMove(data, modPatch, "rotommow", "grassknot");
-	setMove(data, modPatch, "rotomwash", "waterpledge");
-	setMove(data, modPatch, "rotomwash", "muddywater");
-	setMove(data, modPatch, "rotomwash", "scald");
-	setMove(data, modPatch, "rotomwash", "brine");
-	setMove(data, modPatch, "rotomfan", "tailwind");
-	setMove(data, modPatch, "rotomfan", "aircutter");
-	setMove(data, modPatch, "rotomfrost", "glaciate");
-	setMove(data, modPatch, "rotomfrost", "freezedry");
-	setMove(data, modPatch, "rotomfrost", "icywind");
-	setMove(data, modPatch, "palkia", "originpulse");
-	setMove(data, modPatch, "palkia", "hyperspacehole");
-	setMove(data, modPatch, 'giratina', 'roost');
-	setMove(data, modPatch, 'giratina', 'spikes');
-	setMove(data, modPatch, 'giratina', 'toxicspikes');
-	setMove(data, modPatch, 'giratina', 'stealthrock');
-	setMove(data, modPatch, 'giratina', 'sandstorm');
-	setMove(data, modPatch, 'giratina', 'hail');
-	setMove(data, modPatch, 'giratina', 'snowscape');
-	setMove(data, modPatch, 'giratina', 'grassyterrain');
-	setMove(data, modPatch, 'giratina', 'electricterrain');
-	setMove(data, modPatch, 'giratina', 'psychicterrain');
-	setMove(data, modPatch, 'giratina', 'mistyterrain');
-	setMove(data, modPatch, 'giratina', 'fairylock');
-	setMove(data, modPatch, 'giratina', 'iondeluge');
-	setMove(data, modPatch, 'giratina', 'magicroom');
-	setMove(data, modPatch, 'giratina', 'mudsport');
-	setMove(data, modPatch, 'giratina', 'wonderroom');
-	setMove(data, modPatch, 'giratina', 'trickroom');
-	setMove(data, modPatch, 'giratina', 'watersport');
-	setMove(data, modPatch, 'giratina', 'recover');
-	setMove(data, modPatch, 'giratina', 'stalk');
-	setMove(data, modPatch, "gallade", "crosspoison");
-	setMove(data, modPatch, "drapion", "wickedblow");
+	setMove(data, "hippowdon", "spikes");
+	setMove(data, "hippowdon", "knockoff");
+	setMove(data, "empoleon", "auroraveil");
+	setMove(data, "empoleon", "reflect");
+	setMove(data, "empoleon", "lightscreen");
+	setMove(data, "shaymin", "sparklyswirl");
+	setMove(data, "shaymin", "lightofruin");
+	setMove(data, "shaymin", "floralhealing");
+	setMove(data, "glaceon", "glaciate");
+	setMove(data, "toxicroak", "jetpunch");
+	setMove(data, "toxicroak", "machpunch");
+	setMove(data, "toxicroak", "liquidation");
+	setMove(data, "toxicroak", "uturn");
+	setMove(data, "rotomheat", "heatwave");
+	setMove(data, "rotom", "recover");
+	setMove(data, "rotomheat", "recover");
+	setMove(data, "rotommow", "recover");
+	setMove(data, "rotomwash", "recover");
+	setMove(data, "rotomfan", "recover");
+	setMove(data, "rotomfrost", "recover");
+	setMove(data, "rotomheat", "firepledge");
+	setMove(data, "rotomheat", "inferno");
+	setMove(data, "rotommow", "grasspledge");
+	setMove(data, "rotommow", "magicalleaf");
+	setMove(data, "rotommow", "grassknot");
+	setMove(data, "rotomwash", "waterpledge");
+	setMove(data, "rotomwash", "muddywater");
+	setMove(data, "rotomwash", "scald");
+	setMove(data, "rotomwash", "brine");
+	setMove(data, "rotomfan", "tailwind");
+	setMove(data, "rotomfan", "aircutter");
+	setMove(data, "rotomfrost", "glaciate");
+	setMove(data, "rotomfrost", "freezedry");
+	setMove(data, "rotomfrost", "icywind");
+	setMove(data, "palkia", "originpulse");
+	setMove(data, "palkia", "hyperspacehole");
+	setMove(data, 'giratina', 'roost');
+	setMove(data, 'giratina', 'spikes');
+	setMove(data, 'giratina', 'toxicspikes');
+	setMove(data, 'giratina', 'stealthrock');
+	setMove(data, 'giratina', 'sandstorm');
+	setMove(data, 'giratina', 'hail');
+	setMove(data, 'giratina', 'snowscape');
+	setMove(data, 'giratina', 'grassyterrain');
+	setMove(data, 'giratina', 'electricterrain');
+	setMove(data, 'giratina', 'psychicterrain');
+	setMove(data, 'giratina', 'mistyterrain');
+	setMove(data, 'giratina', 'fairylock');
+	setMove(data, 'giratina', 'iondeluge');
+	setMove(data, 'giratina', 'magicroom');
+	setMove(data, 'giratina', 'mudsport');
+	setMove(data, 'giratina', 'wonderroom');
+	setMove(data, 'giratina', 'trickroom');
+	setMove(data, 'giratina', 'watersport');
+	setMove(data, 'giratina', 'recover');
+	setMove(data, 'giratina', 'stalk');
+	setMove(data, "gallade", "crosspoison");
+	setMove(data, "drapion", "wickedblow");
 	// endregion
 	// region Gen5
-	setMove(data, modPatch, "serperior", "mudshot");
-	setMove(data, modPatch, "conkeldurr", "steamroller");
-	setMove(data, modPatch, "conkeldurr", "fakeout");
-	setMove(data, modPatch, "conkeldurr", "meteormash");
-	setMove(data, modPatch, "scolipede", "collisioncourse");
-	setMove(data, modPatch, "haxorus", "dragonrush");
-	setMove(data, modPatch, "durant", "highhorsepower");
-	setMove(data, modPatch, "durant", "stealthrock");
-	setMove(data, modPatch, "gigalith", "diamondstorm");
-	setMove(data, modPatch, "gigalith", "shoreup");
-	setMove(data, modPatch, "gigalith", "trickroom");
-	setMove(data, modPatch, "boldore", "diamondstorm");
-	setMove(data, modPatch, "boldore", "shoreup");
-	setMove(data, modPatch, "boldore", "trickroom");
-	setMove(data, modPatch, "cobalion", "secretsword");
-	setMove(data, modPatch, "cobalion", "nastyplot");
-	setMove(data, modPatch, "virizion", "secretsword");
-	setMove(data, modPatch, "virizion", "nastyplot");
-	setMove(data, modPatch, "terrakion", "accelerock");
-	setMove(data, modPatch, "swanna", "wavecrash");
-	setMove(data, modPatch, "samurott", "shellsmash");
-	setMove(data, modPatch, "samurott", "sacredsword");
-	setMove(data, modPatch, "samurott", "secretsword");
-	setMove(data, modPatch, "samurott", "closecombat");
-	setMove(data, modPatch, "samurott", "wavecrash");
-	setMove(data, modPatch, "reuniclus", "teleport");
-	setMove(data, modPatch, "reuniclus", "aurasphere");
-	setMove(data, modPatch, "reuniclus", "vacuumwave");
-	setMove(data, modPatch, "krookodile", "swordsdance");
-	setMove(data, modPatch, "cofagrigus", "strengthsap");
-	setMove(data, modPatch, "zoroark", "vacuumwave");
-	setMove(data, modPatch, "zoroarkhisui", "vacuumwave");
-	setMove(data, modPatch, "zoroarkhisui", "vacuumwave");
-	setMove(data, modPatch, "chandelure", "shadowflame");
-	setMove(data, modPatch, "chandelure", "blueflare");
-	setMove(data, modPatch, "chandelure", "burnup");
-	setMove(data, modPatch, "chandelure", "mindblown");
-	setMove(data, modPatch, "chandelure", "searingshot");
-	setMove(data, modPatch, "audino", "followme");
-	setMove(data, modPatch, "audino", "teleport");
-	setMove(data, modPatch, "audino", "nuzzle");
-	setMove(data, modPatch, "beartic", "iceshard");
-	setMove(data, modPatch, "musharna", "wideguard");
-	setMove(data, modPatch, "kyuremwhite", "glaciate");
-	setMove(data, modPatch, "kyuremblack", "glaciate");
-	setMove(data, modPatch, "victini", "psychocut");
-	setMove(data, modPatch, "basculegion", "shadowfang");
-	setMove(data, modPatch, "basculegionf", "shadowfang");
+	setMove(data, "serperior", "mudshot");
+	setMove(data, "conkeldurr", "steamroller");
+	setMove(data, "conkeldurr", "fakeout");
+	setMove(data, "conkeldurr", "meteormash");
+	setMove(data, "scolipede", "collisioncourse");
+	setMove(data, "haxorus", "dragonrush");
+	setMove(data, "durant", "highhorsepower");
+	setMove(data, "durant", "stealthrock");
+	setMove(data, "gigalith", "diamondstorm");
+	setMove(data, "gigalith", "shoreup");
+	setMove(data, "gigalith", "trickroom");
+	setMove(data, "boldore", "diamondstorm");
+	setMove(data, "boldore", "shoreup");
+	setMove(data, "boldore", "trickroom");
+	setMove(data, "cobalion", "secretsword");
+	setMove(data, "cobalion", "nastyplot");
+	setMove(data, "virizion", "secretsword");
+	setMove(data, "virizion", "nastyplot");
+	setMove(data, "terrakion", "accelerock");
+	setMove(data, "swanna", "wavecrash");
+	setMove(data, "samurott", "shellsmash");
+	setMove(data, "samurott", "sacredsword");
+	setMove(data, "samurott", "secretsword");
+	setMove(data, "samurott", "closecombat");
+	setMove(data, "samurott", "wavecrash");
+	setMove(data, "reuniclus", "teleport");
+	setMove(data, "reuniclus", "aurasphere");
+	setMove(data, "reuniclus", "vacuumwave");
+	setMove(data, "krookodile", "swordsdance");
+	setMove(data, "cofagrigus", "strengthsap");
+	setMove(data, "zoroark", "vacuumwave");
+	setMove(data, "zoroarkhisui", "vacuumwave");
+	setMove(data, "zoroarkhisui", "vacuumwave");
+	setMove(data, "chandelure", "shadowflame");
+	setMove(data, "chandelure", "blueflare");
+	setMove(data, "chandelure", "burnup");
+	setMove(data, "chandelure", "mindblown");
+	setMove(data, "chandelure", "searingshot");
+	setMove(data, "audino", "followme");
+	setMove(data, "audino", "teleport");
+	setMove(data, "audino", "nuzzle");
+	setMove(data, "beartic", "iceshard");
+	setMove(data, "musharna", "wideguard");
+	setMove(data, "kyuremwhite", "glaciate");
+	setMove(data, "kyuremblack", "glaciate");
+	setMove(data, "victini", "psychocut");
+	setMove(data, "basculegion", "shadowfang");
+	setMove(data, "basculegionf", "shadowfang");
 	// endregion
 	// region Gen6
 	// endregion
 	// region Gen7
-	setMove(data, modPatch, "necrozma", "neutronray"); // Custom signature move. ensure not usable by merged forms.
-	setMove(data, modPatch, "minior", "accelerock");
-	setMove(data, modPatch, "minior", "hurricane");
-	setMove(data, modPatch, "minior", "airslash");
-	setMove(data, modPatch, "golisopod", "uturn");
-	setMove(data, modPatch, "tapubulu", "spiritbreak");
-	setMove(data, modPatch, "tapubulu", "playrough");
+	setMove(data, "necrozma", "neutronray"); // Custom signature move. ensure not usable by merged forms.
+	setMove(data, "minior", "accelerock");
+	setMove(data, "minior", "hurricane");
+	setMove(data, "minior", "airslash");
+	setMove(data, "golisopod", "uturn");
+	setMove(data, "tapubulu", "spiritbreak");
+	setMove(data, "tapubulu", "playrough");
 	// endregion
 	// region Gen8
-	setMove(data, modPatch, "wooloo", "bodypress");
-	setMove(data, modPatch, "dubwool", "megahorn");
-	setMove(data, modPatch, "dubwool", "hornleech");
-	setMove(data, modPatch, "wooloo", "tickle");
-	setMove(data, modPatch, "wooloo", "yawn");
-	setMove(data, modPatch, "wooloo", "headcharge");
-	setMove(data, modPatch, "wooloo", "slackoff");
-	setMove(data, modPatch, "wooloo", "nuzzle");
-	setMove(data, modPatch, "wooloo", "headsmash");
-	setMove(data, modPatch, "wooloo", "grassyglide");
-	setMove(data, modPatch, "wooloo", "trailblaze");
-	setMove(data, modPatch, "wooloo", "collisioncourse");
-	setMove(data, modPatch, "wooloo", "quickguard");
-	setMove(data, modPatch, "wooloo", "headlongrush");
-	setMove(data, modPatch, "wooloo", "stompingtantrum");
-	setMove(data, modPatch, "wooloo", "lunge");
-	setMove(data, modPatch, "wooloo", "steamroller");
-	setMove(data, modPatch, "wooloo", "bite");
-	setMove(data, modPatch, "wooloo", "crunch");
-	setMove(data, modPatch, "wooloo", "pursuit");
-	setMove(data, modPatch, "wooloo", "faketears");
-	setMove(data, modPatch, "wooloo", "quash");
-	setMove(data, modPatch, "wooloo", "ironhead");
-	setMove(data, modPatch, "wooloo", "steelroller");
-	setMove(data, modPatch, "wooloo", "playrough");
-	setMove(data, modPatch, "wooloo", "babydolleyes");
-	setMove(data, modPatch, "wooloo", "tearfullook");
-	setMove(data, modPatch, "wooloo", "amnesia");
-	setMove(data, modPatch, "dubwool", "tickle");
-	setMove(data, modPatch, "dubwool", "yawn");
-	setMove(data, modPatch, "dubwool", "headcharge");
-	setMove(data, modPatch, "dubwool", "slackoff");
-	setMove(data, modPatch, "dubwool", "nuzzle");
-	setMove(data, modPatch, "dubwool", "headsmash");
-	setMove(data, modPatch, "dubwool", "grassyglide");
-	setMove(data, modPatch, "dubwool", "trailblaze");
-	setMove(data, modPatch, "dubwool", "collisioncourse");
-	setMove(data, modPatch, "dubwool", "quickguard");
-	setMove(data, modPatch, "dubwool", "headlongrush");
-	setMove(data, modPatch, "dubwool", "stompingtantrum");
-	setMove(data, modPatch, "dubwool", "lunge");
-	setMove(data, modPatch, "dubwool", "steamroller");
-	setMove(data, modPatch, "dubwool", "bite");
-	setMove(data, modPatch, "dubwool", "crunch");
-	setMove(data, modPatch, "dubwool", "pursuit");
-	setMove(data, modPatch, "dubwool", "faketears");
-	setMove(data, modPatch, "dubwool", "quash");
-	setMove(data, modPatch, "dubwool", "ironhead");
-	setMove(data, modPatch, "dubwool", "steelroller");
-	setMove(data, modPatch, "dubwool", "playrough");
-	setMove(data, modPatch, "dubwool", "babydolleyes");
-	setMove(data, modPatch, "dubwool", "tearfullook");
-	setMove(data, modPatch, "dubwool", "amnesia");
+	setMove(data, "wooloo", "bodypress");
+	setMove(data, "dubwool", "megahorn");
+	setMove(data, "dubwool", "hornleech");
+	setMove(data, "wooloo", "tickle");
+	setMove(data, "wooloo", "yawn");
+	setMove(data, "wooloo", "headcharge");
+	setMove(data, "wooloo", "slackoff");
+	setMove(data, "wooloo", "nuzzle");
+	setMove(data, "wooloo", "headsmash");
+	setMove(data, "wooloo", "grassyglide");
+	setMove(data, "wooloo", "trailblaze");
+	setMove(data, "wooloo", "collisioncourse");
+	setMove(data, "wooloo", "quickguard");
+	setMove(data, "wooloo", "headlongrush");
+	setMove(data, "wooloo", "stompingtantrum");
+	setMove(data, "wooloo", "lunge");
+	setMove(data, "wooloo", "steamroller");
+	setMove(data, "wooloo", "bite");
+	setMove(data, "wooloo", "crunch");
+	setMove(data, "wooloo", "pursuit");
+	setMove(data, "wooloo", "faketears");
+	setMove(data, "wooloo", "quash");
+	setMove(data, "wooloo", "ironhead");
+	setMove(data, "wooloo", "steelroller");
+	setMove(data, "wooloo", "playrough");
+	setMove(data, "wooloo", "babydolleyes");
+	setMove(data, "wooloo", "tearfullook");
+	setMove(data, "wooloo", "amnesia");
+	setMove(data, "dubwool", "tickle");
+	setMove(data, "dubwool", "yawn");
+	setMove(data, "dubwool", "headcharge");
+	setMove(data, "dubwool", "slackoff");
+	setMove(data, "dubwool", "nuzzle");
+	setMove(data, "dubwool", "headsmash");
+	setMove(data, "dubwool", "grassyglide");
+	setMove(data, "dubwool", "trailblaze");
+	setMove(data, "dubwool", "collisioncourse");
+	setMove(data, "dubwool", "quickguard");
+	setMove(data, "dubwool", "headlongrush");
+	setMove(data, "dubwool", "stompingtantrum");
+	setMove(data, "dubwool", "lunge");
+	setMove(data, "dubwool", "steamroller");
+	setMove(data, "dubwool", "bite");
+	setMove(data, "dubwool", "crunch");
+	setMove(data, "dubwool", "pursuit");
+	setMove(data, "dubwool", "faketears");
+	setMove(data, "dubwool", "quash");
+	setMove(data, "dubwool", "ironhead");
+	setMove(data, "dubwool", "steelroller");
+	setMove(data, "dubwool", "playrough");
+	setMove(data, "dubwool", "babydolleyes");
+	setMove(data, "dubwool", "tearfullook");
+	setMove(data, "dubwool", "amnesia");
 	// endregion
 	// region Gen9
-	setMove(data, modPatch, "slitherwing", "victorydance");
+	setMove(data, "slitherwing", "victorydance");
 	// endregion
 }
