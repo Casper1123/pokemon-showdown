@@ -32,6 +32,18 @@ Ratings and how they work:
 
 */
 
+/*
+	abilityname: {
+		flags: {},
+		name: "Abilityname",
+		desc: "Desc",
+		shortDesc: "Desc",
+		rating: x,
+		num: -xx,
+
+	},
+ */
+
 import { hazards } from "./conditions";
 
 export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
@@ -317,7 +329,23 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			},
 		},
 	},
+	weaversdance: {
+		flags: {},
+		name: "Weaver's Dance",
+		desc: "Raises Speed on KO. Moves do not make contact.",
+		shortDesc: "Raises Speed on KO. Moves do not make contact.",
+		rating: 3,
+		num: -11,
 
+		onSourceAfterFaint(length, target, source, effect) {
+			if (effect && effect.effectType === 'Move') {
+				this.boost({ spe: length }, source);
+			}
+		},
+		onModifyMove(move) {
+			delete move.flags['contact'];
+		},
+	},
 
 	noability: {
 		isNonstandard: "Past",
