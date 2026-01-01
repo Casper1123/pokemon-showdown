@@ -1,12 +1,19 @@
+This mod runs on `2` formats:
+- \[Gen9] National Dex Custom
+- \[Gen9] National Dex Custom Doubles
+
+# Table of Contents
+TODO
+
 # `[Gen9] National Dex Custom`
 
-# Technical info
+## Technical info
 
-Custom mod: `gen9custom`
-Game type: `singles`
+Custom mod: `gen9custom`<BR>
+Game type: `singles`<BR>
 Region & generation: `National Dex`, `gen9`
 
-# Player information
+## Player information
 
 `[Gen9] National Dex Custom` is a format that brings customized changes to the gen9 National Dex OU format (officially supported).
 With the power of customized mods, we aim to make changes to underpowered, overshadowed, powercrept or just interesting pokémon,
@@ -14,11 +21,11 @@ items, moves, abilities and whatever we see as both interesting and fitting.
 Radical changes may occur to change up the meta.
 To propose new changes, check out the proposed-changes Forum Channel down below (read the posting guidelines before you post).
 
-# Custom Rules
+## Custom Rules
 
 Here, rules are explained. Standard Smogon rules will be *italicized* and custom rules will be **bolded**.
 
-## Validator
+### Validator
 
 *Species Clause* <BR>
 *Nickname Clause* <BR>
@@ -54,15 +61,55 @@ Here, rules are explained. Standard Smogon rules will be *italicized* and custom
 
 **Illusory Nicknames**
 > Name a Pokémon with the Illusion ability like another legal species in quotation marks (' or ") to make it display as such in Team Preview. <BR>*Example: `"Heatran"`*
-## Battle
+### Battle
 
-*Team Preview*
-*HP Percentage Mod*
-*Cancel Mod*
-*Endless Battle Clause*
+*Team Preview*<BR>
+*HP Percentage Mod*<BR>
+*Cancel Mod*<BR>
+*Endless Battle Clause*<BR>
 
 **Gen9 Custom MegaRay**
 > Rayquaza can only Mega Evolve if its player has few enough pokémon for an AG team.
+
+# `[Gen9] National Dex Custom Doubles`
+## Technical Info
+Custom mod: `gen9custom`<BR>
+Game type: `doubles`<BR>
+Region & generation: `National Dex`, `gen9`
+
+## Player Information
+`[Gen9] National Dex Custom Doubles` is a spin on the Singles format listed above; Tiering is almost entirely abandoned here, in favour of a more VGC-like setup.
+Mechanics and Pokémon are periodically rotated to change up the pace of play, using arbitrary ruling (which is discussed on the Discord).
+This then runs on top of the customized mod made for these formats. This means that (outside of the Trick Room change made for Singles only) everything works mostly the same.
+
+## Custom Rules
+Here, rules are explained. Standard Smogon rules will be *italicized* and custom rules will be **bolded**.
+This list will be periodically updated whenever things rotate in and out.
+
+### Validator
+*Item Clause (1)*<BR>
+*Species Clause*<BR>
+*Nickname Clause*<BR>
+*Adjust Level (50)*<BR>
+*+Past*<BR>
+*Sketch Post-Gen7 Moves*<BR>
+
+*-Shedinja*<BR>
+*-Assist*<BR>
+*-ND Uber*<BR>
+*-ND AG*<BR>
+*-ND MOD Uber*<BR>
+*-Power Construct*<BR>
+*Mega Rayquaza Clause*<BR>
+
+**Mega Clause**: Pokémon cannot Mega Evolve.<BR>
+*Z-move Clause*<BR>
+
+### Battle
+*Dynamax Clause*<BR>
+*Force Open Team Sheets*<BR>
+*Best of (3)*<BR>
+
 
 # Mod changes
 Changes are displayed by category; Item, Move, Ability, Pokémon.
