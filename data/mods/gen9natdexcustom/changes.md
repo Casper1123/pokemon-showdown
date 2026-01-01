@@ -1355,8 +1355,13 @@ New Moves:
 
 ### Gems![firegem]![watergem]![grassgem] (items)
 All gems allowed.<BR>
-`1.3x` -> `1.5x` damage.
+`1.3x` -> `1.5x` damage (generation 5 state).
 
 ### ![fairy] (type)
 Damage taken: <BR>
 ![bug]: `0.5x` --> `1x`
+
+### Generation 8+ Pokémon
+All have access to ![normal]![special]**Hidden Power**.
+### Generation <9 Pokémon
+All have access to ![normal]![special]**Tera Blast**.
