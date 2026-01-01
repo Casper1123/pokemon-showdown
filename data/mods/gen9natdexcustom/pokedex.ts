@@ -355,6 +355,11 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Plus", 1: "Levitate", H: "Clear Body" },
 	},
+	leavanny: {
+		inherit: true,
+		abilities: { 0: "Sharpness", 1: "Steelworker", H: "Weaver's Dance" },
+		baseStats: { hp: 75, atk: 103, def: 80, spa: 70, spd: 80, spe: 117 },
+	},
 	// endregion
 	// region: Gen6
 	noivern: {

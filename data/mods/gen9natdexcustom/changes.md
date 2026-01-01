@@ -273,6 +273,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [klink]: https://play.pokemonshowdown.com/sprites/gen5ani/klink.gif
 [klang]: https://play.pokemonshowdown.com/sprites/gen5ani/klang.gif
 [klinklang]: https://play.pokemonshowdown.com/sprites/gen5ani/klinklang.gif
+[leavanny]: https://play.pokemonshowdown.com/sprites/gen5ani/leavanny.gif
 
 
 [sec-gen6]: .
@@ -453,6 +454,7 @@ ACC: 100<BR>
 PP: 15<BR>
 20% chance to Flinch. <BR>
 If moving after the target, deals 1.5x damage instead.<BR>
+Contact, Slicing, Biting.<BR>
 **Users:**<BR>
 ![banette]![banette-mega]![giratina]![giratina-origin]
 
@@ -468,8 +470,26 @@ BP: 70<BR>
 ACC: 100<BR>
 PP: 10<BR>
 Breaks protect (just like Feint), but has no priority. <BR>
+Biting, Contact.<BR>
 **Users:**<BR>
 ![basculegion]![basculegion-f]
+
+### ![steel]![physical] Needle Throw
+BP: 100<BR>
+ACC: 90<BR>
+PP: 15<BR>
+15% chance to Flinch. Lowers target speed by 1 stage. <BR>
+Cannot be used while under strong Gravity. Slicing move. <BR>
+**Users:**<BR>
+![leavanny]
+
+### ![bug]![status] Weave Garments
+PP: 10<BR>
+Targets adjacent allies or self.<BR>
+Grants +1 Spe, SpD and Accuracy as well as status immunity. Does **NOT** stack. <BR>
+After taking damage from a ![fire] or ![ice] type move, or having a non-volatile status condition inflicted upon the affected by the opponent, breaks and loses the stat buffs.<BR>
+**Users:**<BR>
+![leavanny]
 
 
 # Abilities
@@ -1288,6 +1308,27 @@ New Moves:
 
 ### ![klink]![klang]![klinklang]
 Abilities: `Plus`, `Levitate`, `Clear Body`
+
+### ![leavanny]
+Abilities: `Sharpness`, `Steelworker`, `Weaver's Dance`<BR>
+Base Stats:
+- hp: `75`
+- atk: `103`
+- def: `80`
+- spa: `70`
+- spd: `80`
+- spe: `92` --> `117` (`+23`)
+- Total: `500` --> `523`
+
+New Moves:
+- ![steel]![physical] Bullet Punch
+- ![steel]![physical] Needle Throw
+- ![bug]![status] Weave Garments
+- ![dark]![physical] Assurance
+- ![dragon]![physical] Dual Chop
+- ![fighting]![physical] Close Combat
+- ![fighting]![physical] Upper Hand
+- ![fighting]![status] Quick Guard
 
 
 ## Gen 6

@@ -195,6 +195,15 @@ export function applyChanges(data: ModdedDex): void {
 	setMove(data, 'victini', 'psychocut');
 	setMove(data, 'basculegion', 'shadowfang');
 	setMove(data, 'basculegionf', 'shadowfang');
+	setMove(data, 'leavanny', 'bulletpunch');
+	setMove(data, 'leavanny', 'needlethrow');
+	setMove(data, 'leavanny', 'weavegarments');
+	setMove(data, 'leavanny', 'assurance');
+	setMove(data, 'leavanny', 'closecombat');
+	setMove(data, 'leavanny', 'dualchop');
+	setMove(data, 'leavanny', 'upperhand');
+	setMove(data, 'leavanny', 'quickguard');
+
 	// endregion
 	// region Gen6
 	// endregion

@@ -245,11 +245,21 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { mirror: 1, noassist: 1, failcopycat: 1, bite: 1, contact: 1 },
 		breaksProtect: true,
 		// Breaking protection implemented in scripts.js
+		/*
 		onModifyMove(move, pokemon, target) {
 			if (target?.isProtected()) {
 				move.basePower = 0;
 			}
 		},
+		*/
+		onTry(source, target) {
+			if (target.volatiles['protect'] || target.volatiles['banefulbunker'] ||
+				target.volatiles['kingsshield'] || target.volatiles['spikyshield'] ||
+				target.volatiles['obstruct'] || target.volatiles['silktrap'] || target.volatiles['timestop']) {
+				return null; // Fail after breaking protection
+			}
+		},
+
 		onTryMove() {
 			this.attrLastMove('[still]');
 		},
@@ -328,7 +338,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				// ['par', 'slp', 'brn', 'frz', 'psn', 'tox']
 				if (!['par', 'slp', 'brn', 'frz', 'psn', 'tox'].includes(status.id)) return;
 				target.removeVolatile('wovengarments');
-				return false;
+				return null;
 			},
 			onAfterHit(source, target, move) {
 				if (move.category === 'Status') return;
