@@ -34,6 +34,26 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Poison Touch", 1: "Midas Touch", H: "Power of Alchemy" },
 	},
+	golem: {
+		inherit: true,
+		abilities: { 0: "Rock Head", 1: "Sturdy", H: "Terravore" },
+	},
+	graveler: {
+		inherit: true,
+		abilities: { 0: "Rock Head", 1: "Sturdy", H: "Terravore" },
+	},
+	geodude: {
+		inherit: true,
+		abilities: { 0: "Rock Head", 1: "Sturdy", H: "Terravore" },
+	},
+	onix: {
+		inherit: true,
+		abilities: { 0: "Terravore", 1: "Sturdy", H: "Weak Armor" },
+	},
+	steelix: {
+		inherit: true,
+		abilities: { 0: "Terravore", 1: "Sturdy", H: "Sheer Force" },
+	},
 	// endregion
 	// region: Gen2
 	ampharos: {
@@ -251,9 +271,18 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Defiant", 1: "Hustle", H: "Truant" },
 	},
+	roggenrola: {
+		inherit: true,
+		abilities: { 0: "Sturdy", 1: "Weak Armor", H: "Terravore" },
+	},
+	boldore: {
+		inherit: true,
+		abilities: { 0: "Sturdy", 1: "Weak Armor", H: "Terravore" },
+	},
 	gigalith: {
 		inherit: true,
 		baseStats: { hp: 85, atk: 135, def: 130, spa: 60, spd: 100, spe: 25 },
+		abilities: { 0: "Sturdy", 1: "Sand Stream", H: "Terravore" },
 	},
 	cobalion: {
 		inherit: true,
@@ -403,6 +432,10 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Fluffy", 1: "Bulletproof", H: "Frolicking" },
 		baseStats: { hp: 90, atk: 95, def: 100, spa: 60, spd: 90, spe: 88 },
+	},
+	kleavor: {
+		inherit: true,
+		abilities: { 0: "Terravore", 1: "Sheer Force", H: "Sharpness" },
 	},
 	// endregion
 	// region: Gen9

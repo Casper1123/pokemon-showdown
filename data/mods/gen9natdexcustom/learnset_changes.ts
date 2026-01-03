@@ -161,6 +161,12 @@ export function applyChanges(data: ModdedDex): void {
 	setMove(data, 'boldore', 'diamondstorm');
 	setMove(data, 'boldore', 'shoreup');
 	setMove(data, 'boldore', 'trickroom');
+	setMove(data, 'roggenrola', 'diamondstorm');
+	setMove(data, 'roggenrola', 'shoreup');
+	setMove(data, 'roggenrola', 'trickroom');
+	setMove(data, 'boldore', 'diamondstorm');
+	setMove(data, 'boldore', 'shoreup');
+	setMove(data, 'boldore', 'trickroom');
 	setMove(data, 'cobalion', 'secretsword');
 	setMove(data, 'cobalion', 'nastyplot');
 	setMove(data, 'virizion', 'secretsword');

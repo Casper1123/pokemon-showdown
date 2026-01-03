@@ -155,6 +155,10 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [grimer]: https://play.pokemonshowdown.com/sprites/gen5ani/grimer.gif
 [muk]: https://play.pokemonshowdown.com/sprites/gen5ani/muk.gif
 [muk-alola]: https://play.pokemonshowdown.com/sprites/gen5ani/muk-alola.gif
+[geodude]: https://play.pokemonshowdown.com/sprites/gen5ani/geodude.gif
+[graveler]: https://play.pokemonshowdown.com/sprites/gen5ani/graveler.gif
+[golem]: https://play.pokemonshowdown.com/sprites/gen5ani/golem.gif
+[onix]: https://play.pokemonshowdown.com/sprites/gen5ani/onix.gif
 
 [sec-gen2]: .
 [celebi]: https://play.pokemonshowdown.com/sprites/gen5ani/celebi.gif
@@ -249,7 +253,12 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [krookodile]: https://play.pokemonshowdown.com/sprites/gen5ani/krookodile.gif
 [scolipede]: https://play.pokemonshowdown.com/sprites/gen5ani/scolipede.gif
 [durant]: https://play.pokemonshowdown.com/sprites/gen5ani/durant.gif
+[roggenrola]: https://play.pokemonshowdown.com/sprites/gen5ani/roggenrola.gif
+[boldore]: https://play.pokemonshowdown.com/sprites/gen5ani/boldore.gif
 [gigalith]: https://play.pokemonshowdown.com/sprites/gen5ani/gigalith.gif
+[roggenrola-shiny]: https://play.pokemonshowdown.com/sprites/gen5ani-shiny/roggenrola.gif
+[boldore-shiny]: https://play.pokemonshowdown.com/sprites/gen5ani-shiny/boldore.gif
+[gigalith-shiny]: https://play.pokemonshowdown.com/sprites/gen5ani-shiny/gigalith.gif
 [terrakion]: https://play.pokemonshowdown.com/sprites/gen5ani/terrakion.gif
 [virizion]: https://play.pokemonshowdown.com/sprites/gen5ani/virizion.gif
 [cobalion]: https://play.pokemonshowdown.com/sprites/gen5ani/cobalion.gif
@@ -306,7 +315,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [wooloo-shiny]: https://play.pokemonshowdown.com/sprites/gen5ani-shiny/wooloo.gif
 [dubwool]: https://play.pokemonshowdown.com/sprites/gen5ani/dubwool.gif
 [dubwool-shiny]: https://play.pokemonshowdown.com/sprites/gen5ani-shiny/dubwool.gif
-
+[kleavor]: https://play.pokemonshowdown.com/sprites/gen5/kleavor.png
 
 [sec-gen9]: .
 [glimmora]: https://play.pokemonshowdown.com/sprites/gen5/glimmora.png
@@ -538,8 +547,9 @@ While grassy terrain is active, doubles healing from Grassy Terrain and Leftover
 
 ### Terravore
 When hit with a ![rock]-type attack, restores 1/8 of max HP and gains Terravore effect, boosting ![rock]-type damage by 1.25x.<BR>
-**Users:**<BR>
-![larvitar]![pupitar]![tyranitar]![regirock]
+**Users:** *(these do not have individual changelists and are not listed as MOD unless further modified)*<BR>
+![larvitar]![pupitar]![tyranitar]![regirock]![geodude]![graveler]![golem]![onix]![steelix]![kleavor]![gigalith]![boldore]![roggenrola]![roggenrola-shiny]![boldore-shiny]![gigalith-shiny]
+
 
 ### Midas Touch
 Any Pokémon making contact or made contact with will have their type set to ![steel], ability to ***Good as Gold*** and they take 12.5% of max hp each turn. <BR>
@@ -637,6 +647,8 @@ New Moves: <BR>
 - ![flying]![status] Tailwind
 
 ### ![steelix]![steelix-mega]
+**Base:**<BR>
+Abilities: `Terravore`, `Sturdy`, `Sheer Force` <BR>
 New Moves: <BR>
 - ![poison]![status] Coil
 
@@ -1082,12 +1094,18 @@ New Moves:
 - ![ground]![physical] High Horsepower
 - ![rock]![status] Stealth Rock
 
-### ![gigalith]
+### ![gigalith]![boldore]![roggenrola]![roggenrola-shiny]![boldore-shiny]![gigalith-shiny]
+**Shared:** <BR>
 New Moves:
 - ![ground]![status] Shore Up
 - ![psychic]![status] Trick Room
 - ![rock]![physical] Diamond Storm
 
+**Roggenrola & Boldore:**<BR>
+Abilities: `Sturdy`, `Sand Stream`, `Terravore`
+
+**Gigalith**:<BR>
+Abilities: `Sturdy`, `Sand Stream`, `Terravore`
 Base Stats:
 - hp: `85`
 - atk: `135`
