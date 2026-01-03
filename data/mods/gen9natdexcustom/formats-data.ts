@@ -1,11 +1,6 @@
 export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataTable = {
 	// region unmodded doubles overrides
 	// region ag
-	xerneasneutral: {
-		isNonstandard: null, // Hopefully making available in-battle. Does it differ in any way?
-		tier: "AG",
-		natDexTier: "AG",
-	},
 	calyrexice: {
 		tier: "Uber",
 		doublesTier: "DUber",
@@ -49,6 +44,15 @@ export const FormatsData: import('../../../sim/dex-species').SpeciesFormatsDataT
 		doublesTier: "DUber",
 		natDexTier: "OU",
 		natDexDoublesOverride: "Uber",
+	},
+	xerneas: {
+		isNonstandard: null,
+		tier: "Illegal",
+		natDexTier: "Uber",
+	},
+	xerneasneutral: {
+		isNonstandard: null, // Hopefully making available in-battle. Does it differ in any way?
+		tier: "Uber", // Should be OK with Geomancy banned.
 	},
 	// endregion
 	// region OU

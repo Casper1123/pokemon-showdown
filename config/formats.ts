@@ -27,7 +27,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] National Dex Custom",
 		desc: "A custom edited version of Gen9's National Dex format.",
 		mod: 'gen9natdexcustom',
-		ruleset: ['Standard NatDex', 'gen9natdexcustom UbersAg', 'gen9natdexcustom megaray', 'Terastal Clause', 'Illusory Nicknames', '+move:lightofruin'],
+		ruleset: ['Standard NatDex', 'gen9natdexcustom UbersAg', 'gen9natdexcustom megaray', 'Terastal Clause', 'Illusory Nicknames', '+move:lightofruin', '-move:geomancy'],
 		banlist: [
 			'Arena Trap', 'Moody', 'Shadow Tag', 'King\'s Rock',
 			'Quick Claw', 'Razor Fang', 'Assist', 'Baton Pass', 'Last Respects', 'Shed Tail',
@@ -40,7 +40,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		mod: 'gen9natdexcustom',
 		gameType: "doubles",
 		ruleset: ["Team Preview", // 'Illusory Nicknames', Does not work with Open Team Sheets// Custom  'gen9natdexcustom UbersAg', 'gen9natdexcustom megaray',
-			'Dynamax Clause', 'Natdex Mod', '+move:lightofruin', // Natdex
+			'Dynamax Clause', 'Natdex Mod', '+move:lightofruin', '-move:geomancy', // Natdex
 			'Force Open Team Sheets', 'Item Clause = 1', 'Cancel Mod', 'Species Clause', 'Nickname Clause', 'Adjust Level = 50', 'Picked Team Size = Auto', 'Mega Rayquaza Clause', 'Best Of = 3', // VGC
 			'Z-Move Clause', 'Mega Evolution Clause', // Other
 		],
