@@ -256,6 +256,10 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Pressure", 1: "Frisk", H: "Midas Touch" },
 	},
+	mamoswine: {
+		inherit: true,
+		baseStats: { hp: 110, atk: 130, def: 90, spa: 70, spd: 70, spe: 80 },
+	},
 	// endregion
 	// region: Gen5
 	conkeldurr: {

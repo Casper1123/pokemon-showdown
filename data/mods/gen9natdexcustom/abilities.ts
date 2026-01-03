@@ -1,4 +1,3 @@
-
 export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTable = {
 	sandforce: {
 		inherit: true,
@@ -61,5 +60,45 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		num: 176,
 		desc: "Transforms into Meteor-form when using an attacking move. Use Protect to transform back. Immune to Status.",
 		shortDesc: "Stance Change with Protect. Immune to Status.",
+	},
+	teravolt: {
+		inherit: true,
+		onStart(pokemon) {
+			this.field.setTerrain('electricterrain');
+			this.add('-ability', pokemon, 'Teravolt');
+		},
+		onModifyMove(move) {
+			move.ignoreAbility = true;
+		},
+		onModifyAccuracyPriority: 5,
+		onModifyAccuracy(relayVar, target, source, move) {
+			if (this.field.isTerrain('electricterrain')) {
+				this.debug('Teravolt accuracy boost');
+				return this.chainModify(1.2);
+			}
+		},
+		desc: "Mold breaker + On switch-in, summons Electric Terrain. 1.2x accuracy if active.",
+		shortDesc: "Mold breaker + On switch-in, summons Electric Terrain. 1.2x accuracy if active.",
+		rating: 4,
+	},
+	turboblaze: {
+		inherit: true,
+		onStart(pokemon) {
+			this.field.setWeather('sunnyday');
+			this.add('-ability', pokemon, 'Turboblaze');
+		},
+		onModifyMove(move) {
+			move.ignoreAbility = true;
+		},
+		onModifyAccuracyPriority: 5,
+		onModifyAccuracy(relayVar, target, source, move) {
+			if (['sunnyday', 'desolateland'].includes(source.effectiveWeather())) {
+				this.debug('Teravolt accuracy boost');
+				return this.chainModify(1.2);
+			}
+		},
+		rating: 4,
+		desc: "Mold breaker + On switch-in, summons Harsh Sun. 1.2x accuracy if active.",
+		shortDesc: "Mold breaker + On switch-in, summons Harsh Sun. 1.2x accuracy if active.",
 	},
 };

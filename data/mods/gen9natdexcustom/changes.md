@@ -236,6 +236,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [gallade]: https://play.pokemonshowdown.com/sprites/gen5ani/gallade.gif
 [gallade-mega]: https://play.pokemonshowdown.com/sprites/gen5/gallade-mega.png
 [dusknoir]: https://play.pokemonshowdown.com/sprites/gen5ani/dusknoir.gif
+[mamoswine]: https://play.pokemonshowdown.com/sprites/gen5ani/mamoswine.gif
 
 
 [sec-gen5]: .
@@ -1047,6 +1048,16 @@ New Moves: <BR>
 ### ![drapion]
 New Moves:
 - ![dark]![physical] Wicked Blow
+
+### ![mamoswine]
+Base Stats:
+- hp: `110`
+- atk: `130`
+- def: `80` --> `90` (`+10`)
+- spa: `70`
+- spd: `60` --> `70` (`+10`)
+- spe: `80`
+- Total: `530` --> `550`
 
 
 ## Gen 5
