@@ -558,6 +558,11 @@ Any Pokémon making contact or made contact with will have their type set to ![s
 **Users:**<BR>
 ![persian]![persian-alola]![grimer]![muk]![muk-alola]![registeel]![dusknoir]
 
+### Weaver's Dance
+On KO, raise Speed by 1. Moves do not make contact. <BR>
+**Users:**<BR>
+![leavanny]
+
 # Pokémon
 ## Gen 1
 ### ![gengar]
