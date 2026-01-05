@@ -8,6 +8,7 @@
 import { State } from './state';
 import { toID } from './dex';
 import type { DynamaxOptions, PokemonMoveRequestData, PokemonSwitchRequestData } from './side';
+import {allFieldAbilities, protectedPseudoWeathers} from "../data/conditions";
 
 /** A Pokemon's move slot. */
 interface MoveSlot {
@@ -846,6 +847,8 @@ export class Pokemon {
 	}
 
 	ignoringAbility() {
+		if (this.abilityState.suppressed) return true;
+
 		if (this.battle.gen >= 5 && !this.isActive) return true;
 
 		// Certain Abilities won't activate while Transformed, even if they ordinarily couldn't be suppressed (e.g. Disguise)
@@ -1897,13 +1900,25 @@ export class Pokemon {
 			if (!setAbilityEvent) return setAbilityEvent;
 		}
 		this.battle.singleEvent('End', oldAbility, this.abilityState, this, source);
+		if (this.battle.effect && this.battle.effect.effectType === 'Move' && !isFromFormeChange) {
+			this.battle.add('-endability', this, this.battle.dex.abilities.get(oldAbility),
+				`[from] move: ${this.battle.dex.moves.get(this.battle.effect.id)}`);
+		}
 		this.ability = ability.id;
 		this.abilityState = this.battle.initEffectState({ id: ability.id, target: this });
+
 		if (sourceEffect && !isFromFormeChange && !isTransform) {
 			if (source) {
 				this.battle.add('-ability', this, ability.name, oldAbility.name, `[from] ${sourceEffect.fullname}`, `[of] ${source}`);
 			} else {
 				this.battle.add('-ability', this, ability.name, oldAbility.name, `[from] ${sourceEffect.fullname}`);
+			}
+		}
+
+		// Check if Absolute Distortion should suppress this ability
+		if (this.battle.field.pseudoWeather['absolutedistortion'] || this.battle.field.pseudoWeather['Absolute Distortion']) {
+			if (allFieldAbilities.includes(ability.id) && !protectedPseudoWeathers.includes(ability.id)) {
+				this.abilityState.suppressed = true; // IMPORTANT: Has to happen before the singleEvent call below, otherwise newly aquired abilities from mega and such will start.
 			}
 		}
 		if (ability.id && this.battle.gen > 3 &&
@@ -2105,7 +2120,8 @@ export class Pokemon {
 	}
 
 	isGrounded(negateImmunity = false) {
-		if ('gravity' in this.battle.field.pseudoWeather) return true;
+		if ('gravity' in this.battle.field.pseudoWeather ||
+			'spacialdistortion' in this.battle.field.pseudoWeather) return true;
 		if ('ingrain' in this.volatiles && this.battle.gen >= 4) return true;
 		if ('smackdown' in this.volatiles) return true;
 		const item = (this.ignoringItem() ? '' : this.item);
