@@ -214,7 +214,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (this.field.isTerrain('grassyterrain')) {
 				this.add('-activate', pokemon, 'ability: Frolicking');
 				this.add('-message', `${pokemon.name} jumps around happily in the field.`);
-				this.add('-message', `It's defenses are raised.`);
+				this.add('-message', `Its defenses are raised.`);
 			}
 		},
 		onTryHeal(damage, target, source, effect) {
