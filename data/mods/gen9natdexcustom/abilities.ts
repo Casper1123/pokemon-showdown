@@ -33,6 +33,26 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		inherit: true,
 		isNonstandard: null,
 	},
+	terravore: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	midastouch: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	weaversdance: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	originoftime: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	originofspace: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	shieldsdown: {
 		onModifyMovePriority: 1,
 		onModifyMove(move, attacker, defender) {

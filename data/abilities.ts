@@ -286,6 +286,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Terravore",
 		rating: 2,
 		num: -9,
+		isNonstandard: 'Custom',
 	},
 	midastouch: {
 		flags: { breakable: 1 },
@@ -294,6 +295,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "Any contact sets target to Steel with Good as Gold, dealing 12.5% each turn.",
 		rating: 3,
 		num: -10,
+		isNonstandard: 'Custom',
 
 		// On making contact.
 		onSourceDamagingHit(damage, target, source, move) {
@@ -336,6 +338,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "Raises Speed on KO. Moves do not make contact.",
 		rating: 3,
 		num: -11,
+		isNonstandard: 'Custom',
 
 		onSourceAfterFaint(length, target, source, effect) {
 			if (effect && effect.effectType === 'Move') {
@@ -344,6 +347,47 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onModifyMove(move) {
 			delete move.flags['contact'];
+		},
+	},
+	originoftime: {
+		flags: {},
+		name: "Weaver's Dance",
+		desc: "+1 priority while a 'Room' Pseudoweather.",
+		shortDesc: "+1 priority while a 'Room' Pseudoweather.",
+		rating: 4,
+		num: -12,
+		isNonstandard: 'Custom',
+
+		onModifyPriority(priority, source, target, move) {
+			if (this.field.pseudoWeather['trickroom'] ||
+				this.field.pseudoWeather['wonderroom'] ||
+				this.field.pseudoWeather['magicroom']) {
+				return priority + 1;
+			}
+		},
+	},
+	originofspace: {
+		flags: {},
+		name: "Origin of Space",
+		desc: "Amplifies field effects while reducing their duration.",
+		shortDesc: "Amplifies field effects while reducing their duration.",
+		rating: 3,
+		num: -13,
+		isNonstandard: 'Custom',
+		onStart(source) {
+			this.add('-ability', source, 'Origin of Space');
+			this.field.addPseudoWeather('originofspace', source);
+		},
+		onEnd(pokemon) {
+			if (this.field.pseudoWeather['originofspace']?.source !== pokemon) return;
+			for (const target of this.getAllActive()) {
+				if (target === pokemon) continue;
+				if (target.hasAbility('originofspace')) {
+					this.field.pseudoWeather['originofspace'].source = target;
+					return;
+				}
+			}
+			this.field.removePseudoWeather('originofspace');
 		},
 	},
 

@@ -19,6 +19,8 @@
 	},
  */
 
+import {originOfSpacePledgeDurationTurnReduction} from "./conditions";
+
 export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	// Custom moves:
 	desertsong: {
@@ -5962,7 +5964,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 		},
 		condition: {
-			duration: 4,
+			durationCallback(source, effect) {
+				let duration = 4;
+				if (this.field.pseudoWeather['originofspace']) {
+					duration -= originOfSpacePledgeDurationTurnReduction;
+					this.effectState.originofspacereduction = true;
+				}
+				return duration;
+			},
 			onSideStart(targetSide) {
 				this.add('-sidestart', targetSide, 'Fire Pledge');
 			},
@@ -8243,7 +8252,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 		},
 		condition: {
-			duration: 4,
+			durationCallback(source, effect) {
+				let duration = 4;
+				if (this.field.pseudoWeather['originofspace']) {
+					duration -= originOfSpacePledgeDurationTurnReduction;
+					this.effectState.originofspacereduction = true;
+				}
+				return duration;
+			},
 			onSideStart(targetSide) {
 				this.add('-sidestart', targetSide, 'Grass Pledge');
 			},
@@ -21706,7 +21722,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 		},
 		condition: {
-			duration: 4,
+			durationCallback(source, effect) {
+				let duration = 4;
+				if (this.field.pseudoWeather['originofspace']) {
+					duration -= originOfSpacePledgeDurationTurnReduction;
+					this.effectState.originofspacereduction = true;
+				}
+				return duration;
+			},
 			onSideStart(targetSide) {
 				this.add('-sidestart', targetSide, 'Water Pledge');
 			},
