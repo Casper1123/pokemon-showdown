@@ -185,7 +185,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 				return false;
 			}
 		},
-		onFieldEnd() {
+		onEnd(target) {
 			this.add('-fieldend', 'Spacial Distortion');
 			this.add('-message', 'Space returns to a state of normalcy.');
 			// Remove grounding effects when field ends, just in case. They're not supposed to be on but SOMEHOW
@@ -309,15 +309,17 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			- effectState marking
 
 			Effects:
-				Grass + Fire  Pledge: 2/8th of max hp DoT for 4-2 turns.
-				Grass + Water Pledge: 1/6 Spe for 4-2 turns.
-				Water + Fire  Pledge: x3 Secondary Effects Chance for 4-2 turns.
+				Pledges:
+					Grass + Fire  Pledge: 2/8th of max hp DoT for 4-2 turns.
+					Grass + Water Pledge: 1/6 Spe for 4-2 turns.
+					Water + Fire  Pledge: x3 Secondary Effects Chance for 4-2 turns.
 
 				Weather: (-2 turns)
 					Rain:
 						+75% Water damage
 						-75% Fire  damage
 						Synthesis, Morning Sun, Moonlight fail
+						Solar Beam fails.
 
 					Sun:
 						+75% Fire  damage
@@ -328,9 +330,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 					Hail:
 						1/8th HP/turn to non-Ice Pokémon.
 					Snow:
-						+50% Defense
-						1.5/0.5x speed
-						1.5x ICE stab
+						+75% Defense
+						1.5/0.5x speed (NDC only, implemented there) TODO
+						1.5x ICE stab (NDC only, implemented there) TODO
 						Synthesis, Morning Sun, Moonlight 25% HP
 
 					Sand:
@@ -368,11 +370,51 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		onFieldStart(target, source) {
 			this.add('-fieldstart', 'Origin of Space', `[of] ${source}`);
 			this.add('-message', `PLACEHOLDER MESSAGE. IF THIS MAKES IT IN CALL CASPER A DUMBASS`);
+
+			// Weather
+			const activeWeather = this.field.weatherState;
+			if (activeWeather && activeWeather.duration) { // Double stacking for my own reading convenience.
+				if (!activeWeather.originofspacereduction && activeWeather.duration > 0) {
+					activeWeather.duration -= originOfSpaceWeatherDurationTurnReduction;
+					activeWeather.originofspacereduction = true;
+				}
+			}
+			// Terrain
+			const activeTerrain = this.field.terrainState;
+			if (activeTerrain && activeTerrain.duration) {
+				if (!activeTerrain.originofspacereduction && activeTerrain.duration > 0) {
+					activeTerrain.duration -= originOfSpaceTerrainDurationTurnReduction;
+					activeTerrain.originofspacereduction = true;
+				}
+			}
+			// Pledge
+			// Screens
+			const supportedSideEffects = ['reflect', 'lightscreen', 'auroraveil'
+				, 'grasspledge', 'waterpledge', 'firepledge'];
+			for (const side of this.sides) {
+				for (const effect in side.sideConditions) {
+					if (!supportedSideEffects.includes(effect)) continue;
+					const effectState = side.sideConditions[effect];
+					if (!effectState.duration || effectState.duration <= 0) continue;
+					if (effectState.originofspacereduction) continue;
+
+					effectState.duration -= (effect.endsWith('pledge'))
+						? originOfSpacePledgeDurationTurnReduction : originOfSpaceScreenDurationTurnReduction;
+					effectState.originofspacereduction = true;
+				}
+			}
 		},
-		onFieldEnd() {
+		onFieldEnd(target) {
 			this.add('-fieldend', 'Origin of Space');
 			this.add('-message', `PLACEHOLDER MESSAGE. IF THIS MAKES IT IN CALL CASPER A DUMBASS`);
 		},
+
+		onWeatherChange(target, source, effect) {},
+		onTerrainChange(target, source, effect) {},
+		onSideStart(target, source, effect) {},
+
+
+
 
 		onModifyMove(move, pokemon) {
 			// Water Pledge / Rainbow
@@ -388,28 +430,71 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 				}
 			}
 		},
-
 		onModifySpe(spe, pokemon) {
 			// Grass Pledge / Swamp
 			if (pokemon.side.sideConditions['grasspledge']) {
 				return this.chainModify(0.5); // 1/4 -> 1/6 = factor 0.5
 			}
 		},
-
 		onDamage(damage, target, source, effect) {
 			// Fire Pledge
 			if (effect?.id === 'firepledge') {
 				return damage * 2; // 1/8 -> 2/8
 			}
+			// Sandstorm damage amp
+			if (effect?.id === 'sandstorm') {
+				return damage * 2;
+			}
+
+			// Hail damage. Technically does not exist anymore but doesn't hurt to support it.
+			if (effect?.id === 'hail') {
+				return damage * 2;
+			}
 			return damage;
 		},
 
-		onWeatherModifyDamage(damage, attacker, defender, move) {
-			if (defender.hasItem('utilityumbrella')) return;
+		// Healing Move interactions; Disabling in Rain or Sand
+		// Also for Solar Beam in Sand
+		onBeforeMovePriority: 6,
+		onBeforeMove(pokemon, target, move) {
+			if (['raindance', 'sandstorm', 'primordialsea'].includes(this.field.effectiveWeather()) &&
+				['synthesis', 'moonlight', 'morningsun', 'solarbeam'].includes(move.id)) {
 
+				this.add('cant', pokemon, 'ability: Origin of Space', move);
+				return false;
+			}
+		},
+		onTryHeal(damage, target, source, effect) {
+			if (['synthesis', 'moonlight', 'morningsun'].includes(effect?.id)) {
+				const activeWeather = this.field.effectiveWeather();
+				switch (activeWeather) {
+					case 'sunnyday':
+					case 'desolateland':
+					{
+						return target.maxhp;
+					}
+
+					default: break;
+				}
+			}
+			if (effect?.id === 'shoreup' && this.field.effectiveWeather() === 'sandstorm') {
+				return target.maxhp;
+			}
+		},
+		// Growth grows more
+		onTryBoost(boost, target, source, effect) {
+			if (['sunnyday', 'desolateland'].includes(this.field.effectiveWeather()) && effect?.id === 'growth') {
+				if (boost.atk) boost.atk = Math.floor(boost.atk * 1.5);
+				if (boost.spa) boost.spa = Math.floor(boost.spa * 1.5);
+			}
+		},
+
+		onWeatherModifyDamage(damage, attacker, defender, move) {
 			const activeWeather = this.field.effectiveWeather();
 			switch (activeWeather) {
+			case 'primordialsea':
 			case 'raindance': {
+				if (defender.hasItem('utilityumbrella')) return;
 				if (move.type === 'Water') {
 					this.debug('amplified rain boost');
 					return this.chainModify([7, 6]); // SHOULD modify 50% boost to 75% (admittedly according to slop)
@@ -420,6 +505,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 				}
 				break;
 			}
+			case 'desolateland':
 			case 'sunnyday': {
 				if (move.id === 'hydrosteam' && !attacker.hasItem('utilityumbrella')) {
 					this.debug('amplified Sunny Day Hydro Steam boost');
@@ -440,6 +526,22 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			case 'hail':
 			case 'snowscape': { break; }
 			default: break;
+			}
+		},
+
+		// Sand SpD increase
+		onModifySpDPriority: 11,
+		onModifySpD(spd, pokemon) {
+			if (pokemon.hasType('Rock') && this.field.isWeather('sandstorm')) {
+				return this.modify(spd, [7, 6]);
+			}
+		},
+
+		// Ice Def increase
+		onModifyDefPriority: 11,
+		onModifyDef(def, pokemon) {
+			if (pokemon.hasType('Ice') && this.field.isWeather('snowscape')) {
+				return this.modify(def, [7, 6]);
 			}
 		},
 	},
@@ -923,15 +1025,10 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			let duration = 5;
 			if (source?.hasItem('damprock')) {
-				duration += 3;
+				return 8;
 			}
-			if (this.field.pseudoWeather['originofspace']) {
-				duration -= originOfSpaceWeatherDurationTurnReduction;
-				this.effectState.originofspacereduction = true;
-			}
-			return duration;
+			return 5;
 		},
 		onWeatherModifyDamage(damage, attacker, defender, move) {
 			if (defender.hasItem('utilityumbrella')) return;
@@ -998,15 +1095,10 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			let duration = 5;
 			if (source?.hasItem('heatrock')) {
-				duration += 3;
+				return 8;
 			}
-			if (this.field.pseudoWeather['originofspace']) {
-				duration -= originOfSpaceWeatherDurationTurnReduction;
-				this.effectState.originofspacereduction = true;
-			}
-			return duration;
+			return 5;
 		},
 		onWeatherModifyDamage(damage, attacker, defender, move) {
 			if (move.id === 'hydrosteam' && !attacker.hasItem('utilityumbrella')) {
@@ -1085,15 +1177,10 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			let duration = 5;
 			if (source?.hasItem('smoothrock')) {
-				duration += 3;
+				return 8;
 			}
-			if (this.field.pseudoWeather['originofspace']) {
-				duration -= originOfSpaceWeatherDurationTurnReduction;
-				this.effectState.originofspacereduction = true;
-			}
-			return duration;
+			return 5;
 		},
 		// This should be applied directly to the stat before any of the other modifiers are chained
 		// So we give it increased priority.
@@ -1128,15 +1215,10 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			let duration = 5;
 			if (source?.hasItem('icyrock')) {
-				duration += 3;
+				return 8;
 			}
-			if (this.field.pseudoWeather['originofspace']) {
-				duration -= originOfSpaceWeatherDurationTurnReduction;
-				this.effectState.originofspacereduction = true;
-			}
-			return duration;
+			return 5;
 		},
 		onFieldStart(field, source, effect) {
 			if (effect?.effectType === 'Ability') {
@@ -1163,15 +1245,10 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			let duration = 5;
 			if (source?.hasItem('icyrock')) {
-				duration += 3;
+				return 8;
 			}
-			if (this.field.pseudoWeather['originofspace']) {
-				duration -= originOfSpaceWeatherDurationTurnReduction;
-				this.effectState.originofspacereduction = true;
-			}
-			return duration;
+			return 5;
 		},
 		onModifyDefPriority: 10,
 		onModifyDef(def, pokemon) {
