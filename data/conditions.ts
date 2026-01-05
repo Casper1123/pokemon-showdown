@@ -1,3 +1,5 @@
+import {Battle} from "../sim";
+
 export const weatherAbilities = ['desolateland', 'primordialsea', 'deltastream',
 	'drizzle', 'sandstream', 'snowwarning', 'drought', 'orichalcumpulse'];
 export const terrainAbilities = ['psychicsurge', 'mistysurge', 'grassysurge', 'electricsurge', 'hadronengine'];
@@ -331,8 +333,8 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 						1/8th HP/turn to non-Ice Pokémon.
 					Snow:
 						+75% Defense
-						1.5/0.5x speed (NDC only, implemented there) TODO
-						1.5x ICE stab (NDC only, implemented there) TODO
+						1.5/0.5x speed (NDC only, implemented there)
+						1.5x ICE stab (NDC only, implemented there)
 						Synthesis, Morning Sun, Moonlight 25% HP
 
 					Sand:
@@ -367,30 +369,38 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		 */
 		name: "Origin of Space",
 		duration: 0,
+		// Initialization and maintenance of duration count.
 		onFieldStart(target, source) {
-			this.add('-fieldstart', 'Origin of Space', `[of] ${source}`);
-			this.add('-message', `PLACEHOLDER MESSAGE. IF THIS MAKES IT IN CALL CASPER A DUMBASS`);
-
 			// Weather
 			const activeWeather = this.field.weatherState;
-			if (activeWeather && activeWeather.duration) { // Double stacking for my own reading convenience.
+			if (activeWeather?.duration) { // Double stacking for my own reading convenience.
 				if (!activeWeather.originofspacereduction && activeWeather.duration > 0) {
 					activeWeather.duration -= originOfSpaceWeatherDurationTurnReduction;
-					activeWeather.originofspacereduction = true;
+					if (activeWeather.duration <= 0) {
+						// this.field.clearWeather();
+						activeWeather.duration = 1;
+					} else {
+						activeWeather.originofspacereduction = true;
+					}
 				}
 			}
 			// Terrain
 			const activeTerrain = this.field.terrainState;
-			if (activeTerrain && activeTerrain.duration) {
+			if (activeTerrain?.duration) {
 				if (!activeTerrain.originofspacereduction && activeTerrain.duration > 0) {
 					activeTerrain.duration -= originOfSpaceTerrainDurationTurnReduction;
-					activeTerrain.originofspacereduction = true;
+					if (activeTerrain.duration <= 0) {
+						// this.field.clearTerrain();
+						activeTerrain.duration = 1;
+					} else {
+						activeTerrain.originofspacereduction = true;
+					}
 				}
 			}
 			// Pledge
 			// Screens
-			const supportedSideEffects = ['reflect', 'lightscreen', 'auroraveil'
-				, 'grasspledge', 'waterpledge', 'firepledge'];
+			const supportedSideEffects = ['reflect', 'lightscreen', 'auroraveil',
+				'grasspledge', 'waterpledge', 'firepledge'];
 			for (const side of this.sides) {
 				for (const effect in side.sideConditions) {
 					if (!supportedSideEffects.includes(effect)) continue;
@@ -398,24 +408,55 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 					if (!effectState.duration || effectState.duration <= 0) continue;
 					if (effectState.originofspacereduction) continue;
 
-					effectState.duration -= (effect.endsWith('pledge'))
-						? originOfSpacePledgeDurationTurnReduction : originOfSpaceScreenDurationTurnReduction;
+					effectState.duration -= (effect.endsWith('pledge')) ? originOfSpacePledgeDurationTurnReduction :
+						originOfSpaceScreenDurationTurnReduction;
+					if (effectState.duration <= 0) effectState.duration = 1; // Let it expire at the end of the turn, else it'd be unfun.
 					effectState.originofspacereduction = true;
 				}
 			}
 		},
 		onFieldEnd(target) {
-			this.add('-fieldend', 'Origin of Space');
-			this.add('-message', `PLACEHOLDER MESSAGE. IF THIS MAKES IT IN CALL CASPER A DUMBASS`);
 		},
 
-		onWeatherChange(target, source, effect) {},
-		onTerrainChange(target, source, effect) {},
-		onSideStart(target, source, effect) {},
+		onWeatherChange(target, source, effect) {
+			if (!this.effectState?.duration) { return; }
+			if (this.effectState?.duration && this.effectState.duration <= 0) return;
+			if (this.effectState.originofspacereduction) return;
+			this.effectState.duration -= originOfSpaceWeatherDurationTurnReduction;
+			if (this.effectState.duration <= 0) {
+				this.field.clearWeather();
+			} else {
+				this.effectState.originofspacereduction = true;
+			}
+		},
+		onTerrainChange(target, source, effect) {
+			if (!this.effectState?.duration) { return; }
+			if (this.effectState?.duration && this.effectState.duration <= 0) return;
+			if (this.effectState.originofspacereduction) return;
+			this.effectState.duration -= originOfSpaceTerrainDurationTurnReduction;
+			if (this.effectState.duration <= 0) {
+				this.field.clearTerrain();
+			} else {
+				this.effectState.originofspacereduction = true;
+			}
+		},
+		onSideStart(target, source, effect) {
+			if (!['grasspledge', 'firepledge', 'waterpledge', 'reflect', 'lightscreen', 'auroraveil'].includes(effect?.id)) return;
+			if (!this.effectState?.duration) { return; }
+			if (this.effectState?.duration && this.effectState.duration <= 0) return;
+			if (this.effectState.originofspacereduction) return;
 
+			const isPledge = effect.id.endsWith('pledge');
+			this.effectState.duration -= isPledge ? originOfSpacePledgeDurationTurnReduction :
+				originOfSpaceScreenDurationTurnReduction;
+			if (this.effectState.duration <= 0) {
+				target.removeSideCondition(effect.id);
+			} else {
+				this.effectState.originofspacereduction = true;
+			}
+		},
 
-
-
+		// Modified effects
 		onModifyMove(move, pokemon) {
 			// Water Pledge / Rainbow
 			// Present on own side.
@@ -433,24 +474,73 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		onModifySpe(spe, pokemon) {
 			// Grass Pledge / Swamp
 			if (pokemon.side.sideConditions['grasspledge']) {
-				return this.chainModify(0.5); // 1/4 -> 1/6 = factor 0.5
+				return this.chainModify(0.5); // 1/4 -> 1/8 = factor 0.5
 			}
 		},
 		onDamage(damage, target, source, effect) {
-			// Fire Pledge
-			if (effect?.id === 'firepledge') {
+			if (['firepledge', 'sandstorm', 'hail'].includes(effect?.id)) {
 				return damage * 2; // 1/8 -> 2/8
 			}
-			// Sandstorm damage amp
-			if (effect?.id === 'sandstorm') {
-				return damage * 2;
+		},
+		onBasePower(basePower, attacker, defender, move) {
+			// Quaking moves fail when amplified
+			if (move.type === 'Grass' && attacker.isGrounded() && this.field.isTerrain('grassyterrain')) {
+				this.debug('amplified grassy terrain boost');
+				return this.chainModify([15, 13]);
 			}
+			if (move.type === 'Psychic' && attacker.isGrounded() && this.field.isTerrain('psychicterrain')) {
+				this.debug('amplified psychic terrain boost');
+				return this.chainModify([15, 13]);
+			}
+			if (move.type === 'Electric' && attacker.isGrounded() && this.field.isTerrain('electricterrain')) {
+				this.debug('amplified electric terrain boost');
+				return this.chainModify([15, 13]);
+			}
+		},
 
-			// Hail damage. Technically does not exist anymore but doesn't hurt to support it.
-			if (effect?.id === 'hail') {
-				return damage * 2;
+		// Misty Terrain blocking flinch now as well.
+		onTryAddVolatile(status, target) {
+			if (!this.field.isTerrain('mistyterrain')) return;
+			if (!target.isGrounded() || target.isSemiInvulnerable()) return;
+			if (status.id === 'flinch') return null;
+		},
+
+		onAnyModifyDamage(damage, source, target, move) {
+			// Ugly, blanket copy pasted code
+			// Reflect
+			if (target.side.getSideCondition('reflect') &&
+				target !== source &&
+				this.effectState.target.hasAlly(target) &&
+				this.getCategory(move) === 'Physical') {
+				if (!target.getMoveHitData(move).crit && !move.infiltrates) {
+					this.debug('amplified Reflect weaken');
+					if (this.activePerHalf > 1) return this.chainModify([2732, 4096]);
+					return this.chainModify(0.5);
+				}
 			}
-			return damage;
+			// Light Screen
+			if (target.side.getSideCondition('lightscreen') &&
+				target !== source &&
+				this.effectState.target.hasAlly(target) &&
+				this.getCategory(move) === 'Special') {
+				if (!target.getMoveHitData(move).crit && !move.infiltrates) {
+					this.debug('amplified Light Screen weaken');
+					if (this.activePerHalf > 1) return this.chainModify([2732, 4096]);
+					return this.chainModify(0.5);
+				}
+			}
+			// Aurora Veil
+			if (target !== source && this.effectState.target.hasAlly(target)) {
+				if ((target.side.getSideCondition('reflect') && this.getCategory(move) === 'Physical') ||
+					(target.side.getSideCondition('lightscreen') && this.getCategory(move) === 'Special')) {
+					return;
+				}
+				if (!target.getMoveHitData(move).crit && !move.infiltrates) {
+					this.debug('amplified Aurora Veil weaken');
+					if (this.activePerHalf > 1) return this.chainModify([2732, 4096]);
+					return this.chainModify(0.5);
+				}
+			}
 		},
 
 		// Healing Move interactions; Disabling in Rain or Sand
@@ -459,22 +549,29 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		onBeforeMove(pokemon, target, move) {
 			if (['raindance', 'sandstorm', 'primordialsea'].includes(this.field.effectiveWeather()) &&
 				['synthesis', 'moonlight', 'morningsun', 'solarbeam'].includes(move.id)) {
-
+				this.add('cant', pokemon, 'ability: Origin of Space', move);
+				return false;
+			}
+			// Fail usage of quaking moves in grassy terrain.
+			if (this.field.effectiveTerrain(this) === 'grassyterrain' &&
+				['earthquake', 'bulldoze', 'magnitude'].includes(move.id)) {
 				this.add('cant', pokemon, 'ability: Origin of Space', move);
 				return false;
 			}
 		},
 		onTryHeal(damage, target, source, effect) {
+			if (effect?.id === 'grassyterrain') { this.chainModify(2); return; }
+
 			if (['synthesis', 'moonlight', 'morningsun'].includes(effect?.id)) {
 				const activeWeather = this.field.effectiveWeather();
 				switch (activeWeather) {
-					case 'sunnyday':
-					case 'desolateland':
-					{
-						return target.maxhp;
-					}
+				case 'sunnyday':
+				case 'desolateland':
+				{
+					return target.maxhp;
+				}
 
-					default: break;
+				default: break;
 				}
 			}
 			if (effect?.id === 'shoreup' && this.field.effectiveWeather() === 'sandstorm') {

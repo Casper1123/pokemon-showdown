@@ -357,7 +357,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4,
 		num: -12,
 		isNonstandard: 'Custom',
-
+		onStart(source) {
+			this.add('-ability', source, 'Origin of Time');
+		},
 		onModifyPriority(priority, source, target, move) {
 			if (this.field.pseudoWeather['trickroom'] ||
 				this.field.pseudoWeather['wonderroom'] ||
