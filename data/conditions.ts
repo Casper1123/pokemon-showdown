@@ -1,5 +1,3 @@
-import {Battle} from "../sim";
-
 export const weatherAbilities = ['desolateland', 'primordialsea', 'deltastream',
 	'drizzle', 'sandstream', 'snowwarning', 'drought', 'orichalcumpulse'];
 export const terrainAbilities = ['psychicsurge', 'mistysurge', 'grassysurge', 'electricsurge', 'hadronengine'];
@@ -313,7 +311,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			Effects:
 				Pledges:
 					Grass + Fire  Pledge: 2/8th of max hp DoT for 4-2 turns.
-					Grass + Water Pledge: 1/6 Spe for 4-2 turns.
+					Grass + Water Pledge: 1/8 Spe for 4-2 turns.
 					Water + Fire  Pledge: x3 Secondary Effects Chance for 4-2 turns.
 
 				Weather: (-2 turns)
