@@ -302,6 +302,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		desc: "15% Flinch. Target: -1 Spe.",
 		shortDesc: "15% Flinch. Lowers the target's Speed by 1 stage.",
 		isNonstandard: "Custom",
+
+		onTryMove() {
+			this.attrLastMove('[still]');
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Megahorn', target);
+		},
 	},
 	weavegarments: {
 		num: -57,
