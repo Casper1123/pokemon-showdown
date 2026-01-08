@@ -1118,7 +1118,7 @@ New Moves:
 - ![rock]![physical] Diamond Storm
 
 **Roggenrola & Boldore:**<BR>
-Abilities: `Sturdy`, `Sand Stream`, `Terravore`
+Abilities: `Sturdy`, `Weak Armor`, `Terravore`
 
 **Gigalith**:<BR>
 Abilities: `Sturdy`, `Sand Stream`, `Terravore`
