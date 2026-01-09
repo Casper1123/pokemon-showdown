@@ -475,15 +475,6 @@ Taking a hit while protected restores 25% of max HP. <BR>
 **Users:**<BR>
 ![celebi]
 
-### ![ghost]![physical] Shadow Fangs
-BP: 70<BR>
-ACC: 100<BR>
-PP: 10<BR>
-Breaks protect (just like Feint), but has no priority. <BR>
-Biting, Contact.<BR>
-**Users:**<BR>
-![basculegion]![basculegion-f]
-
 ### ![steel]![physical] Needle Throw
 BP: 100<BR>
 ACC: 90<BR>
@@ -1335,10 +1326,6 @@ Base Stats:
 - spd: `75`
 - spe: `78`
 - Total: `530`
-
-**Shared:**<BR>
-New Moves:
-- ![ghost]![physical] Shadow Fangs
 
 ### ![klink]![klang]![klinklang]
 Abilities: `Plus`, `Levitate`, `Clear Body`

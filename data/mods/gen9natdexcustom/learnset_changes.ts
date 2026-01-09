@@ -199,8 +199,6 @@ export function applyChanges(data: ModdedDex): void {
 	setMove(data, 'kyuremwhite', 'glaciate');
 	setMove(data, 'kyuremblack', 'glaciate');
 	setMove(data, 'victini', 'psychocut');
-	setMove(data, 'basculegion', 'shadowfang');
-	setMove(data, 'basculegionf', 'shadowfang');
 	setMove(data, 'leavanny', 'bulletpunch');
 	setMove(data, 'leavanny', 'needlethrow');
 	setMove(data, 'leavanny', 'weavegarments');

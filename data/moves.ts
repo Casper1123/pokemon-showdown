@@ -236,46 +236,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			return move.basePower;
 		},
 	},
-	shadowfangs: {
-		num: -55,
-		accuracy: 100,
-		basePower: 70,
-		category: "Physical",
-		name: "Shadow Fangs",
-		pp: 10,
-		priority: 0,
-		flags: { mirror: 1, noassist: 1, failcopycat: 1, bite: 1, contact: 1 },
-		breaksProtect: true,
-		// Breaking protection implemented in scripts.js
-		/*
-		onModifyMove(move, pokemon, target) {
-			if (target?.isProtected()) {
-				move.basePower = 0;
-			}
-		},
-		*/
-		onTry(source, target) {
-			if (target.volatiles['protect'] || target.volatiles['banefulbunker'] ||
-				target.volatiles['kingsshield'] || target.volatiles['spikyshield'] ||
-				target.volatiles['obstruct'] || target.volatiles['silktrap'] || target.volatiles['timestop']) {
-				return null; // Fail after breaking protection
-			}
-		},
-
-		onTryMove() {
-			this.attrLastMove('[still]');
-		},
-		onPrepareHit(target, source) {
-			this.add('-anim', source, 'Bite', target);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Ghost",
-		contestType: "Clever",
-		desc: "Breaks protect.",
-		shortDesc: "Breaks protect.",
-		isNonstandard: "Custom",
-	},
 	needlethrow: {
 		num: -56,
 		accuracy: 90,
