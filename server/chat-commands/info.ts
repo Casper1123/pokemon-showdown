@@ -1838,7 +1838,7 @@ export const commands: Chat.ChatCommands = {
 		if (RANDOMS_CALC_COMMANDS.includes(cmd) ||
 			(isRandomBattle && !DEFAULT_CALC_COMMANDS.includes(cmd) && !BATTLESPOT_CALC_COMMANDS.includes(cmd))) {
 			return this.sendReplyBox(
-				`Random Battles damage calculator. (Courtesy of dhelmise &amp; jetou)<br />` +
+				`Pok&eacute;mon Showdown! damage calculator, modified for this server.<br />` +
 				`- <a href="https://showdowncalc.casper1123.nl/randoms.html">Random Battles Damage Calculator</a>` // TODO: set up random battles on the thingy.
 			);
 		}
@@ -1849,7 +1849,7 @@ export const commands: Chat.ChatCommands = {
 			);
 		}
 		this.sendReplyBox(
-			`Pok&eacute;mon Showdown! damage calculator. (Courtesy of Honko, Austin, dhelmise, &amp; jetou)<br />` +
+			`Pok&eacute;mon Showdown! damage calculator, modified for this server.<br />` +
 			`- <a href="https://showdowncalc.casper1123.nl/index.html">Damage Calculator</a>`
 		);
 	},
