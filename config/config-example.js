@@ -203,10 +203,11 @@ Y929lRybWEiKUr+4Yw2O1W0CAwEAAQ==
  *   Don't change this setting - there aren't any other options right now
  */
 exports.routes = {
-	root: 'pokemonshowdown.com',
-	client: 'play.pokemonshowdown.com',
+	root: 'showdownserver.casper1123.nl',
+	client: 'showdown.casper1123.nl',
 	dex: 'dex.pokemonshowdown.com',
 	replays: 'replay.pokemonshowdown.com',
+	calc: 'showdowncalc.casper1123.nl',
 };
 
 /**
