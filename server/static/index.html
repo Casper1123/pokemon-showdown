@@ -1,16 +1,4 @@
 <!DOCTYPE html>
-<script>
-var host = document.location.hostname.replace(/-/g, '=').replace(/\./g, '-').replace(/:/g, '--').replace(/=/g, '---');
-var currentPort = document.location.port || (document.location.protocol === 'https:' ? '443' : '80');
-var defaultPort = document.location.protocol === 'https:' ? '443' : '8000';
-var suffix = (currentPort !== defaultPort ? '--' + currentPort : '');
-var protocol = 'https:';
-if (document.location.protocol !== 'https:' && host !== 'localhost') {
-	protocol = 'http:';
-	suffix += '.insecure';
-}
-document.location.replace(protocol + '//' + host + suffix + '.psim.us' + document.location.pathname);
-</script>
-<p>This is a <a href="http://www.pokemonshowdown.com">Pok&eacute;mon Showdown</a> server!</p>
-<noscript><p>You'll need to <a href="http://enable-javascript.com/en/">enable JavaScript</a> to play.</p></noscript>
-<!-- todo: use this to redirect to showdown.casper1123.nl once everything is done -->
+<p>This is a <a href="http://www.pokemonshowdown.com">Pok&eacute;mon Showdown</a> server.</p>
+<p>This endpoint exists purely to have a separated endpoint for the server because I'm not that smart</p>
+<p>For a client-usable interface, visit <a href="https://casper1123.nl/showdown">the custom modified client</a> for a usable web-interface.</p>
