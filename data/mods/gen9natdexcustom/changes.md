@@ -519,7 +519,7 @@ Sets a primordial pseudoweather that lingers for 3 turns if not maintained. Has 
 ![palkia] ![palkia-origin]
 
 ### Absolute Distortion
-Sets a primordial pseudoweather. Removes all field conditions like weather and terrain, and removes hazard from own side. <BR>
+Sets a primordial pseudoweather. Removes all field conditions like weather and terrain, and removes hazards. <BR>
 Blocks all usages of status moves and abilities that set them, except if the user has the `Absolute Distortion` ability. <BR>
 **Users:**<BR>
 ![giratina] ![giratina-origin]

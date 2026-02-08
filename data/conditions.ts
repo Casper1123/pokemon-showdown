@@ -229,6 +229,14 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 					this.field.removePseudoWeather(pseudoWeather);
 				}
 			}
+
+			for (const side of this.sides) {
+				for (const condition of hazards) {
+					if (side.removeSideCondition(condition)) {
+						this.add('-sideend', source.side, this.dex.conditions.get(condition).name, '[from] ability: Absolute Distortion', `[of] ${source}`);
+					}
+				}
+			}
 		},
 		onTryMove(attacker, defender, move) {
 			if (attacker.hasAbility('absolutedistortion') && !attacker.abilityState.suppressed) return;
