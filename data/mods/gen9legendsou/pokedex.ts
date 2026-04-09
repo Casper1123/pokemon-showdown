@@ -1,7 +1,7 @@
 export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable = {
 	clefablemega: {
 		inherit: true,
-		abilities: { 0: "Serene Grace" },
+		abilities: { 0: "Prankster" },
 	},
 	victreebelmega: {
 		inherit: true,
@@ -19,18 +19,6 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		baseStats: { hp: 60, atk: 100, def: 105, spa: 130, spd: 105, spe: 120 },
 		abilities: { 0: "Pure Power" },
-	},
-	dragonitemega: {
-		inherit: true,
-		abilities: { 0: "Soul-Heart" },
-	},
-	meganiummega: {
-		inherit: true,
-		abilities: { 0: "Flower Veil" },
-	},
-	feraligatrmega: {
-		inherit: true,
-		abilities: { 0: "Dragon's Maw" },
 	},
 	ampharosmega: {
 		inherit: true,
@@ -64,10 +52,6 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		abilities: { 0: "Sharpness" },
 	},
-	froslassmega: {
-		inherit: true,
-		abilities: { 0: "Snow Warning" },
-	},
 	garchompmegaz: {
 		inherit: true,
 		abilities: { 0: "Rough Skin" },
@@ -78,19 +62,15 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	heatranmega: {
 		inherit: true,
-		abilities: { 0: "Earth Eater" },
+		abilities: { 0: "Filter" },
 	},
 	darkraimega: {
 		inherit: true,
 		abilities: { 0: "Dark Aura" },
 	},
-	emboarmega: {
-		inherit: true,
-		abilities: { 0: "Supreme Overlord" },
-	},
 	excadrillmega: {
 		inherit: true,
-		abilities: { 0: "Mold Breaker" },
+		abilities: { 0: "Sand Rush" },
 	},
 	golurkmega: {
 		inherit: true,
@@ -115,18 +95,6 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	chandeluremega: {
 		inherit: true,
 		abilities: { 0: "Magic Guard" },
-	},
-	chesnaughtmega: {
-		inherit: true,
-		abilities: { 0: "Bulletproof" },
-	},
-	delphoxmega: {
-		inherit: true,
-		abilities: { 0: "Levitate" },
-	},
-	greninjamega: {
-		inherit: true,
-		abilities: { 0: "Protean" },
 	},
 	meowsticmmega: {
 		inherit: true,
@@ -170,11 +138,11 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	golisopodmega: {
 		inherit: true,
-		abilities: { 0: "Regenerator" },
+		abilities: { 0: "Heatproof" },
 	},
 	drampamega: {
 		inherit: true,
-		abilities: { 0: "Drizzle" },
+		abilities: { 0: "Adaptability" },
 	},
 	magearnamega: {
 		inherit: true,
@@ -198,7 +166,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	glimmoramega: {
 		inherit: true,
-		abilities: { 0: "Rocky Payload" },
+		abilities: { 0: "Levitate" },
 	},
 	tatsugiricurlymega: {
 		inherit: true,
