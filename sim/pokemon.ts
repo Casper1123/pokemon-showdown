@@ -313,8 +313,10 @@ export class Pokemon {
 
 		this.m = {};
 
-		const pokemonScripts = this.battle.format.pokemon || this.battle.dex.data.Scripts.pokemon;
+		const pokemonScripts = this.battle.dex.data.Scripts.pokemon;
 		if (pokemonScripts) Object.assign(this, pokemonScripts);
+
+		if (this.battle.format.pokemon) Object.assign(this, this.battle.format.pokemon);
 
 		if (typeof set === 'string') set = { name: set };
 
@@ -709,7 +711,7 @@ export class Pokemon {
 		return move.moveHitData[slot] || (move.moveHitData[slot] = {
 			crit: false,
 			typeMod: 0,
-			zBrokeProtect: false,
+			bypassProtect: false,
 		});
 	}
 
@@ -1020,7 +1022,7 @@ export class Pokemon {
 				// if each of a Pokemon's base moves are disabled by one of these effects, it will Struggle
 				const canCauseStruggle = ['Encore', 'Disable', 'Taunt', 'Assault Vest', 'Belch', 'Stuff Cheeks'];
 				disabled = this.maxMoveDisabled(moveSlot.id) || disabled && canCauseStruggle.includes(moveSlot.disabledSource!);
-			} else if (moveSlot.pp <= 0 && !this.volatiles['partialtrappinglock']) {
+			} else if (moveSlot.pp <= 0) {
 				disabled = true;
 			}
 
@@ -1184,7 +1186,7 @@ export class Pokemon {
 			entry.commanding = !!this.volatiles['commanding'] && !this.fainted;
 			entry.reviving = this.isActive && !!this.side.slotConditions[this.position]['revivalblessing'];
 		}
-		if (this.battle.gen === 9) {
+		if (this.battle.gen === 9 && this.battle.dex.currentMod !== 'champions') {
 			entry.teraType = this.teraType;
 			entry.terastallized = this.terastallized || '';
 		}
@@ -1850,13 +1852,9 @@ export class Pokemon {
 	}
 
 	takeItem(source?: Pokemon) {
-		if (!this.item) return false;
 		if (!source) source = this;
-		if (this.battle.gen <= 4) {
-			if (source.itemKnockedOff) return false;
-			if (toID(this.ability) === 'multitype') return false;
-			if (toID(source.ability) === 'multitype') return false;
-		}
+		if (this.battle.gen <= 4 && (this.itemKnockedOff || source.itemKnockedOff)) return false;
+		if (!this.item) return;
 		const item = this.getItem();
 		if (this.battle.runEvent('TakeItem', this, source, null, item)) {
 			this.item = '';
@@ -2196,7 +2194,7 @@ export class Pokemon {
 	 * Like Field.effectiveWeather(), but ignores sun and rain if
 	 * the Utility Umbrella is active for the Pokemon.
 	 */
-	effectiveWeather() {
+	effectiveWeather(message?: string | boolean) {
 		const weather = this.battle.field.effectiveWeather();
 		switch (weather) {
 		case 'sunnyday':
@@ -2205,7 +2203,11 @@ export class Pokemon {
 		case 'primordialsea':
 			if (this.hasItem('utilityumbrella')) return '';
 		}
-		if (this.hasAbility('megasol') && this.battle.activePokemon === this) return 'sunnyday';
+		// TODO: check interactions of Mega Sol with Utility Umbrella and Desolate Land
+		if (this.hasAbility('megasol') && this.battle.activePokemon === this && weather !== 'sunnyday') {
+			if (message) this.battle.add('-activate', this, 'ability: Mega Sol');
+			return 'sunnyday' as ID;
+		}
 		return weather;
 	}
 

@@ -62,11 +62,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		],
 	},
 	{
-		name: "[Gen 9] Anything Goes",
-		mod: 'gen9',
-		ruleset: ['Standard AG'],
-	},
-	{
 		name: "[Gen 8] National Dex",
 		mod: 'gen8',
 		ruleset: ['Standard NatDex', 'Dynamax Clause'],
@@ -94,5 +89,16 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		gameType: 'doubles',
 		ruleset: ['Standard Doubles', 'Evasion Abilities Clause'],
 		banlist: ['DUber', 'Shadow Tag'],
+	},
+	// S/V
+	///////////////////////////////////////////////////////////////////
+	{
+		section: "Champions",
+	},
+	{
+		name: "[Gen 9 Champions] OU",
+		mod: 'champions',
+		ruleset: ['Standard'],
+		banlist: ['AG', 'Uber', 'Moody', 'Baton Pass', 'Last Respects', 'Shed Tail'],
 	},
 ];
