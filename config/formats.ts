@@ -90,7 +90,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		ruleset: ['Standard Doubles', 'Evasion Abilities Clause'],
 		banlist: ['DUber', 'Shadow Tag'],
 	},
-	// S/V
+	// Champions
 	///////////////////////////////////////////////////////////////////
 	{
 		section: "Champions",
