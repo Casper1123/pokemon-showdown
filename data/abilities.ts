@@ -44,8 +44,6 @@ Ratings and how they work:
 	},
  */
 
-import { hazards } from "./conditions";
-
 export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	// Custom
 	// IMPORTANT: DISTORTIONS REQUIRE SCRIPTS FOUND IN GEN9NATDEXCUSTOM.scripts.ts

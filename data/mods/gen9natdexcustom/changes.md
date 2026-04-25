@@ -394,11 +394,6 @@ BP: `75` --> `85`<BR>
 Some benefitting mons: <BR>
 ![samurott-hisui] ![samurott] ![cloyster] ![crawdaunt] ![golisopod]
 
-### ![dragon]![special] Roar of Time
-Recharge move --> Cannot be used consecutively.<BR>
-Benefitting mons: <BR>
-![dialga] ![dialga-origin]
-
 ### ![ghost]![physical] Shadow Claw
 BP: `70` --> `80`<BR>
 Benefitting mons: <BR>
@@ -407,8 +402,23 @@ Benefitting mons: <BR>
 ### ![dragon]![special] Spacial Rend
 BP: `100` --> `120`<BR>
 ACC: `95` --> `85`<BR>
+<BR>
+If `Palkia-Origin` with `Origin of Space` as its ability:<BR>
+BP: `100`<BR>
+ACC: `100`<BR>
+Ends all non-Room field effects.<BR>
+<BR>
 Benefitting mons: <BR>
 ![palkia] ![palkia-origin]
+
+### ![dragon]![special] Roar of Time
+1 Turn cooldown --> Cannot be used consecutively.<BR>
+<BR>
+If `Dialga-Origin` with `Origin of Time`:<BR>
+BP: `100`<BR>
+Ends all Room-type field effects (Trick, Wonder, Magic, etc.)<BR>
+Benefitting mons:<BR> 
+![dialga] ![dialga-origin]
 
 ### ![fairy]![special] Sparkly Swirl
 BP: `90` --> `60`<BR>
@@ -519,11 +529,18 @@ Sets a primordial pseudoweather. While active, all attacking moves hit for 0.8x 
 In 2 turns, they hit again for 0.4x damage. This distorted move cannot boost allies stats.<BR>
 *Exceptions that do not hit twice: Fake Out, Doom Desire, Future Sight, Thunderclap, Sucker Punch.* <BR>
 **Users:**<BR>
-![dialga] ![dialga-origin] ![celebi]
+![dialga] ![celebi]
+
 ### Spatial Distortion
 Sets a primordial pseudoweather that lingers for 3 turns if not maintained. Has the effects of Gravity. <BR>
 **Users:**<BR>
-![palkia] ![palkia-origin]
+![palkia]
+### Origin of Time
+Moves have +1 Priority while a Room-type pseudoweather is in effect.
+**Users:**<BR>
+![dialga-origin]
+### Origin of Space
+
 
 ### Absolute Distortion
 Sets a primordial pseudoweather. Removes all field conditions like weather and terrain, and removes hazards. <BR>

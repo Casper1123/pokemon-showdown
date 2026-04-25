@@ -19,8 +19,6 @@
 	},
  */
 
-import {originOfSpacePledgeDurationTurnReduction} from "./conditions";
-
 export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	// Custom moves:
 	desertsong: {
@@ -168,7 +166,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onTryHit(target, source, move) {
 				if (!move.flags['protect'] || move.category === 'Status') {
 					if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
-					if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
+					if (move.isZ || move.isMax) target.getMoveHitData(move).bypassProtect = true;
 					return;
 				}
 				if (move.smartTarget) {
@@ -194,7 +192,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.add('-message', `${target.name} fades into the future.`);
 			},
 		},
-		secondary: null,
 		target: "self",
 		type: "Psychic",
 	},
@@ -279,7 +276,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { },
-		secondaries: null,
 		target: "adjacentAllyOrSelf",
 		type: "Bug",
 		desc: "+1 SpD, Spe & Acc and immune to status. Wears off after status effect, Fire or Ice move.",

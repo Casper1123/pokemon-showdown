@@ -1,3 +1,5 @@
+import { hazards, rooms, toIdLocal } from "../../conditions";
+
 export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	mudshot: {
 		inherit: true,
@@ -107,13 +109,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			this.add('-anim', source, 'Luster Purge', target);
 		},
 	},
-	roaroftime: {
-		inherit: true,
-		flags: { protect: 1, mirror: 1, metronome: 1, cantusetwice: 1 },
-		self: undefined,
-		desc: "Cannot be used consecutively.",
-		shortDesc: "Cannot be used consecutively.",
-	},
 	eruption: {
 		inherit: true,
 		secondary: {},
@@ -183,10 +178,72 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		accuracy: 80,
 	},
+	roaroftime: {
+		inherit: true,
+		flags: { protect: 1, mirror: 1, metronome: 1, cantusetwice: 1 },
+		self: undefined,
+		desc: "Cannot be used consecutively. 100BP & ends Rooms if Origin of Time.",
+		shortDesc: "Cannot be used consecutively. 100BP & ends Rooms if Origin of Time Dialga-Origin.",
+		basePowerCallback(source, target, move) {
+			if (source.species.id === 'dialgaorigin' && source.ability === 'originofspace') {
+				this.debug('100 bp for originoftime');
+				return 100;
+			}
+			return move.basePower;
+		},
+		onAfterMove(source, target, move) {
+			if (source.species.id === 'dialgaorigin' && source.ability === 'originoftime') {
+				for (const pseudoWeather of Object.keys(this.field.pseudoWeather)) {
+					if (rooms.includes(toIdLocal(pseudoWeather))) { // Only delete rooms, as specified in the conditions var.
+						this.field.removePseudoWeather(pseudoWeather);
+					}
+				}
+			}
+		},
+	},
 	spacialrend: {
+		desc: "High crit ratio. 100:100 and ends field effects when Origin of Space.",
+		shortDesc: "High crit ratio. 100:100 when Origin of Space Palkia-Origin and ends all non-Room field effects.",
 		inherit: true,
 		accuracy: 85,
 		basePower: 120,
+		basePowerCallback(source, target, move) {
+			if (source.species.id === 'palkiaorigin' && source.ability === 'originofspace') {
+				this.debug('100 bp for originofspace');
+				return 100;
+			}
+			return move.basePower;
+		},
+		onModifyMove(move, source, target) {
+			if (source.species.id === 'palkiaorigin' && source.ability === 'originofspace') {
+				this.debug('85 --> 100 bp for originofspace');
+				return 100;
+			}
+			return move.accuracy;
+		},
+		onAfterMove(source, target, move) {
+			if (source.species.id === 'palkiaorigin' && source.ability === 'originofspace') {
+				// Delete side effects, delete field effects.
+				// Note that Distortions are Field effects.
+				// Does not clear Rooms, by design.
+				// Nor does it remove Hazards. Might change this in the future?
+				this.field.clearWeather();
+				this.field.clearTerrain();
+				for (const pseudoWeather of Object.keys(this.field.pseudoWeather)) {
+					if (!rooms.includes(toIdLocal(pseudoWeather))) {
+						this.field.removePseudoWeather(pseudoWeather);
+					}
+				}
+				for (const side of this.sides) {
+					for (const condition in side.sideConditions) {
+						if (hazards.includes(condition)) {
+							continue;
+						}
+						side.removeSideCondition(condition);
+					}
+				}
+			}
+		},
 	},
 	thunderwave: {
 		inherit: true,

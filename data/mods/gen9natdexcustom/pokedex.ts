@@ -218,7 +218,7 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	},
 	dialgaorigin: {
 		inherit: true,
-		abilities: { 0: "Pressure", 1: "Telepathy", H: "Chronal Distortion" },
+		abilities: { 0: "Pressure", 1: "Telepathy", H: "Origin of Time" },
 	},
 	palkia: {
 		inherit: true,
@@ -226,7 +226,7 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 	},
 	palkiaorigin: {
 		inherit: true,
-		abilities: { 0: "Pressure", 1: "Telepathy", H: "Spatial Distortion" },
+		abilities: { 0: "Pressure", 1: "Telepathy", H: "Origin of Space" },
 	},
 	giratina: {
 		inherit: true,
