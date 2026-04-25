@@ -284,6 +284,10 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [klang]: https://play.pokemonshowdown.com/sprites/gen5ani/klang.gif
 [klinklang]: https://play.pokemonshowdown.com/sprites/gen5ani/klinklang.gif
 [leavanny]: https://play.pokemonshowdown.com/sprites/gen5ani/leavanny.gif
+[zekrom]: https://play.pokemonshowdown.com/sprites/gen5ani/zekrom.gif
+[reshiram]: https://play.pokemonshowdown.com/sprites/gen5ani/reshiram.gif
+[kyurem-black]: https://play.pokemonshowdown.com/sprites/gen5ani/kyurem-black.gif
+[kyurem-white]: https://play.pokemonshowdown.com/sprites/gen5ani/kyurem-white.gif
 
 
 [sec-gen6]: .
@@ -505,7 +509,10 @@ Additionally grants Status immunity.
 **Users:**<BR>
 ![minior-meteor]![minior]![minior-blue]![minior-green]![minior-indigo]![minior-orange]![minior-violet]![minior-yellow]
 
-
+### Turboblaze & Teravolt
+Retaining their `Mold Breaker` effects, now additionally set Sun/Electric Terrain and boost move accuracy by 1.2x while these effects are active.
+**Users:**<BR>
+![chandelure] ![ampharos] ![ampharos-mega] ![zekrom] ![reshiram] ![kyurem-white] ![kyurem-black]
 ## Custom Abilities
 ### Chronal Distortion 
 Sets a primordial pseudoweather. While active, all attacking moves hit for 0.8x damage.<BR>
