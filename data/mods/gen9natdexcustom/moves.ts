@@ -117,7 +117,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	eruption: {
 		inherit: true,
 		secondary: {},
-		hasSheerForce: true,
 	},
 	freezeshock: {
 		inherit: true,
