@@ -538,6 +538,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 				}
 			}
 			// Aurora Veil
+			// Fixme: what the fuck did I do here?
 			if (target !== source && this.effectState.target.hasAlly(target)) {
 				if ((target.side.getSideCondition('reflect') && this.getCategory(move) === 'Physical') ||
 					(target.side.getSideCondition('lightscreen') && this.getCategory(move) === 'Special')) {

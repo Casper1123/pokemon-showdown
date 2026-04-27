@@ -577,6 +577,35 @@ On KO, raise Speed by 1. Moves do not make contact. <BR>
 **Users:**<BR>
 ![leavanny]
 
+### Origin of Time
+While a room-type Pseudoweather is in effect, moves have +1 priority.<BR>
+**Users:**<BR>
+![dialga-origin]
+
+### Origin of Space
+Amplifies the effects of non-hazard non-room field effects.<BR>
+This reduces their max duration by 2 turns, but will not remove them from the field if the turn reduction would end the effect.
+In the case of weathers and terrains, it may also modify other aspects.<BR>
+**Note**: Healing moves listed down below include the following: ![grass]![status] Synthesis, ![fairy]![status] Moonlight and ![fire]![status] Morning Sun
+**Pledges:**<BR>
+![grass]![fire]: 2/8 of max hp DoT.<BR>
+![grass]![water]: 1/8 Speed multiplier.<BR>
+![water]![fire]: Secondary chance `2x` --> `3x`.<BR>
+<BR>
+**Rain & Sun**: Amps ![water]/![fire] damage by `75`%, and lowers ![fire]/![water] damage by `75`% respectively. Additionally, ***\[healing moves\]*** **fail**/**restores to full**. In Rain, ![grass]![special] Solar Beam fails.<BR>
+**Hail**: 1/8 of max hp DoT.<BR>
+**Snow**: `75%` Def boost. Additionally, changes speed multipliers to `1.5x`/`0.5x` and STAB multiplier by `1.5x`. Lastly, ***\[healing moves\]*** restore `25%` of max HP.<BR>
+**Sand**: 1/8 of max hp DoT. `75%` SpD boost. ![grass]![special] Solar Beam fails. ![ground]![status] Shore Up restores to full, and ***\[healing moves\]*** fail.
+
+
+**Electric Terrain**: `50%` damage amp.
+**Grassy Terrain**: 1/8th HP restored, `50%` damage amp, ![ground]![physical] Bulldoze ![ground]![physical] Earthquake and ![ground]![physical] Magnitude **fail**. 
+**Misty Terrain**: `50%` ![dragon] damage reduction. Blocks Flinch.
+**Psychic Terrain**:`50%` damage amp.
+
+**Reflect, Light Screen & Aurora Veil**: `75%` damage reduction. Doubles damage reduction should be scaled accordingly.
+NOTE: ABILITY IS CURRENTLY BUGGED AND POORLY IMPLEMENTED, NEEDS MORE WORK. IDK WHY I AM PUSHING THIS OUT YET.
+
 # Pokémon
 ## Gen 1
 ### ![gengar]
