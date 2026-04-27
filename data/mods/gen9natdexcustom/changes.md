@@ -108,7 +108,6 @@ This list will be periodically updated whenever things rotate in and out.
 ### Battle
 *Dynamax Clause*<BR>
 *Force Open Team Sheets*<BR>
-*Best of (3)*<BR>
 
 
 # Mod changes
