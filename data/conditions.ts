@@ -335,7 +335,6 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 						+75% Fire  damage
 						-75% Water damage
 						Synthesis, Morning Sun, Moonlight 100% HP
-						Growth raises stats by +3 instead of +1
 
 					Hail:
 						1/8th HP/turn to non-Ice Pokémon.
@@ -538,7 +537,6 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 				}
 			}
 			// Aurora Veil
-			// Fixme: what the fuck did I do here?
 			if (target !== source && this.effectState.target.hasAlly(target)) {
 				if ((target.side.getSideCondition('reflect') && this.getCategory(move) === 'Physical') ||
 					(target.side.getSideCondition('lightscreen') && this.getCategory(move) === 'Special')) {
