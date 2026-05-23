@@ -158,6 +158,8 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [graveler]: https://play.pokemonshowdown.com/sprites/gen5ani/graveler.gif
 [golem]: https://play.pokemonshowdown.com/sprites/gen5ani/golem.gif
 [onix]: https://play.pokemonshowdown.com/sprites/gen5ani/onix.gif
+[blissey]: https://play.pokemonshowdown.com/sprites/gen5ani/blissey.gif
+[chansey]: https://play.pokemonshowdown.com/sprites/gen5ani/chansey.gif
 
 [sec-gen2]: .
 [celebi]: https://play.pokemonshowdown.com/sprites/gen5ani/celebi.gif
@@ -287,6 +289,8 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [reshiram]: https://play.pokemonshowdown.com/sprites/gen5ani/reshiram.gif
 [kyurem-black]: https://play.pokemonshowdown.com/sprites/gen5ani/kyurem-black.gif
 [kyurem-white]: https://play.pokemonshowdown.com/sprites/gen5ani/kyurem-white.gif
+[golurk-mega]: https://play.pokemonshowdown.com/sprites/gen5/golurk-mega.png
+[alomomola]: https://play.pokemonshowdown.com/sprites/gen5ani/alomomola.gif
 
 
 [sec-gen6]: .
@@ -320,6 +324,9 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [dubwool]: https://play.pokemonshowdown.com/sprites/gen5ani/dubwool.gif
 [dubwool-shiny]: https://play.pokemonshowdown.com/sprites/gen5ani-shiny/dubwool.gif
 [kleavor]: https://play.pokemonshowdown.com/sprites/gen5/kleavor.png
+[urshifu-dark]: https://play.pokemonshowdown.com/sprites/gen5/urshifu.png
+[urshifu-water]: https://play.pokemonshowdown.com/sprites/gen5/urshifu-rapidstrike.png
+[hatterene]: https://play.pokemonshowdown.com/sprites/gen5ani/hatterene.gif
 
 [sec-gen9]: .
 [glimmora]: https://play.pokemonshowdown.com/sprites/gen5/glimmora.png
@@ -522,6 +529,17 @@ Additionally grants Status immunity.
 Retaining their `Mold Breaker` effects, now additionally set Sun/Electric Terrain and boost move accuracy by 1.2x while these effects are active.
 **Users:**<BR>
 ![chandelure] ![ampharos] ![ampharos-mega] ![zekrom] ![reshiram] ![kyurem-white] ![kyurem-black]
+
+### Unseen Fist
+`100%` --> `25%` contact move damage through Protect.<BR>
+**Users:**<BR>
+![banette-mega]![golurk-mega]![urshifu-dark]![urshifu-water]
+
+### Healer
+`30%` --> `50%` to cure ally non-volatile status condition.<BR>
+**Users:**<BR>
+![audino]![alomomola]![hatterene]![blissey]![chansey]
+
 ## Custom Abilities
 ### Chronal Distortion 
 Sets a primordial pseudoweather. While active, all attacking moves hit for 0.8x damage.<BR>
@@ -534,9 +552,11 @@ In 2 turns, they hit again for 0.4x damage. This distorted move cannot boost all
 Sets a primordial pseudoweather that lingers for 3 turns if not maintained. Has the effects of Gravity. <BR>
 **Users:**<BR>
 ![palkia]
+
 ### Origin of Time
 Moves have +1 Priority while a Room-type pseudoweather is in effect.
 **Users:**<BR>
+
 ![dialga-origin]
 ### Origin of Space
 
