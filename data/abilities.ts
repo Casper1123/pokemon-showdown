@@ -187,7 +187,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: { breakable: 1 },
 		name: "Frolicking",
 		desc: "Gains Grass resistances and STAB. In Grassy Terrain, gains 1.5x to both defenses and restores twice as much hp from Grassy Terrain and Leftovers.",
-		shortDesc: "Gains Grass resistances and STAB. 1.5x to defenses and 2x residual healing in Grassy Terrain.",
+		shortDesc: "Gains Grass resistances and STAB. Grassy: 1.5x defs, 2x residual healing",
 		gen: 9,
 		// Extra def in grassy terrain.
 		onModifyDef(pokemon) {
