@@ -305,6 +305,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [alomomola]: https://play.pokemonshowdown.com/sprites/gen5ani/alomomola.gif
 [heatmor]: https://play.pokemonshowdown.com/sprites/gen5ani/heatmor.gif
 [stunfisk-galar]: https://play.pokemonshowdown.com/sprites/gen5/stunfisk-galar.png
+[cinccino]: https://play.pokemonshowdown.com/sprites/gen5ani/cinccino.gif
 
 
 [sec-gen6]: .
@@ -631,6 +632,11 @@ PP: `20` --> `10`. <BR>
 ACC: `85` --> `90`<BR>
 Benefitting mons:<BR>
 ![hydrapple]
+
+### ![normal]![physical] Tail Slap
+ACC: `85` --> `90`<BR>
+Benefitting mons:<BR>
+![ambipom]![cinccino]
 
 ### ![electric]![status] Thunder Wave
 ![electric] type: cannot miss.<BR>

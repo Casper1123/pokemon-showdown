@@ -305,6 +305,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		basePower: 100,
 	},
+	tailslap: {
+		inherit: true,
+		accuracy: 90,
+	},
 
 	// Custom moves allowed
 	desertsong: {
