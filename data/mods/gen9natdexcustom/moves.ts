@@ -286,6 +286,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	shadowclaw: {
 		inherit: true,
 		basePower: 80,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
 	},
 
 	// Custom moves allowed
@@ -320,5 +321,178 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	weavegarments: {
 		inherit: true,
 		isNonstandard: null,
+	},
+
+	// Champions
+	firstimpression: {
+		inherit: true,
+		basePower: 100,
+	},
+	astralbarrage: {
+		inherit: true,
+		basePower: 110,
+	},
+	beakblast: {
+		inherit: true,
+		basePower: 120,
+		pp: 5,
+	},
+	bloodmoon: {
+		inherit: true,
+		basePower: 130,
+		isNonstandard: "Past",
+	},
+	boltbeak: {
+		inherit: true,
+		basePower: 80,
+	},
+	bonerush: {
+		inherit: true,
+		basePower: 30,
+	},
+	crabhammer: {
+		inherit: true,
+		accuracy: 95,
+	},
+	crushclaw: {
+		inherit: true,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
+	},
+	direclaw: {
+		inherit: true,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
+		secondary: {
+			chance: 30,
+			onHit(target, source) {
+				const status = this.sample(['psn', 'par', 'slp']);
+				// This seems to only happen with Dire Claw
+				if (target.status) {
+					if (target.status === status) {
+						this.add('-fail', target, status);
+					} else {
+						this.add('-fail', source);
+					}
+					return;
+				}
+				target.trySetStatus(status, source);
+			},
+		},
+		desc: "Has a 30% chance to cause the target to either fall asleep, become poisoned, or become paralyzed.",
+		shortDesc: "30% chance to sleep, poison, or paralyze target.",
+	},
+	dragoncheer: {
+		inherit: true,
+		flags: { bypasssub: 1, allyanim: 1, metronome: 1, sound: 1 },
+	},
+	dragonclaw: {
+		inherit: true,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
+	},
+	dragonhammer: {
+		inherit: true,
+		basePower: 100,
+		isNonstandard: "Past",
+	},
+	firelash: {
+		inherit: true,
+		basePower: 90,
+	},
+	fishiousrend: {
+		inherit: true,
+		basePower: 80,
+	},
+	geargrind: {
+		inherit: true,
+		accuracy: 90,
+		basePower: 60,
+	},
+	gravapple: {
+		inherit: true,
+		basePower: 90,
+	},
+	hyperdrill: {
+		inherit: true,
+		basePower: 120,
+	},
+	infernalparade: {
+		inherit: true,
+		basePower: 65,
+	},
+	makeitrain: {
+		inherit: true,
+		accuracy: 95,
+		isNonstandard: "Past",
+	},
+	metalclaw: {
+		inherit: true,
+		isNonstandard: "Past",
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
+	},
+	moonblast: {
+		inherit: true,
+		secondary: {
+			chance: 10,
+			boosts: {
+				spa: -1,
+			},
+		},
+		desc: "Has a 10% chance to lower the target's Special Attack by 1 stage.",
+		shortDesc: "10% chance to lower the target's Sp. Atk by 1.",
+	},
+	mountaingale: {
+		inherit: true,
+		basePower: 120,
+	},
+	nightdaze: {
+		inherit: true,
+		basePower: 90,
+	},
+	nightslash: {
+		inherit: true,
+		pp: 20,
+	},
+	psyshieldbash: {
+		inherit: true,
+		basePower: 90,
+	},
+	revelationdance: {
+		inherit: true,
+		basePower: 100,
+	},
+	shelltrap: {
+		inherit: true,
+		pp: 10,
+	},
+	snaptrap: {
+		inherit: true,
+		type: "Steel",
+	},
+	snipeshot: {
+		inherit: true,
+		basePower: 85,
+	},
+	spiritshackle: {
+		inherit: true,
+		basePower: 90,
+	},
+	syrupbomb: {
+		inherit: true,
+		accuracy: 90,
+	},
+	toxicthread: {
+		inherit: true,
+		boosts: {
+			spe: -2,
+		},
+		desc: "Lowers the target's Speed by 2 stages and poisons it.",
+		shortDesc: "Lowers the target's Speed by 2 and poisons it.",
+	},
+	tripledive: {
+		inherit: true,
+		basePower: 35,
+	},
+	tropkick: {
+		inherit: true,
+		basePower: 85,
 	},
 };
