@@ -328,6 +328,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [minior-violet]: https://play.pokemonshowdown.com/sprites/gen5ani/minior-violet.gif
 [minior-yellow]: https://play.pokemonshowdown.com/sprites/gen5ani/minior-yellow.gif
 [tapu-bulu]: https://play.pokemonshowdown.com/sprites/gen5ani/tapubulu.gif
+[tapu-koko]: https://play.pokemonshowdown.com/sprites/gen5ani/tapukoko.gif
 [crabominable]: https://play.pokemonshowdown.com/sprites/gen5ani/crabominable.gif
 [crabominable-mega]: https://play.pokemonshowdown.com/sprites/gen5/crabominable-mega.png
 [tsareena]: https://play.pokemonshowdown.com/sprites/gen5/tsareena.png
@@ -595,6 +596,10 @@ Ends all non-Room field effects.<BR>
 Benefitting mons: <BR>
 ![palkia] ![palkia-origin]
 
+### ![electric]![physical] Spark
+BP: `65` --> `80`<BR>
+Benefitting mons:<BR>
+![tapu-koko]![zeraora]![electross]![luxray]![pawmot]![zebstrika]
 
 ### ![fairy]![special] Sparkly Swirl
 BP: `90` --> `60`<BR>
@@ -651,6 +656,11 @@ Benefitting mons: <BR>
 BP: `70` --> `85`<BR>
 Benefitting mons:<BR>
 ![tsareena]
+
+### ![electric]![physical] Wild Charge
+BP: `90` --> `100`<BR>
+Benefitting mons:<BR>
+> **Too many to list.**
 
 ### ![fire]![status] Will-o-Wisp
 ![fire] type: cannot miss.<BR>

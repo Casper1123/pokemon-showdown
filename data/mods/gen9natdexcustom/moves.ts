@@ -297,6 +297,14 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		basePower: 50,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
 	},
+	spark: {
+		inherit: true,
+		basePower: 80,
+	},
+	wildcharge: {
+		inherit: true,
+		basePower: 100,
+	},
 
 	// Custom moves allowed
 	desertsong: {
