@@ -249,6 +249,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [lucario]: https://play.pokemonshowdown.com/sprites/gen5ani/lucario.gif
 [lucario-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/lucario-mega.gif
 [wyrdeer]: https://play.pokemonshowdown.com/sprites/gen5ani/wyrdeer.gif
+[luxray]: https://play.pokemonshowdown.com/sprites/gen5ani/luxray.gif
 
 
 [sec-gen5]: .
@@ -305,7 +306,9 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [alomomola]: https://play.pokemonshowdown.com/sprites/gen5ani/alomomola.gif
 [heatmor]: https://play.pokemonshowdown.com/sprites/gen5ani/heatmor.gif
 [stunfisk-galar]: https://play.pokemonshowdown.com/sprites/gen5/stunfisk-galar.png
-[cinccino]: https://play.pokemonshowdown.com/sprites/gen5ani    /cinccino.gif
+[cinccino]: https://play.pokemonshowdown.com/sprites/gen5ani/cinccino.gif
+[zebstrika]: https://play.pokemonshowdown.com/sprites/gen5ani/zebstrika.gif
+[eelektross]: https://play.pokemonshowdown.com/sprites/gen5ani/eelektross.gif
 
 
 [sec-gen6]: .
@@ -341,6 +344,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [oricorio-pau]: https://play.pokemonshowdown.com/sprites/gen5/oricorio-pau.png
 [oricorio-pompom]: https://play.pokemonshowdown.com/sprites/gen5/oricorio-pompom.png
 [oricorio-sensu]: https://play.pokemonshowdown.com/sprites/gen5/oricorio-sensu.png
+[zeraora]: https://play.pokemonshowdown.com/sprites/gen5ani/zeraora.gif
 
 [sec-gen8]: .
 [dragapult]: https://play.pokemonshowdown.com/sprites/gen5ani/dragapult.gif
@@ -379,6 +383,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [kingambit]: https://play.pokemonshowdown.com/sprites/gen5/kingambit.png
 [ragingbolt]: https://play.pokemonshowdown.com/sprites/gen5/ragingbolt.png
 [wugtrio]: https://play.pokemonshowdown.com/sprites/gen5/wugtrio.png
+[pawmot]: https://play.pokemonshowdown.com/sprites/gen5/pawmot.png
 
 # Moves
 ### ![ghost]![special] Astral Barrage
@@ -600,7 +605,7 @@ Benefitting mons: <BR>
 ### ![electric]![physical] Spark
 BP: `65` --> `80`<BR>
 Benefitting mons:<BR>
-![tapu-koko]![zeraora]![electross]![luxray]![pawmot]![zebstrika]
+![tapu-koko]![zeraora]![eelektross]![luxray]![pawmot]![zebstrika]
 
 ### ![fairy]![special] Sparkly Swirl
 BP: `90` --> `60`<BR>
