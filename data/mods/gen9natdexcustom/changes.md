@@ -166,6 +166,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 
 [sec-gen2]: .
 [celebi]: https://play.pokemonshowdown.com/sprites/gen5ani/celebi.gif
+[ambipom]: https://play.pokemonshowdown.com/sprites/gen5ani/ambipom.gif
 [typhlosion]: https://play.pokemonshowdown.com/sprites/gen5ani/typhlosion.gif
 [typhlosion-hisui]: https://play.pokemonshowdown.com/sprites/gen5/typhlosion-hisui.png
 [steelix-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/steelix-mega.gif
@@ -299,6 +300,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [reshiram]: https://play.pokemonshowdown.com/sprites/gen5ani/reshiram.gif
 [kyurem-black]: https://play.pokemonshowdown.com/sprites/gen5ani/kyurem-black.gif
 [kyurem-white]: https://play.pokemonshowdown.com/sprites/gen5ani/kyurem-white.gif
+[golurk]: https://play.pokemonshowdown.com/sprites/gen5ani/golurk.gif
 [golurk-mega]: https://play.pokemonshowdown.com/sprites/gen5/golurk-mega.png
 [alomomola]: https://play.pokemonshowdown.com/sprites/gen5ani/alomomola.gif
 [heatmor]: https://play.pokemonshowdown.com/sprites/gen5ani/heatmor.gif
@@ -439,6 +441,12 @@ Flinch: `20%` --> `15%` <BR>
 Benefitting mons: <BR>
 ![garchomp] ![haxorus] ![charizard-mega-x] ![dragapult] ![salamence] ![flygon] ![dracozolt]
 
+### ![dragon]![physical] Dual Chop
+BP: `40` --> `50`<BR>
+IS now a **slicing** move.<BR>
+Benefitting mons: <BR>
+![gallade]![gallade-mega]![haxorus]![garchomp]![garchomp-mega]![ambipom]
+
 ### ![fire]![special] Eruption
 Is now boosted by **Sheer Force**. <BR>
 Benefitting mons: <BR>
@@ -569,6 +577,11 @@ BP: `70` --> `80`<BR>
 Is now a **slicing** move.<BR>
 Benefitting mons: <BR>
 ![giratina]![giratina-origin]![mimikyu]![zoroark-hisui]![ceruledge]![banette-mega]![ironvaliant]![gallade-mega]
+
+### ![ghost]![physical] Shadow Punch
+BP: `60` --> `80`<BR>
+Benefitting mons:<BR>
+![dusknoir]![golurk]![golurk-mega]
 
 ### ![dragon]![special] Spacial Rend
 BP: `100` --> `120`<BR>
