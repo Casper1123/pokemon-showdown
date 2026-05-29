@@ -142,6 +142,8 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 
 [sec-gen1]: .
 [gengar]: https://play.pokemonshowdown.com/sprites/gen5ani/gengar.gif
+[marowak]: https://play.pokemonshowdown.com/sprites/gen5ani/marowak.gif
+[marowak-alola]: https://play.pokemonshowdown.com/sprites/gen5ani/marowak-alola.gif
 [charizard-mega-x]: https://play.pokemonshowdown.com/sprites/gen5ani/charizard-megax.gif
 [starmie]: https://play.pokemonshowdown.com/sprites/gen5ani/starmie.gif
 [cloyster]: https://play.pokemonshowdown.com/sprites/gen5ani/cloyster.gif
@@ -150,6 +152,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [pidgeot-mega]: https://play.pokemonshowdown.com/sprites/gen5/pidgeot-mega.png
 [moltres-galar]: https://play.pokemonshowdown.com/sprites/gen5/moltres-galar.png
 [persian]: https://play.pokemonshowdown.com/sprites/gen5ani/persian.gif
+[kingler]: https://play.pokemonshowdown.com/sprites/gen5ani/kingler.gif
 [persian-alola]: https://play.pokemonshowdown.com/sprites/gen5ani/persian-alola.gif
 [grimer]: https://play.pokemonshowdown.com/sprites/gen5ani/grimer.gif
 [muk]: https://play.pokemonshowdown.com/sprites/gen5ani/muk.gif
@@ -180,6 +183,9 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [larvitar]: https://play.pokemonshowdown.com/sprites/gen5ani/larvitar.gif
 [pupitar]: https://play.pokemonshowdown.com/sprites/gen5ani/pupitar.gif
 [tyranitar]: https://play.pokemonshowdown.com/sprites/gen5ani/tyranitar.gif
+[ariados]: https://play.pokemonshowdown.com/sprites/gen5ani/ariados.gif
+[dunsparce]: https://play.pokemonshowdown.com/sprites/gen5ani/dunsparce.gif
+[dudunsparce]: https://play.pokemonshowdown.com/sprites/gen5/dudunsparce.png
 
 [sec-gen3]: .
 [salamence]: https://play.pokemonshowdown.com/sprites/gen5ani/salamence.gif
@@ -213,6 +219,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 
 [sec-gen4]: .
 [darkrai]: https://play.pokemonshowdown.com/sprites/gen5ani/darkrai.gif
+[darkrai-mega]: https://play.pokemonshowdown.com/sprites/gen5/darkrai-mega.png
 [drapion]: https://play.pokemonshowdown.com/sprites/gen5ani/drapion.gif
 [garchomp]: https://play.pokemonshowdown.com/sprites/gen5ani/garchomp.gif
 [garchomp-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/garchomp-mega.gif
@@ -238,6 +245,9 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [gallade-mega]: https://play.pokemonshowdown.com/sprites/gen5/gallade-mega.png
 [dusknoir]: https://play.pokemonshowdown.com/sprites/gen5ani/dusknoir.gif
 [mamoswine]: https://play.pokemonshowdown.com/sprites/gen5ani/mamoswine.gif
+[lucario]: https://play.pokemonshowdown.com/sprites/gen5ani/lucario.gif
+[lucario-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/lucario-mega.gif
+[wyrdeer]: https://play.pokemonshowdown.com/sprites/gen5ani/wyrdeer.gif
 
 
 [sec-gen5]: .
@@ -291,6 +301,8 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [kyurem-white]: https://play.pokemonshowdown.com/sprites/gen5ani/kyurem-white.gif
 [golurk-mega]: https://play.pokemonshowdown.com/sprites/gen5/golurk-mega.png
 [alomomola]: https://play.pokemonshowdown.com/sprites/gen5ani/alomomola.gif
+[heatmor]: https://play.pokemonshowdown.com/sprites/gen5ani/heatmor.gif
+[stunfisk-galar]: https://play.pokemonshowdown.com/sprites/gen5/stunfisk-galar.png
 
 
 [sec-gen6]: .
@@ -302,6 +314,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [nihilego]: https://play.pokemonshowdown.com/sprites/gen5ani/nihilego.gif
 [necrozma]: https://play.pokemonshowdown.com/sprites/gen5ani/necrozma.gif
 [golisopod]: https://play.pokemonshowdown.com/sprites/gen5/golisopod.png
+[golisopod-mega]: https://play.pokemonshowdown.com/sprites/gen5/golisopod-mega.png
 [mimikyu]: https://play.pokemonshowdown.com/sprites/gen5ani/mimikyu.gif
 [xurkitree]: https://play.pokemonshowdown.com/sprites/gen5ani/xurkitree.gif
 [minior]: https://play.pokemonshowdown.com/sprites/gen5ani/minior.gif
@@ -313,10 +326,25 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [minior-violet]: https://play.pokemonshowdown.com/sprites/gen5ani/minior-violet.gif
 [minior-yellow]: https://play.pokemonshowdown.com/sprites/gen5ani/minior-yellow.gif
 [tapu-bulu]: https://play.pokemonshowdown.com/sprites/gen5ani/tapubulu.gif
+[crabominable]: https://play.pokemonshowdown.com/sprites/gen5ani/crabominable.gif
+[crabominable-mega]: https://play.pokemonshowdown.com/sprites/gen5/crabominable-mega.png
+[tsareena]: https://play.pokemonshowdown.com/sprites/gen5/tsareena.png
+[exeggutor-alola]: https://play.pokemonshowdown.com/sprites/gen5ani/exeggutor-alola.gif
+[salazzle]: https://play.pokemonshowdown.com/sprites/gen5/salazzle.png
+[lunala]: https://play.pokemonshowdown.com/sprites/gen5ani/lunala.gif
+[decidueye]: https://play.pokemonshowdown.com/sprites/gen5/decidueye.png
+[oricorio]: https://play.pokemonshowdown.com/sprites/gen5/oricorio.png
+[oricorio-pau]: https://play.pokemonshowdown.com/sprites/gen5/oricorio-pau.png
+[oricorio-pompom]: https://play.pokemonshowdown.com/sprites/gen5/oricorio-pompom.png
+[oricorio-sensu]: https://play.pokemonshowdown.com/sprites/gen5/oricorio-sensu.png
 
 [sec-gen8]: .
 [dragapult]: https://play.pokemonshowdown.com/sprites/gen5ani/dragapult.gif
 [dracozolt]: https://play.pokemonshowdown.com/sprites/gen5ani/dracozolt.gif
+[dracovish]: https://play.pokemonshowdown.com/sprites/gen5ani/dracovish.gif
+[arctovish]: https://play.pokemonshowdown.com/sprites/gen5ani/arctovish.gif
+[arctozolt]: https://play.pokemonshowdown.com/sprites/gen5/arctozolt.png
+[flapple]: https://play.pokemonshowdown.com/sprites/gen5/flapple.png
 [copperajah]: https://play.pokemonshowdown.com/sprites/gen5/copperajah.png
 [shiinotic]: https://play.pokemonshowdown.com/sprites/gen5ani/shiinotic.gif
 [wooloo]: https://play.pokemonshowdown.com/sprites/gen5ani/wooloo.gif
@@ -324,29 +352,86 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [dubwool]: https://play.pokemonshowdown.com/sprites/gen5ani/dubwool.gif
 [dubwool-shiny]: https://play.pokemonshowdown.com/sprites/gen5ani-shiny/dubwool.gif
 [kleavor]: https://play.pokemonshowdown.com/sprites/gen5/kleavor.png
+[sneasler]: https://play.pokemonshowdown.com/sprites/gen5/sneasler.png
+[ursaluna-bloodmoon]: https://play.pokemonshowdown.com/sprites/gen5ani/ursaluna-bloodmoon.gif
+[calyrex-shadow]: https://play.pokemonshowdown.com/sprites/gen5/calyrex-shadow.png
 [urshifu-dark]: https://play.pokemonshowdown.com/sprites/gen5/urshifu.png
 [urshifu-water]: https://play.pokemonshowdown.com/sprites/gen5/urshifu-rapidstrike.png
 [hatterene]: https://play.pokemonshowdown.com/sprites/gen5ani/hatterene.gif
+[centiskorch]: https://play.pokemonshowdown.com/sprites/gen5/centiskorch.png
+[inteleon]: https://play.pokemonshowdown.com/sprites/gen5ani/inteleon.gif
+[hydrapple]: https://play.pokemonshowdown.com/sprites/gen5ani/hydrapple.gif
+[avalugg-hisui]: https://play.pokemonshowdown.com/sprites/gen5/avalugg-hisui.png
 
 [sec-gen9]: .
+[lokix]: https://play.pokemonshowdown.com/sprites/gen5/lokix.png
 [glimmora]: https://play.pokemonshowdown.com/sprites/gen5/glimmora.png
 [sandyshocks]: https://play.pokemonshowdown.com/sprites/gen5/sandyshocks.png
 [ceruledge]: https://play.pokemonshowdown.com/sprites/gen5/ceruledge.png
+[kilowattrel]: https://play.pokemonshowdown.com/sprites/gen5/kilowattrel.png
 [ironvaliant]: https://play.pokemonshowdown.com/sprites/gen5ani/ironvaliant.gif
 [slitherwing]: https://play.pokemonshowdown.com/sprites/gen5/slitherwing.png
 [gholdengo]: https://play.pokemonshowdown.com/sprites/gen5ani/gholdengo.gif
 [kingambit]: https://play.pokemonshowdown.com/sprites/gen5/kingambit.png
+[ragingbolt]: https://play.pokemonshowdown.com/sprites/gen5/ragingbolt.png
+[wugtrio]: https://play.pokemonshowdown.com/sprites/gen5/wugtrio.png
 
 # Moves
+### ![ghost]![special] Astral Barrage
+BP: `120` --> `110`<BR>
+Affected mons: <BR>
+![calyrex-shadow]
+
+### ![normal]![special] Blood Moon
+BP: `140` --> `130`<BR>
+Affected mons: <BR>
+![ursaluna-bloodmoon]
+
+### ![electric]![physical] Bolt Beak
+BP: `85` --> `80`<BR>
+Affected mons: <BR>
+![dracozolt]![arctozolt]![kilowattrel]
+
+### ![ground]![physical] Bone Rush
+BP: `25` --> `30`<BR>
+Benefitting mons:<BR>
+![lucario]![lucario-mega]![marowak]![marowak-alola]
+
 ### ![dragon]![physical] Core Enforcer
-Move category: ![special] -> ![physical] <BR>
+Move category: ![special] -> ![physical] *(Does not affect ![dragon]![special] **Nihil Light**)*<BR>
 Benefitting mons: <BR>
 ![zygarde-50%]
+
+### ![water]![physical] Crabhammer
+ACC: `90` --> `95`<BR>
+Benefitting mons:<BR>
+![crawdaunt]![kingler]![crabominable]![crabominable-mega]
+
+### ![normal]![physical] Crush Claw
+Is now a **slicing** move.<BR>
+Benefitting mons:<BR>
+Lol, this is another Champions buff port. Unfortunately no **Sharpness** mon gets this.
 
 ### ![dark]![status] Dark Void
 ACC: `50` --> `80` <BR>
 Benefitting mons: <BR>
-![darkrai]
+![darkrai]![darkrai-mega]
+
+### ![poison]![physical] Dire Claw
+Is now a **slicing** move.<BR>
+Status chance: `30%` --> `20%`<BR>
+Affected mons:<BR>
+![sneasler]
+
+### ![dragon]![physical] Dragon Claw
+Is now a **slicing** move.<BR>
+Benefitting mons: <BR>
+Lol, this is another Champions buff port. Unfortunately no **Sharpness** mon gets this.
+
+### ![dragon]![physical] Dragon Hammer
+BP: `90` --> `100`<BR>
+Benefitting mons:<BR>
+![ragingbolt]![exeggutor-alola]
 
 ### ![dragon]![physical] Dragon Rush
 ACC: `75` --> `90` <BR>
@@ -365,10 +450,36 @@ When charging, gain `+1 Atk`. If in Snow, immediately finish charging. <BR>
 Benefitting mons: <BR>
 ![kyurem-black]
 
+### ![bug]![physical] First Impression
+BP: `90` --> `100`<BR>
+Benefitting mons: <BR>
+![durant]![flygon]![golisopod]![golisopod-mega]![haxorus]![slitherwing]![lokix]
+
+### ![fire]![physical] Fire Lash
+BP: `80` --> `90`<BR>
+Benefitting mons:<BR>
+![centiskorch]![heatmor]![salazzle]
+
+### ![water]![physical] Fishious Rend
+BP: `85` --> `80`<BR>
+Affected mons:<BR>
+![dracovish]![arctovish]
+
+### ![steel]![physical] Gear Grind
+BP: `50` --> `60`<BR>
+ACC: `80` --> `90`<BR>
+Benefitting mons:<BR>
+![klinklang]
+
 ### ![ice]![special] Glaciate
 Secondary: `-1 Spe` --> `-2 Spe`<BR>
 Benefitting mons: <BR>
 ![kyurem] ![kyurem-white] ![kyurem-black] ![glaceon] ![rotom-frost]
+
+### ![grass]![physical] Grav Apple
+BP: `80` --> `90`<BR>
+Benefitting mons:<BR>
+![flapple]
 
 ### ![fighting]![physical] Hammer Arm
 BP: `100` --> `120`<BR>
@@ -376,17 +487,51 @@ ACC: `90` --> `100`<BR>
 Benefitting mons: <BR>
 ![conkeldurr] ![emboar] ![metagross]
 
+### ![normal]![physical] Hyper Drill
+BP: `100` --> `120`<BR>
+Benefitting mons:<BR>
+![dunsparce]![dudunsparce]
+
 ### ![ice]![special] Ice Burn
 ACC: `90` --> `100` <BR>
 When charging, gain `+1 SpA`. If in Snow, immediately finish charging. <BR>
 Benefitting mons: <BR>
 ![kyurem-white]
 
+### ![ghost]![special] Infernal Parade
+BP: `60` --> `65`<BR>
+Benefitting mons:<BR>
+![typhlosion-hisui]
+
+### ![steel]![special] Make it Rain
+ACC: `100` --> `95`<BR>
+Affected mons:<BR>
+![gholdengo]
+
+### ![steel]![physical] Metal Claw
+Is now a **slicing** move.<BR>
+Benefitting mons: <BR>
+Lol, this is another Champions buff port. Unfortunately no **Sharpness** mon gets this.
+
+### ![fairy]![special] Moonblast
+SpA drop chance `20%` --> `10%`.<BR>
+Affected mons:<BR>
+> **Too many to list.**
+
+### ![ice]![physical] Mountaingale
+BP: `100` --> `120`<BR>
+Affected mons:<BR>
+![avalugg-hisui]
+
 ### ![ground]![special] Mud Shot
 BP: `55` --> `70`<BR>
 PP: `15` --> `10`<BR>
 Benefitting mons: <BR>
 ![serperior]
+
+### ![dark]![special] Night Daze
+BP: `85` --> `90`<BR>
+![zoroark]![lunala]
 
 ### ![rock]![special] Power Gem
 BP: `80` --> `90`<BR>
@@ -395,15 +540,35 @@ New secondary: 20% `+1 SpA`<BR>
 Benefitting mons: <BR>
 ![nihilego] ![glimmora] ![diancie-mega] ![necrozma] ![sandyshocks] ![starmie]
 
+### ![psychic]![physical]
+BP: `70` --> `90`<BR>
+Benefitting mons:<BR>
+![wyrdeer]
+
 ### ![water]![physical] Razor Shell
 BP: `75` --> `85`<BR>
 Some benefitting mons: <BR>
 ![samurott-hisui] ![samurott] ![cloyster] ![crawdaunt] ![golisopod]
 
+### ![normal]![special] Revelation Dance
+BP: `90` --> `100`<BR>
+Benefitting mons:<BR>
+![oricorio]![oricorio-pau]![oricorio-pompom]![oricorio-sensu]
+
+### ![dragon]![special] Roar of Time
+1 Turn cooldown --> Cannot be used consecutively.<BR>
+<BR>
+If `Dialga-Origin` with `Origin of Time`:<BR>
+BP: `100`<BR>
+Ends all Room-type field effects (Trick, Wonder, Magic, etc.)<BR>
+Benefitting mons:<BR>
+![dialga] ![dialga-origin]
+
 ### ![ghost]![physical] Shadow Claw
 BP: `70` --> `80`<BR>
+Is now a **slicing** move.<BR>
 Benefitting mons: <BR>
-![giratina]![giratina-origin]![mimikyu]![zoroark-hisui]![ceruledge]![banette-mega]![ironvaliant]
+![giratina]![giratina-origin]![mimikyu]![zoroark-hisui]![ceruledge]![banette-mega]![ironvaliant]![gallade-mega]
 
 ### ![dragon]![special] Spacial Rend
 BP: `100` --> `120`<BR>
@@ -417,14 +582,6 @@ Ends all non-Room field effects.<BR>
 Benefitting mons: <BR>
 ![palkia] ![palkia-origin]
 
-### ![dragon]![special] Roar of Time
-1 Turn cooldown --> Cannot be used consecutively.<BR>
-<BR>
-If `Dialga-Origin` with `Origin of Time`:<BR>
-BP: `100`<BR>
-Ends all Room-type field effects (Trick, Wonder, Magic, etc.)<BR>
-Benefitting mons:<BR> 
-![dialga] ![dialga-origin]
 
 ### ![fairy]![special] Sparkly Swirl
 BP: `90` --> `60`<BR>
@@ -432,20 +589,55 @@ PP: `15` --> `5`<BR>
 Benefitting mons: <BR>
 ![shaymin]
 
+### ![steel]![physical] Snap Trap
+Type: ![grass] --> ![steel]<BR>
+Benefitting mons:<BR>
+![stunfisk-galar]
+
+### ![water]![special] Snipe Shot
+BP: `80` --> `85`<BR>
+Benefitting mons:<BR>
+![inteleon]
+
+### ![ghost]![physical] Spirit Shackle
+BP: `80` --> `90`<BR>
+Benefitting mons:<BR>
+![decidueye]
+
 ### ![fighting]![physical] Submission
 BP: `80` --> `90`<BR>
 ACC: `80` --> `90`<BR>
 PP: `20` --> `10`. <BR>
+
+### ![grass]![special] Syrup Bomb
+ACC: `85` --> `90`<BR>
+Benefitting mons:<BR>
+![hydrapple]
 
 ### ![electric]![status] Thunder Wave
 ![electric] type: cannot miss.<BR>
 Benefitting mons: <BR>
 > **Too many to list.**
 
+### ![poison]![status] Toxic Thread
+Speed reduction `1` --> `2` stages.<BR>
+Benefitting mons:<BR>
+![ariados]
+
+### ![water]![physical] Triple Dive
+BP: `30` --> `35`<BR>
+Benefitting mons:<BR>
+![wugtrio]
+
 ### ![psychic]![status] Trick Room
 Duration: `5` --> `6` turns. ***Singles only!***<BR>
 Benefitting mons: <BR>
 > **Too many to list.**
+
+### ![grass]![physical] Trop Kick
+BP: `70` --> `85`<BR>
+Benefitting mons:<BR>
+![tsareena]
 
 ### ![fire]![status] Will-o-Wisp
 ![fire] type: cannot miss.<BR>

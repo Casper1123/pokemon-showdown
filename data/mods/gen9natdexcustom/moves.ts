@@ -447,10 +447,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		basePower: 90,
 	},
-	nightslash: {
-		inherit: true,
-		pp: 20,
-	},
 	psyshieldbash: {
 		inherit: true,
 		basePower: 90,
@@ -458,10 +454,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	revelationdance: {
 		inherit: true,
 		basePower: 100,
-	},
-	shelltrap: {
-		inherit: true,
-		pp: 10,
 	},
 	snaptrap: {
 		inherit: true,
