@@ -305,7 +305,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [alomomola]: https://play.pokemonshowdown.com/sprites/gen5ani/alomomola.gif
 [heatmor]: https://play.pokemonshowdown.com/sprites/gen5ani/heatmor.gif
 [stunfisk-galar]: https://play.pokemonshowdown.com/sprites/gen5/stunfisk-galar.png
-[cinccino]: https://play.pokemonshowdown.com/sprites/gen5ani/cinccino.gif
+[cinccino]: https://play.pokemonshowdown.com/sprites/gen5ani    /cinccino.gif
 
 
 [sec-gen6]: .
