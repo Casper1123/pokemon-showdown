@@ -326,6 +326,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 0,
 		category: "Status",
 		name: "Steel Shards",
+		isNonstandard: "Custom",
 		pp: 20,
 		priority: 0,
 		flags: { reflectable: 1, metronome: 1, mustpressure: 1 },
