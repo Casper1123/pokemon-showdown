@@ -393,6 +393,14 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		abilities: { 0: "Sharpness", 1: "Steelworker", H: "Weaver's Dance" },
 		baseStats: { hp: 75, atk: 103, def: 80, spa: 70, spd: 80, spe: 117 },
 	},
+	golurk: {
+		inherit: true,
+		baseStats: { hp: 109, atk: 124, def: 80, spa: 55, spd: 80, spe: 55 },
+	},
+	golurkmega: {
+		inherit: true,
+		baseStats: { hp: 109, atk: 159, def: 105, spa: 70, spd: 105, spe: 55 },
+	},
 	// endregion
 	// region: Gen6
 	noivern: {

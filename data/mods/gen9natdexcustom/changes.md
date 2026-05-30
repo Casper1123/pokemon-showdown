@@ -1676,6 +1676,27 @@ New moves:
 - ![normal]![status] Swords Dance
 - ![dark]![status] Hone Claws
 
+### ![golurk]![golurk-mega]
+**Base:**<BR>
+Base Stats:
+- hp: `89` --> `109` (`+20`)
+- atk: `124`
+- def: `80`
+- spa: `55`
+- spd: `80`
+- spe: `55`
+- Total: `483` --> `503`
+
+**Mega:**<BR>
+Base Stats:
+- hp: `89` --> `109` (`+20`)
+- atk: `159`
+- def: `105`
+- spa: `70`
+- spd: `105`
+- spe: `55`
+- Total: `583` --> `603`
+
 
 ## Gen 6
 ### ![noivern]
