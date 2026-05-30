@@ -293,8 +293,8 @@ export function applyChanges(data: ModdedDex): void {
 	setMove(data, 'dubwool', 'babydolleyes');
 	setMove(data, 'dubwool', 'tearfullook');
 	setMove(data, 'dubwool', 'amnesia');
-	setMove(data, 'puncurchin', 'spikyshield');
-	setMove(data, 'puncurchin', 'voltswitch');
+	setMove(data, 'pincurchin', 'spikyshield');
+	setMove(data, 'pincurchin', 'voltswitch');
 	// endregion
 	// region Gen9
 	setMove(data, 'slitherwing', 'victorydance');
