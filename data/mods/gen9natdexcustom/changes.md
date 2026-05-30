@@ -187,6 +187,8 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [ariados]: https://play.pokemonshowdown.com/sprites/gen5ani/ariados.gif
 [dunsparce]: https://play.pokemonshowdown.com/sprites/gen5ani/dunsparce.gif
 [dudunsparce]: https://play.pokemonshowdown.com/sprites/gen5/dudunsparce.png
+[espeon]: https://play.pokemonshowdown.com/sprites/gen5ani/espeon.gif
+[entei]: https://play.pokemonshowdown.com/sprites/gen5ani/entei.gif
 
 [sec-gen3]: .
 [salamence]: https://play.pokemonshowdown.com/sprites/gen5ani/salamence.gif
@@ -1027,6 +1029,10 @@ Base Stats:
 - spd: `75` --> `80`
 - spe: `100`
 - Total: `580` --> `590`
+
+### ![espeon]
+New Moves:
+- ![psychic]![status] Cosmic Power
 
 New Moves:
 - ![rock]![status] Wide Guard

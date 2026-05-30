@@ -61,6 +61,7 @@ export function applyChanges(data: ModdedDex): void {
 	setMove(data, 'politoed', 'recover');
 	setMove(data, 'crobat', 'gunkshot');
 	setMove(data, 'entei', 'superpower');
+	setMove(data, 'espeon', 'cosmicpower');
 	// endregion
 	// region Gen3
 	setMove(data, 'absol', 'lightofruin');
