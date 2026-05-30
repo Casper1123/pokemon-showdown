@@ -343,6 +343,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	steelshards: {
+		inherit: true,
+		isNonstandard: null,
+	},
 
 	// Champions
 	firstimpression: {

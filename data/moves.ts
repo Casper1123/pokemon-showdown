@@ -289,6 +289,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				return false;
 			}
 		},
+		onTryMove() {
+			this.attrLastMove('[still]');
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Pollen Puff', target);
+		},
 		condition: {
 			name: "Woven Garments",
 			onStart(pokemon, source) {
@@ -311,6 +317,27 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 
 				target.removeVolatile('wovengarments');
 			},
+		},
+		zMove: { boost: { def: 1 } },
+	},
+	steelshards: {
+		num: 446,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Steel Shards",
+		pp: 20,
+		priority: 0,
+		flags: { reflectable: 1, metronome: 1, mustpressure: 1 },
+		sideCondition: 'gmaxsteelsurge',
+		target: "foeSide",
+		type: "Steel",
+		zMove: { boost: { def: 1 } },
+		onTryMove() {
+			this.attrLastMove('[still]');
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Stealth Rock', target);
 		},
 	},
 
