@@ -260,6 +260,11 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		baseStats: { hp: 110, atk: 130, def: 90, spa: 70, spd: 70, spe: 80 },
 	},
+	electivire: {
+		inherit: true,
+		baseStats: { hp: 85, atk: 123, def: 67, spa: 95, spd: 85, spe: 95 },
+		abilities: { 0: 'Motor Drive', 1: 'Tough Claws', H: 'Vital Spirit' },
+	},
 	// endregion
 	// region: Gen5
 	conkeldurr: {

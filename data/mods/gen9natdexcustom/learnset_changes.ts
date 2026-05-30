@@ -154,6 +154,9 @@ export function applyChanges(data: ModdedDex): void {
 	setMove(data, 'infernape', 'burnup');
 	setMove(data, 'infernape', 'fierydance');
 	setMove(data, 'infernape', 'mudshot');
+	setMove(data, 'electivire', 'plasmafists');
+	setMove(data, 'electivire', 'spark');
+	setMove(data, 'electivire', 'closecombat');
 	// endregion
 	// region Gen5
 	setMove(data, 'serperior', 'mudshot');
@@ -299,4 +302,3 @@ export function applyChanges(data: ModdedDex): void {
 	setMove(data, 'lokix', 'bulletpunch');
 	// endregion
 }
-

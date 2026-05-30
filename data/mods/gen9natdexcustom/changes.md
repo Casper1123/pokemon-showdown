@@ -253,6 +253,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [wyrdeer]: https://play.pokemonshowdown.com/sprites/gen5ani/wyrdeer.gif
 [luxray]: https://play.pokemonshowdown.com/sprites/gen5ani/luxray.gif
 [infernape]: https://play.pokemonshowdown.com/sprites/gen5ani/infernape.gif
+[electivire]: https://play.pokemonshowdown.com/sprites/gen5ani/electivire.gif
 
 
 [sec-gen5]: .
@@ -612,7 +613,7 @@ Benefitting mons: <BR>
 ### ![electric]![physical] Spark
 BP: `65` --> `80`<BR>
 Benefitting mons:<BR>
-![tapu-koko]![zeraora]![eelektross]![luxray]![pawmot]![zebstrika]
+![tapu-koko]![zeraora]![eelektross]![luxray]![pawmot]![zebstrika]![electivire]
 
 ### ![fairy]![special] Sparkly Swirl
 BP: `90` --> `60`<BR>
@@ -1404,6 +1405,21 @@ Base Stats:
 - spe: `108`
 - Total: `534` -> `550`
 
+### ![electivire]
+Abilities: `Motor Drive`, `Tough Claws`, `Vital Spirit`<BR>
+New Moves:
+- ![electric]![physical] Plasma Fists
+- ![electric]![physical] Spark
+- ![fighting]![physical] Close Combat
+
+Base Stats:
+- hp: `75` -> `85` (`+10`)
+- atk: `123`
+- def: `67`
+- spa: `95` -> `85` (`-10`)
+- spd: `85`
+- spe: `95`
+- Total: `540`
 
 ## Gen 5
 ### ![serperior]
