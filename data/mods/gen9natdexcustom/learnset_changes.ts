@@ -290,6 +290,8 @@ export function applyChanges(data: ModdedDex): void {
 	setMove(data, 'dubwool', 'babydolleyes');
 	setMove(data, 'dubwool', 'tearfullook');
 	setMove(data, 'dubwool', 'amnesia');
+	setMove(data, 'puncurchin', 'spikyshield');
+	setMove(data, 'puncurchin', 'voltswitch');
 	// endregion
 	// region Gen9
 	setMove(data, 'slitherwing', 'victorydance');
@@ -297,3 +299,4 @@ export function applyChanges(data: ModdedDex): void {
 	setMove(data, 'lokix', 'bulletpunch');
 	// endregion
 }
+

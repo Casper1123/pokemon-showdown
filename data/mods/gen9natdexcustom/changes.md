@@ -376,6 +376,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [inteleon]: https://play.pokemonshowdown.com/sprites/gen5ani/inteleon.gif
 [hydrapple]: https://play.pokemonshowdown.com/sprites/gen5ani/hydrapple.gif
 [avalugg-hisui]: https://play.pokemonshowdown.com/sprites/gen5/avalugg-hisui.png
+[pincurchin]: https://play.pokemonshowdown.com/sprites/gen5ani/pincurchin.gif
 
 [sec-gen9]: .
 [lokix]: https://play.pokemonshowdown.com/sprites/gen5/lokix.png
@@ -1835,6 +1836,20 @@ New Moves:
 - ![rock]![physical] Head Smash
 - ![steel]![physical] Iron Head
 - ![steel]![physical] Steel Roller
+
+### ![pincurchin]
+Base Stats:
+- hp: `48` --> `68` (`+20`)
+- atk: `101` --> `91` (`-10`)
+- def: `95`
+- spa: `91` --> `101` (`+10`)
+- spd: `85`
+- spe: `15`
+- Total: `435` --> `455`
+
+New Moves:
+- ![grass]![status] Spiky Shield
+- ![electric]![special] Volt Switch
 
 ## Gen 9
 ### ![slitherwing]

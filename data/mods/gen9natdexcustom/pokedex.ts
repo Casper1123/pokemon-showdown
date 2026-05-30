@@ -449,6 +449,10 @@ export const Pokedex: { [speciesid: string]: ModdedSpeciesData } = {
 		inherit: true,
 		abilities: { 0: "Terravore", 1: "Sheer Force", H: "Sharpness" },
 	},
+	pincurchin: {
+		inherit: true,
+		baseStats: { hp: 68, atk: 91, def: 95, spa: 101, spd: 85, spe: 15 },
+	},
 	// endregion
 	// region: Gen9
 	// endregion
