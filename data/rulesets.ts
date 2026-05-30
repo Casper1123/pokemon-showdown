@@ -3,6 +3,7 @@
 import type { Learnset } from "../sim/dex-species";
 import { TeamValidator } from "../sim";
 import { type PokemonSet } from "../sim/teams";
+import { resistancehazards } from "./conditions";
 
 // The list of formats is stored in config/formats.js
 export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
@@ -144,7 +145,21 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 		// Todo: compatibility with open team sheets.
 		// Todo: make work with terastal preview
 	},
+	exclusiverocks: {
+		effectType: 'Rule',
+		name: 'Exclusive Resistance-based Hazards',
+		desc: 'Each side can only have a single resistance-based hazard, and setting another one will fail.',
+		onSideConditionStart(target, source, sideCondition) {
+			if (!resistancehazards.includes(sideCondition.id)) return;
 
+			for (const cond of resistancehazards) {
+				if (cond !== sideCondition.id && target.sideConditions[cond]) {
+					// Fails setting if any other resistance hazard is present.
+					return false;
+				}
+			}
+		},
+	},
 	// Rulesets
 	///////////////////////////////////////////////////////////////////
 	standardag: {

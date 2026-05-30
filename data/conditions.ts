@@ -4,6 +4,7 @@ export const terrainAbilities = ['psychicsurge', 'mistysurge', 'grassysurge', 'e
 export const allFieldAbilities = [...weatherAbilities, ...terrainAbilities];
 export const protectedPseudoWeathers = ['chronaldistortion', 'spacialdistortion', 'absolutedistortion'];
 export const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+export const resistancehazards = ['stealthrock', 'gmaxsteelsurge'];
 export const chronalDistortionsExceptions = ['fakeout', 'futuresight', 'doomdesire', 'thunderclap', 'suckerpunch'];
 export const rooms = ['magicroom', 'wonderroom', 'trickroom'];
 
