@@ -348,6 +348,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [oricorio-pompom]: https://play.pokemonshowdown.com/sprites/gen5/oricorio-pompom.png
 [oricorio-sensu]: https://play.pokemonshowdown.com/sprites/gen5/oricorio-sensu.png
 [zeraora]: https://play.pokemonshowdown.com/sprites/gen5ani/zeraora.gif
+[primarina]: https://play.pokemonshowdown.com/sprites/gen5ani/primarina.gif
 
 [sec-gen8]: .
 [dragapult]: https://play.pokemonshowdown.com/sprites/gen5ani/dragapult.gif
@@ -835,7 +836,11 @@ While a room-type Pseudoweather is in effect, moves have +1 priority.<BR>
 Amplifies the effects of non-hazard non-room field effects.<BR>
 This reduces their max duration by 2 turns, but will not remove them from the field if the turn reduction would end the effect.
 In the case of weathers and terrains, it may also modify other aspects.<BR>
-**Note**: Healing moves listed down below include the following: ![grass]![status] Synthesis, ![fairy]![status] Moonlight and ![fire]![status] Morning Sun
+**Note**: Healing moves listed down below include the following: 
+- ![grass]![status] Synthesis
+- ![fairy]![status] Moonlight 
+- ![fire]![status] Morning Sun
+
 **Pledges:**<BR>
 ![grass]![fire]: 2/8 of max hp DoT.<BR>
 ![grass]![water]: 1/8 Speed multiplier.<BR>
@@ -844,16 +849,19 @@ In the case of weathers and terrains, it may also modify other aspects.<BR>
 **Rain & Sun**: Amps ![water]/![fire] damage by `75`%, and lowers ![fire]/![water] damage by `75`% respectively. Additionally, ***\[healing moves\]*** **fail**/**restores to full**. In Rain, ![grass]![special] Solar Beam fails.<BR>
 **Hail**: 1/8 of max hp DoT.<BR>
 **Snow**: `75%` Def boost. Additionally, changes speed multipliers to `1.5x`/`0.5x` and STAB multiplier by `1.5x`. Lastly, ***\[healing moves\]*** restore `25%` of max HP.<BR>
-**Sand**: 1/8 of max hp DoT. `75%` SpD boost. ![grass]![special] Solar Beam fails. ![ground]![status] Shore Up restores to full, and ***\[healing moves\]*** fail.
+**Sand**: 1/8 of max hp DoT. `75%` SpD boost. ![grass]![special] Solar Beam fails. ![ground]![status] Shore Up restores to full, and ***\[healing moves\]*** fail.<BR>
 
 
-**Electric Terrain**: `50%` damage amp.
-**Grassy Terrain**: 1/8th HP restored, `50%` damage amp, ![ground]![physical] Bulldoze ![ground]![physical] Earthquake and ![ground]![physical] Magnitude **fail**. 
-**Misty Terrain**: `50%` ![dragon] damage reduction. Blocks Flinch.
-**Psychic Terrain**:`50%` damage amp.
+**Electric Terrain**: `50%` damage amp.<BR>
+**Grassy Terrain**: 1/8th HP restored, `50%` damage amp, ![ground]![physical] Bulldoze ![ground]![physical] Earthquake and ![ground]![physical] Magnitude **fail**.<BR> 
+**Misty Terrain**: `50%` ![dragon] damage reduction. Blocks Flinch.<BR>
+**Psychic Terrain**:`50%` damage amp.<BR>
 
-**Reflect, Light Screen & Aurora Veil**: `75%` damage reduction. Doubles damage reduction should be scaled accordingly.
-NOTE: ABILITY IS CURRENTLY BUGGED AND POORLY IMPLEMENTED, NEEDS MORE WORK. IDK WHY I AM PUSHING THIS OUT YET.
+**Reflect, Light Screen & Aurora Veil**: `75%` damage reduction. Doubles damage reduction should be scaled accordingly.<BR><BR>
+NOTE: ABILITY IS CURRENTLY BUGGED AND POORLY IMPLEMENTED, NEEDS MORE WORK. IDK WHY I AM PUSHING THIS OUT YET.<BR>
+<BR>
+Users:<BR>
+![palkia-origin]
 
 # Pokémon
 ## Gen 1
@@ -943,6 +951,7 @@ New Moves: <BR>
 Abilities: `Pressure`, `Inner Focus`, `Electric Surge` <BR>
 New Moves: <BR>
 - ![flying]![status] Tailwind
+- ![rock]![status] Wide Guard
 
 ### ![steelix]![steelix-mega]
 **Base:**<BR>
@@ -958,6 +967,7 @@ New Moves: <BR>
 - ![fairy]![special]Strange Steam
 - ![normal]![status] Recover
 - ![psychic]![special] Mist Ball
+- ![rock]![status] Wide Guard
 
 
 Base Stats:
@@ -1007,6 +1017,20 @@ New Moves:
 
 ### ![meganium]
 Abilities: `Overgrow`, `Leaf Guard`, `Grassy Surge`
+
+### ![entei]
+Base Stats:
+- hp: `115`
+- atk: `115`
+- def: `85` --> `90`
+- spa: `90`
+- spd: `75` --> `80`
+- spe: `100`
+- Total: `580` --> `590`
+
+New Moves:
+- ![rock]![status] Wide Guard
+- ![fighting]![physical] Superpower
 
 ## Gen 3
 ### ![absol]![absol-mega]
@@ -1723,6 +1747,10 @@ New Moves:
 
 ### ![xurkitree]
 Abilities: `Beast Boost`, `Transistor`
+
+### ![primarina]
+New Moves:
+- ![dark]![special] Snarl
 
 
 ### ![minior-meteor]![minior]![minior-blue]![minior-green]![minior-indigo]![minior-orange]![minior-violet]![minior-yellow]

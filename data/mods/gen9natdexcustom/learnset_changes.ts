@@ -52,12 +52,15 @@ export function applyChanges(data: ModdedDex): void {
 	setMove(data, 'suicune', 'mistball');
 	setMove(data, 'suicune', 'strangesteam');
 	setMove(data, 'suicune', 'mistyterrain');
+	setMove(data, 'suicune', 'wideguard');
 	setMove(data, 'suicune', 'recover');
 	setMove(data, 'steelix', 'coil');
 	setMove(data, 'raikou', 'tailwind');
+	setMove(data, 'raikou', 'wideguard');
 	setMove(data, 'houndoom', 'fierywrath');
 	setMove(data, 'politoed', 'recover');
 	setMove(data, 'crobat', 'gunkshot');
+	setMove(data, 'entei', 'superpower');
 	// endregion
 	// region Gen3
 	setMove(data, 'absol', 'lightofruin');
@@ -230,6 +233,7 @@ export function applyChanges(data: ModdedDex): void {
 	setMove(data, 'golisopod', 'uturn');
 	setMove(data, 'tapubulu', 'spiritbreak');
 	setMove(data, 'tapubulu', 'playrough');
+	setMove(data, 'primarina', 'snarl');
 	// endregion
 	// region Gen8
 	setMove(data, 'wooloo', 'bodypress');
