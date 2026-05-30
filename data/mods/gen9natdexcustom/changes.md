@@ -1649,6 +1649,13 @@ New Moves:
 - ![fighting]![physical] Upper Hand
 - ![fighting]![status] Quick Guard
 
+### ![cinccino]
+New moves:
+- ![dragon]![physical] Scale Shot
+- ![fighting]![physical] Arm Thrust
+- ![normal]![status] Swords Dance
+- ![dark]![status] Hone Claws
+
 
 ## Gen 6
 ### ![noivern]

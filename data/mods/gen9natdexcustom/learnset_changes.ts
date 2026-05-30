@@ -207,6 +207,10 @@ export function applyChanges(data: ModdedDex): void {
 	setMove(data, 'leavanny', 'dualchop');
 	setMove(data, 'leavanny', 'upperhand');
 	setMove(data, 'leavanny', 'quickguard');
+	setMove(data, 'cinccino', 'scaleshot');
+	setMove(data, 'cinccino', 'armthrust');
+	setMove(data, 'cinccino', 'swordsdance');
+	setMove(data, 'cinccino', 'honeclaws');
 
 	// endregion
 	// region Gen6
