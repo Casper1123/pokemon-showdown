@@ -316,6 +316,8 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [zygarde-50%]: https://play.pokemonshowdown.com/sprites/gen5ani/zygarde.gif
 [diancie-mega]: https://play.pokemonshowdown.com/sprites/gen5/diancie-mega.png
 [noivern]: https://play.pokemonshowdown.com/sprites/gen5ani/noivern.gif
+[goodra]: https://play.pokemonshowdown.com/sprites/gen5ani/goodra.gif
+[goodra-hisui]: https://play.pokemonshowdown.com/sprites/gen5ani/goodra-hisui.gif
 
 [sec-gen7]: .
 [nihilego]: https://play.pokemonshowdown.com/sprites/gen5ani/nihilego.gif
@@ -1678,6 +1680,10 @@ New moves:
 ## Gen 6
 ### ![noivern]
 Type: ![dragon]![flying] --> ![dragon]![normal]
+
+### ![goodra]![goodra-hisui]
+New Moves:
+- ![normal]![status] Recover
  
 ## Gen 7
 ### ![golisopod]

@@ -219,6 +219,8 @@ export function applyChanges(data: ModdedDex): void {
 
 	// endregion
 	// region Gen6
+	setMove(data, 'goodra', 'recover');
+	setMove(data, 'goodrahisui', 'recover');
 	// endregion
 	// region Gen7
 	setMove(data, 'necrozma', 'neutronray'); // Custom signature move. ensure not usable by merged forms.
