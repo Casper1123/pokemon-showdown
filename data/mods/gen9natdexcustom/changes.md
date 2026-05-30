@@ -1762,6 +1762,11 @@ New Moves:
 New Moves:
 - ![fighting]![status] Victory Dance
 
+### ![lokix]
+New Moves:
+- ![normal]![physical] Extreme Speed
+- ![steel]![physical] Bullet Punch
+
 ## Other:
 ### Snow (weather condition)
 ![ice] types only:<BR>

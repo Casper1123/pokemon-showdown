@@ -281,5 +281,7 @@ export function applyChanges(data: ModdedDex): void {
 	// endregion
 	// region Gen9
 	setMove(data, 'slitherwing', 'victorydance');
+	setMove(data, 'lokix', 'extremespeed');
+	setMove(data, 'lokix', 'bulletpunch');
 	// endregion
 }
