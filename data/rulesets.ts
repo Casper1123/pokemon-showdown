@@ -6,7 +6,7 @@ import { type PokemonSet } from "../sim/teams";
 
 // The list of formats is stored in config/formats.js
 export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
-	// Optionally isables hardcoded behaviour to use cross-species nicknames,
+	// Optionally disables hardcoded behaviour to use cross-species nicknames,
 	// whilst leaving the intended behaviour for NicknameClause intact.
 	enablecrossspeciesnicknames: {
 		effectType: 'ValidatorRule',
@@ -15,7 +15,7 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 	},
 	removenicknamecharacterlimit: {
 		effectType: "ValidatorRule",
-		name: 'Remove Nickname Characterlimit',
+		name: 'Remove Nickname Character limit',
 		desc: 'Removes the character limit on nicknames to allow for a custom validator overwrite. Note: default max is 18 chars.',
 	},
 	illusorynicknames: {
@@ -144,6 +144,7 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 		// Todo: compatibility with open team sheets.
 		// Todo: make work with terastal preview
 	},
+
 	// Rulesets
 	///////////////////////////////////////////////////////////////////
 	standardag: {
