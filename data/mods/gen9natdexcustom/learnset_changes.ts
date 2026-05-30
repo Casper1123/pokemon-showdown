@@ -145,6 +145,11 @@ export function applyChanges(data: ModdedDex): void {
 	setMove(data, 'giratina', 'stalk');
 	setMove(data, 'gallade', 'crosspoison');
 	setMove(data, 'drapion', 'wickedblow');
+	setMove(data, 'infernape', 'icepunch');
+	setMove(data, 'infernape', 'meteormash');
+	setMove(data, 'infernape', 'burnup');
+	setMove(data, 'infernape', 'fierydance');
+	setMove(data, 'infernape', 'mudshot');
 	// endregion
 	// region Gen5
 	setMove(data, 'serperior', 'mudshot');

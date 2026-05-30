@@ -250,6 +250,7 @@ Changes are displayed by category; Item, Move, Ability, Pokémon.
 [lucario-mega]: https://play.pokemonshowdown.com/sprites/gen5ani/lucario-mega.gif
 [wyrdeer]: https://play.pokemonshowdown.com/sprites/gen5ani/wyrdeer.gif
 [luxray]: https://play.pokemonshowdown.com/sprites/gen5ani/luxray.gif
+[infernape]: https://play.pokemonshowdown.com/sprites/gen5ani/infernape.gif
 
 
 [sec-gen5]: .
@@ -1352,6 +1353,23 @@ Base Stats:
 - spd: `60` --> `70` (`+10`)
 - spe: `80`
 - Total: `530` --> `550`
+
+### ![infernape]
+New Moves: 
+- ![ice]![physical] Ice Punch
+- ![steel]![physical] Meteor Mas
+- ![fire]![special] Burn Up
+- ![fire]![special] Fiery Dance
+- ![ground]![special] Mud Shot
+  
+Base Stats:
+- hp: `76`
+- atk: `104` -> `112` (`+8`)
+- def: `71`
+- spa: `104` -> `112` (`+8`)
+- spd: `71`
+- spe: `108`
+- Total: `534` -> `550`
 
 
 ## Gen 5
