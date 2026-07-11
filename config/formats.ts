@@ -27,6 +27,20 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] National Dex Custom",
 		desc: "A custom edited version of Gen9's National Dex format.",
 		mod: 'gen9natdexcustom',
+		rated: true,
+		ruleset: ['Standard NatDex', 'gen9natdexcustom UbersAg', 'gen9natdexcustom megaray', 'Terastal Clause', 'Illusory Nicknames', '+move:lightofruin', '-move:geomancy'],
+		banlist: [
+			'Arena Trap', 'Moody', 'Shadow Tag', 'King\'s Rock',
+			'Quick Claw', 'Razor Fang', 'Assist', 'Baton Pass', 'Last Respects', 'Shed Tail',
+		],
+		unbanlist: [],
+	},
+	{
+		name: "[Gen 9] National Dex Custom Randoms",
+		desc: "Ranbats version of the National Dex Custom format",
+		team: 'random',
+		mod: 'gen9natdexcustom',
+		rated: true,
 		ruleset: ['Standard NatDex', 'gen9natdexcustom UbersAg', 'gen9natdexcustom megaray', 'Terastal Clause', 'Illusory Nicknames', '+move:lightofruin', '-move:geomancy'],
 		banlist: [
 			'Arena Trap', 'Moody', 'Shadow Tag', 'King\'s Rock',
@@ -38,6 +52,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] National Dex Custom Doubles",
 		desc: "A VGC-styled doubles variant of National Dex Custom.",
 		mod: 'gen9natdexcustom',
+		rated: true,
 		gameType: "doubles",
 		ruleset: ["Team Preview", // 'Illusory Nicknames', Does not work with Open Team Sheets// Custom  'gen9natdexcustom UbersAg', 'gen9natdexcustom megaray',
 			'Dynamax Clause', 'Natdex Mod', '+move:lightofruin', '-move:geomancy', // Natdex
