@@ -35,6 +35,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		],
 		unbanlist: [],
 	},
+	/**
 	{
 		name: "[Gen 9] National Dex Custom Randoms",
 		desc: "Ranbats version of the National Dex Custom format",
@@ -48,6 +49,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		],
 		unbanlist: [],
 	},
+ 	**/
 	{
 		name: "[Gen 9] National Dex Custom Doubles",
 		desc: "A VGC-styled doubles variant of National Dex Custom.",
