@@ -53,6 +53,10 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		inherit: true,
 		isNonstandard: null,
 	},
+	unifiedmind: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	unseenfist: {
 		onModifyMove: undefined, // no inherit
 		onHitProtect(source, target, move) {

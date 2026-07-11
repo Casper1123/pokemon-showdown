@@ -109,7 +109,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onStart(source) {
 			this.add('-ability', source, 'Absolute Distortion');
 			this.field.addPseudoWeather('absolutedistortion', source);
-
 		},
 		onEnd(pokemon) {
 			if (this.field.pseudoWeather['absolutedistortion']?.source !== pokemon) return;
@@ -384,6 +383,48 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 			this.field.removePseudoWeather('originofspace');
 		},
+	},
+	unifiedmind: {
+		isNonstandard: 'Custom',
+		name: 'Unified Mind',
+		desc: 'Prankster + Competitive',
+		shortDesc: 'Prankster + Competitive',
+		rating: 5,
+		num: -14,
+		flags: {},
+
+		// Competitive:
+		onAfterEachBoost(boost, target, source, effect) {
+			if (!source || target.isAlly(source)) {
+				return;
+			}
+			let statsLowered = false;
+			let i: BoostID;
+			for (i in boost) {
+				if (boost[i]! < 0) {
+					statsLowered = true;
+				}
+			}
+			if (statsLowered) {
+				this.boost({ spa: 2 }, target, target, null, false, true);
+			}
+		},
+		onModifyPriority(priority, pokemon, target, move) {
+			if (move?.category === 'Status') {
+				move.pranksterBoosted = true;
+				return priority + 1;
+			}
+		},
+	},
+
+	polarityshift: {
+		isNonstandard: 'Custom',
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, notransform: 1, cantsuppress: 1 },
+		name: 'Polarity Shift',
+		rating: 5,
+		num: -15,
+		desc: '',
+		shortDesc: '',
 	},
 
 	noability: {
