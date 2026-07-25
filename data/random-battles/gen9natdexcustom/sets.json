@@ -76,7 +76,7 @@
   },
   "dragapult": null, requires proper entry!,
   "dragonite": {
-    "level": null,
+    "level": 74,
     "sets": [
       {
         "role": "Z-Move user",
@@ -91,7 +91,7 @@
     ]
   },
   "ferrothorn": {
-    "level": null,
+    "level": 77,
     "sets": [
       {
         "role": "Bulky Support",
@@ -106,7 +106,7 @@
     ]
   },
   "garchomp": {
-    "level": null,
+    "level": 74,
     "sets": [
       {
         "role": "Z-Move user",
@@ -126,7 +126,7 @@
     ]
   },
   "gholdengo": {
-    "level": null,
+    "level": 77,
     "sets": [
       {
         "role": "Setup Sweeper",
@@ -155,7 +155,7 @@
     ]
   },
   "gliscor": {
-    "level": null,
+    "level": 76,
     "sets": [
       {
         "role": "Bulky Support",
@@ -170,7 +170,7 @@
     ]
   },
   "greattusk": {
-    "level": null,
+    "level": 77,
     "sets": [
       {
         "role": "Fast Support",
@@ -200,7 +200,7 @@
     ]
   },
   "hatterene": {
-    "level": null,
+    "level": 85,
     "sets": [
       {
         "role": "Bulky Setup",
@@ -215,7 +215,7 @@
     ]
   },
   "heatran": {
-    "level": null,
+    "level": 79,
     "sets": [
       {
         "role": "Bulky Support",
@@ -235,7 +235,7 @@
     ]
   },
   "irontreads": {
-    "level": null,
+    "level": 77,
     "sets": [
       {
         "role": "Spinner",
@@ -260,7 +260,7 @@
     ]
   },
   "ironvaliant": {
-    "level": null,
+    "level": 78,
     "sets": [
       {
         "role": "Choice Item user",
@@ -280,7 +280,7 @@
     ]
   },
   "kingambit": {
-    "level": null,
+    "level": 74,
     "sets": [
       {
         "role": "Bulky Setup",
@@ -295,7 +295,7 @@
     ]
   },
   "kyurem": {
-    "level": null,
+    "level": 77,
     "sets": [
       {
         "role": "Wallbreaker",
@@ -315,7 +315,7 @@
     ]
   },
   "landorustherian": {
-    "level": null,
+    "level": 76,
     "sets": [
       {
         "role": "Fast Bulky Support",
@@ -335,7 +335,7 @@
     ]
   },
   "latiosmega": {
-    "level": null,
+    "level": 78,
     "sets": [
       {
         "role": "Wallbreaker",
@@ -345,7 +345,7 @@
     ]
   },
   "lopunnymega": {
-    "level": null,
+    "level": 77,
     "sets": [
       {
         "role": "Fast Attacker",
@@ -355,7 +355,7 @@
     ]
   },
   "melmetal": {
-    "level": null,
+    "level": 72,
     "sets": [
       {
         "role": "Staller",
@@ -375,7 +375,7 @@
     ]
   },
   "moltres": {
-    "level": null,
+    "level": 81,
     "sets": [
       {
         "role": "Bulky Support",
@@ -385,7 +385,7 @@
     ]
   },
   "ogerponwellspring": {
-    "level": null,
+    "level": 76,
     "sets": [
       {
         "role": "Wallbreaker",
@@ -400,7 +400,7 @@
     ]
   },
   "ragingbolt": {
-    "level": null,
+    "level": 78,
     "sets":[
       {
         "role": "Setup Sweeper",
@@ -415,7 +415,7 @@
     ]
   },
   "samurotthisui": {
-    "level": null,
+    "level": 77,
     "sets": [
       {
         "role": "Fast Attacker",
@@ -435,7 +435,7 @@
     ]
   },
   "scizormega": {
-    "level": null,
+    "level": 79,
     "sets": [
       {
         "role": "Bulky Setup",
@@ -450,10 +450,15 @@
     ]
   },
   "slowkinggalar": {
-    "level": null,
+    "level": 85,
     "sets": [
       {
         "role": "Bulky Support",
+        "movepool": ["Future Sight", "Psychic Noise", "Sludge Bomb", "Chilly Reception", "Thunder Wave", "Toxic", "Flamethrower"],
+        "abilities": ["Regenerator"]
+      },
+      {
+        "role": "Bulky Attacker",
         "movepool": ["Future Sight", "Psychic Noise", "Sludge Bomb", "Chilly Reception", "Thunder Wave", "Toxic", "Flamethrower"],
         "abilities": ["Regenerator"]
       },
@@ -465,7 +470,7 @@
     ]
   },
   "tapukoko": {
-    "level": null,
+    "level": 77,
     "sets": [
       {
         "role": "Fast Attacker",
@@ -490,7 +495,7 @@
     ]
   },
   "tapulele": {
-    "level": null,
+    "level": 78,
     "sets": [
       {
         "role": "Choice Item user",
@@ -510,7 +515,7 @@
     ]
   },
   "terapagos": {
-    "level": null,
+    "level": 77,
     "sets": [
       {
         "role": "Spinner",
@@ -525,7 +530,7 @@
     ]
   },
   "tinglu": {
-    "level": null,
+    "level": 78,
     "sets": [
       {
         "role": "Bulky Support",
@@ -535,7 +540,7 @@
     ]
   },
   "toxapex": {
-    "level": null,
+    "level": 82,
     "sets": [
       {
         "role": "Bulky Support",
@@ -545,7 +550,7 @@
     ]
   },
   "urshifurapidstrike": {
-    "level": null,
+    "level": 75,
     "sets": [
       {
         "role": "Choice Item user",
@@ -560,7 +565,7 @@
     ]
   },
   "volcarona": {
-    "level": null,
+    "level": 77,
     "sets": [
       {
         "role": "Setup Sweeper",
@@ -580,7 +585,7 @@
     ]
   },
   "zamazenta": {
-    "level": null,
+    "level": 71,
     "sets": [
       {
         "role": "Fast Attacker",
@@ -600,7 +605,7 @@
     ]
   },
   "zapdos": {
-    "level": null,
+    "level": 78,
     "sets": [
       {
         "role": "Fast Bulky Support",
