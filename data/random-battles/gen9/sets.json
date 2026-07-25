@@ -5704,6 +5704,7 @@
             },
             {
                 "role": "Fast Attacker",
+                "role": "Fast Attacker",
                 "movepool": ["Grassy Glide", "High Horsepower", "Swords Dance", "U-turn", "Wood Hammer"],
                 "abilities": ["Grassy Surge"],
                 "teraTypes": ["Grass"]

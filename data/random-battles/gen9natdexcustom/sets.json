@@ -1,3 +1,617 @@
 {
-
+  "alomomola": {
+    "level": 87,
+    "sets": [
+      {
+        "role": "AV Pivot",
+        "movepool": ["Knock Off", "Mirror Coat", "Flip Turn", "Scald", "Liquidation"],
+        "abilities": ["Regenerator"]
+      },
+      {
+        "role": "Staller",
+        "movepool": ["Flip Turn", "Toxic", "Wish", "Protect"],
+        "abilities": ["Regenerator"]
+      }
+    ]
+  },
+  "charizardmegay": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Wallbreaker",
+        "movepool": ["Weather Ball", "Fire Blast", "Solar Beam", "Scorching Sands", "Focus Blast", "Roost"],
+        "abilities": ["Blaze"]
+      }
+    ]
+  },
+  "cinderace": {
+    "level": 77,
+    "sets": [
+      {
+        "role": "Generalist",
+        "movepool": ["Pyro Ball", "U-turn", "Court Change", "Will-O-Wisp", "Sucker Punch", "Gunk Shot"],
+        "abilities": ["Blaze", "Libero"]
+      },
+      {
+        "role": "Z-Move user",
+        "movepool": ["Swords Dance", "Pyro Ball", "Double-Edge", "High Jump Kick", "Sucker Punch"],
+        "abilities": ["Libero"]
+      }
+    ]
+  },
+  "clodsire": {
+    "level": 81,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": ["Earthquake", "Toxic", "Amnesia", "Stealth Rock", "Spikes", "Recover"],
+        "abilities": ["Unaware", "Water Absorb"]
+      }
+    ]
+  },
+  "corviknight": {
+    "level": 80,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": ["Brave Bird", "Body Press", "Defog", "Iron Defense", "U-turn", "Roost"],
+        "abilities": ["Pressure"]
+      },
+      {
+        "role": "Spinner",
+        "movepool": ["Brave Bird", "Body Press", "Defog", "Iron Defense", "U-turn", "Roost"],
+        "abilities": ["Pressure"]
+      }
+    ]
+  },
+  "dianciemega": {
+    "level": 82,
+    "sets": [
+      {
+        "role": "Wallbreaker",
+        "movepool": ["Moonblast", "Earth Power", "Mystical Fire", "Diamond Storm", "Power Gem", "Stealth Rock", "Spikes"],
+        "abilities": ["Clear Body"]
+      }
+    ]
+  },
+  "dragapult": null, requires proper entry!,
+  "dragonite": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Z-Move user",
+        "movepool": ["Dragon Dance", "Outrage", "Earthquake", "Fire Punch"],
+        "abilities": ["Multiscale"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Dragon Dance", "Earthquake", "Ice Spinner", "Roost", "Extreme Speed", "Dual Wingbeat"],
+        "abilities": ["Multiscale"]
+      }
+    ]
+  },
+  "ferrothorn": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": ["Leech Seed", "Knock Off", "Body Press", "Power Whip", "Gyro Ball", "Stealth Rock", "Spikes"],
+        "abilities": ["Iron Barbs"]
+      },
+      {
+        "role": "Staller",
+        "movepool": ["Leech Seed", "Knock Off", "Body Press", "Power Whip", "Gyro Ball", "Stealth Rock", "Spikes"],
+        "abilities": ["Iron Barbs"]
+      }
+    ]
+  },
+  "garchomp": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Z-Move user",
+        "movepool": ["Swords Dance", "Earthquake", "Outrage", "Stone Edge", "Stealth Rock", "Spikes"],
+        "abilities": ["Rough Skin"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Swords Dance", "Earthquake", "Outrage", "Stone Edge", "Stealth Rock", "Spikes"],
+        "abilities": ["Rough Skin"]
+      },
+      {
+        "role": "Fast Bulky Support",
+        "movepool": ["Earthquake", "Toxic", "Protect", "Stealth Rock", "Spikes", "Dragon Tail"],
+        "abilities": ["Rough Skin"]
+      }
+    ]
+  },
+  "gholdengo": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Nasty Plot", "Shadow Ball", "Make It Rain", "Recover", "Focus Blast"],
+        "abilities": ["Good as Gold"]
+      },
+      {
+        "role": "Z-Move user",
+        "movepool": ["Nasty Plot", "Shadow Ball", "Make It Rain", "Recover", "Focus Blast"],
+        "abilities": ["Good as Gold"]
+      },
+      {
+        "role": "Bulky Setup",
+        "movepool": ["Nasty Plot", "Shadow Ball", "Focus Blast", "Recover"],
+        "abilities": ["Good as Gold"]
+      },
+      {
+        "role": "Bulky Support",
+        "movepool": ["Hex", "Focus Blast", "Thunder Wave", "Recover"],
+        "abilities": ["Good as Gold"]
+      },
+      {
+        "role": "Choice Item user",
+        "movepool": ["Shadow Ball", "Make It Rain", "Trick", "Recover", "Focus Blast"]
+      }
+    ]
+  },
+  "gliscor": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": ["Earthquake", "Toxic", "U-turn", "Knock Off", "Spikes", "Stealth Rock", "Defog", "Protect", "Roost"],
+        "abilities": ["Poison Heal"]
+      },
+      {
+        "role": "Bulky Setup",
+        "movepool": ["Earthquake", "Swords Dance", "Roost", "Facade", "Knock Off"],
+        "abilities": ["Poison Heal"]
+      }
+    ]
+  },
+  "greattusk": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Fast Support",
+        "movepool": ["Headlong Rush", "Rapid Spin", "Ice Spinner", "Stealth Rock", "Close Combat", "Knock Off"],
+        "abilities": ["Protosynthesis"]
+      },
+      {
+        "role": "Spinner",
+        "movepool": ["Headlong Rush", "Rapid Spin", "Ice Spinner", "Stealth Rock", "Close Combat", "Knock Off"],
+        "abilities": ["Protosynthesis"]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Headlong Rush", "Rapid Spin", "Ice Spinner", "Stealth Rock", "Close Combat", "Knock Off"],
+        "abilities": ["Protosynthesis"]
+      },
+      {
+        "role": "Bulky Support",
+        "movepool": ["Headlong Rush", "Earthquake", "Ice Spinner", "Rapid Spin", "Stealth Rock", "Knock Off", "Body Press"],
+        "abilities": ["Protosynthesis"]
+      },
+      {
+        "role": "Fast Bulky Setup",
+        "movepool": ["Headlong Rush", "Ice Spinner", "Rapid Spin", "Bulk Up"],
+        "abilities": ["Protosynthesis"]
+      }
+    ]
+  },
+  "hatterene": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Bulky Setup",
+        "movepool": ["Calm Mind", "Psychic Noise", "Draining Kiss", "Mystical Fire"],
+        "abilities": ["Magic Bounce"]
+      },
+      {
+        "role": "Bulky Support",
+        "movepool": ["Psychic Noise", "Mystical Fire", "Nuzzle", "Healing Wish"],
+        "abilities": ["Magic Bounce"]
+      }
+    ]
+  },
+  "heatran": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": ["Magma Storm", "Earth Power", "Toxic", "Taunt", "Stealth Rock", "Protect", "Taunt"],
+        "abilities": ["Flash Fire"]
+      },
+      {
+        "role": "Generalist",
+        "movepool": ["Magma Storm", "Earth Power", "Solar Beam", "Toxic", "Hidden Power Ice", "Taunt", "Stealth Rock", "Taunt"],
+        "abilities": ["Flash Fire"]
+      },
+      {
+        "role": "Z-Move user",
+        "movepool": ["Magma Storm", "Earth Power", "Solar Beam", "Toxic", "Hidden Power Ice", "Taunt", "Stealth Rock", "Taunt"],
+        "abilities": ["Flash Fire"]
+      }
+    ]
+  },
+  "irontreads": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Spinner",
+        "movepool": ["Earthquake", "Earth Power", "Ice Spinner", "Steel Beam", "Stealth Rock", "Rapid Spin"],
+        "abilities": ["Quark Drive"]
+      },
+      {
+        "role": "Fast Support",
+        "movepool": ["Earthquake", "Earth Power", "Ice Spinner", "Steel Beam", "Stealth Rock", "Rapid Spin"],
+        "abilities": ["Quark Drive"]
+      },
+      {
+        "role": "Bulky Support",
+        "movepool": ["Earthquake", "Rapid Spin", "Knock Off", "Volt Switch", "Stealth Rock", "Ice Spinner"],
+        "abilities": ["Quark Drive"]
+      },
+      {
+        "role": "Z-Move user",
+        "movepool": ["Earthquake", "Ice Spinner", "Supercell Slam", "Stealth Rock", "Knock Off", "Rapid Spin"],
+        "abilities": ["Quark Drive"]
+      }
+    ]
+  },
+  "ironvaliant": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Choice Item user",
+        "movepool": ["Moonblast", "Focus Blast", "Thunderbolt", "Vacuum Wave", "Trick", "Shadow Ball"],
+        "abilities": ["Quark Drive"]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Moonblast", "Close Combat", "Knock Off", "Encore", "Destiny Bond", "Thunderbolt"],
+        "abilities": ["Quark Drive"]
+      },
+      {
+        "role": "Fast Bulky Setup",
+        "movepool": ["Swords Dance", "Close Combat", "Knock Off", "Ice Punch", "Encore", "Spirit Break"],
+        "abilities": ["Quark Drive"]
+      }
+    ]
+  },
+  "kingambit": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Bulky Setup",
+        "movepool": ["Swords Dance", "Knock Off", "Sucker Punch", "Low Kick", "Iron Head"],
+        "abilities": ["Supreme Overlord"]
+      },
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Knock Off", "Pursuit", "Sucker Punch", "Low Kick", "Iron Head"],
+        "abilities": ["Supreme Overlord", "Defiant"]
+      }
+    ]
+  },
+  "kyurem": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Wallbreaker",
+        "movepool": ["Freeze-Dry", "Earth Power", "Substitute", "Roost", "Protect"],
+        "abilities": ["Pressure"]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Ice Beam", "Freeze-Dry", "Hidden Power Fire", "Earth Power", "Draco Meteor", "Roost"],
+        "abilities": ["Pressure"]
+      },
+      {
+        "role": "Choice Item user",
+        "movepool": ["Ice Beam", "Freeze-Dry", "Earth Power", "Draco Meteor"],
+        "abilities": ["Pressure"]
+      }
+    ]
+  },
+  "landorustherian": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Fast Bulky Support",
+        "movepool": ["U-turn", "Taunt", "Toxic", "Stealth Rock", "Earthquake", "Earth Power"],
+        "abilities": ["Intimidate"]
+      },
+      {
+        "role": "Z-Move user",
+        "movepool": ["Swords Dance", "Earthquake", "Stone Edge", "Fly" ,"Stealth Rock"],
+        "abilities": ["Intimidate"]
+      },
+      {
+        "role": "Choice Item user",
+        "movepool": ["Earthquake", "U-turn", "Stone Edge", "Defog", "Explosion"],
+        "abilities": ["Intimidate"]
+      }
+    ]
+  },
+  "latiosmega": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Wallbreaker",
+        "movepool": ["Luster Purge", "Aura Sphere", "Mystical Fire", "Draco Meteor", "Ice Beam", "Roost"],
+        "abilities": ["Levitate"]
+      }
+    ]
+  },
+  "lopunnymega": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Frustration", "Close Combat", "Fake Out", "U-turn", "Quick Attack", "Triple Axel"],
+        "abilities": ["Limber"]
+      }
+    ]
+  },
+  "melmetal": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Staller",
+        "movepool": ["Double Iron Bash", "Earthquake", "Toxic", "Protect"],
+        "abilities": ["Iron Fist"]
+      },
+      {
+        "role": "AV Pivot",
+        "movepool": ["Double Iron Bash", "Ice Punch", "Thunder Punch", "Earthquake", "Superpower"],
+        "abilities": ["Iron Fist"]
+      },
+      {
+        "role": "Bulky Support",
+        "movepool": ["Double Iron Bash", "Thunder Wave", "Thunder Punch", "Superpower", "Earthquake"],
+        "abilities": ["Iron Fist"]
+      }
+    ]
+  },
+  "moltres": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": ["Flamethrower", "U-turn", "Hurricane", "Toxic", "Scorching Sands", "Roost"],
+        "abilities": ["Flame Body"]
+      }
+    ]
+  },
+  "ogerponwellspring": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Wallbreaker",
+        "movepool": ["Swords Dance", "Ivy Cudgel", "Power Whip", "Horn Leech", "Superpower", "Play Rough"],
+        "abilities": ["Water Absorb"]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Ivy Cudgel", "Power Whip", "Horn Leech", "U-turn", "Knock Off", "Encore", "Taunt", "Spikes"],
+        "abilities": ["Water Absorb"]
+      }
+    ]
+  },
+  "ragingbolt": {
+    "level": null,
+    "sets":[
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Calm Mind", "Weather Ball", "Thunderbolt", "Draco Meteor", "Dragon Pulse", "Thunderclap"],
+        "abilities": ["Protosynthesis"]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Thunderclap", "Draco Meteor", "Volt Switch", "Thunderbolt", "Taunt"],
+        "abilities": ["Protosynthesis"]
+      }
+    ]
+  },
+  "samurotthisui": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Ceaseless Edge", "Razor Shell", "Sucker Punch", "Sacred Sword", "Swords Dance", "Encore"],
+        "abilities": ["Sharpness"]
+      },
+      {
+        "role": "Choice Item user",
+        "movepool": ["Ceaseless Edge", "Razor Shell", "Sacred Sword", "Knock Off", "Flip Turn"],
+        "abilities": ["Sharpness"]
+      },
+      {
+        "role": "AV Pivot",
+        "movepool": ["Razor Shell", "Ceaseless Edge", "Sucker Punch", "Knock Off", "Flip Turn", "Sacred Sword"],
+        "abilities": ["Sharpness"]
+      }
+    ]
+  },
+  "scizormega": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Bulky Setup",
+        "movepool": ["Swords Dance", "Bullet Punch", "Knock Off", "U-turn", "Roost"],
+        "abilities": ["Light Metal"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Swords Dance", "Bullet Punch", "Close Combat", "Knock Off"],
+        "abilities": ["Light Metal"]
+      }
+    ]
+  },
+  "slowkinggalar": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": ["Future Sight", "Psychic Noise", "Sludge Bomb", "Chilly Reception", "Thunder Wave", "Toxic", "Flamethrower"],
+        "abilities": ["Regenerator"]
+      },
+      {
+        "role": "AV Pivot",
+        "movepool": ["Psychic Noise", "Sludge Bomb", "Ice Beam", "Flamethrower"],
+        "abilities": ["Regenerator"]
+      }
+    ]
+  },
+  "tapukoko": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Thunderbolt", "Roost", "Hidden Power Ice", "Dazzling Gleam", "U-turn", "Volt Switch"],
+        "abilities": ["Electric Surge"]
+      },
+      {
+        "role": "Choice Item user",
+        "movepool": ["Thunderbolt", "Dazzling Gleam", "Hidden Power Ice", "Volt Switch", "U-turn"],
+        "abilities": ["Electric Surge"]
+      },
+      {
+        "role": "Z-Move user",
+        "movepool": ["Calm Mind", "Thunderbolt", "Dazzling Gleam", "Roost"],
+        "abilities": ["Electric Surge"]
+      },
+      {
+        "role": "Fast Support",
+        "movepool": ["Reflect", "Light Screen", "U-turn", "Taunt"],
+        "abilities": ["Electric Surge"]
+      }
+    ]
+  },
+  "tapulele": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Choice Item user",
+        "movepool": ["Psychic", "Moonblast", "Focus Blast", "Hidden Power Fire", "Psyshock", "Future Sight"],
+        "abilities": ["Psychic Surge"]
+      },
+      {
+        "role": "Z-Move user",
+        "movepool": ["Moonblast", "Focus Blast", "Psychic", "Psyshock", "Calm Mind", "Hidden Power Fire", "Future Sight"],
+        "abilities": ["Psychic Surge"]
+      },
+      {
+        "role": "AV Pivot",
+        "movepool": ["Psychic", "Psyshock", "Moonblast", "Focus Blast", "Hidden Power Fire"],
+        "abilities": ["Psychic Surge"]
+      }
+    ]
+  },
+  "terapagos": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Spinner",
+        "movepool": ["Tera Starstorm", "Ice Beam", "Calm Mind", "Flamethrower", "Earth Power", "Rapid Spin"],
+        "abilities": ["Tera Shell"]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Tera Starstorm", "Ice Beam", "Calm Mind", "Flamethrower", "Earth Power", "Rapid Spin"],
+        "abilities": ["Tera Shell"]
+      }
+    ]
+  },
+  "tinglu": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": ["Earthquake", "Ruination", "Rock Slide", "Payback", "Stealth Rock", "Spikes", "Whirlwind"],
+        "abilities": ["Vessel of Ruin"]
+      }
+    ]
+  },
+  "toxapex": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": ["Scald", "Knock Off", "Toxic", "Toxic Spikes", "Haze", "Recover"],
+        "abilities": ["Regenerator"]
+      }
+    ]
+  },
+  "urshifurapidstrike": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Choice Item user",
+        "movepool": ["Surging Strikes", "Close Combat", "U-turn", "Ice Spinner", "Aqua Jet"],
+        "abilities": ["Unseen Fist"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Swords Dance", "Surging Strikes", "Close Combat", "Trailblaze", "Aqua Jet"],
+        "abilities": ["Unseen Fist"]
+      }
+    ]
+  },
+  "volcarona": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Quiver Dance", "Flamethrower", "Bug Buzz", "Hidden Power Ground"],
+        "abilities": ["Flame Body"]
+      },
+      {
+        "role": "Bulky Setup",
+        "movepool": ["Quiver Dance", "Flamethrower", "Bug Buzz", "Hidden Power Ground", "Roost"],
+        "abilities": ["Flame Body"]
+      },
+      {
+        "role": "Z-Move user",
+        "movepool": ["Quiver Dance", "Flamethrower", "Bug Buzz", "Substitute"],
+        "abilities": ["Swarm"]
+      }
+    ]
+  },
+  "zamazenta": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Close Combat", "Crunch", "Stone Edge", "Ice Fang", "Heavy Slam"],
+        "abilities": ["Dauntless Shield"]
+      },
+      {
+        "role": "Fast Bulky Setup",
+        "movepool": ["Iron Defense", "Body Press", "Crunch", "Stone Edge", "Substitute", "Roar", "Rest"],
+        "abilities": ["Dauntless Shield"]
+      },
+      {
+        "role": "Fast Support",
+        "movepool": ["Reflect", "Light Screen", "Roar", "Body Press"],
+        "abilities": ["Dauntless Shield"]
+      }
+    ]
+  },
+  "zapdos": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Fast Bulky Support",
+        "movepool": ["Volt Switch", "Hurricane", "Heat Wave", "Defog", "Hidden Power Ice", "Roost"],
+        "abilities": ["Static"]
+      },
+      {
+        "role": "Z-Move user",
+        "movepool": ["Hurricane", "Thunderbolt", "Thunder", "Volt Switch", "Weather Ball", "Roost"],
+        "abilities": ["Static"]
+      }
+    ]
+  }
 }
