@@ -1454,6 +1454,9 @@ export class RandomTeams {
 			if ((teamDetails.teraBlast || ruleTable.has('terastalclause')) && set.role === 'Tera Blast user') {
 				continue;
 			}
+			if (set.role === 'Tera Blast user' && !(set.teraTypes && set.teraTypes.length > 0)) {
+				continue;
+			}
 			possibleSets.push(set);
 		}
 		const set = this.sampleIfArray(possibleSets);
@@ -1463,7 +1466,7 @@ export class RandomTeams {
 			movePool.push(this.dex.moves.get(movename).id);
 		}
 		const teraTypes = set.teraTypes;
-		let teraType = teraTypes && teraTypes.length ? this.sampleIfArray(teraTypes) : '';
+		let teraType = teraTypes?.length ? this.sampleIfArray(teraTypes) : '';
 
 		let ability = '';
 		let item = undefined;
@@ -1863,7 +1866,7 @@ export class RandomTeams {
 			if (set.ability === 'Drought' || set.ability === 'Orichalcum Pulse' || set.moves.includes('sunnyday')) {
 				teamDetails.sun = 1;
 			}
-			if (set.ability === 'Sand Stream') teamDetails.sand = 1;
+			if (set.ability === 'Sand Stream' || set.moves.includes('desertsong')) teamDetails.sand = 1;
 			if (set.ability === 'Snow Warning' || set.moves.includes('snowscape') || set.moves.includes('chillyreception')) {
 				teamDetails.snow = 1;
 			}
