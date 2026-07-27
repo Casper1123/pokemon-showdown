@@ -1,0 +1,377 @@
+{
+	"ursaluna": {
+    "level": 79,
+    "sets": [
+
+      {
+        "role": "Fast Bulky Setup",
+        "movepool": ["Swords Dance", "Facade", "Headlong Rush", "Earthquake", "Fire punch"],
+        "abilities": ["Guts"]
+      }
+
+    ]
+  },
+  "rillaboom": {
+    "level": 79,
+    "sets": [
+    {
+      "role": "Choice Item user",
+      "movepool": ["Wood hammer", "Grassy Glide", "U-turn", "Superpower", "Knock Off"],
+      "abilities": ["Grassy Surge"]
+    },
+	  {
+		"role": "Bulky Setup",
+		"movepool": ["Swords Dance", "Grassy Glide", "Drain Punch", "Superpower", "Knock Off"],
+		"abilities": ["Grassy Surge"]
+	  },
+	  {
+		"role": "Setup Sweeper",
+		"movepool" : ["Swords Dance", "Grassy Glide", "Knock Off", "Superpower", "Drain Punch"],
+	  "abilities": ["Grassy Glide"]
+	  }
+
+    ]
+  },
+  "tapufini": {
+    "level": 78,
+    "sets": [
+      {
+        "role": "Fast Bulky Setup",
+        "movepool": ["Calm Mind", "Scald", "Draining Kiss", "Taunt"],
+        "abilities": ["Misty Surge"]
+      }
+
+    ]
+  },
+  "tyranitarmega": {
+    "level": 78,
+    "sets": [
+
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Knock Off", "Pursuit", "Stone Edge", "Ice Punch", "Low Kick", "Stealth Rock", "Low Kick"],
+        "abilities": ["Sand Stream"]
+      }
+    ]
+  },
+  "tyranitar": {
+    "level": 78,
+    "sets": [
+
+      {
+        "role": "Choice Item user",
+        "movepool": ["Stone Edge", "Knock Off", "Pursuit", "Superpower"],
+        "abilities": ["Sand Stream"]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Stealth Rock", "Knock Off", "Pursuit", "Stone Edge"],
+        "abilities": ["Sand Stream"]
+      },
+      {
+        "role": "Fast Bulky Support",
+        "movepool": ["Stealth Rock", "Knock Off", "Pursuit", "Stone Edge"],
+        "abilities": ["Sand Stream"]
+      }
+    ]
+  },
+  "excadrill": {
+    "level": 79,
+    "sets": [
+
+      {
+        "role": "Z-Move user",
+        "movepool": ["Swords Dance", "Earthquake", "Iron Head", "Rock Slide", "Rapid Spin", "Giga Impact"],
+        "abilities": ["Sand Rush"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Swords Dance", "Earthquake", "Iron Head", "Rock Slide", "Rapid Spin"],
+        "abilities": ["Sand Rush"]
+      },
+      {
+        "role": "Fast Bulky Support",
+        "movepool": ["Earthquake", "Iron Head", "Toxic", "Stealth Rock", "Swords Dance", "Rapid Spin"],
+        "abilities": ["Mold Breaker"]
+      },
+      {
+        "role": "Spinner",
+        "movepool": ["Earthquake", "Iron Head", "Toxic", "Stealth Rock", "Swords Dance", "Rapid Spin"],
+        "abilities": ["Mold Breaker"]
+      }
+    ]
+  },
+  "aegislash": {
+    "level": 79,
+    "sets": [
+
+      {
+        "role": "Staller",
+        "movepool": ["Substitute", "Toxic", "King's Shield", "Shadow Ball"],
+        "abilities": ["Stance Change"]
+      },
+	  { "role": "Fast Attacker",
+		"movepool": ["Swords Dance", "Shadow Claw", "Shadow Sneak", "Close Combat"],
+		"abilities": ["Stance Change"]
+	  },
+	  {
+		"role": "Bulky Attacker",
+		"movepool": ["Shadow Ball", "Close Combat", "King's Shield", "Shadow Sneak", "Toxic", "Flash cannon"],
+		"abilities": ["Stance Change"]
+		},
+	  {
+		"role": "Z-Move user",
+		"movepool": ["Shadow Ball", "Close Combat", "King's Shield", "Shadow Sneak", "Toxic", "Flash cannon"],
+		"abilities": ["Stance Change"]
+		},
+	  {
+		"role": "Bulky Attacker",
+		"movepool": ["Swords Dace", "Close Combat", "King's Shield", "Shadow Sneak", "Shadow Claw"],
+		"abilities": ["Stance Change"]
+	  }
+    ]
+  },
+  "aerodactylmega": {
+    "level": 82,
+    "sets": [
+
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Stone Edge", "Dual Wingbeat", "Earthquake", "Taunt", "Pursuit", "Roost"],
+        "abilities": ["Unnerve"]
+      },
+	  {
+		"role": "Setup Sweeper",
+		"movepool": ["Dragon Dace", "Stone Edge", "Earthquake", "Dual Wingbeat", "Roost"],
+		"abilities": ["Unnerve"]
+	  }
+    ]
+  },
+  "bisharp": {
+    "level": 79,
+    "sets": [
+      {
+        "role": "Wallbreaker",
+        "movepool": ["Swords Dace", "Knock Off", "Sucker Punch", "Iron Head"],
+        "abilities": ["Defiant"]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Pursuit", "Knock Off", "Sucker Punch", "Iron Head"],
+        "abilities": ["Defiant"]
+      }
+    ]
+  },
+  "venusaurmega": {
+    "level": 84,
+    "sets": [
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Giga Drain", "Sludge Bomb", "Earth Power", "Synthesis"],
+        "abilities": ["Chlorophyll"]
+      }
+    ]
+  },
+  "slowbro": {
+    "level": 85,
+    "sets": [
+
+      {
+        "role": "Bulky Support",
+        "movepool": ["Scald", "Body Press", "Future Sight", "Teleport", "Slack Off", "Thunder Wave"],
+        "abilities": ["Regenerator"]
+      }
+    ]
+  },
+  "beedrillmega": {
+    "level": 77,
+    "sets": [
+
+      {
+        "role": "Fast Attacker",
+        "movepool": ["U-turn", "Poison Jab", "Drill Run", "Pursuit", "Knock off"],
+        "abilities": ["Swarm"]
+      }
+    ]
+  },
+  "blacephalon": {
+    "level": 80,
+    "sets": [
+
+      {
+        "role": "Choice Item user",
+        "movepool": ["Fire Blast", "Overheat", "Shadow Ball", "Flamethrower", "Trick"],
+        "abilities": ["Beast boost"]
+      },
+	  {
+		  "role": "Setup Attacker",
+		  "movepool": ["Flamethrower", "Shadow Ball", "Substitute", "Calm Mind"],
+		  "abilities": ["Beast Boost"]
+	  }
+    ]
+  },
+  "buzzwole": {
+    "level": 79,
+    "sets": [
+
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Close Combat", "Drain Punch", "Ice Punch", "Toxic", "Earthquake", "Roost"],
+        "abilities": ["Beast Boost"]
+      }
+    ]
+  },
+  "celesteela": {
+    "level": 78,
+    "sets": [
+      {
+        "role": "Staller",
+        "movepool": ["Heavy Slam", "Flamethrower", "Leech Seed","Protect"],
+        "abilities": ["Beast Boost"]
+      }
+    ]
+  },
+  "chansey": {
+    "level": 85,
+    "sets": [
+
+      {
+        "role": "Staller",
+        "movepool": ["Seismic Toss", "Toxic", "Thunder Wave", "Soft-Boiled", "Stealth Rock", "Aromatherapy"],
+        "abilities": ["Natural Cure"]
+      }
+    ]
+  },
+  "clefable": {
+    "level": 83,
+    "sets": [
+
+      {
+        "role": "Bulky Support",
+        "movepool": ["Moonblast", "Stealth Rock", "Thunder Wave", "Knock Off", "Soft-Boiled"],
+        "abilities": ["Magic Guard"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": [
+          "Moonblast",
+          "Calm Mind",
+          "Knock Off",
+          "Flamethrower",
+          "Thunder",
+          "Soft-Boiled"
+        ],
+        "abilities": [
+          "Magic Guard",
+          "Unaware"
+        ]
+      }
+    ]
+  },
+  "dracozolt": {
+    "level": 76,
+    "sets": [
+
+      {
+        "role": "Doubles Fast Attacker",
+        "movepool": ["bolt Beak", "Draco Meteor", "Substitute", "Protect"],
+        "abilities": ["Sand Rush"]
+      }
+    ]
+  },
+  "goodrahisui": {
+    "level": 82,
+    "sets": [
+
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Draco Meteor", "Flash Cannon", "Flamethrower", "Knock Off"],
+        "abilities": ["Sap Sipper"]
+      },
+      {
+        "role": "AV Pivot",
+        "movepool": ["Draco Meteor", "Dragon Tail", "Earthquake", "Fire Blast", "Heavy Slam", "Hydro Pump", "Knock Off", "Thunderbolt"],
+        "abilities": ["Sap Sipper"]
+      }
+    ]
+  },
+  "ironboulder": {
+    "level": 77,
+    "sets": [
+
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Swords Dance", "Mighty Cleave", "Close Combat", "Zen Headbutt", "Earthquake"],
+        "abilities": ["Quark Drive"]
+      },
+      {
+        "role": "Choice Item user",
+        "movepool": [
+          "Mighty Cleave",
+          "Close Combat",
+          "Earthquake",
+          "Zen Headbutt"
+        ],
+        "abilities": [
+          "Quark Drive"
+        ]
+      }
+    ]
+  },
+  "magnezone": {
+    "level": 85,
+    "sets": [
+
+      {
+        "role": "Choice Item user",
+        "movepool": ["Volt Switch", "Thunderbolt", "Flash Cannon", "Hidden Power Fire", "Hidden Power Grass", "Toxic"],
+        "abilities": ["Magnet Pull"]
+      },
+      {
+        "role": "Z-Move user",
+        "movepool": [
+          "Substitute",
+          "Thunderbolt",
+          "Flash Cannon",
+          "Hidden Power Grass"
+        ],
+        "abilities": [
+          "Magnet Pull"
+        ]
+      }
+    ]
+  },
+  "skarmory": {
+    "level": 80,
+    "sets": [
+
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Iron Defence", "Body Press", "Roost", "Spikes"],
+        "abilities": ["Sturdy"]
+      }
+    ]
+  },
+  "zygarde10": {
+    "level": 81,
+    "sets": [
+
+      {
+        "role": "Choice Item user",
+        "movepool": ["Thousand Arrows", "Extreme Speed", "Outrage", "Toxic"],
+        "abilities": ["Aura Break"]
+      }
+    ]
+  },
+  "zeraora": {
+    "level": 76,
+    "sets": [
+
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Plasma Fists", "Knock Off", "Volt Switch", "Toxic", "Close Combat", "Grass Knot"],
+        "abilities": ["Volt Absorb"]
+      }
+    ]
+  }
+}
