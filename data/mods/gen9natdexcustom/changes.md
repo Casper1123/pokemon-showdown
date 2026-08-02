@@ -788,10 +788,10 @@ Sets a primordial pseudoweather that lingers for 3 turns if not maintained. Has 
 ![palkia]
 
 ### Origin of Time
-Moves have +1 Priority while a Room-type pseudoweather is in effect.
+While a room-type Pseudoweather is in effect, moves have +1 priority.<BR>
 **Users:**<BR>
-
 ![dialga-origin]
+
 ### Origin of Space
 Amplifies the effects of non-hazard non-room field effects.<BR>
 This reduces their max duration by 2 turns, but will not remove them from the field if the turn reduction would end the effect.
@@ -858,11 +858,6 @@ Any Pokémon making contact or made contact with will have their type set to ![s
 On KO, raise Speed by 1. Moves do not make contact. <BR>
 **Users:**<BR>
 ![leavanny]
-
-### Origin of Time
-While a room-type Pseudoweather is in effect, moves have +1 priority.<BR>
-**Users:**<BR>
-![dialga-origin]
 
 # Pokémon
 ## Gen 1
