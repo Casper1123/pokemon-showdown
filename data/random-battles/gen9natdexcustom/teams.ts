@@ -1685,9 +1685,9 @@ export class RandomTeams {
 	}
 
 	randomSets: { [species: string]: RandomTeamsTypes.RandomSpeciesData } = {
-		...require('./Uber.json'),
-		...require('./OU.json'),
-		...require('./UU.json') };
+		...require('./std_Uber.json'),
+		...require('./std_OU.json'),
+		...require('./std_UU.json') };
 	randomDoublesSets: { [species: string]: RandomTeamsTypes.RandomSpeciesData } = require('./doubles-sets.json');
 
 	randomTeam() {
