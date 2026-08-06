@@ -1,0 +1,539 @@
+{
+  "calyrexice": {
+    "level": 72,
+    "sets": [
+      {
+        "role": "Choice Item user",
+        "movepool": [
+          "Glacial Lance",
+          "High Horsepower",
+          "Trick",
+          "Aromatherapy",
+          "Seed Bomb"
+        ],
+        "abilities": [
+          "As One (Glastrier)"
+        ]
+      },
+      {
+        "role": "Bulky Setup",
+        "movepool": [
+          "Glacial Lance", "Swords Dance", "Trick Room", "High Horsepower"
+        ],
+        "abilities": [
+          "As One (Glastrier)"
+        ]
+      }
+    ]
+  },
+  "arceus": {
+    "level": 68,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": [
+          "Swords Dance",
+          "Extreme Speed",
+          "Shadow Claw",
+          "Stone Edge",
+          "Double-Edge",
+          "Taunt"
+        ],
+        "abilities": [
+          "Multitype"
+        ]
+      },
+      {
+        "role": "Bulky Support",
+        "movepool": [
+          "Trick Room",
+          "Taunt",
+          "Healing Wish",
+          "Extreme Speed"
+        ],
+        "abilities": [
+          "Multitype"
+        ]
+      }
+    ]
+  },
+  "arceusdark": {
+    "level": 71,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": [
+          "Foul Play",
+          "Toxic",
+          "Will-O-Wisp",
+          "Refresh",
+          "Taunt",
+          "Defog",
+          "Stealth Rock",
+          "Recover"
+        ],
+        "abilities": [
+          "Multitype"
+        ]
+      },
+      {
+        "role": "Bulky Setup",
+        "movepool": [
+          "Judgement",
+          "Calm Mind",
+          "Recover",
+          "Refresh",
+          "Taunt"
+        ],
+        "abilities": [
+          "Multitype"
+        ]
+      }
+    ]
+  },
+  "arceusfairy": {
+    "level": 69,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": [
+          "Judgement",
+          "Taunt",
+          "Toxic",
+          "Will-O-Wisp",
+          "Stealth Rock",
+          "Defog",
+          "Refresh",
+          "Recover"
+        ],
+        "abilities": [
+          "Multitype"
+        ]
+      },
+      {
+        "role": "Bulky Setup",
+        "movepool": [
+          "Calm Mind",
+          "Judgement",
+          "Recover",
+          "Will-O-Wisp",
+          "Power Gem",
+          "Taunt",
+          "Earth Power",
+          "Refresh"
+        ],
+        "abilities": [
+          "Multitype"
+        ]
+      }
+    ]
+  },
+  "arceusflying": {
+    "level": 69,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
+        "movepool": [
+          "Calm Mind",
+          "Judgement",
+          "Recover",
+          "Taunt",
+          "Refresh"
+        ],
+        "abilities": [
+          "Multitype"
+        ]
+      }
+    ]
+  },
+  "arceusghost": {
+    "level": 69,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
+        "movepool": [
+          "Swords Dance",
+          "Dragon Dance",
+          "Shadow Claw",
+          "Stone Edge",
+          "Brick Break",
+          "Substitute",
+          "Taunt"
+        ],
+        "abilities": [
+          "Multitype"
+        ]
+      }
+    ]
+  },
+  "arceusground": {
+    "level": 70,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
+        "movepool": [
+          "Calm Mind",
+          "Judgement",
+          "Ice Beam",
+          "Power Gem",
+          "Recover"
+        ],
+        "abilities": [
+          "Multitype"
+        ]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": [
+          "Dragon Dance",
+          "Swords Dance",
+          "Earthquake",
+          "Stone Edge",
+          "Recover",
+          "Taunt",
+          "Healing Wish"
+        ],
+        "abilities": [
+          "Multitype"
+        ]
+      },
+      {
+        "role": "Bulky Support",
+        "movepool": [
+          "Judgement",
+          "Ice Beam",
+          "Toxic",
+          "Taunt",
+          "Stealth Rock",
+          "Recover"
+        ],
+        "abilities": [
+          "Multitype"
+        ]
+      }
+    ]
+  },
+  "arceusrock": {
+    "level": 74,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": [
+          "Judgement",
+          "Will-O-Wisp",
+          "Stealth Rock",
+          "Taunt",
+          "Refresh",
+          "Recover"
+        ],
+        "abilities": [
+          "Multitype"
+        ]
+      }
+    ]
+  },
+  "arceuswater": {
+    "level": 71,
+    "sets": [
+      {
+        "role": "Bulky Setup",
+        "movepool": [
+          "Calm Mind",
+          "Judgement",
+          "Recover",
+          "Ice Beam",
+          "Earth Power"
+        ],
+        "abilities": [
+          "Multitype"
+        ]
+      },
+      {
+        "role": "Fast Bulky Setup",
+        "movepool": [
+          "Calm Mind",
+          "Judgement",
+          "Earth Power",
+          "Grass Knot",
+          "Recover"
+        ],
+        "abilities": [
+          "Multitype"
+        ]
+      },
+      {
+        "role": "Bulky Support",
+        "movepool": [
+          "Calm Mind",
+          "Refresh",
+          "Recover",
+          "Judgement"
+        ],
+        "abilities": [
+          "Multitype"
+        ]
+      }
+    ]
+  },
+  "urshifu": {
+    "level": 74,
+    "sets": [
+      {
+        "role": "Choice Item user",
+        "movepool": [
+          "Wicked Blow",
+          "Close Combat",
+          "Sucker Punch",
+          "U-turn"
+        ],
+        "abilities": [
+          "Unseen Fist"
+        ]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": [
+          "Wicked Blow",
+          "Close Combat",
+          "Sucker Punch",
+          "Swords Dance"
+        ],
+        "abilities": [
+          "Unseen Fist"
+        ]
+      }
+    ]
+  },
+  "annihilape": {
+    "level": 76,
+    "sets": [
+      {
+        "role": "Bulky Setup",
+        "movepool": [
+          "Bulk Up",
+          "Taunt",
+          "Rest",
+          "Drain Punch",
+          "Rage Fist"
+        ],
+        "abilities": [
+          "Defiant"
+        ]
+      }
+    ]
+  },
+  "fluttermane": {
+    "level": 74,
+    "sets": [
+      {
+        "role": "Choice Item user",
+        "movepool": [
+          "Moonblast",
+          "Dazzling Gleam",
+          "Shadow Ball",
+          "Icy Wind",
+          "Power Gem"
+        ],
+        "abilities": [
+          "Protosynthesis"
+        ]
+      },
+      {
+        "role": "Fast Bulky Attacker",
+        "movepool": [
+          "Thunder  Wave",
+          "Moonblast",
+          "Icy Wind",
+          "Taunt",
+          "Protect"
+        ],
+        "abilities": [
+          "Protosynthesis"
+        ]
+      }
+    ]
+  },
+  "landorus": {
+    "level": 75,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": [
+          "Earth Power",
+          "Sludge Wave",
+          "Sandsear Storm",
+          "Substitute",
+          "Psychic",
+          "Focus Blast"
+        ],
+        "abilities": [
+          "Sheer Force"
+        ]
+      }
+    ]
+  },
+  "marshadow": {
+    "level": 68,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": [
+          "Spectral Thief",
+          "Ice Punch",
+          "Rock Tomb",
+          "Hidden Power Ice",
+          "Low Kick",
+          "Shadow Sneak"
+        ],
+        "abilities": [
+          "Technician"
+        ]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": [
+          "Bulk Up",
+          "Spectral Thief",
+          "Poltergeist",
+          "Low Kick",
+          "Shadow Sneak"
+        ],
+        "abilities": [
+          "Technician"
+        ]
+      },
+      {
+        "role": "Choice Item user",
+        "movepool": [
+          "Poltergeist",
+          "Spectral Thief",
+          "Shadow Sneak",
+          "Low Kick"
+        ],
+        "abilities": [
+          "Technician"
+        ]
+      }
+    ]
+  },
+  "ogerponhearthflame": {
+    "level": 74,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
+        "movepool": [
+          "Ivy Cudgel",
+          "Swords Dance",
+          "Power Whip",
+          "Horn Leech",
+          "Play Rough",
+          "Trailblaze",
+          "Stomping Tantrum"
+        ],
+        "abilities": [
+          "Mold Breaker"
+        ]
+      }
+    ]
+  },
+  "ursalunabloodmoon": {
+    "level": 79,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
+        "movepool": [
+          "Calm Mind",
+          "Blood Moon",
+          "Moonlight",
+          "Hyper Voice",
+          "Earth Power"
+        ],
+        "abilities": ["Mind's Eye"]
+      }
+    ]
+  },
+  "walkingwake": {
+    "level": 79,
+    "sets": [
+      {
+        "role": "Choice Item user",
+        "movepool": [
+          "Draco Meteor",
+          "Hydro Pump",
+          "Hydro Steam",
+          "Flip Turn",
+          "Scald",
+          "Flamethrower"
+        ],
+        "abilities": [
+          "Protosynthesis"
+        ]
+      }
+    ]
+  },
+  "dramanitangalar": {
+    "level": 77,
+    "sets": [
+      {
+        "role": "Choice Item user",
+        "movepool": [
+          "Icicle Crash",
+          "Earthquake",
+          "Rock Slide",
+          "U-turn"
+        ],
+        "abilities": [
+          "Gorilla Tactics"
+        ]
+      }
+    ]
+  },
+  "pheromosa": {
+    "level": 73,
+    "sets": [
+      {
+        "role": "Choice Item user",
+        "movepool": [
+          "Close Combat",
+          "Triple Axel",
+          "U-turn",
+          "Rapid Spin"
+        ],
+        "abilities": [
+          "Beast Boost"
+        ]
+      }
+    ]
+  },
+  "roaringmoon": {
+    "level": 72,
+    "sets": [
+      {
+        "role": "Choice Item user",
+        "movepool": [
+          "Iron Head",
+          "U-turn",
+          "Outrage",
+          "Knock Off"
+        ],
+        "abilities": [
+          "Protosynthesis"
+        ]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": [
+          "Dragon Dance",
+          "Crunch",
+          "Knock Off",
+          "Earthquake",
+          "Subsitute",
+          "Iron head"
+        ],
+        "abilities": [
+          "Protosynthesis"
+        ]
+      }
+    ]
+  }
+}
