@@ -110,25 +110,25 @@
         "movepool": ["Substitute", "Toxic", "King's Shield", "Shadow Ball"],
         "abilities": ["Stance Change"]
       },
-	  { "role": "Fast Attacker",
-		"movepool": ["Swords Dance", "Shadow Claw", "Shadow Sneak", "Close Combat"],
-		"abilities": ["Stance Change"]
-	  },
-	  {
-		"role": "Bulky Attacker",
-		"movepool": ["Shadow Ball", "Close Combat", "King's Shield", "Shadow Sneak", "Toxic", "Flash cannon"],
-		"abilities": ["Stance Change"]
-		},
-	  {
-		"role": "Z-Move user",
-		"movepool": ["Shadow Ball", "Close Combat", "King's Shield", "Shadow Sneak", "Toxic", "Flash cannon"],
-		"abilities": ["Stance Change"]
-		},
-	  {
-		"role": "Bulky Attacker",
-		"movepool": ["Swords Dace", "Close Combat", "King's Shield", "Shadow Sneak", "Shadow Claw"],
-		"abilities": ["Stance Change"]
-	  }
+      { "role": "Fast Attacker",
+      "movepool": ["Swords Dance", "Shadow Claw", "Shadow Sneak", "Close Combat"],
+      "abilities": ["Stance Change"]
+      },
+      {
+      "role": "Bulky Attacker",
+      "movepool": ["Shadow Ball", "Close Combat", "King's Shield", "Shadow Sneak", "Toxic", "Flash cannon"],
+      "abilities": ["Stance Change"]
+      },
+      {
+      "role": "Z-Move user",
+      "movepool": ["Shadow Ball", "Close Combat", "King's Shield", "Shadow Sneak", "Toxic", "Flash cannon"],
+      "abilities": ["Stance Change"]
+      },
+      {
+      "role": "Bulky Attacker",
+      "movepool": ["Swords Dace", "Close Combat", "King's Shield", "Shadow Sneak", "Shadow Claw"],
+      "abilities": ["Stance Change"]
+      }
     ]
   },
   "aerodactylmega": {
@@ -140,7 +140,7 @@
         "movepool": ["Stone Edge", "Dual Wingbeat", "Earthquake", "Taunt", "Pursuit", "Roost"],
         "abilities": ["Unnerve"]
       },
-	  {
+	    {
 		"role": "Setup Sweeper",
 		"movepool": ["Dragon Dace", "Stone Edge", "Earthquake", "Dual Wingbeat", "Roost"],
 		"abilities": ["Unnerve"]
