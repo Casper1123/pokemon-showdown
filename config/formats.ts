@@ -42,10 +42,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		mod: 'gen9natdexcustom',
 		rated: true,
 		ruleset: ['Standard NatDex', 'Terastal Clause', '+move:lightofruin', '-move:geomancy'],
-		banlist: [
-			'Arena Trap', 'Moody', 'Shadow Tag', 'King\'s Rock',
-			'Quick Claw', 'Razor Fang', 'Assist', 'Baton Pass', 'Last Respects', 'Shed Tail',
-		],
+		banlist: [],
 		unbanlist: [],
 	},
 	{
