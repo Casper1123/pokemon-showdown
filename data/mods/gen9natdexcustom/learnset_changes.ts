@@ -85,7 +85,6 @@ export function applyChanges(data: ModdedDex): void {
 	setMove(data, 'altaria', 'drainingkiss');
 	setMove(data, 'camerupt', 'sandsearstorm');
 	setMove(data, 'sharpedo', 'swordsdance');
-	setMove(data, 'banette', 'poltergheist');
 	setMove(data, 'banette', 'shadowforce');
 	setMove(data, 'banette', 'stalk');
 	setMove(data, 'latias', 'moonblast');

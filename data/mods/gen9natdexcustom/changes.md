@@ -1092,7 +1092,6 @@ Base Stats:
 
 **Shared:**<BR>
 New Moves:
-- ![ghost]![physical] Poltergheist
 - ![ghost]![physical] Shadow Force
 - ![ghost]![physical] Stalk
 
