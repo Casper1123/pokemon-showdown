@@ -1,7 +1,6 @@
 import { Dex, toID } from '../../../sim/dex';
 import { Utils } from '../../../lib';
 import { PRNG, type PRNGSeed } from '../../../sim/prng';
-import { type RuleTable } from '../../../sim/dex-formats';
 
 export class MoveCounter extends Utils.Multiset<string> {
 	damagingMoves: Set<Move>;
@@ -125,11 +124,6 @@ export class RandomTeams {
 	 * returns true to try to force the move type, false otherwise.
 	 */
 	moveEnforcementCheckers: { [k: string]: MoveEnforcementChecker };
-
-	/** Used by .getPools() */
-	private poolsCacheKey: [string | undefined, number | undefined, RuleTable | undefined, boolean] | undefined;
-	private cachedPool: number[] | undefined;
-	private cachedSpeciesPool: Species[] | undefined;
 	protected cachedStatusMoves: ID[];
 
 	constructor(format: Format | string, prng: PRNG | PRNGSeed | null) {
@@ -203,9 +197,6 @@ export class RandomTeams {
 				!counter.get('Water') && (!types.includes('Ground') || isDoubles)
 			),
 		};
-		this.poolsCacheKey = undefined;
-		this.cachedPool = undefined;
-		this.cachedSpeciesPool = undefined;
 		this.cachedStatusMoves = this.dex.moves.all().filter(move => move.category === 'Status').map(move => move.id);
 	}
 
