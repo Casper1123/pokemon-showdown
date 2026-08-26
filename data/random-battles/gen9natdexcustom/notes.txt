@@ -1,0 +1,1679 @@
+todo: make Turboblaze / Teravolt terrain and weather setting in randomizer
+todo: terrain frolicking support (just like Swift Swim, I guess?)
+todo: revert Eruption change
+todo: nerf Celebi
+todo: de-mod Gengar, make sets.
+todo: de-mod Houndoom-Mega, make sets.
+todo: de-mod Meganium, make sets.
+todo: de-mod Victini, make sets
+
+UU:
+Blissey
+Gardevoir-Mega
+Glimmora
+Hydrapple
+Hydreigo
+Mew
+Porygon-Z
+Quaquaval
+Scizor
+
+UUBL:
+--- ALL OF EM ---
+
+RUBL:
+--- ALL OF EM ---
+
+RU:
+TODO: MAKE LIST
+
+Mega Absol:
+	Pressure
+	Justified
+
+	Parting Shot
+	Substitute
+	Swords Dance
+	Thunder Wave
+
+	Dark Pulse
+	Fire Blast / Flamethrower
+	Future Sight
+	Ice Beam
+	Light of Ruin / Moonblast
+	Shadow Ball
+	Thunderbolt
+
+	Close Combat
+	Knock Off
+	Megahorn / X-Scissor
+	Play Rough / Spirit Break
+	Pursuit
+	Psycho Cut / Zen Headbutt
+	Stone Edge
+	Shadow Claw
+	Sucker Punch
+
+Aggron:
+Mega Aggron:
+	Sturdy
+	Rock Head
+	Sand Force
+
+	Autotomize / Rock Polish
+	Iron Defense
+	Rest / Sleep Talk
+	Roar
+	Slack Off
+	Stealth Rock
+	Substitute
+	Taunt
+	Thunder Wave
+	Toxic
+
+	Body Press
+	Counter / Metal Burst
+	Dragon Claw / Dragon Rush
+	Dragon Tail
+	Earthquake / High Horsepower
+	Head Smash
+	Fire Punch
+	Ice Punch
+	Thunder Punch
+	Horn Leech
+	Iron Head
+	Low Kick
+	Rock Slide / Stone Edge
+	Superpower
+
+Mega Altaria:
+	Natural Cure
+
+	Agility
+	Calm Mind
+	Cotton Guard
+	Defog
+	Dragon Dance
+	Haze
+	Heal Bell
+	Roost
+	Substitute
+	Toxic
+	Will-O-Wisp
+
+	Draco Meteor / Dragon Pulse
+	Draining Kiss / Moonblast / Hyper Voice
+	Fire Blast / Flamethrower
+	Hurricane
+	Ice Beam
+	Weather Ball
+	Hyper Beam
+
+	Body Slam / Play Rough / Return
+	Brave Bird / Dual Wingbeat
+	Double-Edge
+	Dragon Claw / Dragon Rush / Outrage
+	Earthquake
+	Explosion
+	Pursuit
+	Trailblaze
+
+
+Ampharos:
+Mega Ampharos:
+	Static
+	Teravolt
+
+	Agility
+	Cotton Guard
+	Heal Bell
+	Light Screen
+	Reflect
+	Substitute
+	Tail Glow
+
+	Dragon Tail
+	Fire Punch
+	Ice Punch
+	Thunder Punch / Supercell Slam
+	Low Kick
+	Trailblaze
+
+	Dazzling Gleam
+	Discharge
+	Drago Meteor / Dragon Pulse
+	Focus Blast
+	Meteor Beam / Power Gem
+	Signal Beam
+	Thunder / Thunderbolt
+	Thunderclap
+	Volt Switch
+	Parabolic Charge
+
+Audino:
+Mega Audino:
+	Regenerator
+
+	Calm Mind
+	Encore
+	Heal Bell
+	Healing Wish
+	Light Screen
+	Reflect
+	Substitute
+	Teleport
+	Thunder Wave
+	Toxic
+	Trick Room
+	Wish
+	Yawn
+
+	Knock Off
+	Nuzzle
+	Throat Chop
+
+	Dazzling Gleam / Draining Kiss
+	Blizzard / Ice Beam
+	Fire Blast / Flamethrower
+	Grass Knot
+	Hyper Voice
+	Psychic / Psyshock
+	Shadow Ball
+	Signal Beam
+	Surf
+	Thunder / Thunderbolt
+	Icy Wind
+
+Mega Banette:
+	Insomnia
+	Cursed Body
+	Frisk
+
+	Destiny Bond
+	Encore
+	Disable
+	Pain Split
+	Swords Dance
+	Taunt
+	Trick Room
+
+	Gunk Shot
+	Knock Off
+	Stalk
+	Poltergeist / Shadow Claw
+	Pursuit
+	Shadow Sneak
+	Sucker Punch
+	Throat Chop
+	Trailblaze
+
+Beartic:
+	Slush Rush
+	Swift Swim
+
+	Bulk Up
+	Encore
+	Substitute
+	Swords Dance
+	Taunt
+
+	Aqua Jet
+	Close Combat / Low Kick / Superpower
+	Earthquake
+	Heavy Slam
+	Ice Shard
+	Icicle Crash / Icicle Spear
+	Liquidation
+	Play Rough
+	Rock Slide / Stone Edge
+	Shadow Claw
+	Throat Chop
+	Trailblaze
+	X-Scissor
+
+Beheeyem:
+	Analytic
+	Psychic Surge
+
+	Agility
+	Calm Mind
+	Destiny Bond
+	Light Screen / Reflect
+	Nasty Plot
+	Pain Split / Recover
+	Substitute
+	Teleport
+	Trick
+	Trick Room
+
+	Dark Pulse
+	Energy Ball
+	Expanding Force / Psychic / Psyshock
+	Flash Cannon
+	Future Sight
+	Meteor Beam
+	Shadow Ball
+	Signal Beam
+	Stored Power
+	Thunderbolt
+	Tri Attack
+
+Breloom:
+	Poison Heal
+	Technician
+
+	Bulk Up
+	Leech Seed
+	Protect
+	Spore
+	Substitute
+	Synthesis
+
+	Close Combat / Superpower / Force Palm
+	Focus Punch (Subpunch set, funny but trash)
+	Gunk Shot / Poison Jab
+	Low Kick
+	Mach Punch
+	Power-Up Punch
+	Return
+	Rock Slide / Stone Edge
+	Thunderpunch
+	Zen Headbut
+	Bullet Seed
+	Seed Bomb
+
+Mega Camerupt:
+	Solid Rock - Turns into Sheer Force!
+
+	Rock Polish
+	Stealth Rock
+	Substitute
+	Yawn
+	Will-O-Wisp
+
+	Body Press
+	Earthquake
+	Explosion
+	Heat Crash
+	Heavy Slam
+	High Horsepower
+	Iron Head
+	Rock Slide / Stone Edge / Smack Down
+
+	Earth Power
+	Eruption
+	Fire Blast / Flamethrower
+	Flash Cannon
+	Sandsear Storm / Scorching Sands
+
+Celebi:
+	Natural Cure
+	Chronal Distortion
+
+	Calm Mind
+	Heal Bell
+	Healing Wish
+	Leech Seed
+	Magic Coat
+	Nasty Plot
+	Recover / Synthesis
+	Reflect / Light Screen
+	Stealth Rock
+	Substitute
+	Swords Dance
+	Thunder Wave / Toxic
+	Time Stop
+	Trick
+	Trick Room
+
+	Aura Sphere
+	Dazzling Gleam
+	Earth Power
+	Energy Ball / Giga Drain / Leaf Storm / Grass Knot
+	Expanding Force / Future Sight / Psychic
+	Shadow Ball
+	Signal Beam
+
+	Dual Wingbeat
+	Leaf Blade / Seed Bomb
+	Psycho Cut / Zen Headbutt
+	Sucker Punch
+	U-turn
+
+Chandelure:
+	Flash Fire
+	Flame Body
+	Turboblaze
+
+	Calm Mind
+	Memento
+	Haze
+	Pain Splot
+	Substitute
+	Taunt
+	Toxic
+	Will-O-Wisp
+	Trick
+	Trick Room
+
+	Blue Flare / Flamethrower / Fire Blast / Mind Blown / Searing Shot
+	Dark Pulse
+	Energy Ball
+	Shadow Ball / Hex / Shadowflame
+	Psychic
+
+	Trailblaze
+
+Cobalion:
+	Justified
+	Competitive
+
+	Calm Mind
+	Iron Defense
+	Nasty Plot
+	Rock Polish
+	Stealth Rock
+	Substitute
+	Swords Dance
+	Taunt
+	Thunder Wave
+	Toxic
+
+	Air Slash
+	Aura Sphere / Focus Blast / Secret Sword
+	Flash Cannon / Steel Beam
+	Vacuum Wave
+	Volt Switch
+
+	Body Press
+	Close Combat / Sacred Sword / Superpower
+	Heavy Slam / Iron Head
+	Megahorn
+	Stone Edge
+
+Cofagrigus:
+	Mummy
+	Cursed Body
+
+	Calm Mind
+	Destiny Bond
+	Curse
+	Haze
+	Iron Defense
+	Nasty Plot
+	Pain Split
+	Strength Sap
+	Substitute
+	Toxic
+	Toxic Spikes
+	Trick
+	Trick Room
+	Will-O-Wisp
+
+	Body Press
+	Knock Off
+
+	Dark Pulse
+	Energy Ball / Grass Knot
+	Hex / Night Shade / Shadow Ball
+	Psychic
+
+Conkeldurr:
+	Guts
+	Sheer Force
+	Iron Fist
+
+	Bulk Up
+	Substitute
+	Taunt
+	Toxic
+
+	Close Combat / Superpower
+	Drain Punch
+	Earthquake
+	Fake Out
+	Fire Punch
+	Hammer Arm
+	Ice Punch
+	Knock Off
+	Low Kick
+	Mach Punch
+	Power-Up Punch
+	Rock Blast / Rock Slide / Stone Edge
+	Thunder Punch
+	Meteor Mash
+	Poison Jab
+
+Crobat:
+	Inner Focus
+	Infiltrator
+
+	Defog
+	Haze
+	Nasty Plot
+	Roost
+	Substitute
+	Taunt
+	Toxic
+
+	Air Slash / Hurricane
+	Dark Pulse
+	Giga Drain
+	Heat Wave
+	Hex / Shadow Ball
+	Sludge Bomb
+
+	Acrobatics / Brave Bird / Dual Wingbeat
+	Crunch
+	Gunk Shot
+	Leech Life
+	Pursuit
+	U-turn
+	X-Scissor
+	Zen Headbutt
+
+Darmanitan:
+	Usually all-out attacker
+
+	Sheer Force
+	Gorilla Tactics
+
+	Earthquake
+	Fire Punch
+	Flame Charge
+	Flare Blitz
+	Iron Head
+	Power-Up Punch
+	Rock Slide / Stone Edge
+	Superpower
+	U-turn
+
+Deoxys-Defense:
+	Pressure
+	Unaware
+	Regenerator
+
+	Agility
+	Calm Mind
+	Iron Defense
+	Light Screen / Reflect
+	Magic Coat
+	Nasty Plot
+	Pain Splot
+	Recover
+	Spikes
+	Stealth Rock
+	Substitute
+	Taunt
+	Teleport
+	Thunder Wave
+	Toxic
+	Trick
+	Trick Room
+
+	Dark Pulse
+	Energy Ball / Grass Knot
+	Flash Cannon
+	Focus Blast
+	Ice Beam
+	Meteor Beam
+	Mirror Coat
+	Night Shade
+	Psychic / Psychic Noise / Psycho Boost / Psyshock / Stored Power / Future Sight / Expanding Force
+	Shadow Ball
+	Signal Beam
+	Thunder
+	Thunberbolt
+
+	Body Press
+	Extreme Speed
+	Knock Off
+	Pursuit
+
+
+Dubwool:
+	Fluffy
+	Bulletproof
+	Frolicking - NEEDS TERRAIN SUPPORT?
+
+	Cotton Guard
+	Slack Off
+	Substitute
+	Swords Dance
+	Thunder Wave
+	Yawn
+
+	Body Press
+	Collision Course
+	Head Charge
+	Headlong Rush
+	Head Smash
+	Horn Leech
+	Iron Head
+	Lunge / Megahorn
+	Nuzzle
+	Play Rough
+	Pursuit
+	Trailblaze
+	Wild Charge
+
+Durant:
+	Defiant
+	Hustle
+
+	Agility / Rock Polish
+	Hone Claws
+	Stealth Rock
+	Substitute
+	Thunder Wave
+	Toxic
+
+	Steel Beam
+
+	Crunch
+	First Impression
+	High Horsepower
+	Iron Head
+	Rock Slide / Stone Edge
+	Shadow Claw
+	Superpower
+	X-Scissor
+
+Empoleon:
+	Torrent
+	Slush Rush
+	Competitive
+
+	Aurora Veil
+	Defog
+	Haze
+	Iron Defense
+	Light Screen / Reflect
+	Roost
+	Snowscape
+	Stealth Rock
+	Substitute
+	Swords Dance
+	Toxic
+	Yawn
+
+	Air Slash
+	Blizzard / Ice Beam
+	Flash Cannon / Steel Beam
+	Hydro Pump / Scald / Surf
+	Signal Beam
+	Vacuum Wave
+
+	Aqua Jet
+	Drill Peck
+	Earthquake
+	Flip Turn
+	Ice Spinner / Triple Axel
+	Knock Off
+	Liquidation / Waterfall / Wave Crash
+	Rock Slide
+	Shadow Claw
+
+Flygon:
+	Levitate
+
+	Defog
+	Dragon Dance
+	Nasty Plot
+	Roost
+	Stealth Rock
+	Substitute
+	Toxic
+
+	Air Slash
+	Alluring Voice
+	Boomburst
+	Bug Buzz
+	Desert Song / Earth Power / Scorching Sands
+	Draco Meteor / Dragon Pulse
+	Fire Blast / Flamethrower
+	Giga Drain
+	Psychic noise
+	Vacuum Wave
+
+	Dragon Claw / Dragon Rush / Outrage
+	Dragon Tail
+	Earthquake
+	Dual Wingbeat
+	First Impression
+	Fire Punch
+	Power-Up Punch / Superpower
+	Rock Slide / Stone Edge
+	Thunder Punch
+	U-turn
+
+Gallade:
+Mega Gallade:
+	Inner Focus
+	Sharpness
+
+	Bulk Up
+	Memento
+	Pain Split
+	Substitute
+	Swords Dance
+	Taunt
+	Teleport
+	Thunder Wave
+	Toxic
+	Trick
+	Trick Room
+	Will-O-Wisp
+	Wish
+
+	Future Sight?
+	Vacuum Wave?
+
+	Aqua Cutter
+	Close Combat / Drain Punch / Low Kick / Sacred Sword
+	Dual Chop
+	Earthquake
+	Fire Punch
+	Ice Punch
+	Thunder Punch
+	Knock Off
+	Leaf Blade
+	Poison Jab
+	Psycho Cut / Zen Headbutt
+	Rock Slide / Stone Edge
+	Shadow Claw
+	Shadow Sneak
+	Triple Axel
+	X-Scissor
+
+Gigalith:
+	Sturdy
+	Sand Stream
+	Terravore
+
+	Rock Polish / Autotomize
+	Iron Defense
+	Shore Up
+	Stealth Rock
+	Substitute
+	Toxic
+	Trick Room
+
+	Body Press
+	Diamond Storm / Rock Blast / Rock Slide / Stone Edge
+	Earthquake
+	Explosion
+	Heavy Slam / Iron Head
+	Superpower
+	Throat Chop
+
+Glaceon:
+	Snow Warning
+	Ice Body
+
+	Aurora Veil
+	Calm Mind
+	Haze
+	Heal Bell
+	Substitute
+	Wish
+	Toxic
+	Yawn
+
+	Ice Shard
+	Trailblaze
+
+	Alluring Voice
+	Blizzard / Freeze-Dry / Glaciate / Ice Beam
+	Mud Shot
+	Shadow Ball
+	Signal Beam
+	Stored Power
+
+Golisopod:
+	Battle Armor
+
+	Bulk Up
+	Pain Split
+	Spikes
+	Substitute
+	Swords Dance
+	Taunt
+	Toxic
+
+	Aqua Jet
+	Close Combat
+	Drill Run
+	Dual Chop
+	First Impression
+	Iron Head
+	Knock Off
+	Leech Life
+	Razor Shell / Liquidation (95% acc vs 100% acc) / Waterfall (Flinch in TR teams?)
+	Poison Jab
+	Rock Slide
+	Shadow Claw
+	Sucker Punch
+	U-Turn
+
+Haxorus:
+	Regenerator
+	Mold Breaker
+	Tough Claws
+
+	Dragon Dance
+	Substitute
+	Taunt
+	Toxic
+	Swords Dance
+
+	Aqua Tail
+	Close Combat / Low Kick / Superpower
+	Dragon Claw / Dragon Rush / Outrage / Dual Chop
+	Earthquake
+	First Impression
+	Iron Head
+	Poison Jab
+	Psycho Cut
+	Rock Slide
+	Shadow Claw
+	Trailblaze
+	X-Scissor
+
+Hippowdon:
+	Sand Stream
+	Intimidate
+
+	Curse
+	Slack Off
+	Whirlwind
+	Spikes
+	Stealth Rock
+	Toxic
+	Yawn
+
+	Scorching Sand
+
+	Body Press
+	Earthquake
+	Fire Fang
+	Ice Fang
+	Heavy slam / Iron Head
+	Knock Off
+	Superpower
+	Rock Slide / Stone Edge
+
+Keldeo:
+	Competitive
+
+	Calm Mind
+	Substitute
+	Taunt
+	Toxic
+
+	Flip Turn
+	Aqua Jet
+	Trailblaze
+
+	Air Slash
+	Aura Sphere / Focus Blast / Secret Sword
+	Vacuum Wave
+	Icy Wind
+	Scald / Surf
+
+Krookodile:
+	Intimidate
+	Moxie
+	Sand Force
+
+	Bulk Up
+	Stealth Rock
+	Substitute
+	Swords Dance
+	Taunt
+	Toxic
+
+	Scorching Sands
+
+	Aqua Tail
+	Close Combat / Low Kick / Superpower
+	Crunch / Throat Chop
+	Dragon Claw / Outrage
+	Dragon Tail
+	Earthquake
+	Fire Fang
+	Gunk Shot
+	Knock Off
+	Power-Up Punch
+	Pursuit
+	Rock Slide / Stone Edge
+	Shadow Claw
+
+Mega Manectric:
+	Lightning Rod
+	Static
+
+	Thunder Wave
+	Substitute
+	Toxic
+
+	Discharge / Thunderbolt / Thunder
+	Flamethrower / Overheat
+	Ice Beam
+	Signal Beam
+	Volt Switch
+
+Metagross:
+	Full Metal Body
+
+	Agility
+	Iron Defense
+	Stealth Rock
+	Substitute
+	Swords Dance
+	Toxic
+	Trick
+
+	Expanding Force
+	Flash Cannon
+	Future Sight
+	Grass Knot
+	Psychic / Psychic Noise / Psyshock
+	Shadow Ball
+	Sludge Bomb
+
+	Body Press
+	Bullet Punch
+	Earthquake
+	Explosion
+	Hammer Arm
+	Heavy Slam / Iron Head / Meteor Mash
+	Ice Punch
+	Knock Off
+	Power-Up Punch
+	Psychic Fangs / Psycho Cut / Zen Headbutt
+	Pursuit
+	Shadow Claw
+	Rock Slide / Stone Edge
+	Thunder Punch
+	Trailblaze
+
+Moltres-Galar:
+	Beserk
+
+	Agility
+	Memento
+	Nasty Plot
+	Roost
+	Substitute
+	Taunt
+
+	U-turn
+	Sucker Punch
+
+	Air Slash / Hurricane
+	Fiery Wrath
+	Hex / Shadow Ball
+	Hyper Voice
+
+
+Musharna:
+	Misty Surge
+	Synchronize
+
+	Calm Mind
+	Heal Bell
+	Healing Wish
+	Light Screen / Reflect
+	Magic Coat
+	Moonlight
+	Substitute
+	Thunder Wave - Not with Misty terrain!
+	Toxic - Not with Misty terrain!
+
+	Energy Ball
+	Expanding Force
+	Future Sight
+	Moonblast
+	Psychic / Psyshock
+	Shadow Ball
+	Signal Beam
+
+Necrozma:
+	Prism Armor
+
+	Autotomize / Rock Polish
+	Calm Mind
+	Dragon Dance
+	Light Screen / Reflect
+	Moonlight / Morning Sun
+	Stealth Rock
+	Substitute
+	Thunder Wave
+	Toxic
+	Trick Room
+
+	Earthquake
+	Iron Head
+	Knock Off
+	Outrage
+	Psychic Fangs / Psycho Cut
+	Rock Blast / Rock Slide / Stone Edge
+	Shadow Claw
+	X-Scissor
+
+	Dark Pulse
+	Dragon Pulse
+	Earth Power
+	Expanding Force
+	Flash Cannon
+	Future Sight
+	Heat Wave
+	Meteor Beam / Power Gem
+	Psychic / Psyshock
+	Signal Beam
+	Stored Power
+
+	BOTH:
+	Neutron Ray
+	Photon Geyser
+
+Nihilego:
+	Beast Boost
+	Levitate
+
+	Light Screen / Reflect
+	Magic Coat
+	Stealth Rock
+	Substitute
+	Thunder Wave
+	Toxic
+	Toxic Spikes
+	Trick Room
+
+	Foul Play
+	Knock Off
+
+	Clear Smog
+	Dazzling Gleam
+	Grass Knot
+	Power Gem / Meteor Beam
+	Psychic / Psyshock
+	Sludge Bomb / Sludge Wave
+	Thunder / Thunderbolt
+
+Noivern:
+	Infiltrator
+
+	Agility
+	Defog
+	Dragon Dance
+	Moonlight / Roost
+	Substitute
+	Switcheroo
+	Taunt
+	Toxic
+	Whirlwind
+
+	Acrobatics
+	Double-Edge
+	Dragon Claw / Dragon Rush / Outrage
+	Dragon Tail
+	Dual Wingbeat
+	Leech Life
+	Shadow Claw
+	Super Fang
+	U-turn
+	Wild Charge
+	X-Scissor
+
+	Air Slash
+	Boomburst
+	Dark Pulse
+	Draco Meteor / Dragon Pulse
+	Flamethrower
+	Focus Blast
+	Hurricane
+	Psychic / Psychic Noise
+	Shadow Ball
+
+Mega-Pidgeot:
+	Keen Eye
+	Tangled Feet
+
+	Agility
+	Defog
+	Substitute
+	Roost
+	Toxic
+
+	Pursuit
+	U-turn
+	Air Slash / Hurricane
+	Focus Blast
+	Heat Wave / Inferno
+	Thunder / Zap Cannon
+
+Politoed:
+	Water Absorb
+	Drizzle
+
+	Encore
+	Haze
+	Perish Song
+	Recover
+	Substitute
+	Toxic
+	Refresh
+
+	Seismic Toss
+
+	Blizzard / Ice Beam
+	Earth Power / Mud Shot
+	Focus Blast
+	Hydro Pump / Scald / Surf
+	Psychic
+
+Raikou:
+	Inner Focus
+	Electric Surge
+
+	Agility
+	Calm Mind
+	Light Screen / Reflect
+	Substitute
+	Thunder Wave
+	Toxic
+
+	Extreme Speed
+	Crunch / Throat Chop
+	Iron Head
+	Spark / Supercell Slam / Wild Charge
+	Trailblaze
+
+	Aura Sphere
+	Discharge / Thunder / Thunderbolt
+	Volt Switch
+	Scald
+	Shadow Ball
+	Extrasensory
+	Signal Beam
+
+
+Reuniclus:
+	Magic Guard
+	Regenerator
+
+	Acid Armor
+	Calm Mind
+	Encore
+	Light Screen / Reflect
+	Magic Coat
+	Recover
+	Substitute
+	Teleport
+	Thunder Wave
+	Toxic
+	Trick
+	Trick Room
+
+	Knock Off
+	Explosion
+
+	Aura Sphere / Focus Blast
+	Energy Ball / Grass Knot
+	Expanding Force
+	Future Sight
+	Night Shade
+	Psychic / Psychic Noise / Psyshock
+	Shadow Ball
+	Signal Beam
+	Stored Power
+	Thunder
+	Vacuum Wave
+
+Rotom:
+	Levitate
+
+	Defog
+	Light Screen / Reflect
+	Nasty Plot
+	Recover
+	Substitute
+	Thunder Wave
+	Toxic
+	Trick
+	Will-O-Wisp
+
+	Foul Play
+
+	Dark Pulse
+	Discharge
+	Hex / Shadow Ball
+	Night Shade
+	Signal Beam
+	Thunder / Thunderbolt
+	Volt Switch
+
+	Ice: Slush Rush, Freeze Dry, Glaciate, Icy Wind, Blizzard
+	Fan: Air Lock, Tailwind, Air Cutter, Air Slash
+	Heat: Fire Pledge, Heat Wave, Inferno, Overheat
+	Wash: Brine, Muddy Water, Scald, Water Pledge, Hydro Pump
+
+Samurott:
+	Torrent
+	Inner Focus
+	Shell Armor
+
+	Encore
+	Shell Smash
+	Substitute
+	Swords Dance
+	Taunt
+	Toxic
+
+	Aqua Cutter / Aqua Tail / Liquidation / Razor Shell / Waterfall / Wave Crash
+	Aqua Jet
+	Close Combat / Superpower / Sacred Sword
+	Drill Run
+	Flip Turn
+	Knock Off
+	Megahorn / X-Scissor
+
+	Air Slash
+	Blizzard / Ice Beam
+	Grass Knot
+	Hydro Pump / Scald / Surf
+	Secret Sword
+	Vacuum Wave
+
+Sceptile:
+Sceptile-Mega:
+	Overgrow
+	Unburden
+	Agility
+	Dragon Dance
+	Hone Claws
+	Leech Seed
+	Nasty Plot
+	Shed Tail
+	Substitute
+	Swords Dance
+	Synthesis
+	Toxic
+
+	Chloroblast / Energy Ball / Giga Drain / Grass Knot / Leaf Storm
+	Draco Meteor
+	Dragon Pulse
+	Vacuum Wave
+
+	Acrobatics
+	Crunch
+	Dragon Claw / Dual Chop / Outrage
+	Dragon Tail
+	Drain Punch / Low Kick / Power-Up Punch
+	Earthquake
+	Leaf Blade / Seed Bomb / Trailblaze
+	Pursuit
+	Throat Chop
+	X-Scissor
+	Thunder Punch
+
+Scolipede:
+	Speed Boost
+	APEX PREDATOR
+
+	Agility
+	Spikes
+	Substitute
+	Toxic
+	Swords Dance
+	Toxic Spikes
+
+	Aqua Tail
+	Collision Course / Superpower
+	Earthquake
+	Megahorn / X-Scissor
+	Poison Jab
+	Pursuit
+	Rock Slide
+	Throat Chop
+
+Serperior:
+	Contrary
+
+	Aromatherapy
+	Defog
+	Glare
+	Leech Seed
+	Substitute
+	Synthesis
+	Taunt
+	Toxic
+
+	Knock Off
+
+	Dragon Pulse
+	Leaf Storm
+	Mud Shot
+	Giga Drain
+
+Sharpedo-Mega:
+	Speed Boost
+
+	Destiny Bond
+	Refresh
+	Substitute
+	Swords Dance
+	Taunt
+
+	Scald / Hydro Pump / Surf
+	Ice Beam
+	Dark Pulse
+
+	Aqua Jet
+	Close Combat
+	Crunch
+	Earthquake
+	?Flip Turn (Deletes Speed Boost boosts)
+	Liquidation / Waterfall
+	Poison Jab
+	Psychic Fangs / Zen Headbutt
+
+Shaymin:
+	Natural Cure
+	Overgrow
+	Regenerator
+
+	Aromatherapy
+	Healing Wish
+	Leech Seed
+	Substitute
+	Synthesis
+	Toxic
+
+	Air slash
+	Dazzling Gleam / Light of Ruin / Sparkly Swirl
+	Earth Power
+	Energy Ball / Giga Drain / Grass Knot / Leaf Storm / Seed Flare
+	Psychic
+
+Shiinotic:
+	Rain Dish
+	Grassy Surge
+
+	Leech Seed
+	Light Screen
+	Moonlight / Synthesis
+	Spore
+	Strength Sap
+	Thunder Wave
+	Toxic
+
+	Dazzling Gleam / Draining Kiss / Moonblast
+	Energy Ball / Grass Knot / Giga Drain
+	Sludge Bomb
+	Signal Beam
+
+Slither Wing:
+	Protosynthesis
+
+	Victory Dance / Bulk Up
+	Morning Sun
+	Stun Spore
+	Will-O-Wisp
+	Substitute
+
+	Heat Wave
+	Giga Drain
+	Bug Buzz
+
+	Acrobatics / Dual Wingbeat
+	Close Combat / Superpower / Low Kick
+	Earthquake
+	First Impression
+	Flame Charge
+	Flare Blitz
+	Leech Life / Lunge
+	Trailblaze
+	U-turn
+	Wild Charge
+	Zen HeadHow wasbutt
+
+Slowbro-Mega:
+	Regenerator
+
+	Calm Mind
+	Iron Defense
+	Nasty Plot
+	Reflect / Light Screen
+	Slash Off
+	Substitute
+	Teleport
+	Thunder Wave
+	Toxic
+	Trick
+	Trick Room
+	Yawn
+
+	Body Press
+	Faul Play
+	Seismic Toss
+
+	Blizzard / Ice Beam
+	Expanding Force
+	Fire Blast / Flamethrower
+	Focus Blast
+	Future Sight
+	Grass Knot
+	Hydro Pump / Scald
+	Mud Shot
+	Psychic / Psychic Noise / Psyshock
+	Shadow Ball
+	Stored Power
+	Signal Beam
+	Tri Attack
+
+Steelix-Mega:
+	Terravore
+	Sturdy
+
+	Autotomize / Rock Polish
+	Coil
+	Dragon Dance
+	Iron Defense
+	Stealth Rock
+	Substitute
+	Taunt
+	Toxic
+
+	Scorching Sands
+
+	Aqua Tail
+	Body Press
+	Crunch
+	Dragon Tail
+	Earthquake
+	Explosion
+	Gyro Ball / Heavy Slam
+	Head Smash / Rock Blast / Rock Slide / Smack Down / Stone Edge
+	Ice Fang
+	Fire Fang
+
+Suicune:
+	Pressure
+	Inner Focus
+	Misty Surge
+
+	Agility
+	Calm Mind
+	Recover
+	Reflect
+	Substitute
+	Toxic
+	Sleep Talk / Rest popular set
+
+	Extreme Speed
+	Trailblaze
+
+	Air Slash
+	Blizzard / Ice Beam
+	Extrasensory / Mist Ball
+	Scald / Surf / Hydro Pump
+	Strange Steam
+	Mirror Coat
+
+Swanna:
+	Drizzle
+	Hydration
+
+	Defog
+	Roost
+	Substitute
+	Tailwind
+	Toxic
+
+	Air Slash / Hurricane
+	Alluring Voice
+	Ice Beam
+	Hydro Pump / Scald / Surf
+
+	Acrobatics / Brave Bird
+	Aqua Jet
+	Flip Turn
+	Knock Off
+	Liquidation / Wave Crash
+	Trailblaze
+
+Tapu Bulu:
+	Grassy Surge
+
+	Bulk Up
+	Leech Seed
+	Light Screen / Reflect
+	Substitute
+	Swords Dance
+	Synthesis
+	Taunt
+	Toxic
+	Whirlwind
+
+	Nature's Madness
+
+	Close Combat / Superpower
+	Dual Chop
+	High Horsepower
+	Horn Leech / Seed Bomb / Wood Hammer
+	Megahorn
+	Play Rough / Spirit Break
+	Rock Slide / Stone Edge
+	Zen Headbutt
+
+Terrakion:
+	Justified
+
+	Rock Polish
+	Swords Dance
+	Substitute
+	Taunt
+
+	Accelerock
+	Close Combat / Sacred Sword / Superpower
+	Earthquake
+	Iron Head
+	Megahorn / X-Scissor
+	Poison Jab
+	Rock Blast / Rock Slide / Stone Edge
+	Zen Headbutt
+
+Toxicroak:
+	Dry Skin
+	Poison Touch
+
+	Bulk Up
+	Encore
+	Nasty Plot
+	Substitute
+	Swords Dance
+	Taunt
+	Toxic
+
+	Chilling Water
+	Dark Pulse
+	Focus Blast
+	Mud Shot
+	Shadow Ball
+	Sludge Bomb / Sludge Wave
+	Vacuum Wave
+
+	Bullet Punch
+	Close Combat / Cross Chop / Low Kick
+	Drain Punch
+	Dual Chop
+	Earthquake
+	Fake Out
+	Foul Play
+	Gunk Shot / Poison Jab
+	Ice Punch
+	Knock Off
+	Liquidation
+	Mach Punch
+	Power-Up Punch
+	Pursuit
+	Rock Slide / Stone Edge
+	Sucker Punch
+	Shadow Claw
+	Thunder Punch
+	U-turn
+	X-Scissor
+
+Typhlosion:
+	Blaze
+	Flash Fire
+	Drought
+
+	Substitute
+	Toxic
+	Will-O-Wisp
+
+	Earth Power / Scorching Sands
+	Eruption
+	Fire Blast / Flamethrower / Lava Plume / Overheat
+	Extrasensory
+	Shadow Ball
+
+Typhlosion-Hisui:
+	Blaze
+	Adaptability
+
+	Calm Mind
+	Substitute
+	Toxic
+	Will-O-Wisp
+
+	Eruption
+	Extrasensory
+	Fire Blast / Flamethrower / Lava Plume / Overheat
+	Focus Blast
+	Infernal Parade / Shadow Ball / Shadowflame
+
+Virizion:
+	Competitive
+	Justified
+
+	Calm Mind
+	Nasty Plot
+	Substitute
+	Swords Dance
+	Synthesis
+	Taunt
+	Toxic
+
+	Air Slash
+	Aura Sphere / Focus Blast / Secret Sword
+	Energy Ball / Giga Drain / Grass Knot / Leaf Storm
+	Vacuum Wave
+
+	Close Combat / Sacred Sword / Superpower
+	Leaf Blade / Trailblaze
+	Megahorn / X-Scissor
+	Zen Headbutt
+	Stone Edge
+
+Wooloo:
+	Frolicking (Needs grassy!) + Eviolite
+
+	Cotton Guard
+	Slack Off
+	Substitute
+	Thunder Wave
+	Yawn
+
+	Body Press
+	Collision Course
+	Head Charge
+	Headlong Rush
+	Head Smash
+	Iron Head
+	Lunge
+	Nuzzle
+	Play Rough
+	Pursuit?
+	Trailblaze
+	Wild Charge
+
+Xurkitree:
+	Beast Boost
+	Transistor (For instant-power as opposed to setup)
+
+	Tail Glow
+	Magic Coat
+	Substitute
+	Thunder Wave
+
+	Dazzling Gleam
+	Discharge / Thunder / Thunderbolt
+	Volt Switch
+	Energy Ball / Grass Knot
+	Signal Beam
+
+Zoroark:
+	Illusion
+
+	Agility
+	Calm Mind
+	Encore
+	Memento
+	Nasty Plot
+	Substitute
+	Swords Dance
+	Taunt
+	Toxic
+	Trick
+
+	Dark Pulse / Night Daze
+	Extrasensory
+	Flamethrower
+	Focus Blast
+	Grass Knot
+	Hex / Shadow Ball
+	Psychic
+	Sludge Bomb
+	Vacuum Wave
+
+	Crunch / Throat Chop
+	Knock Off
+	Pursuit
+	Shadow Claw
+	Sucker Punch
+	U-turn
+
+Zoroark-Hisui:
+	Illusion
+
+	Agility
+	Calm Mind
+	Memento
+	Nasty Plot
+	Substitute
+	Swords Dance
+	Taunt
+	Trick
+	Will-O-Wisp
+
+	Knock Off
+	Low Kick
+	Poltergeist
+	Shadow Claw
+	Shadow Sneak
+	Throat Chop
+	U-turn
+	Body Slam
+
+	Bitter Malice / Shadow Ball
+	Dark Pulse
+	Extrasensory / Psychic
+	Hyper Voice
+	Sludge Bomb
+	Vacuum Wave
+
