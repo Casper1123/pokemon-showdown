@@ -373,5 +373,15 @@
         "abilities": ["Volt Absorb"]
       }
     ]
+  },
+  "blissey": {
+    "level": null,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": ["Seismic Toss", "Soft-Boiled", "Wish", "Toxic", "Calm Mind", "Stealth Rock", "Teleport", "Protect", "Flamethrower"],
+        "abilities": ["Natural Cure"]
+      }
+    ]
   }
 }
