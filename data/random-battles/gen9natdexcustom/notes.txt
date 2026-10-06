@@ -22,35 +22,6 @@ todo: remake teambuilder. Like holy shit it cannot do Z-moves properly.
  ]
 },
 
-UUBL:
-Blaziken
-Ceruledge
-Charizard-Mega-X
-Dondozo
-Greninja
-Gyarados(-Mega)
-Hawlucha
-Hoopa-Unbound
-Iron Crown
-Iron Hands
-Iron Moth
-Kartana
-Kommo-o
-Latios
-Manaphy
-Mawile-Mega
-Medicham-Mega
-Meowscarada
-Ogerpon-Cornerstone
-Okidogi
-Pecharunt
-Pinsir-Mega
-Thundurus-Therian
-Tornadus-Therian
-Tyranitar-Mega
-Weavile
-Zapdos-Galar
-
 RUBL:
 --- ALL OF EM ---
 

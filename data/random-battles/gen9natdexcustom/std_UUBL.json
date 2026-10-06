@@ -130,183 +130,293 @@
     ]
   },
   "ironhands": {
-    "level": ...,
+    "level": 79,
     "sets": [
       {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
+        "role": "Setup Sweeper",
+        "movepool": ["Swords Dance", "Supercell Slam", "Thunder Punch", "Drain Punch", "Ice Punch"],
+        "abilities": ["Quark Drive"]
       }
     ]
   },
   "ironmoth": {
-    "level": ...,
+    "level": 78,
     "sets": [
       {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
+        "role": "Fast Bulky Setup",
+        "movepool": ["Fiery Dance", "Sludge Wave", "Dazzling Gleam", "Energy Ball", "Psychic", "Substitute"],
+        "abilities": ["Quark Drive"]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Fiery Dance", "Sludge Wave", "U-turn", "Morning Sun", "Toxic Spikes"],
+        "abilities": ["Quark Drive"]
       }
     ]
   },
   "kartana": {
-    "level": ...,
+    "level": 73,
     "sets": [
       {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
+        "role": "Z-Move user",
+        "movepool": [
+          "Swords Dance",
+          "Leaf Blade",
+          "Sacred Sword",
+          "Giga Impact",
+          "Knock Off"
+        ],
+        "abilities": [
+          "Beast Boost"
+        ]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": [
+          "Swords Dance",
+          "Leaf Blade",
+          "Sacred Sword",
+          "Knock Off"
+        ],
+        "abilities": [
+          "Beast Boost"
+        ]
       }
     ]
   },
   "kommoo": {
-    "level": ...,
+    "level": 78,
     "sets": [
       {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
+        "role": "Z-Move user",
+        "movepool": ["Clanging Scales", "Close Combat", "Drain Punch", "Flamethrower", "Stealth Rock", "Taunt", "Clangorous Soul"],
+        "abilities": ["Bulletproof"]
+      },
+      {
+        "role": "Bulky Support",
+        "movepool": ["Body Press", "Toxic", "Stealth Rock", "Protect", "Earthquake"],
+        "abilities": ["Bulletproof"]
       }
     ]
   },
   "latios": {
-    "level": ...,
+    "level": 78,
     "sets": [
       {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
+        "role": "Choice Item user",
+        "movepool": ["Draco Meteor", "Luster Purge", "Surf", "Aura Sphere", "Flip Turn", "Trick"],
+        "abilities": ["Levitate"]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Draco Meteor", "Luster Purge", "Surf", "Thunderbolt", "Flip Turn", "Recover"],
+        "abilities": ["Levitate"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Draco Meteor", "Calm Mind", "Psychic Noise", "Luster Purge", "Thunderbolt", "Recover"],
+        "abilities": ["Levitate"]
       }
     ]
   },
   "manaphy": {
-    "level": ...,
+    "level": 78,
     "sets": [
       {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
+        "role": "Setup Sweeper",
+        "movepool": ["Tail Glow", "Surf", "Ice Beam", "Psychic", "Energy Ball"],
+        "abilities": ["Hydration"]
+      },
+      {
+        "role": "Wallbreaker",
+        "movepool": ["Tail Glow", "Surf", "Ice Beam", "Psychic", "Rest"],
+        "abilities": ["Hydration"]
+      },
+      {
+        "role": "Z-Move user",
+        "movepool": ["Tail Glow", "Surf", "Ice Beam", "Psychic", "Rest"],
+        "abilities": ["Hydration"]
       }
     ]
   },
   "mawilemega": {
-    "level": ...,
+    "level": 78,
     "sets": [
       {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
+        "role": "Setup Sweeper",
+        "movepool": [
+          "Swords Dance",
+          "Play Rough",
+          "Knock Off",
+          "Sucker Punch"
+        ],
+        "abilities": [
+          "Intimidate"
+        ]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": [
+          "Play Rough",
+          "Knock Off",
+          "Ice Punch",
+          "Thunder Punch",
+          "Brick Break"
+        ],
+        "abilities": [
+          "Intimidate"
+        ]
       }
     ]
   },
   "medichammega": {
-    "level": ...,
+    "level": 78,
     "sets": [
       {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
+        "role": "Fast Attacker",
+        "movepool": ["Fake Out", "Close Combat", "Zen Headbutt", "Ice Punch", "Bullet Punch", "Fire Punch"],
+        "abilities": ["Telepathy"]
+      },
+      {
+        "role": "Wallbreaker",
+        "movepool": ["Fake Out", "Close Combat", "Zen Headbutt", "Ice Punch", "Bullet Punch", "Fire Punch"],
+        "abilities": ["Telepathy"]
       }
     ]
   },
   "meowscarada": {
-    "level": ...,
+    "level": 78,
     "sets": [
       {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
+        "role": "Fast Attacker",
+        "movepool": ["Flower Trick", "Knock Off", "U-turn", "Triple Axel"],
+        "abilities": ["Protean"]
+      },
+      {
+        "role": "Choice Item user",
+        "movepool": ["Flower Trick", "Knock Off", "U-turn", "Triple Axel"],
+        "abilities": ["Protean"]
       }
     ]
   },
   "ogerponcornerstone": {
-    "level": ...,
+    "level": 76,
     "sets": [
       {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
+        "role": "Setup Sweeper",
+        "movepool": ["Ivy Cudgel", "Power Whip", "Swords Dance", "Superpower", "Knock Off"],
+        "abilities": ["Sturdy"]
       }
     ]
   },
   "okidogi": {
-    "level": ...,
+    "level": 77,
     "sets": [
-      {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
-      }
+        {
+            "role": "Bulky Setup",
+            "movepool": ["Bulk Up", "Drain Punch", "Gunk Shot", "Knock Off"],
+            "abilities": ["Toxic Chain"]
+        },
+        {
+            "role": "AV Pivot",
+            "movepool": ["Drain Punch", "Gunk Shot", "High Horsepower", "Knock Off", "Psychic Fangs"],
+            "abilities": ["Toxic Chain"]
+        }
     ]
   },
   "pecharunt": {
-    "level": ...,
+    "level": 77,
     "sets": [
-      {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
-      }
+        {
+            "role": "Bulky Attacker",
+            "movepool": ["Malignant Chain", "Nasty Plot", "Parting Shot", "Recover", "Shadow Ball"],
+            "abilities": ["Poison Puppeteer"]
+        }
     ]
   },
   "pinsirmega": {
-    "level": ...,
+    "level": 73,
     "sets": [
       {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
+        "role": "Setup Sweeper",
+        "movepool": ["Swords Dance", "Return", "Quick Attack", "Close Combat", "Earthquake"],
+        "abilities": ["Moxie"]
       }
     ]
   },
   "thundurustherian": {
-    "level": ...,
+    "level": 80,
     "sets": [
       {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
+        "role": "Z-Move user",
+        "movepool": ["Thunderbolt", "Hidden Power Ice", "Grass Knot", "Agility"],
+        "abilities": ["Volt Absorb"]
       }
     ]
   },
   "tornadustherian": {
-    "level": ...,
+    "level": 79,
     "sets": [
       {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
+        "role": "Fast Support",
+        "movepool": ["Bleakwind Storm", "Hurricane", "U-turn", "Knock Off", "Heat Wave", "Defog"],
+        "abilities": ["Regenerator"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Bleakwind Storm", "Hurricane", "Nasty Plot", "Heat Wave", "Focus Blast", "Taunt"],
+        "abilities": ["Regenerator"]
+      },
+      {
+        "role": "Z-Move user",
+        "movepool": ["Bleakwind Storm", "Hurricane", "Nasty Plot", "Heat Wave", "Focus Blast", "Taunt"],
+        "abilities": ["Regenerator"]
+      },
+      {
+        "role": "AV Pivot",
+        "movepool": ["Bleakwind Storm", "Hurricane", "U-turn", "Heat Wave", "Knock Off"],
+        "abilities": ["Regenerator"]
       }
     ]
   },
   "tyranitarmega": {
-    "level": ...,
+    "level": 76,
     "sets": [
       {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
+        "role": "Fast Attacker",
+        "movepool": ["Knock Off", "Pursuit", "Stone Edge", "Ice Punch", "Low Kick", "Stealth Rock", "Low Kick"],
+        "abilities": ["Sand Stream"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Dragon Dance", "Knock Off", "Earthquake", "Stone Edge", "Ice Punch", "Fire Punch"],
+        "abilities": ["Sand Stream"]
       }
     ]
   },
   "weavile": {
-    "level": ...,
+    "level": 79,
     "sets": [
       {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
+        "role": "Choice Item user",
+        "movepool": ["Triple Axel", "Knock Off", "Ice Shard", "Pursuit"],
+        "abilities": ["Pressure"]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Triple Axel", "Knock Off", "Ice Shard", "Swords Dance"],
+        "abilities": ["Pressure"]
       }
     ]
   },
   "zapdosgalar": {
-    "level": ...,
+    "level": 77,
     "sets": [
-      {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
-      }
+        {
+            "role": "Fast Attacker",
+            "movepool": ["Brave Bird", "Bulk Up", "Close Combat", "Knock Off", "U-turn"],
+            "abilities": ["Defiant"]
+        }
     ]
   }
 }
