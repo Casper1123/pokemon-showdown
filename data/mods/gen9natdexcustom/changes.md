@@ -563,7 +563,7 @@ New secondary: 20% `+1 SpA`<BR>
 Benefitting mons: <BR>
 ![nihilego] ![glimmora] ![diancie-mega] ![necrozma] ![sandyshocks] ![starmie]
 
-### ![psychic]![physical]
+### ![psychic]![physical] Psyshield Bash
 BP: `70` --> `90`<BR>
 Benefitting mons:<BR>
 ![wyrdeer]
@@ -1024,13 +1024,13 @@ Base Stats:
 - spe: `100`
 - Total: `580` --> `590`
 
-### ![espeon]
-New Moves:
-- ![psychic]![status] Cosmic Power
-
 New Moves:
 - ![rock]![status] Wide Guard
 - ![fighting]![physical] Superpower
+
+### ![espeon]
+New Moves:
+- ![psychic]![status] Cosmic Power
 
 ## Gen 3
 ### ![absol]![absol-mega]
