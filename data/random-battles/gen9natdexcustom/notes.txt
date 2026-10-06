@@ -23,10 +23,73 @@ todo: remake teambuilder. Like holy shit it cannot do Z-moves properly.
 },
 
 RUBL:
---- ALL OF EM ---
+Alakazam
+Archaludon
+Azumarill
+Enamorus
+Heracross-Mega
+Iron Leaves
+Jirachi
+Latias-Mega
+Lilligant-Hisui
+Mamoswine
+Mienshao
+Sableye-Mega
+Salamence
+Thundurus
 
 RU:
-TODO: MAKE LIST
+Abomasnow
+Abomasnow-Mega
+Absol
+Accelgor
+Aerodactyl
+Alcremie
+Altaria
+Ambipom
+Amoongus
+Appletun
+Araquanid
+Arbok
+Arcanine
+Arcanine-Hisui
+Arcozolt
+Armarouge
+Articuno
+Articuno-Galar
+Aurorus
+Avalugg
+Avalugg-Hisui
+Azelf
+Barraskewda
+Basculegion
+Basculegion-F
+Bastiodon
+Blastoise
+Bronzong
+Brute Bonnet
+Chesnaught
+Cinccino
+Cloyster
+Crawdaunt
+Cryogonal
+Drapion
+Dusknoir
+Dustox
+Eelektross
+Electivire
+Emboar
+Escavalier
+Espeon
+Entei
+Farigiraf
+Feraligatr
+Galvantula
+Gardevoir
+Garganacl
+Gastrodon
+Glalie-Mega
+
 
 Mega Absol:
 	Pressure
