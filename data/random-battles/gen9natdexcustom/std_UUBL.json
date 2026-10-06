@@ -1,1 +1,312 @@
-{}
+{
+  "blaziken": {
+    "level": 76,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Close Combat", "Flare Blitz", "Knock Off", "Protect", "Stone Edge", "Swords Dance", "High Jump Kick"],
+        "abilities": ["Speed Boost"]
+      }
+    ]
+  },
+  "ceruledge": {
+    "level": 78,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Swords Dance", "Bitter Blade", "Poltergeist", "Endure", "Close Combat"],
+        "abilities": ["Weak Armor"]
+      },
+      {
+        "role": "Z-Move user",
+        "movepool": ["Swords Dance", "Bitter Blade", "Poltergeist", "Endure", "Close Combat"],
+        "abilities": ["Weak Armor"]
+      }
+    ]
+  },
+  "charizardmegax": {
+    "level": 76,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Swords Dance", "Dragon Dance", "Flare Blitz", "Earthquake", "Roost", "Dragon Claw"],
+        "abilities": ["Blaze"]
+      }
+    ]
+  },
+  "dondozo": {
+    "level": 78,
+    "sets": [
+      {
+        "role": "Staller",
+        "movepool": ["Curse", "Rest", "Sleep Talk", "Waterfall", "Body Press"],
+        "abilities": ["Unaware"]
+      }
+    ]
+  },
+  "greninja": {
+    "level": 80,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Dark Pulse", "Grass Knot", "Gunk Shot", "Hydro Pump", "Ice Beam", "Toxic Spikes", "U-turn"],
+        "abilities": ["Protean"]
+      },
+      {
+        "role": "Wallbreaker",
+        "movepool": ["Grass Knot", "Gunk Shot", "Hydro Pump", "Ice Beam", "Spikes", "U-turn"],
+        "abilities": ["Protean"]
+      }
+    ]
+  },
+  "greninjabond": {
+    "level": 80,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Hydro Pump", "Surf", "Dark Pulse", "Water Shuriken", "Ice Beam"],
+        "abilities": ["Battle Bond"]
+      }
+    ]
+  },
+  "gyarados": {
+    "level": 79,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Dragon Dance", "Earthquake", "Stone Edge", "Temper Flare", "Waterfall"],
+        "abilities": ["Intimidate", "Moxie"]
+      }
+    ]
+  },
+  "gyaradosmega": {
+    "level": 74,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Dragon Dance", "Waterfall", "Crunch", "Substitute", "Earthquake", "Taunt"],
+        "abilities": ["Intimidate"]
+      }
+    ]
+  },
+  "hawlucha": {
+    "level": 80,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Swords Dance", "Acrobatics", "Close Combat", "Substitute", "Brave Bird", "Encore", "Stone Edge", "Throat Chop"],
+        "abilities": ["Unburden"]
+      }
+    ]
+  },
+  "hoopaunbound": {
+    "level": 80,
+    "sets": [
+      {
+        "role": "Choice Item user",
+        "movepool": ["Hyperspace Fury", "Drain Punch", "Zen Headbutt", "Gunk Shot", "Knock Off"],
+        "abilities": ["Magician"]
+      },
+      {
+        "role": "Wallbreaker",
+        "movepool": ["Knock Off", "Psychic Noise", "Drain Punch", "Thunderbolt", "Gunk Shot", "Hyperspace Fury"],
+        "abilities": ["Magician"]
+      }
+    ]
+  },
+  "ironcrown": {
+    "level": 78,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Calm Mind", "Psychic Noise", "Stored Power", "Focus Blast", "Tachyon Cutter", "Iron Defense"],
+        "abilities": ["Quark Drive"]
+      },
+      {
+        "role": "AV Pivot",
+        "movepool": ["Tachyon Cutter", "Psychic Noise", "Volt Switch", "Focus Blast"],
+        "abilities": ["Quark Drive"]
+      }
+    ]
+  },
+  "ironhands": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": [""]
+      }
+    ]
+  },
+  "ironmoth": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": [""]
+      }
+    ]
+  },
+  "kartana": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": [""]
+      }
+    ]
+  },
+  "kommoo": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": [""]
+      }
+    ]
+  },
+  "latios": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": [""]
+      }
+    ]
+  },
+  "manaphy": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": [""]
+      }
+    ]
+  },
+  "mawilemega": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": [""]
+      }
+    ]
+  },
+  "medichammega": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": [""]
+      }
+    ]
+  },
+  "meowscarada": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": [""]
+      }
+    ]
+  },
+  "ogerponcornerstone": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": [""]
+      }
+    ]
+  },
+  "okidogi": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": [""]
+      }
+    ]
+  },
+  "pecharunt": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": [""]
+      }
+    ]
+  },
+  "pinsirmega": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": [""]
+      }
+    ]
+  },
+  "thundurustherian": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": [""]
+      }
+    ]
+  },
+  "tornadustherian": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": [""]
+      }
+    ]
+  },
+  "tyranitarmega": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": [""]
+      }
+    ]
+  },
+  "weavile": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": [""]
+      }
+    ]
+  },
+  "zapdosgalar": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": [""]
+      }
+    ]
+  }
+}

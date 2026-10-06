@@ -7,6 +7,7 @@ todo: de-mod Houndoom-Mega, make sets.
 todo: de-mod Meganium, make sets.
 todo: de-mod Victini, make sets
 todo: remove perfectly accurate twave wisp
+todo: terravore % chance end of turn eats stealth rock (50%?)
 
 todo: remake teambuilder. Like holy shit it cannot do Z-moves properly.
 
@@ -22,7 +23,33 @@ todo: remake teambuilder. Like holy shit it cannot do Z-moves properly.
 },
 
 UUBL:
---- ALL OF EM ---
+Blaziken
+Ceruledge
+Charizard-Mega-X
+Dondozo
+Greninja
+Gyarados(-Mega)
+Hawlucha
+Hoopa-Unbound
+Iron Crown
+Iron Hands
+Iron Moth
+Kartana
+Kommo-o
+Latios
+Manaphy
+Mawile-Mega
+Medicham-Mega
+Meowscarada
+Ogerpon-Cornerstone
+Okidogi
+Pecharunt
+Pinsir-Mega
+Thundurus-Therian
+Tornadus-Therian
+Tyranitar-Mega
+Weavile
+Zapdos-Galar
 
 RUBL:
 --- ALL OF EM ---
@@ -1680,3 +1707,30 @@ Zoroark-Hisui:
 	Sludge Bomb
 	Vacuum Wave
 
+
+Extra modifications:
+Moves:
+Core Enforcer - Zygarde
+Crabhammer - Crawdaunt, Kingler, Crabominable
+Dragon Rush - Dragon types.
+Dual Chop - Sharpness / Dragon types
+Hammer Arm - Slow mons
+Power Gem - Special attackers
+Spark - Physical Electric-types.
+Razor Shell - Mons getting it > Liquidation
+Shadow Claw - Physical Ghost types / mons that want the coverage.
+Submission - Mons without other Fighting coverage.
+Trick Room - Oh boy.
+
+Abilities:
+Sand Force - Yep.
+Shields Down - Minior only. Add to randbats though.
+Apex Predator
+Frolicking
+Terravore
+Midas Touch
+Weaver's Dance
+
+Mons:
+Go through change list and compare to MOD list.
+Any not in MOD list, do a double take to make sure changes are accounted for.
