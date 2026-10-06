@@ -375,12 +375,159 @@
     ]
   },
   "blissey": {
-    "level": null,
+    "level": 85,
     "sets": [
       {
         "role": "Bulky Support",
         "movepool": ["Seismic Toss", "Soft-Boiled", "Wish", "Toxic", "Calm Mind", "Stealth Rock", "Teleport", "Protect", "Flamethrower"],
         "abilities": ["Natural Cure"]
+      }
+    ]
+  },
+  "gardevoirmega": {
+    "level": 79,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Hyper Voice", "Psyshock", "Mystical Fire", "Taunt", "Focus Blast"],
+        "abilities": ["Trace"]
+      }
+    ]
+  },
+  "glimmora": {
+    "level": 75,
+    "sets": [
+      {
+        "role": "Fast Support",
+        "movepool": ["Earth Power", "Mortal Spin", "Power Gem", "Sludge Wave", "Spikes", "Stealth Rock"],
+        "abilities": ["Toxic Debris"],
+        "teraTypes": ["Ground"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Earth Power", "Energy Ball", "Meteor Beam", "Sludge Wave"],
+        "abilities": ["Toxic Debris"],
+        "teraTypes": ["Grass"]
+      }
+    ]
+  },
+  "hydrapple": {
+    "level": 83,
+    "sets": [
+      {
+        "role": "Fast Bulky Setup",
+        "movepool": ["Nasty Plot", "Draco Meteor", "Fickle Beam", "Leaf Storm", "Recover", "Earth Power"],
+        "abilities": ["Regenerator"]
+      },
+      {
+        "role": "Z-Move user",
+        "movepool": ["Nasty Plot", "Draco Meteor", "Fickle Beam", "Leaf Storm", "Recover", "Earth Power"],
+        "abilities": ["Regenerator"]
+      }
+    ]
+  },
+  "hydreigon": {
+    "level": 79,
+    "sets": [
+      {
+        "role": "Choice user",
+        "movepool": ["Draco Meteor", "Dragon Pulse", "Earth Power", "Fire Blast", "Defog", "U-turn"],
+        "abilities": ["Levitate"]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Draco Meteor", "Dragon Pulse", "Earth Power", "Fire Blast", "Defog", "U-turn"],
+        "abilities": ["Levitate"]
+      },
+      {
+        "role": "Spinner",
+        "movepool": ["Draco Meteor", "Dragon Pulse", "Earth Power", "Fire Blast", "Defog", "U-turn"],
+        "abilities": ["Levitate"]
+      }
+    ]
+  },
+  "mew": {
+    "level": 82,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": ["Will-o-Wisp", "Spikes", "Defog", "Knock Off", "Psychic", "Night Shade", "Soft-Boiled"],
+        "abilities": ["Synchronize"]
+      },
+      {
+        "role": "Bulky Support",
+        "movepool": ["Encore", "Knock Off", "Psychic", "Psychic Noise", "Stealth Rock", "Toxic Spikes", "U-turn", "Will-O-Wisp"],
+        "abilities": ["Synchronize"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Close Combat", "Knock Off", "Leech Life", "Psychic Fangs", "Swords Dance", "Dragon Dance"],
+        "abilities": ["Synchronize"]
+      },
+      {
+        "role": "Fast Bulky Setup",
+        "movepool": ["Aura Sphere", "Bug Buzz", "Dark Pulse", "Earth Power", "Fire Blast", "Hydro Pump", "Nasty Plot", "Psychic", "Psyshock"],
+        "abilities": ["Synchronize"]
+      },
+      {
+        "role": "Staller",
+        "movepool": ["Defog", "Knock Off", "Psychic", "Roost", "Spikes", "Stealth Rock", "Taunt", "Toxic Spikes", "U-turn", "Will-O-Wisp"],
+        "abilities": ["Synchronize"]
+      },
+      {
+        "role": "Z-Move user",
+        "movepool": ["aurasphere", "earthpower", "fireblast", "nastyplot", "psychic", "roost"],
+        "abilities": ["Synchronize"]
+      }
+    ]
+  },
+  "porygonz": {
+    "level": 83,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Ice Beam", "Nasty Plot", "Shadow Ball", "Thunderbolt", "Tri Attack", "Trick", "Agility"],
+        "abilities": ["Adaptability", "Download"]
+      }
+    ]
+  },
+  "quaquaval": {
+    "level": 79,
+    "sets": [
+      {
+        "role": "Wallbreaker",
+        "movepool": ["Aqua Step", "Close Combat", "Knock Off", "Triple Axel", "U-turn"],
+        "abilities": ["Moxie"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Aqua Step", "Close Combat", "Encore", "Knock Off", "Swords Dance", "Triple Axel"],
+        "abilities": ["Moxie"]
+      },
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Aqua Step", "Close Combat", "Rapid Spin", "Roost", "Swords Dance"],
+        "abilities": ["Moxie"]
+      }
+    ]
+  },
+  "scizor": {
+    "level": 79,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Swords Dance", "Bullet Punch", "Knock Off", "Dual Wingbeat", "Close Combat", "Quick Attack"],
+        "abilities": ["Technician"]
+      },
+      {
+        "role": "Bulky Setup",
+        "movepool": ["Swords Dance", "Bullet Punch", "Knock Off", "U-turn", "Roost"],
+        "abilities": ["Technician"]
+      },
+      {
+        "role": "Choice Item user",
+        "movepool": ["Bullet Punch", "U-turn", "Knock Off", "Pursuit", "Close Combat", "Dual Wingbeat"],
+        "abilities": ["Technician"]
       }
     ]
   }

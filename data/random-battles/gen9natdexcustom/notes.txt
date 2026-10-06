@@ -6,17 +6,20 @@ todo: de-mod Gengar, make sets.
 todo: de-mod Houndoom-Mega, make sets.
 todo: de-mod Meganium, make sets.
 todo: de-mod Victini, make sets
+todo: remove perfectly accurate twave wisp
 
-UU:
-Blissey
-Gardevoir-Mega
-Glimmora
-Hydrapple
-Hydreigo
-Mew
-Porygon-Z
-Quaquaval
-Scizor
+todo: remake teambuilder. Like holy shit it cannot do Z-moves properly.
+
+"": {
+ "level": ...,
+ "sets": [
+	{
+	  "role": "",
+	  "movepool": [""],
+	  "abilities": [""]
+	}
+ ]
+},
 
 UUBL:
 --- ALL OF EM ---
