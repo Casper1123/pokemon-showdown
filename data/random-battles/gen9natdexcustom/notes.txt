@@ -8,6 +8,7 @@ todo: de-mod Meganium, make sets.
 todo: de-mod Victini, make sets
 todo: remove perfectly accurate twave wisp
 todo: terravore % chance end of turn eats stealth rock (50%?)
+todo: put Leavanny in MOD
 
 todo: remake teambuilder. Like holy shit it cannot do Z-moves properly.
 
@@ -89,7 +90,69 @@ Gardevoir
 Garganacl
 Gastrodon
 Glalie-Mega
+Golem-Alola
+Grimmsnarl
+Heracross
+Indeedee
+Indeedee-F
+Iron Jugulis
+Iron Thorns
+Jolteon
+Kingdra
+Kleavor
+Klefki
+Latias
+Leavanny
+Lilligant
+Lokix
+Luxray
+Mandibuzz
+Minior todo: put in MOD
+Muk-Alola
+Nidoking
+Nidoqueen
+Ninetales
+Ninetales-Alola
+Ogerpon
+Pelipper
+Polteageist
+Primarina
+Quagsire
+Regice
+Regidrago
+Regieleki
+Regirock
+Registeel
+Scream Tail
+Sharpedo
+Sinistcha
+Skeledirge
+Slowbro-Galar
+Slowking
+Snorlax
+Stakataka
+Staraptor
+Starmie
+Swampert
+Swampert-Mega
+Tangrowth
+Tinkaton
+Torterra
+Umbreon
+Vanilluxe
+Veluza
+Venusaur
+Victreebel
+Volcanion
+Weezing-Galar
+Whimsicott
+Wo-Chien
+Zebstrika
 
+Boldore
+todo: more NFE
+
+todo: champions megas introduction
 
 Mega Absol:
 	Pressure
