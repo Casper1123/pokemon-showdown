@@ -1,1 +1,207 @@
-{}
+{
+  "alakazam": {
+    "level": 78,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
+        "movepool": [
+          "Nasty Plot", "Psychic", "Focus Blast", "Shadow Ball", "Recover", "Encore", "Counter"
+        ],
+        "abilities": [
+          "Magic Guard"
+        ]
+      },
+      {
+        "role": "Z-Move user",
+        "movepool": [
+          "Nasty Plot", "Psychic", "Focus Blast", "Shadow Ball", "Recover", "Encore", "Counter"
+        ],
+        "abilities": [
+          "Magic Guard"
+        ]
+      }
+    ]
+  },
+  "archaludon": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [
+          ""
+        ],
+        "abilities": [
+          ""
+        ]
+      }
+    ]
+  },
+  "": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [
+          ""
+        ],
+        "abilities": [
+          ""
+        ]
+      }
+    ]
+  },
+  "": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [
+          ""
+        ],
+        "abilities": [
+          ""
+        ]
+      }
+    ]
+  },
+  "": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [
+          ""
+        ],
+        "abilities": [
+          ""
+        ]
+      }
+    ]
+  },
+  "": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [
+          ""
+        ],
+        "abilities": [
+          ""
+        ]
+      }
+    ]
+  },
+  "": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [
+          ""
+        ],
+        "abilities": [
+          ""
+        ]
+      }
+    ]
+  },
+  "": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [
+          ""
+        ],
+        "abilities": [
+          ""
+        ]
+      }
+    ]
+  },
+  "": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [
+          ""
+        ],
+        "abilities": [
+          ""
+        ]
+      }
+    ]
+  },
+  "": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [
+          ""
+        ],
+        "abilities": [
+          ""
+        ]
+      }
+    ]
+  },
+  "": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [
+          ""
+        ],
+        "abilities": [
+          ""
+        ]
+      }
+    ]
+  },
+  "": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [
+          ""
+        ],
+        "abilities": [
+          ""
+        ]
+      }
+    ]
+  },
+  "": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [
+          ""
+        ],
+        "abilities": [
+          ""
+        ]
+      }
+    ]
+  },
+  "": {
+    "level": ...,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [
+          ""
+        ],
+        "abilities": [
+          ""
+        ]
+      }
+    ]
+  }
+}

@@ -1621,7 +1621,7 @@ export class RandomTeams {
 
 	randomSets: { [species: string]: RandomTeamsTypes.RandomSpeciesData } = {
 		...require('./std_RU.json'),
-		...require('./std_RUBL.json'),
+		// ...require('./std_RUBL.json'),
 		...require('./std_UU.json'),
 		...require('./std_UUBL.json'),
 		...require('./std_OU.json'),

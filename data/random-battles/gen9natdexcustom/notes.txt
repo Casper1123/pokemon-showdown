@@ -24,7 +24,6 @@ todo: remake teambuilder. Like holy shit it cannot do Z-moves properly.
 },
 
 RUBL:
-Alakazam
 Archaludon
 Azumarill
 Enamorus
