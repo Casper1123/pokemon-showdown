@@ -206,7 +206,7 @@ Mega Aggron:
 	Rock Slide / Stone Edge
 	Superpower
 
-Mega Altaria:
+Mega Altaria: todo: set
 	Natural Cure
 
 	Agility

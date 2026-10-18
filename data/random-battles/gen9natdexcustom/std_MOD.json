@@ -1,1 +1,42 @@
-{}
+{
+  "absolmega": {
+    "level": 81,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Parting Shot" ,"Close Combat", "Knock Off", "Megahorn", "Spirit Break", "Play Rough", "Pursuit", "Psycho Cut", "Shadow Claw", "Sucker Punch"],
+        "abilities": ["Pressure"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Swords Dance", "Substitute" ,"Close Combat", "Knock Off", "Megahorn", "Spirit Break", "Play Rough", "Pursuit", "Psycho Cut", "Shadow Claw", "Sucker Punch"],
+        "abilities": ["Pressure"]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Parting Shot", "Dark Pulse", "Fire Blast", "Flamethrower", "Ice Beam", "Light of Ruin", "Moonblast", "Thunderbolt"],
+        "abilities": ["Pressure"]
+      }
+    ]
+  },
+  "aggronmega": {
+    "level": 80,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": ["Iron Defense", "Slack Off", "Stealth Rock", "Substitute", "Taunt", "Thunder Wave", "Toxic", "Body Press", "Horn Leech", "Earthquake", "Dragon Tail"],
+        "abilities": ["Sturdy"]
+      }
+    ]
+  },
+  "aggron": {
+    "level": 86,
+    "sets": [
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Substitute", "Head Smash", "Stone Edge", "Superpower", "Iron Head", "Horn Leech"],
+        "abilities": ["Sturdy", "Rock Head"]
+      }
+    ]
+  }
+}
