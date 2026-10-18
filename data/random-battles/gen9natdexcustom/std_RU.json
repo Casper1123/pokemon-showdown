@@ -1,1 +1,27 @@
-{}
+{
+  "amoongus": {
+    "level": 82,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": ["Giga Drain", "Synthesis", "Spore", "Sludge Bomb", "Clear Smog"],
+        "abilities": ["Regenerator"]
+      }
+    ]
+  },
+  "arcaninehisui": {
+    "level": 79,
+    "sets": [
+      {
+        "role": "Choice Item user",
+        "movepool": ["Flare Blitz", "Head Smash", "Extreme Speed", "Close Combat"],
+        "abilities": ["Rock Head"]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Flare Blitz", "Head Smash", "Morning Sun", "Substitute", "Extreme Speed"],
+        "abilities": ["Rock Head"]
+      }
+    ]
+  }
+}

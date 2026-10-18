@@ -11,6 +11,11 @@ todo: terravore % chance end of turn eats stealth rock (50%?)
 todo: put Leavanny in MOD
 
 todo: remake teambuilder. Like holy shit it cannot do Z-moves properly.
+- Z-Move user is poof
+> Always use prefferedTypes; if defined, consider one of those Z-crystals.
+- Tera Types stored and used iff enabled.
+- Verify that all sets work
+- Sets should be checked at build time, not runtime --> Move to using and importing a built `.js` file like how the client does it.
 
 "": {
  "level": ...,
@@ -24,20 +29,24 @@ todo: remake teambuilder. Like holy shit it cannot do Z-moves properly.
 },
 
 RU:
-Abomasnow
-Abomasnow-Mega
-Absol
-Accelgor
-Aerodactyl
-Alcremie
-Altaria
-Ambipom
-Amoongus
-Appletun
-Araquanid
-Arbok
-Arcanine
-Arcanine-Hisui
+.Abomasnow
+.Abomasnow-Mega
+.Appletun
+.Araquanid
+
+"araquanid": {
+    "level": 82,
+    "sets": [
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Sticky Web", "Surf", "Liquidation", "Endure", "Magic Coat", "Endeavor"],
+        "abilities": ["Water Bubble"]
+      }
+    ]
+  }
+
+
+.Arcanine
 Arcozolt
 Armarouge
 Articuno
