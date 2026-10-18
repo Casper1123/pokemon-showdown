@@ -23,183 +23,237 @@
     ]
   },
   "archaludon": {
-    "level": ...,
+    "level": 78,
     "sets": [
       {
-        "role": "",
+        "role": "Bulky Setup",
+        "movepool": ["Earthquake", "Iron Head", "Outrage", "Swords Dance"],
+        "abilities": ["Stamina"]
+      },
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Body Press", "Draco Meteor", "Dragon Tail", "Flash Cannon", "Stealth Rock", "Thunder Wave", "Thunderbolt"],
+        "abilities": ["Stamina"]
+      }
+    ]
+  },
+  "azumarill": {
+    "level": 82,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
         "movepool": [
-          ""
+          "Belly Drum", "Aqua Jet", "Play Rough", "Knock Off", "Liquidation", "Ice Spinner"
         ],
         "abilities": [
-          ""
+          "Huge Power"
+        ]
+      },
+      {
+        "role": "Choice Item user",
+        "movepool": [
+          "Liquidation", "Play Rough", "Aqua Jet", "Knock Off"
+        ],
+        "abilities": [
+          "Huge Power"
         ]
       }
     ]
   },
-  "": {
-    "level": ...,
+  "enamorus": {
+    "level": 79,
     "sets": [
       {
-        "role": "",
+        "role": "Choice Item user",
         "movepool": [
-          ""
+          "Moonblast", "Earth Power", "Mystical Fire", "Healing Wish", "Superpower", "Psychic", "Focus Blast", "Grass Knot"
         ],
         "abilities": [
-          ""
+          "Contrary"
+        ]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": [
+          "Calm Mind", "Moonblast", "Earth Power", "Mystical Fire", "Taunt"
+        ],
+        "abilities": [
+          "Cute Charm"
+        ]
+      },
+      {
+        "role": "Z-Move user",
+        "movepool": ["Moonblast", "Superpower", "Earth Power", "Taunt"],
+        "abilities": ["Contrary"]
+      }
+    ]
+  },
+  "heracrossmega": {
+    "level": 82,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
+        "movepool": [
+          "Close Combat", "Swords Dance", "Rock Blast", "Pin Missile", "Substitute"
+        ],
+        "abilities": [
+          "Moxie"
+        ]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": [
+          "Close Combat", "Rock Blast", "Pin Missile", "Earthquake", "Trailblaze"
+        ],
+        "abilities": [
+          "Moxie"
         ]
       }
     ]
   },
-  "": {
-    "level": ...,
+  "ironleaves": {
+    "level": 80,
     "sets": [
       {
-        "role": "",
+        "role": "Wallbreaker",
+        "movepool": ["Close Combat", "Leaf Blade", "Megahorn", "Psyblade", "Swords Dance"],
+        "abilities": ["Quark Drive"]
+      }
+    ]
+  },
+  "jirachi": {
+    "level": 80,
+    "sets": [
+      {
+        "role": "Bulky Attacker",
         "movepool": [
-          ""
+          "Iron Head", "Stealth Rock", "Fire Punch", "Body Slam", "U-turn", "Protect", "Healing Wish", "Wish"
         ],
         "abilities": [
-          ""
+          "Serene Grace"
+        ]
+      },
+      {
+        "role": "Fast Support",
+        "movepool": ["Body Slam", "Iron Head", "Protect", "Wish"],
+        "abilities": ["Serene Grace"]
+      },
+      {
+        "role": "Bulky Support",
+        "movepool": ["Healing Wish", "Iron Head", "Protect", "Psychic", "U-turn", "Wish"],
+        "abilities": ["Serene Grace"]
+      }
+    ]
+  },
+  "latiasmega": {
+    "level": 78,
+    "sets": [
+      {
+        "role": "Fast Bulky Setup",
+        "movepool": [
+          "Calm Mind", "Psyshock", "Recover", "Aura Sphere", "Mystical Fire", "Mist Ball"
+        ],
+        "abilities": [
+          "Levitate"
+        ]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": [
+          "Psychic", "Aura Sphere", "Mystical Fire", "Draco Meteor", "Calm Mind", "Roost"
+        ],
+        "abilities": [
+          "Levitate"
         ]
       }
     ]
   },
-  "": {
-    "level": ...,
+  "lilliganthisui": {
+    "level": 79,
     "sets": [
       {
-        "role": "",
+        "role": "Setup Sweeper",
+        "movepool": ["Close Combat", "Ice Spinner", "Leaf Blade", "Sleep Powder", "Victory Dance"],
+        "abilities": ["Hustle", "Chlorophyll"]
+      }
+    ]
+  },
+  "mamoswine": {
+    "level": 81,
+    "sets": [
+      {
+        "role": "Wallbreaker",
+        "movepool": ["Earthquake", "Ice Shard", "Icicle Crash", "Knock Off", "Stealth Rock"],
+        "abilities": ["Thick Fat"]
+      }
+    ]
+  },
+  "mienshao": {
+    "level": 83,
+    "sets": [
+      {
+        "role": "Fast Attacker",
         "movepool": [
-          ""
+          "Close Combat", "Knock Off", "U-turn", "Triple Axel", "Poison Jab", "Fake Out"
         ],
         "abilities": [
-          ""
+          "Regenerator"
+        ]
+      },
+      {
+        "role": "Choice Item user",
+        "movepool": [
+          "Close Combat", "Knock Off", "U-turn", "Triple Axel", "Poison Jab", "Fake Out"
+        ],
+        "abilities": [
+          "Regenerator"
         ]
       }
     ]
   },
-  "": {
-    "level": ...,
+  "sableyemega": {
+    "level": 86,
     "sets": [
       {
-        "role": "",
+        "role": "Bulky Support",
         "movepool": [
-          ""
+          "Knock Off", "Will-O-Wisp", "Protect", "Hex", "Recover"
         ],
         "abilities": [
-          ""
+          "Prankster"
         ]
       }
     ]
   },
-  "": {
-    "level": ...,
+  "salamence": {
+    "level": 77,
     "sets": [
       {
-        "role": "",
+        "role": "Fast Bulky Attacker",
         "movepool": [
-          ""
+          "Hurricane", "Flamethrower", "Fire Blast", "Toxic", "Draco Meteor", "Defog", "Roost"
         ],
         "abilities": [
-          ""
+          "Intimidate"
         ]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Dragon Dance", "Dual Wingbeat", "Earthquake", "Outrage", "Roost"],
+        "abilities": ["Intimidate", "Moxie"]
       }
     ]
   },
-  "": {
-    "level": ...,
+  "thundurus": {
+    "level": 80,
     "sets": [
       {
-        "role": "",
+        "role": "Fast Attacker",
         "movepool": [
-          ""
+          "Thunderbolt", "Knock Off", "Focus Blast", "Grass Knot", "Psychic", "U-turn", "Volt Switch", "Thunder Wave"
         ],
         "abilities": [
-          ""
-        ]
-      }
-    ]
-  },
-  "": {
-    "level": ...,
-    "sets": [
-      {
-        "role": "",
-        "movepool": [
-          ""
-        ],
-        "abilities": [
-          ""
-        ]
-      }
-    ]
-  },
-  "": {
-    "level": ...,
-    "sets": [
-      {
-        "role": "",
-        "movepool": [
-          ""
-        ],
-        "abilities": [
-          ""
-        ]
-      }
-    ]
-  },
-  "": {
-    "level": ...,
-    "sets": [
-      {
-        "role": "",
-        "movepool": [
-          ""
-        ],
-        "abilities": [
-          ""
-        ]
-      }
-    ]
-  },
-  "": {
-    "level": ...,
-    "sets": [
-      {
-        "role": "",
-        "movepool": [
-          ""
-        ],
-        "abilities": [
-          ""
-        ]
-      }
-    ]
-  },
-  "": {
-    "level": ...,
-    "sets": [
-      {
-        "role": "",
-        "movepool": [
-          ""
-        ],
-        "abilities": [
-          ""
-        ]
-      }
-    ]
-  },
-  "": {
-    "level": ...,
-    "sets": [
-      {
-        "role": "",
-        "movepool": [
-          ""
-        ],
-        "abilities": [
-          ""
+          "Defiant", "Prankster"
         ]
       }
     ]

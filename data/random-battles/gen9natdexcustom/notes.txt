@@ -23,21 +23,6 @@ todo: remake teambuilder. Like holy shit it cannot do Z-moves properly.
  ]
 },
 
-RUBL:
-Archaludon
-Azumarill
-Enamorus
-Heracross-Mega
-Iron Leaves
-Jirachi
-Latias-Mega
-Lilligant-Hisui
-Mamoswine
-Mienshao
-Sableye-Mega
-Salamence
-Thundurus
-
 RU:
 Abomasnow
 Abomasnow-Mega
