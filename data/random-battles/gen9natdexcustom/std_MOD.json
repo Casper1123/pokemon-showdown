@@ -178,5 +178,45 @@
         "abilities": ["Mummy", "Cursed Body"]
       }
     ]
+  },
+  "conkeldurr": {
+    "level": 80,
+    "sets": [
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Drain Punch", "Earthquake", "Knock Off", "Hammer Arm", "Stone Edge", "Poison Jab", "Ice Punch", "Thunder Punch"],
+        "abilities": ["Guts"]
+      },
+      {
+        "role": "Wallbreaker",
+        "movepool": ["Bulk Up", "Drain Punch", "Fire Punch", "Hammer Arm", "Ice Punch", "Mach Punch", "Power-Up Punch", "Thunder Punch", "Meteor Mash"],
+        "abilities": ["Iron Fist"]
+      },
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Bulk Up", "Drain Punch", "Fire Punch", "Poison Jab", "Ice Punch", "Power-Up Punch", "Thunder Punch", "Meteor Mash", "Stone Edge"],
+        "abilities": ["Sheer Force"]
+      }
+    ]
+  },
+  "crobat": {
+    "level": 82,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Brave Bird", "Dual Wingbeat", "U-turn", "Pursuit", "Gunk Shot"],
+        "abilities": ["Infiltrator"]
+      }
+    ]
+  },
+  "darmanitan": {
+    "level": 78,
+    "sets": [
+      {
+          "role": "Wallbreaker",
+          "movepool": ["Earthquake", "Flare Blitz", "Rock Slide", "Superpower", "U-turn", "Stone Edge", "Iron Head"],
+          "abilities": ["Sheer Force", "Gorilla Tactics"]
+      }
+    ]
   }
 }

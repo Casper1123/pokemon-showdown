@@ -568,7 +568,7 @@ Conkeldurr:
 	Meteor Mash
 	Poison Jab
 
-Crobat:
+Crobat: todo: more sets
 	Inner Focus
 	Infiltrator
 
@@ -612,7 +612,7 @@ Darmanitan:
 	Superpower
 	U-turn
 
-Deoxys-Defense:
+Deoxys-Defense: todo: make sets (got lazy)
 	Pressure
 	Unaware
 	Regenerator
