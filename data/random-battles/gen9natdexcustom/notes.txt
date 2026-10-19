@@ -9,6 +9,8 @@ todo: de-mod Victini, make sets
 todo: remove perfectly accurate twave wisp
 todo: terravore % chance end of turn eats stealth rock (50%?)
 todo: put Leavanny in MOD
+todo: remove Ampharos Teravolt (not on mega, just on normal). Do not forget about random sets! (Replace with Mold Breaker?)
+> It's kinda like, too strong the way it is.
 
 todo: remake teambuilder. Like holy shit it cannot do Z-moves properly.
 - Z-Move user is poof

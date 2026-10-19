@@ -38,5 +38,70 @@
         "abilities": ["Sturdy", "Rock Head"]
       }
     ]
+  },
+  "audinomega": {
+    "level": 92,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": ["Heal Bell", "Healing Wish", "Teleport", "Toxic", "Wish", "Knock Off", "Nuzzle", "Icy Wind", "Flamethrower"],
+        "abilities": ["Regenerator"]
+      },
+      {
+        "role": "Bulky Setup",
+        "movepool": ["Calm Mind", "Draining Kiss", "Ice Beam", "Thunderbolt", "Hyper Voice", "Flamethrower", "Surf"],
+        "abilities": ["Regenerator"]
+      }
+    ]
+  },
+  "ampharos": {
+    "level": 88,
+    "sets": [
+      {
+        "role": "Bulky Setup",
+        "movepool": ["Agility", "Tail Glow", "Substitute", "Thunder", "Thunderclap", "Dragon Pulse", "Power Gem"],
+        "abilities": ["Teravolt"]
+      },
+      {
+        "role": "Bulky Support",
+        "movepool": ["Heal Bell", "Reflect", "Light Screen", "Dragon Tail", "Volt Switch", "Thunderclap", "Power Gem"],
+        "abilities": ["Static", "Teravolt"]
+      }
+    ]
+  },
+  "ampharosmega": {
+    "level": 78,
+    "sets": [
+      {
+        "role": "Bulky Setup",
+        "movepool": ["Draco Meteor", "Dragon Pulse", "Tail Glow", "Substitute", "Dazzling Gleam", "Power Gem", "Thunderbolt", "Thunder", "Thunderclap", "Parabolic Charge"],
+        "abilities": ["Static", "Teravolt"]
+      }
+    ]
+  },
+  "banettemega": {
+    "level": 87,
+    "sets": [
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Trick Room", "Destiny Bond", "Stalk", "Knock Off", "Sucker Punch", "Shadow Sneak"],
+        "abilities": ["Cursed Body", "Insomnia"]
+      },
+      {
+        "role": "Bulky Setup",
+        "movepool": ["Trick Room", "Swords Dance", "Stalk", "Sucker Punch", "Knock Off"],
+        "abilities": ["Cursed Body", "Insomnia"]
+      }
+    ]
+  },
+  "beartic": {
+    "level": 91,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": [""]
+      }
+    ]
   }
 }
