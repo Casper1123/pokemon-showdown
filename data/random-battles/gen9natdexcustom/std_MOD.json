@@ -98,9 +98,84 @@
     "level": 91,
     "sets": [
       {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
+        "role": "Setup Sweeper",
+        "movepool": ["Swords Dance", "Aqua Jet", "Close Combat", "Earthquake", "Ice Shard", "Icicle Crash", "Icicle Spear", "Liquidation", "Play Rough", "Stone Edge", "Shadow Claw", "Trailblaze"],
+        "abilities": ["Swift Swim", "Slush Rush"]
+      },
+      {
+        "role": "Choice Item user",
+        "movepool": ["Aqua Jet", "Close Combat", "Earthquake", "Ice Shard", "Icicle Crash", "Icicle Spear", "Liquidation", "Play Rough", "Stone Edge", "Shadow Claw", "Trailblaze"],
+        "abilities": ["Swift Swim", "Slush Rush"]
+      }
+    ]
+  },
+  "beheeyem": {
+    "level": 90,
+    "sets": [
+      {
+        "role": "Bulky Setup",
+        "movepool": ["Trick Room", "Nasty Plot", "Calm Mind", "Expanding Force", "Psychic", "Psyshock", "Dark Pulse", "Flash Cannon", "Meteor Beam", "Tri Attack", "Thunderbolt"],
+        "abilities": ["Psychic Surge"]
+      },
+      {
+        "role": "Bulky Support",
+        "movepool": ["Trick Room", "Pain Split", "Teleport", "Future Sight", "Signal Beam", "Reflect", "Light Screen", "Psyshock"],
+        "abilities": ["Psychic Surge", "Analytic"]
+      }
+    ]
+  },
+  "chandelure": {
+    "level": 83,
+    "sets": [
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Trick Room", "Shadowflame", "Fire Blast", "Blue Flare", "Substitute", "Calm Mind", "Pain Split"],
+        "abilities": ["Flash Fire", "Turboblaze", "Flame Body"]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Shadowflame", "Fire Blast", "Blue Flare", "Substitute", "Energy Ball", "Psychic"],
+        "abilities": ["Flash Fire", "Turboblaze"]
+      },
+      {
+        "role": "Choice Item user",
+        "movepool": ["Blue Flare", "Shadowflame", "Energy Ball", "Psychic"],
+        "abilities": ["Turboblaze"]
+      }
+    ]
+  },
+  "cobalion": {
+    "level": 80,
+    "sets": [
+      {
+        "role": "AV Pivot",
+        "movepool": ["Volt Switch", "Secret Sword", "Flash Cannon", "Vacuum Wave", "Body Press"],
+        "abilities": ["Competitive"]
+      },
+      {
+        "role": "Fast Bulky Support",
+        "movepool": ["Iron Defense", "Body Press", "Volt Switch", "Thunder Wave", "Stealth Rock", "Flash Cannon"],
+        "abilities": ["Competitive"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Calm Mind", "Secret Sword", "Flash Cannon", "Vacuum Wave", "Air Slash"],
+        "abilities": ["Competitive"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Swords Dance", "Sacred Sword", "Iron Head", "Megahorn", "Stone Edge"],
+        "abilities": ["Justified"]
+      }
+    ]
+  },
+  "cofagrigus": {
+    "level": 88,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": ["Strength Sap", "Body Press", "Iron Defense", "Knock Off", "Will-O-Wisp", "Toxic Spikes", "Haze", "Hex", "Grass Knot"],
+        "abilities": ["Mummy", "Cursed Body"]
       }
     ]
   }
