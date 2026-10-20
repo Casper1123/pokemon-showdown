@@ -218,5 +218,185 @@
           "abilities": ["Sheer Force", "Gorilla Tactics"]
       }
     ]
+  },
+  "dubwool": {
+    "level": 80,
+    "sets": [
+      {
+        "role": "Staller",
+        "movepool": ["Cotton Guard", "Body Press", "Substitute", "Slack Off", "Horn Leech", "Nuzzle"],
+        "abilities": ["Frolicking", "Fluffy", "Bulletproof"]
+      },
+      {
+        "role": "Bulky Setup",
+        "movepool": ["Swords Dance", "Substitute", "Trailblaze", "Wild Charge", "Collision Course", "Grassy Glide", "Head Charge", "Headlong Rush", "Head Smash", "Horn Leech", "Iron Head", "Megahorn", "Play Rough"],
+        "abilities": [""]
+      }
+    ]
+  },
+  "durant": {
+    "level": 77,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Stealth Rock", "Crunch", "First Impression", "High Horsepower", "Iron Head", "Stone Edge", "Shadow Claw", "Superpower", "X-Scissor"],
+        "abilities": ["Defiant"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Hone Claws", "High Horsepower", "Iron Head", "Stone Edge", "Superpower", "Crunch", "X-Scissor", "Shadow Claw"],
+        "abilities": ["Hustle"]
+      }
+    ]
+  },
+  "empoleon": {
+    "level": 84,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Swords Dance", "Aqua Jet", "Drill Peck", "Earthquake", "Ice Spinner", "Triple Axel", "Knock Off", "Liquidation", "Waterfall", "Wave Crash", "Rock Slide", "Shadow Claw"],
+        "abilities": ["Torrent", "Slush Rush"]
+      },
+      {
+        "role": "Bulky Support",
+        "movepool": ["Flip Turn", "Ice Beam", "Knock Off", "Roar", "Roost", "Stealth Rock", "Surf", "Yawn", "Aurora Veil", "Haze", "Defog", "Toxic"],
+        "abilities": ["Competitive", "Slush Rush"]
+      },
+      {
+        "role": "AV Pivot",
+        "movepool": ["Flip Turn", "Scald", "Ice Beam", "Air Slash", "Flash Cannon", "Blizzard", "Signal Beam", "Vacuum Wave"],
+        "abilities": ["Competitive", "Slush Rush"]
+      }
+    ]
+  },
+  "flygon": {
+    "level": 82,
+    "sets": [
+      {
+        "role": "Choice Item user",
+        "movepool": ["Stealth Rock", "Desert Song", "Draco Meteor", "Fire Blast", "Flamethrower", "Giga Drain", "Psychic Noise", "Bug Buzz", "Boomburst", "Alluring Voice", "Air Slash", "U-turn"],
+        "abilities": ["Levitate"]
+      },
+      {
+        "role": "Bulky Support",
+        "movepool": ["Stealth Rock", "Dragon Tail", "U-turn", "Toxic", "Roost", "Scorching Sands", "Desert Song"],
+        "abilities": ["Levitate"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Nasty Plot", "Desert Song", "Flamethrower", "Fire Blast", "Boomburst", "Bug Buzz", "Giga Drain", "Psychic Noise", "Vacuum Wave"],
+        "abilities": ["Levitate"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Dragon Dance", "Dragon Rush", "Dragon Claw", "Earthquake", "Dual Wingbeat", "Superpower", "Stone Edge", "Thunder Punch", "Fire Punch"],
+        "abilities": ["Levitate"]
+      }
+    ]
+  },
+  "gallade": {
+    "level": 80,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Leaf Blade", "Night Slash", "Psycho Cut", "Sacred Sword", "Aqua Cutter", "Dual Chop", "Poison Jab", "Shadow Claw", "Shadow sneak", "X-Scissor", "Triple Axel"],
+        "abilities": ["Sharpness"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Agility", "Swords Dance", "Night Slash", "Psycho Cut", "Sacred Sword", "Aqua Cutter", "Dual Chop", "Poison Jab", "Shadow Claw", "Shadow sneak", "X-Scissor", "Triple Axel"],
+        "abilities": ["Sharpness"]
+      }
+    ]
+  },
+  "gallademega": {
+    "level": 77,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Leaf Blade", "Night Slash", "Psycho Cut", "Sacred Sword", "Aqua Cutter", "Dual Chop", "Poison Jab", "Shadow Claw", "Shadow sneak", "X-Scissor", "Triple Axel"],
+        "abilities": ["Inner Focus"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Swords Dance", "Night Slash", "Psycho Cut", "Sacred Sword", "Aqua Cutter", "Dual Chop", "Poison Jab", "Shadow Claw", "Shadow sneak", "X-Scissor", "Triple Axel"],
+        "abilities": ["Inner Focus"]
+      }
+    ]
+  },
+  "gigalith": {
+    "level": 83,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": ["Stealth Rock", "Shore Up", "Toxic", "Body Press", "Diamond Storm"],
+        "abilities": ["Sand Stream"]
+      },
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Diamond Storm", "Shore Up", "Body Press", "Trick Room"],
+        "abilities": ["Terravore", "Sturdy", "Sand Stream"]
+      }
+    ]
+  },
+  "golisopod": {
+    "level": 80,
+    "sets": [
+      {
+        "role": "Choice Item user",
+        "movepool": ["Aqua Jet", "Close Combat", "First Impression", "Leech Life", "U-turn", "Razor Shell", "Knock Off", "Iron Head", "Drill Run", "Dual Chop"],
+        "abilities": ["Battle Armor"]
+      },
+      {
+        "role": "AV Pivot",
+        "movepool": ["Aqua Jet", "Close Combat", "First Impression", "Leech Life", "U-turn", "Razor Shell", "Knock Off", "Iron Head", "Drill Run", "Dual Chop"],
+        "abilities": ["Battle Armor"]
+      },
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Aqua Jet", "Close Combat", "First Impression", "Leech Life", "U-turn", "Razor Shell", "Knock Off", "Iron Head", "Drill Run", "Dual Chop", "Spikes", "Taunt"],
+        "abilities": ["Battle Armor"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Swords Dance", "Aqua Jet", "Close Combat", "First Impression", "Leech Life", "U-turn", "Razor Shell", "Knock Off", "Iron Head", "Drill Run", "Dual Chop"],
+        "abilities": ["Battle Armor"]
+      },
+      {
+        "role": "Wallbreaker",
+        "movepool": ["Swords Dance", "Aqua Jet", "Leech Life", "Razor Shell", "Knock Off", "Iron Head", "Drill Run", "Dual Chop"],
+        "abilities": ["Battle Armor"]
+      }
+    ]
+  },
+  "haxorus": {
+    "level": 77,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Dragon Dance", "Swords Dance", "Close Combat", "Dragon Rush", "Dual Chop", "Dragon Claw", "Outrage", "Earthquake", "Iron Head", "Poison Jab"],
+        "abilities": ["Mold Breaker", "Tough Claws"]
+      },
+      {
+        "role": "Choice Item user",
+        "movepool": ["Close Combat", "Dragon Rush", "First Impression", "Poison Jab", "Earthquake", "Iron Head"],
+        "abilities": ["Tough Claws", "Regenerator"]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Dragon Dance", "Close Combat", "Dragon Rush", "Dragon Claw", "Earthquake", "First Impression", "Iron Head", "Poison Jab", "Psycho Cut", "Shadow Claw", "X-Scissor"],
+        "abilities": ["Tough Claws", "Regenerator"]
+      }
+    ]
+  },
+  "hippowdon": {
+    "level": 82,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": ["Stealth Rock", "Spikes", "Toxic", "Body Press", "Earthquake", "Ice Fang", "Fire Fang", "Heavy Slam", "Knock Off"],
+        "abilities": ["Sand Stream", "Intimidate"]
+      }
+    ]
   }
 }

@@ -669,6 +669,7 @@ Dubwool:
 
 	Body Press
 	Collision Course
+	Grassy Glide
 	Head Charge
 	Headlong Rush
 	Head Smash
@@ -831,7 +832,7 @@ Gigalith:
 	Superpower
 	Throat Chop
 
-Glaceon:
+Glaceon: todo: sets cuz got lazy
 	Snow Warning
 	Ice Body
 
