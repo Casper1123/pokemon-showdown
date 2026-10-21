@@ -453,5 +453,25 @@
         "abilities": ["Full Metal Body"]
       }
     ]
+  },
+  "moltresgalar": {
+    "level": 79,
+    "sets": [
+      {
+        "role": "Bulky Setup",
+        "movepool": ["Nasty Plot", "Roost", "Air Slash", "Fiery Wrath"],
+        "abilities": ["Berserk"]
+      }
+    ]
+  },
+  "necrozma": {
+    "level": 80,
+    "sets": [
+      {
+        "role": "",
+        "movepool": [""],
+        "abilities": ["Prism Armor"]
+      }
+    ]
   }
 }
