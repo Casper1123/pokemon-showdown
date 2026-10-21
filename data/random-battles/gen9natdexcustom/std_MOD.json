@@ -398,5 +398,60 @@
         "abilities": ["Sand Stream", "Intimidate"]
       }
     ]
+  },
+  "keldeoresolute": {
+    "level": 79,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Flip Turn", "Secret Sword", "Vacuum Wave", "Scald", "Air Slash"],
+        "abilities": ["Competitive"]
+      },
+      {
+        "role": "Bulky Setup",
+        "movepool": ["Substitute", "Calm Mind", "Secret Sword", "Scald"],
+        "abilities": ["Competitive"]
+      }
+    ]
+  },
+  "krookodile": {
+    "level": 79,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Stealth Rock", "Knock Off", "Pursuit", "Earthquake", "Gunk Shot", "Stone Edge", "Close Combat"],
+        "abilities": ["Intimidate", "Moxie"]
+      },
+      {
+        "role": "Choice Item user",
+        "movepool": ["Stealth Rock", "Knock Off", "Pursuit", "Earthquake", "Gunk Shot", "Stone Edge", "Close Combat"],
+        "abilities": ["Moxie"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Bulk Up", "Earthquake", "Gunk Shot", "Knock Off", "Close Combat", "Stone Edge"],
+        "abilities": ["Intimidate"]
+      }
+    ]
+  },
+  "manectricmega": {
+    "level": 78,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Ice Beam", "Overheat", "Flamethrower", "Thunderbolt", "Volt Switch"],
+        "abilities": ["Lightning Rod"]
+      }
+    ]
+  },
+  "metagross": {
+    "level": 79,
+    "sets": [
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Bullet Punch", "Hammer Arm", ""],
+        "abilities": ["Full Metal Body"]
+      }
+    ]
   }
 }
