@@ -658,9 +658,34 @@
     "level": 82,
     "sets": [
       {
-        "role": "",
-        "movepool": [""],
-        "abilities": [""]
+        "role": "Bulky Support",
+        "movepool": ["Scald", "Volt Switch", "Will-o-Wisp", "Toxic", "Defog", "Recover"],
+        "abilities": ["Levitate"]
+      }
+    ]
+  },
+  "samurott": {
+    "level": 88,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Razor Shell", "Wave Crash", "Aqua Jet", "Sacred Sword", "Drill Run", "Flip Turn", "Knock Off", "Megahorn"],
+        "abilities": ["Inner Focus", "Torrent"]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Ice Beam", "Vacuum Wave", "Secret Sword", "Scald"],
+        "abilities": ["Shell Armor"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Shell Smash", "Secret Sword", "Surf", "Ice Beam"],
+        "abilities": ["Shell Armor"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Shell Smash", "Sacred Sword", "Aqua Jet", ""],
+        "abilities": ["Shell Armor", "Inner Focus"]
       }
     ]
   }
