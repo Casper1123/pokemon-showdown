@@ -468,9 +468,199 @@
     "level": 80,
     "sets": [
       {
+        "role": "Wallbreaker",
+        "movepool": ["Swords Dance", "Neutron Ray", "Future Sight", "Psyshock", "Power Gem", "Earth Power", "Photon Geyser"],
+        "abilities": ["Prism Armor"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Dragon Dance", "Neutron Ray", "Iron Head", "Earthquake", "Photon Geyser"],
+        "abilities": ["Prism Armor"]
+      },
+      {
+        "role": "Bulky Setup",
+        "movepool": ["Trick Room", "Swords Dance", "Neutron Ray", "Photon Geyser"],
+        "abilities": ["Prism Armor"]
+      },
+      {
+        "role": "Choice Item user",
+        "movepool": ["Neutron Ray", "Photon Geyser", "Power Gem", "Future Sight", "Flash Cannon", "Earth Power", "Heat Wave"],
+        "abilities": ["Prism Armor"]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Neutron Ray", "Photon Geyser", "Power Gem", "Future Sight", "Flash Cannon", "Earth Power", "Heat Wave"],
+        "abilities": ["Prism Armor"]
+      },
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Neutron Ray", "Photon Geyser", "Power Gem", "Future Sight", "Flash Cannon", "Earth Power", "Heat Wave"],
+        "abilities": ["Prism Armor"]
+      }
+    ]
+  },
+  "nihilego": {
+    "level": 76,
+    "sets": [
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Grass Knot", "Power Gem", "Sludge Wave", "Stealth Rock", "Thunderbolt", "Toxic Spikes"],
+        "abilities": ["Beast Boost", "Levitate"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Grass Knot", "Meteor Beam", "Sludge Wave", "Thunderbolt", "Power Gem"],
+        "abilities": ["Beast Boost", "Levitate"]
+      },
+      {
+        "role": "Fast Bulky Support",
+        "movepool": ["Toxic Spikes", "Toxic", "Light Screen", "Reflect", "Power Gem", "Sludge Bomb"],
+        "abilities": ["Levitate"]
+      }
+    ]
+  },
+  "noivern": {
+    "level": 82,
+    "sets": [
+      {
+        "role": "Choice Item user",
+        "movepool": ["Draco Meteor", "Boomburst", "U-turn", "Flamethrower", "Hurricane", "Shadow Ball", "Switcheroo"],
+        "abilities": ["Infiltrator", "Frisk"]
+      },
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Draco Meteor", "Boomburst", "U-turn", "Flamethrower", "Hurricane", "Shadow Ball", "Defog"],
+        "abilities": ["Infiltrator", "Frisk"]
+      }
+    ]
+  },
+  "pidgeotmega": {
+    "level": 78,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Hurricane", "Zap Cannon", "Inferno", "Focus Blast"],
+        "abilities": ["Keen Eye"]
+      }
+    ]
+  },
+  "politoed": {
+    "level": 88,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": ["Scald", "Recover", "Toxic", "Encore", "Haze", "Ice Beam", "Earth Power"],
+        "abilities": ["Drizzle", "Water Absorb"]
+      },
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Scald", "Recover", "Ice Beam", "Earth Power"],
+        "abilities": ["Drizzle", "Water Absorb"]
+      }
+    ]
+  },
+  "raikou": {
+    "level": 81,
+    "sets": [
+      {
+        "role": "Fast Support",
+        "movepool": ["Scald", "Volt Switch", "Light Screen", "Reflect"],
+        "abilities": ["Electric Surge"]
+      },
+      {
+        "role": "Choice Item user",
+        "movepool": ["Extreme Speed", "Volt Switch", "Scald", "Rising Voltage"],
+        "abilities": ["Electric Surge"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Calm Mind", "Thunderbolt", "Scald", "Aura Sphere"],
+        "abilities": ["Electric Surge"]
+      }
+    ]
+  },
+  "reuniclus": {
+    "level": 88,
+    "sets": [
+      {
+        "role": "Bulky Support",
+        "movepool": ["Teleport", "Knock Off", "Future Sight", "Trick Room"],
+        "abilities": ["Regenerator"]
+      },
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Trick Room", "Vacuum Wave", "Aura Sphere", "Psyshock", "Thunder", "Signal Beam", "Shadow Ball", "Energy Ball"],
+        "abilities": ["Magic Guard"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Calm Mind", "Acid Armor", "Stored Power", "Signal Beam"],
+        "abilities": ["Magic Guard"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Calm Mind", "Trick Room", "Psyshock", "Aura Sphere"],
+        "abilities": ["Magic Guard"]
+      }
+    ]
+  },
+  "rotom": {
+    "level": 88,
+    "sets": [
+      {
+        "role": "Fast Support",
+        "movepool": ["Volt Switch", "Shadow Ball", "Will-O-Wisp", "Thunder Wave", "Defog"],
+        "abilities": ["Levitate"]
+      }
+    ]
+  },
+  "rotomfrost": {
+    "level": 87,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Freeze Dry", "Thunderbolt", "Volt Switch", "Blizzard"],
+        "abilities": ["Levitate", "Slush Rush"]
+      },
+      {
+        "role": "Choice Item user",
+        "movepool": ["Freeze Dry", "Thunderbolt", "Volt Switch", "Blizzard", "Trick"],
+        "abilities": ["Levitate", "Slush Rush"]
+      }
+    ]
+  },
+  "rotomfan": {
+    "level": 86,
+    "sets": [
+      {
+        "role": "Bulky Attacker",
+        "movepool": ["Air Slash", "Thunderbolt", "Volt Switch", "Recover"],
+        "abilities": ["Air Lock"]
+      },
+      {
+        "role": "Choice Item user",
+        "movepool": ["Air Slash", "Thunderbolt", "Volt Switch", "Dark Pulse", "Trick"],
+        "abilities": ["Air Lock"]
+      }
+    ]
+  },
+  "rotomheat": {
+    "level": 83,
+    "sets": [
+      {
+        "role": "Choice Item user",
+        "movepool": ["Trick", "Overheat", "Thunderbolt", "Volt Switch"],
+        "abilities": ["Levitate"]
+      }
+    ]
+  },
+  "rotomwash": {
+    "level": 82,
+    "sets": [
+      {
         "role": "",
         "movepool": [""],
-        "abilities": ["Prism Armor"]
+        "abilities": [""]
       }
     ]
   }

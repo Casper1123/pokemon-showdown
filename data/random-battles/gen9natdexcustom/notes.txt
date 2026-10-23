@@ -1064,7 +1064,7 @@ Musharna: todo: sets cuz got lazy
 	Shadow Ball
 	Signal Beam
 
-Necrozma:
+Necrozma: todo: add Nasty Plot
 	Prism Armor
 
 	Autotomize / Rock Polish
@@ -1079,6 +1079,7 @@ Necrozma:
 	Trick Room
 
 	-- NEUTRON RAY --
+	-- PHOTON GEYSER --
 
 	Earthquake
 	Iron Head
@@ -1219,7 +1220,7 @@ Raikou:
 	Trailblaze
 
 	Aura Sphere
-	Discharge / Thunder / Thunderbolt
+	Discharge / Thunder / Thunderbolt / Rising Voltage
 	Volt Switch
 	Scald
 	Shadow Ball
