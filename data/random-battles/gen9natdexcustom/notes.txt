@@ -1316,10 +1316,11 @@ Samurott:
 	Secret Sword
 	Vacuum Wave
 
-Sceptile:
+Sceptile: todo: sets got lazy
 Sceptile-Mega:
 	Overgrow
 	Unburden
+
 	Agility
 	Dragon Dance
 	Hone Claws

@@ -684,8 +684,33 @@
       },
       {
         "role": "Setup Sweeper",
-        "movepool": ["Shell Smash", "Sacred Sword", "Aqua Jet", ""],
+        "movepool": ["Shell Smash", "Sacred Sword", "Aqua Jet", "Razor Shell", "Wave Crash", "Knock Off"],
         "abilities": ["Shell Armor", "Inner Focus"]
+      }
+    ]
+  },
+  "scolipede": {
+    "level": 80,
+    "sets": [
+      {
+        "role": "Choice Item user",
+        "movepool": ["Megahorn", "Collision Course", "Poison Jab", "Pursuit", "Earthquake"],
+        "abilities": ["Apex Predator"]
+      },
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Swords Dance", "Protect", "Collision Course", "Poison Jab"],
+        "abilities": ["Speed Boost"]
+      }
+    ]
+  },
+  "serperior": {
+    "level": 79,
+    "sets": [
+      {
+        "role": "Fast Attacker",
+        "movepool": ["Glare", "Substitute", "Leaf Storm", "Mud Shot"],
+        "abilities": ["Contrary"]
       }
     ]
   }
