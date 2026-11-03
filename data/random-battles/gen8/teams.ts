@@ -61,6 +61,7 @@ const MOVE_PAIRS = [
 	['lightscreen', 'reflect'],
 	['sleeptalk', 'rest'],
 	['protect', 'wish'],
+	['spikyshield', 'wish'],
 	['leechseed', 'substitute'],
 	['focuspunch', 'substitute'],
 ];
@@ -68,6 +69,11 @@ const MOVE_PAIRS = [
 /** Pokemon who always want priority STAB, and are fine with it as its only STAB move of that type */
 const PRIORITY_POKEMON = [
 	'aegislash', 'doublade', 'golisopod', 'mimikyu', 'scizor',
+];
+
+/** Pokemon who should never be in the lead slot */
+const NO_LEAD_POKEMON = [
+	'dugtrio', 'gothitelle', 'wobbuffet',
 ];
 
 export class RandomGen8Teams extends RandomTeams {
@@ -259,7 +265,7 @@ export class RandomGen8Teams extends RandomTeams {
 			this.incompatibleMoves(moves, movePool, statusInflictingMoves, statusInflictingMoves);
 		}
 
-		// This space reserved for assorted hardcodes that otherwise make little sense out of context:
+		// This space reserved for assorted hardcodes that make little sense out of context and can't fit in the const:
 		// To force Will-O-Wisp on Corsola-Galar
 		if (species.id === 'corsolagalar') this.incompatibleMoves(moves, movePool, 'haze', 'stealthrock');
 	}
@@ -658,12 +664,10 @@ export class RandomGen8Teams extends RandomTeams {
 				return 'Sitrus Berry';
 			}
 		}
-		if (['boltbeak', 'dragonenergy', 'fishiousrend', 'waterspout'].some(m => moves.has(m))) {
-			if (counter.get('Flying')) {
-				return 'Choice Band';
-			}
-			return 'Choice Scarf';
-		}
+		if (moves.has('dragonenergy') || moves.has('waterspout')) return 'Choice Scarf';
+		if (
+			moves.has('boltbeak') || moves.has('fishiousrend')
+		) return (role === 'Fast Attacker') ? 'Choice Scarf' : 'Choice Band';
 		if (moves.has('geomancy') || moves.has('meteorbeam')) return 'Power Herb';
 		if (moves.has('shellsmash')) return (ability === 'Sturdy') ? 'Heavy-Duty Boots' : 'White Herb';
 		if (ability === 'Guts' && moves.has('facade')) return types.has('Fire') ? 'Toxic Orb' : 'Flame Orb';
@@ -950,6 +954,8 @@ export class RandomGen8Teams extends RandomTeams {
 			[screenSetters, screenSetters],
 
 			// These Pokemon are incompatible because the presence of one actively harms the other.
+			// Screen Cleaner is a bad ability
+			['mrrime', screenSetters],
 			// Prevent Dry Skin + sun setting ability
 			[['jynx', 'toxicroak', 'heliolisk'], sunSetters],
 			// Prevent Shedinja + sand/hail setting ability
@@ -995,6 +1001,8 @@ export class RandomGen8Teams extends RandomTeams {
 
 		const pokemonList = Object.keys(this.randomSets);
 		const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
+		let leadsRemaining = this.format.gameType === 'doubles' ? 2 : 1;
+		if (ruleTable.has('pickedteamsize') || ruleTable.has('teampreview')) leadsRemaining = 0;
 		while (baseSpeciesPool.length && pokemon.length < this.maxTeamSize) {
 			const baseSpecies = this.sampleNoReplace(baseSpeciesPool);
 			const species = this.dex.species.get(this.sample(pokemonPool[baseSpecies]));
@@ -1080,8 +1088,21 @@ export class RandomGen8Teams extends RandomTeams {
 			// Limit three of any type combination in Monotype
 			if (!this.forceMonotype && isMonotype && (typeComboCount[typeCombo] >= 3 * limitFactor)) continue;
 
-			const set = this.randomSet(species, teamDetails, pokemon.length === 0);
-			pokemon.push(set);
+			let set: RandomTeamsTypes.RandomSet;
+			if (leadsRemaining) {
+				if (NO_LEAD_POKEMON.includes(species.id)) {
+					if (pokemon.length + leadsRemaining === this.maxTeamSize) continue;
+					set = this.randomSet(species, teamDetails, false);
+					pokemon.push(set);
+				} else {
+					set = this.randomSet(species, teamDetails, true);
+					pokemon.unshift(set);
+					leadsRemaining--;
+				}
+			} else {
+				set = this.randomSet(species, teamDetails, false);
+				pokemon.push(set);
+			}
 
 			// Don't bother tracking details for the last Pokemon
 			if (pokemon.length === this.maxTeamSize) break;

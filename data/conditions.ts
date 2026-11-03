@@ -655,9 +655,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		name: 'brn',
 		effectType: 'Status',
 		onStart(target, source, sourceEffect) {
-			if (sourceEffect && sourceEffect.id === 'flameorb') {
+			if (sourceEffect?.id === 'flameorb') {
 				this.add('-status', target, 'brn', '[from] item: Flame Orb');
-			} else if (sourceEffect && sourceEffect.effectType === 'Ability') {
+			} else if (sourceEffect?.effectType === 'Ability') {
 				this.add('-status', target, 'brn', '[from] ability: ' + sourceEffect.name, `[of] ${source}`);
 			} else {
 				this.add('-status', target, 'brn');
@@ -673,7 +673,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		name: 'par',
 		effectType: 'Status',
 		onStart(target, source, sourceEffect) {
-			if (sourceEffect && sourceEffect.effectType === 'Ability') {
+			if (sourceEffect?.effectType === 'Ability') {
 				this.add('-status', target, 'par', '[from] ability: ' + sourceEffect.name, `[of] ${source}`);
 			} else {
 				this.add('-status', target, 'par');
@@ -700,9 +700,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		name: 'slp',
 		effectType: 'Status',
 		onStart(target, source, sourceEffect) {
-			if (sourceEffect && sourceEffect.effectType === 'Ability') {
+			if (sourceEffect?.effectType === 'Ability') {
 				this.add('-status', target, 'slp', '[from] ability: ' + sourceEffect.name, `[of] ${source}`);
-			} else if (sourceEffect && sourceEffect.effectType === 'Move') {
+			} else if (sourceEffect?.effectType === 'Move') {
 				this.add('-status', target, 'slp', `[from] move: ${sourceEffect.name}`);
 			} else {
 				this.add('-status', target, 'slp');
@@ -736,7 +736,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		name: 'frz',
 		effectType: 'Status',
 		onStart(target, source, sourceEffect) {
-			if (sourceEffect && sourceEffect.effectType === 'Ability') {
+			if (sourceEffect?.effectType === 'Ability') {
 				this.add('-status', target, 'frz', '[from] ability: ' + sourceEffect.name, `[of] ${source}`);
 			} else {
 				this.add('-status', target, 'frz');
@@ -776,7 +776,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		name: 'psn',
 		effectType: 'Status',
 		onStart(target, source, sourceEffect) {
-			if (sourceEffect && sourceEffect.effectType === 'Ability') {
+			if (sourceEffect?.effectType === 'Ability') {
 				this.add('-status', target, 'psn', '[from] ability: ' + sourceEffect.name, `[of] ${source}`);
 			} else {
 				this.add('-status', target, 'psn');
@@ -792,9 +792,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		effectType: 'Status',
 		onStart(target, source, sourceEffect) {
 			this.effectState.stage = 0;
-			if (sourceEffect && sourceEffect.id === 'toxicorb') {
+			if (sourceEffect?.id === 'toxicorb') {
 				this.add('-status', target, 'tox', '[from] item: Toxic Orb');
-			} else if (sourceEffect && sourceEffect.effectType === 'Ability') {
+			} else if (sourceEffect?.effectType === 'Ability') {
 				this.add('-status', target, 'tox', '[from] ability: ' + sourceEffect.name, `[of] ${source}`);
 			} else {
 				this.add('-status', target, 'tox');
@@ -1034,9 +1034,15 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		onStart(target) {
 			this.effectState.targetSlot = target.getSlot();
 			this.effectState.endingTurn = (this.turn - 1) + 2;
-			if (this.effectState.endingTurn >= 254) {
+			if (this.gen >= 8 && this.effectState.endingTurn >= 256) {
 				this.hint(`In Gen 8+, Future attacks will never resolve when used on the 255th turn or later.`);
 			}
+		},
+		onRestart() {
+			if (this.gen >= 8 && this.effectState.endingTurn >= 256) {
+				this.hint(`A previous future attack is stuck on this slot and will never resolve.`);
+			}
+			return false;
 		},
 		onResidualOrder: 3,
 		onResidual(target: Pokemon) {
@@ -1053,8 +1059,6 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 
 			this.add('-end', target, 'move: ' + move.name);
-			target.removeVolatile('Protect');
-			target.removeVolatile('Endure');
 
 			if (data.source.hasAbility('infiltrator') && this.gen >= 6) {
 				data.moveData.infiltrates = true;
@@ -1291,7 +1295,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		// So we give it increased priority.
 		onModifySpDPriority: 10,
 		onModifySpD(spd, pokemon) {
-			if (pokemon.hasType('Rock') && this.field.isWeather('sandstorm')) {
+			if (pokemon.hasType('Rock') && pokemon.effectiveWeather() === 'sandstorm') {
 				return this.modify(spd, 1.5);
 			}
 		},
@@ -1357,7 +1361,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		},
 		onModifyDefPriority: 10,
 		onModifyDef(def, pokemon) {
-			if (pokemon.hasType('Ice') && this.field.isWeather('snowscape')) {
+			if (pokemon.hasType('Ice') && pokemon.effectiveWeather() === 'snowscape') {
 				return this.modify(def, 1.5);
 			}
 		},
@@ -1384,7 +1388,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		duration: 0,
 		onEffectivenessPriority: -1,
 		onEffectiveness(typeMod, target, type, move) {
-			if (move && move.effectType === 'Move' && move.category !== 'Status' && type === 'Flying' && typeMod > 0) {
+			if (move?.effectType === 'Move' && move.category !== 'Status' && type === 'Flying' && typeMod > 0) {
 				this.add('-fieldactivate', 'Delta Stream');
 				return 0;
 			}
@@ -1406,7 +1410,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		name: 'Dynamax',
 		noCopy: true,
 		onStart(pokemon) {
-			this.effectState.turns = 0;
+			this.effectState.turns = 3;
 			pokemon.removeVolatile('minimize');
 			pokemon.removeVolatile('substitute');
 			if (pokemon.volatiles['torment']) {
@@ -1445,7 +1449,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		},
 		onResidualPriority: -100,
 		onResidual() {
-			this.effectState.turns++;
+			this.effectState.turns--;
 		},
 		onEnd(pokemon) {
 			this.add('-end', pokemon, 'Dynamax');
