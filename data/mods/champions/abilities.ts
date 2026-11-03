@@ -5,6 +5,10 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			this.effectState.checkedAngerShell = !(effect.effectType === "Move" && !effect.multihit);
 		},
 	},
+	auraguard: {
+		inherit: true,
+		isNonstandard: null,
+	},
 	berserk: {
 		inherit: true,
 		onDamage(damage, target, source, effect) {
@@ -12,6 +16,23 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		},
 	},
 	dragonize: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	eelevate: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	emergencyexit: {
+		inherit: true,
+		onEmergencyExit(originalHp, target) {
+			if (!target.hp || target.hp > target.maxhp / 2 || originalHp <= target.maxhp / 2) return;
+			if (!this.canSwitch(target.side) || target.forceSwitchFlag || target.switchFlag) return;
+			target.switchFlag = true;
+			this.add('-activate', target, 'ability: Emergency Exit');
+		},
+	},
+	firemane: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -25,22 +46,50 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				}
 			}
 		},
-		desc: "50% chance this Pokemon's ally has its non-volatile status condition cured at the end of each turn.",
-		shortDesc: "50% chance this Pokemon's ally has its status cured at the end of each turn.",
 	},
 	megasol: {
 		inherit: true,
 		isNonstandard: null,
 	},
+	naturalcure: {
+		inherit: true,
+		onCheckShow: undefined, // no inherit
+		onSwitchOut(pokemon) {
+			if (!pokemon.status || pokemon.status === 'fnt') return;
+
+			this.add('-curestatus', pokemon, pokemon.status, '[from] ability: Natural Cure', '[silent]');
+			pokemon.clearStatus();
+		},
+	},
 	piercingdrill: {
 		inherit: true,
 		isNonstandard: null,
+	},
+	regenerator: {
+		inherit: true,
+		onSwitchOut(pokemon) {
+			if (pokemon.heal(pokemon.baseMaxhp / 3)) {
+				this.add('-heal', pokemon, pokemon.getHealth, '[from] ability: Regenerator', '[silent]');
+			}
+		},
+	},
+	runaway: {
+		inherit: true,
+		onTrapPokemonPriority: -10,
+		onTrapPokemon(pokemon) {
+			pokemon.trapped = false;
+		},
+		onMaybeTrapPokemonPriority: -10,
+		onMaybeTrapPokemon(pokemon) {
+			pokemon.maybeTrapped = false;
+		},
 	},
 	spicyspray: {
 		inherit: true,
 		isNonstandard: null,
 	},
 	unseenfist: {
+		inherit: true,
 		onModifyMove: undefined, // no inherit
 		onHitProtect(source, target, move) {
 			if (move.flags['contact']) {
@@ -48,7 +97,14 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return false;
 			}
 		},
+	},
+	wimpout: {
 		inherit: true,
-		shortDesc: "This Pokemon's contact moves ignore a target's protection and deal 1/4 the usual damage.",
+		onEmergencyExit(originalHp, target) {
+			if (!target.hp || target.hp > target.maxhp / 2 || originalHp <= target.maxhp / 2) return;
+			if (!this.canSwitch(target.side) || target.forceSwitchFlag || target.switchFlag) return;
+			target.switchFlag = true;
+			this.add('-activate', target, 'ability: Wimp Out');
+		},
 	},
 };
