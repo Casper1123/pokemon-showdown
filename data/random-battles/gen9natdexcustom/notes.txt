@@ -15,6 +15,8 @@ todo: de-mod Breloom, or give it actual new moves. Not worth it right now.
 todo: de-mod Mega Camerupt? Moved ATK to DEF & SPDEF, added Sandsear. Is that enough for it to be MOD?
 todo: do not forget to double check for z-move users. You constantly forget about that mechanic.
 
+todo: Colapsible tiers in teambuilder - client
+todo: double check defaultLevels for client, (battle-team-editor this.format.defaultLevel)
 todo: remake teambuilder. Like holy shit it cannot do Z-moves properly.
 - Z-Move user is poof
 > Always use prefferedTypes; if defined, consider one of those Z-crystals.
