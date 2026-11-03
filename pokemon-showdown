@@ -277,4 +277,3 @@ if (!cli.positionals.length || /^[0-9]+$/.test(cli.positionals[0])) {
 		process.exit(1);
 	}
 }
-

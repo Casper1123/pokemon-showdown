@@ -162,6 +162,7 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 	},
 	// Rulesets
 	///////////////////////////////////////////////////////////////////
+
 	standardag: {
 		effectType: 'ValidatorRule',
 		name: 'Standard AG',
