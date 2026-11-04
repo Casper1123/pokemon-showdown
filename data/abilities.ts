@@ -32,20 +32,9 @@ Ratings and how they work:
 
 */
 
-/*
-	abilityname: {
-		flags: {},
-		name: "Abilityname",
-		desc: "Desc",
-		shortDesc: "Desc",
-		rating: x,
-		num: -xx,
-
-	},
- */
-
 export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	// Custom
+	// todo: migrate this to text files (flavour-wise)
 	chronaldistortion: {
 		isNonstandard: "Custom",
 		num: -4,
@@ -53,8 +42,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		gen: 9,
 		name: "Chronal Distortion",
-		desc: "While on the field, moves hit for 0.8x damage. In 2 turns, it hits again for 0.4x damage, without altering ally stats.",
-		shortDesc: "While active: Moves hit for .8x and .4x in 2 turns.",
+
 		onStart(source) {
 			this.add('-ability', source, 'Chronal Distortion');
 			this.field.addPseudoWeather('chronaldistortion', source);
@@ -79,8 +67,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		gen: 9,
 		name: "Spacial Distortion",
-		desc: "Sets Gravity. After leaving the battlefield, the effect will remain for 3 turns.",
-		shortDesc: "Sets Gravity. Lingers for 3 turns.",
 		onStart(source) {
 			this.add('-ability', source, 'Spacial Distortion');
 			this.field.addPseudoWeather('spacialdistortion', source);
@@ -104,8 +90,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		gen: 9,
 		name: "Absolute Distortion",
-		desc: "Plunge the battlefield into the Distortion World, where Weather, Terrain, Pseudoweather and Hazards are yours to rule.",
-		shortDesc: "Removes field effects and Hazards, and restricts setting them.",
 		onStart(source) {
 			this.add('-ability', source, 'Absolute Distortion');
 			this.field.addPseudoWeather('absolutedistortion', source);
@@ -174,8 +158,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		name: "Apex Predator",
-		desc: "On switch-in, uses first attacking move in moveset. Immune to Intimidate",
-		shortDesc: "On switch-in, uses first attacking move in moveset. Immune to Intimidate",
 		gen: 9,
 	},
 	frolicking: {
@@ -185,8 +167,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		// Not immune to Mold Breaker.
 		flags: { breakable: 1 },
 		name: "Frolicking",
-		desc: "Gains Grass resistances and STAB. In Grassy Terrain, gains 1.5x to both defenses and restores twice as much hp from Grassy Terrain and Leftovers.",
-		shortDesc: "Gains Grass resistances and STAB. Grassy: 1.5x defs, 2x residual healing",
 		gen: 9,
 		// Extra def in grassy terrain.
 		onModifyDef(pokemon) {
@@ -236,8 +216,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 	},
 	terravore: {
-		desc: "12.5% Heal on Rock hit. 30% boost after absorption.",
-		shortDesc: "12.5% Heal on Rock hit. 30% boost after absorption.",
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Rock') {
 				move.accuracy = true;
@@ -283,8 +261,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	midastouch: {
 		flags: { breakable: 1 },
 		name: "Midas Touch",
-		desc: "Any contact sets target to Steel with Good as Gold, dealing 12.5% each turn.",
-		shortDesc: "Any contact sets target to Steel with Good as Gold, dealing 12.5% each turn.",
 		rating: 3,
 		num: -10,
 		isNonstandard: 'Custom',
@@ -326,8 +302,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	weaversdance: {
 		flags: {},
 		name: "Weaver's Dance",
-		desc: "Raises Speed on KO. Moves do not make contact.",
-		shortDesc: "Raises Speed on KO. Moves do not make contact.",
 		rating: 3,
 		num: -11,
 		isNonstandard: 'Custom',
@@ -343,9 +317,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	originoftime: {
 		flags: {},
-		name: "Weaver's Dance",
-		desc: "+1 priority while a 'Room' Pseudoweather.",
-		shortDesc: "+1 priority while a 'Room' Pseudoweather.",
+		name: "Origin of Time",
 		rating: 4,
 		num: -12,
 		isNonstandard: 'Custom',
@@ -363,8 +335,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	originofspace: {
 		flags: {},
 		name: "Origin of Space",
-		desc: "Amplifies field effects while reducing their duration.",
-		shortDesc: "Amplifies field effects while reducing their duration.",
 		rating: 3,
 		num: -13,
 		isNonstandard: 'Custom',
@@ -387,8 +357,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	unifiedmind: {
 		isNonstandard: 'Custom',
 		name: 'Unified Mind',
-		desc: 'Prankster + Competitive',
-		shortDesc: 'Prankster + Competitive',
 		rating: 5,
 		num: -14,
 		flags: {},
@@ -416,15 +384,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 	},
-
 	polarityshift: {
 		isNonstandard: 'Custom',
 		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, notransform: 1, cantsuppress: 1 },
 		name: 'Polarity Shift',
 		rating: 5,
 		num: -15,
-		desc: '',
-		shortDesc: '',
 	},
 
 	noability: {

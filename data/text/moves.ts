@@ -1,4 +1,74 @@
+/**
+id: {
+		name: "",
+		desc: "",
+		shortDesc: ""
+	},
+
+ steelshards: {
+		name: "Steel Shards",
+		desc: "Sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Steel type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
+		shortDesc: "Hurts foes on switch-in. Factors Steel weakness.",
+		gen8: {
+			desc: "Sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Steel type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin or Defog successfully, or is hit by Defog.",
+		},
+		gen5: {
+			desc: "Sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Steel type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin successfully, or is hit by Defog.",
+		},
+
+		start: "  Pickly shards float in the air around [TEAM]!",
+		end: "  The prickly shards disappeared from around [TEAM]!",
+		damage: "  Pickly shards dug into [POKEMON]!",
+	},
+**/
+
 export const MovesText: { [id: IDEntry]: MoveText } = {
+	desertsong: {
+		name: "Desert Song",
+		desc: "1.5x power in Sand. Sets sand if inactive.",
+		shortDesc: "1.5x power in Sand. Sets sand if inactive."
+	},
+	neutronray: {
+		name: "Neutron Ray",
+		desc: "Phys if Atk > SpA. 50% chance to: Suppress Ability, Paralyze, Drowsy, Confusion or Flinch.",
+		shortDesc: "Phys if Atk > SpA. 50% to inflict a disruptive effect.",
+	},
+	shadowflame: {
+		name: "Shadowflame",
+		desc: "30% chance to burn.",
+		shortDesc: "30% chance to burn."
+	},
+	timestop: {
+		name: "Time Stop",
+		desc: "Protects user. If hit, heals 25%. Switches out.",
+		shortDesc: "The user is protected from most attacks made by other Pokemon during this turn. If the user is hit by an attack while protected, it restores 25% of its maximum HP. At the end of the turn, the user is forced to switch out."
+	},
+	stalk: {
+		name: "Stalk",
+		shortDesc: "20% flinch. 1.5x BP when moving after target.",
+		desc: "20% flinch. 1.5x BP when moving after target.",
+	},
+	needlethrow: {
+		name: "Needle Throw",
+		desc: "15% Flinch. Target: -1 Spe.",
+		shortDesc: "15% Flinch. Lowers the target's Speed by 1 stage.",
+	},
+	weavegarments: {
+		name: "Weave Garments",
+		desc: "+1 SpD, Spe & Acc and immune to status. Wears off after status effect, Fire or Ice move.",
+		shortDesc: "+1 SpD, Spe & Acc and immune to status. Wears off after status effect, Fire or Ice move.",
+	},
+	steelshards: {
+		name: "Steel Shards",
+		desc: "WIP move, needs balance.",
+		shortDesc: "WIP move, needs balance.",
+	},
+
+
+
+
+
+
 	"10000000voltthunderbolt": {
 		name: "10,000,000 Volt Thunderbolt",
 		desc: "Has a very high chance for a critical hit.",
@@ -6378,21 +6448,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		start: "  Pointed stones float in the air around {TEAM}!",
 		end: "  The pointed stones disappeared from around {TEAM}!",
 		damage: "  Pointed stones dug into {POKEMON}!",
-	},
-	steelshards: {
-		name: "Steel Shards",
-		desc: "Sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Steel type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
-		shortDesc: "Hurts foes on switch-in. Factors Steel weakness.",
-		gen8: {
-			desc: "Sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Steel type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin or Defog successfully, or is hit by Defog.",
-		},
-		gen5: {
-			desc: "Sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Steel type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin successfully, or is hit by Defog.",
-		},
-
-		start: "  Pickly shards float in the air around [TEAM]!",
-		end: "  The prickly shards disappeared from around [TEAM]!",
-		damage: "  Pickly shards dug into [POKEMON]!",
 	},
 	steameruption: {
 		name: "Steam Eruption",

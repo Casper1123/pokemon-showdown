@@ -57,9 +57,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: {}, // Boosted by Sheer Force.
 		target: "allAdjacentFoes",
 		type: "Ground",
-		desc: "1.5x power in Sand. Sets sand if inactive.",
-		shortDesc: "1.5x power in Sand. Sets sand if inactive.",
 		flags: { protect: 1, mirror: 1, bypasssub: 1, metronome: 1 },
+		weather: "sandstorm"
 	},
 	neutronray: {
 		isNonstandard: "Custom",
@@ -110,8 +109,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Dark",
 		contestType: "Cool",
-		desc: "Phys if Atk > SpA. 50% chance to: Suppress Ability, Paralyze, Drowsy, Confusion or Flinch.",
-		shortDesc: "Phys if Atk > SpA. 50% to inflict a disruptive effect.",
 	},
 	shadowflame: {
 		isNonstandard: "Custom",
@@ -121,8 +118,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Ghost",
 		category: "Special",
 		name: "Shadowflame",
-		desc: "30% chance to burn.",
-		shortDesc: "30% chance to burn.",
 		target: "normal",
 		pp: 15,
 		priority: 0,
@@ -146,8 +141,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 0,
 		category: "Status",
 		name: "Time Stop",
-		shortDesc: "Protects user. If hit, heals 25%. Switches out.",
-		desc: "The user is protected from most attacks made by other Pokemon during this turn. If the user is hit by an attack while protected, it restores 25% of its maximum HP. At the end of the turn, the user is forced to switch out.",
 		pp: 10,
 		priority: 4,
 		flags: { heal: 1 },
@@ -208,8 +201,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 
 		name: "Stalk",
-		shortDesc: "20% flinch. 1.5x BP when moving after target.",
-		desc: "20% flinch. 1.5x BP when moving after target.",
 
 		onTryMove() {
 			this.attrLastMove('[still]');
@@ -256,8 +247,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		],
 		target: "normal",
 		type: "Steel",
-		desc: "15% Flinch. Target: -1 Spe.",
-		shortDesc: "15% Flinch. Lowers the target's Speed by 1 stage.",
 		isNonstandard: "Custom",
 
 		onTryMove() {
@@ -278,8 +267,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { },
 		target: "adjacentAllyOrSelf",
 		type: "Bug",
-		desc: "+1 SpD, Spe & Acc and immune to status. Wears off after status effect, Fire or Ice move.",
-		shortDesc: "+1 SpD, Spe & Acc and immune to status. Wears off after status effect, Fire or Ice move.",
 		isNonstandard: "Custom",
 
 		volatileStatus: 'wovengarments',
@@ -320,7 +307,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		zMove: { boost: { def: 1 } },
 	},
-	steelshards: {
+	steelshards: { // todo: should this replace stealth rocks when set? I.E. mutually exclusive?
 		num: 446,
 		accuracy: true,
 		basePower: 0,

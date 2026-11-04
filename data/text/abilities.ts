@@ -1,4 +1,69 @@
 export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
+	chronaldistortion: {
+		name: "Chronal Distortion",
+		desc: "While on the field, moves hit for 0.8x damage. In 2 turns, it hits again for 0.4x damage, without altering ally stats.",
+		shortDesc: "While active: Moves hit for .8x and .4x in 2 turns.",
+	},
+	spacialdistortion: {
+		name: "Spacial Distortion",
+		desc: "Sets Gravity. After leaving the battlefield, the effect will remain for 3 turns.",
+		shortDesc: "Sets Gravity. Lingers for 3 turns.",
+	},
+	absolutedistortion: {
+		name: "Absolute Distortion",
+		desc: "Plunge the battlefield into the Distortion World, where Weather, Terrain, Pseudoweather and Hazards are yours to rule.",
+		shortDesc: "Removes field effects and Hazards, and restricts setting them.",
+	},
+	apexpredator: {
+		name: "Apex Predator",
+		desc: "On switch-in, uses first attacking move in moveset. Immune to Intimidate",
+		shortDesc: "On switch-in, uses first attacking move in moveset. Immune to Intimidate",
+	},
+	frolicking: {
+		name: "Frolicking",
+		desc: "Gains Grass resistances and STAB. In Grassy Terrain, gains 1.5x to both defenses and restores twice as much hp from Grassy Terrain and Leftovers.",
+		shortDesc: "Gains Grass resistances and STAB. Grassy: 1.5x defs, 2x residual healing",
+	},
+	terravore: {
+		name: "Terravore",
+		desc: "12.5% Heal on Rock hit. 30% boost after absorption.",
+		shortDesc: "12.5% Heal on Rock hit. 30% boost after absorption.",
+	},
+	midastouch: {
+		name: "Midas Touch",
+		desc: "Any contact sets target to Steel with Good as Gold, dealing 12.5% each turn.",
+		shortDesc: "Any contact sets target to Steel with Good as Gold, dealing 12.5% each turn.",
+	},
+	weaversdance: {
+		name: "Weaver's Dance",
+		desc: "Raises Speed on KO. Moves do not make contact.",
+		shortDesc: "Raises Speed on KO. Moves do not make contact.",
+	},
+	originoftime: {
+		name: "Origin of Time",
+		desc: "+1 priority while a 'Room' Pseudoweather.",
+		shortDesc: "+1 priority while a 'Room' Pseudoweather.",
+	},
+	originofspace: {
+		name: "Origin of Space",
+		desc: "Amplifies field effects while reducing their duration.",
+		shortDesc: "Amplifies field effects while reducing their duration.",
+	},
+	unifiedmind: {
+		name: 'Unified Mind',
+		desc: 'Prankster + Competitive',
+		shortDesc: 'Prankster + Competitive',
+	},
+	polarityshift: {
+		name: "Polarity shift",
+		desc: "WIP ability",
+		shortDesc: "WIP ability",
+	},
+
+
+
+
+
 	noability: {
 		name: "No Ability",
 		shortDesc: "Does nothing.",
