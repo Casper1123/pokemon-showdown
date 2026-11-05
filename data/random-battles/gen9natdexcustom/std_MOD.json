@@ -713,5 +713,15 @@
         "abilities": ["Contrary"]
       }
     ]
+  },
+  "sharpedomega": {
+    "level": 81,
+    "sets": [
+      {
+        "role": "Setup Sweeper",
+        "movepool": ["Protect", "Swords Dance", "Crunch", "Waterfall", "Aqua Jet", "Close Combat", "Earthquake", "Poison Jab", "Psychic Fangs"],
+        "abilities": ["Speed Boost"]
+      }
+    ]
   }
 }
